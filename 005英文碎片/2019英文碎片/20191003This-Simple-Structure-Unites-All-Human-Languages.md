@@ -68,18 +68,19 @@ English is a subject-verb-object language, while Japanese is a subject-object-ve
 
 There are also languages that mix up these orders. Malagasy, for example, has the English order for drink wine, but puts the subject after that unit:
 
-misotro divay aho
-drink  wine I
+	misotro divay aho
+
+	drink  wine I
 
 The Merge structure for Malagasy is just the same as that for English or Japanese, but while those languages put the subject first, Malagasy puts it last.
 
 The last logical possibility is where we say the equivalent of wine drink I to mean I drink wine.
 
-This is pretty exotic in the world’s languages. In fact, for many years, linguists were unable to find a language where that was the natural order to express this thought. However, during the 1960s and early ’70s, the late Desmond Derbyshire lived in the Amazonian village of Kasawa in Brazil. There he worked on learning and analyzing the language of a local tribe, the Hixkaryana. As Derbyshire worked on the language, he discovered that it had a basic order exactly the reverse of English. To express The boy caught a fish, the Hixkaryana said the equivalent of A fish caught the boy:
+This is pretty exotic in the world’s languages. In fact, for many years, linguists were unable to find a language where that was the natural order to express this thought. However, during the 1960s and early 1970s, the late Desmond Derbyshire lived in the Amazonian village of Kasawa in Brazil. There he worked on learning and analyzing the language of a local tribe, the Hixkaryana. As Derbyshire worked on the language, he discovered that it had a basic order exactly the reverse of English. To express The boy caught a fish, the Hixkaryana said the equivalent of A fish caught the boy:
 
-kana yanimno biryekomo
+	kana yanimno biryekomo
 
-fish he-caught-it boy
+	fish he-caught-it boy
 
 Since Derbyshire’s work, a number of other languages with this order, the object-verb-subject order, have come to light. Even these rare languages can be thought of as having the same structure, given by Merge:
 
@@ -107,8 +108,9 @@ I said that the four types of languages we’ve just seen were the four logical 
 
 Let’s look at Gaelic. In this language, to say “A boy caught a fish,” we say:
 
-Ghlac balach iasg
-caught boy fish
+	Ghlac balach iasg
+
+	caught boy fish
 
 We can’t get this order from Merge by just switching round the order of object and verb, or the order of the subject with the rest of the sentence. As we’ve seen, there are only four possibilities when we do that:
 
@@ -132,9 +134,9 @@ This gives us a way of understanding verb-subject-object languages like Gaelic: 
 
 The subject here, balach, is “boy” and the object iasg is “fish.” The verb ghlac, “caught,” merges with its object and gives the meaning associated with catching fish. Then the result of that merges with the subject. This can be ordered as subject-verb-object, boy caught fish. Finally, Merge applies to a bit of language it has already used (the verb ghlac, “caught”) and merges that with the subject-verb-object unit. We can now pronounce this tree like this:
 
-Ghlac balach ghlac iasg
+	Ghlac balach ghlac iasg
 
-caught boy caught fish
+	caught boy caught fish
 
 Oops! This isn’t quite what we want, since the verb (ghlac), “caught,” appears twice. That verb is just one bit of language, but it appears in two places, because we’ve reused it.
 
