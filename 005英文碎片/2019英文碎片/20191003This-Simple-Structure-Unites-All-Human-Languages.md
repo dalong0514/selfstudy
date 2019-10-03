@@ -94,7 +94,7 @@ Hixkaryana has the Japanese order for the most deeply embedded unit, giving kana
 
 Merge isn’t very complex, but it does a lot of what linguists need it to do. It applies to discrete units of language (words or their parts). It combines these, not sequentially, but hierarchically. It doesn’t state what order the words have to be pronounced in, so it allows variation across languages. The hierarchical structure is the same in all four types of language we just looked at, but the order of the corresponding words is different.
 
-Self-similarity is everywhere because it is efficient.
+**Self-similarity is everywhere because it is efficient.**
 
 The fact that the hierarchical structure is the same but the word order is different allows us to express an important idea. The way that languages build up meaning is through Merge. Each Merge comes along with an effect on the meaning of the sentence, and that effect is generally both stable and systematic. That’s why it makes sense to say that the Japanese and English sentences mean the same. They have different orders, but there is a deep commonality. Merge builds both structure and meaning in the same basic way in both kinds of language. Languages are deeply similar, not deeply different.
 
