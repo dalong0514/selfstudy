@@ -151,5 +151,3 @@ Because Merge recursively builds hierarchies, with each application connecting t
 David Adger is the author of Language Unlimited: The Science Behind Our Most Creative Power, which this article is adapted from. He is a professor of linguistics at Queen Mary University of London and the president of the Linguistics Association of Great Britain.
 
 Read our interview with David Adger here.
-
-Lead image: Inus / Shutterstock

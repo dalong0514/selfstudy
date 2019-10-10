@@ -94,3 +94,4 @@ And as Eric Ries, author of The Lean Startup, says, “The only way to win is to
 
 Steve Glaveski is CEO and co-founder of Collective Campus, a corporate innovation and start-up accelerator based in Melbourne, Australia. He hosts the Future Squared podcast and is the author of Employee to Entrepreneur: How to Earn Your Freedom and Do Work That Matters.
 
+
