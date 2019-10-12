@@ -4,7 +4,15 @@
 
 There's a meme that's been going around for a while now: you should join a startup because the money is better and the work is more technically interesting. 
 
-Paul Graham says that the best way to make money is to "start or join a startup", which has been "a reliable way to get rich for hundreds of years", and that you can "compress a career's worth of earnings into a few years". Michael Arrington says that you'll become a part of history. Joel Spolsky says that by joining a big company, you'll end up playing foosball and begging people to look at your code. Sam Altman says that if you join Microsoft, you won't build interesting things and may not work with smart people. They all claim that you'll learn more and have better options if you go work at a startup. Some of these links are a decade old now, but the same ideas are still circulating and those specific essays are still cited today.
+Paul Graham says that the best way to make money is to "start or join a startup", which has been "a reliable way to get rich for hundreds of years", and that you can "compress a career's worth of earnings into a few years". 
+
+Michael Arrington says that you'll become a part of history. 
+
+Joel Spolsky says that by joining a big company, you'll end up playing foosball and begging people to look at your code. 
+
+Sam Altman says that if you join Microsoft, you won't build interesting things and may not work with smart people. 
+
+They all claim that you'll learn more and have better options if you go work at a startup. Some of these links are a decade old now, but the same ideas are still circulating and those specific essays are still cited today.
 
 Let's look at these points one one-by-one.
 
@@ -12,34 +20,53 @@ Let's look at these points one one-by-one.
 
 2. You won't do interesting work at a big company.
 
-3. You'll learn more at a startup and have better options afterwards
+3. You'll learn more at a startup and have better options afterwards.
 
 ## 01. Earnings
 
-The numbers will vary depending on circumstances, but we can do a back of the envelope calculation and adjust for circumstances afterwards. Median income in the U.S. is about $ 30k/yr. The somewhat bogus zeroth order lifetime earnings approximation I'll use is $30k * 40 = $1.2M. A new grad at Google/FB/Amazon with a lowball offer will have a total comp (salary + bonus + equity) of $130k/yr. According to glassdoor's current numbers, someone who makes it to T5/senior at Google should have a total comp of around $250k/yr. These are fairly conservative numbers1.
+The numbers will vary depending on circumstances, but we can do a back of the envelope calculation and adjust for circumstances afterwards. 
 
-Someone who's not particularly successful, but not particularly unsuccessful will probably make senior in five years2. For our conservative baseline, let's assume that we'll never make it past senior, into the pay grades where compensation really skyrockets. We'd expect earnings (total comp including stock, but not benefits) to looks something like:
+Median income in the U.S. is about $ 30k/yr. The somewhat bogus zeroth order lifetime earnings approximation I'll use is $30k * 40 = $1.2M. A new grad at Google/FB/Amazon with a lowball offer will have a total comp (salary + bonus + equity) of $130k/yr. 
+
+According to glassdoor's current numbers, someone who makes it to T5/senior at Google should have a total comp of around $250k/yr. These are fairly conservative numbers 1.
+
+Someone who's not particularly successful, but not particularly unsuccessful will probably make senior in five years 2. For our conservative baseline, let's assume that we'll never make it past senior, into the pay grades where compensation really skyrockets. We'd expect earnings (total comp including stock, but not benefits) to looks something like:
 
 ![](https://raw.githubusercontent.com/dalong0514/selfstudy/master/图片链接/碎片图片/2019059.png)
 
 Looks like it takes six years to gross a U.S. career's worth of income. If you want to adjust for the increased tax burden from earning a lot in a few years, add an extra year. Maybe add one to two more years if you decide to live in the bay or in NYC. If you decide not to retire, lifetime earnings for a 40 year career comes in at almost $10M.
 
-One common, but false, objection to this is that your earnings will get eaten up by the cost of living in the bay area. Not only is this wrong, it's actually the opposite of correct. You can work at these companies from outside the bay area; most of these companies will pay you maybe 10% less if you work in a location where cost of living is around the U.S. median by working in a satellite office of a trendy company headquartered in SV or Seattle (at least if you work in the US -- pay outside of the US is often much lower for reasons that don't really make sense to me). Market rate at smaller companies in these areas tends to be very low. When I interviewed in places like Portland and Madison, there was a 3x-5x difference between what most small companies were offering and what I could get at a big company in the same city. In places like Austin, where the market is a bit thicker, it was a 2x-3x difference. The difference in pay at 90%-ile companies is greater, not smaller, outside of the SF bay area.
+One common, but false, objection to this is that your earnings will get eaten up by the cost of living in the bay area. Not only is this wrong, it's actually the opposite of correct. You can work at these companies from outside the bay area; most of these companies will pay you maybe 10% less if you work in a location where cost of living is around the U.S. median by working in a satellite office of a trendy company headquartered in SV or Seattle (at least if you work in the US -- pay outside of the US is often much lower for reasons that don't really make sense to me). 
+
+Market rate at smaller companies in these areas tends to be very low. When I interviewed in places like Portland and Madison, there was a 3x-5x difference between what most small companies were offering and what I could get at a big company in the same city. In places like Austin, where the market is a bit thicker, it was a 2x-3x difference. The difference in pay at 90%-ile companies is greater, not smaller, outside of the SF bay area.
 
 Another objection is that most programmers at most companies don't make this kind of money. If, three or four years ago, you'd told me that there's a career track where it's totally normal to make $250k/yr after a few years, doing work that was fundamentally pretty similar to the work I was doing then, I'm not sure I would have believed it. No one I knew made that kind of money, except maybe the CEO of the company I was working at. Well him, and folks who went into medicine or finance.
 
-The only difference between then and now is that I took a job at a big company. When I took that job, the common story I heard at orientation was basically “I never thought I'd be able to get a job at Google, but a recruiter emailed me and I figured I might as well respond”. For some reason, women were especially likely to have that belief. Anyway, I've told that anecdote to multiple people who didn't think they could get a job at some trendy large company, who then ended up applying and getting in. And what you'll realize if you end up at a place like Google is that most of them are just normal programmers like you and me. If anything, I'd say that Google is, on average, less selective than the startup I worked at. When you only have to hire 100 people total, and half of them are folks you worked with as a technical fellow at one big company and then as an SVP at another one, you can afford to hire very slowly and being extremely selective. Big companies will hire more than 100 people per week, which means they can only be so selective.
+The only difference between then and now is that I took a job at a big company. When I took that job, the common story I heard at orientation was basically “I never thought I'd be able to get a job at Google, but a recruiter emailed me and I figured I might as well respond”. 
+
+For some reason, women were especially likely to have that belief. Anyway, I've told that anecdote to multiple people who didn't think they could get a job at some trendy large company, who then ended up applying and getting in. And what you'll realize if you end up at a place like Google is that most of them are just normal programmers like you and me. If anything, I'd say that Google is, on average, less selective than the startup I worked at. 
+
+When you only have to hire 100 people total, and half of them are folks you worked with as a technical fellow at one big company and then as an SVP at another one, you can afford to hire very slowly and being extremely selective. Big companies will hire more than 100 people per week, which means they can only be so selective.
 
 Despite the hype about how hard it is to get a job at Google/FB/wherever, your odds aren't that bad, and they're certainly better than your odds striking it rich at a startup, for which Patrick McKenzie has a handy cheatsheet:
 
 Roll d100. (Not the right kind of geek? Sorry. rand(100) then.)
+
 0~70: Your equity grant is worth nothing.
+
 71~94: Your equity grant is worth a lump sum of money which makes you about as much money as you gave up working for the startup, instead of working for a megacorp at a higher salary with better benefits.
+
 95~99: Your equity grant is a life changing amount of money. You won't feel rich — you're not the richest person you know, because many of the people you spent the last several years with are now richer than you by definition — but your family will never again give you grief for not having gone into $FAVORED_FIELD like a proper $YOUR_INGROUP.
+
 100: You worked at the next Google, and are rich beyond the dreams of avarice. Congratulations.
+
 Perceptive readers will note that 100 does not actually show up on a d100 or rand(100).
 
-For a more serious take that gives approximately the same results, 80000 hours finds that the average value of a YC founder after 5-9 years is $18M. That sounds great! But there are a few things to keep in mind here. First, YC companies are unusually successful compared to the average startup. Second, in their analysis, 80000 hours notes that 80% of the money belongs to 0.5% of companies. Another 22% are worth enough that founder equity beats working for a big company, but that leaves 77.5% where that's not true.
+For a more serious take that gives approximately the same results, 80000 hours finds that the average value of a YC founder after 5-9 years is $18M. That sounds great! But there are a few things to keep in mind here. 
+
+First, YC companies are unusually successful compared to the average startup. 
+
+Second, in their analysis, 80000 hours notes that 80% of the money belongs to 0.5% of companies. Another 22% are worth enough that founder equity beats working for a big company, but that leaves 77.5% where that's not true.
 
 If you're an employee and not a founder, the numbers look a lot worse. If you're a very early employee you'd be quite lucky to get 1/10th as much equity as a founder. If we guess that 30% of YC startups fail before hiring their first employee, that puts the mean equity offering at $1.8M / .7 = $2.6M. That's low enough that for 5-9 years of work, you really need to be in the 0.5% for the payoff to be substantially better than working at a big company unless the startup is paying a very generous salary.
 
@@ -51,11 +78,19 @@ For example, say you joined company X early on and got options for 1% of the com
 
 Of course not every company is like this -- I hear that Dropbox has generously offered to buy out people's options at their current valuation for multiple years running and they now hand out RSUs instead of options, and Pinterest now gives people seven years to exercise their options after they leave -- but stories like that are uncommon enough that they're notable. The result is that people are incentivized to stay at most startups, even if they don't like the work anymore. From chatting with my friends at well regarded highly-valued startups, it sounds like many of them have a substantial fraction of zombie employees who are just mailing it in and waiting for a liquidity event. A common criticism of large companies is that they've got a lot of lifers who are mailing it in, but most large companies will let you leave any time after the first year and walk away with a pro-rated fraction of your equity package3. It's startups where people are incentivized to stick around even if they don't care about the job.
 
-At a big company, we have a career's worth of income in six years with high probability once you get your foot in the door. This isn't quite as good as the claim that you'll be able to do that in three or four years at a startup, but the risk at a big company is very low once you land the job. In startup land, we have a lottery ticket that appears to have something like a 0.5% chance of paying off for very early employees. Startups might have had a substantially better expected value when Paul wrote about this in 2004, but big company compensation has increased much faster than compensation at the median startup. We're currently in the best job market the world has ever seen for programmers. That's likely to change at some point. The relative returns on going the startup route will probably look a lot better once things change, but for now, saving up some cash while big companies hand it out like candy doesn't seem like a bad idea.
+At a big company, we have a career's worth of income in six years with high probability once you get your foot in the door. This isn't quite as good as the claim that you'll be able to do that in three or four years at a startup, but the risk at a big company is very low once you land the job. In startup land, we have a lottery ticket that appears to have something like a 0.5% chance of paying off for very early employees. 
+
+Startups might have had a substantially better expected value when Paul wrote about this in 2004, but big company compensation has increased much faster than compensation at the median startup. We're currently in the best job market the world has ever seen for programmers. That's likely to change at some point. The relative returns on going the startup route will probably look a lot better once things change, but for now, saving up some cash while big companies hand it out like candy doesn't seem like a bad idea.
 
 ## 02. Interesting work
 
 We've established that big companies will pay you decently. But there's more to life than making money. After all, you spend 40 hours a week working (or more). How interesting is the work at big companies? Joel claimed that large companies don't solve interesting problems and that Google is paying untenable salaries to kids with more ultimate frisbee experience than Python, whose main job will be to play foosball in the googleplex, Sam Altman said something similar (but much more measured) about Microsoft, every third Michael O. Church comment is about how Google tricks a huge number of overqualified programmers into taking jobs that no one wants. Basically every advice thread on HN or reddit aimed at new grads will have multiple people chime in on how the experience you get at startups is better than the experience you'll get slaving away at a big company.
+
+
+
+
+
+
 
 The claim that big companies have boring work is too broad and absolute to even possibly be true. It depends on what kind of work you want to do. When I look at conferences where I find a high percentage of the papers compelling, the stuff I find to be the most interesting is pretty evenly split between big companies and academia, with the (very) occasional paper by a startup. For example, looking at ISCA this year, there's a 2:1 ratio of papers from academia to industry (and all of the industry papers are from big companies). But looking at the actual papers, a significant fraction of the academic papers are reproducing unpublished work that was done at big companies, sometimes multiple years ago. If I only look at the new work that I'm personally interested in, it's about a 1:1 ratio. There are some cases where a startup is working in the same area and not publishing, but that's quite rare and large companies do much more research that they don't publish. I'm just using papers as a proxy for having the kind of work I like. There are also plenty of areas where publishing isn't the norm, but large companies do the bulk of the cutting edge work.
 
