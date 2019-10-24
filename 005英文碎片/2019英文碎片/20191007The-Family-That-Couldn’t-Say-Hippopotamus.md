@@ -9,17 +9,25 @@ SEPTEMBER 18, 2014
 
 [The Family That Couldn’t Say Hippopotamus - Issue 17: Big Bangs - Nautilus](http://nautil.us/issue/17/big-bangs/the-family-that-couldnt-say-hippopotamus?mc_cid=1db7dcd27a&mc_eid=73954d2cbc)
 
-There is a family living in Britain, known only as the KE family, with a few members that can’t quite say words like “hippopotamus.” They know the words, but can’t get their mouth positions quite right, so their speech comes out garbled. Some family members have a hard time saying words in the right order, and others have trouble reciting words that begin with the same letter. Multiple generations of the family have similar language difficulties, suggesting a genetic basis for their disorder.
+## 01
+
+There is a family living in Britain, known only as the KE family, with a few members that can’t quite say words like “hippopotamus.” 
+
+They know the words, but can’t get their mouth positions quite right, so their speech comes out garbled. Some family members have a hard time saying words in the right order, and others have trouble reciting words that begin with the same letter. Multiple generations of the family have similar language difficulties, suggesting a genetic basis for their disorder.
 
 In the early 2000s, Oxford University geneticists Anthony Monaco, Simon Fisher, and their colleagues found the culprit: KE family members had a rare mutation in a gene called FOXP2. The mutation was subtle—only one nucleotide removed from the typical FOXP2 sequence—but the resulting language impairment was substantial. That meant there was probably something about the normal FOXP2 gene that helped enable fluent speech. In the wake of this finding, FOXP2 was trumpeted in the press as a “grammar gene” and a “language gene.” 
 
-The public’s “language gene” assumption seemed to fit well with certain long-standing theories about the origins of language. In the mid-1960s, linguist Noam Chomsky proposed that the human brain is equipped with a distinct “language organ”—a module that appeared relatively suddenly in the history of human development. “The language organ interacts with early experience and matures into the grammar of the language that the child speaks,” Chomsky told Omni’s John Gliedman in a 1983 interview.
+The public’s “language gene” assumption seemed to fit well with certain long-standing theories about the origins of language. 
+
+In the mid-1960s, linguist Noam Chomsky proposed that the human brain is equipped with a distinct “language organ”—a module that appeared relatively suddenly in the history of human development. “The language organ interacts with early experience and matures into the grammar of the language that the child speaks,” Chomsky told Omni’s John Gliedman in a 1983 interview.
 
 Without a neatly packaged module to point to, how can we tell when and how language appeared?
 
 Coming out of an era of rapid advances in computer technology, the idea of a discrete, common origin to human language made intuitive sense. It was also consistent with observations that many languages have similar features, suggesting that the brain contains a limited array of linguistic “switches” that constrain the ways language develops. These narrow paths, according to the theory, give rise to universal language structures. In sentences that contain a verb and object, for instance (“Duane played the piano”), a preposition often precedes a noun (“at the party”).
 
-But over the years, it became clear that the truth about language origins was not quite as simple as a “language gene” or well-defined language module. Further study revealed that the FOXP2 gene is relevant to multiple mental abilities and is not strictly a language gene at all. In a 2009 paper, for example, Max Planck Institute geneticist Wolfgang Enard exploited the fact that just three amino acids distinguish the human version of the FOXP2 protein from that of mice. When he engineered the FOXP2 genes of mice to produce proteins with the two human FOXP2 amino acids, it resulted in functional differences in brain areas critical for carrying out fine motor tasks and controlling muscle movements, as well as altered function in regions involved in sending and receiving reward signals.2
+But over the years, it became clear that the truth about language origins was not quite as simple as a “language gene” or well-defined language module. Further study revealed that the FOXP2 gene is relevant to multiple mental abilities and is not strictly a language gene at all. 
+
+In a 2009 paper, for example, Max Planck Institute geneticist Wolfgang Enard exploited the fact that just three amino acids distinguish the human version of the FOXP2 protein from that of mice. When he engineered the FOXP2 genes of mice to produce proteins with the two human FOXP2 amino acids, it resulted in functional differences in brain areas critical for carrying out fine motor tasks and controlling muscle movements, as well as altered function in regions involved in sending and receiving reward signals.2
 
 “This is the reward system, the system that gets hijacked by drugs,” Enard says. “This system is needed for statistical learning. It makes sense to say if you want to have speech, you need to tune it.” A later study3 also found that mice with human FOXP2 learned faster than regular mice. 
 
@@ -27,13 +35,27 @@ The same gene that regulated language so strongly also regulated other mental fa
 
 People making complex tools showed brain blood flow patterns similar to those they displayed when thinking about words.
 
-In humans, too, evidence is mounting that language relies on a surprisingly broad neural support system. A 2012 paper from the University of Washington4 shows that infants with denser concentrations of white or gray matter in the hippocampus and cerebellum show higher levels of language skill by their first birthdays, despite the fact that these brain areas have not traditionally been linked to language. Earlier this year, University of Washington scientists also found that 7-month-old babies show activation in a number of different brain regions when they hear speech, including in the cerebellum, which is important for coordinating motor movements.5
+In humans, too, evidence is mounting that language relies on a surprisingly broad neural support system. A 2012 paper from the University of Washington 4 shows that infants with denser concentrations of white or gray matter in the hippocampus and cerebellum show higher levels of language skill by their first birthdays, despite the fact that these brain areas have not traditionally been linked to language. 
 
-Some researchers argue that the universality of structures across different languages has also turned out to be weaker than initially thought. In 2011, Uppsala University evolutionary linguist Michael Dunn and his colleagues created computer models of how word order has changed over time in four of the world’s largest language groups: Uto-Aztecan, Indo-European, Bantu, and Austronesian. They found that instead of developing parallel structures, each language was evolving according to its own set of rules.6 One structure that statistical methods suggested was universal (how “verb-object” clauses influence word order in prepositional phrases) actually appeared in just half the major language groups the team studied. “What seems like a strong statistical correlation really only happens in two big [language] families,” Dunn says. “It looks a lot less universal.”
+Earlier this year, University of Washington scientists also found that 7-month-old babies show activation in a number of different brain regions when they hear speech, including in the cerebellum, which is important for coordinating motor movements.5
+
+Some researchers argue that the universality of structures across different languages has also turned out to be weaker than initially thought. 
+
+In 2011, Uppsala University evolutionary linguist Michael Dunn and his colleagues created computer models of how word order has changed over time in four of the world’s largest language groups: Uto-Aztecan, Indo-European, Bantu, and Austronesian. 
+
+They found that instead of developing parallel structures, each language was evolving according to its own set of rules.6 
+
+One structure that statistical methods suggested was universal (how “verb-object” clauses influence word order in prepositional phrases) actually appeared in just half the major language groups the team studied. “What seems like a strong statistical correlation really only happens in two big [language] families,” Dunn says. “It looks a lot less universal.”
 
 Dunn doesn’t think that a language-specific brain module evolved and gave rise to predictable language structures. Instead, he believes language—in all its messy complexity—emerged once humans reached a certain level of cognitive capacity. “The module thing started with the computer metaphor for the human brain, and I think this was of some use at the time,” he says. “But really, it’s a little bit deceiving. It’s all a much more ramshackle, muddled-up biological system.”
 
+## 02
+
 While the existence of a language module continues to be debated, questioning its presence would seem to make understanding the origins of language more difficult. Without a neatly packaged module to point to, how can we tell when and how language appeared?
+
+
+
+
 
 Some clues are coming from studies of the history of toolmaking. In 2010, Imperial College London neuroscientist Aldo Faisal enlisted his colleague Bruce Bradley, an Exeter archaeologist and skilled craftsman, to take part in a novel experiment. Bradley was tasked with whittling blocks of stone, crafting a series of rough-hewn stone flakes and more detailed, symmetrical hand axes, while wearing a glove studded with sensors that tracked his hand movements. When Faisal analyzed the sensor data, he noticed that the hand motions required to craft a well-turned hand axe were basically identical to those needed to make a stone flake.7
 
