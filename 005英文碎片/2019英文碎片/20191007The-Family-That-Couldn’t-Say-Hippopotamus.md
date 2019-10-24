@@ -53,13 +53,15 @@ Dunn doesn’t think that a language-specific brain module evolved and gave rise
 
 While the existence of a language module continues to be debated, questioning its presence would seem to make understanding the origins of language more difficult. Without a neatly packaged module to point to, how can we tell when and how language appeared?
 
+Some clues are coming from studies of the history of toolmaking. In 2010, Imperial College London neuroscientist Aldo Faisal enlisted his colleague Bruce Bradley, an Exeter archaeologist and skilled craftsman, to take part in a novel experiment. Bradley was tasked with whittling blocks of stone, crafting a series of rough-hewn stone flakes and more detailed, symmetrical hand axes, while wearing a glove studded with sensors that tracked his hand movements. 
 
+When Faisal analyzed the sensor data, he noticed that the hand motions required to craft a well-turned hand axe were basically identical to those needed to make a stone flake.7
 
+The results suggested that it wasn’t an improvement in manual coordination per se that allowed early humans to make the leap from primitive stone flakes to hand axes—instead, it was a shift in cognitive capacity. 
 
+This shift, Faisal points out, could also have aided language. An earlier study had reported that when master craftsmen are making complex tools like hand axes (but not simple stone flakes), specific regions of the brain’s right hemisphere light up on functional MRI scans—brain areas that are also involved in making sense of speech.8 
 
-Some clues are coming from studies of the history of toolmaking. In 2010, Imperial College London neuroscientist Aldo Faisal enlisted his colleague Bruce Bradley, an Exeter archaeologist and skilled craftsman, to take part in a novel experiment. Bradley was tasked with whittling blocks of stone, crafting a series of rough-hewn stone flakes and more detailed, symmetrical hand axes, while wearing a glove studded with sensors that tracked his hand movements. When Faisal analyzed the sensor data, he noticed that the hand motions required to craft a well-turned hand axe were basically identical to those needed to make a stone flake.7
-
-The results suggested that it wasn’t an improvement in manual coordination per se that allowed early humans to make the leap from primitive stone flakes to hand axes—instead, it was a shift in cognitive capacity. This shift, Faisal points out, could also have aided language. An earlier study had reported that when master craftsmen are making complex tools like hand axes (but not simple stone flakes), specific regions of the brain’s right hemisphere light up on functional MRI scans—brain areas that are also involved in making sense of speech.8 Similarly, in 2013 University of Liverpool archaeologist Natalie Uomini found that people making complex tools showed brain blood flow patterns similar to those they displayed when thinking about words.9
+Similarly, in 2013 University of Liverpool archaeologist Natalie Uomini found that people making complex tools showed brain blood flow patterns similar to those they displayed when thinking about words.9
 
 Researchers like Faisal think that as toolmaking skills became more common in the population, humans may have acquired the mental horsepower requisite for language. “A lot of people would say that toolmaking came [before language]—that’s the general prevailing view,” Uomini says. “I would just say that they co-evolved.”
 
@@ -69,7 +71,9 @@ Even the advancement of general cognitive skill, however, may be too narrow a pi
 
 Kirby took a unique approach to probing the origins of language: He taught human participants novel languages he had made up. He and his colleagues showed human subjects cards with different shapes and pictures on them, taught them the words for these pictures, and tested them. “Whatever they do, whether they get it right or wrong, we teach it to the next person,” Kirby says. “It’s rather like the game Telephone.”
 
-Remarkably, as the language passed from one learner to the next, it began to acquire cogent structure. After 10 generations, the language had changed to make it easier for human speakers to process. Most notably, it began to show “compositionality,” meaning that parts of words corresponded to their meaning—shapes with four sides, for instance, might all have a prefix like “ikeke.” Thanks to these predictable properties, learners developed a mental framework they could easily fit new words into. “Participants not only learn everything we show them,” Kirby says, “but they can correctly guess words we didn’t even train them on.”
+Remarkably, as the language passed from one learner to the next, it began to acquire cogent structure. After 10 generations, the language had changed to make it easier for human speakers to process. 
+
+Most notably, it began to show “compositionality,” meaning that parts of words corresponded to their meaning—shapes with four sides, for instance, might all have a prefix like “ikeke.” Thanks to these predictable properties, learners developed a mental framework they could easily fit new words into. “Participants not only learn everything we show them,” Kirby says, “but they can correctly guess words we didn’t even train them on.”
 
 Kirby realized that this process of iterated learning—which depended on brain function but extended beyond it—went a long way toward explaining where language structure came from. Having watched in the lab as ordered languages appeared, he’s skeptical when he sees colleagues get entrenched in purely biological explanations for language’s origins. “There’s been this assumption that brain and behavior are related very simply, but languages emerge out of huge populations of socially embedded agents. The problem with ‘gene for x’ or ‘grammar module y’ is they ignore how something that is the property of an individual is linked to something that is the property of a community.”
 

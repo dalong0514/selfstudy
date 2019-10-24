@@ -7,11 +7,15 @@ OCTOBER 3, 2019
 
 [Would You Survive a Merger with AI? - Issue 76: Language - Nautilus](http://nautil.us/issue/76/language/you-wont-survive-a-merger-with-ai)
 
+## 01
+
 The idea that humans should merge with AI is very much in the air these days. It is offered both as a way for humans to avoid being outmoded by AI in the workplace, and as a path to superintelligence and immortality. For instance, Elon Musk recently commented that humans can escape being outmoded by AI by “having some sort of merger of biological intelligence and machine intelligence.”1 To this end, he’s founded a company, Neuralink. One of its first aims is to develop “neural lace,” an injectable mesh that connects the brain directly to computers. Neural lace and other AI-based enhancements are supposed to allow data from your brain to travel wirelessly to one’s digital devices or to the cloud, where massive computing power is available.
 
 For many transhumanists, uploading is key to the mind-machine merger.
 
 Perhaps these sorts of enhancements will turn out to be beneficial, but to see if this is the case, we will need to move beyond all the hype. Policymakers, the public, and even AI researchers themselves need a better idea of what is at stake. For instance, if AI cannot be conscious, then if you substituted a microchip for the parts of the brain responsible for consciousness, you would end your life as a conscious being. You’d become what philosophers call a “zombie”—a nonconscious simulacrum of your earlier self. Further, even ifmicrochips could replace parts of the brain responsible for consciousness without zombifying you, radical enhancement is still a major risk. After too many changes, the person who remains may not even be you. Each human who enhances may, unbeknownst to them, end their life in the process.
+
+## 02
 
 To decide whether to enhance, you must understand the metaphysics of personal identity. Philosophers call the characteristics that a thing must have as long as it exists “essential properties.” What might your essential properties be? If you are simply the physical stuff that comprised your brain and body in first grade, you would have ceased to exist some time ago. That physical first-grader is simply not here any longer. Ray Kurzweil, in his 2005 book The Singularity Is Near: When Humans Transcend Biology, clearly appreciates the difficulties here, commenting:
 
@@ -31,6 +35,8 @@ On the no-self view, the survival of the person is not an issue, for there is no
 
 I don’t know whether many of those who publicize the idea of a mind-machine merger, such as Elon Musk and Michio Kaku, have considered these classic positions on personal identity. But they should. It is a bad idea to ignore this debate. One could be dismayed, at some later point, to learn that a technology one advocated actually had a tremendously negative impact on human flourishing.
 
+## 03
+
 In any case, both Kurzweil and the philosopher Nick Bostrom have considered the issue in their work. They, like many other transhumanists, adopt a novel and intriguing version of the psychological continuity view; in particular, they adopt a computational, or patternist, account of continuity. Patternism’s point of departure is the computational theory of mind. Although computational theories of mind differ in their details, one thing they have in common is that they all explain cognitive and perceptual capacities in terms of causal relationships between components, each of which can be described algorithmically. One common way of describing the computational theory of mind is by reference to the idea that the mind is a software program: That is, the mind is the algorithm the brain implements, and this algorithm is something that different subfields of cognitive science seek to describe.
 
 Each human who enhances may, unbeknownst to them, end their life in the process.
@@ -44,6 +50,8 @@ The specific set of particles that my body and brain comprise are in fact comple
 According to the patternist, what is essential to you is your computational configuration: the sensory systems/subsystems your brain has (e.g., early vision), the association areas that integrate these basic sensory subsystems, the neural circuitry making up your domain-general reasoning, your attentional system, your memories, and so on. Together these form the algorithm that your brain computes.
 
 You might think the transhumanist views a brain-based materialism favorably. Transhumanists generally reject brain-based materialism, however, because they tend to believe the same person can continue to exist if her pattern persists, even if she has “uploaded” to a computer, no longer having a brain. For many transhumanists, uploading is key to the mind-machine merger.
+
+## 04
 
 In the science-fiction novel Mindscan by Robert Sawyer, the protagonist Jake Sullivan has an inoperable brain tumor. Death could strike him at any moment. Luckily, Immortex has a new cure for aging and illness—a “mindscan.” Immortex scientists tell him they will upload his brain configuration into a computer and “transfer” it into an android body that is designed using his own body as a template. Although imperfect, the android body has its advantages—once an individual is uploaded, a backup exists that can be downloaded if one has an accident. And it can be upgraded as new developments emerge. Jake will be immortal.
 
@@ -71,14 +79,20 @@ But Jake has belatedly realized a problem with that view, which we shall call �
 
 Hence, having a particular type of pattern cannot be sufficient for personal identity. Indeed, the problem is illustrated to epic proportions later in Sawyer’s book when numerous copies of Sullivan are made, all believing they are the original!
 
+## 05
+
 But you may suspect that there still is a kernel of truth to patternism: Your cells change continually but your organizational pattern carries on. Your pattern is essential to yourself despite not being sufficient for a complete account of your identity. Perhaps there is an additional essential property which, together with your pattern, yields a complete theory of personal identity.
 
 What could the missing ingredient be? Think about your own existence in space and time. When you go out to get the mail, you move from one spatial location to the next, tracing a path in space. A spacetime diagram can help us visualize the path one takes throughout one’s life. Collapsing the three spatial dimensions into one (the vertical axis) and taking the horizontal axis to signify time, consider the following typical trajectory:
 
 Schneider_BREAKER-1
+
 Notice that the figure carved out looks like a worm; you, like all physical objects, carve out a sort of “spacetime worm” over the course of your existence. This, at least, is the kind of path that ordinary people—those who are neither posthumans nor superintelligences—carve out. But now consider what happened during the mindscan. The copy’s spacetime diagram would look like the following:
 
+![](https://raw.githubusercontent.com/dalong0514/selfstudy/master/图片链接/碎片图片/2019065.png)
+
 Schneider_BREAKER-2
+
 This is bizarre. It appears that Jake Sullivan exists for 42 years, has a scan, and then somehow instantaneously moves to a different location in space and lives out the rest of his life. This alerts us that something is wrong with pure patternism: It lacks a requirement for spatiotemporal continuity. On the day of the mindscan, Jake went into the laboratory and had a scan; then he left the laboratory and went directly into a spaceship and flew to exile on the moon. It is this man—the one who traces a continuous trajectory through space and time—who is the true Jake Sullivan. The android is an unwitting impostor.
 
 This response to the reduplication problem only goes so far, however. Consider Sugiyama, who, when selling his mindscan product, ventured a patternist pitch. If he had espoused patternism together with a spatiotemporal continuity clause, he would have to admit that his customers would not become immortal, and few would have signed up for the scan. That extra ingredient would rule out a mindscan (or any kind of uploading, for that matter) as a means to ensure survival. Only those wishing to have a replacement for themselves would sign up.
