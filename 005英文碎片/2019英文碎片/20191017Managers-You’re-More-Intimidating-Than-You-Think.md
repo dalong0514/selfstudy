@@ -58,3 +58,4 @@ Many leaders do not realize the shadow that they cast through their titles and t
 Megan Reitz is Professor of Leadership and Dialogue at Ashridge Executive Education at Hult International Business School. She speaks, researches, and consults in order to help organizations develop more open, mutual, and creative dialogue. She is the author of Dialogue in Organizations (2015) and co-author of Mind Time (2018) and Speak Up (2019). Follow her on Twitter at @MeganReitz1.
 
 John Higgins is an independent researcher, coach, consultant, and author. He has published widely with the Ashridge Executive Masters and Doctorate in Organizational Change, most recently with The Change Doctors: Re-Imagining Organizational Practice (Libri, 2014) and as co-author of Speak Up.
+

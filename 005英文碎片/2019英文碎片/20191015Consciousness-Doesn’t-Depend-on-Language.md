@@ -7,6 +7,8 @@ SEPTEMBER 26, 2019
 
 [Consciousness Doesn’t Depend on Language - Issue 76: Language - Nautilus](http://nautil.us/issue/76/language/consciousness-doesnt-depend-on-language)
 
+## 01
+
 The contrast could not have been starker—here was one of the world’s most revered figures, His Holiness the Fourteenth Dalai Lama, expressing his belief that all life is sentient, while I, as a card-carrying neuroscientist, presented the contemporary Western consensus that some animals might, perhaps, possibly, share the precious gift of sentience, of conscious experience, with humans.
 
 The setting was a symposium between Buddhist monk-scholars and Western scientists in a Tibetan monastery in Southern India, fostering a dialogue in physics, biology, and brain science.
@@ -19,7 +21,7 @@ I grew up in a devout Roman Catholic family with Purzel, a fearless dachshund. P
 
 René Descartes famously argued that a dog howling pitifully when hit by a carriage does not feel pain. The dog is simply a broken machine, devoid of the res cogitans or cognitive substance that is the hallmark of people. For those who argue that Descartes didn’t truly believe that dogs and other animals had no feelings, I present the fact that he, like other natural philosophers of his age, performed vivisection on rabbits and dogs. That’s live coronary surgery without anything to dull the agonizing pain. As much as I admire Descartes as a revolutionary thinker, I find this difficult to stomach.
 
-
+## 02
 
 Modernity abandoned the belief in a Cartesian soul, but the dominant cultural narrative remains—humans are special; they are above and beyond all other creatures. All humans enjoy universal rights, yet no animal does. No animal possesses the fundamental right to its life, to bodily liberty and integrity.
 
@@ -43,7 +45,7 @@ As I write, the world is witnessing a killer whale carrying her baby calf, born 
 
 Monkeys, dogs, cats, horses, donkeys, rats, mice, and other mammals can all be taught to respond to forced-choice experiments—modified from those used by people to accommodate paws and snouts, and using food or social rewards in lieu of money. Their responses are remarkably similar to the way people behave, once differences in their sensory organs are accounted for.
 
-
+## 03
 
 The most obvious trait that distinguishes humans from other animals is language. Everyday speech represents and communicates abstract symbols and concepts. It is the bedrock of mathematics, science, civilization, and all of our cultural accomplishments.
 
@@ -73,7 +75,7 @@ There are documented cases of feral children who either grew up in near total so
 
 Finally, to restate the obvious—language contributes massively to the way we experience the world, in particular to our sense of the self as our narrative center in the past and present. But our basic experience of the world does not depend on it.
 
-
+## 04
 
 Besides true language, there are, of course, other cognitive differences between people and the rest of mammals. Humans can organize into vast and flexible alliances to pursue common religious, political, military, economic, and scientific projects. We can be deliberately cruel. Shakespeare’s Richard III spits out:
 
@@ -82,8 +84,6 @@ Besides true language, there are, of course, other cognitive differences between
 We can also introspect, second-guessing our actions and motivations. As we grow up, we acquire a sense of mortality, a knowledge that our life has a finite horizon, the worm at the core of human existence. Death has no such dominion over animals.
 
 The belief that only humans experience anything is preposterous, a remnant of an atavistic desire to be the one species of singular importance to the universe at large. Far more reasonable and compatible with all known facts is the assumption that we share the experience of life with all mammals.
-
-
 
 Christof Koch is the president and chief scientist of the Allen Institute for Brain Science in Seattle, following 27 years as a professor at the California Institute of Technology. He is the author of Consciousness: Confessions of a Romantic Reductionist (MIT Press), The Quest for Consciousness: A Neurobiological Approach, and other books.
 

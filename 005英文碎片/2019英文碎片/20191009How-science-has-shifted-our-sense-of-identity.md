@@ -20,6 +20,12 @@ I want to suggest that many of the worst chapters of this history result from sc
 
 Across the arc of the past 150 years, we can see both science and scientism shaping human identity in many ways. Developmental psychology zeroed in on the intellect, leading to the transformation of IQ (intelligence quotient) from an educational tool into a weapon of social control. Immunology redefined the ‘self’ in terms of ‘non-self’. Information theory provided fresh metaphors that recast identity as residing in a text or a wiring diagram. More recently, cell and molecular studies have relaxed the borders of the self. Reproductive technology, genetic engineering and synthetic biology have made human nature more malleable, epigenetics and microbiology complicate notions of individuality and autonomy, and biotechnology and information technology suggest a world where the self is distributed, dispersed, atomized.
 
+
+
+
+
+
+
 Individual identities, rooted in biology, have perhaps never played a larger part in social life, even as their bounds and parameters grow ever fuzzier.
 
 The Frontis engraving from the first edition of Huxley's 1863 "Evidences as to Man's Place in Nature" showing primate skeletons

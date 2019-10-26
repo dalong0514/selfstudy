@@ -18,17 +18,33 @@ In January 2016, Trump infamously declared, “I could stand in the middle of 5t
 
 ## 01. George Conway: Unfit for office
 
-In 2013, three researchers at the University of Colorado at Boulder—Mark Travers, Leaf Van Boven, and Charles Judd—published a paper in the journal Political Psychology entitled “The Secrecy Heuristic.” They gave students two documents, one from the National Security Council and one from the State Department. Half the students were told that the NSC document was classified and that the State Department document was public. Half were told the reverse. And although the classified and nonclassified documents were exactly the same, the students gave more weight to the one they thought was secret. The researchers’ conclusion: There is a secrecy “heuristic”—a mental shortcut that helps people make judgments. “People weigh secret information more heavily than public information when making decisions,” they wrote. A 2004 dissertation on jury behavior found a similar tendency. When judges told jurors to disregard certain information—once it was deemed secret—the jurors gave it more weight.
+In 2013, three researchers at the University of Colorado at Boulder—Mark Travers, Leaf Van Boven, and Charles Judd—published a paper in the journal Political Psychology entitled “The Secrecy Heuristic.” 
+
+They gave students two documents, one from the National Security Council and one from the State Department. Half the students were told that the NSC document was classified and that the State Department document was public. Half were told the reverse. And although the classified and nonclassified documents were exactly the same, the students gave more weight to the one they thought was secret. 
+
+The researchers’ conclusion: There is a secrecy “heuristic”—a mental shortcut that helps people make judgments. “People weigh secret information more heavily than public information when making decisions,” they wrote. 
+
+A 2004 dissertation on jury behavior found a similar tendency. When judges told jurors to disregard certain information—once it was deemed secret—the jurors gave it more weight.
 
 While it’s unlikely Trump has heard of the secrecy heuristic, his comments about murder on Fifth Avenue suggest he grasps it instinctively. He recognizes that people accord less weight to information that nobody bothers to conceal. If shooting someone were that big a deal, the reasoning goes, Trump wouldn’t do it in full public view. The logic works even better when it comes to Trump’s comments about Ukraine and China. Most Americans know murder is against the law. Whether inviting foreign meddling in an American election constitutes a “high crime or misdemeanor,” by contrast, is less well established. By openly inviting such meddling, therefore, Trump sends the message that it’s not that important. If it were, he’d have kept his request a secret.
 
 But brazenness entails more than just a lack of secrecy. It also entails confidence. And here too, there’s ample evidence that Trump’s confidence works to his political benefit.
 
-If people use secrecy as a heuristic to gauge importance, they use confidence as a heuristic to gauge competence. As Cameron Anderson, a professor at UC Berkeley’s Haas School of Business, explained to me, “There is a lot of research showing that when people exhibit confidence, they come across as more competent, intelligent, skilled, and so forth.” The word con man, the Harvard professor and former Obama-administration official Cass Sunstein has noted, is short for confidence man. That’s because “when con men succeed,” Sunstein observes, “it’s usually because they enlist the confidence heuristic. They don’t show any doubts. They act as if they know what they are doing.” Thus, they win people’s trust.
+If people use secrecy as a heuristic to gauge importance, they use confidence as a heuristic to gauge competence. 
+
+As Cameron Anderson, a professor at UC Berkeley’s Haas School of Business, explained to me, “There is a lot of research showing that when people exhibit confidence, they come across as more competent, intelligent, skilled, and so forth.” The word con man, the Harvard professor and former Obama-administration official Cass Sunstein has noted, is short for confidence man. 
+
+That’s because “when con men succeed,” Sunstein observes, “it’s usually because they enlist the confidence heuristic. They don’t show any doubts. They act as if they know what they are doing.” Thus, they win people’s trust.
 
 ## 02. Adam Serwer: The mad king’s enablers 
 
 By openly asking Ukraine and China to investigate a political rival, Trump expressed confidence that he’s doing nothing wrong. And while one might think the majority of Americans would view Trump’s confidence as an outrageous sham, academic evidence suggests that con men can be surprisingly difficult to unmask. In a 2019 article in the Journal of Personality and Social Psychology, researchers at the University of Utah and UC Berkeley noted, “Prior research is split on whether this exposure of overconfidence diminishes a person’s social standing. In some studies, individuals who expressed confidence, and were later revealed to be wrong, lost credibility in the eyes of others … However, in other studies, individuals who were exposed as overconfident were not held liable.” Sometimes confidence men pay a price when they are revealed to be bullshitters. Sometimes they don’t.
+
+
+
+
+
+
 
 The key, the Utah and Berkeley researchers suggest, is whether the con man retains “plausible deniability” in the face of evidence that he has been proved wrong. They note, for instance, that people who express confidence through nonverbal cues—speaking loudly, interrupting others—tend to retain their reputation for competence and good judgment better than those who express confidence through overt claims that can be clearly falsified. But even people who do make specific, falsifiable claims can maintain their plausible deniability in other ways, the researchers note—for instance, by “undermining the expertise or credibility of those reporting the error.”
 
