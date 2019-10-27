@@ -2,6 +2,8 @@
 
 COMMENT  08 OCTOBER 2019
 
+[Comment | Nature](https://www.nature.com/nature/articles?type=comment)
+
 [How science has shifted our sense of identity](https://www.nature.com/articles/d41586-019-03014-4)
 
 Biological advances have repeatedly changed who we think we are, writes Nathaniel Comfort, in the third essay of a series marking Nature’s anniversary on how the past 150 years have shaped science today.
@@ -18,13 +20,9 @@ Huxley’s sunny view — of infinite human progress and triumph, brought about 
 
 I want to suggest that many of the worst chapters of this history result from scientism: the ideology that science is the only valid way to understand the world and solve social problems. Where science has often expanded and liberated our sense of self, scientism has constrained it.
 
-Across the arc of the past 150 years, we can see both science and scientism shaping human identity in many ways. Developmental psychology zeroed in on the intellect, leading to the transformation of IQ (intelligence quotient) from an educational tool into a weapon of social control. Immunology redefined the ‘self’ in terms of ‘non-self’. Information theory provided fresh metaphors that recast identity as residing in a text or a wiring diagram. More recently, cell and molecular studies have relaxed the borders of the self. Reproductive technology, genetic engineering and synthetic biology have made human nature more malleable, epigenetics and microbiology complicate notions of individuality and autonomy, and biotechnology and information technology suggest a world where the self is distributed, dispersed, atomized.
+Across the arc of the past 150 years, we can see both science and scientism shaping human identity in many ways. 
 
-
-
-
-
-
+Developmental psychology zeroed in on the intellect, leading to the transformation of IQ (intelligence quotient) from an educational tool into a weapon of social control. Immunology redefined the ‘self’ in terms of ‘non-self’. Information theory provided fresh metaphors that recast identity as residing in a text or a wiring diagram. More recently, cell and molecular studies have relaxed the borders of the self. Reproductive technology, genetic engineering and synthetic biology have made human nature more malleable, epigenetics and microbiology complicate notions of individuality and autonomy, and biotechnology and information technology suggest a world where the self is distributed, dispersed, atomized.
 
 Individual identities, rooted in biology, have perhaps never played a larger part in social life, even as their bounds and parameters grow ever fuzzier.
 
@@ -33,13 +31,28 @@ Frontispiece to Thomas Henry Huxley’s Evidence as to Man’s Place in Nature (
 
 ## 01. Designs on intelligence
 
-“Methods of scientific precision must be introduced into all educational work, to carry everywhere good sense and light,” wrote the French psychologist Alfred Binet in 19142. A decade earlier, Binet and Théodore Simon developed a series of tests for French schoolchildren to measure what they called ‘mental age’. If a child’s mental age was less than her chronological age, she could receive extra help to catch up. The German psychologist William Stern took the ratio of mental to chronological age, giving what he called the IQ and, theoretically, making it comparable across groups. Meanwhile, Charles Spearman, a British statistician and eugenicist of the Galton school, found a correlation between a child’s performance on different tests. To explain the correlations, he theorized an innate, fixed, underlying quality he called ‘g’, for ‘general intelligence’. Then the American psychologist Henry Goddard, with the eugenicist Charles Davenport whispering in his ear, claimed that low IQ was a simple Mendelian trait. Thus, step by scientistic step, IQ was converted from a measure of a given child’s past performance to a predictor of any child’s future performance.
+“Methods of scientific precision must be introduced into all educational work, to carry everywhere good sense and light,” wrote the French psychologist Alfred Binet in 19142. 
+
+A decade earlier, Binet and Théodore Simon developed a series of tests for French schoolchildren to measure what they called ‘mental age’. If a child’s mental age was less than her chronological age, she could receive extra help to catch up. 
+
+The German psychologist William Stern took the ratio of mental to chronological age, giving what he called the IQ and, theoretically, making it comparable across groups. 
+
+Meanwhile, Charles Spearman, a British statistician and eugenicist of the Galton school, found a correlation between a child’s performance on different tests. To explain the correlations, he theorized an innate, fixed, underlying quality he called ‘g’, for ‘general intelligence’. 
+
+Then the American psychologist Henry Goddard, with the eugenicist Charles Davenport whispering in his ear, claimed that low IQ was a simple Mendelian trait. Thus, step by scientistic step, IQ was converted from a measure of a given child’s past performance to a predictor of any child’s future performance.
 
 IQ became a measure not of what you do, but of who you are — a score for one’s inherent worth as a person. In the Progressive era, eugenicists became obsessed with low intelligence, believing it to be the root of crime, poverty, promiscuity and disease. By the time Adolf Hitler expanded eugenics to cover entire ethnic and cultural groups, tens of thousands of people worldwide had already been yanked from the gene pool, sterilized, institutionalized, or both.
 
 ## 02. Not me
 
 Immunologists took another approach, They located identity in the body, defining it in relational rather than absolute terms: self and non-self. Tissue-graft rejection, allergies and autoimmune reactions could be understood not as a war but as an identity crisis. This was pretty philosophical territory. Indeed, the historian Warwick Anderson has suggested that3 in immunology, biological and social thought have been “mixing promiscuously in a common tropical setting, under the palm trees”.
+
+
+
+
+
+
+
 
 The immunological Plato was the Australian immunologist Frank MacFarlane Burnet. Burnet’s fashioning of immunology as the science of the self was a direct response to his reading of the philosopher Alfred North Whitehead. Tit for tat, social theorists from Jacques Derrida to Bruno Latour and Donna Haraway have leaned on immunological imagery and concepts in theorizing the self in society. The point is that scientific and social thought are deeply entangled, resonant, co-constructed. You can’t fully understand one without the other.
 
