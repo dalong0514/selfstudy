@@ -1,4 +1,5 @@
 # Consciousness Doesn’t Depend on Language
+
 We share the basic experience of life with all mammals.
 
 BY CHRISTOF KOCH
@@ -10,6 +11,11 @@ SEPTEMBER 26, 2019
 ## 01
 
 The contrast could not have been starker—here was one of the world’s most revered figures, His Holiness the Fourteenth Dalai Lama, expressing his belief that all life is sentient, while I, as a card-carrying neuroscientist, presented the contemporary Western consensus that some animals might, perhaps, possibly, share the precious gift of sentience, of conscious experience, with humans.
+
+
+
+
+
 
 The setting was a symposium between Buddhist monk-scholars and Western scientists in a Tibetan monastery in Southern India, fostering a dialogue in physics, biology, and brain science.
 

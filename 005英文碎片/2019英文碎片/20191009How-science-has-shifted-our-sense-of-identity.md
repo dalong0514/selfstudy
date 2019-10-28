@@ -61,19 +61,17 @@ The postwar self became a cipher to be decoded. DNA sequences could be digitized
 
 In the late 1960s and 1970s, critics (including a number of scientists) grew concerned that the new biology could alter what it means to be human. The ethical and social issues raised were “far too important to be left solely in the hands of the scientific and medical communities”, wrote James Watson (of DNA fame and later infamy) in 1971.
 
-
-
-
-
-
-
 In 1978, Patrick Steptoe and Robert Edwards succeeded with human in vitro fertilization, leading to the birth of Louise Brown, the first ‘test-tube baby’. By 1996, human cloning seemed to be around the corner, with the cloning of a sheep that Ian Wilmut and his team named Dolly.
 
-Cloning and genetic engineering have prompted much soul-searching but little soul-finding. There has long been something both terrible and fascinating about the idea of a human-made, perhaps not-quite-person. Would a cloned individual have the same rights as the naturally born? Would a baby conceived or engineered to be a tissue donor be somehow dehumanized? Do we have a right to alter the genes of the unborn? Or, as provocateurs have argued, do we have an obligation to do so? The recent development of potent gene-editing tools such as CRISPR has only made widening participation in such decision-making more urgent.
+Cloning and genetic engineering have prompted much soul-searching but little soul-finding. There has long been something both terrible and fascinating about the idea of a human-made, perhaps not-quite-person. 
+
+Would a cloned individual have the same rights as the naturally born? Would a baby conceived or engineered to be a tissue donor be somehow dehumanized? Do we have a right to alter the genes of the unborn? Or, as provocateurs have argued, do we have an obligation to do so? 
+
+The recent development of potent gene-editing tools such as CRISPR has only made widening participation in such decision-making more urgent.
 
 A macaque undergoing a liver transplant from a pig in China in 2013.Credit: VCG/Getty
 
-Arguments, both pro and con, around engineering humans often lean on an overly deterministic understanding of genetic identity. Scientism can cut both ways. A deep reductionism located human nature inside the cell nucleus. In 1902, the English physician Archibald Garrod had written5 of genetically based “chemical individuality”. In the 1990s, as the first tsunamis of genomic sequence data began to wash up on the shores of basic science, it became obvious that human genetic variation was much more extensive than we had realized. Garrod has become a totem of the genome age.
+Arguments, both pro and con, around engineering humans often lean on an overly deterministic understanding of genetic identity. Scientism can cut both ways. A deep reductionism located human nature inside the cell nucleus. In 1902, the English physician Archibald Garrod had written 5 of genetically based “chemical individuality”. In the 1990s, as the first tsunamis of genomic sequence data began to wash up on the shores of basic science, it became obvious that human genetic variation was much more extensive than we had realized. Garrod has become a totem of the genome age.
 
 By the end of the century, visionaries had begun to tout the coming of ‘personalized medicine’ based on your genome. No more ‘one size fits all’, went the slogan. Instead, diagnostics and therapy would be tailored to you — that is, to your DNA. After the Human Genome Project, the cost of DNA sequencing nosedived, making ‘getting your genome done’ part of mass culture.
 
@@ -85,11 +83,13 @@ But you are not all you — not by a long shot. The DNA-as-blueprint model is ou
 
 Chimaerism can cross the species boundary, too. Human–chimpanzee embryos have been made in the laboratory, and researchers are hard at work trying to grow immune-tolerant human organs in pigs. Genes, proteins and microorganisms stream continuously among almost any life forms living cheek by jowl. John Lennon was right: “I am he as you are he as you are me and we are all together.”
 
-Even in strictly scientific terms, ‘you’ are more than the contents of your chromosomes. The human body contains at least as many non-human cells (mostly bacteria, archaea and fungi) as human ones6. Tens of thousands of microbial species crowd and jostle over and through the body, with profound effects on digestion, complexion, disease resistance, vision and mood. Without them, you don’t feel like you; in fact, you aren’t really you. The biological self has been reframed as a cluster of communities, all in communication with each other.
+Even in strictly scientific terms, ‘you’ are more than the contents of your chromosomes. The human body contains at least as many non-human cells (mostly bacteria, archaea and fungi) as human ones 6. Tens of thousands of microbial species crowd and jostle over and through the body, with profound effects on digestion, complexion, disease resistance, vision and mood. Without them, you don’t feel like you; in fact, you aren’t really you. The biological self has been reframed as a cluster of communities, all in communication with each other.
 
-These, too, cavort promiscuously beneath the palms. Scientists found that they could use a person’s microbiome to identify their sexual partner 86% of the time7. The communities of greatest similarity in cohabiting couples, they found, are on the feet. The thigh microbiome, by contrast, is more closely correlated with your biological sex than with the identity of your partner.
+These, too, cavort promiscuously beneath the palms. Scientists found that they could use a person’s microbiome to identify their sexual partner 86% of the time 7. The communities of greatest similarity in cohabiting couples, they found, are on the feet. The thigh microbiome, by contrast, is more closely correlated with your biological sex than with the identity of your partner.
 
-A body part, a cesspool, a subway car, a classroom — any place with a characteristic community — can be understood as having a genetic identity. In such a community, genetic information passes within and between individual organisms, through sex, predation, infection and horizontal gene transfer. In the past year, studies have shown that the communities of symbiotic microbes in deep-sea mussels become genetically isolated over time, like species. In fungi, genes called Spok (spore-killer) ebb and flow and recombine across species by ‘meiotic drive’, a kind of genomic fast-forward button that permits heritable genetic change to occur fast enough to respond to a rapidly changing environment. The genome, as the geneticist Barbara McClintock said long ago, is a sensitive organ of the cell.
+A body part, a cesspool, a subway car, a classroom — any place with a characteristic community — can be understood as having a genetic identity. In such a community, genetic information passes within and between individual organisms, through sex, predation, infection and horizontal gene transfer. 
+
+In the past year, studies have shown that the communities of symbiotic microbes in deep-sea mussels become genetically isolated over time, like species. In fungi, genes called Spok (spore-killer) ebb and flow and recombine across species by ‘meiotic drive’, a kind of genomic fast-forward button that permits heritable genetic change to occur fast enough to respond to a rapidly changing environment. The genome, as the geneticist Barbara McClintock said long ago, is a sensitive organ of the cell.
 
 Epigenetics dissolves the boundaries of the self even further. Messages coded in the DNA can be modified in many ways — by mixing and matching DNA modules, by capping or hiding bits so that they can’t be read, or by changing the message after it’s been read, its meaning altered in translation. DNA was once taught as a sacred text handed faithfully down the generations. Now, increasing evidence points to the nuclear genome as more of a grab bag of suggestions, tourist phrases, syllables and gibberish that you use and modify as needed. The genome now seems less like the seat of the self and more of a toolkit for fashioning the self. So who is doing the fashioning?
 
@@ -97,7 +97,9 @@ Epigenetics dissolves the boundaries of the self even further. Messages coded in
 
 Brain implants, human–machine interfaces and other neurotechnical devices extend the self into the domain of the ‘universe of things’. Elon Musk’s company Neuralink in San Francisco, California, seeks to make the seamless mind–machine interface — that sci-fi trope — a (virtual) reality. Natural intelligence and artificial intelligence already meet; it’s not far-fetched for them to somehow, someday, meld.
 
-Can the self become not merely extended but distributed? The writer and former Nature editor Philip Ball let researchers sample his skin cells, turn them back into stem cells (with the potential to become any organ) and then culture them into a ‘mini-brain’, neural tissue in a dish that developed electrical firing patterns typical of regions of the brain. Other sci-fi staples, such as growing whole brains in Petri dishes or culturing human organs in farm animals, remain a long way off, but active efforts to achieve them are under way.
+Can the self become not merely extended but distributed? 
+
+The writer and former Nature editor Philip Ball let researchers sample his skin cells, turn them back into stem cells (with the potential to become any organ) and then culture them into a ‘mini-brain’, neural tissue in a dish that developed electrical firing patterns typical of regions of the brain. Other sci-fi staples, such as growing whole brains in Petri dishes or culturing human organs in farm animals, remain a long way off, but active efforts to achieve them are under way.
 
 ## 06. Self control
 
@@ -117,35 +119,28 @@ Nature 574, 167-170 (2019)
 
 ## References
 
-1.
-H. [Huxley, T. H.] Nature 1, 183–184 (1869).
+1. H. [Huxley, T. H.] Nature 1, 183–184 (1869).
 
-ArticleGoogle Scholar
+	ArticleGoogle Scholar
 
-2.
-Binet, A. & Simon, T. Mentally Defective Children (Arnold, 1914).
+2. Binet, A. & Simon, T. Mentally Defective Children (Arnold, 1914).
 
-3.
-Anderson, W. Isis 105, 606–616 (2014).
+3. Anderson, W. Isis 105, 606–616 (2014).
 
-PubMedArticleGoogle Scholar
+	PubMedArticleGoogle Scholar
 
-4.
-Burnet, M. Sci. Am. 191, 74–78 (1954).
+4. Burnet, M. Sci. Am. 191, 74–78 (1954).
 
-ArticleGoogle Scholar
+	ArticleGoogle Scholar
 
-5.
-Garrod, A. E. Lancet 160, 1616–1620 (1902).
+5. Garrod, A. E. Lancet 160, 1616–1620 (1902).
 
-ArticleGoogle Scholar
+	ArticleGoogle Scholar
 
-6.
-Sender, R., Fuchs, S. & Milo, R. Cell 164, 337–340 (2016).
+6. Sender, R., Fuchs, S. & Milo, R. Cell 164, 337–340 (2016).
 
-PubMedArticleGoogle Scholar
+	PubMedArticleGoogle Scholar
 
-7.
-Ross, A. A., Doxey, A. C. & Neufeld, J. D. mSystems 2, e00043-17 (2017).
+7. Ross, A. A., Doxey, A. C. & Neufeld, J. D. mSystems 2, e00043-17 (2017).
 
-PubMedArticleGoogle Scholar
+	PubMedArticleGoogle Scholar
