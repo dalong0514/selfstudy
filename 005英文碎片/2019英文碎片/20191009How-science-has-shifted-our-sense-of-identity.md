@@ -45,24 +45,27 @@ IQ became a measure not of what you do, but of who you are — a score for one�
 
 ## 02. Not me
 
-Immunologists took another approach, They located identity in the body, defining it in relational rather than absolute terms: self and non-self. Tissue-graft rejection, allergies and autoimmune reactions could be understood not as a war but as an identity crisis. This was pretty philosophical territory. Indeed, the historian Warwick Anderson has suggested that3 in immunology, biological and social thought have been “mixing promiscuously in a common tropical setting, under the palm trees”.
+Immunologists took another approach, They located identity in the body, defining it in relational rather than absolute terms: self and non-self. 
 
-
-
-
-
-
-
+Tissue-graft rejection, allergies and autoimmune reactions could be understood not as a war but as an identity crisis. This was pretty philosophical territory. Indeed, the historian Warwick Anderson has suggested that 3 in immunology, biological and social thought have been “mixing promiscuously in a common tropical setting, under the palm trees”.
 
 The immunological Plato was the Australian immunologist Frank MacFarlane Burnet. Burnet’s fashioning of immunology as the science of the self was a direct response to his reading of the philosopher Alfred North Whitehead. Tit for tat, social theorists from Jacques Derrida to Bruno Latour and Donna Haraway have leaned on immunological imagery and concepts in theorizing the self in society. The point is that scientific and social thought are deeply entangled, resonant, co-constructed. You can’t fully understand one without the other.
 
-Later, Burnet was drawn to new metaphors taken from cybernetics and information theory. “It is in the spirit of the times,” he wrote in 19544, to believe there would soon be “a ‘communications theory’ of the living organism.” Indeed there was. In the same period, molecular biologists also became enamoured of information metaphors. After the 1953 solution of the DNA double helix, as the problem of the genetic code took shape, molecular biologists found analogies with information, text and communication irresistible, borrowing words such as ‘transcription’, ‘translation’, ‘messengers’, ‘transfers’ and ‘signalling’. The genome ‘spells’ in an ‘alphabet’ of four letters, and is almost invariably discussed as a text, whether it is a book, manual or parts list. Not coincidentally, these fields grew up alongside computer science and the computing industry.
+Later, Burnet was drawn to new metaphors taken from cybernetics and information theory. “It is in the spirit of the times,” he wrote in 1954 4, to believe there would soon be “a ‘communications theory’ of the living organism.” Indeed there was. 
+
+In the same period, molecular biologists also became enamoured of information metaphors. After the 1953 solution of the DNA double helix, as the problem of the genetic code took shape, molecular biologists found analogies with information, text and communication irresistible, borrowing words such as ‘transcription’, ‘translation’, ‘messengers’, ‘transfers’ and ‘signalling’. The genome ‘spells’ in an ‘alphabet’ of four letters, and is almost invariably discussed as a text, whether it is a book, manual or parts list. Not coincidentally, these fields grew up alongside computer science and the computing industry.
 
 The postwar self became a cipher to be decoded. DNA sequences could be digitized. Its messages could, at least in theory, be intercepted, decoded and programmed. Soon it became hard not to think of human nature in terms of information. By the 1960s, DNA was becoming known as the ‘secret of life’.
 
 ## 03. Many selves
 
 In the late 1960s and 1970s, critics (including a number of scientists) grew concerned that the new biology could alter what it means to be human. The ethical and social issues raised were “far too important to be left solely in the hands of the scientific and medical communities”, wrote James Watson (of DNA fame and later infamy) in 1971.
+
+
+
+
+
+
 
 In 1978, Patrick Steptoe and Robert Edwards succeeded with human in vitro fertilization, leading to the birth of Louise Brown, the first ‘test-tube baby’. By 1996, human cloning seemed to be around the corner, with the cloning of a sheep that Ian Wilmut and his team named Dolly.
 
