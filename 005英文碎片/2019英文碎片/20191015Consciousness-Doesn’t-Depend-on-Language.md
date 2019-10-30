@@ -12,11 +12,6 @@ SEPTEMBER 26, 2019
 
 The contrast could not have been starker—here was one of the world’s most revered figures, His Holiness the Fourteenth Dalai Lama, expressing his belief that all life is sentient, while I, as a card-carrying neuroscientist, presented the contemporary Western consensus that some animals might, perhaps, possibly, share the precious gift of sentience, of conscious experience, with humans.
 
-
-
-
-
-
 The setting was a symposium between Buddhist monk-scholars and Western scientists in a Tibetan monastery in Southern India, fostering a dialogue in physics, biology, and brain science.
 
 Buddhism has philosophical traditions reaching back to the fifth century B.C. It defines life as possessing heat (i.e., a metabolism) and sentience, that is, the ability to sense, to experience, and to act. According to its teachings, consciousness is accorded to all animals, large and small—human adults and fetuses, monkeys, dogs, fish, and even lowly cockroaches and mosquitoes. All of them can suffer; all their lives are precious.
@@ -45,7 +40,9 @@ It is not easy, even for a neuroanatomist armed with a microscope, to distinguis
 
 The human brain is big, but other creatures, such as elephants, dolphins, and whales, have bigger ones. Embarrassingly, some not only have a larger neocortex but also one with twice as many cortical neurons as humans.
 
-Third, the behavior of mammals is kindred to that of people. Take my dog Ruby—she loves to lick the remaining cream off the whisk I use to whip heavy cream by hand—no matter where she is in the house or garden she comes running in as soon as she hears the sounds of the metal wire loops striking the glass. Her behavior tells me that she enjoys the sweet and fatty whipping cream as much as I do; I infer that she has a pleasurable experience. Or when she yelps, whines, gnaws at her paw, limps, and then comes to me, seeking aid: I infer that she’s in pain because under similar conditions I act similarly (sans gnawing). Physiologic measures confirm this inference: dogs, just like people, have an elevated heart rate and blood pressure and release stress hormones into their bloodstream when in pain. Dogs not only experience pain from physical injuries but can also suffer, for example if they are beaten or otherwise abused or when an older pet is separated from its litter mate or its human companion. This is not to argue that dog-pain is identical to people-pain; it is not. But all the evidence is compatible with the supposition that dogs, and other mammals, not only react to noxious stimuli but also experience the awfulness of pain and suffering.
+Third, the behavior of mammals is kindred to that of people. Take my dog Ruby—she loves to lick the remaining cream off the whisk I use to whip heavy cream by hand—no matter where she is in the house or garden she comes running in as soon as she hears the sounds of the metal wire loops striking the glass. Her behavior tells me that she enjoys the sweet and fatty whipping cream as much as I do; I infer that she has a pleasurable experience. Or when she yelps, whines, gnaws at her paw, limps, and then comes to me, seeking aid: I infer that she’s in pain because under similar conditions I act similarly (sans gnawing). 
+
+Physiologic measures confirm this inference: dogs, just like people, have an elevated heart rate and blood pressure and release stress hormones into their bloodstream when in pain. Dogs not only experience pain from physical injuries but can also suffer, for example if they are beaten or otherwise abused or when an older pet is separated from its litter mate or its human companion. This is not to argue that dog-pain is identical to people-pain; it is not. But all the evidence is compatible with the supposition that dogs, and other mammals, not only react to noxious stimuli but also experience the awfulness of pain and suffering.
 
 As I write, the world is witnessing a killer whale carrying her baby calf, born dead, for more than two weeks and a thousand miles across the waters of the Pacific Northwest. As the corpse of the baby orca keeps on falling off and sinking, the mother has to expend considerable energy to dive after it and retrieve it, an astonishing display of maternal grief.
 
@@ -55,13 +52,22 @@ Monkeys, dogs, cats, horses, donkeys, rats, mice, and other mammals can all be t
 
 The most obvious trait that distinguishes humans from other animals is language. Everyday speech represents and communicates abstract symbols and concepts. It is the bedrock of mathematics, science, civilization, and all of our cultural accomplishments.
 
-Many classical scholars assign to language the role of kingmaker when it comes to consciousness. That is, language use is thought to either directly enable consciousness or to be one of the signature behaviors associated with consciousness. This draws a bright line between animals and people. On the far shore of this Rubicon live all creatures, small and large—bees, squids, dogs, and apes; while they have many of the same behavioral and neuronal manifestations of seeing, hearing, smelling, and experiencing pain and pleasure that people have, they have no feelings. They are mere biological machines, devoid of any inner light. On the near shore of this Rubicon lives a sole extant species, Homo sapiens. Somehow, the same sort of biological stuff that makes up the brains of creatures across the river is superadded with sentience (Descartes’s res cogitans or the Christian soul) on this side of the Rubicon.
+Many classical scholars assign to language the role of kingmaker when it comes to consciousness. That is, language use is thought to either directly enable consciousness or to be one of the signature behaviors associated with consciousness. This draws a bright line between animals and people. 
+
+On the far shore of this Rubicon live all creatures, small and large—bees, squids, dogs, and apes; while they have many of the same behavioral and neuronal manifestations of seeing, hearing, smelling, and experiencing pain and pleasure that people have, they have no feelings. They are mere biological machines, devoid of any inner light. 
+
+On the near shore of this Rubicon lives a sole extant species, Homo sapiens. Somehow, the same sort of biological stuff that makes up the brains of creatures across the river is superadded with sentience (Descartes’s res cogitans or the Christian soul) on this side of the Rubicon.
 
 There are other cognitive differences between people and mammals: We can be deliberately cruel.
 
 One of the few remaining contemporary psychologists who denies the evolutionary continuity of consciousness is Euan Macphail. He avers that language and a sense of self are necessary for consciousness. According to him, neither animals nor young children experience anything, as they are unable to speak and have no sense of self—a remarkable conclusion that must endear him to parents and pediatric anesthesiologists everywhere.
 
 What does the evidence suggest? What happens if somebody loses their ability to speak? How does this affect their thinking, sense of self, and their conscious experience of the world? Aphasia is the name given to language disorders caused by limited brain damage, usually but not always to the left cortical hemisphere. There are different forms of aphasia—depending on the location of the damage, it can affect the comprehension of speech or of written text, the ability to properly name objects, the production of speech, its grammar, the severity of the deficit, and so on.
+
+
+
+
+
 
 The neuroanatomist Jill Bolte Taylor rocketed to fame on the strength of her TED Talk and a subsequent bestselling book about her experience while suffering a stroke. At age 37, she suffered a massive bleeding in her left hemisphere. For the next several hours, she became effectively mute. She also lost her inner speech, the unvoiced monologue that accompanies us everywhere, and her right hand became paralyzed. Taylor realized that her verbal utterances did not make any sense and that she couldn’t understand the gibberish of others. She vividly recalls how she perceived the world in images while experiencing the direct effect of her stroke, wondering how to communicate with people. Hardly the actions of an unconscious zombie.
 
