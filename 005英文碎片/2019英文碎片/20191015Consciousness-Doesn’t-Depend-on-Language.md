@@ -64,11 +64,6 @@ One of the few remaining contemporary psychologists who denies the evolutionary 
 
 What does the evidence suggest? What happens if somebody loses their ability to speak? How does this affect their thinking, sense of self, and their conscious experience of the world? Aphasia is the name given to language disorders caused by limited brain damage, usually but not always to the left cortical hemisphere. There are different forms of aphasia—depending on the location of the damage, it can affect the comprehension of speech or of written text, the ability to properly name objects, the production of speech, its grammar, the severity of the deficit, and so on.
 
-
-
-
-
-
 The neuroanatomist Jill Bolte Taylor rocketed to fame on the strength of her TED Talk and a subsequent bestselling book about her experience while suffering a stroke. At age 37, she suffered a massive bleeding in her left hemisphere. For the next several hours, she became effectively mute. She also lost her inner speech, the unvoiced monologue that accompanies us everywhere, and her right hand became paralyzed. Taylor realized that her verbal utterances did not make any sense and that she couldn’t understand the gibberish of others. She vividly recalls how she perceived the world in images while experiencing the direct effect of her stroke, wondering how to communicate with people. Hardly the actions of an unconscious zombie.
 
 Two objections to Taylor’s compelling personal story is that her narrative can’t be directly verified—she suffered the stroke at home, alone—and that she reconstructed these events months and years after the actual episode. Consider then the singular case of a 47-year-old man with an arteriovenous malformation in his brain that triggered minor sensory seizures. As part of his medical workup, regions in his left cerebral hemisphere were anesthetized by a local injection. This led to a dense aphasia, lasting for about 10 minutes, during which he was unable to name animals, answer simple yes/no questions, or describe pictures. When asked to write down immediately afterward what he recalled, it became apparent that he was cognizant of what was happening:
@@ -79,7 +74,9 @@ He correctly recalled that he saw a picture of a tennis racket, recognized it fo
 
 The belief that only humans experience anything is preposterous, a remnant of an atavistic desire.
 
-There is ample evidence from split-brain patients that consciousness can be preserved in the nonspeaking cortical hemisphere, usually the right one. These are patients whose corpus callosum has been surgically cut to prevent aberrant electrical activity from spreading from one to the other hemisphere. Almost half a century of research demonstrates that these patients have two conscious minds. Each cortical hemisphere has its own mind, each with its own peculiarities. The left cortex supports normal linguistic processing and speech; the right hemisphere is nearly mute but can read whole words and, in some cases at least, can understand syntax and produce simple speech and song.
+There is ample evidence from split-brain patients that consciousness can be preserved in the nonspeaking cortical hemisphere, usually the right one. These are patients whose corpus callosum has been surgically cut to prevent aberrant electrical activity from spreading from one to the other hemisphere. 
+
+Almost half a century of research demonstrates that these patients have two conscious minds. Each cortical hemisphere has its own mind, each with its own peculiarities. The left cortex supports normal linguistic processing and speech; the right hemisphere is nearly mute but can read whole words and, in some cases at least, can understand syntax and produce simple speech and song.
 
 It could be countered that language is necessary for the proper development of consciousness but that once this has taken place, language is no longer needed to experience. This hypothesis is difficult to address comprehensively, as it would require raising a child under severe social deprivation.
 
