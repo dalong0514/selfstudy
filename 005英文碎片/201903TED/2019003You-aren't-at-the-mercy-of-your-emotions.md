@@ -52,9 +52,20 @@ But actually, under the hood, your brain is predicting. It's using past experien
 
 That might be someone who is a remorseless killer, but a stone-faced stare might also mean that someone is stoically accepting defeat,  which is in fact what Chechen culture prescribes for someone in Dzhokhar Tsarnaev's situation. 
 
+So the lesson here is that emotions that you seem to detect in other people actually come in part from what's inside your own head. And this is true in the courtroom, but is also true in the classroom, in the bedroom, and in the boardroom. 
 
-7.00min
+And so here's my concern: tech companies which shall remain nameless... well, maybe not. You know , Google, Facebook... are spending millions of research dollars to built emotion-detection systems, and they are fundamentally asking the wrong question, because they're trying to detect emotions in the face and the body, but emotions aren't in your face and body. Physical mvements have no intrinsic emotional meaning. We have to make them meaningful. A human or something else has to connect to the context, and makes them meaningful. That's how we know that a smile might mean sadness a cry might mean happiness, and a stoic, still face might mean that you are angrily plotting the demise of your enemy. 
 
+Now, if I haven't already gone out on a limb, I'll just edge out on that limb a little further and tell you that the way that you experience your own emotion is exactly the same process. Your brain is basically making predictions, gussess, that it's constructing in the moment  with billions of neurons working together. 
 
+Now your brain does come prewired to make some feelings, simple feelings that come from the physiology of your body. So when you're born, you can make feelings like calmness and agitation, excitement, comfort, discomfort. But these simple feelings are not emotions. They're actually with you every waking moment of your life. They are simple summaries of what's going on inside your body, kind of like a barometer. But they have very little detail, and you need that detail to know what to do next. What do you about these feelings? And so how does your brain give you that detail? Well, that's what predictions are. 
+
+Predictions link the sensations in your body that give you these simple feelings with what's going on around you in the world so that you know what to do. 
+
+And somtimes, those constructions are emotions. So for example, if you were to walk into a bakery, your brain might predict that you will encounter that delicious aroma of freshly baked chocolate chip cookies. I know my brain would predict the delicious aroma of freshly baked chocolate chip cookies. And our brains might cause our stomachs to churn a little bit, to prepare for eating those cookies. And if we are correct, if in fact some cookies have just come out of the oven, then our brains will have constructed hunger, and we are prepared to much down those cookies and digest them in a very efficient way, meaning that we can eat a lot of them, which would be a really good thing. You guys are not laughing enough I'm totally serious. 
+
+But here's the thing. 
+
+10.40min
 
 
