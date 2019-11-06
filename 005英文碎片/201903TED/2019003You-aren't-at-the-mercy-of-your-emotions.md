@@ -64,8 +64,28 @@ Predictions link the sensations in your body that give you these simple feelings
 
 And somtimes, those constructions are emotions. So for example, if you were to walk into a bakery, your brain might predict that you will encounter that delicious aroma of freshly baked chocolate chip cookies. I know my brain would predict the delicious aroma of freshly baked chocolate chip cookies. And our brains might cause our stomachs to churn a little bit, to prepare for eating those cookies. And if we are correct, if in fact some cookies have just come out of the oven, then our brains will have constructed hunger, and we are prepared to much down those cookies and digest them in a very efficient way, meaning that we can eat a lot of them, which would be a really good thing. You guys are not laughing enough I'm totally serious. 
 
-But here's the thing. 
+But here's the thing. That chruning stomach, if it occurs in a different situation, it can have a completely different meaning. So if your brain were to predict a churning stomach in, say, a hospital room while you're waiting for test results, then your brain will be constructing dread or worry or anxiety, and it might cause you to, maybe, wring your hands or take a deep breath or even cry. 
 
-10.40min
+Right? Same physical sensation, same churning stomach, different experience.  
+
+**And so the lesson here is that emotions which seem to happen to you are actually made by you.**
+
+You are not at the mercy of mythical emotion circuits which are buried deep inside some ancient part of your brain. You have more control over your emotions than you think you do. I don't mean that you can just snap your fingers an change how you feel the way that you would change your clothes, but your brain is wired so that if you change the ingredients that your brain uses to make emotion, then you can transform emotional life. So if you change those ingredients today, you're basically teaching your brain how to predict differently tomorrow, and this is what I call being the architect of your experience. 
+
+**An architect of your experience. **
+
+So here's an example. All of us here have had a nervous feeling before a test, right? But some people experience crippling anxiety before  a test. They have test anxiety. Based on past experiences of taking tests, their brains predict a hammering heartbeat, so much so that they are unable to actually take the test. They don't perform well, and sometimes they not only fail courses but they actually might fail college. 
+
+But here's the thing: a hammering heartbeat is not necessarily anxiety. It could be that your body is preparing to do battle and ace that test ... or, you know, give a talk in front of hundreds of people on a stage where you're being filmed. 
+
+I'm serious. 
+
+And research shows that when students learn to make this kind of energized determination instead of anxiety, they perform better on tests. And that determination seeds their brain to predict differently in the future, so that they can get their butterflies flying in formation. And if they do that often enough, they not only can pass a test but it will be easier for them to pass their courses, and they might even finish college, which has a huge impact on their future earning potential. So I call this emotional intelligence in action. 
+
+
+
+
+
+14.00min
 
 

@@ -8,20 +8,22 @@ COMMENT  22 OCTOBER 2019
 
 Four years after the first issue of Nature was published, the US National Academy of Sciences (NAS) faced an existential crisis. In October 1873, one of its original members demanded the expulsion of another member for swindling. Josiah Whitney, California’s state geologist, accused Benjamin Silliman Jr, professor of applied chemistry at Yale University in New Haven, Connecticut, of accepting large sums from California oil companies in return for favourable, possibly fraudulent, science. Silliman responded forcefully that company funding for science was evidence of responsibility, not misconduct: companies needed objective “technical opinions”. Without science, swindling would be more common, he argued.
 
+NAS president Joseph Henry, secretary of the Smithsonian Institution and a former consultant to Samuel F. B. Morse, inventor of the telegraph, had to agree. If the NAS expelled every member who had ever consulted for a private company, it would not survive. Henry rejected the efforts to remove Silliman. More importantly, he resolved to expand the NAS membership; new members were to be judged on the basis of their research, not on the source of their income 1. By the 1870s, it was already clear that industry relied on science.
 
+The Silliman-Whitney controversy marked a watershed in the relationship between science and industry. For US scientists, as well as many in Britain and Europe, private companies had become valuable patrons, supplying both funds for research and problems to be researched, and were gainful employers who provided short-term commissions. Likewise, companies regarded scientists and their findings as profitable to the development of their respective industries.
 
+Over the next 150 years, relations between science and industry continued to evolve — in four significant stages. 
 
-
-
-NAS president Joseph Henry, secretary of the Smithsonian Institution and a former consultant to Samuel F. B. Morse, inventor of the telegraph, had to agree. If the NAS expelled every member who had ever consulted for a private company, it would not survive. Henry rejected the efforts to remove Silliman. More importantly, he resolved to expand the NAS membership; new members were to be judged on the basis of their research, not on the source of their income1. By the 1870s, it was already clear that industry relied on science.
-
-The Silliman–Whitney controversy marked a watershed in the relationship between science and industry. For US scientists, as well as many in Britain and Europe, private companies had become valuable patrons, supplying both funds for research and problems to be researched, and were gainful employers who provided short-term commissions. Likewise, companies regarded scientists and their findings as profitable to the development of their respective industries.
-
-Over the next 150 years, relations between science and industry continued to evolve — in four significant stages. Scientists moved from part-time consultants to full-time corporate researchers, and then to academic entrepreneurs. Industry grew from a scattering of local businesses to a concentration of large companies, and on to multinational corporations with global reach. Although these transformations might seem symbiotic, and even inevitable, the very fact that US scientists and industries emerged as leaders and exemplars (in terms of employment, funding, publishing, patenting and innovating) serves as a cautionary reminder of the contingent nature of such developments.
+Scientists moved from part-time consultants to full-time corporate researchers, and then to academic entrepreneurs. Industry grew from a scattering of local businesses to a concentration of large companies, and on to multinational corporations with global reach. Although these transformations might seem symbiotic, and even inevitable, the very fact that US scientists and industries emerged as leaders and exemplars (in terms of employment, funding, publishing, patenting and innovating) serves as a cautionary reminder of the contingent nature of such developments.
 
 ## Consultancy (1820–80)
 
 At the heart of the NAS crisis was an essential tension in the relations between science and industry: can the pursuit of knowledge be corrupted by the pursuit of profit? To Whitney and his allies, the answer was obviously yes. Their ‘pure’ science needed to be practised in places protected from the profit motive, such as government agencies or well-endowed universities. Silliman and supporters of ‘applied’ science, by contrast, believed the interactions between science and industry to be mutually advantageous. Indeed, the emergence of a distinct kind of endeavour called applied science characterized a new era in which research would address more and more industrial concerns, and private enterprise would, ideally, become a steady supporter of that work2.
+
+
+
+
+
 
 The profession of scientific consulting goes back to the early nineteenth century, when individuals or groups of capitalists occasionally commissioned scientists to examine prospects in farming, mining, transportation (canals and railroads) and manufacturing. These fee-for-expertise engagements were short term and advisory. By the 1870s, changes in US commercial law (similar to those in British and European law) allowed the formation of limited-liability, joint-stock companies. These businesses, with their large pools of funds and numerous shareholders looking for investment assurances, regularly consulted scientists. As the engagements became both more routine (continuous testing and analysing of existing products and processes) and more investigative, scientists began to receive lucrative contracts and retainers1.
 
@@ -130,72 +132,57 @@ doi: 10.1038/d41586-019-03172-5
 
 ## References
 
-1.
-Lucier, P. Scientists and Swindlers: Consulting on Coal and Oil in America, 1820–1890 (Johns Hopkins Univ. Press, 2008).
+1. Lucier, P. Scientists and Swindlers: Consulting on Coal and Oil in America, 1820–1890 (Johns Hopkins Univ. Press, 2008).
 
-2.
-Bud, R. Isis 103, 515–563 (2012).
+2. Bud, R. Isis 103, 515–563 (2012).
 
-PubMedArticleGoogle Scholar
-3.
-Homburg, E. Isis 109, 565–576 (2018).
+	PubMedArticleGoogle Scholar
 
-ArticleGoogle Scholar
-4.
-Israel, P. Edison: A Life of Invention (Wiley, 1998).
+3. Homburg, E. Isis 109, 565–576 (2018).
 
-5.
-Mowery, D. C. & Rosenberg, N. Technology and the Pursuit of Economic Growth (Cambridge Univ. Press, 1989).
+	ArticleGoogle Scholar
 
-6.
-Hounshell, D. A. & Kenly Smith Jr, J. Science and Corporate Strategy: DuPont R&D, 1902–1980 (Cambridge Univ. Press, 1988).
+4. Israel, P. Edison: A Life of Invention (Wiley, 1998).
 
-7.
-Reich, L. S. The Making of American Industrial Research: Science and Business at GE and Bell, 1876–1926 (Cambridge Univ. Press, 1985).
+5. Mowery, D. C. & Rosenberg, N. Technology and the Pursuit of Economic Growth (Cambridge Univ. Press, 1989).
 
-8.
-Usselman, S. W. in The Oxford Encyclopedia of the History of American Science, Medicine, and Technology (ed. Slotten, H. R.) Vol. II, 369–387 (Oxford Univ. Press, 2014).
+6. Hounshell, D. A. & Kenly Smith Jr, J. Science and Corporate Strategy: DuPont R&D, 1902–1980 (Cambridge Univ. Press, 1988).
 
-9.
-Backhouse. R. E. & Maas, H. Isis 108, 82–106 (2017).
+7. Reich, L. S. The Making of American Industrial Research: Science and Business at GE and Bell, 1876–1926 (Cambridge Univ. Press, 1985).
 
-PubMedArticleGoogle Scholar
-10.
-Grandin, K., Wormbs, N. & Widmalm, S. (eds) The Science-Industry Nexus: History, Policy, Implications (Science History Publications, 2004).
+8. Usselman, S. W. in The Oxford Encyclopedia of the History of American Science, Medicine, and Technology (ed. Slotten, H. R.) Vol. II, 369–387 (Oxford Univ. Press, 2014).
 
-11.
-Knowles, S. G. & Leslie, S. W. Isis 92, 1–33 (2001).
+9. Backhouse. R. E. & Maas, H. Isis 108, 82–106 (2017).
 
-PubMedArticleGoogle Scholar
-12.
-Clarke, S. H., Lamoreaux, N. R. & Usselman, S. W. (eds) The Challenge of Remaining Innovative: Insights from Twentieth Century American Business (Stanford Business Books, 2009).
+	PubMedArticleGoogle Scholar
 
-13.
-Landes, D. S. The Unbound Prometheus: Technological Change and Industrial Development in Western Europe from 1750 to the Present (Cambridge Univ. Press, 1969).
+10. Grandin, K., Wormbs, N. & Widmalm, S. (eds) The Science-Industry Nexus: History, Policy, Implications (Science History Publications, 2004).
 
-14.
-Hounshell, D. A. in Engines of Innovation: U.S. Industrial Research at the End of an Era (eds Rosenbloom, R. S. & Spencer, W. J.) 13–85 (Harvard Business School Press, 1996).
+11. Knowles, S. G. & Leslie, S. W. Isis 92, 1–33 (2001).
 
-15.
-National Science Board. Science and Engineering Indicators 2008 Vol. 1, 6-35–6-36 (National Science Foundation, 2008).
+	PubMedArticleGoogle Scholar
 
-16.
-Mowery, D. C., Nelson, R. R., Sampat, B. & Ziedonis, A. Ivory Tower and Industrial Innovation: University–Industry Technology Transfer Before and After the Bayh–Dole Act (Stanford Univ. Press, 2004).
+12. Clarke, S. H., Lamoreaux, N. R. & Usselman, S. W. (eds) The Challenge of Remaining Innovative: Insights from Twentieth Century American Business (Stanford Business Books, 2009).
 
-17.
-Pisano, G. P. Science Business: The Promise, the Reality, and the Future of Biotech (Harvard Business School Press, 2006).
+13. Landes, D. S. The Unbound Prometheus: Technological Change and Industrial Development in Western Europe from 1750 to the Present (Cambridge Univ. Press, 1969).
 
-18.
-Chesbrough, H. Open Innovation: The New Imperative for Creating and Profiting from Technology (Harvard Business School Press, 2003).
+14. Hounshell, D. A. in Engines of Innovation: U.S. Industrial Research at the End of an Era (eds Rosenbloom, R. S. & Spencer, W. J.) 13–85 (Harvard Business School Press, 1996).
 
-19.
-Mowery, D. C. Ind. Corp. Change 18, 1–50 (2009).
+15. National Science Board. Science and Engineering Indicators 2008 Vol. 1, 6-35–6-36 (National Science Foundation, 2008).
 
-ArticleGoogle Scholar
-20.
-Arora, A., Belenzon, S. & Patacconi, A. Ind. Corp. Change 28, 289–307 (2019).
+16. Mowery, D. C., Nelson, R. R., Sampat, B. & Ziedonis, A. Ivory Tower and Industrial Innovation: University–Industry Technology Transfer Before and After the Bayh–Dole Act (Stanford Univ. Press, 2004).
 
-ArticleGoogle Scholar
-21.
-Mirowski, P. Science-Mart: Privatizing American Science (Harvard Univ. Press, 2011).
+17. Pisano, G. P. Science Business: The Promise, the Reality, and the Future of Biotech (Harvard Business School Press, 2006).
+
+18. Chesbrough, H. Open Innovation: The New Imperative for Creating and Profiting from Technology (Harvard Business School Press, 2003).
+
+19. Mowery, D. C. Ind. Corp. Change 18, 1–50 (2009).
+
+	ArticleGoogle Scholar
+
+20. Arora, A., Belenzon, S. & Patacconi, A. Ind. Corp. Change 28, 289–307 (2019).
+
+	ArticleGoogle Scholar
+
+21. Mirowski, P. Science-Mart: Privatizing American Science (Harvard Univ. Press, 2011).
 
