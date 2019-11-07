@@ -1,6 +1,6 @@
-# 提问有令人意外的力量
+# The Surprising Power of Questions
 
-The Surprising Power of Questions
+
 Alison Wood BrooksLeslie K. John
 FROM THE MAY–JUNE 2018 ISSUE
  SUMMARY  SAVE  SHARE COMMENT  TEXT SIZE  PRINT 8.95 BUY COPIES

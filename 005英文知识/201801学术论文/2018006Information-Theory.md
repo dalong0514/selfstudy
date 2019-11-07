@@ -144,10 +144,9 @@ There are 512 pages in a book. If I tell you I am reading page 317, I have commu
  What are some examples of noise that you experienced as you read this chapter?
 Can you think of a recent phone call where your communication goal wasn’t the reduction of uncertainty? 
  
+## A SECOND LUCK
 
-A SECOND LUCK
-
-Recommended resource:Norbert Wiener, The Human Use of Human Beings, Avon, New York, 1967.
+Recommended resource: Norbert Wiener, The Human Use of Human Beings, Avon, New York, 1967.
 
 Comprehensive statement: Claude Shannon and Warren Weaver, The Mathematical Theory of Communication, University of Illinois, Urbana, 1949.
 
