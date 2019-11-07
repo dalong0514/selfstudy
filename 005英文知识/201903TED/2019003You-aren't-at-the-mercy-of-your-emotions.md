@@ -72,7 +72,7 @@ Right? Same physical sensation, same churning stomach, different experience.
 
 You are not at the mercy of mythical emotion circuits which are buried deep inside some ancient part of your brain. You have more control over your emotions than you think you do. I don't mean that you can just snap your fingers an change how you feel the way that you would change your clothes, but your brain is wired so that if you change the ingredients that your brain uses to make emotion, then you can transform emotional life. So if you change those ingredients today, you're basically teaching your brain how to predict differently tomorrow, and this is what I call being the architect of your experience. 
 
-**An architect of your experience. **
+**An architect of your experience.**
 
 So here's an example. All of us here have had a nervous feeling before a test, right? But some people experience crippling anxiety before  a test. They have test anxiety. Based on past experiences of taking tests, their brains predict a hammering heartbeat, so much so that they are unable to actually take the test. They don't perform well, and sometimes they not only fail courses but they actually might fail college. 
 
@@ -82,10 +82,24 @@ I'm serious.
 
 And research shows that when students learn to make this kind of energized determination instead of anxiety, they perform better on tests. And that determination seeds their brain to predict differently in the future, so that they can get their butterflies flying in formation. And if they do that often enough, they not only can pass a test but it will be easier for them to pass their courses, and they might even finish college, which has a huge impact on their future earning potential. So I call this emotional intelligence in action. 
 
+Now you can cultivate this emotional intelligence yourself and use it in your everyday life. So just, you know, imagine waking up in the morning. I'm sure you've had this experience. I konw I have. You wake up and as you're emerging into consciousness, you feel this horrible dread, you know, this real wretchedness, and immediately, your mind starts to race. You start to think about all the crap that you have to do at work and you have that mountain of email which you will never dig yourself out of ever, the phone calls you have to return, and that important meeting across town, and you're going to have to fight traffic, you'll be late picking your kids up, your dog is sick, and what are you going to make for dinner?
 
+Oh my God. What's wrong with your life? What's wrong with my life? 
 
+That mind racing is prediction. Your brain is searching to find an explanation for those sensations in your body that you experience as wretchedness, just like you did with the blobby image. So your brain is trying to explain what caused those sensations so that you konw what to do about them. 
 
+But those sensations might not be an indication that anything is wrong with your life. They might have a purely physical cause. Maybe you're tired. Maybe you didn't sleep enough. Maybe you're hungry. Maybe you're dehydrated. 
 
-14.00min
+The next time that you feel intense distress, ask yourself: Could this have a purely physical cause? Is it possible that you can transform emotional suffering into just mere physical discomfort? 
 
+Now I am not suggesting to you that you can just perform a couple of Jedi mind tricks and talk yourself out of being depressed or anxious or any kind of serious condition. But I am telling you that you have more control over your emotions than you might imagine, and that you have the capacity to turn down the dial on emotional suffering and its consequences for your life by learing how to construct your experiences differently. 
 
+And all of us can do this and with a little practices, we can get really good at it, like driving. At first, it takes a lot of effort, but eventually it becoms pretty automatic. Now I don't know about you, but I find this to be a really empowering and inspiring message, and the fact that it's backed up by decades of research makes me also happy as a scientist. 
+
+But I have to also warn you that it does come with some fine print, because more control also means more responsibility. If you are not at the mercy of mythical emotion circuits which are buried deep inside your brain somewhere and which trigger automatically, then who's responsible, who is responsible when you behave badly? You are. 
+
+Not because you're culpable for your emotions, but because the actions and the experiences that you make today because your brain's predictions for tomorrow. Sometimes we are responsible for something not because we're to blame but because we're the only ones who can change it. 
+
+Now responsibility is a big word. It's so big, in fact, that somtimes people feel the need to resist the scientific evidence that emotions are built and not built in. The idea that we are responsible for our own emotions seems very hard to swallow. But what I'm suggesting to you is you don't have to choke on that idea. You just take a deep breath, maybe get yourself a glass of water if you need to, and embrace it. Embrace that responsibility, because it is the path to a healthier body, a more just and informed legal system, and  a more flexible and potent emotional life. 
+
+Thank you. 
