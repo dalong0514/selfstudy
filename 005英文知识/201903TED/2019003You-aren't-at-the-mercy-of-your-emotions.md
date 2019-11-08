@@ -1,4 +1,10 @@
-# You aren't at the mercy of your emotions
+# 2019003. You aren't at the mercy of your emotions
+
+## Memory Time
+
+2019-11-08
+
+## Content
 
 Lisa Feldman Barrett
 
@@ -54,15 +60,19 @@ That might be someone who is a remorseless killer, but a stone-faced stare might
 
 So the lesson here is that emotions that you seem to detect in other people actually come in part from what's inside your own head. And this is true in the courtroom, but is also true in the classroom, in the bedroom, and in the boardroom. 
 
-And so here's my concern: tech companies which shall remain nameless... well, maybe not. You know , Google, Facebook... are spending millions of research dollars to built emotion-detection systems, and they are fundamentally asking the wrong question, because they're trying to detect emotions in the face and the body, but emotions aren't in your face and body. Physical mvements have no intrinsic emotional meaning. We have to make them meaningful. A human or something else has to connect to the context, and makes them meaningful. That's how we know that a smile might mean sadness a cry might mean happiness, and a stoic, still face might mean that you are angrily plotting the demise of your enemy. 
+And so here's my concern: tech companies which shall remain nameless... well, maybe not. You know , Google, Facebook... are spending millions of research dollars to built emotion-detection systems, and they are fundamentally asking the wrong question, because they're trying to detect emotions in the face and the body, but emotions aren't in your face and body. 
+
+Physical movements have no intrinsic emotional meaning. We have to make them meaningful. A human or something else has to connect to the context, and makes them meaningful. That's how we know that a smile might mean sadness a cry might mean happiness, and a stoic, still face might mean that you are angrily plotting the demise of your enemy. 
 
 Now, if I haven't already gone out on a limb, I'll just edge out on that limb a little further and tell you that the way that you experience your own emotion is exactly the same process. Your brain is basically making predictions, gussess, that it's constructing in the moment  with billions of neurons working together. 
 
 Now your brain does come prewired to make some feelings, simple feelings that come from the physiology of your body. So when you're born, you can make feelings like calmness and agitation, excitement, comfort, discomfort. But these simple feelings are not emotions. They're actually with you every waking moment of your life. They are simple summaries of what's going on inside your body, kind of like a barometer. But they have very little detail, and you need that detail to know what to do next. What do you about these feelings? And so how does your brain give you that detail? Well, that's what predictions are. 
 
-Predictions link the sensations in your body that give you these simple feelings with what's going on around you in the world so that you know what to do. 
+Predictions link the sensations in your body that give you these simple feelings with what's going on around you in the world so that you know what to do. And somtimes, those constructions are emotions. 
 
-And somtimes, those constructions are emotions. So for example, if you were to walk into a bakery, your brain might predict that you will encounter that delicious aroma of freshly baked chocolate chip cookies. I know my brain would predict the delicious aroma of freshly baked chocolate chip cookies. And our brains might cause our stomachs to churn a little bit, to prepare for eating those cookies. And if we are correct, if in fact some cookies have just come out of the oven, then our brains will have constructed hunger, and we are prepared to much down those cookies and digest them in a very efficient way, meaning that we can eat a lot of them, which would be a really good thing. You guys are not laughing enough I'm totally serious. 
+So for example, if you were to walk into a bakery, your brain might predict that you will encounter that delicious aroma of freshly baked chocolate chip cookies. I know my brain would predict the delicious aroma of freshly baked chocolate chip cookies. And our brains might cause our stomachs to churn a little bit, to prepare for eating those cookies. And if we are correct, if in fact some cookies have just come out of the oven, then our brains will have constructed hunger, and we are prepared to much down those cookies and digest them in a very efficient way, meaning that we can eat a lot of them, which would be a really good thing. 
+
+You guys are not laughing enough I'm totally serious. 
 
 But here's the thing. That chruning stomach, if it occurs in a different situation, it can have a completely different meaning. So if your brain were to predict a churning stomach in, say, a hospital room while you're waiting for test results, then your brain will be constructing dread or worry or anxiety, and it might cause you to, maybe, wring your hands or take a deep breath or even cry. 
 
@@ -70,11 +80,15 @@ Right? Same physical sensation, same churning stomach, different experience.
 
 **And so the lesson here is that emotions which seem to happen to you are actually made by you.**
 
-You are not at the mercy of mythical emotion circuits which are buried deep inside some ancient part of your brain. You have more control over your emotions than you think you do. I don't mean that you can just snap your fingers an change how you feel the way that you would change your clothes, but your brain is wired so that if you change the ingredients that your brain uses to make emotion, then you can transform emotional life. So if you change those ingredients today, you're basically teaching your brain how to predict differently tomorrow, and this is what I call being the architect of your experience. 
+You are not at the mercy of mythical emotion circuits which are buried deep inside some ancient part of your brain. You have more control over your emotions than you think you do. 
+
+I don't mean that you can just snap your fingers an change how you feel the way that you would change your clothes, but your brain is wired so that if you change the ingredients that your brain uses to make emotion, then you can transform emotional life. So if you change those ingredients today, you're basically teaching your brain how to predict differently tomorrow, and this is what I call being the architect of your experience. 
 
 **An architect of your experience.**
 
-So here's an example. All of us here have had a nervous feeling before a test, right? But some people experience crippling anxiety before  a test. They have test anxiety. Based on past experiences of taking tests, their brains predict a hammering heartbeat, so much so that they are unable to actually take the test. They don't perform well, and sometimes they not only fail courses but they actually might fail college. 
+So here's an example. All of us here have had a nervous feeling before a test, right? 
+
+But some people experience crippling anxiety before  a test. They have test anxiety. Based on past experiences of taking tests, their brains predict a hammering heartbeat, so much so that they are unable to actually take the test. They don't perform well, and sometimes they not only fail courses but they actually might fail college. 
 
 But here's the thing: a hammering heartbeat is not necessarily anxiety. It could be that your body is preparing to do battle and ace that test ... or, you know, give a talk in front of hundreds of people on a stage where you're being filmed. 
 
@@ -82,7 +96,9 @@ I'm serious.
 
 And research shows that when students learn to make this kind of energized determination instead of anxiety, they perform better on tests. And that determination seeds their brain to predict differently in the future, so that they can get their butterflies flying in formation. And if they do that often enough, they not only can pass a test but it will be easier for them to pass their courses, and they might even finish college, which has a huge impact on their future earning potential. So I call this emotional intelligence in action. 
 
-Now you can cultivate this emotional intelligence yourself and use it in your everyday life. So just, you know, imagine waking up in the morning. I'm sure you've had this experience. I konw I have. You wake up and as you're emerging into consciousness, you feel this horrible dread, you know, this real wretchedness, and immediately, your mind starts to race. You start to think about all the crap that you have to do at work and you have that mountain of email which you will never dig yourself out of ever, the phone calls you have to return, and that important meeting across town, and you're going to have to fight traffic, you'll be late picking your kids up, your dog is sick, and what are you going to make for dinner?
+Now you can cultivate this emotional intelligence yourself and use it in your everyday life. 
+
+So just, you know, imagine waking up in the morning. I'm sure you've had this experience. I konw I have. You wake up and as you're emerging into consciousness, you feel this horrible dread, you know, this real wretchedness, and immediately, your mind starts to race. You start to think about all the crap that you have to do at work and you have that mountain of email which you will never dig yourself out of ever, the phone calls you have to return, and that important meeting across town, and you're going to have to fight traffic, you'll be late picking your kids up, your dog is sick, and what are you going to make for dinner?
 
 Oh my God. What's wrong with your life? What's wrong with my life? 
 
@@ -98,8 +114,14 @@ And all of us can do this and with a little practices, we can get really good at
 
 But I have to also warn you that it does come with some fine print, because more control also means more responsibility. If you are not at the mercy of mythical emotion circuits which are buried deep inside your brain somewhere and which trigger automatically, then who's responsible, who is responsible when you behave badly? You are. 
 
-Not because you're culpable for your emotions, but because the actions and the experiences that you make today because your brain's predictions for tomorrow. Sometimes we are responsible for something not because we're to blame but because we're the only ones who can change it. 
+Not because you're culpable for your emotions, but because the actions and the experiences that you make today because your brain's predictions for tomorrow. 
 
-Now responsibility is a big word. It's so big, in fact, that somtimes people feel the need to resist the scientific evidence that emotions are built and not built in. The idea that we are responsible for our own emotions seems very hard to swallow. But what I'm suggesting to you is you don't have to choke on that idea. You just take a deep breath, maybe get yourself a glass of water if you need to, and embrace it. Embrace that responsibility, because it is the path to a healthier body, a more just and informed legal system, and  a more flexible and potent emotional life. 
+Sometimes we are responsible for something not because we're to blame but because we're the only ones who can change it. 
+
+Now responsibility is a big word. It's so big, in fact, that somtimes people feel the need to resist the scientific evidence that emotions are built and not built in. The idea that we are responsible for our own emotions seems very hard to swallow. 
+
+But what I'm suggesting to you is you don't have to choke on that idea. You just take a deep breath, maybe get yourself a glass of water if you need to, and embrace it. 
+
+Embrace that responsibility, because it is the path to a healthier body, a more just and informed legal system, and  a more flexible and potent emotional life. 
 
 Thank you. 
