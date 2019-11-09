@@ -1,4 +1,4 @@
-# Zotero（1）：文献管理软件Zotero基础及进阶示范
+# Zotero1：文献管理软件 Zotero 基础及进阶示范
 阳志平的网志
 
 原文链接：[Zotero（1）：文献管理软件Zotero基础及进阶示范 - 阳志平的网志](https://www.yangzhiping.com/tech/zotero1.html)
@@ -13,7 +13,7 @@ Endnote Mac 版：07、08 年慢慢转到 Mac 下，不得不抛弃 [NoteExpress
 
 在 Mac 下，先后试用与比较过 [Papers2] 与 [mendeley]。但是因为种种原因，最终还是回到 Zotero 下。有感于国内对这么一款极其优秀的开源软件非常不了解，特别介绍它的入门与进阶知识。
 
-## 01. 注册Zotero新账号并下载：
+## 01. 注册 Zotero 新账号并下载：
 
 登陆 https://www.zotero.org/user/register/，注册一个自己的 Zotero 账号，请特别记住，username 会直接生成个性域名，别乱起，未来会有些不方便。
 
@@ -25,7 +25,7 @@ http://www.zotero.org/download/
 
 下载之后安装默认提示一路安装。
 
-## 02. 配置Zotero
+## 02. 配置 Zotero
 
 打开 Zotero，找到 [首选项] 或偏好：
 
@@ -91,7 +91,7 @@ http://book.douban.com/subject/1065156/
 
 嗯？这次保存下来的为什么与上次的不太一样！多了个快照？点击看看！原来这是[Zotero]软件的另一个强大而贴心的功能，它自动将网页的快照拍摄下来了。这样，未来这个网页消失了，我们的资讯还没丢失！
 
-## 05. 导入Google学术
+## 05. 导入 Google 学术
 
 一次一次导入一篇，并不是学术研究时的常见现象。更常见的是，批量导入多篇。让我们以 Google 学术库为例。打开 Google 学术库，我们输入检索关键词，[netlogo]，一个网络仿真常用软件。
 
@@ -146,13 +146,13 @@ http://scholar.google.com/scholar?q=netlogo&btnG=&hl=zh-CN&as_sdt=0%2C5
 
 小提醒：不过这么整理还是略微有些麻烦，笔者正在想办法，将[Zotero]与[Mou]、[Evernote]的配合更智能化。
 
-## 07. 导入Endnote数据库
+## 07. 导入 Endnote 数据库
 
 好的，我们有大量的文献是使用其它文献管理软件管理的，怎么导入？以最流行、最常用的[Endnote]为例。选择 File=>Export，如下图所示，记得一定要将导出风格选为：Endnote Export：
 
 然后，导出的文本文件，直接导入到[Zotero]中即可，更复杂的导入方法，可以参考各类教程。
 
-## 08. 导入PDF文档
+## 08. 导入 PDF 文档
 
 有不少之前下载好的 PDF 文献，尤其是一些本来是从学术数据库下载的文献，它们支持 PDF 元数据功能，这样就非常省事，可以直接拖到[Zotero]中来，然后会自动将其文献信息识别出来。
 
@@ -160,7 +160,7 @@ http://scholar.google.com/scholar?q=netlogo&btnG=&hl=zh-CN&as_sdt=0%2C5
 
 就自动根据 PDF 元数据生成相关文献信息了：
 
-## 09. Zotero进阶示例：文献可视化
+## 09. Zotero 进阶示例：文献可视化
 
 在上面这个导入例子中，我们用的是同事的一篇学位论文的参考文献库，研究的主题是青少年与社会网络分析。我们尝试对这些文献进行可视化分析。
 
@@ -180,7 +180,7 @@ http://scholar.google.com/scholar?q=netlogo&btnG=&hl=zh-CN&as_sdt=0%2C5
 
 我们可以清晰地发现，我同事的学位论文中，引用的文献聚焦在：青少年吸烟、社会网络、同辈群体、关系等主题上。
 
-## 10. Zotero更多资源
+## 10. Zotero 更多资源
 
 Zotero还有更多进阶玩法，在这里不展开讲了。各位感兴趣的敬请查阅资料：
 

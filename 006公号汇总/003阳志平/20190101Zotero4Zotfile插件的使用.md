@@ -1,4 +1,4 @@
-# Zotero（4）：Zotero之Zotfile插件的使用
+# Zotero4：Zotero 之 Zotfile 插件的使用
 
 阳志平的网志
 
@@ -51,3 +51,4 @@ http://www.columbia.edu/~jpl2136/zotfile.html#tablet
 最新的: April 12, 2013
 
 © 2019 阳志平. 技术来自于 Jekyll & Minimal Mistakes.
+
