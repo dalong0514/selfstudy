@@ -1,8 +1,7 @@
-# Zotero4：Zotero 之 Zotfile 插件的使用
+# Zotero4：Zotero之Zotfile插件的使用
+> 2013-04-12
 
-阳志平的网志
-
-原文链接：[Zotero（4）：Zotero之Zotfile插件的使用 - 阳志平的网志](https://www.yangzhiping.com/tech/zotero4.html)
+[Zotero（4）：Zotero之Zotfile插件的使用 - 阳志平的网志](https://www.yangzhiping.com/tech/zotero4.html)
 
 有友邻反映 dropbox 读出来的是凌乱的目录路径，比如一连串字符，导致在平板电脑上阅读不方便。
 
@@ -18,13 +17,15 @@ http://www.jlegewie.com/zotfile.html
 
 然后安装好 Zotfile 插件。安装好了，重启 Zotero，设置参数：
 
-设置你日常下载pdf的路径，让它监视你的PDF下载文件夹：
+设置你日常下载 pdf 的路径，让它监视你的PDF下载文件夹：
 
 然后关键步骤到了！设置平板电脑参数：
 
 启动支持平板电脑的参数，设置之前创建的 dropbox 目录：
 
 /Users/ouyang/Dropbox/zotero/tablet
+
+/Users/Daglas/Dropbox/tablet
 
 好的。完成了。
 
@@ -34,9 +35,11 @@ Karpicke_Roediger_2008_The Critical Importance of Retrieval for Learning.pdf
 
 这是作者名-发表年份-论文名的自动重命名。
 
+1『批量选中文件后，右键 >> Manage Attachments >> Rename Attachments』
+
 同样，全选之后，发送到 Tablets，就会将这些 PDF 文件发送到一个单独的 tablets 目录下面：
 
-然后在iPad或者安卓平板里面，打开 dropbox下面的 tablets 目录即可。使用[Notability]等之前介绍过的 PDF 批注软件，正常批注即可。
+然后在 iPad 或者安卓平板里面，打开 dropbox下面的 tablets 目录即可。使用 [Notability] 等之前介绍过的 PDF 批注软件，正常批注即可。
 
 如下图所示：
 
@@ -44,7 +47,7 @@ Karpicke_Roediger_2008_The Critical Importance of Retrieval for Learning.pdf
 
 以上步骤的英文解说参见：
 
-http://www.columbia.edu/~jpl2136/zotfile.html#tablet
+[ZotFile - Advanced PDF management for Zotero](http://zotfile.com/)
 
 正好 Dropbox 中文版近日发布，祝大家使用愉快。
 
