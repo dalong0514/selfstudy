@@ -99,7 +99,7 @@ http://scholar.google.com/scholar?q=netlogo&btnG=&hl=zh-CN&as_sdt=0%2C5
 
 我们发现，这次浏览器的图标变成一个文件夹！这就意味着，有多篇文献识别出来，需要保存。
 
----
+1『
 
 发现访问不了 Google 学术库，报错：
 
@@ -116,9 +116,9 @@ http://scholar.google.com/scholar?q=netlogo&btnG=&hl=zh-CN&as_sdt=0%2C5
 
 进 chorme 的设置>>高级>>网站设置>>受保护的内容，里面的都关掉。重启浏览器。
 
-方法 2 还是没有解决。
+方法 2 还是没有解决。最后是通过换个 VPS 服务器解决的。
 
----
+』
 
 点击文件夹图标，然后弹出对话窗口，我们挑选一篇引用率排第一、带 PDF 文档的保存下来：
 
