@@ -16,26 +16,21 @@ Over the next 150 years, relations between science and industry continued to evo
 
 Scientists moved from part-time consultants to full-time corporate researchers, and then to academic entrepreneurs. Industry grew from a scattering of local businesses to a concentration of large companies, and on to multinational corporations with global reach. Although these transformations might seem symbiotic, and even inevitable, the very fact that US scientists and industries emerged as leaders and exemplars (in terms of employment, funding, publishing, patenting and innovating) serves as a cautionary reminder of the contingent nature of such developments.
 
-## Consultancy (1820–80)
+## 01. Consultancy (1820–80)
 
-At the heart of the NAS crisis was an essential tension in the relations between science and industry: can the pursuit of knowledge be corrupted by the pursuit of profit? To Whitney and his allies, the answer was obviously yes. Their ‘pure’ science needed to be practised in places protected from the profit motive, such as government agencies or well-endowed universities. Silliman and supporters of ‘applied’ science, by contrast, believed the interactions between science and industry to be mutually advantageous. Indeed, the emergence of a distinct kind of endeavour called applied science characterized a new era in which research would address more and more industrial concerns, and private enterprise would, ideally, become a steady supporter of that work2.
+At the heart of the NAS crisis was an essential tension in the relations between science and industry: can the pursuit of knowledge be corrupted by the pursuit of profit? To Whitney and his allies, the answer was obviously yes. Their ‘pure’ science needed to be practised in places protected from the profit motive, such as government agencies or well-endowed universities. Silliman and supporters of ‘applied’ science, by contrast, believed the interactions between science and industry to be mutually advantageous. Indeed, the emergence of a distinct kind of endeavour called applied science characterized a new era in which research would address more and more industrial concerns, and private enterprise would, ideally, become a steady supporter of that work 2.
 
-
-
-
-
-
-The profession of scientific consulting goes back to the early nineteenth century, when individuals or groups of capitalists occasionally commissioned scientists to examine prospects in farming, mining, transportation (canals and railroads) and manufacturing. These fee-for-expertise engagements were short term and advisory. By the 1870s, changes in US commercial law (similar to those in British and European law) allowed the formation of limited-liability, joint-stock companies. These businesses, with their large pools of funds and numerous shareholders looking for investment assurances, regularly consulted scientists. As the engagements became both more routine (continuous testing and analysing of existing products and processes) and more investigative, scientists began to receive lucrative contracts and retainers1.
+The profession of scientific consulting goes back to the early nineteenth century, when individuals or groups of capitalists occasionally commissioned scientists to examine prospects in farming, mining, transportation (canals and railroads) and manufacturing. These fee-for-expertise engagements were short term and advisory. By the 1870s, changes in US commercial law (similar to those in British and European law) allowed the formation of limited-liability, joint-stock companies. These businesses, with their large pools of funds and numerous shareholders looking for investment assurances, regularly consulted scientists. As the engagements became both more routine (continuous testing and analysing of existing products and processes) and more investigative, scientists began to receive lucrative contracts and retainers 1.
 
 In the United States, geologists were among the most active consultants during the Gilded Age, a period of rapid economic growth from the 1870s to the 1890s, especially in precious-metal mining in the area west of the Mississippi River. In Britain and Germany, the most prolific consultants were chemists, because of their essential expertise in new products such as acids, soaps, paints and especially synthetic dyes, including mauve and alizarin. Consulting chemists also found themselves in prominent public roles as expert witnesses in sensational patent cases. Witness-box quarrelling among chemists made good newspaper copy, and it highlighted profound developments in the chemical industries. Changes in patent law in the United States, Britain and Germany allowed inventors to claim those new chemical products and processes as their intellectual property (IP) instead of judging them to be scientific discoveries, which were, by definition, unpatentable.
 
-## Industry (1880–1940)
+## 02. Industry (1880–1940)
 
 At the turn of the twentieth century, the independent consulting scientist was replaced by the salaried researcher in new industrial laboratories. These labs represented the incorporation of applied science; that is, the creation of a separate place within the organization for ‘research and development’ — a phrase that entered the lexicon at this time.
 
-In Germany, the largest dye companies, such as Bayer, Hoechst and BASF, were the first to establish dedicated labs for chemical research. These were connected to production departments, also staffed by university-trained chemists, and to specialized legal departments, from which the new products and processes were submitted for patenting. This type of industrialized invention, with close connections between German academic chemistry and company labs, was firmly established before the First World War3.
+In Germany, the largest dye companies, such as Bayer, Hoechst and BASF, were the first to establish dedicated labs for chemical research. These were connected to production departments, also staffed by university-trained chemists, and to specialized legal departments, from which the new products and processes were submitted for patenting. This type of industrialized invention, with close connections between German academic chemistry and company labs, was firmly established before the First World Warb 3.
 
-In the United States, the prototype for the industrial research lab appeared in the electrical industry, when inventor Thomas Edison set up an ‘invention factory’ in Menlo Park, New Jersey, in 1876. Edison wanted to replace what had been an unpredictable act of creative genius with a regular and reliable system. He recruited machinists, mechanics, chemists, physicists and mathematicians to work on technical problems connected to telegraphy and electric lighting. Although their efforts were collaborative, only the ‘Wizard of Menlo Park’ (the singular inventor) was listed on more than 1,000 US patents, including those for the phonograph (1878) and electric light bulb (1880)4.
+In the United States, the prototype for the industrial research lab appeared in the electrical industry, when inventor Thomas Edison set up an ‘invention factory’ in Menlo Park, New Jersey, in 1876. Edison wanted to replace what had been an unpredictable act of creative genius with a regular and reliable system. He recruited machinists, mechanics, chemists, physicists and mathematicians to work on technical problems connected to telegraphy and electric lighting. Although their efforts were collaborative, only the ‘Wizard of Menlo Park’ (the singular inventor) was listed on more than 1,000 US patents, including those for the phonograph (1878) and electric light bulb (1880) 4.
 
 The looming expiration of that original light-bulb patent and the threat from other lighting companies impelled General Electric (GE), the corporation that took over Edison’s Electric Light Company and all his patents, to establish the aptly named Research Laboratory in 1900 in Schenectady, New York. This proved profitable within a decade — commercially, with the invention of a new light bulb that restored GE to its dominant market position, and professionally, with the recruitment of more than 250 engineers and scientists.
 
@@ -47,30 +42,25 @@ This remarkable proliferation reflected the massive scale of vertically integrat
 
 During the Great Depression, critics singled out modern big business for its ruinous consequences to society — unemployment, overproduction and bankruptcy. Having research in thrall to industry raised the alarm, again, that capitalism corrupted science. So corporate captains and R&D directors marshalled the cornucopia of wondrous consumer products (‘technology’ in the new parlance) created by their science-based industries. In this story, science in industry was good; it guaranteed efficacy, efficiency and safety. In words that nineteenth-century consulting scientists would have understood, consumers could trust these modern technologies (and their corporations) because of the R&D.
 
-At the World’s Fair in New York City in 1939, industry paraded the fruits of its science. The Radio Corporation of America (RCA) introduced consumers to the television. International Business Machines (IBM) showed off its electric typewriter. GE exhibited its new electrical refrigeration system, and DuPont, under its banner “Better Things for Better Living through Chemistry”, showcased a synthetic fibre called nylon6.
+1『重点观点：Having research in thrall to industry raised the alarm, again, that capitalism corrupted science. 』
+
+At the World’s Fair in New York City in 1939, industry paraded the fruits of its science. The Radio Corporation of America (RCA) introduced consumers to the television. International Business Machines (IBM) showed off its electric typewriter. GE exhibited its new electrical refrigeration system, and DuPont, under its banner “Better Things for Better Living through Chemistry”, showcased a synthetic fibre called nylon 6.
 
 Fears of corporate corruption of science were put to rest by awards of the Nobel prize. In 1931, two Germans, Carl Bosch and Friedrich Bergius, became the first industrial researchers to win in chemistry. The next year, GE’s Irving Langmuir won the chemistry prize, and in 1937, Clinton J. Davisson of Bell Telephone Laboratories (Bell Labs) won a share of the Nobel Prize in Physics.
 
-The largest research facility in the United States was Bell Labs, established in 1925 in New York City to consolidate the R&D arm of AT&T and Western Electric, its telephone-manufacturing arm. The labs had around 3,600 staff members and a budget in excess of US$12 million. (GE allocated less than $2 million to its Research Laboratory.) The first president of Bell Labs was the physicist Frank Jewett. In 1939, he became the first industrial scientist to be president of the NAS7.
+The largest research facility in the United States was Bell Labs, established in 1925 in New York City to consolidate the R&D arm of AT&T and Western Electric, its telephone-manufacturing arm. The labs had around 3,600 staff members and a budget in excess of US $12 million. (GE allocated less than $ 2 million to its Research Laboratory.) The first president of Bell Labs was the physicist Frank Jewett. In 1939, he became the first industrial scientist to be president of the NAS 7.
 
 In short, national standing and international acclaim seemed to confirm that science done under the auspices of industry was equal to science in universities or governments. Still, industrial labs of the 1920s and 1930s were not simply universities without students. As institutions of applied science, they always needed to show corporate headquarters their value in terms of profitable products and processes.
 
-ESSAY SERIES: LESSONS FROM THE PAST FOR THE FUTURE OF RESEARCH
-Read more of this collection published to mark Nature’s 150th anniversary, in which leading historians explore how the past century and a half has forged some of the defining features of today’s scientific system.
-
-We ignore the past at our peril
-
-Government: Discovery is always political
-
-China: How science made a superpower
-
-Identity: How advances have repeatedly changed who we think we are
-
-Data: From objects to assets
-
-## Military (1940–80)
+## 03. Military (1940–80)
 
 By the time the New York World’s Fair closed in October 1940, Europe was already at war. The United States entered in December 1941, and the Second World War transformed the relationship between science and industry, along with the very terms — and even the history — of those relations.
+
+
+
+
+
+
 
 The prime mover in all those changes was the US military and the unprecedented amounts of money it allocated — through new forms of contracting and subcontracting — to scientific research. During the war, the Office of Scientific Research and Development, under its director Vannevar Bush, signed more than 2,300 research contracts, worth roughly dollar 350 million, with more than 140 academic institutions and 320 companies. About two-thirds of that funding went to universities; the Massachusetts Institute of Technology (MIT) in Cambridge, for example, received more than dollar 200 million for its Radiation Laboratory for research on radar. Corporate R&D also received unrivalled amounts: AT&T was allocated dollar 16 million, GE dollar 8 million and RCA, DuPont and Westinghouse between dollar 5 million and dollar 6 million each8.
 
@@ -96,7 +86,7 @@ With its emphasis on basic science as the necessary prerequisite to any future t
 
 It was not to last.
 
-## Outsourcing (1980 on)
+## 04. Outsourcing (1980 on)
 
 Corporate investment in basic science had been sustained by dominant positions in international markets. AT&T, DuPont, IBM, Kodak and Xerox held more than 80% market shares in their respective core businesses. Then the oil shocks of the 1970s, combined with widespread stagflation (high inflation, slow growth), weakened the US and European economies. Global competition increased, especially from Japanese and South Korean firms. In the early 1980s, growing free trade squeezed profit margins even further.
 

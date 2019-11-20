@@ -40,12 +40,6 @@ That’s because “when con men succeed,” Sunstein observes, “it’s usuall
 
 By openly asking Ukraine and China to investigate a political rival, Trump expressed confidence that he’s doing nothing wrong. And while one might think the majority of Americans would view Trump’s confidence as an outrageous sham, academic evidence suggests that con men can be surprisingly difficult to unmask. In a 2019 article in the Journal of Personality and Social Psychology, researchers at the University of Utah and UC Berkeley noted, “Prior research is split on whether this exposure of overconfidence diminishes a person’s social standing. In some studies, individuals who expressed confidence, and were later revealed to be wrong, lost credibility in the eyes of others … However, in other studies, individuals who were exposed as overconfident were not held liable.” Sometimes confidence men pay a price when they are revealed to be bullshitters. Sometimes they don’t.
 
-
-
-
-
-
-
 The key, the Utah and Berkeley researchers suggest, is whether the con man retains “plausible deniability” in the face of evidence that he has been proved wrong. They note, for instance, that people who express confidence through nonverbal cues—speaking loudly, interrupting others—tend to retain their reputation for competence and good judgment better than those who express confidence through overt claims that can be clearly falsified. But even people who do make specific, falsifiable claims can maintain their plausible deniability in other ways, the researchers note—for instance, by “undermining the expertise or credibility of those reporting the error.”
 
 Trump, according to people who study body language, expresses an enormous amount of nonverbal self-confidence. In addition, his promises are often vague and thus hard to concretely disprove. But these tendencies would be less valuable if he did not also relentlessly “undermine the expertise or credibility” of those people and institutions—journalists, judges, bureaucrats, members of Congress, whistle-blowers, inspectors general, the special counsel—who expose his facts or judgments as having been in error.
