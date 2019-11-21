@@ -150,3 +150,4 @@ Excerpted from Artificial You: AI and the Future of Your Mind by Susan Schneider
 1. Solon, O. Elon Musk says humans must become cyborgs to stay relevant. Is he right? The Guardian (2017).
 
 2. Sawyer, R. Mindscan Tor, New York, NY (2005).
+
