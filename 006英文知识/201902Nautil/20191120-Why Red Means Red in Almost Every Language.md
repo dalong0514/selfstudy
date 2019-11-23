@@ -30,7 +30,6 @@ Kay and Berlin took these commonalities as evidence that our conception of color
 
 图图
 
-
 WHAT’S IN A NAME?: When shown a wheel of similarly colored squares, people identify the offbeat shade more quickly if it comes from a different color category (as shown in the wheel on the left) than if it comes from the same category (as shown on the right). This effect suggests that the words we use to describe colors influences how we perceive them.Gilbert, A.L., Reiger, T., Kay, P., & Ivry, R.B. Whorf hypothesis is supported in the right visual field but not the left. Proceedings of the National Academy of Sciences 103, 489–494 (2006).
 
 ## 02
@@ -81,11 +80,7 @@ This hypothesis may help resolve the old debate that Kay and Berlin kindled. But
 
 The answer may explain not only the perplexities of color but why we parcel the world in the ways that we do—why we create races and castes and genders and sexual orientations; why the Himba have only five basic color terms but many words for the various hide patterns of their livestock. Color is a “testing ground” for the human experience, Franklin says. It is much more than just the bands of a rainbow.
 
-
-
 Chelsea Wald writes about science and the environment in Vienna, Austria. Follow her on Twitter @chelseawald.
-
-
 
 ## References
 
@@ -110,7 +105,5 @@ Chelsea Wald writes about science and the environment in Vienna, Austria. Follow
 10. Xiao, Y., Kavanau, C., Bertin, L., & Kaplan, E. The biological basis of a universal constraint on color naming: Cone contrasts and the two-way categorization of colors. PLoS One (2011). Retrieved from DOI: 10.1371/journal.pone.0024994
 
 11. Franklin, A., et al. Categorical perception of color is lateralized to the right hemisphere in infants, but to the left hemisphere in adults. Proceedings of the National Academy of Sciences 105, 3221-3225 (2008).
-
-
 
 This article was originally published in our “Color” issue in July, 2015.

@@ -1,6 +1,8 @@
 # How Smart, Connected Products Are Transforming Companies
-Michael E. PorterJames E. Heppelmann
+Michael E. Porter James E. Heppelmann
 From the October 2015 Issue
+
+收藏于「Zotero >> Scientist」里的「Michael E. Porter」
 
 [How Smart, Connected Products Are Transforming Companies 2015](https://hbr.org/2015/10/how-smart-connected-products-are-transforming-companies)
 
