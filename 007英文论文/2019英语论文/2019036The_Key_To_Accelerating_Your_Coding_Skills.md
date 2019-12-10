@@ -29,7 +29,7 @@ Debugging error messages is incredibly important. The fact of the matter is, err
 
 In the tutorial phase, you will follow instruction. At first, you’ll find it challenging to follow instructions and error messages will happen frequently. Over time, you’ll develop the skill to debug errors and pay better attention to small details, and you’ll be able to make progress much quicker. As you’re wrapping up the tutorial phase, you’ll notice you’re able to write code at a much more rapid pace.
 
-At this point, some people feel confident– like they’re ready to ditch the training wheels and start building things without structured guidance– and will happily dive into the deep end. Other students will reach for more tutorials, trying to obtain more domain-specific knowledge in search of a “full understanding.” Unfortunately, tutorials will only take you so far, and true confidence isn’t found in tutorials or guides. True confidence comes from struggling through a problem you have no idea how to solve, and discovering a solution on your own.
+At this point, some people feel confident – like they’re ready to ditch the training wheels and start building things without structured guidance – and will happily dive into the deep end. Other students will reach for more tutorials, trying to obtain more domain-specific knowledge in search of a “full understanding.” Unfortunately, tutorials will only take you so far, and true confidence isn’t found in tutorials or guides. True confidence comes from struggling through a problem you have no idea how to solve, and discovering a solution on your own.
 
 The dirty little secret of programming is…
 

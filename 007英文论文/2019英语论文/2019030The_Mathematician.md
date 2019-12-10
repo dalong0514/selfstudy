@@ -1,10 +1,17 @@
-# The Mathematician
+## The Mathematician
 > Von Neumann: The Mathematician
+
+[Von Neumann: "The Mathematician"](http://mathshistory.st-andrews.ac.uk/Extras/Von_Neumann_Part_1.html)
 
 John von Neumann wrote The Mathematician which was published in Works of the Mind Vol. I no. 1 (University of Chicago Press, Chicago, 1947), 180-196. It has also been published in von Neumann's Collected Works.
 
-A discussion of the nature of intellectual work is a difficult task in any field, even in fields which are not so far removed from the central area of our common human intellectual effort as mathematics still is. A discussion of the nature of any intellectual effort is difficult per se - at any rate, more difficult than the mere exercise of that particular intellectual effort. It is harder to understand the mechanism of an airplane, and the theories of the forces which lift and which propel it, than merely to ride in it, to be elevated and transported by it - or even to steer it. It is exceptional that one should be able to acquire the understanding of a process without having previously acquired a deep familiarity with running it, with using it, before one has assimilated it in an instinctive and empirical way.
+A discussion of the nature of intellectual work is a difficult task in any field, even in fields which are not so far removed from the central area of our common human intellectual effort as mathematics still is. A discussion of the nature of any intellectual effort is difficult per seat any rate, more difficult than the mere exercise of that particular intellectual effort. It is harder to understand the mechanism of an airplane, and the theories of the forces which lift and which propel it, than merely to ride in it, to be elevated and transported by it - or even to steer it. It is exceptional that one should be able to acquire the understanding of a process without having previously acquired a deep familiarity with running it, with using it, before one has assimilated it in an instinctive and empirical way.
+
 Thus any discussion of the nature of intellectual effort in any field is difficult, unless it presupposes an easy, routine familiarity with that field. In mathematics this limitation becomes very severe, if the discussion is to be kept on a non-mathematical plane. The discussion will then necessarily show some very bad features; points which are made can never be properly documented, and a certain over-all superficiality of the discussion becomes unavoidable.
+
+
+
+
 
 I am very much aware of these shortcomings in what I am going to say, and I apologize in advance. Besides, the views which I am going to express are probably not wholly shared by many other mathematicians - you will get one man's not-too-well systematized impressions and interpretations - and I can give you only very little help in deciding how much they are to the point.
 
@@ -35,14 +42,15 @@ In analyzing the variability of the concept of mathematical rigour, I wish to la
 See The Mathematician Part 2 for the next part of this article.
 
 JOC/EFR March 2006
-The URL of this page is:
-http://www-history.mcs.st-andrews.ac.uk/Extras/Von_Neumann_Part_1.html
 
-Von Neumann: The Mathematician Part 2
+## Von Neumann: The Mathematician Part 2
+
+[Von Neumann: "The Mathematician" Part 2](http://mathshistory.st-andrews.ac.uk/Extras/Von_Neumann_Part_2.html)
+
 John von Neumann wrote The Mathematician which was published in Works of the Mind Vol. I no. 1 (University of Chicago Press, Chicago, 1947), 180-196. It has also been published in von Neumann's Collected Works.
 
-
 See The Mathematician Part 1 for the earlier part of this article.
+
 However, I do not want to press this matter further. I will turn instead to a perfectly clear-cut case, the controversy about the "foundations of mathematics." In the late nineteenth and the early twentieth centuries a new branch of abstract mathematics, G Cantor's theory of sets, led into difficulties. That is, certain reasonings led to contradictions; and, while these reasonings were not in the central and "useful" part of set theory, and always easy to spot by certain formal criteria, it was nevertheless not clear why they should be deemed less set-theoretical than the "successful" parts of the theory. Aside from the ex post insight that they actually led into disaster, it was not clear what a priori motivation, what consistent philosophy of the situation, would permit one to segregate them from those parts of set theory which one wanted to save. A closer study of the merita of the case, undertaken mainly by Russell and Weyl, and concluded by Brouwer, showed that the way in which not only set theory but also most of modem mathematics used the concepts of "general validity" and of "existence" was philosophically objectionable. A system of mathematics which was free of these undesirable traits, "intuitionism," was developed by Brouwer. In this system the difficulties and contradiction of set theory did not arise. However, a good fifty per cent of modern mathematics, in its most vital - and up to then unquestioned - parts, especially in analysis, were also affected by this "purge": they either became invalid or had to be justified by very complicated subsidiary considerations. And in this latter process one usually lost appreciably in generality of validity and elegance of deduction. Nevertheless, Brouwer and Weyl considered it necessary that the concept of mathematical rigour be revised according to these ideas.
 
 It is difficult to overestimate the significance of these events. In the third decade of the twentieth century two mathematicians-both of them of the first magnitude, and as deeply and fully conscious of what mathematics is, or is for, or is about, as anybody could be-actually proposed that the concept of mathematical rigour, of what constitutes an exact proof, should be changed! The developments which followed are equally worth noting.
@@ -76,5 +84,3 @@ I think that it is a relatively good approximation to truth - which is much too 
 In any event, whenever this stage is reached, the only remedy seems to me to be the rejuvenating return to the source: the re-injection of more or less directly empirical ideas. I am convinced that this was a necessary condition to conserve the freshness and the vitality of the subject and that this will remain equally true in the future.
 
 JOC/EFR March 2006
-The URL of this page is:
-http://www-history.mcs.st-andrews.ac.uk/Extras/Von_Neumann_Part_2.html
