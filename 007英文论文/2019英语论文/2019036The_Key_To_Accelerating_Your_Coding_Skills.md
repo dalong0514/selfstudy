@@ -1,4 +1,4 @@
-# The Key To Accelerating Your Coding Skills
+# 2019036. The Key To Accelerating Your Coding Skills
 KEN MAZAIKA 2015
 
 [The Key to Accelerating Your Skills While You Learn to Code](http://blog.thefirehoseproject.com/posts/learn-to-code-and-be-self-reliant/)
@@ -155,14 +155,10 @@ It can be frustrating to have no idea if something will take you 5 minutes or 5 
 
 The final stage of the inflection point process is acceptance. Acceptance that software development is a process of continuous learning. Acceptance that the feeling that you’ve successfully learned everything just means you should start thinking about solving more complicated problems.
 
-Have you experienced the inflection point yet? Share this post and start a conversation with your friends– you would be surprised how many people have reached and surpassed this moment.
+Have you experienced the inflection point yet? Share this post and start a conversation with your friends – you would be surprised how many people have reached and surpassed this moment.
 
 ## AUTHOR
 
 Ken Mazaika
 
 Ken Mazaika is the CTO and co-founder at Firehose. Previously, he was a tech lead at WHERE.com (acquired by PayPal) and a member of the PayPal/eBay development team in Boston.
-
-
-
-
