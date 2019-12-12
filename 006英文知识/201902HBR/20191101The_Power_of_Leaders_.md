@@ -6,6 +6,8 @@ APRIL 16, 2018
 
 UPDATED APRIL 20, 2018
 
+[A Short Guide to Building Your Team’s Critical Thinking Skills](https://hbr.org/2019/10/a-short-guide-to-building-your-teams-critical-thinking-skills)
+
 In front of a packed room of MIT students and alumni, Vivienne Ming is holding forth in a style all her own. “Embrace cyborgs,” she calls out, as she clicks to a slide that raises eyebrows even in this techsmitten crowd. “Really. Fifteen to 25 years from now, cognitive neuroprosthetics will fundamentally change the definition of what it means to be human.”
 
 She’s referring to the work that interests her most these days, as cofounder of machine learning company Socos and a visiting scholar at UC Berkeley’s Center for Theoretical Neuroscience. (“So can I literally jam things in your brain and make you smarter? If you’re curious, the answer is unambiguously yes.”) But the talk has covered a lot more than this, as Ming has touched on many initiatives and startups she’s been involved with, all solving problems at the intersection of advanced technology, learning, and labor economics.

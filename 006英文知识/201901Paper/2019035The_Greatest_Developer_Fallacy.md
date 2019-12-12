@@ -1,4 +1,5 @@
 # The Greatest Developer Fallacy Or The Wisest Words You’ll Ever Hear?
+
 07/02/2011  1598 words  8 min read
 
 [The Greatest Developer Fallacy Or The Wisest Words You’ll Ever Hear? - Skorks](file:///Users/Daglas/Dropbox/zotero/storage/S7BVPN3N/the-greatest-developer-fallacy-or-the-wisest-words-youll-ever-hear.html)

@@ -1,4 +1,5 @@
 # Information Theory
+
 of Claude Shannon & Warren Weaver
 
 (From the Third  Edition of A First Look at Communication Theory by Em Griffin, © 1997, McGraw-Hill, Inc. This text-only version of the article appears on the World Wide Web site www.afirstlook.com. The text version does not contain any figures. A facsimile of the original article, which includes all figures,  is also available in PDF format.)

@@ -1,4 +1,4 @@
-# 2019033-How Smart, Connected Products Are Transforming Companies
+# How Smart, Connected Products Are Transforming Companies
 Michael E. Porter James E. Heppelmann
 From the October 2015 Issue
 

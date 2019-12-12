@@ -1,4 +1,4 @@
-# 2019036. The Key To Accelerating Your Coding Skills
+# The Key To Accelerating Your Coding Skills
 KEN MAZAIKA 2015
 
 [The Key to Accelerating Your Skills While You Learn to Code](http://blog.thefirehoseproject.com/posts/learn-to-code-and-be-self-reliant/)
