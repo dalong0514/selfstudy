@@ -7,11 +7,12 @@ John von Neumann wrote The Mathematician which was published in Works of the Min
 
 A discussion of the nature of intellectual work is a difficult task in any field, even in fields which are not so far removed from the central area of our common human intellectual effort as mathematics still is. A discussion of the nature of any intellectual effort is difficult per seat any rate, more difficult than the mere exercise of that particular intellectual effort. It is harder to understand the mechanism of an airplane, and the theories of the forces which lift and which propel it, than merely to ride in it, to be elevated and transported by it - or even to steer it. It is exceptional that one should be able to acquire the understanding of a process without having previously acquired a deep familiarity with running it, with using it, before one has assimilated it in an instinctive and empirical way.
 
+
+
+
+
+
 Thus any discussion of the nature of intellectual effort in any field is difficult, unless it presupposes an easy, routine familiarity with that field. In mathematics this limitation becomes very severe, if the discussion is to be kept on a non-mathematical plane. The discussion will then necessarily show some very bad features; points which are made can never be properly documented, and a certain over-all superficiality of the discussion becomes unavoidable.
-
-
-
-
 
 I am very much aware of these shortcomings in what I am going to say, and I apologize in advance. Besides, the views which I am going to express are probably not wholly shared by many other mathematicians - you will get one man's not-too-well systematized impressions and interpretations - and I can give you only very little help in deciding how much they are to the point.
 
