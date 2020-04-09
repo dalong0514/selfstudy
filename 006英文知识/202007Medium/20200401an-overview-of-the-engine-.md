@@ -57,23 +57,14 @@ JavaScript is a single-threaded programming language, which means it has a singl
 Let’s see an example. Take a look at the following code:
 
 ```js
-
 function multiply(x, y) {
-
     return x * y;
-
 }
-
 function printSquare(x) {
-
     var s = multiply(x, x);
-
     console.log(s);
-
 }
-
 printSquare(5);
-
 ```
 
 When the engine starts executing this code, the Call Stack will be empty. Afterwards, the steps will be the following:
@@ -85,43 +76,29 @@ Each entry in the Call Stack is called a Stack Frame.
 And this is exactly how stack traces are being constructed when an exception is being thrown — it is basically the state of the Call Stack when the exception happened. Take a look at the following code:
 
 ```js
-
 function foo() {
-
     throw new Error('SessionStack will help you resolve crashes :)');
-
 }
-
 function bar() {
-
     foo();
-
 }
-
 function start() {
-
     bar();
-
 }
-
 start();
-
 ```
 
 If this is executed in Chrome (assuming that this code is in a file called foo.js), the following stack trace will be produced:
 
+![](./res/2020012.png)
+
 “Blowing the stack” — this happens when you reach the maximum Call Stack size. And that could happen quite easily, especially if you’re using recursion without testing your code very extensively. Take a look at this sample code:
 
 ```js
-
 function foo() {
-
     foo();
-
 }
-
 foo();
-
 ```
 
 When the engine starts executing this code, it starts with calling the function “foo”. This function, however, is recursive and starts calling itself without any termination conditions. So at every step of the execution, the same function gets added to the Call Stack over and over again. It looks something like this:
