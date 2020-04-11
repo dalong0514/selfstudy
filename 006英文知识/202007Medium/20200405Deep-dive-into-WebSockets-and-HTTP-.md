@@ -26,7 +26,7 @@ The event loop and the rise of Async programming + 5 ways to better coding with 
 This time we’ll dive into the world of communication protocols, mapping and discussing their attributes and building parts on the way. We’ll offer a quick comparison of WebSockets and HTTP/2. At the end, we share some ideas on how to choose which way to go when it comes to network protocols.
 
 
-Intro
+## Intro
 
 
 Nowadays complex web apps that feature rich, dynamic UIs are taken for granted. And it’s not surprising — the internet has come a long way since its inception.
