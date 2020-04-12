@@ -245,13 +245,9 @@ listen('click', function (e){
 });
 ```
 
-We’ve got a chain of three functions nested together, each one representing a step in an asynchronous series.
+We’ve got a chain of three functions nested together, each one representing a step in an asynchronous series. This kind of code is often called a「callback hell」. But the「callback hell」actually has almost nothing to do with the nesting/indentation. It’s a much deeper problem than that.
 
-This kind of code is often called a「callback hell」. But the「callback hell」actually has almost nothing to do with the nesting/indentation. It’s a much deeper problem than that.
-
-First, we’re waiting for the「click」event, then we’re waiting for the timer to fire, then we’re waiting for the Ajax response to come back, at which point it might get all repeated again.
-
-At first glance, this code may seem to map its asynchrony naturally to sequential steps like:
+First, we’re waiting for the「click」event, then we’re waiting for the timer to fire, then we’re waiting for the Ajax response to come back, at which point it might get all repeated again. At first glance, this code may seem to map its asynchrony naturally to sequential steps like:
 
 ```js
 listen('click', function (e) {
@@ -298,9 +294,7 @@ var y = 2;
 console.log(x + y);
 ```
 
-It’s all very straightforward: it sums the values of x and y and prints it to the console. What if, however, the value of x or y was missing and was still to be determined? Say, we need to retrieve the values of both x and y from the server, before they can be used in the expression. Let’s imagine that we have a function loadX and loadY that respectively load the values of x and y from the server. Then, imagine that we have a function sum that sums the values of x and y once both of them are loaded.
-
-It could look like this (quite ugly, isn’t it):
+It’s all very straightforward: it sums the values of x and y and prints it to the console. What if, however, the value of x or y was missing and was still to be determined? Say, we need to retrieve the values of both x and y from the server, before they can be used in the expression. Let’s imagine that we have a function loadX and loadY that respectively load the values of x and y from the server. Then, imagine that we have a function sum that sums the values of x and y once both of them are loaded. It could look like this (quite ugly, isn’t it):
 
 ```js
 function sum(getX, getY, callback) {
@@ -333,9 +327,7 @@ sum(fetchX, fetchY, function(result) {
 });
 ```
 
-There is something very important here — in that snippet, we treated x and y as future values, and we expressed an operation sum(…) that (from the outside) did not care whether x or y or both were or weren’t available right away.
-
-Of course, this rough callbacks-based approach leaves much to be desired. It’s just a first tiny step towards understanding the benefits of reasoning about future values without worrying about the time aspect of when they will be available.
+There is something very important here — in that snippet, we treated x and y as future values, and we expressed an operation sum(…) that (from the outside) did not care whether x or y or both were or weren’t available right away. Of course, this rough callbacks-based approach leaves much to be desired. It’s just a first tiny step towards understanding the benefits of reasoning about future values without worrying about the time aspect of when they will be available.
 
 ## 08. Promise Value
 
@@ -375,13 +367,9 @@ There are two layers of Promises in this snippet.
 
 fetchX() and fetchY() are called directly, and the values they return (promises!) are passed to sum(...). The underlying values these promises represent may be ready now or later, but each promise normalizes its behavior to be the same regardless. We reason about x and y values in a time-independent way. They are future values, period.
 
-The second layer is the promise that sum(...) creates
+The second layer is the promise that sum(...) creates (via Promise.all([ ... ])) and returns, which we wait on by calling then(...). When the sum(...) operation completes, our sum future value is ready and we can print it out. We hide the logic for waiting on the x and y future values inside of sum(...) .
 
-(via Promise.all([ ... ])) and returns, which we wait on by calling then(...). When the sum(...)operation completes, our sum future value is ready and we can print it out. We hide the logic for waiting on the x and y future values inside of sum(...) .
-
-Note: Inside sum(…), the Promise.all([ … ]) call creates a promise (which is waiting on promiseX and promiseY to resolve). The chained call to .then(...) creates another promise, which the return
-
-values[0] + values[1] line immediately resolves (with the result of the addition). Thus, the then(...) call we chain off the end of the sum(...) call — at the end of the snippet — is actually operating on that second promise returned, rather than the first one created by Promise.all([ ... ]). Also, although we are not chaining off the end of that second then(...), it too has created another promise, had we chosen to observe/use it. This Promise chaining stuff will be explained in much greater detail later in this chapter.
+Note: Inside sum(…), the Promise.all([ … ]) call creates a promise (which is waiting on promiseX and promiseY to resolve). The chained call to .then(...) creates another promise, which the return values[0] + values[1] line immediately resolves (with the result of the addition). Thus, the then(...) call we chain off the end of the sum(...) call — at the end of the snippet — is actually operating on that second promise returned, rather than the first one created by Promise.all([ ... ]). Also, although we are not chaining off the end of that second then(...), it too has created another promise, had we chosen to observe/use it. This Promise chaining stuff will be explained in much greater detail later in this chapter.
 
 With Promises, the then(...) call can actually take two functions, the first for fulfillment (as shown earlier), and the second for rejection:
 
@@ -403,9 +391,7 @@ If something went wrong when getting x or y, or something somehow failed during 
 
 Because Promises encapsulate the time-dependent state — waiting on the fulfillment or rejection of the underlying value — from the outside, the Promise itself is time-independent, and thus Promises can be composed (combined) in predictable ways regardless of the timing or outcome underneath.
 
-Moreover, once a Promise is resolved, it stays that way forever — it becomes an immutable value at that point — and can then be observed as many times as necessary.
-
-It’s really useful that you can actually chain promises:
+Moreover, once a Promise is resolved, it stays that way forever — it becomes an immutable value at that point — and can then be observed as many times as necessary. It’s really useful that you can actually chain promises:
 
 ```js
 function delay(time) {
@@ -445,9 +431,7 @@ Moreover, a library or framework may choose to vend its own Promises and not use
 
 ## 10. Swallowing exceptions
 
-If at any point in the creation of a Promise, or in the observation of its resolution, a JavaScript exception error occurs, such as a TypeError or ReferenceError, that exception will be caught, and it will force the Promise in question to become rejected.
-
-For example:
+If at any point in the creation of a Promise, or in the observation of its resolution, a JavaScript exception error occurs, such as a TypeError or ReferenceError, that exception will be caught, and it will force the Promise in question to become rejected. For example:
 
 ```js
 var p = new Promise(function(resolve, reject){
@@ -599,7 +583,7 @@ Using async/await allows you to write a lot less code. Every time you use async/
 
 ```js
 // `rp` is a request-promise function.
-rp(‘https://api.example.com/endpoint1').then(function(data) {
+rp('https://api.example.com/endpoint1').then(function(data) {
  // …
 });
 ```
@@ -608,7 +592,7 @@ Versus:
 
 ```js
 // `rp` is a request-promise function.
-var response = await rp(‘https://api.example.com/endpoint1');
+var response = await rp('https://api.example.com/endpoint1');
 ```
 
 ### 2. Error handling: 
