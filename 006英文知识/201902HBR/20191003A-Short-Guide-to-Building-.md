@@ -1,5 +1,6 @@
 # A Short Guide to Building Your Team’s Critical Thinking Skills
 Matt Plummer
+
 October 11, 2019
 
 [A Short Guide to Building Your Team’s Critical Thinking Skills](https://hbr.org/2019/10/a-short-guide-to-building-your-teams-critical-thinking-skills)
