@@ -121,4 +121,3 @@ In February of last year, China’s education ministry passed a series of reform
 “We want to change the future of Chinese education with technology,” Pan always says. China’s current mass experiment in AI education, and the choices it must make, might also change education for the world.
 
 Corrections: Alo7’s video-tutoring service follows a group format; it’s not one-on-one. After publication, Squirrel clarified that Dan Bindman was the editorial director at ALEKS, not a co-founder as stated on Squirrel's website, and both companies use fewer knowledge points than the former previously shared. ALEKS also has more data than Squirrel.
-
