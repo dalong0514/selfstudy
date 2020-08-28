@@ -6,11 +6,7 @@ Nov 20, 2019 · 15 min read
 
 [Web Scraping of 10 Online Shops in 30 Minutes with Python and Scrapy](https://towardsdatascience.com/web-scraping-of-10-online-shops-in-30-minutes-with-python-and-scrapy-a7f66e42446d)
 
-You are a full-stack developer.
-
-You would like to develop a fantastic WebApplication.
-
-You are motivated and fully dedicated to your project.
+First: 1) You are a full-stack developer. 2) You would like to develop a fantastic WebApplication. 3) You are motivated and fully dedicated to your project.
 
 Even if you tick the above boxes, you still need a domain related dataset before writing a single line of code. This is because modern applications process huge amounts of data simultaneously or in batches to provide value for their users.
 
