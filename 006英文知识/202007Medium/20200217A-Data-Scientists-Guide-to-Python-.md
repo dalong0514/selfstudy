@@ -204,4 +204,4 @@ data_ = pd.read_csv('final_data.csv')
 data.head()
 ```
 
-In this article I have illustrated how using modules and packages for data science and machine learning projects can make your code more readable and reproducible. In my quest to find simple explanations of these processes I found this blog post very useful, and a nice walk through in the python like you mean it project.
+## In this article I have illustrated how using modules and packages for data science and machine learning projects can make your code more readable and reproducible. In my quest to find simple explanations of these processes I found this blog post very useful, and a nice walk through in the python like you mean it project.
