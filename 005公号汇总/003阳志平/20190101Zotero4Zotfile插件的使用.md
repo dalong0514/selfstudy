@@ -1,5 +1,6 @@
 # Zotero4：Zotero之Zotfile插件的使用
-> 2013-04-12
+
+2013-04-12
 
 [Zotero（4）：Zotero之Zotfile插件的使用 - 阳志平的网志](https://www.yangzhiping.com/tech/zotero4.html)
 
@@ -52,6 +53,3 @@ Karpicke_Roediger_2008_The Critical Importance of Retrieval for Learning.pdf
 正好 Dropbox 中文版近日发布，祝大家使用愉快。
 
 最新的: April 12, 2013
-
-© 2019 阳志平. 技术来自于 Jekyll & Minimal Mistakes.
-

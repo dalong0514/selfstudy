@@ -1,4 +1,5 @@
 # Zotero1：文献管理软件 Zotero 基础及进阶示范
+
 阳志平的网志
 
 原文链接：[Zotero（1）：文献管理软件Zotero基础及进阶示范 - 阳志平的网志](https://www.yangzhiping.com/tech/zotero1.html)
@@ -13,7 +14,7 @@ Endnote Mac 版：07、08 年慢慢转到 Mac 下，不得不抛弃 [NoteExpress
 
 在 Mac 下，先后试用与比较过 [Papers2] 与 [mendeley]。但是因为种种原因，最终还是回到 Zotero 下。有感于国内对这么一款极其优秀的开源软件非常不了解，特别介绍它的入门与进阶知识。
 
-## 01. 注册 Zotero 新账号并下载：
+## 01. 注册 Zotero 新账号并下载
 
 登陆 https://www.zotero.org/user/register/，注册一个自己的 Zotero 账号，请特别记住，username 会直接生成个性域名，别乱起，未来会有些不方便。
 
@@ -110,6 +111,7 @@ http://scholar.google.com/scholar?q=netlogo&btnG=&hl=zh-CN&as_sdt=0%2C5
 1. 在浏览器地址栏输入转到： chrome://flags/
 
 2. 关闭 Experimental QUIC protocol 选项
+
 3. 重载浏览器！搞定！
 
 解决办法2：跟着视频里的做：[captcha error (YOUR COMPUTER OR NETWORK MAY SENDING AUTOMATED QUERIES) |SOLVED - YouTube](https://www.youtube.com/watch?v=aVqvo7q0DAA)
