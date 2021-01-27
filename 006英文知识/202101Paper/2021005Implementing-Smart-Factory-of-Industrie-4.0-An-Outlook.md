@@ -82,10 +82,6 @@ End-To-End Engineering Integration. In a product-centric value creation process,
 
 ### 2.3. Needed Technologies
 
-![](./res/2021002.png)
-
-Figure 2: A brief framework of the smart factory of Industrie 4.0.
-
 Some emerging information technologies, such as IoT, big data, and cloud computing as well as artificial intelligence (AI) technologies (e.g., MAS) are enabling factors of Industrie 4.0. Integrating these technologies with industrial automation, business, and trade is able to achieve a huge improvement of industry. With powerful microprocessors and AI technologies, the products and machines become smart in the sense that they not only have abilities of computing, communication, and control (3C) but also have autonomy and sociality. With the support of industrial networks, these smart artifacts are interconnected with each other and with the Internet. With the cloud computing technology, the server network can be virtualized as a resource pool that can provide scalable computing ability and storage space on demand for big data analytics. With numerous information systems deployed on cloud and smart things connected to the same cloud, a novel world of IoT and services is created.
 
 The IoT and services lays a solid foundation for the three kinds of integration. For example, a network of smart artifacts can reconfigure itself dynamically and provide massive data to the information systems on the cloud. This is actually vertical integration. With data model and powerful software tools deployed on the cloud, the end-to-end integration can also be implemented. The new electronic commerce such as online-to-offline (O2O) starts a new business model which is an example of horizontal integration.
@@ -96,13 +92,13 @@ In summary, the Industrie 4.0 aims to cope with personalized needs and global ch
 
 The factory is responsible for actually processing raw materials and semifinished products to produce finished products. Within the boundary of a factory, various physical or informational subsystems are involved during production and management. These subsystems are present at different hierarchical levels, for example, the actuator and sensor, control, production management, manufacturing and execution, and corporate planning levels. At present, the information flow is often blocked between subsystems and the continuity and consistency are generally difficult to be guaranteed; and the material flow is along the fixed production lines that lack flexibility.
 
-
-
-
-
 Therefore, the Industrie 4.0 expects to vertically integrate the hierarchical subsystems to transfer the traditional factory into the highly flexible and reconfigurable manufacturing system, that is, to implement the smart factory. This is essential to support small-lot and customized consumer demands. The smart factory is also a key base to support the other two kinds of integration, that is, the horizontal integration through value networks and the end-to-end digital integration of engineering. In this section, we present a detailed conceptual design of smart factory by constructing a framework, exploring its operational mechanism and concluding its technical features and beneficial outcomes.
 
 ### 3.1. System Architecture
+
+![](./res/2021002.png)
+
+Figure 2: A brief framework of the smart factory of Industrie 4.0.
 
 Figure 2 depicts a smart factory framework consisting of four tangible layers, namely, physical resource layer, industrial network layer, cloud layer, and supervision and control terminal layer. The physical resources are implemented as smart things which can communicate with each other through the industrial network. Various information systems (e.g., ERP) exist in the cloud which can collect massive data from the physical resource layer and interact with people through the terminals [24]. Thus, the tangible framework enables a networked world for intangible information to flow freely. This actually forms a CPS where physical artifacts and informational entities are deeply integrated.
 
@@ -116,15 +112,38 @@ Supervision and Control Terminal Layer. It links people to the smart factory. Wi
 
 ### 3.2. Operational Mechanisms
 
+![](./res/2021003.png)
+
+Figure 3: Operational mechanism of the smart factory of Industrie 4.0.
+
 From the perspective of control engineer, the smart factory can be viewed as a closedloop system, as shown in Figure 3. In the center of the control loop is the network of smart artifacts. The smart artifact has 3C capabilities, and beyond this, it has autonomy and sociality. By autonomy, we mean that the smart artifact makes decisions by itself; no other entities can directly control its behavior. By sociality, we mean that the smart artifacts understand a common set of knowledge and follow a common set of rules for negotiation. Therefore, a society of smart artifacts can yield a highly flexible manufacturing system, that is, a self-organized and reconfigurable system that seems to be humanoid or smart.
 
-Through collaboration, the smart artifacts try to align their behaviors to approach a system-wide goal; but the system performance is generally not optimal. This is because the smart artifacts are myopic that they make decisions based on local information. As to manufacturing, load may not be balanced, efficiency may not be the highest, and deadlocks may occur. The big data analytics block in the feedback channel that lies in the cloud serves to solve this problem. The smart machines communicate their state and process information to the block, and the distributed sensors transfer their sensed data to the block as well. Therefore, the global state of the system can be extracted from the massive realtime system information. Based on the powerful computing ability, the block processes this big data in time to serve two purposes: (1) coordinate the behaviors of the distributed smart artifacts and (2) feedback performance indictors to the self-organized network. By this global optimization, the smart artifacts are affected so that higher performance can be expected.
+1『这里感觉出现了核心的观点，autonomy and sociality，做一张主题卡片。（2021-01-27）』——已完成
+
+Through collaboration, the smart artifacts try to align their behaviors to approach a system-wide goal; but the system performance is generally not optimal. This is because the smart artifacts are myopic that they make decisions based on local information. As to manufacturing, load may not be balanced, efficiency may not be the highest, and deadlocks may occur. The big data analytics block in the feedback channel that lies in the cloud serves to solve this problem. The smart machines communicate their state and process information to the block, and the distributed sensors transfer their sensed data to the block as well. Therefore, the global state of the system can be extracted from the massive realtime system information. Based on the powerful computing ability, the block processes this big data in time to serve two purposes: 1) coordinate the behaviors of the distributed smart artifacts and 2) feedback performance indictors to the self-organized network. By this global optimization, the smart artifacts are affected so that higher performance can be expected.
 
 ### 3.3. Technical Features
 
+![](./res/2021004.png)
+
+Figure 4: Illustration of the traditional production line and smart factory production system.
+
 Figure 4 illustrates the difference between the traditional production line and the smart factory production system. The traditional production line aims to produce the single type of products. It generally consists of several machines and a conveyor belt. The conveyor belt is not closed; that is, one end serves as the input and the other end serves as the output, and the machines are deployed along the line. When the unfinished products flow through the line from the input to the output, each machine performs its predetermined part of task. Generally, no redundant machines exist, and the conveyor belt is carefully tailored. The machine has its own independent controller, but the communication between machines is seldom. By contrast, the smart factory production system aims to process multiple types of products. Thus, from the view of the single product type, the machines are redundant. The machines relay on negotiation to reconfigure themselves to adapt to product type variation. The conveyor belt should be closed to support various production routes, so there is not definite input or output.
 
+1『这里 get 到了精髓。1）传统工厂「the machines are deployed along the line」，可以理解为设备是在一条固定的合成路线（流程）上的，智能工厂可以实时调整路线。单个线路上核心设备出现故障，整个生产线就得停，智慧工厂的话就换着走另外一条线。2）可以切换生产不同的产品，类似于多功能车间。2）传统工厂，单个设备、单个单元操作组联锁控制，智慧工厂设备全部联网，共享一个大脑云。（2021-01-27）』
+
 These fundamental differences deliver some key features for the smart factory. We outline these features in Table 1 by comparing with that of traditional factory.
+
+TABLE 1: Technical features of smart factory compared with the traditional factory
+
+| Number | Smart factory production system | Traditional production line |
+| --- | --- | --- |
+| 1 | Diverse Resources. To produce multiple types of small-lot products, more resources of different types should be able to coexist in the system. | Limited and Predetermined Resources. To build a fixed line for mass production of a special product type, the needed resources are carefully calculated, tailored, and configured to minimize resource redundancy. |
+| 2 | Dynamic Routing. When switching between different types of products, the needed resources and the route to link these resources should be reconfigured automatically and on line. | Fixed Routing. The production line is fixed unless manually reconfigured by people with system power down. |
+| 3 | Comprehensive Connections. The machines, products, information systems, and people are connected and interact with each other through the high speed network infrastructure. | Shop Floor Control Network. The field buses may be used to connect the controller with its slave stations. But communication among machines is not necessary. |
+| 4 | Deep Convergence. The smart factory operates in a networked environment where the IWN and the cloud integrate all the physical artifacts and information systems to form the IoT and services. | Separated Layer. The field devices are separated from the upper information systems. |
+| 5 | Self-Organization. The control function distributes to multiple entities. These smart entities negotiate with each other to organize themselves to cope with system dynamics. | Independent Control. Every machine is preprogrammed to perform the assigned functions. Any malfunction of single device will break the full line. |
+| 6 | Big Data. The smart artifacts can produce massive data, the high bandwidth network can transfer them, and the cloud can process the big data. | Isolated Information. The machine may record its own process information. But this information is seldom used by others. |
 
 On the other hand, the proposed smart factory production system also has obvious differences with the MAS scheme in the sense that the MAS scheme does not involve cloud and big data. Thus, the MAS scheme is not able to benefit from the big data based feedback and coordination. In addition, the big data enables smart artifacts to form an autonomous architecture, while the existing MAS schemes are generally characterized by hierarchical or mediator architectures. Therefore, the smart factory of Industrie 4.0 assists the self-organized systems such as MAS with the cloud and big data technologies to combine the advantages of the selforganization and central control.
 
@@ -140,10 +159,6 @@ Resource and Energy Efficiency. Based on the big data analytics, we can establis
 
 Transparency. The big data provides real-time, complete, and effective information on every aspect of the smart factory [25, 26]. Based on the big data analytics, we can quantify performance indicators related to machines, products, and system. This enables us to make accurate and effective decisions more quickly. This can also facilitate production plan and accelerate response to market inquiry. When the production ability of the smart factory cannot satisfy a certain product order, the questions about how to improve the system can also be easily answered.
 
-International Journal of Distributed Sensor Networks
-
-7
-
 Promoting Integration. The vertical integration of hierarchical subsystems leads to smart factory, which in turn supports horizontal integration through value networks and end-to-end digital integration of engineering. Thus, the smart factory lays a solid foundation for more extensive integration and collaboration, that is, the implementation of Industrie 4.0. Based on this global collaboration network, the consumers, design activities, manufacturing, and logistics can interact above the cloud. This will deliver a sustainable production paradigm, which also has a profound impact on life style, culture, and social organization.
 
 Profitable. We consider the initial investment cost first and then the operational cost. The additional investment mainly refers to the IWN, cloud, and new information systems compared with the traditional production lines. Based on the Moore’s law, the cost of information technologies will constantly decline while the performance constantly improves. For the coming small-lot and customized consummation demands, the operational cost is rather low compared with the fixed production line because of flexibility and resource and energy efficiency. It is pointed out that even one-off items can be produced profitably with the smart factory.
@@ -153,6 +168,10 @@ Friendly to Staff. The machines operate automatically by themselves so that no w
 ## 04. Application Demonstration
 
 The smart factory is a particular implementation of CPS that is based on the extensive and deep application of information technologies to manufacturing. As the needed technologies at least have some preliminary version, some pilot smart factory applications have already been established. This is an important step to promote Industrie 4.0. The key problems can be identified during the integration process, and the benefits can be demonstrated to the society.
+
+
+
+
 
 At the smart factory prototype of「German Research Centre for Artificial Intelligence (DFKI)」in Kaiserslautern, chemicals giant BASF SE produces fully customized shampoos and liquid soaps [27]. As a test order is placed online, the empty soap bottle that is attached with the radio frequency identification (RFID) tag communicates to production machines what kind of soap, fragrance, bottle cap color, and labeling it requires. Each bottle has the potential to be entirely different from the one next to it on the conveyor belt. The experiment relies on a wireless network through which the machines and products do all the talking, with the only human input coming from the person placing the sample order.
 
@@ -176,21 +195,33 @@ Large Screen and Small Terminals. We construct a one-meter wide and three-meter 
 
 We need smart hardware and software to construct the smart factories. These include smart machine controllers, high bandwidth IWN devices, manufacturing related big data analytics software, and the integrated information systems. But prior to the off-the-shelf products, the underlying technical issues should be investigated. Based on the theoretical analysis and development experiences, we identify several challenges and give possible solutions in this section.
 
-5.1. Intelligent Decision-Making and Negotiation Mechanism. The smart artifacts are fundamental components of smart factory. While today’s computer numerical control (CNC) machines generally have 3C capabilities, the smart machines should have additional autonomy and sociality capabilities. This means the smart machines can make decisions by themselves instead of being directly instructed, and they can negotiate with each other and with the smart products. Therefore, the autonomy and sociality capabilities are the key enablers for the implementation of a self-organized manufacturing system. The research on MAS that is a branch of AI technology can provide some useful results such as the ontology method and the contract net protocol (CNP) [28]. However, further research is still needed to achieve the autonomous manufacturing system architecture instead of hierarchical or mediator ones.
+### 5.1. Intelligent Decision-Making and Negotiation Mechanism
 
-5.2. High Speed IWN Protocols. The IWN is superior to wired network in a manufacturing environment; but the existing IWN standards such as WIA-PA [29] and WirelessHART [30] cannot provide enough bandwidth for heavy communication and high-volume data transfer. The standards such as IEEE 802.11 [31, 32] can provide high bandwidth but not specially designed for industrial applications. The IWN used in automation is different from the ad hoc wireless sensor network (WSN) used in surveillance domains [33, 34]. The QoS other than energy efficiency is more concerned. Maybe the hybrid solution that wireless gateways are wired to form a backbone mesh network is a practical implementation at present.
+The smart artifacts are fundamental components of smart factory. While today’s computer numerical control (CNC) machines generally have 3C capabilities, the smart machines should have additional autonomy and sociality capabilities. This means the smart machines can make decisions by themselves instead of being directly instructed, and they can negotiate with each other and with the smart products. Therefore, the autonomy and sociality capabilities are the key enablers for the implementation of a self-organized manufacturing system. The research on MAS that is a branch of AI technology can provide some useful results such as the ontology method and the contract net protocol (CNP) [28]. However, further research is still needed to achieve the autonomous manufacturing system architecture instead of hierarchical or mediator ones.
 
-5.3. Manufacturing Specific Big Data and Its Analytics. Big data will deliver big value in the future. The utilization of big data is now feasible with the cloud computing that enables a scalable storage and computing ability. Despite the cloud computing and general big data analytics, we should focus on special features of manufacturing related big data. Questions on which data should be collected, how these data can be collected, how to formulate, what is the meaning and how to analyze should be answered.
+### 5.2. High Speed IWN Protocols
+
+The IWN is superior to wired network in a manufacturing environment; but the existing IWN standards such as WIA-PA [29] and WirelessHART [30] cannot provide enough bandwidth for heavy communication and high-volume data transfer. The standards such as IEEE 802.11 [31, 32] can provide high bandwidth but not specially designed for industrial applications. The IWN used in automation is different from the ad hoc wireless sensor network (WSN) used in surveillance domains [33, 34]. The QoS other than energy efficiency is more concerned. Maybe the hybrid solution that wireless gateways are wired to form a backbone mesh network is a practical implementation at present.
+
+### 5.3. Manufacturing Specific Big Data and Its Analytics
+
+Big data will deliver big value in the future. The utilization of big data is now feasible with the cloud computing that enables a scalable storage and computing ability. Despite the cloud computing and general big data analytics, we should focus on special features of manufacturing related big data. Questions on which data should be collected, how these data can be collected, how to formulate, what is the meaning and how to analyze should be answered.
 
 Instead of collecting various data and then struggling to think how to use them, the practical beginning may be considering which information can reveal quality and efficiency related factors. For example, as the malfunction machines will reduce product quality and the finished product ratio, the machine state and its operation history should be monitored and analyzed to predict problems so that people can respond in advance. To improve efficiency, we should know the time taken in processing each operation and operation time of each machine. This helps to recognize the performance bottleneck of operations and load unbalance of machines.
 
-5.4. System Modeling and Analysis. By the general selforganized theory, the self-organized process may lead to unexpected situations such as chaos [35]. Thus, we need to model self-organized manufacturing system, deduce its dynamical equations, and conclude appropriate control methods. However, the theories on self-organized system are not matured and the complex system research is still a hot topic. The formal methods such as model checking technology may be possible option for modeling and analyzing selforganized manufacturing system [36].
+### 5.4. System Modeling and Analysis
 
-5.5. Cyber and Property Security. We cannot place too much emphasis on security aspects. Without security, we dare not bring our smart factories into service. The smart factory suffers bigger security problems than traditional Internet applications [37, 38]. On one hand, we should protect various information on customers, suppliers, commercial strategies, and know-hows. These kinds of information are generally stored in the public cloud instead of enterprises’ private data center. These confidential materials may be disclosed, for example, by hackers, which may cause huge profit loss or even legal disputes. On the other hand, the machines and other physical objects and even people themselves are connected to the cloud. When control mechanism is broken, these objects may operate in a destructive way to cause direct property loss.
+By the general selforganized theory, the self-organized process may lead to unexpected situations such as chaos [35]. Thus, we need to model self-organized manufacturing system, deduce its dynamical equations, and conclude appropriate control methods. However, the theories on self-organized system are not matured and the complex system research is still a hot topic. The formal methods such as model checking technology may be possible option for modeling and analyzing selforganized manufacturing system [36].
+
+### 5.5. Cyber and Property Security
+
+We cannot place too much emphasis on security aspects. Without security, we dare not bring our smart factories into service. The smart factory suffers bigger security problems than traditional Internet applications [37, 38]. On one hand, we should protect various information on customers, suppliers, commercial strategies, and know-hows. These kinds of information are generally stored in the public cloud instead of enterprises’ private data center. These confidential materials may be disclosed, for example, by hackers, which may cause huge profit loss or even legal disputes. On the other hand, the machines and other physical objects and even people themselves are connected to the cloud. When control mechanism is broken, these objects may operate in a destructive way to cause direct property loss.
 
 Encryption and authorization are generally used in cyber security domain, which will be still useful in smart factory or Industrie 4.0 applications; but these mechanisms are not enough. By now, we do not have a way to create an absolute software system. Even the very famous software is suffering endless loopholes [39]. New mechanisms which are specially designed for smart factory should be developed; and before these come true, some conservative methods may be practical options. For example, the critical information is stored in enterprises’ private cloud and the unsafe operation instructions are reported to people rather than being immediately executed.
 
-5.6. Modularized and Flexible Physical Artifacts. When processing a product, distributed decision-making organizes a group of resources together. These resources include equipment for machining or testing and that for conveying. Thus, it is required that these physical artifacts should be able to work together. First of all, the conveying system should be able to transfer products between any two machines. Secondly, functions for automatic positioning, clamping, and programming should be integrated into the system. Therefore, we should develop modularized and smart conveying units that can dynamically reconfigure production routes. The modularized and standalone positioning and clamping units, with smart controllers should also be developed to easily incorporate new machines to the system.
+### 5.6. Modularized and Flexible Physical Artifacts
+
+When processing a product, distributed decision-making organizes a group of resources together. These resources include equipment for machining or testing and that for conveying. Thus, it is required that these physical artifacts should be able to work together. First of all, the conveying system should be able to transfer products between any two machines. Secondly, functions for automatic positioning, clamping, and programming should be integrated into the system. Therefore, we should develop modularized and smart conveying units that can dynamically reconfigure production routes. The modularized and standalone positioning and clamping units, with smart controllers should also be developed to easily incorporate new machines to the system.
 
 ## 06. Conclusions and Future Work
 
