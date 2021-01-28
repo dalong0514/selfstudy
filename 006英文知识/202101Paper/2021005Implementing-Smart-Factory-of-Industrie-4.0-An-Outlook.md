@@ -84,6 +84,8 @@ End-To-End Engineering Integration. In a product-centric value creation process,
 
 Some emerging information technologies, such as IoT, big data, and cloud computing as well as artificial intelligence (AI) technologies (e.g., MAS) are enabling factors of Industrie 4.0. Integrating these technologies with industrial automation, business, and trade is able to achieve a huge improvement of industry. With powerful microprocessors and AI technologies, the products and machines become smart in the sense that they not only have abilities of computing, communication, and control (3C) but also have autonomy and sociality. With the support of industrial networks, these smart artifacts are interconnected with each other and with the Internet. With the cloud computing technology, the server network can be virtualized as a resource pool that can provide scalable computing ability and storage space on demand for big data analytics. With numerous information systems deployed on cloud and smart things connected to the same cloud, a novel world of IoT and services is created.
 
+2『 3C 做一张术语卡片。（2021-01-28）』——已完成
+
 The IoT and services lays a solid foundation for the three kinds of integration. For example, a network of smart artifacts can reconfigure itself dynamically and provide massive data to the information systems on the cloud. This is actually vertical integration. With data model and powerful software tools deployed on the cloud, the end-to-end integration can also be implemented. The new electronic commerce such as online-to-offline (O2O) starts a new business model which is an example of horizontal integration.
 
 In summary, the Industrie 4.0 aims to cope with personalized needs and global challenges so as to gain competitive strength considering the globalization of markets. To this end, the emerging information technologies should be applied to every aspect of industry to implement three kinds of integration. Then, high-quality and customized products can be available with improved resource efficiency, productivity, and low cost. The Industrie 4.0 is believed to impose a deep effect that is not limited to industry itself but also to lifestyle and the way we work [23].
@@ -167,23 +169,23 @@ Friendly to Staff. The machines operate automatically by themselves so that no w
 
 ## 04. Application Demonstration
 
+![](./res/2021005.png)
+
+Figure 5: Illustration of the flexible conveying system of the smart factory.
+
 The smart factory is a particular implementation of CPS that is based on the extensive and deep application of information technologies to manufacturing. As the needed technologies at least have some preliminary version, some pilot smart factory applications have already been established. This is an important step to promote Industrie 4.0. The key problems can be identified during the integration process, and the benefits can be demonstrated to the society.
-
-
-
-
 
 At the smart factory prototype of「German Research Centre for Artificial Intelligence (DFKI)」in Kaiserslautern, chemicals giant BASF SE produces fully customized shampoos and liquid soaps [27]. As a test order is placed online, the empty soap bottle that is attached with the radio frequency identification (RFID) tag communicates to production machines what kind of soap, fragrance, bottle cap color, and labeling it requires. Each bottle has the potential to be entirely different from the one next to it on the conveyor belt. The experiment relies on a wireless network through which the machines and products do all the talking, with the only human input coming from the person placing the sample order.
 
 Now, we are developing our smart factory prototype. The main configurations are described as follows.
-
-Figure 5: Illustration of the flexible conveying system of the smart factory.
 
 Raw Products with RFID Tags. The raw products that will be processed by the smart factory are pasted with readable and writeable RFID tags. Before entering the system, the raw product has its attached RFID tag written with process requirements. This information helps to organize machines and configure production route. The content of RFID tag is kept updated during production. The carrier of the product that is equipped with a RFID reader interacts with the product. The carrier then represents the product to communicate with machines.
 
 Robotic Machines. We use a number of 10 six-joint serial robots for loading and unloading operation plus a number of 20 Cartesian robots for machining and testing. The serial robots are from Japanese DENSO corp. with the model VS6577G, and the Cartesian robots are from Chinese Bangkang corp. One serial robot serves two Cartesian robots. The Cartesian robots can be equipped with different manipulators to serve different functions. The serial robots fetch products from conveying system and put the products onto the fixtures of the Cartesian robots and vice versa. The fetching positions of products for the serial robots are marked with sensors. Machine vision technology is also used to position the products.
 
 Conveying System. We are designing and developing a railway like conveying system. A kind of two-meter long linear module and a kind of right-angle arc module are used to assemble multiple interconnected cyclic tracks. Each module has its own smart controller. The AGVs run along these tracks. Each AGV can control its position and velocity independently and prevents collision with the assistance of tracks. The AGV is equipped with a RFID reader so it can read or write to the products’ RFID tags. The AGVs can also communicate with machines on behalf of the products. We illustrate a possible configuration in Figure 5, where there is a storage segment connected to the tracks for recycling the empty AGVs (represented as the green circles).
+
+1『有点明白图 5 表达的意思了，分支岔路的轨道当作缓存区域。（2021-01-27）』
 
 IWN. We use wireless products from Taiwan MOXA corp. to set up our IWN. This includes AWK-1121 series industrial IEEE 802.11a/b/g wireless clients and NPort W2150A 1-port RS-232/422/485 IEEE 802.11a/b/g wireless device servers. The wireless clients are installed to machines and AGVs, and the servers are distributed uniformly over the conveying system.
 
@@ -199,9 +201,13 @@ We need smart hardware and software to construct the smart factories. These incl
 
 The smart artifacts are fundamental components of smart factory. While today’s computer numerical control (CNC) machines generally have 3C capabilities, the smart machines should have additional autonomy and sociality capabilities. This means the smart machines can make decisions by themselves instead of being directly instructed, and they can negotiate with each other and with the smart products. Therefore, the autonomy and sociality capabilities are the key enablers for the implementation of a self-organized manufacturing system. The research on MAS that is a branch of AI technology can provide some useful results such as the ontology method and the contract net protocol (CNP) [28]. However, further research is still needed to achieve the autonomous manufacturing system architecture instead of hierarchical or mediator ones.
 
+2『上面的信息补充进主题卡片「智慧工厂的 autonomy and sociality」里。（2021-01-28）』
+
 ### 5.2. High Speed IWN Protocols
 
 The IWN is superior to wired network in a manufacturing environment; but the existing IWN standards such as WIA-PA [29] and WirelessHART [30] cannot provide enough bandwidth for heavy communication and high-volume data transfer. The standards such as IEEE 802.11 [31, 32] can provide high bandwidth but not specially designed for industrial applications. The IWN used in automation is different from the ad hoc wireless sensor network (WSN) used in surveillance domains [33, 34]. The QoS other than energy efficiency is more concerned. Maybe the hybrid solution that wireless gateways are wired to form a backbone mesh network is a practical implementation at present.
+
+1『现在 5G 可以满足这个需求了。（2021-01-28）』
 
 ### 5.3. Manufacturing Specific Big Data and Its Analytics
 
@@ -217,7 +223,9 @@ By the general selforganized theory, the self-organized process may lead to unex
 
 We cannot place too much emphasis on security aspects. Without security, we dare not bring our smart factories into service. The smart factory suffers bigger security problems than traditional Internet applications [37, 38]. On one hand, we should protect various information on customers, suppliers, commercial strategies, and know-hows. These kinds of information are generally stored in the public cloud instead of enterprises’ private data center. These confidential materials may be disclosed, for example, by hackers, which may cause huge profit loss or even legal disputes. On the other hand, the machines and other physical objects and even people themselves are connected to the cloud. When control mechanism is broken, these objects may operate in a destructive way to cause direct property loss.
 
-Encryption and authorization are generally used in cyber security domain, which will be still useful in smart factory or Industrie 4.0 applications; but these mechanisms are not enough. By now, we do not have a way to create an absolute software system. Even the very famous software is suffering endless loopholes [39]. New mechanisms which are specially designed for smart factory should be developed; and before these come true, some conservative methods may be practical options. For example, the critical information is stored in enterprises’ private cloud and the unsafe operation instructions are reported to people rather than being immediately executed.
+Encryption and authorization are generally used in cyber security domain, which will be still useful in smart factory or Industrie 4.0 applications; but these mechanisms are not enough. By now, we do not have a way to create an absolute software system. Even the very famous software is suffering endless loopholes [39]. New mechanisms which are specially designed for smart factory should be developed; and before these come true, some conservative methods may be practical options. For example, the critical information is stored in enterprises' private cloud and the unsafe operation instructions are reported to people rather than being immediately executed.
+
+1『目前能想到的保护措施：1）关键信息存储在企业的私有云上。2）不安全的操作指令不允许直接执行，必须经过人确认。（2021-01-28）』
 
 ### 5.6. Modularized and Flexible Physical Artifacts
 

@@ -185,4 +185,3 @@ http //www.dfki.uni-kl.de/smartfactoryl, 2 4. 0 1. 2 0 0 8
 http //www.int-manus.org/index.php?id=212
 
 24.01.2008
-
