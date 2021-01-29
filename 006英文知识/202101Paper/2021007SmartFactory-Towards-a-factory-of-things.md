@@ -1,4 +1,4 @@
-# SmartFactory  —  Towards a factory-of-things
+# SmartFactory — Towards a factory-of-things
 
 Detlef Zuehlke a,b, *
 
@@ -156,11 +156,6 @@ Despite the success stories already discussed, it is still a long and winding ro
 
 The technical dimension most likely poses the least difﬁcult challenges. Here, smart devices suitable for industrial use are to be developed. For reasons of economy they will likely be based to a great extent on the technologies from the world of consumer goods. For example, just as it took many years for the PC to become suitable for industrial purposes, so too will smartphones, wireless PLC’s or sensors make the jump. In the process, we should always strive to use the existing standards from the world of the consumer market whenever possible, for that is where the high production volumes are which lead to acceptable prices. But these standards also need to be adjusted to the conditions of the industry with regard to reliability and the different environmental conditions.
 
-
-
-
-
-
 A typical change will affect our operating devices. The upcoming use of the various wireless technologies will bring mobility to the worker. The use of nomadic operating devices is also far more than just a substitution for the ﬁxed installation of control panels. One problem here is the variety of different devices, which are also designed with signiﬁcantly shorter life cycles as the rest of the plant. Additionally, there is the problem of user permissions and identity management, which must ensure that only authorized users can access a certain device within the plant. And, as device tracking enables permanent monitoring of the user, there are privacy issues of data protection to be clariﬁed prior to use.
 
 For making a factory-of-things work all elements must become smart, i.e. they must offer a thin web server functionality to act as a service provider in a factory network. To let a simple inductive proximity sensor become smart in that sense may look totally excessive from today’s point of view. But in 5 or 10 years the advances in microelectronics will surely bring it close to reality. And the emerging IPv6 standard will offer enough addresses to give each grain of sand on the entire earth more than just one.
@@ -171,13 +166,17 @@ Many of the envisioned changes can only develop their maximum beneﬁt when we m
 
 The new service-oriented architecture (SoA) paradigm will not only bring substantial advantages to the design of complex systems but will completely shake up many traditional design processes. SoA is a powerful decentralized architecture that relies on company-wide task and service models. The services themselves are encapsulated and retrieved over a standard interface. The various levels of aggregation must ﬁrst be identiﬁed and deﬁned for such services. What makes the implementation so difﬁcult is that initially the company-wide services must be deﬁned semantically, and then step by step reﬁned down to the unit level. Additionally, the SoA architecture is not a hierarchical structure as is typical for plant construction today; rather it is a loosely linked distributed network architecture. This implies a need for new engineering methods and tools to be satisﬁed before any employment in an industrial setting can be considered promising. And perhaps most challenging, the experienced factory planners trained in hierarchical thinking over decades must learn a new thinking: to compose complex technical systems of abstract services based on common ontologies (see Fig. 8). Another important factor is the trust of the customers in such new control architectures. SoA as a loosely coupled service network will surely not fulﬁl today’s typical requirements concerning real-time behavior and predictability. But this was also true for the Ethernet when it was ﬁrst promoted for industrial use.
 
+1『多次看到语义性逻辑 Semantically，目前还不是很明白，感觉与根据「上下文」自行调整同义。（2021-01-29）』
+
 As customers in this ﬁeld are not looking for revolutions but instead for a continuous evolution with predictable behavior and steady improvements the factory-of-things paradigm will be hard to promote in complete. It will surely not replace the old structures with lots of experiences over decades in just one night. But the advantages will drive the SoA application downwards from the ERP level – where it is used today already to a large extend – to the MES and Device level. Most likely, a good intermediate interface between the different architectures can be realized at the PLC level. A future PLC may look as a complex service object to the upper MES level and interpret the service requests to the lower device levels still based on the traditional hierarchical bits and bytes paradigm.
+
+1『这里的 PLC 层如同图 7 金字塔控制层里的 Control-Level（Machine controllers）。（2021-01-29）』
 
 ### 3.3. The planning dimension
 
 A large portion of the problems in plant engineering has their origin in the planning methods commonly used today, which are closely associated with hardware factors. As a rule, today’s planning procedures normally start with an initial, top-down rough planning in which the structures, components and production methods and parameters of the product are deﬁned. Thereafter, the bottom-up detailed planning begins, in which the required machine parts and components are selected and engineered, wiring schemes planned in detail, and ﬁnally, the control hardware and software is developed. Today there are many advanced CAx systems used for this. With CAD, for example, STEP models can import and integrate mechanical data; CAE tools for SCADA development like PCS7/WinCC (Siemens) facilitate the design of control software, and visualization (or simulation) tools allow for the simulation of the entire plant already in early design planning stages. Unfortunately, these systems often lack adequate data integration: Although they are internally model-based, the models are often incompatible with one another. It is precisely this model-based integration that takes on increased signiﬁcance in the lean planning process of the future. Here, solutions are most urgently needed to create an improved planning situation. Modelbased planning needs device models on the basic levels. Today, most industrial devices are already delivered to the customer with electronic CAD and product data in the international STEP format. In the future, this data must be transformed into comprehensive device models including communication and service models (Fig. 9).
 
-The vision for future factory planning is named ‘‘Digital Factory’’. The importance of this ﬁeld is pointed out by the fact that several big players from the industry equipment market merged with IT-companies in order to offer comprehensive system development, planning and control tools. These tools will integrate planning, simulation, operation and even MES and ERP functions supporting the complete product lifecycle. This will require consistent and comprehensive system models which will be the most crucial point for success.
+The vision for future factory planning is named「Digital Factory」. The importance of this ﬁeld is pointed out by the fact that several big players from the industry equipment market merged with IT-companies in order to offer comprehensive system development, planning and control tools. These tools will integrate planning, simulation, operation and even MES and ERP functions supporting the complete product lifecycle. This will require consistent and comprehensive system models which will be the most crucial point for success.
 
 In the long run, we aim at a semantic interoperability of the various factory devices. This requires semantic service models based on common ontologies and – for a world-wide market success – international standards.
 
@@ -205,13 +204,13 @@ Taking all this into consideration, the engineering of the HMI takes on a whole 
 
 Today we are in a comparable situation to 29 years ago. New ICT technologies and products offer a broad range of new applications not only in the consumer but also the industrial world. A simple adaptation of existing technologies from the area of consumer goods appears tempting but, this would be inappropriate for industrial use in most cases. Instead, we should remember the lessons learned from the CIM crisis:
 
-1 reduce complexity by strict modularization and lean technologies, 
+1 reduce complexity by strict modularization and lean technologies,
 
-2 avoid centralized hierarchies in favor of loosely linked decentralized structures consisting of self-adapting modules,  
+2 avoid centralized hierarchies in favor of loosely linked decentralized structures consisting of self-adapting modules,
 
-3 allow for self-organization on the system level wherever possible,  allow for a really concurrent engineering by decoupling process, mechanical, electrical, and control design on the basis of semantic models,  
+3 allow for self-organization on the system level wherever possible,  allow for a really concurrent engineering by decoupling process, mechanical, electrical, and control design on the basis of semantic models,
 
-4 create and apply standards to all levels of the automation pyramid in order to reduce planning effort and allow re-use of components,  
+4 create and apply standards to all levels of the automation pyramid in order to reduce planning effort and allow re-use of components, 
 
 5 and in the end: develop technologies for the human. A deserted factory is an aberration!
 
