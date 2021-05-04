@@ -12,7 +12,9 @@ Figure 1 The graph of learning when you learn to code
 
 At Firehose, our goal isn't just to teach you Ruby, how to build web applications, or how to write tests. Although we do teach these skills and more, our primary goal is to accelerate students past the inflection point so they gain the ability to solve any problem they encounter. We believe that being able to problem solve on your own is an invaluable skill, and this method of teaching will take you much further than simply learning how to build a set of apps.
 
-## 01. The Tutorial Phase (3-8 weeks of serious coding)
+## 01. The Tutorial Phase
+
+3-8 weeks of serious coding
 
 When you start out learning to code, there's a lot of information that you don't know yet. This information is called domain-specific knowledge. Examples include: knowing how to write a loop in ruby or how to extract something from a database using Ruby on Rails. Domain-specific knowledge encompasses the protocols unique to a certain programming environment.
 
@@ -50,7 +52,9 @@ You will be ready to jump into the next phase of your journey when:
 
 3 You're able to reference code you've written in other parts of your application and follow patterns within them, rather than always seeking out step-by-step instructions.
 
-## 02. The Inflection Point (2-4 weeks with the right mentality)
+## 02. The Inflection Point
+
+2-4 weeks with the right mentality
 
 The inflection point stage is one of the most frustrating stages of learning to code, but in many ways, it's the only stage that matters. It's the point when you phase out of using tutorials and begin solving problems for which no one has lined up a solution for you.
 
@@ -104,6 +108,8 @@ The biggest consequence of the inflection point will sound a bit counterintuitiv
 
 **When learning to code, domain-specific knowledge doesn't matter in the grand scheme of things.**
 
+1-2『赞成作者的观点，熟悉计算机底层知识，编程达到一定水平后，「语言」的限制大大减弱了，可以快速的切换到另外一个语言。做一张反常识卡。（2021-05-04）』—— 已完成
+
 Yup. I'm not joking – it really doesn't matter that much at all. Once you pass the inflection point, these concepts will fluidly translate with just a week or two of tutorials, maybe even days!
 
 What ultimately really matters is:
@@ -126,7 +132,7 @@ This doesn't mean you immediately "know" everything, but just that everything is
 
 As a software developer, the best reference material is similar code that you have already written. When you fully understand the code you've written, you don't need to commit all the details to memory. This means that the first question you should ask yourself when building a new feature is: "Have I built something similar before?" If the answer is yes, revisit the code and walk through the code line-by-line in your head. Re-explain to yourself what it's doing and ask yourself, "could I use the same approach now?"
 
-1『上面的观点与《如何解题》里的方式很相似，遇到一个问题先想想，之前有做过类似的东西吗？』
+1-3『上面的观点与《如何解题》里的方式很相似，遇到一个问题先想想，之前有做过类似的东西吗？』
 
 Videos suck at explaining domain-specific details because they take so darned long to watch. Say you want to integrate with the Google Maps API. Once you've experienced doing so once, it can take less than a minute to open the code up in GitHub, copy the code, and paste it into a new project. Videos, on the other hand, can often take 10-30 minutes to re-watch.
 
