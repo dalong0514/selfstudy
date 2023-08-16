@@ -1,4 +1,4 @@
-# 2021039. Data Abstraction and Hierarchy
+## 2021039. Data Abstraction and Hierarchy
 
 Barbara Liskov
 
@@ -6,11 +6,11 @@ MIT Laboratory for Computer Science Cambridge, Ma. 02139
 
 October 1987
 
-## Abstract
+### Abstract
 
 Data abstraction is a valuable method for organizing programs to make them easier to modify and maintain. Inheritance allows one implementation of a data abstraction to be related to another hierarchically. This paper investigates the usefulness of hierarchy in program development, and concludes that although data abstraction is the more important idea, hierarchy does extend its usefulness in some situations.
 
-## Conclusions
+### Conclusions
 
 Abstraction, and especially data abstraction, is an important technique for developing programs that are reasonably easy to maintain and to modify as requirements change. Data abstractions are particularly important because they hide complicated things (data structures) that are likely to change in the future. They permit the representation of data to be changed locally without affecting programs that use the data.
 
@@ -22,7 +22,7 @@ Inheritance can be used to implement a subtype hierarchy. It is needed primarily
 
 We conclude that although data abstraction is more important, type hierarchy does extend its usefulness. Furthermore, inheritance is sometimes needed to express type hierarchy and is therefore a useful mechanism to provide in a programming language.
 
-## 01. Introduction
+### 01. Introduction
 
 An important goal in design is to identify a program structure that simplifies both program maintenance and program modifications made to support changing requirements. Data abstractions are a good way of achieving this goal. They allow us to abstract from the way data structures are implemented to the behavior they provide that other programs can rely on. They permit the representation of data to be changed locally without affecting programs that use the data. They are particularly important because they hide complicated things (data structures) that are likely to change in the future. They also simplify the structure of programs that use them because they present a higher level interface. For example, they reduce the number of arguments to procedures because abstract objects are communicated instead of their representations.
 
@@ -34,7 +34,7 @@ This paper discusses the relationship between data abstraction and object-orient
 
 1『重点来了，「继承」的使用方式有 2 种：实现继承（implementation hierarchy）和类型继承（type hierarchy），前者对应于面向对象里的继承，后者对应于面向对象里的多态。一下子跟脑子里的「知识点」链接了，舒坦。继承的 2 种使用方式做一张主题卡片。（2021-06-12）补充：这里的信息补充进主题卡片「继承的 2 种使用方式」里去。（2021-09-09）』—— 已完成
 
-## 02. Data Abstraction
+### 02. Data Abstraction
 
 The purpose of abstraction in programming is to separate behavior from implementation. The first programming abstraction mechanism was the procedure. A procedure performs some task or function; other parts of the program call the procedure to accomplish the task. To use the procedure, a programmer cares only about what it does and not how it is implemented. Any implementation that provides the needed function will do, provided it implements the function correctly and is efficient enough.
 
@@ -52,7 +52,7 @@ A data or procedure abstraction is defined by a specification and implemented by
 
 For abstraction to work, implementations must be encapsulated. If an implementation is encapsulated, then no other module can depend on its implementation details. Encapsulatio guarantees that modules can be implemented and reimplemented independently; it is related to the principle of "information hiding" advocated by Parnas [15].
 
-### 2.1 Locality
+#### 2.1 Locality
 
 Abstraction when supported by specifications and encapsulation provides locality within a program. Locality allows a program to be implemented, understood, or modified one module at a time:
 
@@ -72,7 +72,7 @@ Locality also supports program evolution. Abstractions can be used to encapsulat
 
 The benefits of locality are particularly important for data abstractions. Data structures are often complicated and therefore the simpler abstract view provided by the specification allows the rest of the program to be simpler. Also, changes to storage structures are likely as programs evolve; the effects of such changes can be minimized by encapsulating them inside data abstractions.
 
-### 2.2. Linguistic Support for Data Abstraction
+#### 2.2. Linguistic Support for Data Abstraction
 
 Data abstractions are supported by linguistic mechanisms in several languages. The earliest such language was Simula 67 [3]. Two major variations, those in CLU and Smalltalk, are discussed below. 
 
@@ -98,13 +98,13 @@ Both CLU and Smalltalk enforce encapsulation but CLU uses compile-time type chec
 
 Another difference between CLU and Smalltalk is found in the semantics of data objects. In Smalltalk the operations are part of the object and can access the instance variables that make up the object's rep since these variables are part of the object too. In CLU, operations do not belong to the object but instead belong to a type. This gives them special privileges with respect to their type's objects that no other parts of the program have, namely, they can see the reps of these objects. (This view was first described by Morris 14). The CLU view works better for operations that manipulate several objects of the type simultaneously because an operation can see the reps of several objects at once. Examples of such operations are adding two integers or forming the union of two sets. The Smalltalk view does not support such operations as well, since an operation can be inside of only one object. On the other hand, the Smalltalk view works better when we want to have several implementations of the same type running within the same program. In CLU an operation can see the rep of any object of its type, and therefore must be coded to cope with multiple representations explicitly. Smalltalk avoids this problem since an operation can see the rep of only one object.
 
-## 03. Inheritance and Hierarchy
+### 03. Inheritance and Hierarchy
 
 This section discusses inheritance and how it supports hierarchy. We begin by talking about what it means to construct a program using inheritance. Then we discuss two major uses of inheritance implementation hierarchy and type hierarchy; see [18] for a similar discussion. Only one of these, type hierarchy, adds something new to data abstraction.
 
 18 Snyder, A. "Encapsulation and Inheritance in Object-oriented Programming Languages". Proc. Of the ACM Con ference on Obfect-oriented Programming System&, Languages, and Applications SIGPLAN Notices 24, 11 (November 1986)
 
-### 3.1 Inheritance
+#### 3.1 Inheritance
 
 In a language with inheritance, a data abstraction can be implemented in several pieces that are related to one another. Although various languages provide different mechanisms for putting the pieces together they are all similar. Thus we can illustrate them by examining a single mechanism, the subclass mechanism in Smalltalk.
 
@@ -122,7 +122,7 @@ Violating encapsulation can be useful in bringing up a prototype quickly since i
 
 [2] We ignore multiple inheritance to simplify the discussion
 
-### 3.2 Implementation Hierarchy
+#### 3.2 Implementation Hierarchy
 
 The first way that inheritance is used is simply as a technique for implementing data types that are similar to other existing types. For example, suppose we want to implement integer sets, with operations  (among others) to tell whether an element is a member of the set and to determine the current size of the set. Suppose further that a list data type has already been implemented, and that it provides a member operation and a size operation, as well as a convenient way of representing the set. Then we could implement set as a subclass of list; we might have the list hold the set elements without duplication, i.e. If an element were added to the set twice, it would be appear in the list only once. Then we would not need to provide implementations for member and size, but we would need to implement other operations such as one that inserts a new element into the set. Also, we should suppress certain other operations such as car, to make them unavailable since they are not meaningful for sets. (This can be done in Smalltalk by providing implementations in the subclass for the suppressed operations; such an implementation would signal an exception if called.)
 
@@ -130,7 +130,7 @@ Another way of doing the same thing is to use one (abstract) type as the rep of 
 
 Since implementation hierarchy does not allow us to do anything that we could not already do with data abstraction, we will not consider it further. It does permit us to violate encapsulation with both the benefits and problems that ensue. However, this ability could also exist in the rep approach if desired.
 
-### 3.3 Type Hierarchy
+#### 3.3 Type Hierarchy
 
 A type hierarchy is composed of subtypes and supertypes. The intuitive idea of a subtype is one whose objects provide all the behavior of objects of another type (the supertype) plus something extra. What is wanted here is something like the following substitution property [6]: If for each object o1 of type S there is an object o2 of type T such that for all programs P defined in terms of T, the behavior of P is unchanged when o1 is substituted for o2, then S is a subtype of T. (See also [2, 17] for other work in this.
 
@@ -148,13 +148,13 @@ The second example is abstract devices, which unify a number of different kinds 
 
 An inheritance mechanism can be used to implement a subtype hierarchy. There would be a class to implement the supertype and another class to implement each subtype. The class implementing a subtype would declare the supertype's class as its superclass.
 
-## 04. Benefits of ype Hierarchy
+### 04. Benefits of ype Hierarchy
 
 Data abstraction is a powerful tool in its own right. Type hierarchy is a useful adjunct to data abstraction. This section discusses how subtypes can be used in the development of the design for a program. (A detailed discussion of design based on data abstraction can be found in [11].) It also discusses their use in organizing a program library.
 
 11 Liskov, B, and Guttag, J. Abstraction and Specification in Program Development. MIT Press and Mcgraw Hill. 1986
 
-### 4.1 Incremental Design
+#### 4.1 Incremental Design
 
 Data abstractions are usually developed incrementally as a design progresses. In early stages of a design, we only know some of a data abstraction's operations and a part of its behavior. Such a stage of design is depicted in Figure 4-1a. 
 
@@ -176,7 +176,7 @@ Another advantage of distinguishing the types is that it may help in organizing 
 
 Finally, the distinction may help during implementation, for example, if S, but not T, needs to be reimplemented. However, it may be that the hierarchy is not maintained in the implementation. Frequently, the end of the design is just a single type, the last subtype invented, because implementing a single module is more convenient than having separate modules for the supertype and subtypes. Even so however, the distinction remains useful after implementation, because the effects of specification changes can still be localized, even if implementation changes cannot. For example, a change to the specification of S but not T means that we need to reimplement Q but not P. However, if S and T are implemented as a single module, we must reimplement both of them, instead of just reimplementing S.
 
-### 4.2 Related Types
+#### 4.2 Related Types
 
 The second use of subtypes is for related types. The designer may recognize that a program will use several data abstractions that are similar but different. The differences represent variants of the same general idea, where the subtypes may all have the same set of operations, or some of them may extend the supertype. An example is the generalized abstract device mentioned earlier. To accommodate related types in design, the designer introduces the supertype at the time the whole set of types is conceived, ane then introduces the subtypes as they are needed later in design.
 
@@ -186,7 +186,7 @@ When the relationship is defined in advance, hierarchy is a good way to describe
 
 When the relationship is recognized after the types have been defined, hierarchy may not be the right way to organize the program. This issue is discussed in Section 5.1.
 
-### 4.3 Organizing a type Library
+#### 4.3 Organizing a type Library
 
 There is one other way in which hierarchy is useful, and this is to aid in the organization of a type library. It has long been recognized that programming is more effective if it can be done in a context that encourages the reuse of program modules implemented by others. However, for such a context to be usable, it must be possible to navigate it easily to determine whether the desired modules exists Hierarchy is useful as a way of organizing a program library to make searching easier, especially when combined with the kind of browsing tools present, e. G., in the Smalltalk environment.
 
@@ -196,13 +196,13 @@ The search for collection types, or numeric types, or whatever, is aided by two 
 
 Using hierarchy as a way of organizing a library is a good idea, but need not be coupled with a subclass mechanism in a programming language. Instead, an interactive system that supports construction and browsing of the library could organize the library in this way.
 
-## 05. Type Hierarchy and Inheritance
+### 05. Type Hierarchy and Inheritance
 
 Not all uses of type hierarchy require language support. No support is needed for the program library; instead all that is needed is to use the notion of type hierarchy as an organizing principle. Support is also usually not needed for hierarchy introduced as a refinement technique. As mentioned earlier, the most likely outcome of this design technique is a single type at the end (the last subtype introduced), which is most conveniently implemented as a unit. Therefore any language that supports data abstraction is adequate here, although inheritance can be useful for introducing additional operations discovered later.
 
 Special language support may be needed for related types, however. This support is discussed in Section 5.1. Section 5.2 discusses the relationship of inheritance to multiple implementations of a type.
 
-### 5.1 Polymorphism
+#### 5.1 Polymorphism
 
 A polymorphic procedure or data abstraction is one that works for many different types. For example, consider a procedure that does sorting. In many languages, such a procedure would be implemented to work on an array of integers; later, if we needed to sort an array of strings, another procedure would be needed. This is unfortunate. The idea of sorting is independent of the particular type of element in the array, provided that it is possible to compare the elements to determine which ones are smaller than which other ones. We ought to be able to implement one sort procedure that works for all such types Such a procedure would be polymorphic.
 
@@ -243,7 +243,7 @@ One way of achieving more generality is to simply pass the needed operations as 
 
 In summary, when related types are discovered early in design, hierarchy is a good way to express the relationship. Otherwise, either the grouping approach (with suitable language support) or procedures as arguments may be better.
 
-### 5.2. Multiple Implementations
+#### 5.2. Multiple Implementations
 
 It is often useful to have multiple implementations of the same type. For example, for some matrices we use a sparse representation and for others a nonsparse representation. Furthermore, it is sometimes desirable to use objects of the same type but different representations within the same program.
 
@@ -255,7 +255,7 @@ The problem arises because inheritance is being used for two different things: t
 
 [4] of course, this solution would not work well in Smalltalk because procedures cannot conveniently be defined as individual entities nor treated as objects.
 
-## References
+### References
 
 Acknowledgments: Many people made comments and suggestions that improved the content of this paper. The autor gratefully acknowledges this help, and especially the efforts of Toby Bloom and Gary Leavens.
 

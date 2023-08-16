@@ -1,4 +1,4 @@
-# SmartFactory — Towards a factory-of-things
+## SmartFactory — Towards a factory-of-things
 
 Detlef Zuehlke a,b, *
 
@@ -12,7 +12,7 @@ Received 12 April 2009 Accepted 22 February 2010 Available online 28 March 2010
 
 Keywords: Internet-of-things Digital factory RFID SoA OPC HMI Wireless networks
 
-## Abstract
+### Abstract
 
 In 1991, Mark Weiser described the vision of a future world under the name of Ubiquitous Computing. Since then, many details of the described vision have become reality: Our mobile phones are powerful multimedia systems, our cars computer systems on wheels, and our homes are turning into smart living environments. All these advances must be turned into products for very cost-sensitive world markets in shorter cycles than ever before.
 
@@ -22,7 +22,7 @@ Therefore, the SmartFactory KL initiative was founded by industrial and academic
 
 2010 Elsevier Ltd. All rights reserved.
 
-## 01. Todays world of technology
+### 01. Todays world of technology
 
 Mark Weiser, one of the pioneers in computer technology, has coined the term ubiquitous computing — often also referred to as pervasive computing or ambient intelligence — for this new world Ubiquitous computing names the third wave in computing, just now beginning. First were mainframes, each shared by lots of people. Now we are in the personal computing era, person and machine staring uneasily at each other across the desktop. Next comes ubiquitous computing, or the age of calm technology, when technology recedes into the background of our lives (Weiser, 1991). 
 
@@ -38,7 +38,7 @@ An earlier version of this article was presented as a keynote paper at the 13th 
 
 German Research Center for Artificial Intelligence DFKI/Kaiserslautern Germany.
 
-### 1.1. Where are we today?
+#### 1.1. Where are we today?
 
 Today, computer integrated manufacturing is a reality, but we are still wrestling with the challenges of extreme complexity in planning and operations. Our planning processes are just as before: too sequential, too comprehensive in content, too much hardware-oriented and too product-speciﬁc. At the same time, we are facing new challenges: our products need to be more individualized and be offered in more variants, they must be adjusted to the market requirements in shorter time, the product life cycles are shorter than ever before and the global competition ever stronger. But deﬁnitely we can rely on the old remedy:「Don’t make things fat, think lean!」Create and use lean technologies now as you created a lean organization then! Lean means reducing complexity, avoiding waste technologies and information and strictly supporting the humans in their daily work. Here, we have the help of many new smart technologies that we take for granted in our daily lives which, in the meantime, have reached a level of maturity that makes them useful under industrial constraints.
 
@@ -50,7 +50,7 @@ Isn't that a desirable vision of the future? Without doubt, there have been grea
 
 1『这里看到 on the context 突然领悟到时「上下文」的意思。设备的「自组织」体现在可以根据上下文自己做决定。（2021-01-28）』
 
-### 1.2. Smart devices
+#### 1.2. Smart devices
 
 Everything, down to the smallest piece of equipment, must have a certain degree of built-in intelligence. We see RFID technology here as a pioneer. A highly integrated, low-power and low-cost processor is extended with a memory and a wireless communications interface and afﬁxed to each component in a mass market. In effect, the「intelligence」of a central system is moved into every piece of equipment. Products know their histories and their routes, and thereby not only greatly simplify the logistic chain but also form the basis for product life cycle data memories. When this technology is mastered and can be manufactured for just a few cents, the next step will be to couple sensors and actuators on the chip and turn it into an autonomous actuator-sensor network.
 
@@ -58,11 +58,11 @@ Everything, down to the smallest piece of equipment, must have a certain degree 
 
 1『看到了这里突然想到了「网络科学」，如果人类已经把网络科学吃透了，每个设备变成简单的「小脑」，组合起来可以形成一个自组织的复杂网络。正好「复杂」那本书里有对「复杂系统」的定义，智慧工厂搞不好就可以做成一个复杂系统。这个观点放在「未来工厂」头脑风暴的最后一页 PPT，顺便把几个典型的复杂系统图片放上去，冲击力还是有的，比如蚁群、经济体、食物链等。（2021-01-28）』
 
-### 1.3. Networked systems
+#### 1.3. Networked systems
 
 Due to their communication capability these smart devices must form networks which allow them to set up and maintain a very reliable communication infrastructure. Based on the Internet Protocol (IP) these networks will be highly redundant and therefore reliable. Every single piece has an IP address and can communicate. But with today's standards we will reach the technical limits soon. The IP address space must be enlarged. The IPv4 standard could hardly supply enough addresses for today's technology, but IPv6 will bring us relief and even far more: IPv6 will provide each of us roughly 60 thousand trillion addresses (Garﬁnkel, 2004).
 
-### 1.4. Mobility of devices
+#### 1.4. Mobility of devices
 
 The advances in low-power electronics together with high-resolution LCD screens and the wireless communication capabilities will bring mobility forward. Our mobile phones will become multifunctional and multimodal tools which offer us permanent access to all plant elements. We will be able to work anywhere and anytime using any device we like. But general solutions for this kind of interaction are still far away. The plant IT structures today are mostly strictly centralized (thick servers, thin clients). They require a powerful network infrastructure to route the task data between the devices in real-time and are furthermore too device-dependant. What is needed in the future is device-independent mobility at the task level. We must be able to switch from a laptop to a smartphone instantaneously and to continue our task considering the particular technical features of the device in use. And as future devices will not live for 30 years we must allow for shorter technology updates without requiring reprogramming of the control software. But this will require a standardized task (or service) description on a still to be deﬁned meta level (Satyanarayanan, 2004).
 
@@ -70,7 +70,7 @@ The advances in low-power electronics together with high-resolution LCD screens 
 
 Another important problem concerns knowledge about the place of interaction. When we operate today’s wire-based systems, the wire installation gives us implicit information about the place of interaction. In nomadic applications we will never know exactly where this place is. The user may be seated in front of the machine as well as in the local tavern. To keep the nomadic devices lean and up-to-date, we cannot store every possible front-end software in the devices; instead we should use the network connection to download an abstract HMI representation depending on the users place and task which will be used to generate a hardware-speciﬁc HMI on the dedicated device. Therefore we need location sensing systems, which can track the nomadic devices precisely also in indoor environments. The initial positioning solutions that are already available on the market still lack a broad coverage of industrial requirements. Furthermore, they are not standardized in terms of the required hard- and software interfaces, which makes their integration in large company-wide installations a non futureproof decision.
 
-### 1.5. Standards must emerge
+#### 1.5. Standards must emerge
 
 ![](./res/2021009.png)
 
@@ -84,7 +84,7 @@ In addition to the hard-/software and communication standards for devices we als
 
 However, before we can employ these technologies in our operations, we must be able to certify their reliability and safety under industrial conditions. No user will substitute the well-established control cables by a wireless connection unless he is convinced of their safety and security — no user replaces a machine panel by smartphone services as long as nothing works anymore when the smartphone is replaced by a newer device. For this reason, it makes great sense to test these technologies ﬁrst under near-industrial conditions and to develop them further in order to ensure their suitability in industrial environments. It was for this purpose that in Germany for the ﬁrst time in the year 2004, representatives of manufacturers and users met with people from academia and developed a vision for the intelligent factory of the future. This became the basis for the SmartFactory KL in Kaiserslautern, the very ﬁrst multi-vendor research and demonstrator facility for smart production technologies in the world. The next section provides a brief introduction to this facility.
 
-## 02. The SmartFactory KL approach
+### 02. The SmartFactory KL approach
 
 Based on a feasibility study, a non-proﬁt registered association named「Technology Initiative SmartFactoryKL」was established in June 2005. The founding partners represented various sectors of economy and research. Their common goals were the development, application, and distribution of innovative, industrial plant technologies and to create the foundation for their widespread use in research and practice. The partner circle has since grown to 21 and includes producers and users of factory equipment as well as universities and research centers. Support is also provided by industry and political organizations (Fig. 2).
 
@@ -146,13 +146,13 @@ A digital record of the life cycle of high value products, continuous monitoring
 
 In cooperation with the partner SAP-Research the SmartFactory KL has been linked into the SAP Future Factory network. By this experiences were gained on the integration into production networks on the MES level. A production order can be started anywhere in the network, the production remotely controlled and the products routed to other manufacturing plants or the customer.
 
-## 03. Towards a factory-of-things
+### 03. Towards a factory-of-things
 
 Despite the success stories already discussed, it is still a long and winding road from the vision to the reality of a smart factory, but just as it is constantly being walked by the consumer product engineers, it must also be taken by the factory planners. Adopting the basic principles of the internet-of-things we should talk about a factory-of-things as a vision for our future factories. The factory-of-things will be composed of smart objects which interact based on semantic services. There will be no hierarchy in the traditional sense instead the objects will self-organize to fulﬁl a certain task. But to achieve this goal there are multi-dimensional problems to be solved.
 
 1『 There will be no hierarchy in the traditional sense instead the objects will self-organize to fulﬁl a certain task，这句话是对「智慧工厂」一个核心的解释。补充进主题卡片「智慧工厂的 autonomy and sociality」里。（2021-01-28）』——已完成
 
-### 3.1. The technical dimension
+#### 3.1. The technical dimension
 
 The technical dimension most likely poses the least difﬁcult challenges. Here, smart devices suitable for industrial use are to be developed. For reasons of economy they will likely be based to a great extent on the technologies from the world of consumer goods. For example, just as it took many years for the PC to become suitable for industrial purposes, so too will smartphones, wireless PLC’s or sensors make the jump. In the process, we should always strive to use the existing standards from the world of the consumer market whenever possible, for that is where the high production volumes are which lead to acceptable prices. But these standards also need to be adjusted to the conditions of the industry with regard to reliability and the different environmental conditions.
 
@@ -160,7 +160,7 @@ A typical change will affect our operating devices. The upcoming use of the vari
 
 For making a factory-of-things work all elements must become smart, i.e. they must offer a thin web server functionality to act as a service provider in a factory network. To let a simple inductive proximity sensor become smart in that sense may look totally excessive from today’s point of view. But in 5 or 10 years the advances in microelectronics will surely bring it close to reality. And the emerging IPv6 standard will offer enough addresses to give each grain of sand on the entire earth more than just one.
 
-### 3.2. The architectural dimension
+#### 3.2. The architectural dimension
 
 Many of the envisioned changes can only develop their maximum beneﬁt when we move to a more abstract description of the planning and control process. We must avoid to link hardware, software and architecture at early stages already. Instead, we must concentrate on architectures enabling interoperability based on abstract component and task models. From similar developments in software engineering we learned that we must proceed from electrical signals via simple data integration to system models based on abstract objects. With the increased use of OPC, CORBA, etc. we moved into the right direction. But as in modern software engineering we have to proceed to the semantic level e.g. by using service architectures based on commonly deﬁned process services. But this next step will be much more challenging than any other leap in the past (Vernadat, 2006).
 
@@ -172,7 +172,7 @@ As customers in this ﬁeld are not looking for revolutions but instead for a co
 
 1『这里的 PLC 层如同图 7 金字塔控制层里的 Control-Level（Machine controllers）。（2021-01-29）』
 
-### 3.3. The planning dimension
+#### 3.3. The planning dimension
 
 A large portion of the problems in plant engineering has their origin in the planning methods commonly used today, which are closely associated with hardware factors. As a rule, today’s planning procedures normally start with an initial, top-down rough planning in which the structures, components and production methods and parameters of the product are deﬁned. Thereafter, the bottom-up detailed planning begins, in which the required machine parts and components are selected and engineered, wiring schemes planned in detail, and ﬁnally, the control hardware and software is developed. Today there are many advanced CAx systems used for this. With CAD, for example, STEP models can import and integrate mechanical data; CAE tools for SCADA development like PCS7/WinCC (Siemens) facilitate the design of control software, and visualization (or simulation) tools allow for the simulation of the entire plant already in early design planning stages. Unfortunately, these systems often lack adequate data integration: Although they are internally model-based, the models are often incompatible with one another. It is precisely this model-based integration that takes on increased signiﬁcance in the lean planning process of the future. Here, solutions are most urgently needed to create an improved planning situation. Modelbased planning needs device models on the basic levels. Today, most industrial devices are already delivered to the customer with electronic CAD and product data in the international STEP format. In the future, this data must be transformed into comprehensive device models including communication and service models (Fig. 9).
 
@@ -180,7 +180,7 @@ The vision for future factory planning is named「Digital Factory」. The import
 
 In the long run, we aim at a semantic interoperability of the various factory devices. This requires semantic service models based on common ontologies and – for a world-wide market success – international standards.
 
-### 3.4. The safety and security dimension
+#### 3.4. The safety and security dimension
 
 The daily frustration of having an empty battery for your mobile phone or having a virus sneak onto your PC is certainly annoying, but very seldom threatening. This is quite different for an industrial application. There, we must be able to ensure under nearly every normal condition, that the systems stay constantly under control. Today, while wired controls can provide a satisfactory safety guarantee, there are still many open questions concerning the mobile and wireless solutions. It is not only the technical issues like the power supply or the availability of channels that can present problems; there is also the risk of criminal attacks – the tiresome hackers – that not only cause severe problems but will be much harder to be traced. In our SmartFactory KL a simple wireless webcam set was sufﬁcient to widely jam all wireless communication and thereby stop production.
 
@@ -188,7 +188,7 @@ Another problem area is fast approaching and with it come challenges we will be 
 
 In spite of such problems, the ﬁrst wireless systems are now being sold by several of the large vendors in the ﬁeld of process automation. However, these are still custom solutions, which serve mainly to gather experience and test the market. Most customers have not yet been convinced of these systems’ safety and security. But just as it took years for the PC to overcome the skepticism of industry as a reliable control component, the wireless systems will need a bit more time before they can assert themselves (Welander, 2007).
 
-### 3.5. The human dimension
+#### 3.5. The human dimension
 
 Finally, we should not forget the lessons learned from the CIM era. Whatever technical system we design, we always should put the human in the center! The factory devoid of humans is an aberration. We need humans in all phases of factory operations from the planning through the operation to the maintenance and repair services. While our human cognitive and sensomotor abilities have not signiﬁcantly improved within the last thousands of years, future systems should focus on humans and their abilities and not conversely demand that the humans adjust to whatever technology.
 
@@ -200,7 +200,7 @@ Taking all this into consideration, the engineering of the HMI takes on a whole 
 
 [1] USEWARE comprises all hard- and software components of a technical system that are related to human-machine-interaction, the term USEWARE was introduced in 1999 to emphasize the independent signiﬁcance of HMI design compared to the traditional ﬁelds of hard- and software.
 
-## 04. Conclusions
+### 04. Conclusions
 
 Today we are in a comparable situation to 29 years ago. New ICT technologies and products offer a broad range of new applications not only in the consumer but also the industrial world. A simple adaptation of existing technologies from the area of consumer goods appears tempting but, this would be inappropriate for industrial use in most cases. Instead, we should remember the lessons learned from the CIM crisis:
 
@@ -216,7 +216,7 @@ Today we are in a comparable situation to 29 years ago. New ICT technologies and
 
 The path we have taken in Germany with the SmartFactoryKL initiative, to examine, test and develop technologies in a physical factory test bed in cooperation of industry and academia, has proven itself so that we can recommend it for imitation elsewhere. However, the resources required are not to be underestimated. And as future changes will not only require steady technical evolution but instead the acceptance of new engineering paradigms we need visions and visionary decision makers in industry, politics and academia (Zuehlke, 2008).
 
-## References
+### References
 
 Garﬁnkel, S. (2004). Internet 6.0, technology review January: (2004).
 

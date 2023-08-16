@@ -1,4 +1,4 @@
-# Smart Factory - A Step towards the Next Generation of Manufacturing
+## Smart Factory - A Step towards the Next Generation of Manufacturing
 
 Dominik Lucke1 , Carmen Constantinescu1, 2 , Engelbert Westkämper1, 2 Institut für Industrielle Fertigung und Fabrikbetrieb, IFF - Universität Stuttgart, Germany
 
@@ -6,7 +6,7 @@ Fraunhofer-Institut für Produktionstechnik und Automatisierung, IPA - Stuttgart
 
 January 1, 2008
 
-## Abstract
+### Abstract
 
 The Stuttgart Model of adaptive, transformable and virtual factories, already implemented in German basic research performed at the Universität Stuttgart has been extended with a new perspective, the so-called「Smart Factory」. The Smart Factory approach is a new dimension of multi-scale manufacturing by using the state-of-the-art ubiquitous/pervasive computing technologies and tools. The Smart Factory represents a context-sensitive manufacturing environment that can handle turbulences in real-time production using decentralized information and communication structures for an optimum management of production processes. This paper presents our research steps and future work in giving reality to the envisioned Smart Factory at the Universität Stuttgart.
 
@@ -14,7 +14,7 @@ Keywords: Smart Factory; Real-time Factory; Ubiquitous computing
 
 1『这里出现了一个关键词「real-time production」。（2021-01-27）』
 
-## 01. Problem Statement
+### 01. Problem Statement
 
 In recent years manufacturing engineering experienced a dramatic change through different parallel running developments. The globalisation and the wish to produce highly customized products lead to a higher proliferation of variants, shorter product life cycles and closer enterprise networks. The short planning horizons and product life cycles induce the decrease of batch sizes and do therefore require a high dimension of manufacturing flexibility. In order to make the right management decisions, real-time information and the direct realisation of the decisions are indispensable.
 
@@ -26,15 +26,15 @@ The information management is responsible for the allocation of the job and proc
 
 A parallel development was enabled by the integration of electronic components like microchips or sensors into objects due to their decline of price. This development enables a decentralized control in a more economical way.
 
-## 02. Smart Factory: Definition, Challenges and Enabling Technologies
+### 02. Smart Factory: Definition, Challenges and Enabling Technologies
 
 The design and development of the Smart Factory require as a first step the definition of the concept. Mark Weiser’s vision of the smart environment describes a physical world, which is closely and invisibly interwoven with sensors, actuators, displays and computer elements, which are seamlessly embedded into daily life objects. They are connected with each other by a network [2]. The Mark Weiser’s approach of smart environments is transferred to manufacturing issues. After the development of digital and virtual factories next step in evolution of factories is the fusion of physical and virtual world [3] under a so-called Smart Factory.
 
-### 2.1 Definition
+#### 2.1 Definition
 
 The basic research in the field of Smart Factory at Institute of Industrial Manufacturing and Management (IFF) is performed within the Center of Excellence Nexus (SFB 627) [4]. This interdisciplinary research is funded by the German Research Foundation (DFG). The so-called Smart Factory is defined as a Factory that context-aware assists people and machines in execution of their tasks. This is achieved by systems working in background, so-called Calm-systems and context-aware applications. In our case, context-aware means that the systems can take into consideration context information like the position and status of an object. These systems accomplish their tasks based on information coming from physical and virtual world. Information of the physical world is e.g. position or condition of a tool, in contrast to information of the virtual world like electronic documents, drawings and simulation models. These systems are working on different levels of the factory, like context-aware information systems in the shop floor (workers cockpit) or advanced manufacturing execution systems that can act context-aware for the shop floor manager. Calm systems are referring in this context the hardware of a Smart Factory. The main difference between calm and other types of systems is the ability to communicate and interact with its environment.
 
-### 2.2 Challenges
+#### 2.2 Challenges
 
 The Smart Factory concept enables the real-time collection, distribution and access of manufacturing relevant information anytime and anywhere. The Smart Factory represents a realtime, context-sensitive manufacturing environment that can handle turbulences in production using decentralized information and communication structures for an optimum management of production processes. Premises for further assistance than today are the horizontal and vertical integration of information systems, the assignment of material and flow of information within an enterprise. For acting context-aware, the applications in the Smart factory have to answer the following three questions, from those deriving more challenges:
 
@@ -62,7 +62,7 @@ Integration of heterogeneous information: The integration challenge of different
 
 Real-time characterized reaction: For supporting people and machines information has to be provided within seconds. This challenge addresses mainly communications technologies and database management.
 
-### 2.3 Enabling Technologies
+#### 2.3 Enabling Technologies
 
 ![](./res/2021006.png)
 
@@ -84,7 +84,7 @@ Situation Recognition: In order to provide people in their tasks the right infor
 
 Sensor Fusion: Today's applications often use hard coded systems specifically designed for their task, giving no information to other systems. Sensor fusion technology is used in the Smart Factory for combining different raw sensor values for an aggregation or better measurements. Furthermore having all kinds of sensor data easy accessible via the Nexus Platform in the Smart Factory environment new kinds of measurements can be created for an easy implementation of new context-aware applications.
 
-## 03. Positioning of the Smart Factory into the Functional Architecure of a Manufacturing Enterprise
+### 03. Positioning of the Smart Factory into the Functional Architecure of a Manufacturing Enterprise
 
 The manufacturing enterprise has to fulfill along its processes several main functions, graphically represented in Figure 2. As shown, the main phases of factory life cycle are investment planning, site and building planning, the planning of infrastructure and processes, layout planning, ramp-up and project management, manufacturing execution, maintenance, education and training. The architecture introduces the complexity of managing the data's diversity and heterogeneity, which comes from different applications and information systems. Due to the real-time informing and controlling character, the Smart Factory focuses mainly the manufacturing execution, maintenance, education and training functions of a manufacturing enterprise, as shown in Figure 2.
 
@@ -106,7 +106,7 @@ Arrived at the machine he can immediately start the repairing So the times of to
 
 Figure 3 gives an overview of the envisioned Smart Factory The modules like a MES or a Smart Machine are connected via the Nexus Platform with the Augmented World Model that provides the exchange of sensor, process, job, geometric and further information in the factory. 
 
-## 04. Related Work
+### 04. Related Work
 
 In the research field of Smart Factories several other related work, relevant for the scientific community, have to be mentioned. These are in the following shortly presented
 
@@ -114,13 +114,13 @@ Smart Factorvkl: The Smart Factorykl is a project located in Kaiserslautern Germ
 
 /NT-MANUS: The Intelligent Networked Manufacturing System (INT MANUS) project is financed by the European Commission under the 6 framework. Goal of INT-MANUS is the development of a new technology, the so called Smart Connected-control Platform (SCC platform) for manufacturing enterprises 8]
 
-## 05. Conclusions and Future Work
+### 05. Conclusions and Future Work
 
 The downscaling of computer and sensor technologies supports the integration of knowledge at all scales of a holistic production system, aiming at increasing the transformability of the factory as a whole. The presented Smart Factory approach represents a real-time, context sensitive manufacturing environment that can handle turbulences in production using decentralized information and communication structures for an optimum management of Production processes. Based on the Nexus Platform it integrates heterogeneous information systems in manufacturing enterprise both horizontal (e. G. Between systems in the shop floor) and vertical (e. G. Between shop floor and management systems like ERP or MES) in order to reduce information deficits. In the framework of the research area Smart Factory at the Universitat Stuttgart, IFF, a Smart Factory environment has been developed and will be enhanced, aiming at implementing the vision of the next-generation real-time and context-aware production systems.
 
 2『这里的总结算是本论文精华了，做一张信息数据卡片。（2021-01-28）』——已完成
 
-## 06. REFERENCES
+### 06. REFERENCES
 
 [1] Westkamper, E. Hummel, V. Ronnecke, T, 2005, The Stuttgart Enterprise Model Integrated Engineering of Strategic Operational Functions. N: EMS Proceedings, March 14-16, Cocoa Beach, Florida USA 379-384
 

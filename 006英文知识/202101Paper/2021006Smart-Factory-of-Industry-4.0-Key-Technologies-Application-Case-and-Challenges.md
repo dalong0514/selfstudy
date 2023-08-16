@@ -1,4 +1,4 @@
-# Smart Factory of Industry 4.0: Key Technologies, Application Case, and Challenges
+## Smart Factory of Industry 4.0: Key Technologies, Application Case, and Challenges
 
 最新版发表于 2018-03
 
@@ -14,13 +14,13 @@ Corresponding author: Jiafu Wan (jiafuwan2017@163.com)
 
 This work was supported in part by the National Key Research and Development Project under Grant 2017YFE0101000, in part by the Key Program of Natural Science Foundation of Guangdong Province, China, under Grant 2017B030311008, in part by the Maoming Engineering Research Center of Industrial Internet of Things under Grant 517018, and in part by the National Natural Science Foundation of China under Grant 61401107.
 
-## Abstract
+### Abstract
 
 Due to the current structure of digital factory, it is necessary to build the smart factory to upgrade the manufacturing industry. Smart factory adopts the combination of physical technology and cyber technology and deeply integrates previously independent discrete systems making the involved technologies more complex and precise than they are now. In this paper, a hierarchical architecture of the smart factory was proposed ﬁrst, and then the key technologies were analyzed from the aspects of the physical resource layer, the network layer, and the data application layer. In addition, we discussed the major issues and potential solutions to key emerging technologies, such as Internet of Things (IoT), big data, and cloud computing, which are embedded in the manufacturing process. Finally, a candy packing line was used to verify the key technologies of smart factory, which showed that the overall equipment effectiveness of the equipment is signiﬁcantly improved.
 
 Key Works: Smart factory, big data, cloud computing, cyber-physical systems, industrial Internet of Things.
 
-## 01. Introduction
+### 01. Introduction
 
 With the rapid development of electric and electronic technology, information technology and advanced manufacturing technology, the production mode of manufacturing enterprises is being transferred from digital to intelligent. The new era that combines virtual reality technology based on the Cyber-Physical System (CPS) is coming [1]–[4]. Due to the new challenges, the advantages of traditional manufacturing industries have been gradually diminished. Consequently, the intelligent manufacturing technology is one of high technology areas where industrialized countries highly pay more attention to. Europe 2020 strategy [5], Industry 4.0 strategy [6] and China manufacturing 2025 [7] have been proposed. United States has gradually accelerated the speed of reindustrialization and manufacturing reﬂow [8]. The transformation of intelligent manufacturing intrigued the profound and lasting effect on the future manufacturing worldwide.
 
@@ -86,7 +86,7 @@ CPS 在制造行业的应用有巨大的潜力 [16]，制造系统中的每一�
 
 』
 
-## 02. Smart Factory Architecture
+### 02. Smart Factory Architecture
 
 In the context of Industry 4.0, the intelligent manufacturing attracts enormous interest from government, enterprises and academic researchers [9]. Therefore, the construction patterns of smart factory are widely discussed. However, the standards for smart factory implementation have not been established yet. Benkamoun et al. [10] proposed a class diagram which can be used to represent the manufacturing system from different perspectives of entities and functions. Radziwon et al. [11] expounded former research from the concept of smart factory, and they pointed out that smart factory is actually an exploring of adaptive and ﬂexible manufacturing. Lin et al. [12] proposed an architecture for cloud manufacturing systems oriented to aerospace conglomerate, which facilitates optimal conﬁguration of manufacturing resources. 
 
@@ -104,17 +104,17 @@ As shown in Fig. 1, the architecture of smart factory [16], [17] includes four l
 
 FIGURE 1. Hierarchical architecture of smart factory.
 
-## 03. Physical Resources Layer
+### 03. Physical Resources Layer
 
 The physical resources include all manufacturing resources involved in the entire life cycle of manufacturing, which represent the basis for achievement of intelligent manufacturing. The efﬁcient manufacturing of customized products puts forward new demands on manufacturing equipment, production line and data acquisition. Therefore, to meet the requirements of smart factory, present problems of key technologies should be solved.
 
-### 3.1 Reconfigurable Manufacturing Unit
+#### 3.1 Reconfigurable Manufacturing Unit
 
 1『目前 Reconfigurable 翻译为「可重构」比较合适。（2021-01-29）』
 
 Due to the lack of ﬂexible and conﬁgurable construction, current manufacturing equipment in workshop has strong speciﬁcity and relatively narrow application range, which results in weak adaptation to manufacturing environment changes. The manufacturing unit, which is modularized by manufacturing equipment (e.g., industrial robot, mechanical arm, and machining center), improves dynamic scheduling. Moreover, the controller is reconﬁgurable and provides an extension of manufacturing equipment functions.
 
-#### 3.1.1 Modular Manufacturing Units
+3.1.1 Modular Manufacturing Units
 
 From the aspect of modular manufacturing units, Fiasché et al. [18] proposed a modular-adaptive and self-contained reconﬁgurable robotic island to improve assembly capacity of the workshop, where ﬂexible manufacturing ability was also enhanced by integrated management framework which controls and organizes the modular manufacturing unit. Piranda and Bourgeois [19] proposed a distributed algorithm for reconﬁguration of lattice-based modular self-reconﬁgurable robots, which drastically simpliﬁes complexity of robots conﬁguration through iterative approach. Further, Valente [20] proposed a vertical cyber physical integration of cognitive robots in manufacturing. The cognitive robots, which were vertically integrated into the manufacturing industry, and coordinated with the manufacturing execution system. In the context of intelligent manufacturing, the cognitive robots can perceive information uncertainty, change scheduling management and adjust manufacturing behavior to independently cope with a complex manufacturing problem. The intelligent level of smart factory is closely related to the modular manufacturing unit, and the above-mentioned literature describes the intelligent robot units from different perspectives. The modular manufacturing units can work independently and deal with a changeable scheduling of smart factory.
 
@@ -130,7 +130,7 @@ Therefore, it is very important to enhance the intelligence of robots units. Sev
 
 In the intelligent manufacturing, small quantities of various products enter into manufacturing system disorderly, which certainly leads to the deadlock phenomenon. Currently, approach for deadlock prevention in ﬂexible manufacturing systems is a hot research topic [21], [22].
 
-#### 3.1.2 Configurable Controller
+3.1.2 Configurable Controller
 
 The conﬁgurability of the control system refers to the ability to integrate, extend, replace, and reuse hardware or software components of the system. Proper conﬁguration of controller can improve conﬁgurability of manufacturing unit, which expands unit’s function in multi-application scenarios. In this way, manufacturing unit would be able to adapt swiftly to operation condition changes [23], [24].
 
@@ -146,7 +146,7 @@ Based to normalized structure of reconﬁgurable logic controller, Adamski and T
 
 The research of conﬁgurable controller mainly focuses on its structure and function. General, an information model is built in the control system to perceive operation condition, while reasoning decision is made according to the information of evaluation module. Moreover, the controller system completes reconﬁguration planning and implements processes automatically for speciﬁc needs. However, lack of support for interoperable technology, such as interactive interface, results in poor ﬂexibility. The basic theory from reconﬁgurable aspect (e.g., ontology modeling and veriﬁcation) is still weak. Moreover, dynamic re-conﬁguration mechanism is not perfect and research results are only applicable to the speciﬁc scenarios. Thus, more attention should be paid to the embedded component model in real-time running framework. Therefore, the knowledge-driven adaptive re-conﬁguration is crucial for the implementation of reconﬁgurable service.
 
-### 3.2 Reconfigurable Production Line
+#### 3.2 Reconfigurable Production Line
 
 Nowadays the manufacturing products in the market are characterized by small batches and multiple varieties. Therefore, the production-line should reconﬁgure its process paths and recombine manufacturing units dynamically. Accordingly, the smart factory should adjust product type and production capacity in real-time. 
 
@@ -160,7 +160,7 @@ Goyal and Jain [32] divided the optimization design of reconﬁgurable productio
 
 The reconﬁgurable production line can generate a large range of different products due to its variability, scalability and schedulability, which is the basis of ﬂexible manufacturing in smart factory. Presently, the problem of production line is strong specialty, which can be enhanced by advance planning and control methods. Here, we build a reconﬁgurable system to simulate the production line and propose a scheme for reconﬁguration. The feasibility of proposed scheme is veriﬁed by the manufacturing scenario. With the aim to respond timely to the market requirements, it is necessary to implement a reconﬁgurable production line in the smart factory.
 
-### 3.3 Intelligent Data Acquisition
+#### 3.3 Intelligent Data Acquisition
 
 The manufacturing resource data denote basic information for workshop scheduling and intelligent service in smart factory. The wireless sensor networks (WSNs) are employed in smart factory for data monitoring, acquisition and logging. Based on data analysis and using an intelligent equipment in manufacturing scenarios, the manufacturing execution system can properly implement production scheduling. 
 
@@ -174,11 +174,11 @@ Various kinds of special sensors are used to collect data in manufacturing area,
 
 FIGURE 2. Dynamic electrocardiogram system.
 
-## 04. Network Layer
+### 04. Network Layer
 
 Industrial networks represent the integration of various kinds of network technologies such as ﬁeld bus and sensor networks. The network layer, which is characterized by perception and control, plays an important role in the smart factory. Due to the improvements of cloud computing technology [38], real-time and reliable network techniques are required for data transmission, information sharing between intelligent equipment, and manufacturing cloud platform. The advanced information technologies (e.g., IWSNs and ﬁeld bus) and their related technologies provide an important way to meet above mentioned requirements. Field buses (e.g., Foundation Fieldbus (FF), Proﬁbus, and Hart) gradually meet enterprise requirements of open, universal and compatible networks, and most of them have already been Standardized [39], [40]. However, there are still many issues such as routing, congestion control, errors handling and seg mentation technology in network layer. The IWSNS and the other related technologies involved in the smart factory are discussed in the following.
 
-### 4.2 Industrial Wireless Sensor Networks
+#### 4.2 Industrial Wireless Sensor Networks
 
 The Industrial Wireless Sensor Networks (IWSNs) represent the expansion and promotion of the existing wireless communication technology intended for industrial application and they lead to the revolution of measurement and control mode in the traditional industrial field. In the meantime the deployment of industrial networks has become flexible reliable, and low-cost. Currently, the universal and mature wireless network communication standards mainly include ireless HART, WTA-AP, and ISA100.11a. The application of industrial networks is complex, and it is difficulty to introduce a generic wireless network communication standard. The industrial wireless network technology should have low latency, high reliability, and high synchronous accuracy when dealing with a control service, and should have high access density and low power consumption in data acquisition. The networks should also have a high transmission rate of interactive service.
 
@@ -192,11 +192,11 @@ Since the wireless communication has a character of radio broadcasting, wireless
 
 The equipment monitoring and information interaction are convenient for smart factory with IWSNs because they accelerate the progress of intelligent manufacturing. The IWSNs should meet the requirements for reliability and real-time data transmission. Because of uncertainty of position, energy efﬁciency of IWSNs constrains its expansion. When a largescale equipment accesses to the industrial networks, network security is very important. In the IWSNs scenarios such as mass connection, low-power consumption, and wide coverage, new wireless communication technologies (e.g., NB-IoT, 5G, LTE, and 3GPP) provide low latency and high reliability. However, certain measures should be taken to improve robustness of signal propagation in complex electromagnetic environment and extend working hours of networks nodes. Accordingly, networks standardization and security defense need further improvement.
 
-### 4.3 Related Technologies
+#### 4.3 Related Technologies
 
 The application of network technology in smart factory provides reliable and supportable information service. However, the implementation of industrial internet still faces with many problems such as information interaction between equipment, ﬂexible conﬁguration of networks, and transmission delay. Some of key related technologies are described in detail in the following.
 
-#### 4.3.1 OPC UA-Based Interactor in Multi-Agent Systems
+4.3.1 OPC UA-Based Interactor in Multi-Agent Systems
 
 The intelligent manufacturing system is a multi-agent system which consists of task-driven intelligent equipment, where agent is characterized by autonomy, heterogeneity and decentralization [22]. Leitão et al. [52] pointed out that OPC UA is transferred from the original communication architecture (e.g., the Component Object Model (COM) standard) to the service-oriented architecture with a cross platform, in which way the communication among equipment and intelligent manufacturing system is provided. With the standardization of OPC UA, a new opportunity for multi-agent technology is created. 
 
@@ -204,7 +204,7 @@ Girbea et al. [53] designed a service-oriented architecture for optimization of 
 
 The multi-agent system is a system of coordinated solving of large-scale complex problems with the cooperation of every agent. Besides data transmission, the OPC UA can be used to integrate production data into manufacturing environment and provide semantic annotation for every agent. Due to the construction of data source and receiver, the OPC UA can allocate all manufacturing resources including embedded system to the speciﬁc areas and extensible computing nodes through the address space and pre-deﬁned model. Further, the OPC UA solves the problem related to uniﬁed access to the information of different systems. The OPC UA-based interaction in multi-agent systems makes all agent coordinate with each other to solve problems in a parallel manner, which effectively improves the problem solving efﬁciency. Thus, the development of OPC UA is of high importance because of redundancy, which is featured with adjustable overdue settings, error detection, and automatic correction. Therefore, the communication tools which are in accordance with the OPC UA standard can deal with the communication errors and failures easily.
 
-#### 4.3.2 Software Defined Industrial Networks
+4.3.2 Software Defined Industrial Networks
 
 Network technology is used to integrate internal and external resources in smart factory in order to form comprehensive, uniﬁed, and high covering manufacturing resource. Therefore, it is crucial to achieve network scalability and adaptive transmission [55], [56]. Making network conﬁguration ﬂexible is a key issue for researchers. The SDNs simplify the required hardware with centralized control by a software, which facilitates network management and satisﬁes requirements of dynamic networks for intelligent manufacturing [57], [58].
 
@@ -218,7 +218,7 @@ Currently, the basic network system of manufacturing enterprises is consisted of
 
 FIGURE 3. The SDN framework in smart factory.
 
-#### 4.3.3 Device to Device Communication
+4.3.3 Device to Device Communication
 
 The contradictions between rapid growth of intelligent equipment and limited bandwidth of industrial networks become increasingly prominent in smart factory [66], [67]. The D2D communication refers to the communication wherein devices directly exchange information with neighbors under the control of communication system. In common cellular networks, an intelligent equipment can use D2D communication technology for direct communication via an isotropic antenna at every base station. This technology provides a new way for low-latency communication, large data transmission, and massive access to the mobile terminal. Holfeld et al. [68] stated that LTE-based wireless technology can provide new services for factory automation. On the other hand, 5G communication technology brings new opportunities to the automated wireless communication technology. Liu et al. [69] described the challenges and potential solutions to the implementation of machine-type communication system and presented a roadmap of current cellular technologies toward 5G mobile systems capable of fully-machine type communication(MTC). Pratas and Popovski [70] proposed networkassisted D2D schemes that enable the cooperation between machine-type devices and standard cellular devices, and meet the MTC outage requirement by maximizing the rate of broadband services. Bagaa et al. [71] proposed an optimal solution that uses D2D communication to reduce the overhead of MTC devices in 5G networks, and which aims to decrease energy consumption and data transfer delay at eNodeBs. Yu et al. [72] proposed a D2D-communicationbased system underlying cellular networks to improve local services, where optimal resource allocation and power control between cellular and D2D connections were analyzed for different resource sharing modes.
 
@@ -228,7 +228,7 @@ Once the D2D communication link is established in communication network, data tr
 
 FIGURE 4. The D2D communication in smart factory.
 
-#### 4.3.4 Edge Computing
+4.3.4 Edge Computing
 
 Edge computing denotes an open platform with many features such as networking, computing, storage, and application. Edge computing is performed at the network edge near to device or data source. Moreover, edge computing provides intelligent services that meet key requirements of intelligent manufacturing for agile connection, real-time processing, data cleaning, and privacy protection [73], [74]. Brito et al. [75] supposed that deployment of programmable fog nodes, which is attributed to inter-node Peer-to-Peer (P2P) communication and services orchestration without centralized control, could increase ﬂexibility, reliability and efﬁciency. Pizoń et al. [76] argued that edge computing enables dynamic monitoring and control of manufacturing process. Meanwhile they pointed out that edge computing requires special IT ecosystem to build dynamic systems for transfer of production data. Georgakopoulos et al. [77] presented a manufacturing roadmap of IoT and edge cloud computing to address elastic and virtual manufacturing resources, which provides opportunities for real-time monitoring of production KPIs and smart inventory management.
 
@@ -240,11 +240,11 @@ FIGURE 5. The generic architecture of edge computing.
 
 The upper layer reduces pressure to the core network, optimizes data transmission, and provides support for application extension. The edge computing integrates operation technology with ICT, while its distributed control system interacts with physical system with high stability. Additionally, edge computing makes a full use of embedded computing of terminal-side equipment, which provides autonomy of equipment with a disperse treatment. Meanwhile, the edge computing that is coordinated with cloud computing increases intelligence of the entire manufacturing system. As edge intelligence advances, communication and computing performances in distributed perception, decisionmaking and control will change signiﬁcantly.
 
-## 05. Data Application Layer
+### 05. Data Application Layer
 
 The semantic association between manufacturing data is established by ontology model [78]. The essence of data application is to discover knowledge from data resources and build the industrial value chain. The industrial big data mainly include structured data and semi-structured data. As data mining technology advances, data-driven innovation will further promote intelligent manufacturing.
 
-### 5.1 Ontology-Based Manufacturing Model
+#### 5.1 Ontology-Based Manufacturing Model
 
 Considering the large amount of manufacturing resources, resources concept may vary among different perspectives. A formal description is presented by ontology for domain knowledge. Namely, ontology is a semantic representation of related concepts and their relationship in intelligent manufacturing. It is signiﬁcant to construct the ontology for knowledge sharing, reuse, and reasoning. 
 
@@ -270,11 +270,11 @@ As shown in Fig. 6, the ontology-based modeling combines knowledge base with dat
 
 FIGURE 6. Ontology-based domain modeling method.
 
-### 5.2 Applications of Big Data Manufacturing
+#### 5.2 Applications of Big Data Manufacturing
 
 The big data in smart factory mainly include real-time sensor data, machine log, and manufacturing process data, which have large volume, multiple sources, and spare value. In the context of intelligent manufacturing, the applications of big data develop rapidly in industrial supply chain analysis and optimization, product quality control, and active maintenance [84]–[87].
 
-#### 5.2.1 Active Maintenance Based on Big Data
+5.2.1 Active Maintenance Based on Big Data
 
 Proper operation of intelligent equipment is a guarantee of continuous production in the smart factory, where operation conditions have an important impact on equipment utilization and productivity. Data mining technology brings new breakthroughs to failure prediction and actie maintenance. Wan et al. [88] proposed a manufacturing big data solution for active preventive maintenance in manufacturing environment, which combines a real-time active maintenance mechanism with an off-line prediction method. Regev and Benson-Karhi [89] proposed a segmented model for preventive maintenance of semiconductor manufacturing equipment, namely they presented both parametric and non-parametric models for preventive maintenance. Hashemian and Bean [90] discussed the limitations of timebased equipment maintenance methods and advantages of predictive and online maintenance techniques for early identiﬁcation of equipment failure. Xiong et al. [91] used data mining to identify bearing faults in wind turbines, and they built models for bearing faults prediction based on historical wind turbine data.
 
@@ -284,7 +284,7 @@ FIGURE 7. Open application architecture for active maintenance based on manufact
 
 The regular maintenance in traditional mode just wastes resource and time. In contrast, active maintenance based on big data can provide necessary maintenance service. The active maintenance reduces machine downtime, optimizes resource utilization, and increases production. In the meantime, the maintenance cost is also reduced. The open application architecture of active maintenance based on manufacturing big data is presented in Fig. 7. The requirements for active maintenance of production facilities are as follows: 1) improve intelligence of workshop equipment; 2) cooperate with domain experts; and 3) express knowledge professionally. The machine learning and statistical analysis are the mainstream approaches of active maintenance. However, many factors should be considered. Such as uncertainty of production process, integration of different methods and model applicability. Presently, active maintenance of complex equipment still lacks the effective methods, thus further improvement is needed.
 
-#### 5.2.2 Product Design Optimization Based on Manufacturing Big Data
+5.2.2 Product Design Optimization Based on Manufacturing Big Data
 
 With the development of IoT technology, it becomes convenient to collect the product data. At present, the optimization based on big data in manufacturing is effective on the stages of logistics, warehousing, and selling. Analysis technology based on big data is used in product design, which takes advantage of knowledge discovery and trend prediction of data. Graening and Sendhoff [92] proposed a shape mining as a framework, based on engineering design data, which was applied to the passenger car design. Williams et al. [93] developed a big data management infrastructure with semantic technologies, which provides uniﬁed data access layer and consistent approach to analytic execution. Bae and Kim [94] proposed the apriori and C5.0 algorithms for data mining, and mining results were attributed as knowledge to provide the suggestions for product design and marketing. However, if data receiver and feedback mechanism are added to the traditional product, the product itself will become the data source for design optimization without affecting its use.
 
@@ -292,7 +292,7 @@ In addition, the product logs, maintenance data, and user data will become the v
 
 Data mining helps designers to transform big data into enlightening knowledge using selection, analysis and modeling methods. The data fusion technology can analyze the same object based on multiple data resource. The data mining technology is introduced in optimization of product design because it can deal with fuzzy and uncertain reasoning results caused by a designer. However, the product optimization design based on big data lacks the knowledge discovery tools. Therefore, we cannot take full advantage of potential information from design examples. The decision-making, which is based on existing knowledge, is less ﬂexible in design optimization. The product design optimization based on big data requires multidisciplinary knowledge. Therefore, the other interdisciplinarities associated with big data, such as deep learning and artiﬁcial intelligent, have become important research directions in product design optimization.
 
-## 06. Application Case Study
+### 06. Application Case Study
 
 From the view of intelligent manufacturing, manufacturing equipment should be equipped with the abilities of edge computing, environment perception, and coordination between equipment. The smart factory, which is a cyber-physical production system (CPPS), integrates intelligent sensors, embedded terminal systems, intelligent control system, and communications facilities. The peer to peer interaction (e.g., person to equipment, equipment to equipment, service to service) is achieved by CPPS. Therefore, building of smart factory should take into consideration manufacturing characteristics to meet rapidly-changing market needs [95], [96]. In the following, we use the laboratory prototype platform as an example to explore typical characteristics of smart factory. The laboratory prototype platform, which represents a candy packing production line, is shown in Fig. 8.
 
@@ -322,33 +322,33 @@ FIGURE 9. The overall effectiveness and influential factors of prototyping platf
 
 2『这里糖果包装线的智慧工厂案例蛮不错的，做一张主题卡片。（2021-01-29）』——已完成
 
-## 07. Issues and Challenges
+### 07. Issues and Challenges
 
 Due to the rapid progress of manufacturing, smart factory should be ﬂexible and reliable, and satisfy the high quality standards. The technological breakthroughs bring many opportunities for the implementation of intelligent manufacturing. However, there are still some issues and challenges.
 
-### 7.1 Intelligent Requirements of Equipment
+#### 7.1 Intelligent Requirements of Equipment
 
 Due to the foundation place of the underlying equipment, it is crucial to monitor and control the underlying manufacturing resource for reconﬁguration of production line, dynamic scheduling, and information fusion in smart factory. Therefore, it is necessary to improve the intelligence level of manufacturing equipment. The conﬁgurable controller and self-reconﬁgurable robots can provide potential solutions to function expansion of manufacturing units. In the context of hybrid production, the coordination and information interaction among the multi-module manufacturing units should be explored. The optimized combination of programs should be made to enhance the workshop efﬁciency. The intelligent equipment should be able to collect production information, provide compatible data interface, and support generic communication protocol. In addition, the equipment could perceive manufacturing environment and cooperate with other equipment in smart factory. Flexible manufacturing is a typical feature of smart factory, but there are still many problems such as strong proprietary of production line, dynamic scheduling, and tight coupling between functions and devices.
 
 In the context of intelligent manufacturing, the data generated by intelligent equipment is mostly unstructured. The high-speed operation in workshop needs higher standards of data acquisition. Namely, data acquisition is the basis of big data analytics, where physical resource should: 1) support ﬁne-grained and efﬁcient data acquisition, and achieve visibility of manufacturing process; 2) integrate heterogeneous data in a uniﬁed system by generic protocols (e.g., RFID, ZigBee, and NFC); and 3) improve extensibility of controller for access to the core industrial networks.
 
-### 7.2 Deep Integration Networks
+#### 7.2 Deep Integration Networks
 
 The IIoT facilitates a deep integration of information and industrialization. The advanced IIoT technology is important for the implementation of the smart factory. The mature and generic standards have not been formed yet in the ﬁeld of IWSNs, and the standardization process of IWSNs should be promoted continuously. In the complicated electromagnetic environment, data transmission should meet the requirements of reliability and real time equipment control. Due to the limited energy, energy efﬁciency is a key issue that affects the deployment of IWSNs. Moreover, because of the access of large-scale devices, network security also becomes very important. As the information technologies have advanced (e.g., NB-IoT, 5G, LTE-Advanced, and 3GPP), a signiﬁcant progress has been made in industrial wireless networks. These progress has provided new solutions for key issues of IWSNs, such as reliability, real-time performance, energy efﬁciency, and security strategy.
 
 Development of information technologies has brought opportunities to the intelligent manufacturing. The OPC UA-based interaction facilitates the coordination between intelligent agents because a multi-agent system can solve problems in a parallel way. The OpenFlow-based SDN technology provides more ﬂexible solution for network conﬁguration, which enhances network management ability. The D2D technology makes communication between devices more efﬁcient and expands network capacity. The edge computing equips terminal system with decision-making ability and autonomy. Additionally, high transmission rate of data, low duty cycle, and IP network availability are the requirements of network layer which denote the foundation for ubiquitous communication in smart factory.
 
-### 7.3 Knowledge-Driven Manufacturing
+#### 7.3 Knowledge-Driven Manufacturing
 
 The large amount of manufacturing data provides a comprehensive description of the smart factory, but manufacturing data cannot be utilized directly due to high dimension, variable metric, and high noise. Consequently, it is important to deﬁne the data semantic through the manufacturing glossary. The domain ontology provides a potential solution to data semantic for data application. Using the big data of intelligent manufacturing, the active maintenance of equipment, the optimization design for manufacturing product, and the optimization of production line is achieved in the smart factory. The knowledge-driven manufacturing brings opportunities to transformation from traditional industry to intelligent industry, meanwhile the data mining technology is a serious challenge to enterprises. Moreover, the data-based optimization of product design needs to add data receiver and feedback mechanism to the traditional product, and then the product itself will become the data source. Consequently, the product will become a participant in the process of data collection, which provides technical information to the product designer.
 
 In order to achieve a knowledge-based intelligent manufacturing, the manufacturing entity should be able to provide data collection, data fusion, and extraction of manufacturing resource characteristics. The smart factory should integrate data resources (e.g., supply chains, product data, and logistic data) into service platform, which provides product services such as sales forecasting and quality analysis. In general, data mining and knowledge discovery provide a scientiﬁc decision for planning and scheduling of manufacturing product.
 
-## 08. Conclusions
+### 08. Conclusions
 
 The smart factory is an intelligent production system which utilizes the integration of manufacturing and services. It integrates communication process, computing process, and control process to meet the industrial demands. In this paper, we proposed the hierarchical architecture of smart factory according to the newly research. Then the main issues of key technologies involved in the physical resource layer, the network layer, and the data application layer in the smart factory are analyzed, and some application cases were discussed to explore potential solutions for key technologies. Finally we established veriﬁcation platform by means of the proposed key technologies, which showed that the OEE ration is improved. The compound talents and multi-ﬁeld cooperation is required for the implementation of smart factory. The research of key technologies not only refers to the integration of information technology as a main body, but also includes the traditional disciplines such as control theory, mechanical technology, and materials and energy. As the big data technology advances, the data-based virtual manufacturing mode will improve product quality, increase production efﬁciency, and reduce energy consumption. Furthermore, the intelligent manufacturing based on big data will lead to the revolution of traditional industry.
 
-## References
+### References
 
 [1] M. Brettel, N. Friederichsen, M. Keller, and M. Rosenberg, ‘‘How virtualization, decentralization and network building change the manufacturing landscape: An industry 4.0 perspective,’’ Int. J. Mech., Ind. Sci. Eng., vol. 8, no. 1, pp. 37–44, 2014.
 

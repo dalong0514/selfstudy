@@ -1,4 +1,4 @@
-# The Smart Factory: Exploring Adaptive and Flexible Manufacturing Solutions
+## The Smart Factory: Exploring Adaptive and Flexible Manufacturing Solutions
 
 发表于 2014 年
 
@@ -6,7 +6,7 @@ Agnieszka Radziwona *, Arne Bilberga , Marcel Bogersa , Erik Skov Madsenb
 
 a Mads Clausen Institute., University of Southern Denmark, Alsion 2, 6400 Sønderborg b Institute of Technology and Innovation,University of Southern Denmark, Campusvej 55, 5230 Odense M
 
-## Abstract
+### Abstract
 
 Nowadays we live in a world, which a decade ago would only be described in the science fiction literature. More and more things become smart and both scientists and engineers strive for developing not only new and innovative devices, but also homes, factories, or even cities. Despite of continuous development, many of those concepts are still being just a vision of the future, which still needs a lot of effort to become true.
 
@@ -16,7 +16,7 @@ This paper reviews the usage of adjective smart in respect to technology and wit
 
 Keywords: Smart Factory; U-Factory;Real-Time Factory;Manufacturing of the Future;SMEs; adaptive; flexible; automation
 
-## 01. Introduction
+### 01. Introduction
 
 Nowadays people are surrounded by many things that are called smart. Nearly everyone have a smartphone, some people have smart homes [1], which are connected to smart grids[2]. South Korea’s government in collaboration with the local industry haseven launched the project to build thesmart city [3]. In order to create those large smart systems, smart devices[4]havebeen used. The labelsmart (and interchangeably used–intelligent) seems to be abusedin many different contexts, because itsmeaning with regards to objects is yet not clearly defined.
 
@@ -28,7 +28,7 @@ The overuse of the adjective smart is frequently encountered. For example, some 
 
 It has been observed, that scholars have started to use the term smart factories in describing their visions of future manufacturing. However, there is no consensus about a clear definition of what smart means in respect to manufacturing facility. That is why, the purpose of this paper is to survey a considerable literature and summarize the smart factory concepts from a combination of different literature streams in order to clarify the term and develop a uniform definition that will contribute to the future research within this field.
 
-## 02. Smart Factory - different visions of a concept
+### 02. Smart Factory - different visions of a concept
 
 The term smart factory is used by both industrial practitioners and scholars, but there is no consistent definition. There are several other terms used in terchangeably: aU-Factory (ubiquitous factory) [8], a factory-of-things [9], a real-time factory [11], or an intelligent factory of the future [7]. Scholars refer to smart factory as a technology [10], an approach [11][9],or a paradigm [8].
 
@@ -44,7 +44,7 @@ The next generation of manufacturing is also studied at the University of Stuttg
 
 2.3. Glocalized Factory A slightly different vision of a smart factory is provided by Hadar and Bilberg [14],who propose a decentralized supply chain setup. In this case they focus more on the factory function and do not define its actual design. Instead of building few, centralized factories, which would be a part of the global supply chain they suggest a local focus setup where a set of intelligent facilities - reconfigurable smart factories- would be able to completely supply a predefined area of market [14]. The authors investigate manufacturing challenges in Western Europe, their research focuses on global Danish companies like LINAK, STRECON, or LEGO, which face problems related to globalization and fragmentation of production, which increase supply chain complexity [15]. A glocalized approach, which they propose can be applied by large companies that not only operate in global markets, but also have many suppliers in different part of the globe [14]. On a supply chain level smart factories are characterized as self-sufficient facilities, which source raw materials from local suppliers. Those local partners and alliances should help in decrease lead time, minimize inventory and at the same increase customization and responsiveness of the supply chain, due to proximity both to suppliers and customers.
 
-## 03. Smart Factory – a meaning and conceptualization
+### 03. Smart Factory – a meaning and conceptualization
 
 All above mentioned concepts and visions are very promising prospects of upcoming technological development. Nevertheless, even though both engineers and researchers are continuously working on those concepts, itstill remains just a vision. Despite of all involvement and success stories there is a long and winding road to go and multidimensional problemsto solve before we will transfer the vision of the smart factoryinto the reality. Zuehlke estimates the development enabling technologies for at least 5 - 10 years (from 2010) [11].
 
@@ -64,7 +64,7 @@ A Smart Factory is a manufacturing solution that provides such flexible and adap
 
 However, if we agree, that the adjective smart is used to characterize an object that was enhanced by additional features that increased its abilities, then the new conceptualization of the smart factory will definitely cover existing visions.
 
-## 04. Smart Factory – an extension to SMEs
+### 04. Smart Factory – an extension to SMEs
 
 Important common denominators of visions discussed at the beginning of the paper are large companies and big organizations, which often operate in global markets. Applications of all aforementionedsmart devices in smart factories aim at solving problems of global players. Those technologies are supposed to solve the problem of complexity of supply chains, but at the same time due to technological advancement they make the setup more complex by themselves.
 
@@ -76,17 +76,17 @@ Even after realization of so far discussed smart factory visions,would manufactu
 
 The literature about automation solutions for SMEs is very limited. Wadhva[28],basing on an action research approach, creates guidelines for flexible automation, which could improve foundries’ responsiveness as well as support interaction between different collaborative partners. In a research related to foundries as well, Ribiero et al. [29] developed a methodology for benchmarking and got as far as to propose the performance measurement framework. An attempt to implement a smart factory concept in SMEs could allow for manufacturing several different products and at the same time, increase the degree of machine utilization, reduce in-process inventory as well as decrease response time in order to meet customer preferences. Additionally, in case of SMEs, it could also be a great help in the process of increasing their competitiveness and productivity.These years scholars discuss a lot, what may be the manufacturing of the future.This has taken place among universities and leading companies.Manufacturing activity represents about 21% of the total EU GDP [28]. What is more, it provides approximately 20% of all jobs in industry, which are largely dominated by SMEs [28]. That is why, we foresee that research conducted particularly in the field of manufacturing focused at SMEs have a huge potential not only in improving quality and delivery time of products, but also in generating widely understood wealth.
 
-## 05. Conclusion
+### 05. Conclusion
 
 Much has been written about different smart objects, without a clear definition of this term. What is more, misuse of the adjective smart is not uncommon.This paper puts a special focus on the smart label with regard to factory and extension of the concept. Adopting a consistent definition of smart factory, and building upon it, would help to accelerate our understanding of this emerging approach to future manufacturing. We hope that our compilation of existing smart factory visions, along with grounding it in the traditional manufacturing theories, will help us move in this direction as a community of scholars.
 
 So far the smart factory is just a great revelationof future developments in manufacturing facilities.The concept still needs to progress before fully reaching its practical application in an industrial production set up. In terms of solutions for large companies, most of the technologies are not yet mature to serve the realization of smart future manufacturingvision. As for research focused on SMEs in the field of automation and manufacturing, due to a scant attention given to this group as well as an incomplete understanding of their future production prospects, new research would be necessary to fill up this gap.
 
-## Acknowledgments
+### Acknowledgments
 
 Financial support from the Industriensfond and Vækstfonden is gratefully acknowledged.
 
-## References
+### References
 
 [1] L. Jiang, D.-Y. Liu, and B. Yang, Smart home research, in Proceedings of International Conference on Machine Learning and Cybernetics, 2004, pp.659–663.
 

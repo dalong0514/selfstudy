@@ -1,4 +1,4 @@
-# Implementing Smart Factory of Industrie 4.0: An Outlook
+## Implementing Smart Factory of Industrie 4.0: An Outlook
 
 Shiyong Wang, Jiafu Wan, Di Li, and Chunhua Zhang
 
@@ -14,13 +14,13 @@ Copyright © 2016 Shiyong Wang et al. This is an open access article distributed
 
 Hindawi Publishing Corporation International Journal of Distributed Sensor Networks Volume 2016, Article ID 3159805
 
-## Abstract
+### Abstract
 
 With the application of Internet of Things and services to manufacturing, the fourth stage of industrialization, referred to as Industrie 4.0, is believed to be approaching. For Industrie 4.0 to come true, it is essential to implement the horizontal integration of inter-corporation value network, the end-to-end integration of engineering value chain, and the vertical integration of factory inside.
 
 In this paper, we focus on the vertical integration to implement flexible and reconfigurable smart factory. We first propose a brief framework that incorporates industrial wireless networks, cloud, and fixed or mobile terminals with smart artifacts such as machines, products, and conveyors. Then, we elaborate the operational mechanism from the perspective of control engineering, that is, the smart artifacts form a self-organized system which is assisted with the feedback and coordination blocks that are implemented on the cloud and based on the big data analytics. In addition, we outline the main technical features and beneficial outcomes and present a detailed design scheme. We conclude that the smart factory of Industrie 4.0 is achievable by extensively applying the existing enabling technologies while actively coping with the technical challenges.
 
-## 01. Introduction
+### 01. Introduction
 
 Recently, the emerging technologies (e.g., Internet of Things (IoT) [1–3], wireless sensor networks [4, 5], big data [6], cloud computing [7–9], embedded system [10], and mobile Internet [11]) are being introduced into the manufacturing environment, which ushers in a fourth industrial revolution. Consequently, a strategic initiative called「Industrie 4.0」was proposed and was adopted as part of the「High-Tech Strategy 2020 Action Plan」of the German government [12]. The similar strategies were also proposed by other main industrial countries, for example,「Industrial Internet」[13] from USA and「Internet +」[14] from China. The Industrie 4.0 describes a production oriented Cyber-Physical Systems (CPS) [1517] that integrate production facilities, warehousing systems, logistics, and even social requirements to establish the global value creation networks [18].
 
@@ -46,11 +46,11 @@ Finally, we discuss the main technical challenges and suggest the possible solut
 
 The rest of this article is organized as follows. In Section 2, the main features of Industrie 4.0 and its enabling technologies are further discussed. In Section 3, we propose the framework and operational mechanism of the smart factory and outline the main technical features and beneficial outcomes. Then, we introduce the detailed design scheme of our application demonstration in Section 4. In Section 5, the technical challenges and possible solutions about implementing the smart factory are presented. Finally, the conclusions and future work are given in Section 6.
 
-## 02. Philosophy of Industrie 4.0
+### 02. Philosophy of Industrie 4.0
 
 The term Industrie 4.0 means the fourth industrial revolution. It incorporates emerging technical advancement to improve industry so as to deal with some global challenges. In this section, we present the related background, the main features, and the enabling technologies to form a base for our smart factory development.
 
-### 2.1. Background and Purpose
+#### 2.1. Background and Purpose
 
 The human society desires a progressive improvement of life quality. The industry has been advancing to keep pace with this kind of requirements. By now, it has experienced three revolutionary stages, that is, three industrial revolutions. The industry can continue to improve people’s living standard by providing customized and high-quality products to consumers and setting up a better work environment for employees.
 
@@ -60,7 +60,7 @@ Therefore, the industry needs a radical change and it is the Industrie 4.0 that 
 
 1-2『这里对工业 4.0 下了个定义。做一张术语卡片。（2020-01-27）』——已完成
 
-### 2.2. Three Kinds of Integration
+#### 2.2. Three Kinds of Integration
 
 ![](./res/2021001.png)
 
@@ -80,7 +80,7 @@ End-To-End Engineering Integration. In a product-centric value creation process,
 
 1『这里的几个关键词：定制化是结果。（2021-01-27）』
 
-### 2.3. Needed Technologies
+#### 2.3. Needed Technologies
 
 Some emerging information technologies, such as IoT, big data, and cloud computing as well as artificial intelligence (AI) technologies (e.g., MAS) are enabling factors of Industrie 4.0. Integrating these technologies with industrial automation, business, and trade is able to achieve a huge improvement of industry. With powerful microprocessors and AI technologies, the products and machines become smart in the sense that they not only have abilities of computing, communication, and control (3C) but also have autonomy and sociality. With the support of industrial networks, these smart artifacts are interconnected with each other and with the Internet. With the cloud computing technology, the server network can be virtualized as a resource pool that can provide scalable computing ability and storage space on demand for big data analytics. With numerous information systems deployed on cloud and smart things connected to the same cloud, a novel world of IoT and services is created.
 
@@ -90,13 +90,13 @@ The IoT and services lays a solid foundation for the three kinds of integration.
 
 In summary, the Industrie 4.0 aims to cope with personalized needs and global challenges so as to gain competitive strength considering the globalization of markets. To this end, the emerging information technologies should be applied to every aspect of industry to implement three kinds of integration. Then, high-quality and customized products can be available with improved resource efficiency, productivity, and low cost. The Industrie 4.0 is believed to impose a deep effect that is not limited to industry itself but also to lifestyle and the way we work [23].
 
-## 03. Smart Factory Underpinned by IWN and Cloud
+### 03. Smart Factory Underpinned by IWN and Cloud
 
 The factory is responsible for actually processing raw materials and semifinished products to produce finished products. Within the boundary of a factory, various physical or informational subsystems are involved during production and management. These subsystems are present at different hierarchical levels, for example, the actuator and sensor, control, production management, manufacturing and execution, and corporate planning levels. At present, the information flow is often blocked between subsystems and the continuity and consistency are generally difficult to be guaranteed; and the material flow is along the fixed production lines that lack flexibility.
 
 Therefore, the Industrie 4.0 expects to vertically integrate the hierarchical subsystems to transfer the traditional factory into the highly flexible and reconfigurable manufacturing system, that is, to implement the smart factory. This is essential to support small-lot and customized consumer demands. The smart factory is also a key base to support the other two kinds of integration, that is, the horizontal integration through value networks and the end-to-end digital integration of engineering. In this section, we present a detailed conceptual design of smart factory by constructing a framework, exploring its operational mechanism and concluding its technical features and beneficial outcomes.
 
-### 3.1. System Architecture
+#### 3.1. System Architecture
 
 ![](./res/2021002.png)
 
@@ -112,7 +112,7 @@ Cloud Layer. It is another kind of important infrastructure that supports the sm
 
 Supervision and Control Terminal Layer. It links people to the smart factory. With the terminals such as PCs, tablets, and mobile phones, people can access the statistics provided by the cloud, apply a different configuration, or perform maintenance and diagnosis, even remotely through the Internet.
 
-### 3.2. Operational Mechanisms
+#### 3.2. Operational Mechanisms
 
 ![](./res/2021003.png)
 
@@ -124,7 +124,7 @@ From the perspective of control engineer, the smart factory can be viewed as a c
 
 Through collaboration, the smart artifacts try to align their behaviors to approach a system-wide goal; but the system performance is generally not optimal. This is because the smart artifacts are myopic that they make decisions based on local information. As to manufacturing, load may not be balanced, efficiency may not be the highest, and deadlocks may occur. The big data analytics block in the feedback channel that lies in the cloud serves to solve this problem. The smart machines communicate their state and process information to the block, and the distributed sensors transfer their sensed data to the block as well. Therefore, the global state of the system can be extracted from the massive realtime system information. Based on the powerful computing ability, the block processes this big data in time to serve two purposes: 1) coordinate the behaviors of the distributed smart artifacts and 2) feedback performance indictors to the self-organized network. By this global optimization, the smart artifacts are affected so that higher performance can be expected.
 
-### 3.3. Technical Features
+#### 3.3. Technical Features
 
 ![](./res/2021004.png)
 
@@ -149,7 +149,7 @@ TABLE 1: Technical features of smart factory compared with the traditional facto
 
 On the other hand, the proposed smart factory production system also has obvious differences with the MAS scheme in the sense that the MAS scheme does not involve cloud and big data. Thus, the MAS scheme is not able to benefit from the big data based feedback and coordination. In addition, the big data enables smart artifacts to form an autonomous architecture, while the existing MAS schemes are generally characterized by hierarchical or mediator architectures. Therefore, the smart factory of Industrie 4.0 assists the self-organized systems such as MAS with the cloud and big data technologies to combine the advantages of the selforganization and central control.
 
-### 3.4. Beneficial Outcomes
+#### 3.4. Beneficial Outcomes
 
 The advanced technical features suggest that the smart factory exhibits an attractive and promising production paradigm. It leads to many beneficial outcomes which can cope with the global challenges in the sense that the customized products can be produced effectively, efficiently, and profitably. We discuss some possible merits that the whole society can benefit from. These benefits are also guiding the effort to promote the implementation of the smart factory.
 
@@ -167,7 +167,7 @@ Profitable. We consider the initial investment cost first and then the operation
 
 Friendly to Staff. The machines operate automatically by themselves so that no workers need to perform routine tasks. With the assistance of big data analytics, powerful software tools, and more friendly and flexible interface measures, maintenance and diagnosis become much easier. Even people all over the world can work together to perform remote repair work, as the people and machines can interact with each other through the cloud.
 
-## 04. Application Demonstration
+### 04. Application Demonstration
 
 ![](./res/2021005.png)
 
@@ -193,33 +193,33 @@ Private Cloud. We set up a private cloud with five NF5270 M3 servers from Chines
 
 Large Screen and Small Terminals. We construct a one-meter wide and three-meter long liquid crystal display (LCD) for displaying various kinds of information such as big data analysis results and the virtual reality (VR) model of the smart manufacturing platform. Both iOS and Android based smart phones and Windows or UNIX based PCs can be connected to the cloud through Wi-Fi access points. These mobile and fixed terminals are for supervision and control purpose.
 
-## 05. Technical Challenges and Solutions
+### 05. Technical Challenges and Solutions
 
 We need smart hardware and software to construct the smart factories. These include smart machine controllers, high bandwidth IWN devices, manufacturing related big data analytics software, and the integrated information systems. But prior to the off-the-shelf products, the underlying technical issues should be investigated. Based on the theoretical analysis and development experiences, we identify several challenges and give possible solutions in this section.
 
-### 5.1. Intelligent Decision-Making and Negotiation Mechanism
+#### 5.1. Intelligent Decision-Making and Negotiation Mechanism
 
 The smart artifacts are fundamental components of smart factory. While today’s computer numerical control (CNC) machines generally have 3C capabilities, the smart machines should have additional autonomy and sociality capabilities. This means the smart machines can make decisions by themselves instead of being directly instructed, and they can negotiate with each other and with the smart products. Therefore, the autonomy and sociality capabilities are the key enablers for the implementation of a self-organized manufacturing system. The research on MAS that is a branch of AI technology can provide some useful results such as the ontology method and the contract net protocol (CNP) [28]. However, further research is still needed to achieve the autonomous manufacturing system architecture instead of hierarchical or mediator ones.
 
 2『上面的信息补充进主题卡片「智慧工厂的 autonomy and sociality」里。（2021-01-28）』
 
-### 5.2. High Speed IWN Protocols
+#### 5.2. High Speed IWN Protocols
 
 The IWN is superior to wired network in a manufacturing environment; but the existing IWN standards such as WIA-PA [29] and WirelessHART [30] cannot provide enough bandwidth for heavy communication and high-volume data transfer. The standards such as IEEE 802.11 [31, 32] can provide high bandwidth but not specially designed for industrial applications. The IWN used in automation is different from the ad hoc wireless sensor network (WSN) used in surveillance domains [33, 34]. The QoS other than energy efficiency is more concerned. Maybe the hybrid solution that wireless gateways are wired to form a backbone mesh network is a practical implementation at present.
 
 1『现在 5G 可以满足这个需求了。（2021-01-28）』
 
-### 5.3. Manufacturing Specific Big Data and Its Analytics
+#### 5.3. Manufacturing Specific Big Data and Its Analytics
 
 Big data will deliver big value in the future. The utilization of big data is now feasible with the cloud computing that enables a scalable storage and computing ability. Despite the cloud computing and general big data analytics, we should focus on special features of manufacturing related big data. Questions on which data should be collected, how these data can be collected, how to formulate, what is the meaning and how to analyze should be answered.
 
 Instead of collecting various data and then struggling to think how to use them, the practical beginning may be considering which information can reveal quality and efficiency related factors. For example, as the malfunction machines will reduce product quality and the finished product ratio, the machine state and its operation history should be monitored and analyzed to predict problems so that people can respond in advance. To improve efficiency, we should know the time taken in processing each operation and operation time of each machine. This helps to recognize the performance bottleneck of operations and load unbalance of machines.
 
-### 5.4. System Modeling and Analysis
+#### 5.4. System Modeling and Analysis
 
 By the general selforganized theory, the self-organized process may lead to unexpected situations such as chaos [35]. Thus, we need to model self-organized manufacturing system, deduce its dynamical equations, and conclude appropriate control methods. However, the theories on self-organized system are not matured and the complex system research is still a hot topic. The formal methods such as model checking technology may be possible option for modeling and analyzing selforganized manufacturing system [36].
 
-### 5.5. Cyber and Property Security
+#### 5.5. Cyber and Property Security
 
 We cannot place too much emphasis on security aspects. Without security, we dare not bring our smart factories into service. The smart factory suffers bigger security problems than traditional Internet applications [37, 38]. On one hand, we should protect various information on customers, suppliers, commercial strategies, and know-hows. These kinds of information are generally stored in the public cloud instead of enterprises’ private data center. These confidential materials may be disclosed, for example, by hackers, which may cause huge profit loss or even legal disputes. On the other hand, the machines and other physical objects and even people themselves are connected to the cloud. When control mechanism is broken, these objects may operate in a destructive way to cause direct property loss.
 
@@ -227,25 +227,25 @@ Encryption and authorization are generally used in cyber security domain, which 
 
 1『目前能想到的保护措施：1）关键信息存储在企业的私有云上。2）不安全的操作指令不允许直接执行，必须经过人确认。（2021-01-28）』
 
-### 5.6. Modularized and Flexible Physical Artifacts
+#### 5.6. Modularized and Flexible Physical Artifacts
 
 When processing a product, distributed decision-making organizes a group of resources together. These resources include equipment for machining or testing and that for conveying. Thus, it is required that these physical artifacts should be able to work together. First of all, the conveying system should be able to transfer products between any two machines. Secondly, functions for automatic positioning, clamping, and programming should be integrated into the system. Therefore, we should develop modularized and smart conveying units that can dynamically reconfigure production routes. The modularized and standalone positioning and clamping units, with smart controllers should also be developed to easily incorporate new machines to the system.
 
-## 06. Conclusions and Future Work
+### 06. Conclusions and Future Work
 
 With the emerging information technologies, such as IoT, big data, and cloud computing together with artificial intelligence technologies, we believe the smart factory of Industrie 4.0 can be implemented. The smart machines and products can communicate and negotiate with each other to reconfigure themselves for flexible production of multiple types of products. The massive data can be collected from smart artifacts and transferred to the cloud through the IWN. This enables the system-wide feedback and coordination based on big data analytics to optimize system performance. The above self-organized reconfiguration and big data based feedback and coordination define the framework and operational mechanism of the smart factory.
 
 The smart factory helps to implement the sustainable production mode to cope with the global challenges. It can lead to novel business modes and even affect our lifestyle. Although the implementation of smart factory is still facing some technical challenges, we are walking on the right path by simultaneously applying the existing technologies and promoting technical advancements. With the existing technologies, some application demonstrations have already been built. Therefore, the smart factory and the Industrie 4.0 can be implemented in a progressive way, along with the unstopped technical advancements. In the future, we will continue to develop our prototype design and focus on the key enabling technologies.
 
-## Conflict of Interests
+### Conflict of Interests
 
 The authors declare that there is no conflict of interests regarding the publication of this paper.
 
-## Acknowledgments
+### Acknowledgments
 
 This work was supported in part by the National Key Technology R&D Program of China (no. 2015BAF20B01), the National Natural Science Foundation of China (no. 61262013), the Science and Technology Planning Project of Guangdong Province, China (nos. 2012A010702004 and 2012A090100012), the Fundamental Research Funds for the Central Universities, SCUT (no. 2014ZM0014), and The Open Fund of Guangdong Province Key Laboratory of Precision Equipment and Manufacturing Technology (no. PEMT1303).
 
-## References
+### References
 
 [1] F. Tao, Y. Zuo, L. D. Xu, and L. Zhang,「IoT-Based intelligent perception and access of manufacturing resource toward cloud manufacturing,」IEEE Transactions on Industrial Informatics, vol. 10, no. 2, pp. 1547–1557, 2014.
 
