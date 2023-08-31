@@ -1,5 +1,6 @@
 ## The Mathematician
-> Von Neumann: The Mathematician
+
+Von Neumann: The Mathematician
 
 [Von Neumann: "The Mathematician"](http://mathshistory.st-andrews.ac.uk/Extras/Von_Neumann_Part_1.html)
 
