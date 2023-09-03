@@ -176,7 +176,7 @@ A revised financial estimate for the project is generated, and is then compared 
 
 获得继续进行这一阶段的批准本质上是开始在项目上花费资本金的承诺。许多设计文档被视为税收折旧的资本，如果被认为是非常有利的，一些在前一阶段中确定的长交货期物品将被订购。
 
-这个项目阶段的目标是产生具有 +/- 5 到 10% 准确度的成本估算。为了达到这一准确度水平，必须生成物料需求或「取料」（例如，吨数的混凝土，电缆的英尺，管道的英尺等）和安装所需的人工时间。现代 3D 工厂建模软件是基于数据库的，为管道和土木工程团队生成必要的物料取料。在这个阶段，通常会生成一个粗略的 3D 模型，并附带初步的管道。一些结构分析也将完成。流程工程师将需要为管道模型提供一些相当准确的线径作为输入。同样，设备的重量和尺寸必须供结构组使用。
+这个项目阶段的目标是产生具有 +/- 5 到 10% 准确度的成本估算。为了达到这一准确度水平，必须生成物料需求或「取料」（例如，吨数的混凝土，电缆的英尺，管道的英尺等）和安装所需的人工时间。现代 3D 工厂建模软件是基于数据库的，为管道和土木工程团队生成必要的物料取料。在这个阶段，通常会生成一个粗略的 3D 模型，并附带初步的管道。一些结构分析也将完成。工艺工程师将需要为管道模型提供一些相当准确的线径作为输入。同样，设备的重量和尺寸必须供结构组使用。
 
 为了生成 3D 管道模型，必须生成 P&ID 和质量控制 / 设计工具，即「管道线列表」和「应用索引」。管道线列表和应用索引记录了工厂中的每一根管道，并列出了设计压力、温度、建筑材料和其他关键属性。在详细设计或施工阶段，这三份支持文档通常会提交给压力容器 / 管道监管机构。
 
@@ -196,15 +196,25 @@ The detailed design phase produces information packages that describe the plant 
 
 Upon receipt of the construction bids, a final review of the costs is completed and approval by the owner, and the order to proceed with construction, would be given.
 
-Piping design is usually completed through the use of 3D models. Detailed reviews of the facility are carried out with the internal stakeholders (operations, maintenance, and engineering) to provide feedback. Isometrics drawings can now be prepared from the 3D model for inclusion into the piping construction packages. Process designers must check that any assumptions made about the piping during equipment design are in fact true. They must also finalize the relief valve sizing from the isometric drawings produced from the 3D models. Site preparation and
-
-initial civil work can begin if funds have been approved (typical of a fast track project).
+Piping design is usually completed through the use of 3D models. Detailed reviews of the facility are carried out with the internal stakeholders (operations, maintenance, and engineering) to provide feedback. Isometrics drawings can now be prepared from the 3D model for inclusion into the piping construction packages. Process designers must check that any assumptions made about the piping during equipment design are in fact true. They must also finalize the relief valve sizing from the isometric drawings produced from the 3D models. Site preparation and initial civil work can begin if funds have been approved (typical of a fast track project).
 
 An important consideration is that the environmental legislative groups normally require completed design documents prior to their review. Their approval is required prior to the beginning of construction and their review of the project can take substantial periods of time. Therefore, finalizing any documents required for their review is given priority so as to avoid construction delays.
 
 When a P&ID, a material balance, and if possible, the 3D model are available, further Process Hazards Reviews are completed to ensure all hazards have been identified and adequate levels of protection are provided. This will ensure the risks are acceptable, hopefully with minimal impact on the design, costs and schedule.
 
 A “constructability review” will occur in this phase in order to ensure the design is optimized for cost effectiveness.
+
+详细设计阶段会产生足够详细的信息包，以便开始建设工厂。通常，在这个阶段尽早开始初步的土木工程。也会产生一个估算，但其目的是控制建设阶段并确保前端 3 阶段没有遗漏，而不是提供重要的额外财务分析。在这个阶段，会发出建设设备的合同，期望使用供应商提供的详细工程图纸来完成管道、电气和仪表设计。
+
+收到建设竞标后，将完成对成本的最终审查并获得业主的批准，然后给出开始建设的指令。
+
+管道设计通常通过使用 3D 模型来完成。与内部利益相关方（运营、维护和工程）进行详细的设施审查以提供反馈。现在可以从 3D 模型中准备等角线图，以包含在管道建设包中。工艺设计师必须检查在设备设计期间对管道所做的任何假设是否确实成立。他们还必须从 3D 模型生成的等角线图中最终确定泄压阀的尺寸。如果资金已经获得批准（典型的快速跟踪项目），则可以开始进行场地准备和初步的土木工作。
+
+一个重要的考虑因素是，环境立法团体通常要求在其审查之前完成设计文件。在开始建设之前需要他们的批准，他们对项目的审查可能需要大量的时间。因此，优先完成他们审查所需的任何文件，以避免建设延误。
+
+当有 P&ID、物料平衡表，以及可能的话，有 3D 模型时，将完成进一步的工艺危害审查，以确保已经识别所有危害并提供了足够的保护级别。这将确保风险是可接受的，希望对设计、成本和进度的影响最小。
+
+在这个阶段将进行「可建设性审查」，以确保设计在成本效益方面是优化的。
 
 Construciton
 
@@ -214,7 +224,15 @@ When construction is complete, a final process hazards review of the facility is
 
 Given the complexity of a chemical process plant, it is fairly common to have some minor glitches during start-up. Typical examples would be motors turning in the wrong direction and infant mortalities in the electronics. However, more significant problems may appear due to inadequate information in the design (e.g. phase separations, or unexpected physical properties) Process design engineers are usually on hand to ensure the intent of the design is met, and to check performance of the plant against expectations as described in the Basic Data (the document that was initiated in the Front End 1 phase). At this time, operating procedures may be rewritten as a more complete picture of how the plant will perform becomes clear.
 
-Once the plant has met functionality requirements, it is turned over to operators employed by the owners of the facility. The final phase is a wrap up session to discuss the overall project, with the intended outcome being “lessons learned” that can be applied to the next project
+Once the plant has met functionality requirements, it is turned over to operators employed by the owners of the facility. The final phase is a wrap up session to discuss the overall project, with the intended outcome being “lessons learned” that can be applied to the next project.
+
+正如名称所示，这个阶段涉及到工厂的实际建设。在快速跟踪项目中，一些场地准备工作，包括建筑基础和一部分建筑钢材，将在详细设计阶段进行安装。然而，大部分的手工劳动将在这一步中进行。工艺工程师通常不会在这个阶段有太多参与。
+
+当建设完成后，会对设施进行最终的工艺危害审查，以确保之前在安全审查中做出的所有建议都已实施，并且由于建设而没有出现额外的危害。在投产和启动之前，工艺工程师会参与编写操作程序，这实际上是工厂的「用户手册」。
+
+考虑到化学工程工厂的复杂性，在启动过程中出现一些小问题是相当常见的。典型的例子可能是电机转向错误，以及电子设备的早期故障。然而，由于设计信息不足（例如，相分离或意外的物理属性），可能会出现更严重的问题。工艺设计工程师通常会在现场，以确保设计意图得以实现，并根据基础数据（该文档在前端 1 阶段启动）来检查工厂的性能与预期是否相符。此时，可能会根据工厂将如何运行的更完整的画面来重写操作程序。
+
+一旦工厂满足功能要求，就会交给设施所有者雇佣的操作员进行操作。最后一个阶段是一个总结会议，以讨论整个项目，预期的结果是可以应用于下一个项目的「经验教训」。
 
 ### 03. Summary Comments
 
