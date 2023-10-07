@@ -2,75 +2,33 @@
 
 In this video, Isa will present some guidelines for prompting to help you get the results that you want. In particular, she'll go over two key principles for how to write prompts to prompt engineer effectively. And a little bit later, when she's going over the Jupyter Notebook examples, I'd also encourage you to feel free to pause the video every now and then to run the code yourself, so you can see what this output is like and even change the exact prompts and play with a few different variations to gain experience with what the inputs and outputs of prompting are like. 
 
-So, I'm going to outline some principles and 
-tactics that will be helpful while working with language 
-models like ChatGPT. 
-I'll first go over these at a high level and then we'll kind 
-of apply the specific tactics with examples and we'll use 
-these same tactics throughout the entire course. So, for 
-the principles, the first principle is to write clear and specific 
-instructions and the second principle is 
-to give the model time to think. Before we get 
-started, we need to do a little bit of setup. Throughout the course, 
-we'll use the OpenAI Python library to access the 
-OpenAI API. 
-And if you haven't installed this Python library already, you 
-could install it using pip like this, pip.install.openai. I actually 
-already have this package installed, so I'm not going to 
-do that. And then what you would do next is import OpenAI and then 
-you would set your OpenAI API key which 
-is a secret key. You can get one 
-of these API keys from the OpenAI website. 
+So, I'm going to outline some principles and tactics that will be helpful while working with language models like ChatGPT. 
+
+I'll first go over these at a high level and then we'll kind of apply the specific tactics with examples and we'll use these same tactics throughout the entire course. So, for the principles, the first principle is to write clear and specific instructions and the second principle is to give the model time to think. Before we get started, we need to do a little bit of setup. 
+
+Throughout the course, we'll use the OpenAI Python library to access the OpenAI API. And if you haven't installed this Python library already, you could install it using pip like this, pip.install.openai. I actually already have this package installed, so I'm not going to do that. And then what you would do next is import OpenAI and then you would set your OpenAI API key which is a secret key. You can get one of these API keys from the OpenAI website. 
+
 And then you would just set your API key like this. 
-And then whatever your API key is. 
-You could also set this as an environment 
-variable if you want. 
-For this course, you don't need to do any of this. You 
-can just run this code, because we've already set the API key 
-in the environment. So I'll just copy this, and don't worry about how 
-this works. Throughout this course, we'll use OpenAI's chatGPT model, 
-which is called GPT 3.5 Turbo, and the chat completions endpoint. We'll dive 
-into more detail about the format and inputs to the chat completions 
-endpoint in a later video. And so for now, 
-we'll just define this helper function to make it easier to use prompts 
-and look at generated outputs. So that's this 
-function, getCompletion, that just takes in a prompt 
-and will return the completion for that prompt. 
-Now let's dive into our first principle, which 
-is write clear and specific instructions. You should express what 
-you want a model to do by 
-providing instructions that are as clear and specific as you can possibly 
-make them. This will guide the model towards 
-the desired output and reduce the chance that you get irrelevant 
-or incorrect responses. Don't confuse writing a clear prompt with writing a 
-short prompt, because in many cases, longer prompts actually 
-provide more clarity and context for the model, which 
-can actually lead to more detailed 
-and relevant outputs. The first tactic to help you write clear 
-and specific instructions is to use delimiters to clearly indicate 
-distinct parts of the input. And 
-let me show you an example. 
- 
-So, I'm just going to paste this example into the Jupyter Notebook. So, 
-we just have a paragraph. And the task we want to achieve 
-is summarizing this paragraph. So, in the prompt, I've 
-said, summarize the text delimited by triple backticks into 
-a single sentence. And then we have these kind 
-of triple backticks that are enclosing the text. 
-And then, to get the response, we're just using 
-our getCompletion helper function. And then we're 
-just printing the response. So, if we run this. 
- 
-As you can see, we've received a sentence output and we've used 
-these delimiters to make it very clear to the model, kind of, the exact 
-text it should summarise. So, delimiters can be kind of any 
-clear punctuation that separates specific pieces of text 
-from the rest of the prompt. These could be kind of triple backticks, you 
-could use quotes, you could use XML tags, section titles, 
-anything that just kind of makes 
-this clear to the model that this is 
-a separate section. Using delimiters is also a helpful technique to 
-try and avoid prompt injections. And what 
+
+And then whatever your API key is. You could also set this as an environment variable if you want. 
+
+For this course, you don't need to do any of this. You can just run this code, because we've already set the API key in the environment. So I'll just copy this, and don't worry about how this works. Throughout this course, we'll use OpenAI's chatGPT model, which is called GPT 3.5 Turbo, and the chat completions endpoint. We'll dive into more detail about the format and inputs to the chat completions endpoint in a later video. 
+
+And so for now, we'll just define this helper function to make it easier to use prompts and look at generated outputs. So that's this function, getCompletion, that just takes in a prompt and will return the completion for that prompt. 
+
+Now let's dive into our first principle, which is write clear and specific instructions. You should express what you want a model to do by providing instructions that are as clear and specific as you can possibly make them. This will guide the model towards the desired output and reduce the chance that you get irrelevant or incorrect responses. 
+
+Don't confuse writing a clear prompt with writing a short prompt, because in many cases, longer prompts actually provide more clarity and context for the model, which can actually lead to more detailed and relevant outputs. The first tactic to help you write clear and specific instructions is to use delimiters to clearly indicate distinct parts of the input. And let me show you an example. 
+
+So, I'm just going to paste this example into the Jupyter Notebook. So, we just have a paragraph. And the task we want to achieve is summarizing this paragraph. So, in the prompt, I've said, summarize the text delimited by triple backticks into a single sentence. And then we have these kind of triple backticks that are enclosing the text. 
+
+And then, to get the response, we're just using our getCompletion helper function. And then we're just printing the response. So, if we run this. 
+
+As you can see, we've received a sentence output and we've used these delimiters to make it very clear to the model, kind of, the exact text it should summarise. So, delimiters can be kind of any clear punctuation that separates specific pieces of text from the rest of the prompt. These could be kind of triple backticks, you could use quotes, you could use XML tags, section titles, anything that just kind of makes this clear to the model that this is a separate section. 
+
+
+
+Using delimiters is also a helpful technique to try and avoid prompt injections. And what 
 a prompt injection is, is if a user is allowed to add 
 some input into your prompt, they might give kind of conflicting instructions to 
 the model that might kind of make it follow 

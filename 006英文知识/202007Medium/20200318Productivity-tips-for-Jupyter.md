@@ -1,4 +1,4 @@
-# Productivity tips for Jupyter (Python)
+## Productivity tips for Jupyter (Python)
 
 Michał Krassowski
 
@@ -17,7 +17,7 @@ It will work out of the box, but if you wish the best experience, these dependen
     pip3 install ipywidgets
     jupyter labextension install @jupyter-widgets/jupyterlab-manager
 
-## 01. Play a sound once the computations have finished
+### 01. Play a sound once the computations have finished
 
 You can configure your Jupyter to play a sound if the execution of the cell (or strand of cells) took more than a few seconds. I have previously described two methods for that, a Python-based one, and a JavaScript one. The code for the python one roughly goes like:
 
@@ -62,7 +62,7 @@ Notifications(
 
 In the example above, I use beep-07.wav from soundjay.com. If you use Ubuntu or another distribution with GNOME, you can provide a path to one of the default alert sounds, e.g. /usr/share/sounds/gnome/default/alerts/bark.ogg.
 
-### Play a honk sound on exception
+#### Play a honk sound on exception
 
 Similarly, you can add a hook to play a different sound when an exception is raised. Here is a very simple mechanism proposed by Kevin at SO:
 
@@ -85,7 +85,7 @@ from jupyter_helpers.notifications import Notifications
 Notifications(failure_audio='path/to/beep-05.wav')
 ```
 
-## 02. Integrate notifications with your OS
+### 02. Integrate notifications with your OS
 
 When working from library I needed an alternative for beeps and honks. Notify-send turned our to be a perfect tool for me as a primarily GNOME user (scroll down for instructions for other desktop environments).
 
@@ -120,7 +120,7 @@ Notifications(
 
 Please consider sending a PR if you wish to integrate it with your OS.
 
-## 03. Jump to definition of a variable/function/class
+### 03. Jump to definition of a variable/function/class
 
 Use Alt + click to jump to a definition using your mouse, or Ctrl + Alt + B keyboard-only alternative with jupyterlab-go-to-definition extension:
 
@@ -136,7 +136,7 @@ To install the extension use:
 
 2020 update: even more robust jumping is now available with jupyterlab-lsp!
 
-## 04. Enable auto-completion for rpy2 (ggplot2!)
+### 04. Enable auto-completion for rpy2 (ggplot2!)
 
 If your work is more about publications rather than interactive dashboards, there is a good chance you are familiar with ggplot2. While there are some great projects like plotnine which attempt to port it to Python, I still find working with ggplot (especially the extensions) more feature-complete when using rpy2 R-Python interface.
 
@@ -167,7 +167,7 @@ Again, one simple import from jupyter_helpers will solve the issue:
 
 2020 update: can now be also accomplished with upyterlab-lsp!
 
-## 5. Summarize dictionaries in a nice table view
+### 5. Summarize dictionaries in a nice table view
 
 This is not a novel idea, though I hope that sharing my more than less advanced class may help others. This is based on Python3 SimpleNamespace, but extends it with a pandas- and numpy- aware HTML representation for Jupyter:
 
@@ -180,7 +180,7 @@ Long collections will be trimmed, so no need to worry about the space or running
 
 Namespaces with HTML: when nested data needs to be looked at before converting to DataFrame
 
-## 06. Selectively import from other notebooks
+### 06. Selectively import from other notebooks
 
 For some time I was trying to follow data/methods/results separation, having three Jupyter notebooks for each larger analysis: data.ipynb, methods.ipynb and results.ipynb. To save time on useless re-computation of some stuff I wanted to have selective import from data and methods notebooks for use in the results notebook.
 
@@ -190,7 +190,7 @@ This was described in this SO thread, and I still hope to see some suggestions.
 
 [python - Selectively import from another Jupyter Notebook - Stack Overflow](https://stackoverflow.com/questions/54317381/selectively-import-from-another-jupyter-notebook)
 
-## 07. Scroll to the recently executed cell
+### 07. Scroll to the recently executed cell
 
 You may have noticed that previously shown Notifications class made the notebook scroll down on exception to the offending cell (Figure 1). This can be disabled by passing scroll_to_exceptions=False.
 
@@ -201,7 +201,7 @@ from jupyter_helpers.utilities import scroll_to_current_cell
 scroll_to_current_cell(preserve=True)
 ```
 
-## 08. Interactive tail for long outputs
+### 08. Interactive tail for long outputs
 
 Lastly, when running third-party applications (but not being at the point of building a fully-fledged pipeline), one may want to see only the tail of the currently running process. In bash it is easily achieved using tail -f.
 

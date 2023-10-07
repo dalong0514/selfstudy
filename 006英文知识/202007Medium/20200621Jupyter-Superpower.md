@@ -1,4 +1,4 @@
-# Jupyter Superpower — Interactive Visualization Combo with Python
+## Jupyter Superpower — Interactive Visualization Combo with Python
 
 Nok
 
@@ -52,13 +52,13 @@ altair has an example gallery that demonstrates a wide range of visualization th
 
 Rich Example Gallery of altair
 
-## 1. Interactive plotting
+### 1. Interactive plotting
 
 Upper left: Multiple Selection, Upper right: box style multiple selections, bottom left: single selection, bottom right: mouse hover single selection
 
 altair offers a lot of choice for interactive plotting. The above gif gives you a sense of how easy it could be. With just 1 line of code, you can change the behavior of the chart. Interactiveness is crucial for data exploratory, as often you want to drill down on a certain subset of the data. Functions like cross-filtering are very common in Excel or Tableau.
 
-## 2. Clean Syntax and Easy to Combine charts
+### 2. Clean Syntax and Easy to Combine charts
 
 The syntax is a bit like ggplot , where you create a Chart object and add encoding /color/scale on it.
 
@@ -70,13 +70,13 @@ Here is an example. I have two graphs created from 2 different datasets, while t
 
 The bottom left chart is created simply using a+b, both chars are controlled by a filter in the upper left bar chart.
 
-## 3. Export is easy
+### 3. Export is easy
 
 Often time you just want to share a graph. You just need to do Chart.save() and share the HTML directly with your colleague. The fact that it is just JSON and HTML also means that you could easily integrate it with your web front-end.
 
 If you want a sophisticated dashboard with a lot of data, Tableau or tools like Dash (Plotly), Bokeh is still better at this point. I haven’t found a great solution to deal with large data with altair. I found it is most useful when you try to do interactive plotting no more than 4charts, where you have some cross-filtering, dropdown or highlights.
 
-## Conclusion
+### Conclusion
 
 These are the libraries that I tried to include in my workflow recently. Let me know what you feel and share the tools that you use. I think the interactive control of altair is the most interesting part, but it still has to catch up with other libraries in terms of functionalities and support more chart types.
 
@@ -84,6 +84,6 @@ I will try to experiment plotly + Dash to see if it is better. I have liked the 
 
 Please give me a thumbs up if you think these tools are useful and don’t forget to give a star to the creators of these projects.
 
-## Reference
+### Reference
 
 https://www.youtube.com/watch?v=aRxahWy-ul8 (This is a really great talk from one of the altair author Brian Granger. I think altair is not just a visualization library, you can learn a lot from it’s API design as well)
