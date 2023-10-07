@@ -1,3 +1,5 @@
+## 0701. prompt_eng_expanding
+
 Expanding is the task of taking a shorter piece of text, 
 such as a set of instructions or a list of topics, 
 and having the large language model generate a 
