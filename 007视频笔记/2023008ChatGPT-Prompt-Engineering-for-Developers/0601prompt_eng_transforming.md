@@ -1,10 +1,7 @@
 ## 0601. prompt_eng_transforming
 
-Large language models are very good at transforming its input to a 
-different format, such as inputting a 
-piece of text in one language and transforming 
-it or translating it to a different language, 
-or helping with spelling and grammar corrections. 
+Large language models are very good at transforming its input to a different format, such as inputting a piece of text in one language and transforming it or translating it to a different language, or helping with spelling and grammar corrections. 
+
 So taking as input a piece of text that may not be 
 fully grammatical and helping you to fix that up a bit, 
 or even transforming formats, such as inputting 
