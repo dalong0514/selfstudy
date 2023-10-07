@@ -1,13 +1,7 @@
-In this video,Isa will present some guidelines for prompting to help 
-you get the results that you want. In 
-particular, she'll go over two key principles for how to write prompts 
-to prompt engineer effectively. And a 
-little bit later, when she's going over the Jupyter Notebook examples, I'd also 
-encourage you to feel free to pause the video every now and 
-then to run the code yourself, so you can see what this output 
-is like and even change the exact prompts and play with a 
-few different variations to gain experience with what the 
-inputs and outputs of prompting are like. 
+## 0201. prompt_eng_guidelines
+
+In this video, Isa will present some guidelines for prompting to help you get the results that you want. In particular, she'll go over two key principles for how to write prompts to prompt engineer effectively. And a little bit later, when she's going over the Jupyter Notebook examples, I'd also encourage you to feel free to pause the video every now and then to run the code yourself, so you can see what this output is like and even change the exact prompts and play with a few different variations to gain experience with what the inputs and outputs of prompting are like. 
+
 So, I'm going to outline some principles and 
 tactics that will be helpful while working with language 
 models like ChatGPT. 
@@ -266,7 +260,7 @@ the same trick to use the following format. So,
 the format will be the question, the student's solution, the actual solution, and 
 then whether the solution agrees, yes or 
 no, and then the student grade, correct or incorrect. 
- 
+
 And so, we have the same question and the same solution as above. 
 So now, if we run this cell... 
 So, as you can see, the model actually went 
