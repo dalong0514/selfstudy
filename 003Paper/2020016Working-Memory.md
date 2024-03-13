@@ -1,18 +1,22 @@
-# Working Memory
+## Working Memory
 
-He term "working memory" refers to the temporary storage of information in connection with the performance of other cognitive tasks such as reading, problem-solving or learning. It is here conceptualized as comprising a limited-capacity central processor, the central executive, which employs a number of subsidiary slave systems. Evidence for this view is presented, together with a more detailed account of two such systems: the articulatory loop, which stores and manipulates speech-based material, and the visuo-spatial scratch-pad, which is responsible for creating and maintaining visual imagery.
+The term "working memory" refers to the temporary storage of information in connection with the performance of other cognitive tasks such as reading, problem-solving or learning. It is here conceptualized as comprising a limited-capacity central processor, the central executive, which employs a number of subsidiary slave systems. Evidence for this view is presented, together with a more detailed account of two such systems: the articulatory loop, which stores and manipulates speech-based material, and the visuo-spatial scratch-pad, which is responsible for creating and maintaining visual imagery.
 
-## 01. Introduction
+工作记忆是一个关键的心理学概念，它描述了人们在进行阅读、解题或学习等认知活动时，暂时存储和处理信息的能力。这一过程涉及一个有限能力的中心处理单元 —— 中央执行器（central executive），它控制和协调一些辅助系统的工作。研究支持这一理论，并详细介绍了两个辅助系统：语音回路（articulatory loop），它负责存储和处理语言信息；视觉空间草图板（visuo-spatial scratch-pad），则负责生成和保持视觉图像。
+
+### 01. Introduction
 
 Although the term "working memory" has only gradually achieved popularity, temporary storage in human memory has been an area of active theoretical interest for at least 25 years It is easy to look back on the area as producing a series of controversies each of which flared into activity only to fade away. But underlying these there is a continuity of development whereby the initial assumption of a unitary memory system was elaborated into a dichotomy between long-term and short-term memory, both of which were subsequently subdivided: long-term memory into semantic and episodic memory (Tulving 1972) and short-term memory into a range of subsystems. Collectively, the latter are called "working memory", an alliance of separate but interacting temporary storage systems, possibly coordinated by a single central executive component. 
 
 Although this conception can on the one hand be seen as a departure from the classic concept of short-term memory, many of the components and characteristics of working memory bear a striking resemblance to those of earlier models extending back to Broadbents influential initial model (Broadbent 1958). Because I believe that it is important to emphasize the continuity, I shall devote the first part of this paper to an overview of the development of the concept of short-term memory into the broader concept of working memory, before going on to outline my own views on the probable structure and function of working memory.
 
-## 02. One Memorty System or Two?
+尽管「工作记忆」这个术语逐渐变得广为人知，人类记忆中的临时存储问题在过去至少 25 年里一直是心理学研究的热点。回顾这一领域，我们可以看到一系列争论的出现和消退，但穿越这些争论的，是一个由单一记忆系统向长期记忆与短期记忆二元结构演化，再到进一步将这两者细分为语义记忆、情景记忆（Tulving, 1972）和一系列短期记忆子系统的连续发展过程。这些短期记忆子系统的集合被称为「工作记忆」，它们是一系列独立但相互交互的临时存储系统，可能由一个中心执行部件统一协调。
+
+虽然这种看法在某种程度上标志着对传统短期记忆概念的转变，但工作记忆的组成部分和特征与早期的模型有着显著的相似性，这些早期模型最早可以追溯到 Broadbent 在 1958 年的开创性工作。因此，强调这一理论的连续性非常重要。本文的第一部分将回顾短期记忆概念如何演化为工作记忆的更广泛概念，之后我将分享我对工作记忆结构和功能的看法。
+
+### 02. One Memorty System or Two?
 
 Although the possibility of two separate types of memory had been suggested as early as 1883 by Francis Galton, the argument for a functional separation between long-term and short-term memory first achieved prominence through the work of Broadbent (1958), who strongly advocated the dichotomy, and the influential counter-argument by Melton  (1963), who defended a unitary concept of memory. This in turn led to a search for empirical evidence for or against the dichotomy. This literature has been reviewed elsewhere (e. G. By Baddeley 1976) but includes the following sources of evidence in favour of a separation between long-term and short-term memory.
-
-1『记忆一分为二理论（长期记忆和短期记忆），是 Broadbent 于 1958 年提出的。』
 
 1. Two-component tasks. A number of tasks yielded data suggesting that they comprised two memory components, a relatively stable long-term component, and a much more labile short-term component (Glanzer 1972; Peterson 1966; Waugh Norman 1965).
 
@@ -26,9 +30,9 @@ Although the possibility of two separate types of memory had been suggested as e
 
     When the task required long-term learning, however, the pattern was quite different, with coding based on meaning becoming important and phonological similarity ceasing to significant factor (Baddeley 1966b; Kintsch & Buschke 1969; Sachs 1967).
 
-1『重点来了，短期记忆和长期记忆的编码原理不同。短期记忆的编码更侧重于 speech（语言），而长期记忆的编码更侧重于 meaning（意义）。』
+1『记忆一分为二理论（长期记忆和短期记忆），是 Broadbent 于 1958 年提出的。重点来了，短期记忆和长期记忆的编码原理不同。短期记忆的编码更侧重于 speech（语言），而长期记忆的编码更侧重于 meaning（意义）。』
 
-## 03. The Modal Model
+### 03. The Modal Model
 
 By the late 1960s, this and other sources of evidence seemed to point clearly to a dichotomy between long-term and short-term memory. A great many competing models of short-term memory were developed, often expressed mathematically and attempting to make precise predictions, although typically of a very limited set of experimental data. 
 
@@ -36,7 +40,7 @@ The models tended to have much in common, and could be regarded as variants on a
 
 Consequently, learning required maintaining information in short-term memory. The longer the maintenance the greater the degree of transfer and the greater the amount of learning. The short-term store was assumed to have access to a number of control processes or strategies for manipulating information, Although a range of such processes was postulated, empirical investigation was largely confined to the simple process of subvocal rote rehearsal.
 
-## 04. Problems with the Modal Model
+### 04. Problems with the Modal Model
 
 In the early I970s, the amount of work on short-term memory began to decline; the reasons for this decline are various, but probably included the growing complexity of empirical data in the field: new techniques had begun to proliferate, and the problems of mapping the results of any technique onto a single underlying theoretical structure became progressively more complex. At the same time it became increasingly clear that certain phenomena were difficult to fit into the modal model. These included the following:
 
@@ -48,13 +52,13 @@ In the early I970s, the amount of work on short-term memory began to decline; th
 
     Other evidence against the necessary association of recency with short-term memory is reviewed by Baddeley &Hitch (1976) and by Watkins Peynircioglu (1983). Recency has so far been investigated primarily as a limited laboratory phenomenon, of theoretical but not practical significance. I myself suspect that recency represents a very basic and important aspect of human memory concerned with the vital question of maintaining orientation in time and space. However, although it seems a simple phenomenon, we still do not have a good general model of recency, or indeed an adequate understanding of the similarities and differences between long-term and short-term recency effects.
 
-## 05. Alternatives to the Modal Model
+### 05. Alternatives to the Modal Model
 
-### 5.1 Levels of processing
+#### 5.1 Levels of processing
 
 As the modal model began to lose favour, it was succeeded in popularity by a theoretical framework presented by Craik &Lockhart (1972), who termed their approach Levels of processing. This approach changes the emphasis of the modal model away from structure to processing, and postulates that the more deeply a subject processes a stimulus, the more durable will its memory trace be. However, although the concept of levels of processing offers a useful rule of thumb for predicting the effects of differential coding in long-term memory, it is open to a number of theoretical criticisms (Baddeley I978), and has said little about the nature of working memory; hence it will not be further discussed here.
 
-### 5.2 Working memor
+#### 5.2 Working memor
 
 Although it had been widely assumed that short-term memory functioned as a temporary working memory, until recently empirical evidence for such a view was remarkably sparse Indeed, patients such as those who appeared to have grossly defective short-term memory, Studied by Shallice Warrington, often seemed to encounter very few practical problems in coping with the information-processing demands of their everyday life. In the early 1970s Hitch I decided that we would explore this point further by attempting to disrupt the operation of short-term memory in normal subjects, and then observing their performance on a range of information-processing tasks.
 
@@ -178,7 +182,7 @@ APPLYING THE CONCEPT OF WORKING MEMORY
 
 I have so far attempted to illustrate how the concept of working memory can be broken do into subcomponents, and these in turn analysed in some detail. However, the essence of the concept of working memory lies in its concern with the use of temporary storage to perform such important cognitive tasks as reasoning, comprehension and learning. Consequently, in parallel with the more detailed theoretical analysis of subcomponents, we have been concerned to use what we know of working memory to help understand other more ecologically relevant information-processing tasks. Unfortunately, space does not permit a detailed account of such applications. These involve, in our own case, the study of both fluent reading and learning to read  (Baddeley 1978, 1982; Baddeley Lewis 1981; Baddeley et al. 1981). The concept of working memory has also been useful in approaching the breakdown of normal cognitive functioning, including the nature of the deficit in patients suffering from impaired short-term memory (Vallar& Baddeley 1983) and of the reading problems encountered in developmentally dyslexic boys  (Baddeley et al. 1982). In addition, the concept of working memory has proved useful in analysing the cognitive processes involved in simple arithmetic  (Hitch 1978), and as the next paper will show, in understanding the development of working memory through childhood.
 
-## Conclusion
+### Conclusion
 
 The concept of working memory is a very general one, replacing the idea of a single unitary short-term memory with an alliance of subsystems. We have as yet made progress in analysing only two of what may prove to be a number of such component systems, and have only begun to tackle the important question of how the information from such systems is coordinated. None the less, I think we can claim to have had some success in teasing out the details of at least two of the systems, the articulatory loop and the visuo-spatial scratch-pad. Furthermore, the Concept of a working memory appears to conceptualize the advances we have made in the laboratory in such a way that they can be applied to ecologically relevant cognitive tasks such as reading and arithmetic. Finally, I would like to claim that work in this area has been cumulative. Although the fashion for carrying out work on short-term and working memory has oscillated widely during the last 25 years we have made genuine steady progress. Empirical work such as that of Conrad  (1962) and theoretical work such as that of Broadbent (1958) continue to be influential; we know considerably more about the phenomena and have more elaborate models, but these are essentially developments of the earlier approach rather than completely new departures.
 
