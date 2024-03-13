@@ -28,7 +28,19 @@ Although the possibility of two separate types of memory had been suggested as e
 
 3. Diferential coding. Evidence from the immediate memory span task suggested that short-term memory relied heavily on some form of speech coding, representing the sound or articulatory characteristics of the material but not its meaning. Errors tend to be phonologically similar to the correct item (Conrad 1964), while sequences of phonologically similar items are hard to recall accurately (Baddeley 1966a).
 
-    When the task required long-term learning, however, the pattern was quite different, with coding based on meaning becoming important and phonological similarity ceasing to significant factor (Baddeley 1966b; Kintsch & Buschke 1969; Sachs 1967).
+When the task required long-term learning, however, the pattern was quite different, with coding based on meaning becoming important and phonological similarity ceasing to significant factor (Baddeley 1966b; Kintsch & Buschke 1969; Sachs 1967).
+
+早在 1883 年，Francis Galton 就提出了可能存在两种不同类型记忆的想法，但是关于长期记忆与短期记忆之间的功能性分离的争论，真正因为 Broadbent 在 1958 年的研究而变得突出。Broadbent 强烈支持这种二元划分，而 Melton 在 1963 年提出的反对观点则倾向于认为记忆是一个统一的概念。这引发了对这一分离理论的实证证据的探索。尽管这一主题的文献已经有所回顾（例如，由 Baddeley 在 1976 年），但以下几个方面的证据支持长短期记忆分离的观点：
+
+1、双成分任务。研究显示，某些任务包含了两个记忆成分：一个相对稳定的长期记忆成分和一个更加易变的短期记忆成分（例如，Glanzer 1972 年的研究；Peterson 1966 年的研究；Waugh 和 Norman 1965 年的研究）。
+
+2、神经心理学证据。早在 1940 年代，就已知患有科萨科夫综合症的患者展现出长期学习能力的显著障碍，但他们在重复一串数字或单词的能力 —— 一种测量记忆跨度的方式 —— 却可能保持正常（Zangwill, 1946）。Milner 在 1966 年指出，经典的失忆症患者 H.M. 显示出即时记忆与长期记忆之间的明显区分。而 Baddeley 与 Warrington 在 1970 年的研究则通过检验失忆症患者在被认为反映短期与长期记忆成分的任务上的表现，支持了这种记忆二分的观点。
+
+进一步的神经学分离证据由 Shallice 和 Warrington 在 1970 年提出，他们描述了一个具有正常长期学习能力但即时记忆跨度仅有两项的患者。
+
+3、不同的编码方式。即时记忆任务的证据显示，短期记忆在很大程度上依赖于某种语言编码，即代表材料的声音或口头特征，而非其含义。错误往往在语音上与正确项相似（Conrad, 1964），而语音相似的项序列难以准确回忆（Baddeley, 1966a）。
+
+然而，当任务涉及到长期学习时，情况则大为不同，以含义为基础的编码变得重要，语音相似性不再是一个重要因素（Baddeley, 1966b；Kintsch 与 Buschke, 1969；Sachs, 1967）。
 
 1『记忆一分为二理论（长期记忆和短期记忆），是 Broadbent 于 1958 年提出的。重点来了，短期记忆和长期记忆的编码原理不同。短期记忆的编码更侧重于 speech（语言），而长期记忆的编码更侧重于 meaning（意义）。』
 
@@ -40,6 +52,12 @@ The models tended to have much in common, and could be regarded as variants on a
 
 Consequently, learning required maintaining information in short-term memory. The longer the maintenance the greater the degree of transfer and the greater the amount of learning. The short-term store was assumed to have access to a number of control processes or strategies for manipulating information, Although a range of such processes was postulated, empirical investigation was largely confined to the simple process of subvocal rote rehearsal.
 
+到了 20 世纪 60 年代末，众多的证据开始明确支持长期记忆与短期记忆之间存在明显的区别。随之而来，学界提出了众多关于短期记忆的模型，这些模型尝试用数学方法来描述并精确预测记忆的工作方式，尽管它们大多只涉及有限的实验数据。
+
+这些模型之间有许多相似之处，它们可以看作是围绕一个核心概念 ——Murdock 所称的「模式模型」—— 的各种变体。在这些模型中，Atkinson 和 Shiffrin 在 1968 年提出的模型尤为重要。这个模型实际上是对 Broadbent 在 1958 年提出的原始模型的扩展，同样区分了两类短期记忆系统：一种是能够并行工作的短暂感觉存储系统，它们将信息传递给一个容量有限的统一短期记忆存储。这个短期记忆存储被认为是一种工作记忆，用于保持和处理信息，以及将信息转移到更为持久的长期记忆系统中。这种转移过程被认为是自动进行的，但相对较慢。
+
+因此，学习过程需要将信息保持在短期记忆中。信息保持的时间越长，其转移到长期记忆中的程度就越大，学习的效果也越好。短期记忆被认为可以使用多种控制过程或策略来处理信息，虽然提出了多种这样的处理过程，但实际的研究主要集中在默念式的机械记忆重复这一简单过程上。
+
 ### 04. Problems with the Modal Model
 
 In the early I970s, the amount of work on short-term memory began to decline; the reasons for this decline are various, but probably included the growing complexity of empirical data in the field: new techniques had begun to proliferate, and the problems of mapping the results of any technique onto a single underlying theoretical structure became progressively more complex. At the same time it became increasingly clear that certain phenomena were difficult to fit into the modal model. These included the following:
@@ -50,7 +68,17 @@ In the early I970s, the amount of work on short-term memory began to decline; th
 
 3. Long-term recency effects. The recency effect in free recall is probably the most characteristic example of a short-term component of a two-component task. The suggestion that the recency effect reflects the contents of a short-term store ran into difficulties, however, with the discovery of recency effects extending over long periods of time. These range from several minutes under laboratory conditions  (see, for example, Tzeng 1973) to days or even weeks in rugby players asked to remember which teams they had played against (Baddeley & Hitch 1977). 
 
-    Other evidence against the necessary association of recency with short-term memory is reviewed by Baddeley &Hitch (1976) and by Watkins Peynircioglu (1983). Recency has so far been investigated primarily as a limited laboratory phenomenon, of theoretical but not practical significance. I myself suspect that recency represents a very basic and important aspect of human memory concerned with the vital question of maintaining orientation in time and space. However, although it seems a simple phenomenon, we still do not have a good general model of recency, or indeed an adequate understanding of the similarities and differences between long-term and short-term recency effects.
+Other evidence against the necessary association of recency with short-term memory is reviewed by Baddeley &Hitch (1976) and by Watkins Peynircioglu (1983). Recency has so far been investigated primarily as a limited laboratory phenomenon, of theoretical but not practical significance. I myself suspect that recency represents a very basic and important aspect of human memory concerned with the vital question of maintaining orientation in time and space. However, although it seems a simple phenomenon, we still do not have a good general model of recency, or indeed an adequate understanding of the similarities and differences between long-term and short-term recency effects.
+
+在 1970 年代初，短期记忆的研究开始减少。这种趋势的原因多种多样，主要包括实验数据越来越复杂和新技术的广泛应用，这使得将实验结果融合进一个统一的理论框架变得越来越困难。同时，越来越多的现象难以被纳入传统的模式模型之中。这些现象包括：
+
+1、神经心理学证据。如果短期记忆对长期学习是必需的，那么为什么那些短期学习能力明显受损，但长期记忆却正常的患者（如 Shallice& Warrington 1970 年的研究对象）存在？
+
+2、短期记忆与长期学习之间的区别。一系列研究表明，除非伴有某种深入的语义处理或扩展，否则单纯的重复记忆往往无法实现长期保持。Craik & Watkins（1973）通过实验明确展示了这一点。BBC 通过大量广告试图让听众熟悉无线电频率的变化，这次无意中的演示尽管成本高昂，却证实了重复并不等同于学习。Bekerian & Baddeley（1980）的研究发现，尽管受试者可能听到这条信息超过 1000 次，但几乎没有任何保留。
+
+3、长期近因效应。自由回忆中的近因效应是双组分任务中短期成分的一个典型例子。然而，随着长时间跨度的近因效应被发现，这一假设遇到了挑战。这种效应可以从实验室条件下的几分钟延伸到橄榄球运动员被要求回忆几天甚至几周前比赛对手的情况。
+
+Baddeley & Hitch（1976）和 Watkins Peynircioglu（1983）提出了反对短期记忆必然与近因效应关联的其他证据。到目前为止，近因效应主要被看作是一个理论上而非实践上重要的有限实验室现象。我个人认为，近因效应反映了人类记忆中一个基本且重要的方面 —— 关于如何在时间和空间中保持定向的问题。然而，尽管它似乎是一个简单的现象，我们对于近因效应还没有一个好的通用模型，甚至对于长期和短期近因效应之间的相似性和差异也缺乏足够的理解。
 
 ### 05. Alternatives to the Modal Model
 
@@ -62,13 +90,7 @@ As the modal model began to lose favour, it was succeeded in popularity by a the
 
 Although it had been widely assumed that short-term memory functioned as a temporary working memory, until recently empirical evidence for such a view was remarkably sparse Indeed, patients such as those who appeared to have grossly defective short-term memory, Studied by Shallice Warrington, often seemed to encounter very few practical problems in coping with the information-processing demands of their everyday life. In the early 1970s Hitch I decided that we would explore this point further by attempting to disrupt the operation of short-term memory in normal subjects, and then observing their performance on a range of information-processing tasks.
 
-![](./res/2020001.png)
-
 What Murdock called the modal model made two primary assumptions: first, that the system had limited storage capacity, and second, that the digit span task taxed this limited capacity to the full. We therefore presented our subjects with sequences of digits that they were required to maintain by rehearsing aloud while they attempted to perform one of a number of other tasks. These were tasks that might be expected to depend on a limited-capacity working memory, and included learning, comprehension of prose, and verbal reasoning.
-
-
-
-
 
 One such experiment (Baddeley &Lewis, unpublished), involved requiring our subjects to remember sequences of from one to eight random numbers while performing a reasoning task in which they were to decide whether sentences correctly described the order of two letters. Some sentences were simple such as A follows B-BA:  (true), while others were made more complex by including passives and negatives  (B is not preceded by A-BA: true). Our results are shown in figure 1
 
