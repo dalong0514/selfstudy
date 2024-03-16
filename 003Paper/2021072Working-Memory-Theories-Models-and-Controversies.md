@@ -12,279 +12,47 @@ I present an account of the origins and development of the multicomponent approa
 
 I follow this with a brief discussion of alternative models and their relationship to the framework. I conclude with speculations on further developments and a comment on the value of attempting to apply models and theories beyond the laboratory studies on which they are typically based.
 
+本文介绍了工作记忆多组成部分理论的起源与发展。本文首先区分了理论的总体框架和在这一框架下构建的更为具体的模型之间的差异，前者保持了相对的稳定性，而后者则体现了在此理论基础上的深入探索与尝试。
+
+紧接着，文章简要分析了其他模型与该框架之间的联系与差异。最后，文章对未来可能的发展方向进行了展望，并对在实验室研究基础上将这些模型和理论应用到更广泛领域的尝试价值进行了探讨。
+
 ### 01
 
 WORKING MEMORY: THEORIES, MODELS, AND CONTROVERSIES
 
-I was honored, pleased, and challenged by
+I was honored, pleased, and challenged by the invitation to write this prefatory chapter, pleased because it offered the chance to take a broad and somewhat autobiographical view of my principal area of interest, working memory (WM), but challenged by the potential magnitude of the task. The topic of working memory has increased dramatically in citation counts since the early years, not all of course related to or supportive of my own work, but a recent attempt to review it (Baddeley 2007) ended with more than 50 pages of references. What follows is a partial, as opposed to impartial, account of the origins of the concept of multicomponent working memory (M-WM) and of my own views on its subsequent development. My first draft would have filled the chapter page allowance with references; I apologize to all of those whose work should have been cited and is not.
 
-the invitation to write this prefatory chapter,
+I entered psychology as a student at University College London in 1953, a very exciting time for the field of psychology, which had benefited greatly from developments during the Second World War, where theory was enriched by the need to tackle practical problems.
 
-pleased because it offered the chance to take a
+As a result, prewar issues such as the conflict between Gestalt psychology and neobehaviorism began to be challenged by new data and new ideas, some based on cybernetics, the study of control systems, with others influenced by the newly developed digital computers. This in turn led to a renewed interest in the philosophy of science as applied to psychology. Typical questions included, is psychology a science?; if so, is it cumulative or are we doomed to keep on asking the same questions, as appeared to be the case in philosophy? What would a good psychological theory look like?
 
-broad and somewhat autobiographical view of
+As students we were offered two answers to this question. The first, championed by Cambridge philosopher Richard Braithwaite (1953), regarded Newton's Principia as the model to which scientific theories should aspire, involving as it does postulates, laws, equations, and predictions. Within psychology, the Newtonian model was explicitly copied by Clark Hull in his attempt to produce a general theory of learning, principally based on the study of maze learning in the albino rat.
 
-my principal area of interest, working memory
+撰写这篇序言对我而言既是荣誉，也是挑战。它不仅让我有机会广泛且从个人经历的角度回顾我最感兴趣的领域 —— 工作记忆，同时也让我面临这一任务的庞大挑战。尽管工作记忆这个话题自早期以来在引用量上急剧增加，其中不乏对我的工作的引用和支持，但是当我尝试回顾此领域时（Baddeley 2007），仅参考文献就超过了 50 页。这里我将分享关于多组分工作记忆概念起源以及我对其发展的看法的一部分视角，这是出于个人立场而非完全客观的叙述。我的初稿中引用的文献量巨大，足以填满整个章节，对于那些应被引用但未被提及的研究，我在此表示歉意。
 
-(WM), but challenged by the potential magnitude of the task. The topic of working memory
+我在 1953 年作为学生加入了伦敦大学学院心理学系，那是一个对心理学领域极为激动人心的时期。心理学从二战期间的发展中获得了巨大的益处，理论的丰富源于解决实际问题的需求。
 
-has increased dramatically in citation counts
+这导致了战前一些问题，如格式塔心理学与新行为主义之间的冲突，开始受到新数据和新理念的挑战。这些新思想一部分基于控制论（研究控制系统的学科），另一部分受到了新开发的数字计算机的影响。这也重新点燃了对心理学中应用科学哲学的兴趣。人们开始探讨心理学是否为一门科学，如果是，它是累积性的还是我们注定要反复探讨相同的问题，正如在哲学中所发生的那样？一个优秀的心理学理论应该是怎样的？
 
-since the early years, not all of course related
+我们得到了两种回答。第一种，由剑桥哲学家 Richard Braithwaite 在 1953 年提出，他认为牛顿的《原理》应是科学理论的典范，包含了假设、定律、方程和预测。在心理学领域，Clark Hull 尝试通过研究白鼠的迷宫学习来构建一个一般性的学习理论，这一尝试明确地复制了牛顿模型。
 
-to or supportive of my own work, but a recent
 
-attempt to review it (Baddeley 2007) ended
 
-with more than 50 pages of references. What
 
-follows is a partial, as opposed to impartial,
+An alternative model of theorizing came from Oxford, where Stephen Toulmin (1953) argued that theories were like maps, ways of organizing our existing knowledge of the world, providing tools both for interacting with the world and for further exploration. Edward Tolman in Stanford had a view of learning in rats that fitted this model, using it to challenge Hull's neo-behaviorist approach. This raised the crucial question as to how you might decide between the two apparently opposing views. The dominant answer to that question, in the United Kingdom at least, was provided by Karl Popper (1959), a Viennese-trained philosopher who argued strongly that a valid theory should make clear, testable predictions, allowing the rival theories to confront each other in the all-important "crucial experiment" that settles the issue. This approach was closer in spirit to Hull than to Tolman.
 
-account of the origins of the concept of multicomponent working memory (M-WM) and of
+My own first published study (Baddeley 1960) attempted just such a crucial experiment, predicting that rats would be smarter than they should be according to Hullian theory, and demonstrating, to my own satisfaction at least, that this was the case. Alas, by the time it was published, the whole field of learning theory seemed to have collapsed. Neither side was able to deliver a knockout blow, and people simply abandoned the research area. I resolved at that point that if I myself were to develop a theory, it would be based very closely on the evidence, which would survive even if the theory proved totally wrong. It is an approach I have followed ever since.
 
-my own views on its subsequent development.
+But what is the answer to our original question, should theorists be architects, building elegant structures such as Newton did, or should they be explorers, gradually extending the theory on the basis of more and more evidence, as in the case of Darwin? Clearly both Newton and Darwin got it right, but for fields at a different stage of development. Newton claimed that his success resulted from "standing on the shoulders of giants," who no doubt stood on the shoulders of lesser mortals like ourselves. Darwin had few such giants available. I suggest that any complete theory is likely to require explorers in its initial stages and architects to turn the broad concepts into detailed models. I myself am very much at the explorer end of the continuum, but I fully accept the importance of the skills of the architect if theory is to develop.
 
-My first draft would have filled the chapter
 
-page allowance with references; I apologize to
 
-2 Baddeley
 
-Annu. Rev. Psychol. 2012.63:1-29. Downloaded from www.annualreviews.org
+My research career really began with my arrival at the Medical Research Council Applied Psychology Unit (APU) in Cambridge. Its role was to form a bridge between psychological theory and practical problems, and the year I arrived, Donald Broadbent, its director, had just published his seminal book, Perception and Communication, which provided one of the sparks that ignited what subsequently became known as the cognitive revolution. I was assigned to work on optimizing the design of postal codes, which led me to combine the classic tradition of nonsense syllable learning with new ideas from information theory, resulting in my generating memorable postal codes for each town in the United Kingdom. The Post Office thanked me and went on their way regardless; the code they adopted could, however, have been much worse, as is indeed the case in some countries, but that is another story.
 
-Access provided by 39.182.6.151 on 11/18/21. For personal use only.
+By this time my approach to theory was evolving away from Popper's idea of the need for crucial experiments, largely on the grounds that clear predictions only appeared to be possible in situations that were far narrower than the ones I found interesting. I subsequently discovered that within the philosophy of science, Lakatos (1976), and allegedly Popper himself, had subsequently abandoned the reliance on falsification, arguing instead that the mark of a good theory is that it should be productive, not only giving an account of existing knowledge, but also generating fruitful questions that will increase our knowledge. This more map-like view of theory is the one that I continue to take.
 
-PS63CH01-Baddeley ARI 31 October 2011 10:12
-
-all of those whose work should have been cited
-
-and is not.
-
-I entered psychology as a student at University College London in 1953, a very exciting
-
-time for the field of psychology, which had
-
-benefited greatly from developments during
-
-the Second World War, where theory was enriched by the need to tackle practical problems.
-
-As a result, prewar issues such as the conflict
-
-between Gestalt psychology and neobehaviorism began to be challenged by new data and
-
-new ideas, some based on cybernetics, the study
-
-of control systems, with others influenced by
-
-the newly developed digital computers. This in
-
-turn led to a renewed interest in the philosophy
-
-of science as applied to psychology. Typical
-
-questions included, is psychology a science?; if
-
-so, is it cumulative or are we doomed to keep
-
-on asking the same questions, as appeared to
-
-be the case in philosophy? What would a good
-
-psychological theory look like?
-
-As students we were offered two answers to
-
-this question. The first, championed by Cambridge philosopher Richard Braithwaite (1953),
-
-regarded Newton's Principia as the model to
-
-which scientific theories should aspire, involving as it does postulates, laws, equations, and
-
-predictions. Within psychology, the Newtonian model was explicitly copied by Clark Hull
-
-in his attempt to produce a general theory of
-
-learning, principally based on the study of maze
-
-learning in the albino rat.
-
-An alternative model of theorizing came
-
-from Oxford, where Stephen Toulmin (1953)
-
-argued that theories were like maps, ways
-
-of organizing our existing knowledge of the
-
-world, providing tools both for interacting with
-
-the world and for further exploration. Edward
-
-Tolman in Stanford had a view of learning in
-
-rats that fitted this model, using it to challenge
-
-Hull's neo-behaviorist approach. This raised
-
-the crucial question as to how you might decide
-
-between the two apparently opposing views.
-
-The dominant answer to that question, in the
-
-United Kingdom at least, was provided by Karl
-
-Popper (1959), a Viennese-trained philosopher
-
-who argued strongly that a valid theory should
-
-make clear, testable predictions, allowing the
-
-rival theories to confront each other in the
-
-all-important "crucial experiment" that settles
-
-the issue. This approach was closer in spirit to
-
-Hull than to Tolman.
-
-My own first published study (Baddeley
-
-1960) attempted just such a crucial experiment,
-
-predicting that rats would be smarter than they
-
-should be according to Hullian theory, and
-
-demonstrating, to my own satisfaction at least,
-
-that this was the case. Alas, by the time it was
-
-published, the whole field of learning theory
-
-seemed to have collapsed. Neither side was able
-
-to deliver a knockout blow, and people simply
-
-abandoned the research area. I resolved at that
-
-point that if I myself were to develop a theory,
-
-it would be based very closely on the evidence,
-
-which would survive even if the theory proved
-
-totally wrong. It is an approach I have followed
-
-ever since.
-
-But what is the answer to our original question, should theorists be architects, building
-
-elegant structures such as Newton did, or
-
-should they be explorers, gradually extending
-
-the theory on the basis of more and more
-
-evidence, as in the case of Darwin? Clearly both
-
-Newton and Darwin got it right, but for fields
-
-at a different stage of development. Newton
-
-claimed that his success resulted from "standing
-
-on the shoulders of giants," who no doubt stood
-
-on the shoulders of lesser mortals like ourselves.
-
-Darwin had few such giants available. I suggest
-
-that any complete theory is likely to require
-
-explorers in its initial stages and architects to
-
-turn the broad concepts into detailed models. I
-
-myself am very much at the explorer end of the
-
-continuum, but I fully accept the importance of
-
-the skills of the architect if theory is to develop.
-
-My research career really began with my arrival at the Medical Research Council Applied
-
-Psychology Unit (APU) in Cambridge. Its role
-
-was to form a bridge between psychological theory and practical problems, and the year I arrived, Donald Broadbent, its director, had just
-
-published his seminal book, Perception and Communication, which provided one of the sparks
-
-that ignited what subsequently became known
-
-as the cognitive revolution. I was assigned to
-
-work on optimizing the design of postal codes,
-
-www.annualreviews.org • Working Memory: Theories, Models, and Controversies 3
-
-Annu. Rev. Psychol. 2012.63:1-29. Downloaded from www.annualreviews.org
-
-Access provided by 39.182.6.151 on 11/18/21. For personal use only.
-
-PS63CH01-Baddeley ARI 31 October 2011 10:12
-
-STM: short-term
-
-memory
-
-LTM: long-term
-
-memory
-
-which led me to combine the classic tradition of
-
-nonsense syllable learning with new ideas from
-
-information theory, resulting in my generating memorable postal codes for each town in
-
-the United Kingdom. The Post Office thanked
-
-me and went on their way regardless; the code
-
-they adopted could, however, have been much
-
-worse, as is indeed the case in some countries,
-
-but that is another story.
-
-By this time my approach to theory was
-
-evolving away from Popper's idea of the need
-
-for crucial experiments, largely on the grounds
-
-that clear predictions only appeared to be possible in situations that were far narrower than
-
-the ones I found interesting. I subsequently discovered that within the philosophy of science,
-
-Lakatos (1976), and allegedly Popper himself,
-
-had subsequently abandoned the reliance on
-
-falsification, arguing instead that the mark of a
-
-good theory is that it should be productive, not
-
-only giving an account of existing knowledge,
-
-but also generating fruitful questions that will
-
-increase our knowledge. This more map-like
-
-view of theory is the one that I continue to take.
-
-Short-Term Memory
+#### Short-Term Memory
 
 The term "working memory" evolved from the
 
