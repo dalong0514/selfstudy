@@ -1,5 +1,9 @@
 ## Working Memory
 
+Alan Baddeley
+
+1992-01-31
+
 The term "working memory" refers to the temporary storage of information in connection with the performance of other cognitive tasks such as reading, problem-solving or learning. It is here conceptualized as comprising a limited-capacity central processor, the central executive, which employs a number of subsidiary slave systems. Evidence for this view is presented, together with a more detailed account of two such systems: the articulatory loop, which stores and manipulates speech-based material, and the visuo-spatial scratch-pad, which is responsible for creating and maintaining visual imagery.
 
 工作记忆是一个关键的心理学概念，它描述了人们在进行阅读、解题或学习等认知活动时，暂时存储和处理信息的能力。这一过程涉及一个有限能力的中心处理单元 —— 中央执行器（central executive），它控制和协调一些辅助系统的工作。研究支持这一理论，并详细介绍了两个辅助系统：语音回路（articulatory loop），它负责存储和处理语言信息；视觉空间草图板（visuo-spatial scratch-pad），则负责生成和保持视觉图像。
