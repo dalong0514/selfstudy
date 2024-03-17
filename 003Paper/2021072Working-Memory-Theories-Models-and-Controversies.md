@@ -36,473 +36,92 @@ As students we were offered two answers to this question. The first, championed 
 
 我们得到了两种回答。第一种，由剑桥哲学家 Richard Braithwaite 在 1953 年提出，他认为牛顿的《原理》应是科学理论的典范，包含了假设、定律、方程和预测。在心理学领域，Clark Hull 尝试通过研究白鼠的迷宫学习来构建一个一般性的学习理论，这一尝试明确地复制了牛顿模型。
 
-
-
-
 An alternative model of theorizing came from Oxford, where Stephen Toulmin (1953) argued that theories were like maps, ways of organizing our existing knowledge of the world, providing tools both for interacting with the world and for further exploration. Edward Tolman in Stanford had a view of learning in rats that fitted this model, using it to challenge Hull's neo-behaviorist approach. This raised the crucial question as to how you might decide between the two apparently opposing views. The dominant answer to that question, in the United Kingdom at least, was provided by Karl Popper (1959), a Viennese-trained philosopher who argued strongly that a valid theory should make clear, testable predictions, allowing the rival theories to confront each other in the all-important "crucial experiment" that settles the issue. This approach was closer in spirit to Hull than to Tolman.
 
 My own first published study (Baddeley 1960) attempted just such a crucial experiment, predicting that rats would be smarter than they should be according to Hullian theory, and demonstrating, to my own satisfaction at least, that this was the case. Alas, by the time it was published, the whole field of learning theory seemed to have collapsed. Neither side was able to deliver a knockout blow, and people simply abandoned the research area. I resolved at that point that if I myself were to develop a theory, it would be based very closely on the evidence, which would survive even if the theory proved totally wrong. It is an approach I have followed ever since.
 
 But what is the answer to our original question, should theorists be architects, building elegant structures such as Newton did, or should they be explorers, gradually extending the theory on the basis of more and more evidence, as in the case of Darwin? Clearly both Newton and Darwin got it right, but for fields at a different stage of development. Newton claimed that his success resulted from "standing on the shoulders of giants," who no doubt stood on the shoulders of lesser mortals like ourselves. Darwin had few such giants available. I suggest that any complete theory is likely to require explorers in its initial stages and architects to turn the broad concepts into detailed models. I myself am very much at the explorer end of the continuum, but I fully accept the importance of the skills of the architect if theory is to develop.
 
+另一种理论化思路源自牛津，Stephen Toulmin（1953）提出，理论犹如地图，是我们组织对世界知识认知的方式，不仅为我们与世界互动提供了工具，也为进一步的探索提供了可能。而在斯坦福，Edward Tolman 就老鼠的学习提出了一个符合此模型的观点，他使用这一模型挑战了 Hull 的新行为主义方法。这引发了一个关键问题：如何在两种看似对立的观点之间做出选择。在英国，至少，对这个问题的主流回答是由 Karl Popper（1959）提出的。作为一名接受维也纳训练的哲学家，他强调，一个有效的理论应当能够提出清晰且可测试的预测，让相互竞争的理论在决定性的实验中直面对抗，从而解决争议。这种方法在精神上更靠近 Hull 而非 Tolman。
 
+我的第一项公开发表的研究（Baddeley 1960）正是尝试进行这样一项决定性实验，预测老鼠的智力会超出 Hull 理论的预期，并至少在我自己看来，证明了这一点。遗憾的是，当这项研究发表时，整个学习理论领域似乎已经陷入崩溃。两方都未能达成决定性的胜利，研究领域因此被遗弃。我那时决定，如果我要发展自己的理论，它必须紧紧基于证据，即便理论最终被彻底推翻，这些证据也能够存留。这是一种我此后一直坚持的方法。
 
+但对于我们最初的问题，理论家应当成为建筑师，构建像牛顿那样的优雅结构，还是应当作为探索者，像达尔文那样在更多证据基础上逐步扩展理论呢？显然，牛顿和达尔文都正确了，但他们适用于处于不同发展阶段的领域。牛顿自称其成功是因为「站在巨人的肩膀上」，这些巨人无疑又是站在像我们这样的凡人肩膀上的。而达尔文可用的这样的巨人并不多。我认为，任何完整的理论在初期阶段都需要探索者，以及需要建筑师将广阔的概念转化为详细模型。我自认更偏向于探索者，但我完全认可，如果理论要得到发展，建筑师的技艺同样重要。
 
 My research career really began with my arrival at the Medical Research Council Applied Psychology Unit (APU) in Cambridge. Its role was to form a bridge between psychological theory and practical problems, and the year I arrived, Donald Broadbent, its director, had just published his seminal book, Perception and Communication, which provided one of the sparks that ignited what subsequently became known as the cognitive revolution. I was assigned to work on optimizing the design of postal codes, which led me to combine the classic tradition of nonsense syllable learning with new ideas from information theory, resulting in my generating memorable postal codes for each town in the United Kingdom. The Post Office thanked me and went on their way regardless; the code they adopted could, however, have been much worse, as is indeed the case in some countries, but that is another story.
 
 By this time my approach to theory was evolving away from Popper's idea of the need for crucial experiments, largely on the grounds that clear predictions only appeared to be possible in situations that were far narrower than the ones I found interesting. I subsequently discovered that within the philosophy of science, Lakatos (1976), and allegedly Popper himself, had subsequently abandoned the reliance on falsification, arguing instead that the mark of a good theory is that it should be productive, not only giving an account of existing knowledge, but also generating fruitful questions that will increase our knowledge. This more map-like view of theory is the one that I continue to take.
 
+我的研究生涯的开端是我加入了位于剑桥的医学研究委员会应用心理学单位（APU），一个旨在将心理学理论与实践问题联系起来的机构。我到达的那一年，单位主任 Donald Broadbent 刚发布了他的开创性著作《感知与沟通》，该书成为了后来所称认知革命的一把火花。我负责的任务是优化邮政编码的设计，这个任务将我对无意义音节学习的经典研究与信息理论的新思想相结合，最终我为英国每个城镇设计了易于记忆的邮政编码。尽管邮政局对此表示了感谢，但他们最终选择的编码系统还是与我提出的有所不同；虽然他们的选择比某些国家的情况要好，但这已经是另外一个故事了。
+
+随着时间的推移，我对理论的方法开始从 Popper 所强调的需要决定性实验的观点演变。主要原因是，在我感兴趣的广泛领域内，清晰的预测似乎只能在更为狭窄的情境中做出。后来，我发现科学哲学领域内，Lakatos（1976 年），乃至 Popper 本人，都逐渐摒弃了对反证法的依赖，转而认为一个理论的优势在于其生产力 —— 不仅能解释已有的知识，还能提出能够拓展我们知识边界的有益问题。这种将理论视为知识地图的观点，是我持续采纳的视角。
+
 #### Short-Term Memory
 
-The term "working memory" evolved from the
+The term "working memory" evolved from the earlier concept of short-term memory (STM), and the two are still on occasion used interchangeably. I will use STM to refer to the simple temporary storage of information, in contrast to WM, which implies a combination of storage and manipulation.
 
-earlier concept of short-term memory (STM),
+My interest in STM began during my time at the APU in Cambridge and was prompted by an applied problem, that of finding a way of evaluating the quality of telephone lines that might be more effective than a simple listening test. My PhD supervisor Conrad had recently discovered the acoustic similarity effect. He was studying memory for proposed telephone dialing codes when he noted that even with visual presentation, memory errors resembled acoustic mis-hearing errors (e.g., v for b), and that memory for similar sequences (b g t p c) was poorer than for dissimilar (k r l q y), concluding that STM depends on an acoustic code (Conrad & Hull 1964).
 
-and the two are still on occasion used interchangeably. I will use STM to refer to the simple temporary storage of information, in contrast to WM, which implies a combination of
+I decided to see if the acoustic similarity effect could be used to provide sensitive indirect measure of telephone line quality. It did not; the effects of noise and similarity were simply additive, but I was intrigued by the sheer magnitude of the similarity effect. Similarity was a central variable within the dominant stimulusresponse interference theory of verbal learning (see Osgood 1949), but the type of similarity seemed not to be regarded as important. So, would Conrad's effect generalize to other types of similarity in STM?
 
-storage and manipulation.
+「工作记忆」一词是从更早的「短期记忆」（STM）概念演化而来的，尽管两者在某些情况下仍可以交替使用。在这里，我将「短期记忆」定义为信息的简单临时存储，而「工作记忆」则涉及到信息存储与处理的结合。
 
-My interest in STM began during my time
+我的对短期记忆的兴趣源于我在剑桥的医学研究委员会应用心理学单位（APU）工作期间，起因是一个实际问题：探索一种评估电话线路质量的方法，这种方法希望能比传统的听力测试更为有效。我的博士导师 Conrad 最近揭示了声学相似性效应。在研究推荐的电话拨号码记忆时，他发现即便是通过视觉呈现，记忆错误也倾向于与声音误听（例如，将 v 听成 b）类似，对于声学上相似的序列（如 b g t p c）的记忆表现不如声学上不相似的序列（如 k r l q y），从而得出结论，短期记忆依赖于声学编码（Conrad & Hull 1964）。
 
-at the APU in Cambridge and was prompted
+我想要探究声学相似性效应是否能成为评估电话线质量的一个敏感而间接的指标。结果并非如预期，噪音和相似性的效应只是简单相加，但相似性效应的显著程度引起了我的极大兴趣。在当时主流的口头学习的刺激 - 反应干扰理论中，相似性是一个核心变量（参见 Osgood 1949），但对相似性类型的重要性却未受到足够重视。因此，我开始思考 Conrad 所发现的效应是否可以扩展到短期记忆中其它类型的相似性。
 
-by an applied problem, that of finding a way of
+I tested this, comparing recall of sequences with five phonologically similar words (man, mat, can, map, cat), five dissimilar words (e.g., pit, day, cow, pen, sup), and five semantically similar sequences (huge, big, wide, large, tall ) with five dissimilar (wet, soft, old, late, good ). I found (Baddeley 1966a) a huge effect of phonological similarity1 (80% sequences correct for dissimilar, 10% for similar) and a small but significant effect for semantic similarity (71% versus 65%). I went on to demonstrate that this pattern reversed when long-term memory (LTM) was required by using ten-word lists and several learning trials; semantic similarity then proved critical (Baddeley 1966b). I concluded that there were two storage systems, a short-term phonological and a long-term semantically based system. My telephony project was passed on to a newly arrived colleague and I was left free to explore this line of basic research.
 
-evaluating the quality of telephone lines that
+I saw my work as fitting into a pattern of evidence for separate STM and LTM stores. Other evidence came from amnesic patients who had preserved STM and impaired LTM, while other patients showed the reverse pattern (Shallice &Warrington 1970). A third source of evidence came from two-component memory tasks, which comprised a durable LTM component together with a temporary component. A typical example of this was the recency effect in free recall (Glanzer 1972); the last few words of a list are well recalled on immediate test but not after a brief filled delay, unlike earlier items.
 
-might be more effective than a simple listening
+[1] I subsequently abandoned the term "acoustic similarity" because it suggested an input modality-based system, which is not the case; I mistakenly assumed that phonological was a more neutral term. It was not intended as a statement of the linguistic basis of the memory system, which remains an open question.
 
-test. My PhD supervisor Conrad had recently
+我进行了实验，对比了五个音韵相近的词语（如 man, mat, can, map, cat）、五个音韵不相近的词语（如 pit, day, cow, pen, sup）以及五个语义相近（如 huge, big, wide, large, tall）和五个语义不相近（如 wet, soft, old, late, good）的序列的回忆效果。我发现（Baddeley 1966a），音韵相似性对回忆有巨大影响（音韵不相似序列正确率为 80%，音韵相似序列为 10%），而语义相似性虽影响较小但仍显著（71% 对比 65%）。进一步的研究显示，当转向需要长期记忆（LTM）的任务，如通过使用十个词的列表和多次学习试验时，情况则反转，这时语义相似性成为决定性因素（Baddeley 1966b）。由此，我得出结论，我们的记忆系统由两部分构成：一个短期的音韵存储系统和一个长期的基于语义的存储系统。我的电话线质量评估项目随后转交给了一位新加入的同事，这让我有机会自由地继续探索这一基础研究领域。
 
-discovered the acoustic similarity effect. He
+我的研究被视为支持短期记忆（STM）和长期记忆（LTM）为分离存储的证据之一。其他支持证据包括对于健忘症患者的观察，他们的 STM 保留完好而 LTM 受损，反之亦然（Shallice & Warrington 1970）。第三方面的证据则来源于包含持久 LTM 组件和临时组件的双组分记忆任务。其中一个典型例子是自由回忆测试中的近因效应（Glanzer 1972）：列表中的最后几个词在立即测试中回忆良好，但经过短暂的间隔后就不再如此，这与列表中早期的条目不同。
 
-was studying memory for proposed telephone
+[1] 由于「声学相似性」这一术语暗示了一个基于输入模态的系统，而实际情况并非如此，我后来放弃使用它。我错误地以为「音韵」是一个更中立的术语。这个选择并不旨在对记忆系统的语言学基础做出断言，这个问题仍然悬而未决。
 
-dialing codes when he noted that even with
+At this point, my simple assumption of two stores, with STM phonologically based and LTM semantically based, led to some clear predictions. Amnesic patients should have semantic coding problems, and recency should be acoustically based. Studies based on amnesic patients suffering from Korsakoff's syndrome did suggest a semantic encoding deficit (Cermak et al. 1974), but our own work showed no evidence of such a deficit (Baddeley & Warrington 1970), and later work (Cermak & Reale 1978) attributed their previously observed deficit to additional executive problems, often found in Korsakoff's syndrome.
 
-visual presentation, memory errors resembled
+In the case of two-component tasks, it became clear that recency did not depend on verbal STM (Baddeley & Hitch 1977) and that the use of semantic or phonological coding was strategy dependent. Phonological coding of verbal material is rapid, attentionally undemanding, and very effective for storing serial order. Semantic coding can be rapid for meaningful sequences such as sentences, but it is much harder to use for storing the order of unrelated words (Baddeley & Levy 1971). We also showed that word sequences can simultaneously be encoded both phonologically and semantically (Baddeley & Ecob 1970) and that standard tasks such as immediate serial recall can reflect both long-term and short-term components, each of which may be influenced by either phonological or semantic factors. In short, STM, retention of material over a brief period, may be based on either phonological or semantic coding. The former is easy to set up but readily forgotten; the latter may take longer to set up but tends to be more durable. Both can operate over brief delays, and the fact that we can learn new words indicates that long-term phonological learning also occurs.
 
-acoustic mis-hearing errors (e.g., v for b), and
+It is worth emphasizing the need to distinguish between STM as a label for a paradigm in which small amounts of information are stored over brief delays and STM as a theoretical storage system. This point was made by Waugh & Norman (1965) and by Atkinson & Shiffrin (1968), but it has often been neglected in subsequent years. Material tested after a brief delay (i.e., an STM task) is likely to reflect both LTM and some form of temporary storage.
 
-that memory for similar sequences (bgtp
+在这一点上，我对两种存储系统（STM 以音韵为基础，LTM 以语义为基础）的简单假定引出了一些明确的预测。这意味着，健忘症患者将面临语义编码的难题，而近因效应则应该是基于声音的。对患有科萨科夫综合症的健忘症患者进行的研究似乎支持了存在语义编码的不足（Cermak 等人，1974 年），但我们自己的研究未发现此类不足（Baddeley & Warrington 1970），后续研究（Cermak & Reale 1978）则将这一发现的不足归咎于科萨科夫综合症常见的额外执行功能问题。
 
-c) was poorer than for dissimilar (krlqy),
+在涉及两个组件的任务中，显而易见的是，近因效应并不依赖于口头的 STM（Baddeley & Hitch 1977），且采用语义或音韵编码的选择依赖于使用的策略。对于言语材料，音韵编码既快速又不需要过多注意力，非常适合存储序列顺序。而对于有意义的序列如句子，语义编码虽快，但用于存储不相关单词顺序则较为困难（Baddeley & Levy 1971）。我们还发现，单词序列可以同时进行音韵和语义编码（Baddeley & Ecob 1970），并且像即时序列回忆这样的标准任务可以反映长短期组件，这些组件可能受到音韵或语义因素的影响。简言之，短期保持的材料可能基于音韵或语义编码。前者容易设置但容易忘记；后者设置可能较慢但更为持久。这两种编码都能在短时间延迟中工作，我们能够学习新单词的事实说明长期的音韵学习也是发生的。
 
-concluding that STM depends on an acoustic
+需要强调的是，区分 STM 作为存储少量信息的短暂延迟的范式，以及 STM 作为理论上的存储系统的重要性。这一观点由 Waugh & Norman（1965）和 Atkinson & Shiffrin（1968）提出，但在后来经常被忽略。在短暂延迟后进行测试的材料（即 STM 任务）很可能同时反映了 LTM 和某种形式的临时存储。
 
-code (Conrad & Hull 1964).
+#### Evolution of a Multicomponent Theory
 
-I decided to see if the acoustic similarity effect could be used to provide sensitive indirect
+After nine years at the APU, I moved to Sussex into a new department of experimental psychology, where, in 1972, I was joined by Graham Hitch as a post-doctoral fellow on my first research grant. After a first degree in physics, he had done a psychology MSc in Sussex and a PhD with Broadbent at the APU. We had proposed (perhaps unwisely) to investigate the link between STM and LTM, beginning our grant just when the previously popular field of STM was downsizing itself following criticism of the dominant Atkinson & Shiffrin (1968) model for three reasons. First, the model assumed that merely holding information in STM would guarantee transfer to LTM, whereas Craik & Lockhart (1972) showed that the nature of processing is crucial, with deeper, more elaborate processing leading to better learning. Second, its assumption that the short-term store was essential for access to LTM proved to be inconsistent with neuropsychological evidence. Patients with a digit span of only two items and an absence of recency in free recall should, according to Atkinson and Shiffrin, have a defective short-term store that should lead to impaired LTM. This was not the case. Third, given that Atkinson and Shiffrin assumed their short-term store to be a working memory, playing an important general role in cognition, such patients should have major intellectual deficits. They did not. One patient, for instance, was an efficient secretary, and another ran a shop and a family. Interest in the field began to move from STM to LTM, to semantic memory and levels of processing.
 
-measure of telephone line quality. It did not;
+多组份理论发展史
 
-the effects of noise and similarity were simply
+在 APU（应用心理单位）工作了九年之后，1972 年，我转到了苏塞克斯大学的一个全新实验心理学系。不久，格雷厄姆·希奇博士作为我的第一笔研究经费支持的博士后研究员加入了我。希奇博士拥有物理学本科背景，随后在苏塞克斯大学攻读心理学硕士，并在 APU 跟随布罗德本特教授完成了他的博士学位研究。我们有些冒险地提出要探索短时记忆（STM）与长时记忆（LTM）之间的联系，这个项目的开始正值 STM 研究领域因受到对当时主流的 Atkinson & Shiffrin（1968 年）模型的三方面批评而开始缩减其研究规模。首先，该模型认为只要在 STM 中保持信息，就能自动转移至 LTM，但克莱克和洛克哈特在 1972 年的研究表明，信息处理的深度和细致程度对学习成效至关重要。其次，该模型将短期记忆库视为访问 LTM 的必要条件，这与神经心理学的发现不符。例如，某些患者虽然数字记忆跨度仅为两项，并且在自由回忆测试中没有显示出近因效应，但他们的长期记忆并未受损，这与 Atkinson 和 Shiffrin 的预期相悖。第三，按照 Atkinson 和 Shiffrin 的看法，既然他们认为短期记忆库是一种在认知过程中发挥广泛作用的工作记忆，那么受损的短期记忆库应会导致严重的智力缺陷，但实际情况并非如此，例如，一位患者能高效地担任秘书工作，另一位则同时经营着商店和家庭。随着时间的推移，研究人员的兴趣从 STM 转移到了 LTM，进而到语义记忆和处理级别的研究。
 
-additive, but I was intrigued by the sheer magnitude of the similarity effect. Similarity was a
+Graham Hitch and I did not have access to these rare but theoretically important STM-deficit patients and instead decided that we would try to manufacture our own "patients" using student volunteers. We did so, not by removing the relevant part of their brain, but by functionally disabling it by requiring participants to do a concurrent task that was likely to occupy the limited-capacity short-term storage system to varying degrees. The concurrent task we chose was serial verbal recall of sequences of spoken digits. As sequence length increased, the digits should occupy more and more of available capacity, with the result that performance on any task relying on WM should be progressively impaired. In one study, participants performed a visually presented grammatical reasoning task while hearing and attempting to recall digit sequences of varying length. Response time increased linearly with concurrent digit load. However, the disruption was far from catastrophic: around 50% for the heaviest load, and perhaps more strikingly, the error rate remained constant at around 5%. Our results therefore suggested a clear involvement of whatever system underpins digit span, but not a crucial one. Performance slows systematically but does not break down. We found broadly similar results in studies investigating both verbal LTM and language comprehension, and on the basis of these, abandoned the assumption that WM comprised a single unitary store, proposing instead the three-component system shown in Figure 1 (Baddeley & Hitch 1974).
 
-central variable within the dominant stimulusresponse interference theory of verbal learning
+Figure 1 The original Baddeley & Hitch (1974) working memory model.
 
-(see Osgood 1949), but the type of similarity
+We aimed to keep our proposed system as simple as possible, but at the same time, potentially capable of being applied across a wide range of cognitive activities. We decided to split attentional control from temporary storage, which earlier research suggested might rely on separate verbal and visuo-spatial short-term systems, all of which were limited in capacity. We labeled the central controller as a "central executive" (CE), initially referring to the verbal system as the "articulatory loop," after the subvocal rehearsal assumed to be necessary to maintain information, and later adopting the term "phonological loop" to emphasize storage rather than rehearsal. We termed the third component the "visuo-spatial sketchpad," leaving open the issue of whether it was basically visual, spatial, or both.
 
-seemed not to be regarded as important. So,
+格雷厄姆·希奇和我未能接触到那些少见但对理论极其重要的短时记忆缺失患者，因此我们决定尝试自己「制造」患者，方法是利用学生志愿者。我们并没有通过手术移除他们大脑的某部分，而是通过让他们同时进行另一项任务来在功能上限制他们的大脑，这项任务很可能会占用有限的短期存储系统的不同程度的容量。我们选定的这项任务是要求他们序列回忆口头给出的数字。随着数字序列长度的增加，这些数字将占用更多的存储容量，导致依赖工作记忆的任何任务的性能逐渐下降。在一项实验中，参与者一边听并尝试回忆不同长度的数字序列，一边进行视觉呈现的语法推理任务。我们发现，随着同时进行的数字任务负载的增加，反应时间线性延长。但是，这种干扰远没有达到灾难性的程度：在最重的负载下，性能下降约 50%，更令人注意的是，错误率保持在大约 5% 的水平。因此，我们的研究结果清晰地显示了某个系统在维持数字记忆跨度方面的参与，但这种参与并非决定性的。虽然性能会系统地减慢，但并不会完全崩溃。在研究口头长时记忆和语言理解时，我们发现了类似的结果。基于这些发现，我们放弃了工作记忆包含单一统一存储的假设，转而提出了一个由三个部分组成的系统，即 Baddeley & Hitch（1974 年）的工作记忆模型。
 
-would Conrad's effect generalize to other types
+图 1 Baddeley & Hitch（1974）工作记忆模型的原始图。
 
-of similarity in STM?
+我们设想的系统尽可能简单，但同时又能够广泛适用于各种认知活动。我们选择将注意力控制与暂时性存储分离，这是基于早期研究的建议，即可能依赖于独立的口头和视觉 - 空间短期记忆系统，这些系统都有容量限制。我们把这个中心控制单元称为「中央执行器」，并最初将处理口头信息的系统称为「言语循环」，后来改称「语音循环」，以强调其存储而非重复的功能。我们将第三个组成部分命名为「视觉 - 空间草图本」，这留下了一个问题：它基本上是视觉的、空间的还是两者兼而有之。
 
-I tested this, comparing recall of sequences
+We began by focusing on the phonological loop on the grounds that it seemed the most tractable system to investigate, given the very extensive earlier research on verbal STM. At this point, I unexpectedly received an invitation from Gordon Bower to contribute a chapter to an influential annual publication presenting recent advances in the area of learning and memory.We hesitated; our model was far from complete, should we perhaps wait? We went ahead anyhow (Baddeley & Hitch 1974), presenting a model that is still not complete nearly 40 years and many publications later.
 
-with five phonologically similar words (man,
+Over the next decade we continued to explore the model and its potential for application beyond the cognitive laboratory. At this point I agreed to summarize our progress in a monograph (Baddeley 1986). This was approaching completion when I realized that I had said nothing about the CE, very much a case of Hamlet without the prince. My reluctance to tackle the executive stemmed from two sources: first, its probable complexity, and second, because of the crucial importance of its attentional capacity. Although there were a number of highly developed and sophisticated theories of attention, most were concerned with the role of attention in perception, whereas the principal role of the CE was the attentional control of action. The one directly relevant article I could find (Norman & Shallice 1986) appeared as a chapter because of the difficulty of persuading a journal to accept it (Shallice 2010, personal communication), alas, all too common with papers presenting new ideas.
 
-mat, can, map, cat), five dissimilar words (e.g.,
 
-pit, day, cow, pen, sup), and five semantically similar sequences (huge, big, wide, large, tall ) with
 
-five dissimilar (wet, soft, old, late, good ). I found
 
-(Baddeley 1966a) a huge effect of phonological
-
-similarity1 (80% sequences correct for dissimilar, 10% for similar) and a small but significant
-
-effect for semantic similarity (71% versus
-
-65%). I went on to demonstrate that this pattern reversed when long-term memory (LTM)
-
-was required by using ten-word lists and several
-
-learning trials; semantic similarity then proved
-
-critical (Baddeley 1966b). I concluded that
-
-there were two storage systems, a short-term
-
-phonological and a long-term semantically
-
-based system. My telephony project was passed
-
-on to a newly arrived colleague and I was left
-
-free to explore this line of basic research.
-
-I saw my work as fitting into a pattern of
-
-evidence for separate STM and LTM stores.
-
-Other evidence came from amnesic patients
-
-who had preserved STM and impaired LTM,
-
-while other patients showed the reverse pattern
-
-(Shallice &Warrington 1970). A third source of
-
-evidence came from two-component memory
-
-tasks, which comprised a durable LTM component together with a temporary component.
-
-A typical example of this was the recency effect
-
-1I subsequently abandoned the term "acoustic similarity" because it suggested an input modality-based system, which is
-
-not the case; I mistakenly assumed that phonological was a
-
-more neutral term. It was not intended as a statement of the
-
-linguistic basis of the memory system, which remains an open
-
-question.
-
-4 Baddeley
-
-Annu. Rev. Psychol. 2012.63:1-29. Downloaded from www.annualreviews.org
-
-Access provided by 39.182.6.151 on 11/18/21. For personal use only.
-
-PS63CH01-Baddeley ARI 31 October 2011 10:12
-
-in free recall (Glanzer 1972); the last few words
-
-of a list are well recalled on immediate test but
-
-not after a brief filled delay, unlike earlier items.
-
-At this point, my simple assumption of two
-
-stores, with STM phonologically based and
-
-LTM semantically based, led to some clear predictions. Amnesic patients should have semantic coding problems, and recency should be
-
-acoustically based. Studies based on amnesic patients suffering from Korsakoff's syndrome did
-
-suggest a semantic encoding deficit (Cermak
-
-et al. 1974), but our own work showed no evidence of such a deficit (Baddeley & Warrington
-
-1970), and later work (Cermak & Reale 1978)
-
-attributed their previously observed deficit to
-
-additional executive problems, often found in
-
-Korsakoff's syndrome.
-
-In the case of two-component tasks, it became clear that recency did not depend on verbal STM (Baddeley & Hitch 1977) and that
-
-the use of semantic or phonological coding
-
-was strategy dependent. Phonological coding
-
-of verbal material is rapid, attentionally undemanding, and very effective for storing serial order. Semantic coding can be rapid for
-
-meaningful sequences such as sentences, but
-
-it is much harder to use for storing the order
-
-of unrelated words (Baddeley & Levy 1971).
-
-We also showed that word sequences can simultaneously be encoded both phonologically
-
-and semantically (Baddeley & Ecob 1970) and
-
-that standard tasks such as immediate serial recall can reflect both long-term and short-term
-
-components, each of which may be influenced
-
-by either phonological or semantic factors. In
-
-short, STM, retention of material over a brief
-
-period, may be based on either phonological or
-
-semantic coding. The former is easy to set up
-
-but readily forgotten; the latter may take longer
-
-to set up but tends to be more durable. Both can
-
-operate over brief delays, and the fact that we
-
-can learn new words indicates that long-term
-
-phonological learning also occurs.
-
-It is worth emphasizing the need to distinguish between STM as a label for a paradigm in
-
-which small amounts of information are stored
-
-over brief delays and STM as a theoretical storage system. This point was made by Waugh
-
-& Norman (1965) and by Atkinson & Shiffrin
-
-(1968), but it has often been neglected in subsequent years. Material tested after a brief delay
-
-(i.e., an STM task) is likely to reflect both LTM
-
-and some form of temporary storage.
-
-Evolution of a Multicomponent
-
-Theory
-
-After nine years at the APU, I moved to
-
-Sussex into a new department of experimental
-
-psychology, where, in 1972, I was joined by
-
-Graham Hitch as a post-doctoral fellow on
-
-my first research grant. After a first degree
-
-in physics, he had done a psychology MSc
-
-in Sussex and a PhD with Broadbent at the
-
-APU. We had proposed (perhaps unwisely) to
-
-investigate the link between STM and LTM,
-
-beginning our grant just when the previously
-
-popular field of STM was downsizing itself
-
-following criticism of the dominant Atkinson
-
-& Shiffrin (1968) model for three reasons.
-
-First, the model assumed that merely holding
-
-information in STM would guarantee transfer
-
-to LTM, whereas Craik & Lockhart (1972)
-
-showed that the nature of processing is crucial,
-
-with deeper, more elaborate processing leading
-
-to better learning. Second, its assumption that
-
-the short-term store was essential for access to
-
-LTM proved to be inconsistent with neuropsychological evidence. Patients with a digit span
-
-of only two items and an absence of recency in
-
-free recall should, according to Atkinson and
-
-Shiffrin, have a defective short-term store that
-
-should lead to impaired LTM. This was not the
-
-case. Third, given that Atkinson and Shiffrin
-
-assumed their short-term store to be a working
-
-memory, playing an important general role
-
-in cognition, such patients should have major
-
-intellectual deficits. They did not. One patient,
-
-for instance, was an efficient secretary, and
-
-another ran a shop and a family. Interest in the
-
-field began to move from STM to LTM, to
-
-semantic memory and levels of processing.
-
-Graham Hitch and I did not have access
-
-to these rare but theoretically important
-
-STM-deficit patients and instead decided
-
-that we would try to manufacture our own
-
-"patients" using student volunteers. We did
-
-www.annualreviews.org • Working Memory: Theories, Models, and Controversies 5
-
-Annu. Rev. Psychol. 2012.63:1-29. Downloaded from www.annualreviews.org
-
-Access provided by 39.182.6.151 on 11/18/21. For personal use only.
-
-PS63CH01-Baddeley ARI 31 October 2011 10:12
-
-CE: central executive
-
-so, not by removing the relevant part of their
-
-brain, but by functionally disabling it by
-
-requiring participants to do a concurrent task
-
-that was likely to occupy the limited-capacity
-
-short-term storage system to varying degrees.
-
-The concurrent task we chose was serial
-
-verbal recall of sequences of spoken digits. As
-
-sequence length increased, the digits should
-
-occupy more and more of available capacity,
-
-with the result that performance on any
-
-task relying on WM should be progressively
-
-impaired. In one study, participants performed
-
-a visually presented grammatical reasoning
-
-task while hearing and attempting to recall
-
-digit sequences of varying length. Response
-
-time increased linearly with concurrent digit
-
-load. However, the disruption was far from
-
-catastrophic: around 50% for the heaviest load,
-
-and perhaps more strikingly, the error rate
-
-remained constant at around 5%. Our results
-
-therefore suggested a clear involvement of
-
-whatever system underpins digit span, but not
-
-a crucial one. Performance slows systematically
-
-but does not break down. We found broadly
-
-similar results in studies investigating both
-
-verbal LTM and language comprehension, and
-
-on the basis of these, abandoned the assumption that WM comprised a single unitary store,
-
-proposing instead the three-component system
-
-shown in Figure 1 (Baddeley & Hitch 1974).
-
-We aimed to keep our proposed system as
-
-simple as possible, but at the same time, potentially capable of being applied across a wide
-
-range of cognitive activities. We decided to
-
-split attentional control from temporary storage, which earlier research suggested might rely
-
-on separate verbal and visuo-spatial short-term
-
-Figure 1
-
-The original Baddeley & Hitch (1974) working memory model.
-
-systems, all of which were limited in capacity.
-
-We labeled the central controller as a "central
-
-executive" (CE), initially referring to the verbal system as the "articulatory loop," after the
-
-subvocal rehearsal assumed to be necessary to
-
-maintain information, and later adopting the
-
-term "phonological loop" to emphasize storage rather than rehearsal. We termed the third
-
-component the "visuo-spatial sketchpad," leaving open the issue of whether it was basically
-
-visual, spatial, or both.
-
-We began by focusing on the phonological
-
-loop on the grounds that it seemed the most
-
-tractable system to investigate, given the very
-
-extensive earlier research on verbal STM. At
-
-this point, I unexpectedly received an invitation
-
-from Gordon Bower to contribute a chapter to
-
-an influential annual publication presenting recent advances in the area of learning and memory.We hesitated; our model was far from complete, should we perhaps wait? We went ahead
-
-anyhow (Baddeley & Hitch 1974), presenting a
-
-model that is still not complete nearly 40 years
-
-and many publications later.
-
-Over the next decade we continued to
-
-explore the model and its potential for application beyond the cognitive laboratory. At
-
-this point I agreed to summarize our progress
-
-in a monograph (Baddeley 1986). This was
-
-approaching completion when I realized that
-
-I had said nothing about the CE, very much
-
-a case of Hamlet without the prince. My reluctance to tackle the executive stemmed from
-
-two sources: first, its probable complexity, and
-
-second, because of the crucial importance of
-
-its attentional capacity. Although there were a
-
-number of highly developed and sophisticated
-
-theories of attention, most were concerned with
-
-the role of attention in perception, whereas the
-
-principal role of the CE was the attentional
-
-control of action. The one directly relevant
-
-article I could find (Norman & Shallice 1986)
-
-appeared as a chapter because of the difficulty
-
-of persuading a journal to accept it (Shallice
-
-2010, personal communication), alas, all too
-
-common with papers presenting new ideas.
-
-Norman and Shallice proposed that action
-
-is controlled in two rather separate ways. One is
+Norman and Shallice proposed that action is controlled in two rather separate ways. One is
 
 6 Baddeley
 
