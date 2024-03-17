@@ -134,7 +134,7 @@ What then are the essentials of the broad theory? The basis is the assumption th
 
 My overall view of WM therefore comprised, and still comprises, a relatively loose theoretical framework rather than a precise model that allows specific predictions. The success of such a framework should be based, as suggested by Lakatos (1976), not only on its capacity to explain existing data but also on its productivity in generating good, tractable questions linked to empirical methods that can be widely applied. The proposed components of WM are discussed in turn, beginning with the phonological loop.
 
-那么，这个广泛的理论核心包含哪些要素呢？首先，我们基于这样一个前提：提出一个假想的有限容量系统是非常有用的，该系统负责提供执行各种认知活动所必需的信息临时存储和处理能力。第二个前提是，这个系统并不是单一整体，而是可以分为一个执行部分和至少两个专门的临时存储系统，分别处理语言及声音和视觉 - 空间信息。这三个部分可以视为独立的模块，因为它们内部的处理过程和存储系统之间有着紧密的联系，而模块之间的联系则相对宽松，与感知和长期记忆等其他系统的联系则更加间接。我认为 Fodor（1983）对模块化的极为严格定义并不实用，且在神经心理学上看来也不太可能成立。反对 Fodor 式的简化观点，我更倾向于认为，每个系统都可以进一步细分为子系统，这些子系统与感知和长期记忆的过程之间的关系，还需要我们进一步探究。
+那么，这个广泛的理论核心包含哪些要素呢？首先，我们基于这样一个前提：提出一个假想的有限容量系统是非常有用的，该系统负责提供执行各种认知活动所必需的信息临时存储和处理能力。第二个前提是，这个系统并不是单一整体，而是可以分为一个执行部分和至少两个专门的临时存储系统，分别处理语言及声音和视觉-空间信息。这三个部分可以视为独立的模块，因为它们内部的处理过程和存储系统之间有着紧密的联系，而模块之间的联系则相对宽松，与感知和长期记忆等其他系统的联系则更加间接。我认为 Fodor（1983）对模块化的极为严格定义并不实用，且在神经心理学上看来也不太可能成立。反对 Fodor 式的简化观点，我更倾向于认为，每个系统都可以进一步细分为子系统，这些子系统与感知和长期记忆的过程之间的关系，还需要我们进一步探究。
 
 因此，我的工作记忆总览不是一个能够提供具体预测的精确模型，而是一个相对宽泛的理论框架。正如拉卡托斯（Lakatos，1976）所指出的，一个理论框架的成功，不仅在于它解释已有数据的能力，还在于它能否产生一系列好的、可行的问题，这些问题能够通过广泛应用的实证方法来探索。接下来，我将逐一介绍工作记忆中提出的各个组件，首先从语音循环开始讲起。
 
@@ -224,7 +224,7 @@ At a theoretical level, work with PV led to a major development. I had previousl
 
 Figure 2 A modification of the original model to take account of the evidence of links between working memory and long-term memory (LTM).
 
-在理论层次上，与 PV 的研究带来了重大进展。我以前更多地将工作记忆（Working Memory, WM）和长期记忆（Long-Term Memory, LTM）视为两个分开但又相互关联的系统。语音回路特别促进新的语音学习的这一现象，暗示了从语音回路到长期记忆之间存在直接的联系。Gathercole（1995）的研究表明，现有的语言习惯会影响到即时非词回忆，让那些字母结构与英语相似的非词，比如「contramponist」，比听起来不那么熟悉的非词，比如「loddenapish」更容易被回忆起来（Gathercole 1995）。这说明信息不仅从长期记忆流向语音回路，反向流动也是可能的。此外，我们有理由假设，在视觉 - 空间草图板（Visuo-Spatial Sketchpad）方面也会发生类似的情况，这导致我们对原始模型进行了修订，如图 2 所示。在这里，我们明确区分了只需要暂时激活的流动系统代表的工作记忆，以及代表更为永久性的结晶技巧和知识的长期记忆。
+在理论层次上，与 PV 的研究带来了重大进展。我以前更多地将工作记忆（Working Memory, WM）和长期记忆（Long-Term Memory, LTM）视为两个分开但又相互关联的系统。语音回路特别促进新的语音学习的这一现象，暗示了从语音回路到长期记忆之间存在直接的联系。Gathercole（1995）的研究表明，现有的语言习惯会影响到即时非词回忆，让那些字母结构与英语相似的非词，比如「contramponist」，比听起来不那么熟悉的非词，比如「loddenapish」更容易被回忆起来（Gathercole 1995）。这说明信息不仅从长期记忆流向语音回路，反向流动也是可能的。此外，我们有理由假设，在视觉-空间草图板（Visuo-Spatial Sketchpad）方面也会发生类似的情况，这导致我们对原始模型进行了修订，如图 2 所示。在这里，我们明确区分了只需要暂时激活的流动系统代表的工作记忆，以及代表更为永久性的结晶技巧和知识的长期记忆。
 
 图 2：考虑到工作记忆与长期记忆之间联系的证据，对原始模型进行的修改。请注意，此描述没有提供图 2 的具体视觉内容，但主要强调了工作记忆与长期记忆之间的相互流动和联系。
 
@@ -234,7 +234,7 @@ In formulating our model, we referred to the loop and sketchpad as slave systems
 
 The importance of self-instruction had of course already been beautifully demonstrated by the great Russian psychologist Alexander Luria, who showed that children gradually learn to control their actions using overt selfinstruction, a process that later becomes subvocal. He went on to demonstrate the value of self-instructions in neuropsychological rehabilitation (Luria 1959).
 
-在我们模型的构建过程中，我们把语音回路和视觉 - 空间草图板描述为「从属系统」，这一术语是从控制工程领域借鉴而来的。然而，越来越多的证据表明，语音回路不仅仅是一个从属系统，它还能够提供行动控制的手段。在我的研究中，这一点首次在关于中央执行器（Central Executive, CE）的系列研究中显现出来，特别是在研究其任务切换能力时。我们设计了一个极其简单的任务：要求参与者处理一列数字，在某个条件下进行加 1 操作并记录结果，在另一个条件下进行减 1 操作，或在切换条件下，交替进行加法和减法。我们发现，任务切换显著降低了任务执行速度，我们希望探究其原因。我们采用了双任务实验方法，通过一个需要高度注意力的言语任务和一个简单的言语重复任务来干扰中央执行器。令我们惊讶的是，言语抑制（Articulatory Suppression）几乎和那些更具挑战性的执行任务一样，显著干扰了任务切换。人们显然是通过使用一个简单的次声编码「加 - 减 - 加」等来引导他们的反应。当我们在反应纸上明确提供了相应的加号和减号时，言语抑制的效应便消失了（Baddeley 等人，2001）。Emerson & Miyake（2003）的研究也获得了类似的结果，并对其进行了进一步的发展。
+在我们模型的构建过程中，我们把语音回路和视觉-空间草图板描述为「从属系统」，这一术语是从控制工程领域借鉴而来的。然而，越来越多的证据表明，语音回路不仅仅是一个从属系统，它还能够提供行动控制的手段。在我的研究中，这一点首次在关于中央执行器（Central Executive, CE）的系列研究中显现出来，特别是在研究其任务切换能力时。我们设计了一个极其简单的任务：要求参与者处理一列数字，在某个条件下进行加 1 操作并记录结果，在另一个条件下进行减 1 操作，或在切换条件下，交替进行加法和减法。我们发现，任务切换显著降低了任务执行速度，我们希望探究其原因。我们采用了双任务实验方法，通过一个需要高度注意力的言语任务和一个简单的言语重复任务来干扰中央执行器。令我们惊讶的是，言语抑制（Articulatory Suppression）几乎和那些更具挑战性的执行任务一样，显著干扰了任务切换。人们显然是通过使用一个简单的次声编码「加 - 减 - 加」等来引导他们的反应。当我们在反应纸上明确提供了相应的加号和减号时，言语抑制的效应便消失了（Baddeley 等人，2001）。Emerson & Miyake（2003）的研究也获得了类似的结果，并对其进行了进一步的发展。
 
 自我指令的重要性最初由俄罗斯的著名心理学家 Alexander Luria 展现出来。Luria 的研究显示，儿童逐渐学会通过明确的自我指令来控制自己的行为，这一过程最终会转变为次声的自我指令。他进一步证明了自我指令在神经心理康复中的重要价值（Luria，1959）。这些研究不仅深化了我们对语音回路在行动控制中作用的理解，也强调了心理学理论在实际应用中的巨大潜力。
 
@@ -254,7 +254,7 @@ VISUO-SPATIAL SKETCHPAD
 
 Interest in visuo-spatial memory developed during the 1960s, when Posner & Konick (1966) showed that memory for a point on a line was well retained over a period ranging up to 30 seconds, but it was disrupted by an interpolated information-processing task, suggesting some form of active rehearsal. Dale (1973) obtained a similar result for remembering a point located in an open field. In contrast to these spatial memory tasks, Posner & Keele (1967) produced evidence suggesting a visual store lasting for only two seconds. However, their method was based on speed of processing letters, in which a visual letter code appeared to be superseded by a phonological code after two seconds. Although this could reflect the duration of the visual trace, it could equally well reflect a more slowly developing phonological code that then overrides the visual.
 
-1960 年代，人们开始对视觉 - 空间记忆产生兴趣。当时，Posner & Konick (1966) 的研究表明，人们能够在长达 30 秒的时间内准确记住一条线上的某个点位置，但如果期间进行了其他信息处理任务，则这种记忆会受到干扰。这表明了某种形式的积极重复或练习在记忆保持中的作用。Dale (1973) 在一个开放空间中进行的研究得到了类似的结论，即记住一个特定位置的能力也会受到干扰。与此相反，Posner & Keele (1967) 的研究则表明，视觉记忆的持续时间可能只有短短两秒。他们的研究侧重于字母处理速度，发现视觉信息在被呈现后的两秒钟内似乎就被音位编码所取代。这可能指向视觉信息短暂的保持时间，也可能意味着音位编码发展得更慢，但最终会取代视觉信息。
+1960 年代，人们开始对视觉-空间记忆产生兴趣。当时，Posner & Konick (1966) 的研究表明，人们能够在长达 30 秒的时间内准确记住一条线上的某个点位置，但如果期间进行了其他信息处理任务，则这种记忆会受到干扰。这表明了某种形式的积极重复或练习在记忆保持中的作用。Dale (1973) 在一个开放空间中进行的研究得到了类似的结论，即记住一个特定位置的能力也会受到干扰。与此相反，Posner & Keele (1967) 的研究则表明，视觉记忆的持续时间可能只有短短两秒。他们的研究侧重于字母处理速度，发现视觉信息在被呈现后的两秒钟内似乎就被音位编码所取代。这可能指向视觉信息短暂的保持时间，也可能意味着音位编码发展得更慢，但最终会取代视觉信息。
 
 #### Visual STM
 
@@ -262,7 +262,7 @@ A colleague, Bill Phillips, and I decided to test this using material that would
 
 视觉短期记忆
 
-我与同事 Bill Phillips 共同进行了一项实验，我们选择了一些不易直接命名的材料进行测试。我们用了 5×5 的矩阵，随机填充约一半的单元格。我们的测试通过改变一个单元格或保持不变，并让参与者判断这两次是否相同，从而覆盖了 0.3 秒至 9 秒的不同时间间隔。结果显示，无论是从准确率还是反应时间来看，性能都随时间递减（Phillips & Baddeley 1971）。此外，Kroll 等人（1970）的研究通过在字母判断任务中使用语言抑制技术来阻断命名代码的使用，也得出了相似的结论，即从视觉编码转换到音位编码，可能是因为默读重复更容易进行记忆维持。Phillips 后来又通过使用矩阵刺激进一步探索了视觉记忆存储，发现记忆准确性随着要记忆的单元格数增加而下降（Phillips 1974），指出了视觉短期记忆容量的限制。这些研究工作启发了我们对视觉 - 空间记忆板概念的初步构想。
+我与同事 Bill Phillips 共同进行了一项实验，我们选择了一些不易直接命名的材料进行测试。我们用了 5×5 的矩阵，随机填充约一半的单元格。我们的测试通过改变一个单元格或保持不变，并让参与者判断这两次是否相同，从而覆盖了 0.3 秒至 9 秒的不同时间间隔。结果显示，无论是从准确率还是反应时间来看，性能都随时间递减（Phillips & Baddeley 1971）。此外，Kroll 等人（1970）的研究通过在字母判断任务中使用语言抑制技术来阻断命名代码的使用，也得出了相似的结论，即从视觉编码转换到音位编码，可能是因为默读重复更容易进行记忆维持。Phillips 后来又通过使用矩阵刺激进一步探索了视觉记忆存储，发现记忆准确性随着要记忆的单元格数增加而下降（Phillips 1974），指出了视觉短期记忆容量的限制。这些研究工作启发了我们对视觉-空间记忆板概念的初步构想。
 
 #### Spatial STM
 
@@ -280,11 +280,11 @@ Although these results convinced me that the system was essentially spatial, Rob
 
 Yet further fractionation of the sketchpad seems likely. Research by Smyth and colleagues has suggested a kinesthetic or movement-based system used in gesture and dance (Smyth & Pendleton 1990). Another possible channel of information into the sketchpad comes from haptic coding as used in grasping and holding objects, which in turn is likely to involve a tactile component. Touch itself depends on a number of different receptor cells capable of detecting pressure, vibration, heat, cold, and pain. We currently know very little about these aspects of STM, and my assumption that information from all of these sources converges on the sketchpad is far from clearly established. The nature of rehearsal in the sketchpad is also uncertain. Logie (1995, 2011) suggests a distinction between a "visual cache," a temporary visual store, and a spatial manipulation and rehearsal system, the "inner scribe," although the precise nature of visuo-spatial rehearsal remains unclear.
 
-在 1970 年代，研究领域从视觉短期记忆转向了探讨其在视觉想象中的作用。我们采用了 Brooks（1968）开发的技术，参与者需要记住并回复一系列口头句子。其中一部分句子能够以视觉矩阵中的路径形式进行编码，而另一部分则不能。我们发现，能以视觉 - 空间方式编码的句子在执行追踪任务时，回忆效果受到影响（Baddeley 等人 1975a）。我们将这一发现归因于「视觉 - 空间草图本」，并进一步探讨了这一存储系统是视觉驱动还是空间驱动。通过让参与者在执行 Brooks 任务的同时，盲目地追踪声源或判断视场亮度变化，我们发现前者干扰了空间任务，但不影响语言任务；而后者则轻微地影响了语言任务。因此，我们认为该系统主要是空间导向的（Baddeley & Lieberman 1980）。
+在 1970 年代，研究领域从视觉短期记忆转向了探讨其在视觉想象中的作用。我们采用了 Brooks（1968）开发的技术，参与者需要记住并回复一系列口头句子。其中一部分句子能够以视觉矩阵中的路径形式进行编码，而另一部分则不能。我们发现，能以视觉-空间方式编码的句子在执行追踪任务时，回忆效果受到影响（Baddeley 等人 1975a）。我们将这一发现归因于「视觉-空间草图本」，并进一步探讨了这一存储系统是视觉驱动还是空间驱动。通过让参与者在执行 Brooks 任务的同时，盲目地追踪声源或判断视场亮度变化，我们发现前者干扰了空间任务，但不影响语言任务；而后者则轻微地影响了语言任务。因此，我们认为该系统主要是空间导向的（Baddeley & Lieberman 1980）。
 
 尽管这些结果让我相信系统本质上是空间导向的，我的同事 Robert Logie 却持不同意见，并且证明了我的看法是错误的。他展示了一些想象任务实际上是视觉导向而非空间导向的。通过一个视觉想象记忆技巧，将两个无关项通过互动的形象联系起来，例如，将「牛坐在椅子上」作为记忆，Logie（1986）发现这种过程可以被视觉刺激所干扰。目前已有多项研究证明了视觉与空间工作记忆的区分。Klauer & Zhao（2004）在执行了一系列严格控制潜在干扰因素的研究后，支持视觉与空间短期记忆之间的区别，这一发现也得到了神经影像学的支持（Smith & Jonides 1997）。
 
-进一步细分「视觉 - 空间草图本」的可能性相当高。Smyth 及其团队的研究提出了一个基于运动的系统，用于手势和舞蹈（Smyth & Pendleton 1990）。另一个可能的信息输入方式是通过抓握和持有物体时使用的触觉编码，这可能涉及触觉成分。触觉本身依赖于能够检测压力、振动、温度和痛感的多种受体细胞。我们对这些短期记忆的方面了解甚少，目前还不清楚这些信息源是否都汇聚于「视觉 - 空间草图本」。此外，「视觉 - 空间草图本」中的复述机制也不明确。Logie（1995，2011）提出了「视觉缓存」（临时视觉存储）和「内部抄写员」（空间操纵和复述系统）之间的区别，但视觉 - 空间复述的确切机制仍然是个谜。
+进一步细分「视觉-空间草图本」的可能性相当高。Smyth 及其团队的研究提出了一个基于运动的系统，用于手势和舞蹈（Smyth & Pendleton 1990）。另一个可能的信息输入方式是通过抓握和持有物体时使用的触觉编码，这可能涉及触觉成分。触觉本身依赖于能够检测压力、振动、温度和痛感的多种受体细胞。我们对这些短期记忆的方面了解甚少，目前还不清楚这些信息源是否都汇聚于「视觉-空间草图本」。此外，「视觉-空间草图本」中的复述机制也不明确。Logie（1995，2011）提出了「视觉缓存」（临时视觉存储）和「内部抄写员」（空间操纵和复述系统）之间的区别，但视觉-空间复述的确切机制仍然是个谜。
 
 ### 04
 
@@ -370,7 +370,7 @@ We carried out a series of experiments, the results of which can be summarized q
 
 虽然注意力似乎对维持视觉上的连接很重要，但我们的研究数据显示，仅仅将颜色和形状结合起来并不需要消耗注意力资源。当然，有人可能会反驳说，在感知的结合中不需要中央处理资源是一种例外。不过幸运的是，作为我们多角度探索理论的一环，我们还开展了一系列并行的实验，这些实验探讨了在记忆过程中，执行控制过程如何参与将单词组织成语句块。
 
-通过一系列实验（Baddeley 等人，2009），我们得到了一个简明的结论。与视觉 - 空间暂存板相关的任务虽然对记忆回忆有轻微但显著的影响，而当这些任务包含视觉执行要素时，这种影响会增加。单纯的口头抑制作用更大，并且当需要同时进行口头抑制和承担注意力负荷时，这种作用会进一步增强。然而，最关键的是，这些任务并没有特别干扰将单词组织成块的过程，这一点从回忆整句话相比记忆无关单词序列时的优势中可以看出。因此，就像视觉连接一样，虽然并行的任务会影响整体的表现，但它们似乎并不干扰组块化过程本身，我们认为，在长期记忆（LTM）中，这一过程是相对自动进行的。
+通过一系列实验（Baddeley 等人，2009），我们得到了一个简明的结论。与视觉-空间暂存板相关的任务虽然对记忆回忆有轻微但显著的影响，而当这些任务包含视觉执行要素时，这种影响会增加。单纯的口头抑制作用更大，并且当需要同时进行口头抑制和承担注意力负荷时，这种作用会进一步增强。然而，最关键的是，这些任务并没有特别干扰将单词组织成块的过程，这一点从回忆整句话相比记忆无关单词序列时的优势中可以看出。因此，就像视觉连接一样，虽然并行的任务会影响整体的表现，但它们似乎并不干扰组块化过程本身，我们认为，在长期记忆（LTM）中，这一过程是相对自动进行的。
 
 The evidence from both visual and verbal binding is thus inconsistent with the original proposal that the process of binding involves the active manipulation of information within the episodic buffer, which we now regard as being an important but essentially passive structure on which bindings achieved elsewhere can be displayed. It remains important in that it allows executive processes to carry out further manipulation. This may in turn lead to further bindings involving, for example, the binding of phrases into integrated sentences or objects into complex scenes.
 
@@ -506,7 +506,11 @@ A crucial feature of Oberauer's model is the distinction he makes between declar
 
 This is certainly a very ambitious program, and as Oberauer points out, the evidence at present is rather sparse, but it could be an exciting development. However, the sheer complexity of the model may make it difficult to evaluate experimentally. But then, I am a theoretical mapmaker and temperamentally skeptical of complex theoretical architectures. Time will tell.
 
+我担忧的是，Oberauer 在 2010 年提出的这个雄心勃勃的新模型，过度的复杂性最终可能也会成为一个问题。他试图为整个工作记忆系统（Working Memory, WM）绘制一张蓝图。他认为工作记忆的主要职能是作为一个信息处理的平台，在这个平台上我们能够构建新的表征，而旧记忆对此几乎没有干扰。他为一个工作记忆系统提出了六个需求，包括：（a）通过动态绑定保持结构表征，（b）操作这些表征，（c）灵活地重新配置它们，（d）将它们部分与长期记忆（Long-term Memory, LTM）解耦，（e）控制长期记忆的检索，以及（f）将新结构编码入长期记忆。他为实现这些目标设想了机制，试图为之前较为模糊的「激活长期记忆」概念具体化。
 
+Oberauer 模型的一个核心特征是他对陈述性工作记忆和程序性工作记忆的区分。陈述性工作记忆是我们能够意识到的那部分工作记忆，包含了该领域目前的大多数研究，而程序性工作记忆则涉及那些支持各种操作的非陈述过程：比如，我猜控制默读练习的过程就是一个例子。不过，他还提出了一种更高层次的程序控制机制，他称之为「桥梁」，仿佛是船上的驾驶室，而我则更愿意称之为中央执行系统。考虑以下场景：在我的实验中，指示参与者在数字 1 出现时按下红色按钮，数字 2 时按下绿色按钮，数字 3 时则不按任何按钮。我们预期这一简单的指令能够在整个实验中被遵循。就好像是有一个小程序被设定好然后开始运行，但我们目前对于这是如何实现的知之甚少。我认为，对程序性工作记忆中的这一方面 —— 有时被称为「任务集」的研究将变得越来越有影响力。
+
+这无疑是一个非常雄心勃勃的项目。正如 Oberauer 所指出的，目前的证据相当稀缺，但这可能是一个令人兴奋的发展。然而，模型的复杂性可能使得实验评估变得困难。但话说回来，作为一个理论制图师，我天生对复杂的理论架构持有怀疑态度。让我们拭目以待。
 
 ### 09
 
@@ -522,9 +526,15 @@ Figure 5: A speculative view of the flow of information from perception to worki
 
 Central executive. This is an attentional system; how does it differ from the limitedcapacity component of Cowan's (2005) model? I assume that it comprises a number of executive functions, but how many, and how are they organized and interrelated? Just how far can one take attempts to explain executive control in terms of a single factor such as that of inhibition? Do we need to worry about precisely what is being inhibited and whether this differs between individuals? Do we need a concept of cognitive energy?
 
+我已经分享了我的努力，这是一个过程，我试图通过先提出假设再进行实证探索的方法，将一个广阔的理论框架转换成一个更为详尽的模型。因此，结束在我目前的推测以及它们所引发的众多问题上或许是合适的。
 
+如图 5 所展示的，我的当前看法与我们最初的推测没有太大的不同，除了对情节缓冲区的讨论，以及尝试提供更多基于猜想的细节外。在每个案例中，这都暗示了一些不容易找到答案的问题，但这些问题潜在地提供了一条前进的道路。我逐一考察每个组成部分。
 
+图 5 展示了一个关于信息如何从感知流向工作记忆的推测视图。VSSP 代表视觉-空间草图板。
 
+中央执行系统是一个注意力系统。它与 Cowan 在 2005 年模型中提出的有限容量成分有何区别？我猜测它由多个执行功能构成，但究竟有多少个这样的功能，它们是如何被组织和相互联系的？我们是否能仅仅通过抑制这样一个单一因素来解释执行控制？我们是否需要精确地了解被抑制的是什么，以及这是否在不同个体之间存在差异？我们是否需要引入一个认知能量的概念？
+
+这些探索性的问题虽然不易回答，但它们指向了理论发展的可能方向，激发了对工作记忆更深层次理解的探索。
 
 Episodic buffer. How should we measure its capacity? To what extent is this limited by number of chunks and to what extent by similarity between chunks? If similarity is important, can other modalities such as smell and taste be added without impacting visual or verbal capacity? Are there separate subsystems for smell and taste? How is rehearsal maintained? My current speculation is that it operates according to the principle of attentionally based refreshing, as discussed by Johnson et al. (2002). What about emotion? Elsewhere (Baddeley 2007) I have suggested that it impacts WM via a hedonic detector system; where within the M-WM system is this located?
 
@@ -534,9 +544,21 @@ Phonological loop. Can we reach a conclusion on the ancient trace decay/interfer
 
 Visuo-spatial sketchpad. The visual and spatial aspects appear to be clearly separable but linked within the sketchpad; is this true of haptic, tactile, and kinesthetic memory? What is the mechanism of visuo-spatial rehearsal? Is it a spatial analogue to the phonological loop, as Logie (1995) suggests, or is it more like attentionally based refreshing? Finally, given that our attempt to link the loop with LTM through language acquisition proved very fruitful, would pursuing the link between the sketchpad and LTM prove equally useful?
 
+情节缓冲区：我们该如何衡量其容量？这在多大程度上受到信息块的数量限制，又在多大程度上受到块之间相似度的限制？如果相似度很重要，加入其他模式，比如气味和味道，会不会影响到视觉或言语的容量？气味和味道是否有各自独立的子系统？排练是如何维持的？我目前的看法是，它依据以注意力为基础的刷新原理运作，正如 Johnson 等人在 2002 年的讨论。那么情绪呢？我在其他地方（Baddeley，2007）曾提出，它通过一个享乐探测系统影响工作记忆；这个系统在模块化工作记忆中位于何处？
+
+我认为，缓冲区提供了意识的接入点；这是否意味着我们并不直接意识到其他子系统，而只是意识到当它们的产出在缓冲区中被注册时？
+
+音素循环：我们能否解决那个关于远古遗迹衰减 / 干扰争议的问题？我怀疑，默读排练是否与其他排练类型不同？这个循环在记忆非言语材料，如音乐或环境声音上的应用程度有多大？
+
+视觉 - 空间草图板：视觉和空间要素似乎可以清晰分离却在草图板内联结；这对触觉、触摸和动觉记忆也是如此吗？视觉 - 空间排练的机制是什么？它是空间上的音素循环的类比，如 Logie（1995 年）所建议，还是更像是基于注意力的刷新？最后，考虑到我们将循环通过语言习得与长期记忆连接起来的尝试非常成功，追寻草图板与长期记忆之间的链接是否同样值得？
+
+这些探索性的问题揭示了我们对工作记忆理解的深度和广度，促使我们进一步思考如何精细化和深化我们对这些复杂认知过程的理解。
+
 #### Integration
 
 Finally, how do these increasingly detailed accounts fit together to provide an interactive unitary system that mediates between perception, LTM, and action?
+
+最终，这些越来越详细的分析如何汇聚成一个单一的互动系统，介于感知、长期记忆和行动之间呢？
 
 #### In Praise of Negative Results
 
@@ -544,8 +566,13 @@ It is of course very easy to raise questions, but much more difficult to answer 
 
 So what does WM not do? My own conclusion after surveying the experimental literature and its implications for clinical and social psychology (Baddeley 2007) is that we have evolved an overall cognitive system that attempts to minimize the demands made on WM while allowing it to intervene where necessary. A very basic example is that of breathing, far too important to be left to working memory. However, as any diver or singer will know, we clearly do have considerable, though limited, control. Suicide by breath holding is not an option.
 
+负面结果的价值
 
+当然，提出问题很简单，但找到答案却要困难得多。这可能导致研究倾向于谨慎地寻找那些我们已经相对确定的知识的确认，从而导致确认偏误，以及避免负面结果的风险。负面结果因多种原因而显得棘手。首先，它们难以解释。它们可能是由糟糕的设计或粗糙的实验操作导致的。它们还引发了实验是否具有足够的力量，以及这个问题是否值得提出的问题，所有这些因素都使得负面结果更难以发表。然而，如果我们想要理解工作记忆，知道它不能做什么是很重要的，这很可能会涉及到负面结果，正如在当前模块化工作记忆模型的各个发展阶段所证明的那样。发表变得更加困难是有道理的，对于提出的问题需要有一个好的理由。然而，只要通过包括显示正面效果的其他条件以及明确的复制证据来解决敏感性问题，负面结果就可以变得非常重要且可发表。这种情况出现在我们 1974 年的最初研究中，其中并发任务的效果远低于预期，尤其是在我们最近对情节缓冲区的探索中（Baddeley et al. 2009, 2011）。
 
+那么，工作记忆不做什么呢？经过审视实验文献及其对临床和社会心理学的含义后，我的结论是，我们已经演化出了一个整体的认知系统，试图在允许必要时介入的同时最小化对工作记忆的要求（Baddeley，2007）。一个非常基础的例子就是呼吸，这太重要了，不能仅依赖工作记忆来管理。然而，正如任何潜水员或歌手所知，我们确实有相当大的控制权，尽管这种控制是有限的。通过屏住呼吸自杀并不是一个可行的选择。
+
+这些反思和探索性问题不仅揭示了我们对工作记忆理解的深度，也突显了科学探索中负面结果的价值，鼓励我们在追求知识的路上接受挑战和失败。
 
 #### Applications
 
@@ -555,11 +582,21 @@ A second aspect of theoretical application is the use of the M-WM theory as a to
 
 My own view is that this breadth of application has reflected the simplicity of the theoretical framework together with the availability of a few basic methodologies, such as the use of similarity effects as an indication of coding dimension and of dual-task performance as a way of controlling processing. Such techniques are easily learned, and while not guaranteeing fruitful answers, do at least provide conceptual and practical tools for investigating a wide range of problems. From a theoretical viewpoint, such practical applications can be extremely valuable both in helping explore the boundaries of the laboratory-based effects and in highlighting theoretical anomalies that have the potential to become future growing points.
 
+我们最初框架的核心要求之一是，它应当能够应用于实验室之外。虽然我没有深入讨论模块化工作记忆（Modular Working Memory, M-WM）的这一方面，但显然它在实现这一目标方面取得了成功，体现在两个层面。首先，通过将 M-WM 框架直接应用到具体的实践问题上，Gathercole 在对学龄儿童进行工作记忆测量的广泛开发中取得了成功，这不仅成功识别了处于风险中的儿童，还为教师提供了识别和帮助有工作记忆问题儿童的方法（Gathercole & Alloway 2008）。另一个例子是双任务性能量度的开发和验证，用于早期检测阿尔茨海默病（Kaschel et al. 2009, Logie et al. 2004）。
+
+另一个层面是将 M-WM 理论作为调查和理解其他研究领域的工具。应用范围非常广泛，从人类因素研究到精神病学，从神经药理学到语言治疗，甚至扩展到古人类学，其中工作记忆的发展被提出作为解释尼安德特人和智人差异的一种解释，这一点通过对幸存人工制品的研究而提出（Wynn & Coolidge 2010）。
+
+我个人认为，这种广泛的应用反映了理论框架的简洁性以及几种基本方法论的可用性，例如使用相似性效应作为编码维度的指标，以及使用双任务性能作为控制处理的方法。这些技术易于学习，并且虽然不保证总能找到有益的答案，但至少为调查广泛问题提供了概念性和实践工具。从理论视角看，这些实践应用在帮助探索实验室效应的边界和突显有潜力成为未来增长点的理论异常方面，具有极大的价值。
+
 ### 10
 
 CONCLUSION
 
 So where does this leave our early question of what makes a good theory? Clearly, my own preference has been for Toulmin's view of theories as maps, coupled with the Lakatos criterion of judging success by productiveness rather than predictive accuracy. However, as we begin to fill in the empty spaces on the theoretical map, it hopefully will be increasingly possible to develop interlinked and more detailed models of the components of WM and their mode of interaction.
+
+那么，这对我们早先提出的关于什么构成一个好理论的问题有什么影响呢？显然，我个人更倾向于 Toulmin 将理论视作地图的见解，以及按照 Lakatos 的观点，通过生产力而非预测准确性来评价理论成功的标准。然而，随着我们开始在理论地图上填补空白，希望能逐渐发展出更为互联和详尽的工作记忆组件及其交互方式的模型。
+
+这种探索不仅反映了理论建构的哲学深度，也映射了科学探索的旅程 —— 从宽泛的框架到精细的模型。通过这一过程，我们不仅能够探索和理解复杂现象的本质，还能在不断的探索中发现新的问题和机遇。这样的理论既是我们认识世界的地图，也是引领未来探索的灯塔。
 
 ACKNOWLEDGMENTS
 
