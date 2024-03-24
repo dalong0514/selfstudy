@@ -498,7 +498,7 @@ Barnard's (1985) ambitious computationally based "interacting cognitive subsyste
 
 迄今为止我们讨论的工作记忆（Working Memory, WM）理论家们基本采取了一个广泛的理论研究方法。然而，也存在一些理论家，他们尝试提供一个更加详细的工作记忆描述，通常这会伴随着计算机模拟的应用。这种方法极具灵活性，因此诞生了各种不同的工作记忆模型，有时这些模型会包括一些类似于模块化工作记忆（Modular Working Memory, M-WM）的子组件，比如草图板（Anderson 等人 2004 年的研究，第 1037 页）和回路（Anderson 等人 1996 年的研究）。
 
-Barnard 在 1985 年提出的「互动认知子系统（Interacting Cognitive Subsystems）」模型，是一个基于计算的雄心勃勃的计划，它可以直接对应到模块化工作记忆。最初这个模型是为了解释语言处理而开发的，但 Barnard 后来将其广泛应用于分析人机交互的场景（Barnard 1987 年的工作）。这个模型不仅能模拟工作记忆的大多数方面，还将其与运动控制、情感以及意识水平联系起来，构成了一个广阔、具有远见和洞察力的框架。在 Barnard 的手中，这个模型成功地被应用于从编舞到抑郁症理论等多种情境（Teasdale 和 Barnard 1993 年的研究）。然而，这个模型的复杂性让其他研究者难以采用。同时，这种计算上的细节到底有多重要，以及它是否真的能充分解释更边缘子组件内部发生的情况，这些都还存在疑问。在讨论他尝试全面模拟该模型的过程中，曾与 Barnard 合作进行模拟研究的计算机科学家 Howard Bowman 在 2011 年提出，应当通过可以独立构建的组件，对模型进行层次分解，从而避免不必要的细节，例如过早地在神经水平上进行规定。
+Barnard 在 1985 年提出的「互动认知子系统」（Interacting Cognitive Subsystems）模型，是一个基于计算的雄心勃勃的计划，它可以直接对应到模块化工作记忆。最初这个模型是为了解释语言处理而开发的，但 Barnard 后来将其广泛应用于分析人机交互的场景（Barnard 1987 年的工作）。这个模型不仅能模拟工作记忆的大多数方面，还将其与运动控制、情感以及意识水平联系起来，构成了一个广阔、具有远见和洞察力的框架。在 Barnard 的手中，这个模型成功地被应用于从编舞到抑郁症理论等多种情境（Teasdale 和 Barnard 1993 年的研究）。然而，这个模型的复杂性让其他研究者难以采用。同时，这种计算上的细节到底有多重要，以及它是否真的能充分解释更边缘子组件内部发生的情况，这些都还存在疑问。在讨论他尝试全面模拟该模型的过程中，曾与 Barnard 合作进行模拟研究的计算机科学家 Howard Bowman 在 2011 年提出，应当通过可以独立构建的组件，对模型进行层次分解，从而避免不必要的细节，例如过早地在神经水平上进行规定。
 
 I suspect that undue complexity may in due course also prove to be a problem for an ambitious new model proposed by Oberauer (2010), who attempts to provide a blueprint for the whole WM system. He sees the main focus of WM as being "to serve as a blackboard for information processing on which we can construct new representations with little interference from old memories." He proposes six requirements for a WM system, namely, (a) maintaining structural representations by dynamic bindings, (b) manipulating them, (c) flexibly reconfiguring them, (d ) partially decoupling these from LTM, (e) controlling LTM retrieval, and ( f ) encoding new structures into LTM. He postulates mechanisms for achieving each of these, hence attempting to put flesh on the previously vague concept of "activated LTM."
 
@@ -548,9 +548,9 @@ Visuo-spatial sketchpad. The visual and spatial aspects appear to be clearly sep
 
 我认为，缓冲区提供了意识的接入点；这是否意味着我们并不直接意识到其他子系统，而只是意识到当它们的产出在缓冲区中被注册时？
 
-音素循环：我们能否解决那个关于远古遗迹衰减 / 干扰争议的问题？我怀疑，默读排练是否与其他排练类型不同？这个循环在记忆非言语材料，如音乐或环境声音上的应用程度有多大？
+音素循环：我们能否解决那个关于远古遗迹衰减/干扰争议的问题？我怀疑，默读排练是否与其他排练类型不同？这个循环在记忆非言语材料，如音乐或环境声音上的应用程度有多大？
 
-视觉 - 空间草图板：视觉和空间要素似乎可以清晰分离却在草图板内联结；这对触觉、触摸和动觉记忆也是如此吗？视觉 - 空间排练的机制是什么？它是空间上的音素循环的类比，如 Logie（1995 年）所建议，还是更像是基于注意力的刷新？最后，考虑到我们将循环通过语言习得与长期记忆连接起来的尝试非常成功，追寻草图板与长期记忆之间的链接是否同样值得？
+视觉-空间草图板：视觉和空间要素似乎可以清晰分离却在草图板内联结；这对触觉、触摸和动觉记忆也是如此吗？视觉-空间排练的机制是什么？它是空间上的音素循环的类比，如 Logie（1995 年）所建议，还是更像是基于注意力的刷新？最后，考虑到我们将循环通过语言习得与长期记忆连接起来的尝试非常成功，追寻草图板与长期记忆之间的链接是否同样值得？
 
 这些探索性的问题揭示了我们对工作记忆理解的深度和广度，促使我们进一步思考如何精细化和深化我们对这些复杂认知过程的理解。
 
