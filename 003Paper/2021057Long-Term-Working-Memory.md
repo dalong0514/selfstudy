@@ -1,26 +1,8 @@
 ## 2021057Long-Term-Working-Memory
 
-by
+by K. Anders Ericsson, Walter Kintsch
 
-K. Anders Ericsson
-
-The Florida State University 
-
-Department of Psychology 
-
-Tallahassee, FL 32306-1051
-
-and
-
-Walter Kintsch
-
-Institute of Cognitive Science 
-
-University of Colorado at Boulder 
-
-Boulder, Colorado 80309-0344 
-
-ICS Technical Report #94-01 
+1995 年发表的论文
 
 ### Abstract
 
@@ -68,19 +50,27 @@ General theories of memory, which are based on performance on memory tasks, inco
 
 In standard theories of memory (Atkinson Shiffrin, 1968) information can be stored in LTM only after it has been stored in STM, and even then, storage in LTM is a probabilistic event. Originally, Atkinson and Shiffrin proposed that the probability of storage in LTM is a function of the time an item was maintained in STM. More recently, Anderson(1983) suggested that the probability of storage is a function of the number of times an item enters STM. Subjects' control of the storage of information appears to be limited, as shown, for example, by low levels of free recall in list learning. Furthermore. in more meaningful tasks subiects' recall of presented information is not improved when they are instructed to study that information for later recall (Craik Lockhart, 1972). This finding implies that subiects cannot achieve reliable storage of information in many of the standard memory tasks. Anderson (1983) goes even so far as to argue that subiects' inability to control storage in LTM is beneficial since they cannot predict what information will be useful later on. The memory performance exhibited by subiects in standard memory tasks is clearly consistent with the view that storage of information in LTM and efficient access of that information is too unreliable to be an effective source of working memorv. We argue later in this paper. however. that the performance of untrained subiects who memorize lists of unrelated items in the laboratory does not accurately describe the efficient storage and retrieval that experts in specific domains can achieve after many years of practice.
 
+一般的记忆理论基于记忆任务的表现，引入了被认为适用于所有类型活动的存储和检索限制。当研究人员开始探究更为复杂的认知过程，例如解决问题、决策和概念建立时，他们发展的模型必须与这些理论相符。一个合格的任务表现模型需要明确参与者所具有的相关背景知识和技能，以及不违反工作记忆中可保持信息量限制的处理流程。
 
+所谓的「信息可用性」，通常指的是信息存储和访问的快速、可靠性，基本上是无误的。在传统记忆实验中，这种可用性标准仅适用于短时记忆 (STM) 中存储的信息。鉴于我们对工作记忆的理解是建立在长时记忆 (LTM) 存储基础上的，我们简要回顾了一些人们认为长时记忆不足以支撑信息可靠存储的主要原因。
 
+根据标准的记忆理论（Atkinson 和 Shiffrin，1968 年），信息只有在存储于短时记忆后才能被转移到长时记忆中，即使如此，转存到长时记忆中也是一个概率事件。最初，Atkinson 和 Shiffrin 提出，一个信息项转存到长时记忆的概率依赖于它在短时记忆中维持的时间。而 Anderson（1983 年）后来提出，这一概率与信息项进入短时记忆的次数有关。实验证明，参与者对信息存储的控制是有限的，例如，在列表学习任务中的自由回忆表现较差。而且，在更有意义的任务中，即使参与者被告知学习信息以便后续回忆，他们对信息的回忆并未因此而提高（Craik 和 Lockhart，1972 年）。这表明，在许多标准记忆任务中，参与者无法实现信息的可靠存储。Anderson（1983 年）进一步指出，参与者无法控制信息在长时记忆中的存储其实是有益的，因为他们无法预测哪些信息将来会有用。在标准记忆任务中，参与者表现出的记忆能力清楚地表明，信息在长时记忆中的存储和高效访问太不可靠，不能有效地支撑工作记忆。然而，我们在文中后续部分争论，未经训练的参与者在实验室里记忆无关联项目列表的表现，并不能准确反映特定领域内专家经过多年实践后能够实现的高效存储和检索能力。
 
 Models of working memory have focused on the availability of information in STM which has limited capacity. No model of working memory can reasonably allow greater working capacity during performance of a specific task than the maximal capacity of working memory measured in a pure memory task. That is, the capacity of working memory must be much less than the memory span of seven chunks (G. A. Miller, 1956), in which perfect recall is achieved only 50% of time on the average. Hence the capacity of reliable working memory is assumed to be only around four chunks (Broadbent, 1975). Such a severe limit on working memory might seem far too restrictive to allow for human performance levels. Laboratory studies have shown, however, that a wide range of cognitive activities, such as problem solving (Atwood, Masson, & Polson, 1980; Newell & Simon, 1972), concept formation (Levine, 1966), and decision making (Payne, 1976), can be successfully accounted for by models that permit storage of a very small number of products in STM.
 
 Newell and Simon (1972) proposed a production-system architecture for cognitive processes that has influenced most subsequent efforts to build models and theories. In this architecture the conditions of a large number of productions (condition-action pairs) are matched against the currently active elements (working memory). In more recent models, such as Anderson's (1983) ACT*, working memory is the transiently activated portion of LTM. The limits on the number of elements in working memory are not determined by a fixed number but rather by the amount of available activation. In his work on building ACT* models of cognitive processing Anderson found that working memory can sometimes contain over 20 units at one time. To reconcile such a large capacity of working memory with the much smaller capacity of STM. Anderson (1983) argued as follows: The activation of elements decays very rapidly. For this reason the number of units that can be actively maintained long enough to be included in immediate recall is much less than all of the information activated at the start of recall. Most investigators argue, however, that the capacity of working memory must be far greater than the capacity of traditional STM (Newell. 1990).
 
+工作记忆模型主要关注短时记忆（STM）中信息的可用性，而短时记忆的容量是有限的。没有一个工作记忆模型能够合理地允许特定任务执行期间的工作容量超过在纯记忆任务中测量到的工作记忆的最大容量。也就是说，工作记忆的容量必须远小于七个信息块（G. A. Miller, 1956 所定义的记忆跨度），在这个标准下，平均情况下只有 50% 的时间能实现完美回忆。因此，可靠的工作记忆容量被认为仅约为四个信息块（Broadbent, 1975）。这样对工作记忆的严格限制似乎会极大地限制人类的表现水平。然而，实验室研究显示，如问题解决（Atwood 等人，1980 年；Newell 与 Simon，1972 年），概念形成（Levine，1966 年），和决策（Payne，1976 年）等一系列认知活动，都可以通过模型成功地解释，这些模型允许在短时记忆中存储极少量的信息产品。
 
-
+Newell 和 Simon（1972 年）提出了一种生产系统架构，用于认知过程，这个架构影响了后续大多数模型和理论的构建。在这个架构中，大量的生产条件（条件 - 动作对）与当前活跃的元素（工作记忆）相匹配。在较新的模型中，比如 Anderson（1983 年）的 ACT 模型，工作记忆被视为长时记忆（LTM）暂时激活的部分。工作记忆中的元素数量限制不是由一个固定数目决定，而是由可用的激活量来决定。Anderson 在构建 ACT 认知处理模型的研究中发现，工作记忆有时候可以同时容纳超过 20 个单元。为了调和工作记忆的大容量与短时记忆相对较小的容量之间的矛盾，Anderson（1983 年）这样论证：元素的激活非常快速地衰减。因此，能够长时间保持活跃并包含在即时回忆中的单位数量，远少于回忆开始时激活的所有信息。然而，大多数研究者认为，工作记忆的容量必须远大于传统短时记忆的容量（Newell, 1990）。
 
 Working memory in production-system architectures was originally viewed as a single construct with general resources. In a very influential line of empirical research initiated by Baddeley and Hitch (1974), investigators examined this assertion by studying the effect on cognitive performance from an additional concurrent task specifically designed to interfere with the capacity of working memory. The result of over a decade's active research on that and related paradigms (reviewed by Baddeley, 1986) conflicted with the single-construct view. Although reliable decrements in speed and/or accuracy of cognitive processes were often obtained for the main task when an additional memory task was introduced, the primary task performance decreased for the most part only slightly even when subjects had to maintain 3 to 6 digits (near their digit span) in working memory while executing the primary task. To account for these findings Baddeley (1986) proposed that in addition to a central executive there are two slave systems. the articulatory loop and the visuo-spatial scratch pad. in which the central executive can store information temporarily. Investigators have obtained converging evidence for these subsystems by examining the relation between individual differences on the main task and on tasks measuring various types of memory performance. Of particular interest are findings from neuro-psychological patients who exhibit exceptionally poor performance on tasks that measure the capacity of one of the subsystems, for example, memory span for words which is assumed to measure the capacity of the articulatory loop. Consistent with the independence of the subsystems in Baddeley's model, patients with dramatically impaired subsystems are still able to perform text comprehension tasks at normal levels (Baddeley, Papagno Valla, 1988: Baddeley & Wilson, 1988; Martin, 1993). At the same time this finding means that working memory in such skilled activities as text comprehension must be accounted for by the central executive and thus remains essentially unexplained.
 
 In sum, recent research has shown that working memory does not consist of a single general capacity, but rather consists of several subsystems that can be relied on to complete various types of tasks (Baddeley, 1986). Interference with either of these subsystems by a concurrent secondary task degrades performance on the primary task only slightly. This finding implies that the central executive has sufficient working memory capacity to complete the processing. Of particular interest to the LT- WM we propose is the observation that concurrent memory tasks appear to cause the least impairment in highly skilled activities such as piano playing (Allport, Antonis & Reynolds, 1972), typing (Shaffer, 1975), and reading (see Baddeley, 1986, for a review). As explained in the following section, general theories of memory provide a better account of working memory when subiects are performing unfamiliar tasks than they do when subiects are performing skilled activities. for which demands on working memory are considerably larger. This finding is consistent with our hypothesis that working memory in a specific, skilled activity increases as one aspect of acquired skill.
+
+在生产系统架构下的工作记忆最初被看作是一个带有通用资源的单一结构。Baddeley和Hitch在1974年开启的一系列具有深远影响的实证研究中，研究人员通过研究一项特别设计出来干扰工作记忆容量的附加任务对认知性能的影响来审视这一假设。经过超过十年的积极研究（由Baddeley于1986年回顾），得出的结论与单一结构的观点相悖。虽然当引入一个额外的记忆任务时，主任务的认知过程的速度和/或准确度常常会有可靠的下降，但在大多数情况下，即使受试者需要在工作记忆中维持3到6个数字（接近他们的数字记忆跨度）时执行主任务，主任务的表现只会轻微下降。为了解释这些发现，Baddeley在1986年提出，除了中央执行器外，还存在两个辅助系统：语言回路和视觉空间记事本，中央执行器可以在其中暂时存储信息。通过考察个体在主要任务和测量各种记忆表现的任务上的差异，研究人员为这些子系统找到了相互支持的证据。特别引人注意的是，那些在测量某个子系统容量的任务上表现异常差的神经心理学患者的研究结果，例如，用于测量语言回路容量的单词记忆跨度。与Baddeley模型中子系统的独立性相一致的是，即使子系统功能严重受损的患者，仍能正常完成文本理解任务（Baddeley, Papagno Valla, 1988; Baddeley & Wilson, 1988; Martin, 1993）。同时，这一发现意味着在文本理解等熟练活动中的工作记忆必须通过中央执行器来进行解释，因此其本质上还未被完全阐释。
+
+总的来说，最近的研究显示，工作记忆不是由单一的通用容量组成，而是由几个可以依赖完成各种类型任务的子系统组成（Baddeley, 1986）。一个并行的次要任务干扰这些子系统中的任何一个，只会轻微降低主任务的表现。这一发现表明中央执行器有足够的工作记忆容量来完成处理。特别值得关注的是，我们所提出的长期工作记忆（LT-WM）中，并行记忆任务似乎对高度熟练的活动如弹钢琴（Allport, Antonis & Reynolds, 1972），打字（Shaffer, 1975），和阅读（见Baddeley, 1986的综述）造成的影响最小。如下一节所解释的，当受试者执行不熟悉的任务而非熟练活动时，通用记忆理论对工作记忆的解释更为充分，因为对于后者，对工作记忆的需求明显更大。这一发现与我们的假设相吻合，即在特定的、熟练的活动中，随着技能的获得，工作记忆的容量也会增加。
 
 #### 2.1 Differences Between Memory in Standard Memory Tasks and in Complex Cognitive performance
 
