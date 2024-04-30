@@ -16,18 +16,42 @@ First, most people define learning too narrowly as mere “problem solving,” s
 
 I have coined the terms “single loop” and “double loop” learning to capture this crucial distinction. To give a simple analogy: a thermostat that automatically turns on the heat whenever the temperature in a room drops below 68 degrees is a good example of single-loop learning. A thermostat that could ask, “Why am I set at 68 degrees?” and then explore whether or not some other temperature might more economically achieve the goal of heating the room would be engaging in double-loop learning.
 
+任何渴望在 1990 年代竞争激烈的商业环境中脱颖而出的公司，首先必须面对一个根本的挑战：市场的成功越来越依赖于持续学习，但大多数人并不擅长学习。更具讽刺意味的是，那些通常被认为学习能力最强的组织成员，实际上并没有表现出足够的学习能力。这些人是那些受过高等教育、才华横溢且极具责任心的专业人员，他们在现代企业中担任关键领导角色。
+
+不仅大多数公司在解决这种学习难题时感到力不从心，他们甚至没有意识到这个问题的存在。这是因为他们对学习的理解有误，不知道如何有效地促进学习。因此，他们在努力打造学习型组织的过程中通常会犯两个错误。
+
+首先，许多人对学习的定义过于狭窄，仅将其视为「解决问题」，因此他们专注于找出并修正外部环境中的错误。虽然解决问题很关键，但要实现持续的学习，管理层和员工还需要反观自身。他们应当深入反思自己的行为，找出自己在不知不觉中是如何加剧组织问题的，并据此改变自己的行为模式。尤其重要的是，他们需要认识到，他们处理问题的方式本身就可能是问题的一部分。
+
+为了描述这种区分，我特别提出了「单环学习」和「双环学习」这两个概念。以一个简单的类比来说明：一个室温低于 68 度时自动启动暖气的恒温器就是单环学习的典范。而一个能够自问「我为什么要设置在 68 度？」并探索是否有其他更节能的温度设置能达到相同的加热效果的恒温器，则是在进行双环学习。
+
 Highly skilled professionals are frequently very good at single-loop learning. After all, they have spent much of their lives acquiring academic credentials, mastering one or a number of intellectual disciplines, and applying those disciplines to solve real-world problems. But ironically, this very fact helps explain why professionals are often so bad at double-loop learning.
 
 Put simply, because many professionals are almost always successful at what they do, they rarely experience failure. And because they have rarely failed, they have never learned how to learn from failure. So whenever their single-loop learning strategies go wrong, they become defensive, screen out criticism, and put the “blame” on anyone and everyone but themselves. In short, their ability to learn shuts down precisely at the moment they need it the most.
 
 The propensity among professionals to behave defensively helps shed light on the second mistake that companies make about learning. The common assumption is that getting people to learn is largely a matter of motivation. When people have the right attitudes and commitment, learning automatically follows. So companies focus on creating new organizational structures—compensation programs, performance reviews, corporate cultures, and the like—that are designed to create motivated and committed employees.
 
+高技能的专业人员通常在单环学习上表现出色，这主要是因为他们花费了大量时间获取学术资格，掌握各种智力学科，并将这些学科知识应用于解决现实问题。然而，讽刺的是，正是因为他们在这些领域的成就，让他们在双环学习上的表现通常不尽如人意。
+
+简而言之，因为这些专业人士几乎总能在他们的领域内取得成功，他们很少面对失败。而不熟悉失败的经历意味着他们未曾学会从失败中吸取教训。所以，当他们依赖的单环学习策略出现问题时，他们往往会本能地采取防御态度，拒绝接受批评，并将责任推给其他人。总的来说，正当他们最需要学习的时刻，他们的学习能力却戛然而止。
+
+这种专业人士的防御性行为揭示了许多公司在推动学习进程中的另一个误区。人们常常认为，激发学习的关键在于动机。当员工持有正确的态度和承诺时，学习似乎就会自然发生。因此，许多公司侧重于构建能激励员工的新组织结构，如薪酬体系、绩效评价和企业文化等，希望通过这些措施培养员工的积极性和忠诚度。
+
 But effective double-loop learning is not simply a function of how people feel. It is a reflection of how they think—that is, the cognitive rules or reasoning they use to design and implement their actions. Think of these rules as a kind of “master program” stored in the brain, governing all behavior. Defensive reasoning can block learning even when the individual commitment to it is high, just as a computer program with hidden bugs can produce results exactly the opposite of what its designers had planned.
 Companies can learn how to resolve the learning dilemma. What it takes is to make the ways managers and employees reason about their behavior a focus of organizational learning and continuous improvement programs. Teaching people how to reason about their behavior in new and more effective ways breaks down the defenses that block learning.
 
 All of the examples that follow involve a particular kind of professional: fast-track consultants at major management consulting companies. But the implications of my argument go far beyond this specific occupational group. The fact is, more and more jobs—no matter what the title—are taking on the contours of “knowledge work.” People at all levels of the organization must combine the mastery of some highly specialized technical expertise with the ability to work effectively in teams, form productive relationships with clients and customers, and critically reflect on and then change their own organizational practices. And the nuts and bolts of management—whether of high-powered consultants or service representatives, senior managers or factory technicians—increasingly consists of guiding and integrating the autonomous but interconnected work of highly skilled people.
 
-How Professionals Avoid Learning
+然而，有效的双环学习不仅仅取决于个人的感受，更重要的是反映了他们的思考方式 —— 即他们设计和执行行动时所依赖的认知规则或逻辑推理。可以把这些规则想象成大脑中的「主控程序」，它指导着所有的行为。就像带有程序错误的计算机软件可能导致与预期完全相反的结果一样，防御性的思维方式即便在个人非常重视学习的情况下也可能阻碍学习的发生。
+
+公司可以通过将管理者和员工对自身行为的思考方式作为组织学习和持续改进的重点来解决学习的难题。通过教育员工以新的、更有效的方式来分析自己的行为，可以消除那些阻碍学习的心理防线。
+
+所有接下来的例子都涉及到一类特定的专业人士：主要管理咨询公司中职业发展迅速的顾问。然而，我的观点的影响远不止于这个特定的职业群体。事实上，越来越多的职业 —— 无论职位高低 —— 都逐渐展现出「知识工作」的特点。组织中的每一个层面的人都必须将精通某一专业技术的能力与团队合作、与客户建立有效关系的能力以及批判性反思并改进组织实践的能力结合起来。而无论是管理顶尖的咨询师、客户服务代表、高级管理者还是工厂技术人员，管理工作越来越多地涉及到指导和整合这些高技能人员独立而又相互联系的工作。
+
+
+
+
+### How Professionals Avoid Learning
+
 For 15 years, I have been conducting in-depth studies of management consultants. I decided to study consultants for a few simple reasons. First, they are the epitome of the highly educated professionals who play an increasingly central role in all organizations. Almost all of the consultants I’ve studied have MBAs from the top three or four U.S. business schools. They are also highly committed to their work. For instance, at one company, more than 90% of the consultants responded in a survey that they were “highly satisfied” with their jobs and with the company.
 
 I also assumed that such professional consultants would be good at learning. After all, the essence of their job is to teach others how to do things differently. I found, however, that these consultants embodied the learning dilemma. The most enthusiastic about continuous improvement in their own organizations, they were also often the biggest obstacle to its complete success.
