@@ -348,8 +348,13 @@ People can be taught how to recognize the reasoning they use when they design an
 
 Once companies embark on this learning process, they will discover that the kind of reasoning necessary to reduce and overcome organizational defenses is the same kind of “tough reasoning” that underlies the effective use of ideas in strategy, finance, marketing, manufacturing, and other management disciplines. Any sophisticated strategic analysis, for example, depends on collecting valid data, analyzing it carefully, and constantly testing the inferences drawn from the data. The toughest tests are reserved for the conclusions. Good strategists make sure that their conclusions can withstand all kinds of critical questioning.
 
+如果防御性推理真如我们所认为的那样普遍，那么单单关注个人的态度或决心并不足以引发实质性的改变。正如之前的例子所示，仅仅创建新的组织结构或系统也无济于事。问题在于，即便人们真心希望提升自己的表现，并且管理层已调整结构以促进「正确」的行为，人们往往仍旧受到防御性推理的限制。他们可能没有意识到这一点，或者一旦意识到便开始归咎于他人。
 
+不过，有理由相信，组织有可能打破这种恶性循环。虽然防御性推理根深蒂固，但人们本能地渴望实现自己的目标。他们看重自己的行动能力，自尊心与他们的行为一致性和高效表现紧密相连。公司可以利用这些普遍的人类本性，教导员工采用新的推理方式，换句话说，就是改变他们思维中的主导程序，从而改变他们的行为模式。
 
+员工可以学习如何识别自己在设计和实施行动时所依据的推理逻辑。他们可以逐渐辨识自己公开声明的与实际行动的理论之间的矛盾，并直面一个事实：他们无意识中制定并执行了一些非自愿的行动。最终，员工还能学会识别是什么个人和团体行为形成了组织的防御机制，以及这些机制是如何导致组织问题的。
+
+当公司开始这一学习旅程时，他们将发现，要减少和克服组织防御所需的推理，与战略、金融、市场营销、生产及其他管理学科中有效利用理论所需的严密推理是一致的。例如，任何深入的战略分析都必须基于收集有效数据、仔细分析，并不断对数据得出的推论进行验证。对于结论的测试尤其严格。优秀的战略家会确保他们的结论能够承受各种批评性的质疑。
 
 So too with productive reasoning about human behavior. The standard of analysis is just as high. Human resource programs no longer need to be based on “soft” reasoning but should be as analytical and as data-driven as any other management discipline.
 
@@ -361,8 +366,13 @@ Until senior managers become aware of the ways they reason defensively, any chan
 
 Change has to start at the top because otherwise defensive senior managers are likely to disown any transformation in reasoning patterns coming from below. If professionals or middle managers begin to change the way they reason and act, such changes are likely to appear strange—if not actually dangerous—to those at the top. The result is an unstable situation where senior managers still believe that it is a sign of caring and sensitivity to bypass and cover up difficult issues, while their subordinates see the very same actions as defensive.
 
+关于人类行为的高效推理同样标准严苛。人力资源方案不再依赖于感性的推断，而应当与其他管理学科一样，具备分析性和数据驱动的特性。
 
+当然，顾问们在面对尴尬或威胁时所采用的推理方式与此相去甚远。他们收集的数据远非客观，由此得出的推论也鲜少明确，最终的结论往往只是服务于自身，难以被他人验证，因此这种结论是自我封闭的，难以被改变。
 
+组织该如何开始改变这种状况，教育成员进行有效的推理呢？首要步骤是让高层管理者批判性地检视并修改他们实际应用的理论。只有当高级管理者开始意识到他们的防御性推理及其带来的负面后果时，才可能实现真正的进步。否则，任何变革尝试都可能仅是昙花一现。
+
+变革必须从高层着手，因为如果不这样做，防御性的高级管理者可能会否认来自下层的思维模式变化。如果专业人员或中层管理开始改变他们的推理和行动方式，这些变化可能会被高层视为陌生乃至危险。结果就是一种不稳定的局面：高层管理者仍然认为绕开和掩盖问题是关怀与敏感的表现，而他们的下属却认为这是一种防御行为。
 
 The key to any educational experience designed to teach senior managers how to reason productively is to connect the program to real business problems. The best demonstration of the usefulness of productive reasoning is for busy managers to see how it can make a direct difference in their own performance and in that of the organization. This will not happen overnight. Managers need plenty of opportunity to practice the new skills. But once they grasp the powerful impact that productive reasoning can have on actual performance, they will have a strong incentive to reason productively not just in a training session but in all their work relationships.
 
@@ -372,8 +382,13 @@ For example, a CEO at a large organizational-development consulting company was 
 
 In a paragraph or so, the CEO described a meeting he intended to have with his direct reports to address the problem. Next, he divided the paper in half, and on the right-hand side of the page, he wrote a scenario for the meeting—much like the script for a movie or play—describing what he would say and how his subordinates would likely respond. On the left-hand side of the page, he wrote down any thoughts and feelings that he would be likely to have during the meeting but that he wouldn’t express for fear they would derail the discussion.
 
+教育高级管理者进行有效推理的关键，在于将教程内容与真实的商业问题结合起来。通过让管理者直观看到有效推理如何直接提升他们以及组织的表现，可以最好地展示这种推理方式的实际用途。这种改变无法一夜之间实现，管理者需要大量机会来练习新技巧。但一旦他们理解到有效推理对实际表现的巨大影响，他们就会有强烈的动力，在日常工作关系中，而非仅在培训中使用这种推理方式。
 
+我采用的一个简单方法是让参与者撰写一个关于真实商业问题的初级案例研究。这个问题可能是管理者正在处理或过去尝试但未能解决的。撰写实际案例通常不会超过一小时。但此后，这个案例就成了深入分析的中心。
 
+例如，一位大型组织发展咨询公司的 CEO 忙于处理其四名直属下属所代表的各业务功能间激烈竞争引发的问题。他不仅厌倦了不断有问题摊到他头上，还担忧部门间的冲突对组织灵活性的影响。他甚至估算出，每年用来平息这些分歧的费用高达数十万美元。冲突越多，人们的防御性态度越强，这不仅增加了组织的成本。
+
+在一两段描述中，CEO 叙述了他计划与直属下属举行的会议。然后，他将纸张分成两半，在页面右侧，他写下了会议的脚本 —— 类似于电影或剧本，描述他的发言及下属可能的反应。在页面左侧，他记录了会议期间可能涌现的思考和情感，但他选择不表达，以免这些影响会议的进程。
 
 But instead of holding the meeting, the CEO analyzed this scenario with his direct reports. The case became the catalyst for a discussion in which the CEO learned several things about the way he acted with his management team.
 
@@ -387,8 +402,17 @@ The CEO’s colleagues also learned about their own ineffective behavior. They l
 
 In effect, the case study exercise legitimizes talking about issues that people have never been able to address before. Such a discussion can be emotional—even painful. But for managers with the courage to persist, the payoff is great: management teams and entire organizations work more openly and more effectively and have greater options for behaving flexibly and adapting to particular situations.
 
+然而，CEO 并未真的召开会议，而是选择与他的直属下属一起分析这一场景。这个案例随即成为了一次激烈讨论的导火索，让 CEO 对自己与管理团队的互动方式有了新的认识。
 
+他意识到，他的四名直属下属常常感觉他的对话反而起到了适得其反的效果。在假装「外交」之名下，他会造成一种虚假的共识感，实际上这种共识并不存在。这导致了一个意料之外的结果：下属不但没有感到安心，反而变得更加警觉，试图揣测他的真正意图。
 
+CEO 还发现，他处理部门之间竞争的方式自相矛盾。一方面，他不断强调他们应该「从整个组织的角度来考虑」，另一方面，他却频繁要求采取一些措施，如削减部门预算，这实际上加剧了他们之间的竞争。
+
+最终，CEO 发现他所做的许多潜在评价和归因都是错误的。由于这些假设从未被公开讨论过，他也就从未真正意识到这些错误有多严重。更进一步，他发现即使是他认为自己隐藏起来的事情，其实也都传达给了下属，只不过附带了一种他在掩盖事实的印象。
+
+通过分析自己的行为帮助 CEO 审视案例，他的同事们也发现了自己行为上的不足。他们通过编写并分析自己的案例进一步学习，逐渐认识到自己也常常绕开和掩饰核心问题，而 CEO 虽然察觉到了，却未曾明言。他们同样做出了一些不准确的判断和评价而未曾表达出来。此外，他们原本认为必须隐藏对 CEO 和彼此重要的想法和感受以避免引发不快，这种看法也被证明是错误的。在案例讨论的过程中，整个高层管理团队都表现出了愿意讨论以往被视为禁忌的话题的开放态度。
+
+这样的案例研究练习为讨论那些以往难以触及的问题提供了正当的平台。这种讨论可能充满情绪，甚至有些痛苦，但对于那些勇于坚持的管理者来说，其回报是巨大的：管理团队和整个组织的运作将更加开放和高效，同时在应对特定情境时，也能更加灵活地调整行为。
 
 Learning to reason productively can be emotional—even painful. But the payoff is great.
 
@@ -397,9 +421,13 @@ Of course, the ideal is for all the members of an organization to learn how to r
 
 First, the consultants would have demonstrated their commitment to continuous improvement by being willing to examine their own role in the difficulties that arose during the consulting project. No doubt they would have identified their managers and the clients as part of the problem, but they would have gone on to admit that they had contributed to it as well. More important, they would have agreed with the manager that as they explored the various roles of clients, managers, and professionals, they would make sure to test any evaluations or attributions they might make against the data. Each individual would have encouraged the others to question his or her reasoning. Indeed, they would have insisted on it. And in turn, everyone would have understood that act of questioning not as a sign of mistrust or an invasion of privacy but as a valuable opportunity for learning.
 
+学习进行高效推理可能会伴随情绪波动，甚至感到痛苦，但其带来的益处是巨大的。
 
+当高级管理人员掌握新的推理技巧后，他们能显著提升整个组织的绩效 —— 哪怕其他员工的思考仍处于防御状态。比如，一位 CEO 在绩效评估流程的会议中，他没有针锋相对地回应专业人士的批评，而是通过清晰地展示相关数据来缓解不满。事实上，大多数与会者都将 CEO 的这种行为视为公司真正实践其倡导的参与感及员工参与价值观的证明。
 
+理想状态是，组织中的每一个成员都能学会如何高效地推理。这一目标在举行案例团队会议的公司已经实现。现在，顾问及其管理者能够直面顾问与客户关系中最棘手的问题。为了感受高效推理所能带来的变化，我们不妨设想一下，如果每个人都能有效地推理，管理者与案例团队间最初的对话本可以怎样进行。（以下对话基于我参加的该公司其他案例团队在培训完成后的实际会议。）
 
+首先，顾问们将展示他们对持续改进的承诺，愿意审视自身在咨询项目中遇到困难时所扮演的角色。他们无疑会指出管理者和客户也是问题的一部分，但同时也会坦诚自己同样有责任。更重要的是，他们会与经理达成一致，认为在探索客户、经理及专业人员的不同角色时，应对任何评估或归因进行数据验证。每个人都将鼓励彼此质疑各自的推理过程。事实上，他们还会坚持这么做。这种相互质疑不应被视为不信任或侵犯隐私的表现，而应看作是一次宝贵的学习机会。
 
 To question someone else’s reasoning is not a sign of mistrust but a valuable opportunity for learning.
 
@@ -414,17 +442,25 @@ Manager: “It certainly would have been helpful if you had said something. Was 
 Professional #3: “Not really. I think we didn’t want to sound like we were whining.”
 
 Manager: “Well, I certainly don’t think you sound like you’re whining. But two thoughts come to mind. If I understand you correctly, you were complaining, but the complaining about me and my inability to say no was covered up. Second, if we had discussed this, I might have gotten the data I needed to be able to say no.”
+
 Notice that when the second professional describes how the consultants had covered up their complaints, the manager doesn’t criticize her. Rather, he rewards her for being open by responding in kind. He focuses on the ways that he too may have contributed to the cover-up. Reflecting undefensively about his own role in the problem then makes it possible for the professionals to talk about their fears of appearing to be whining. The manager then agrees with the professionals that they shouldn’t become complainers. At the same time, he points out the counterproductive consequences of covering up their complaints.
 
+质疑别人的推理并不意味着不信任，反而是一次难得的学习机会。
 
+讨论经理不愿意拒绝的情况，对话可能是这样的：
 
+专业人员 #1：「我对你处理这个案例的方式最不满意的一点是，面对客户或你的上司提出的不合理要求时，你似乎总是无法拒绝。」[举出一个例子。]
 
-THIS ARTICLE ALSO APPEARS IN:
+专业人员 #2：「我还有一个例子要补充。[描述第二个例子。] 但我也想说，我们从未直接对你表达过我们的感受。其实我们在背后对你有些不满 —— 你知道的，我们觉得你有些软弱 —— 但我们从未明说。」
 
-HBR’s 10 Must Reads on Managing People
-Book
-24.95
-View Details
+经理：「如果你们当时能表达出来，对我来说肯定是有帮助的。我有没有什么言行让你们觉得最好不要跟我提这些问题？」
+
+专业人员 #3：「其实没有。我觉得我们自己也不想显得只会抱怨。」
+
+经理：「好吧，我并不认为你们在抱怨。不过我想到了两点。首先，如果我没理解错的话，你们是有所抱怨，但关于我不敢拒绝的问题却被掩饰了。其次，如果我们早些时候就讨论了这些问题，我可能就能得到做出拒绝的必要信息。」
+
+注意，当第二位专业人员揭露顾问们是如何隐藏他们的抱怨时，经理并没有对她进行批评，而是以开放的态度奖励了她的坦诚。他关注于自己可能也有助于隐藏问题的行为。通过无防备地反思自己在问题中的角色，使得专业人员能够讨论他们害怕被看作是在无病呻吟的担忧。然后经理表示赞同专业人员的观点，他们确实不应该变成爱抱怨的人。同时，他也指出了隐藏抱怨可能带来的不良后果。
+
 Another unresolved issue in the case team meeting concerned the supposed arrogance of the clients. A more productive conversation about that problem might go like this:
 
 Manager: “You said that the clients were arrogant and uncooperative. What did they say and do?”
@@ -452,4 +488,30 @@ Manager: “Perhaps that is exactly what we should tell them.”
 
 In both these examples, the consultants and their manager are doing real work. They are learning about their own group dynamics and addressing some generic problems in client-consultant relationships. The insights they gain will allow them to act more effectively in the future—both as individuals and as a team. They are not just solving problems but developing a far deeper and more textured understanding of their role as members of the organization. They are laying the groundwork for continuous improvement that is truly continuous. They are learning how to learn.
 
-A version of this article appeared in the May–June 1991 issue of Harvard Business Review.
+在团队会议中，另一个未曾解决的问题是客户的傲慢态度。关于这一问题的更有效的对话可能如下：
+
+经理：「你们提到客户表现得很傲慢，不愿合作。他们具体说了些什么，做了些什么？」
+
+专业人员 #1：「有一个客户问我是否曾经管理过工资发放，另一个则询问我离开学校多久了。」
+
+专业人员 #2：「还有人直接问我年纪多大！」
+
+专业人员 #3：「那些都不算什么。最糟糕的是，他们说我们所做的无非是采访人们，根据他们的话撰写报告，然后收费。」
+
+经理：「事实上，我们团队成员普遍年轻是让很多客户感到不适的原因。他们对此很是敏感。但我希望探讨的是，有没有可能让他们自由表达看法，而我们不用感到被冒犯……」
+
+「你们最初反应的问题在于，你们假设自己在批评客户愚蠢上是正确的。我在这家公司及其他公司观察到，我们常常会通过诋毁客户来保护自己。」
+
+专业人员 #1：「确实如此。毕竟，如果他们确实理解不了，那显然不是我们的错！」
+
+专业人员 #2：「当然，这种态度阻碍了学习和过分保护自己。通过假定他们学不会，我们就为自己开脱了教育他们的责任。」
+
+专业人员 #3：「而且，我们大家互相说客户的坏话，这只会让我们更加防备。」
+
+经理：「那么有什么替代方案呢？我们如何鼓励客户表达他们的不满，同时又能以建设性的方式加以利用？」
+
+专业人员 #1：「我们都明白，真正的问题不在于我们的年轻；关键是我们是否能为客户的组织带来价值。他们应该根据我们的实际成效来评判我们。如果我们无法增值，不论我们年轻还是年长，他们都应该让我们离开。」
+
+经理：「或许这正是我们应该向他们表明的。」
+
+在这两种情况下，顾问们及其经理都在进行实际的工作。他们正在了解自身团队的动态并处理客户与顾问间的一些普遍问题。他们获得的见解将帮助他们将来以个人或团队的身份更有效地行动。他们不仅仅在解决问题，而是在更深层次上理解作为组织成员的角色，为真正持续的改进奠定基础。他们在学习如何学习。
