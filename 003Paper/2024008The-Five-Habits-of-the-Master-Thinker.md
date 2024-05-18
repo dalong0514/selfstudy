@@ -158,8 +158,6 @@ When working on quick turn-around items such as a current intelligence brief or 
 
 The best response to this valid observation is to encourage analysts to practice using the core techniques when deadlines are less pressing. In so doing, they engrain new habits of thinking critically in their minds. If they, and their colleagues, practice how to apply the concepts embedded in the structured techniques when they have time, they will be more capable of applying these critical thinking skills instinctively when under pressure. The five core habits of a master thinker are described in Figure 2.
 
-[6] See Richards J. Heuer, Jr. and Randolph H. Pherson, Structured Analytic Techniques for Intelligence Analysis, (Washington, D.C.: CQ Press, 2011) for definitions of each of these techniques, when to use them, step-by-step instructions on how to use them, and how they add value to the analytic process.
-
 Figure 2: The Five Habits of the Master Thinker
 
 A good analytic thinker who has mastered the core structured analytic techniques will instinctively:
@@ -200,6 +198,8 @@ Freeware and proprietary software has been developed to help the analyst learn m
 
 Globalytica, LLC offers a collaborative, web-based version of ACH called Te@mACHTM for a modest fee. The software is one of three techniques comprising TH!NK SuiteTM which also includes the Multiple Hypotheses GeneratorTM and the Indicators ValidatorTM. Globalytica is also developing two other tools, the Te@m Assumptions CheckTM and Quadrant CrunchingTM, that will guide analysts through the key assumptions process and help them orchestrate the generation of alternative scenarios.9
 
+[6] See Richards J. Heuer, Jr. and Randolph H. Pherson, Structured Analytic Techniques for Intelligence Analysis, (Washington, D.C.: CQ Press, 2011) for definitions of each of these techniques, when to use them, step-by-step instructions on how to use them, and how they add value to the analytic process.
+
 [7] See Richards J. Heuer, Jr. and Randolph H. Pherson, Structured Analytic Techniques for Intelligence Analysis, CQ Press: Washington, DC, 2011 for more information about these techniques.
 
 [8] The PARC ACH tool can be downloaded from www.globalytica.com or the PARC website.
@@ -209,9 +209,6 @@ Globalytica, LLC offers a collaborative, web-based version of ACH called Te@mACH
 当你真的没有足够的时间
 
 在处理快速周转的任务时，比如当天需要完成的情报简报或紧急情报评估，确实有理由认为没有时间使用结构化分析技术。当截止日期很紧时，召集合适的人进行小组分析可能确实不现实。然而，随着新型协作计算平台的引入，特别是那些基于虚拟头像，允许参与者在虚拟白板上同步或异步进行头脑风暴、共享桌面和共同撰写文件的平台，这个问题可能很快得到解决。
-
-
-
 
 对此合理意见的最佳回应是，鼓励分析师在时间宽裕时多练习核心技术。这样，他们可以在日常工作中养成新的批判性思维习惯。如果他们和同事在有时间时练习如何应用这些结构化技术的概念，那么在紧急情况下，他们也能更加自然而然地运用这些技能。图 2 描述了一位优秀分析师的五个核心习惯。
 
@@ -231,15 +228,19 @@ Globalytica, LLC offers a collaborative, web-based version of ACH called Te@mACH
 
 因为识别和挑战自己的假设非常困难，分析师及其经理应该努力创造一个环境，让假设每天都能被挑战。在一个健康的工作环境中，挑战假设应该是一种常见的行为，从「为什么你认为我们都想吃意大利辣香肠披萨？」到「油价上涨是否会迫使他们重新考虑出口策略？」如果你期望同事们经常挑战你的假设，你会更敏锐地意识到自己何时在做假设，并且会越来越多地问自己这些假设是否有依据。如果时间允许，你应该把假设记录在白板或纸上，以便日后审查。写下假设也能大大促进对这些假设的批判性审查。特别要注意那些被评估为不支持的假设，因为这些往往是需要进一步研究的关键不确定性，或者需要编写数据收集需求。
 
-习惯 2：考虑替代解释当面对新的情况时，一个优秀的分析师会首先根据现有证据和逻辑提出一个解释。而一个资深分析师会更进一步，立即考虑是否有其他替代解释。虽然这些替代解释乍看之下似乎不太可能，但随着时间推移和新证据的出现，它们可能会变成主要假设。那些一开始没有考虑多种替代解释，而仅仅锁定在单一解释上的分析师，往往会陷入确认偏误的陷阱，只关注支持自己假设的数据，忽视或拒绝不一致的数据。
+习惯 2：考虑替代解释
+
+当面对新的情况时，一个优秀的分析师会首先根据现有证据和逻辑提出一个解释。而一个资深分析师会更进一步，立即考虑是否有其他替代解释。虽然这些替代解释乍看之下似乎不太可能，但随着时间推移和新证据的出现，它们可能会变成主要假设。那些一开始没有考虑多种替代解释，而仅仅锁定在单一解释上的分析师，往往会陷入确认偏误的陷阱，只关注支持自己假设的数据，忽视或拒绝不一致的数据。
 
 如果很难找到其他解释，高级分析师会先假设「零假设」，即在脑海中建立两个假设：X 和非 X。非 X 假设用来存放那些看似异常或离群的数据，这些数据在未来可能会提供更准确的诊断。在数据可靠性存疑或信息缺乏的情况下，还应考虑建立一个欺骗假设。
 
-习惯 3：寻找不一致的数据在五个习惯中，寻找不一致数据可能是最难掌握的，但它能在调查或研究时节省大量时间。训练大脑寻找不一致数据的最佳方法是进行一系列的 ACH 练习，这可以帮助分析师更容易识别强有力的反证。高级分析师通常会生成一组全面且互斥的假设。如果遇到与某个假设不符的数据（例如可靠的不在场证明），该假设可以迅速被排除，从而节省时间，集中精力寻找更可能的解决方案。
+习惯 3：寻找不一致的数据
+
+在五个习惯中，寻找不一致数据可能是最难掌握的，但它能在调查或研究时节省大量时间。训练大脑寻找不一致数据的最佳方法是进行一系列的 ACH 练习，这可以帮助分析师更容易识别强有力的反证。高级分析师通常会生成一组全面且互斥的假设。如果遇到与某个假设不符的数据（例如可靠的不在场证明），该假设可以迅速被排除，从而节省时间，集中精力寻找更可能的解决方案。
 
 习惯 4：识别关键驱动因素
 
-在思考问题时，首先要问清楚哪些关键因素可以最好地解释已发生的事情或预测即将发生的情况，这是大师级思维习惯中的第四个。如果能识别出这些关键驱动因素，就能大大减少意外情况的发生。一位经验丰富的分析师应该懂得如何调整这些关键因素的权重（无论是凭直觉，还是使用诸如「多场景生成」或「象限压缩 TM」等技术），以生成一组可信的替代情景，涵盖各种可能的结果。大师级思考者会进一步确保这些情景既包括风险也包括机遇。此外，大师级思考者还会制定一套符合优秀指标五个特征的指标：可观察和收集、有效、可靠、稳定和独特。独特性往往最难满足，需要通过「指标验证器 TM」或其他验证系统来进行测试。7
+在思考问题时，首先要问清楚哪些关键因素可以最好地解释已发生的事情或预测即将发生的情况，这是大师级思维习惯中的第四个。如果能识别出这些关键驱动因素，就能大大减少意外情况的发生。一位经验丰富的分析师应该懂得如何调整这些关键因素的权重（无论是凭直觉，还是使用诸如「多场景生成」或「象限压缩」等技术），以生成一组可信的替代情景，涵盖各种可能的结果。大师级思考者会进一步确保这些情景既包括风险也包括机遇。此外，大师级思考者还会制定一套符合优秀指标五个特征的指标：可观察和收集、有效、可靠、稳定和独特。独特性往往最难满足，需要通过「指标验证器」或其他验证系统来进行测试。7
 
 习惯 5：理解上下文
 
@@ -247,7 +248,7 @@ Globalytica, LLC offers a collaborative, web-based version of ACH called Te@mACH
 
 为了帮助分析师掌握这些习惯，并以更严谨和高效的方式进行分析，已经开发了一些免费软件和专有软件。Palo Alto Research Center（PARC）在 Richards J. Heuer 和作者的指导下，开发了一款免费的竞争假设分析（Analysis of Competing Hypothesis）软件。
 
-Globalytica, LLC 提供了一款名为 Te@mACHTM 的网络协作版 ACH，收费合理。该软件是包含在 TH!NK SuiteTM 中的三种技术之一，其他两种是多假设生成器（Multiple Hypotheses GeneratorTM）和指标验证器（Indicators ValidatorTM)。Globalytica 还在开发另外两种工具，Te@m Assumptions CheckTM 和 Quadrant CrunchingTM，这些工具将引导分析师完成关键假设过程，并帮助他们组织生成替代情景。
+Globalytica, LLC 提供了一款名为 Te@mACHTM 的网络协作版 ACH，收费合理。该软件是包含在 TH!NK Suite 中的三种技术之一，其他两种是多假设生成器（Multiple Hypotheses Generator）和指标验证器（Indicators Validator)。Globalytica 还在开发另外两种工具，Te@m Assumptions Check 和 Quadrant Crunching，这些工具将引导分析师完成关键假设过程，并帮助他们组织生成替代情景。
 
 [6] 参见 Richards J. Heuer, Jr. 和 Randolph H. Pherson 的《情报分析的结构化分析技术》(Structured Analytic Techniques for Intelligence Analysis)（华盛顿特区：CQ Press, 2011），了解每种技术的定义、使用时机、操作步骤以及它们对分析过程的增值作用。
 
