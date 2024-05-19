@@ -104,6 +104,8 @@ The literature on information theory is vast and it would be impossible to surve
 
 信息论的文献非常广泛，不可能对所有文献进行全面调查。有两本在本文研究完成后出版的书籍值得一提：一本是 Mark Burgin 于 2010 年出版的《信息论：基础性、多样性和统一性》，该书对信息论进行了百科全书式的概述。另一本特别值得一提的是 T. D. Schneider 的《分子信息论简要回顾》，因为它使用 Shannon 信息论来研究遗传系统，并精确地表征核酸结合位点的序列保守性。这似乎与我们所说的生物信息不同于 Shannon 信息的观点相矛盾，但读者会发现我们讨论的是不同形式的信息。读者还可以参考这本书，它描述了能量和信息之间的关系。
 
+2『原来自己在 2020 年已经下载了 Mark Burgin 的书籍「2020051Theory-of-Information」。而且也下载了他的另一本书「2020052Theory-of-Knowledge」，接下载了一本他和其他人合著的也是有关信息的书籍「2024040Information-and-Computation」。』
+
 ### 02. Origins of the Concept of Information
 
 We begin our historic survey of the development of the concept of information with its etymology. The English word information according to the Oxford English Dictionary (OED) first appears in the written record in 1386 by Chaucer: "Whanne Melibee hadde herd the grete skiles and resons of Dame Prudence, and hire wise informacions and techynges." The word is derived from Latin through French by combining the word inform meaning giving a form to the mind with the ending "ation" denoting a noun of action. This earliest definition refers to an item of training or molding of the mind. The next notion of information, namely the communication of knowledge appears shortly thereafter in 1450. "Lydg. and Burgh Secrees 1695 Ferthere to geve the Enformacioun, of mustard whyte the seed is profitable".
@@ -136,7 +138,7 @@ Another OED entry citing the early work of mathematicizing information is that o
 
 《牛津英语词典》引用了 R. A. Fisher 1925 年的文章作为信息数学化的首例：
 
-我们所说的误差曲线的固有准确性，也可以理解为单个观测值在该分布中的信息量。如果 p 是观测值落入某一类别的概率，那么样本中的信息量是 S {(∂m/∂θ)^2/m}，其中 m = np，是某一类别的期望值【θ 是参数】[7]。
+我们所说的误差曲线的固有准确性，也可以理解为单个观测值在该分布中的信息量。如果 p 是观测值落入某一类别的概率，那么样本中的信息量是 S{(∂m/∂θ)^2/m}，其中 m = np，是某一类别的期望值【θ 是参数】[7]。
 
 OED 的另一个条目引用了 R. V. L. Hartley 的早期工作 [8]，他对信息进行了数学化处理。他说：「我们所做的就是将信息的实际度量定义为可能的符号序列数量的对数。」有趣的是，Fisher 和 Hartley 的工作预示了 Shannon 的信息概念，即特定符号串的概率，而不考虑其意义。
 
@@ -184,14 +186,17 @@ Despite the difference in the sign of information entropy assigned by Shannon an
 
 Communication theory is heavily indebted to Wiener for much of its basic philosophy and theory. His classic NDRC report, The Interpolation, Extrapolation and Smoothing of Stationary Time Series, contains the first clear-cut formulation of communication theory as a statistical problem, the study of operations on time series. This work, although chiefly concerned with the linear prediction and filtering problem, is an important collateral reference in connection with the present paper. We may also refer here to Wiener's Cybernetics [3], dealing with the general problems of communication and control.
 
-
 04 信息和熵的关系
 
-通过研究蒸汽机的效率，Clausius 提出了熵的概念，认为熵是能量中无法转化为机械功的部分，或是无法利用的热能。他在德语中称其为「Verwandlungsinhalt」，大致可以翻译为「转化内容」。Clausius 进一步创造了「熵」这一术语，其中「tropy」来自希腊语「trope（τροπή)」，意为转化。他加上了前缀「en」，因为他认为能量和熵之间有密切的关系。因此，从词源上看，熵可以理解为能量转化。Clausius 认为有必要定义熵，因为尽管宇宙中的能量是守恒的，但熵却不断增加。
+通过研究蒸汽机的效率，Clausius 提出了熵的概念，认为熵是能量中无法转化为机械功的部分，或是无法利用的热能。他在德语中称其为「Verwandlungsinhalt」，大致可以翻译为「转化内容」。Clausius 进一步创造了「熵」这一术语，其中「tropy」来自希腊语 trope(τροπή)，意为转化。他加上了前缀「en」，因为他认为能量和熵之间有密切的关系。因此，从词源上看，熵可以理解为能量转化。Clausius 认为有必要定义熵，因为尽管宇宙中的能量是守恒的，但熵却不断增加。
 
 熵与概率之间的关系是 Boltzman 通过统计力学研究发现的，统计力学是观察热力学的一种方法。他证明了气体的熵与 W 的对数成正比，其中 W 是气体在相同压力、温度和体积条件下的微观状态数。他推导出的公式 S = k lnW，其中 k 是 Boltzman 常数，这启发了 Shannon 将其用于度量信息内容的表达称为「信息熵」，尽管符号不同，且比例常数 Boltzman 常数具有能量除以温度的物理维度。
 
 物理学家对熵和信息的关系进行了研究，这一研究源于对麦克斯韦妖的思考，而这与 Shannon 的观点完全相反。1867 年，麦克斯韦提出了一个思想实验：一个妖怪站在两个充满气体的房间之间的门口，只允许快速移动的分子从一个房间通过到另一个房间，从而在两个房间之间制造温差，并从中提取可用功，这违反了热力学第二定律。1929 年，Leo Szilard 通过分析麦克斯韦妖的问题，表明为了获得所需的信息，妖怪会在其他地方引起熵的增加，从而使得整体熵并没有减少。他提出，妖怪之所以能够暂时减少熵，是因为它掌握了信息，而这些信息的获取是以熵增加为代价的。因此，获取信息导致的熵增加大于信息所代表的熵减少，这样就没有违反热力学第二定律。根据 Szilard 的分析，可以得出结论，熵和信息是相对的。他还指出，妖怪获得的净能量并不是正的，因为获取信息需要消耗能量，而这些信息是妖怪选择快速移动分子和排除缓慢移动分子的依据。由于信息是以熵增加为代价获得的，因此信息具有有效的净负熵。继 Szilard 之后，Gilbert N. Lewis [12] 也看到了信息和熵之间的反向关系。他写道：「熵的增加总是意味着信息的丧失，仅此而已」。
+
+
+
+
 
 Schrödinger [13] 在他著名的《生命是什么？》一书中首次明确提出了负熵的概念：
 
@@ -353,9 +358,7 @@ POE 分析揭示的关键点是，香农信息可以独立于意义来定义，�
 
 这个观点完全与系统生物学家的信息概念相矛盾，他们认为生物体内包含信息。正如 Kauffman 在《Investigations》中指出的那样 [15]，正是这种信息的传播使得生物体能够生长和复制。从 Shannon 信息和生物信息的矛盾中，我们可以推测可能存在多种信息类型，并且信息不像相对论中的光速那样是一个不变的常数，不依赖于其参考系。我们还发现 Shannon 对信息的定义可能有其局限性，未必能代表普遍的信息概念。毕竟，Shannon 提出信息熵的概念是为了解决特定问题，即提高电信线路上信号传输的效率或信噪比。
 
-
-
-9. The Relativity of Information
+### 09. The Relativity of Information
 
 Robert M. Losee [17] in an article entitled A Discipline Independent Definition of Information published in the Journal of the American Society for Information Science defines information as follows:
 
@@ -373,7 +376,25 @@ In addition to the Tzannes' notion of the relativity of information we were also
 
 Another distinction between Shannon information and biotic or instructional information as defined in POE is that with Shannon there is no explanation as to where information comes from and how it came into being. Information in Shannon's theory arrives deus ex machina, whereas biotic information as described in POE arises from the constraints that allow a living organism to harness free energy and turn it into work so that it can carry out its metabolism and replicate its organization. Kauffman [15] has described how this organization emerges through autocatalysis as an emergent phenomenon with properties that cannot be derived from, predicted from or reduced to the properties of the biomolecules of which the living organism is composed and hence provides an explanation of where biotic information comes from.
 
-10. Information and Its Relationship to Materiality and Meaning
+09 信息的相对性
+
+Robert M. Losee [17] 在《美国信息科学学会杂志》发表的文章《信息的跨学科定义》中，将信息定义如下：
+
+信息可以被定义为一个过程输出的特征，这些特征能反映该过程及其输入。这种跨学科定义可适用于所有领域，从物理学到认识论。
+
+如上所述，信息通常被视为一种统一的量或质，对所有领域和现象都是一致的。换句话说，信息像光速一样是不变的，在所有参考系中都相同。人们往往默认信息的起源或实际含义。如果深入探讨这个问题，大多数现代 IT 专家或哲学家会回到 Shannon 的信息定义。有些人可能还会提到 Bateson 的定义，即信息是「产生差异的差异」。但大多数人并不知道 Shannon 和 Bateson 的信息定义是互相矛盾的。Shannon 信息不会产生差异，因为它与意义无关，只是符号或比特的串。而 Bateson 信息（更准确地说是 MacKay 信息）则完全是关于意义的。因此，我们得出了第二个结论，即信息的相对性。信息不像光速那样是不变的，而是依赖于使用它的参考系或上下文。
+
+我们在审查 POE 时发现，Shannon 信息与生物信息或指令信息有很大不同。信息不是绝对的概念，而是取决于使用它的上下文。因此，Shannon 信息在电信通道工程中是一个非常有用的工具。Kolmogorov [18] 信息被定义为描述程序或文本所需的最小计算资源，并且与 Shannon 信息相关，这对于研究图灵机上的信息压缩非常有用。而生物或指令信息则不同于 Shannon 或 Kolmogorov 信息，并且如 POE 所示，是描述生物系统的相互作用及其组织传播的唯一方法。
+
+信息是一种工具，因此它有不同的形式，就像螺丝刀有多种形状。它们有槽型、方型和菲利普型等多种形式 —— 取决于所操作的螺丝环境。信息也是如此。MacKay 识别出两种主要的信息类别：选择性信息和专门与意义相关的结构性信息。Shannon 信息是为处理电信中的信噪比而制定的，Kolmogorov 复杂度旨在衡量图灵机上算法的复杂性。Shannon 和 Kolmogorov 信息是 MacKay 所谓的选择性信息。另一方面，生物或指令信息是一种结构性信息。DNA 的信息不像 Shannon 选择性信息那样固定，而是像 MacKay 结构性信息那样依赖于上下文。因此，相同的基因型可以根据环境或上下文产生不同的表型。
+
+虽然我们在 POE 中引入了信息相对性的概念，但当时并不知道 Nicholas Tzannes 早在很久以前的第 56 页中提出了类似的想法。他「希望定义信息，使其含义随上下文变化... 并指出 Shannon 和 Wiener 是根据信息的本质定义信息，而 MacKay 则是根据信息的作用定义信息 [6]。」Shannon 和 Wiener 的信息形式是名词，也就是一种事物，而 MacKay 的信息形式则是动词，即一种过程。我们将指令性或生物信息与 MacKay 关联，因为它是一个过程；而不是与 Shannon 关联，因为 DNA、RNA 和蛋白质本质上不是信息「事物」，而是催化「过程」和行动，从而促成组织的传播和信息的传递 —— 这些信息是有意义的。简单来说，指令信息就是结构信息，正如「指令」一词的词根所揭示的那样。
+
+除了 Tzannes 的信息相对性概念外，我们还不了解 Mark Burgin 早在 1994 年 [19] 就已经发展了这一概念，并在 2010 年 [20] 再次写到它。
+
+Shannon 信息与 POE 中定义的生物或指令信息之间的另一个区别在于，Shannon 没有解释信息的来源及其形成方式。在 Shannon 的理论中，信息是凭空出现的；而在 POE 中描述的生物信息则源于生物体利用自由能并将其转化为工作，以执行其代谢和复制其组织的约束。Kauffman [15] 描述了这种组织如何通过自催化作为一种涌现现象出现，这种现象具有无法从组成生物体的生物分子的属性中推导、预测或简化的特性，从而解释了生物信息的来源。
+
+### 10. Information and Its Relationship to Materiality and Meaning
 
 O, that this too too solid flesh would melt—Shakespeare's Hamlet (Act 1, Scene 2)
 
@@ -413,7 +434,44 @@ Even though information and data are often used interchangeably, they are actual
 
 I would interpret the signals transmitted between Shannon's sender and receiver as data. Consistent with MacKay and Bateson's position information makes a difference when it is contextualized and significant. Knowledge and wisdom represent higher order applications of information beyond the scope of this study. The contextualization of data so that it has meaning and significance and hence operates as information is an emergent phenomenon. The communication of information cannot be explained solely in terms of the components of the Shannon system consisting of the sender, the receiver and the signal or message. It is a much more complex process than the simplified system that Shannon considered for the purposes of mathematicizing and engineering the transmission of signals. First of all it entails the knowledge of the sender and the receiver, the intentions or objectives of the sender and the receiver in participating in the process and finally the effects of the channel of communication itself as in McLuhan's [24] observation that "the medium is the message". The knowledge and intention of the sender and the receiver as well as the effects of the channel all affect the meaning of the message that is transmitted by the signal in addition to its content.
 
-11. The Meaning of Information in Biotic Systems
+10 信息及其与物质性和意义的关系
+
+哦，但愿这坚硬的肉体能够融化 —— 莎士比亚《哈姆雷特》（第一幕，第二场）
+
+我们丢失在知识中的智慧何在？
+
+我们丢失在信息中的知识何在？——TS Eliot
+
+我们丢失在信息中的意义何在？——RKL
+
+为了说明信息并不是一个固定不变的量，而是一个依赖于其所处环境的量，我们将借助 Katherine Hayles 的研究和见解来探讨信息与物质性和意义的关系 [6]。她指出，虽然我们用信息来描述物质事物，并且信息也体现于物质事物中，但信息本身并不是物质。「香农的理论将信息定义为一个没有维度、没有物质性、且不必然与意义相关的概率函数。信息是一种模式，而不是一种存在 [6]」。
+
+香农信息与意义之间缺乏必然联系，这使得它与生物信息有所不同。生物信息显然是有意义的，因为它代表了生物体组织的传播。信息是我们用来描述物质事物行为的抽象概念，通常在控制论的意义上被认为是控制物质事物的手段。
+
+Hayles [6] 追溯了信息理论的起源，涉及到控制论学者如 Wiener、von Forester 和 von Bertalanffy，以及电信工程师如 Shannon 和 Weaver。她指出，他们认为信息的存在比物质更加原始。她在描述他们开发的信息理论时写道：「信息理论将信息构建为对物质世界进行掌控和控制的关键」。
+
+她进一步声称（我同意这一点），香农和控制论学者所说的信息被视为与其存在的物质基础分离。例如，Wiener [2] 在他的书《控制论：动物与机器中的控制与通信》中写道：「信息是信息，不是物质或能量」。这引出了一个问题：信息是否有其固有的特性，还是它仅仅是对物质事物复杂行为模式的描述或比喻？信息真的能够控制物质，还是信息只是基于人类通过符号语言进行交流这种观念的心智构建，如 Logan [21] 描述的那样？
+
+虽然控制论学者如 Wiener、von Forester 和 von Bertalanffy 使用的信息概念与香农和 Weaver 的信息概念相互影响，并且在许多人看来它们是相同的，但实际上它们是截然不同的。控制论学者，如 Wiener [3]，认为信息是物质世界的主控或控制者：「有效地生活就是拥有足够的信息。因此，交流与控制是人类内心生活的本质，正如它们是人类社会生活的本质」。
+
+对于通信工程师来说，信息只是需要准确传输的一串符号，从发送方到接收方。他们只关心传输的准确性，而不在乎信息的意义。如果我们暂时考虑信息与意义的关系，从某种角度看，控制论者认为信息在物质领域中具有控制作用，而香农信息则与意义无关。实际上，香农在用 H = p_i log p_i 来度量「信息」时，是否使用了正确的术语是可以质疑的。他定义的量 H 对工程师来说确实有用，因为它与信号传输的概率有关 —— 信号可能有意义，也可能没有意义。我认为，没有意义的信号不是真正的信息。我同意 MacKay 和 Bateson 的观点，要成为信息，信号必须产生影响，这也是 Wiener 在控制论中对信息的定义。Sveiby 报告说，香农自己对使用「信息」一词的准确性也有些顾虑：
+
+据说，香农对其理论中的「信息」一词不太满意。他被建议使用「熵」一词，但「熵」这个概念太难理解，所以他保留了「信息」这个词。由于他的理论只涉及信号的传输，Langefors [22] 建议，香农的信息理论或许更适合称为「信号传输理论」（访问日期：2007 年 9 月 9 日：http://sveiby.com/portals/0/articles/Information.html#Cybernetics）。
+
+我同意 Langefors 的观点，即 Shannon 在他的信息理论中主要分析的是信号或数据的传输。这与我在知识管理和协作理论领域的一些早期工作相契合。这些工作部分受到 Karl Erik Sveiby 的启发。在此基础上，我和 Louis Stokes 制定了以下关于数据、信息、知识和智慧的定义：
+
+- 数据是纯粹的简单事实，没有特定的结构或组织，是信息的基本单位，
+- 信息是结构化的数据，增加了数据的意义和背景，
+- 知识是能够战略性地使用信息来实现目标的能力，
+- 智慧是选择与自身价值观一致并在更大社会背景下的目标的能力 [23]。
+
+我还发现了以下关于数据和信息关系的描述，特别是在 2007 年 9 月 12 日访问维基百科时看到的：
+
+尽管信息和数据经常被混用，但它们实际上是不同的。数据是一组未关联的信息，未经评估前没有任何用处。一旦数据被评估并显示出显著的关系和相关性，它们就转化为信息。这时，这些数据可以用于不同的目的。因此，数据只有在传达信息时才有用。
+
+我将 Shannon 的发送者和接收者之间传输的信号视为数据。根据 MacKay 和 Bateson 的观点，信息在被情境化并具有重要意义时才会产生不同的影响。知识和智慧代表了信息的更高层次应用，但这不在本研究的范围内。将数据情境化，使其具有意义和重要性，从而成为信息，是一种涌现现象。信息的传递不能仅靠 Shannon 系统中的发送者、接收者和信号或消息来解释。这一过程远比 Shannon 为数学化和工程化信号传输所设计的简化系统复杂得多。首先，这需要发送者和接收者的知识，其次是发送者和接收者参与过程的意图或目标，最后是通信渠道本身的影响，就像 McLuhan [24] 所说的「媒介即信息」。发送者和接收者的知识和意图以及通信渠道的影响，都会影响信号传递的消息的意义，而不仅仅是它的内容。
+
+### 11. The Meaning of Information in Biotic Systems
 
 Biotic or instructional information, defined in POE as the constraints that allow an autonomous agent, i.e., a living organism, to convert free energy into work so that the living organism is able to propagate its organization through growth and replication, is intimately connected with meaning. "For Shannon the semantics or meaning of the message does not matter, whereas in biology the opposite is true. Biotic agents have purpose and hence meaning [1]". One can therefore argue that since the meaning of instructional information is propagating organization that we finally understand the meaning of life–the "meaning of life" is propagating organization. This remark is not meant to trivialize the great philosophical quest for the meaning of life from a human perspective but there is a sense in which the meaning of life including human life is indeed the propagation of organization. The purpose of life is the creation or propagation of more life.
 
@@ -421,77 +479,27 @@ In addition to the fact that Shannon information does not necessarily entail mea
 
 Shannon information whether on paper, a computer, a DVD or a telecommunication device, because it is symbolic, can slide from one medium or technology to another and not really change, McLuhan's [24] "the medium is the message" aside. This is not true of living things. Identical genotypes can produce very different phenotypes depending on the physical and chemical environment in which they operate. Consider the fact that identical twins are not "identical". The reason identical twins are not "identical" is that the environment in which the biochemical interactions between biomolecules takes place alters the outcome.
 
-12. The Materiality of Information in Biotic Systems
+11 生物系统中信息的意义
 
-Information is information, not matter or energy. No materialism which does not admit this can
+生物或指令信息，在 POE 中被定义为对自主智能体（如活的有机体）的约束，这些约束使其能够将自由能转化为工作，从而通过生长和复制传播其自身的结构，这与「意义」密切相关。「对于 Shannon 来说，消息的语义或意义并不重要，而在生物学中，情况正好相反。生物智能体有其目的，因此也有其意义 [1]」。因此，可以说，指令信息的意义在于传播结构，我们最终理解了生命的意义 ——「生命的意义」就是传播结构。这并不是要淡化从人类角度对生命意义的伟大哲学探索，但可以说，包括人类生命在内的生命意义的确是结构的传播。生命的目的是创造或传播更多的生命。
 
-survive at the present day.–Norbert Wiener [2]
+相比于香农信息不一定包含意义，生物或指令性信息总是包含意义，这两者之间还有一个本质的区别。香农信息的定义不依赖于其载体，而生物信息则与其在核酸和蛋白质中的物质载体密切相关。香农和控制论信息可以独立于其载体，这使得强人工智能（Strong AI）的概念得以提出。像 Moravic、Minsky 和 Wiener 等学者声称，人类智能和思维可以转移到基于硅的计算机上，而不需要依赖于人类大脑的「湿计算机」。香农和控制论信息可以从一个物质环境转移到另一个，从一台计算机转移到另一台，或者在香农信息的情况下，从一部电话转移到另一部电话，甚至从计算机转移到纸上的硬拷贝。然而，在生物圈中的生物体中，信息是储存在 DNA、RNA 和蛋白质中的，这种转移是不可行的。
 
-Shannon's theory defines information as a probability function with no dimension, no materiality,
+香农信息无论是在纸上、计算机上、DVD 上还是在电信设备上，都因为它是符号性的，可以在不同媒介或技术之间转换而不发生实质性变化，撇开 McLuhan 的「媒介即信息」(The medium is the message）[24] 不谈。这在生物体中则不成立。相同的基因型在不同的物理和化学环境中可以产生非常不同的表型。比如说，虽然双胞胎有相同的基因，但他们并不完全「相同」。这是因为生物分子之间的生化相互作用在不同的环境中会产生不同的结果。
 
-and no necessary connection with meaning. It is a pattern not a presence [6].
+### 12. The Materiality of Information in Biotic Systems
 
-Shannon information cannot be, nor was it meant to be, naively applied to complete living
+Information is information, not matter or energy. No materialism which does not admit this can survive at the present day.
 
-organisms, because the information in a biotic system like DNA is more than a pattern—it is also a
+– Norbert Wiener [2] 
 
-presence. A receptor for food or toxins is not just a pattern—it is also a presence. A biological system
+Shannon's theory defines information as a probability function with no dimension, no materiality, and no necessary connection with meaning. It is a pattern not a presence [6].
 
-is both an information pattern and a material object or more accurately information patterns
+Shannon information cannot be, nor was it meant to be, naively applied to complete living organisms, because the information in a biotic system like DNA is more than a pattern—it is also a presence. A receptor for food or toxins is not just a pattern—it is also a presence. A biological system is both an information pattern and a material object or more accurately information patterns instantiated in a material presence. Schrödinger [13] long ago before the discovery of DNA described this dual aspect of chromosomal material metaphorically. "The chromosome structures are at the same time instrumental in bringing about the development they foreshadow. They are law-code and executive power–or, to use another simile, they are architect's plan and builder's craft–in one." It is the dynamic of the interaction between the patterns of information and the material composition of the biotic agents that determines their behavior.
 
-instantiated in a material presence. Schrödinger [13] long ago before the discovery of DNA described
+As previously discussed, the issue hinges on the degree to which one can regard a biotic agent as a fully physical computational system. It is clear that a biotic system cannot be described only by Shannon information for which the information is abstracted from it material instantiation and is independent of the medium. The same argument can be made for the inappropriateness of Kolmogorov complexity for biotic systems. Kolmogorov complexity, which is defined with respect to Turing machines, is another case where the information pattern is separated from its material instantiation. Biology is about material things not just mathematical patterns. As Kubie once warned at one of the Macy conferences, "we are constantly in danger of oversimplifying the problem so as to scale it down for mathematical treatment [6]". As noted above the physical environment changes the meaning of the information embedded in the DNA of the genome.
 
-this dual aspect of chromosomal material metaphorically. "The chromosome structures are at the same
-
-time instrumental in bringing about the development they foreshadow. They are law-code and
-
-executive power–or, to use another simile, they are architect's plan and builder's craft–in one." It is the
-
-Information 2012, 3 85
-
-dynamic of the interaction between the patterns of information and the material composition of the
-
-biotic agents that determines their behavior.
-
-As previously discussed, the issue hinges on the degree to which one can regard a biotic agent as a
-
-fully physical computational system. It is clear that a biotic system cannot be described only by
-
-Shannon information for which the information is abstracted from it material instantiation and is
-
-independent of the medium. The same argument can be made for the inappropriateness of Kolmogorov
-
-complexity for biotic systems. Kolmogorov complexity, which is defined with respect to Turing
-
-machines, is another case where the information pattern is separated from its material instantiation.
-
-Biology is about material things not just mathematical patterns. As Kubie once warned at one of the
-
-Macy conferences, "we are constantly in danger of oversimplifying the problem so as to scale it down
-
-for mathematical treatment [6]". As noted above the physical environment changes the meaning of the
-
-information embedded in the DNA of the genome.
-
-Another way to distinguish the difference between biotic or instructional information and either
-
-Shannon or Kolmogorov complexity is that the latter are symbolic which is not the case for biotic or
-
-instructional information. The information coded in the chemical alphabet of biomolecules that make
-
-up living organisms acts through the chemical interactions of those biomolecules. "DNA is a molecule
-
-interacting with other molecules through a complex set of mechanisms. DNA is not just some text to
-
-be interpreted, and to regard it as such is an inaccurate simplification [25]". It is not the symbolic
-
-nature of DNA that gives rise to messenger RNA and it is not the symbolic nature of RNA that gives
-
-rise to proteins but rather the chemical properties of DNA that produce or catalyze the production of
-
-RNA and the chemical properties of RNA that produce or catalyze proteins and the chemical
-
-properties of proteins that carry out the protein's various functions such as:
+Another way to distinguish the difference between biotic or instructional information and either Shannon or Kolmogorov complexity is that the latter are symbolic which is not the case for biotic or instructional information. The information coded in the chemical alphabet of biomolecules that make up living organisms acts through the chemical interactions of those biomolecules. "DNA is a molecule interacting with other molecules through a complex set of mechanisms. DNA is not just some text to be interpreted, and to regard it as such is an inaccurate simplification [25]". It is not the symbolic nature of DNA that gives rise to messenger RNA and it is not the symbolic nature of RNA that gives rise to proteins but rather the chemical properties of DNA that produce or catalyze the production of RNA and the chemical properties of RNA that produce or catalyze proteins and the chemical properties of proteins that carry out the protein's various functions such as:
 
 1. Serving as enzymes to catalyze biochemical reactions vital to metabolism;
 
@@ -499,395 +507,133 @@ properties of proteins that carry out the protein's various functions such as:
 
 3. Playing a role in cell signaling, immune responses, cell adhesion and the cell cycle.
 
-DNA, RNA and proteins are both the medium and the content, the message and the messenger. Not
+DNA, RNA and proteins are both the medium and the content, the message and the messenger. Not so for Shannon and Kolmogorov information where one can distinguish between the medium and the message, the message and the messenger. The message is the information, which operates independent of the medium in which it is instantiated, McLuhan [24] aside. For biotic information, on the other hand, the medium and the message are the same—they cannot be separated. For biotic information the medium is the message in the McLuhan sense and it is also the content. For human symbolic information described by Shannon information, the information or content and the medium are quite separate. For biotic systems not only is the medium the message in the McLuhan sense that a medium has an effect independent of its content but the medium is also the content because it is the chemical properties of the medium that affects the organism. In fact the medium is the message because it is literally the content and the content of the message is unique to that medium and is instantiated in it and it cannot be transferred to another medium. To repeat it is not possible to transfer the content or the message of the medium to another medium. There is an isomorphism between the medium and its content. The medium is the content and hence also the message. The medium is both the message and the content for a biotic system because information in a biological system is not symbolic but rather chemical. It is for this reason that the notion of transferring the contents of the human brain to a computer is pure nonsense.
 
-so for Shannon and Kolmogorov information where one can distinguish between the medium and the
+To conclude we have argued that information is not an invariant independent of the frame of reference in which it operates. In the biotic frame of reference information is always associated with meaning, which is not necessarily the case with Shannon or Kolmogorov information. In the biotic frame information cannot be separated from the medium of its instantiation as is the case in the Shannon and Kolmogorov reference frames. In other words the information in DNA, RNA and proteins are embodied. They differ from human symbolic information, which can be disembodied and moved from one medium to another. Each generation makes a god of their latest technological or scientific achievement or breakthrough. For the Hebrews it was the written word and the law "written with the finger of God". For the Greeks it was their deductive logic and rational thought disembodied from practical experience and empirical evidence of the physical world. For the Enlightenment it was Newtonian mechanics and God, the clock maker, where things were explained in terms of mechanical models. In the Information Age the god is disembodied information, information without context where everything is explained in terms of the transfer of information, and sometimes it is information without meaning.
 
-message, the message and the messenger. The message is the information, which operates independent
+12 生物系统中信息的物质性
 
-of the medium in which it is instantiated, McLuhan [24] aside. For biotic information, on the other
+信息就是信息，不是物质或能量。任何不承认这一点的唯物主义在当今都无法存活。
 
-hand, the medium and the message are the same—they cannot be separated. For biotic information the
+– Norbert Wiener [2]
 
-medium is the message in the McLuhan sense and it is also the content. For human symbolic
+香农的理论将信息定义为一种概率函数，它没有维度、没有物质性，也不一定与意义相关。信息是一种模式，而不是一种存在 [6]。
 
-information described by Shannon information, the information or content and the medium are quite
+香农的信息理论不能也不应简单地应用于完整的生命体，因为在像 DNA 这样的生物系统中，信息不仅仅是模式 —— 它也是一种存在。对于食物或毒素的受体来说，它们不仅仅是模式，还是一种存在。生物系统既包含信息模式，也具有物质特性，更准确地说，是信息模式在物质中的体现。早在 DNA 被发现之前，Schrödinger [13] 就以隐喻的方式描述了染色体物质的这种双重特性。他说：「染色体结构在实现它们所预示的发展方面起到了工具性的作用。它们既是法律代码也是执行的权力 —— 或者换个比喻，它们既是建筑师的计划也是建筑工匠的技艺。」正是信息模式与生物智能体物质组成之间的动态相互作用决定了它们的行为。
 
-separate. For biotic systems not only is the medium the message in the McLuhan sense that a medium
+如前所述，问题的关键在于我们是否可以完全将生物智能体视为物理计算系统。显然，生物系统不能仅用 Shannon 信息来描述，因为 Shannon 信息是将信息从其物质形式中抽象出来，并且不依赖于具体介质。同样的道理也适用于 Kolmogorov 复杂性。Kolmogorov 复杂性是基于图灵机定义的，这也是一种将信息模式与其物质形式分离的方式。生物学研究的核心是物质，而不仅仅是数学模式。正如 Kubie 在 Macy 会议上警告的那样，「我们总是有简化问题的危险，以便将其缩小为数学处理 [6]」。如上所述，物理环境会改变嵌入基因组 DNA 中的信息的意义。
 
-has an effect independent of its content but the medium is also the content because it is the chemical
+另一种区分生物信息或指令性信息与 Shannon 信息或 Kolmogorov 复杂性的方法是，后者是符号性的，而生物信息或指令性信息则不是。生物体中的信息是通过生物分子的化学相互作用来发挥作用的。「DNA 是一种通过复杂机制与其他分子相互作用的分子。将 DNA 仅仅看作是需要解释的文本是不准确的简化 [25]」。不是 DNA 的符号性质产生了信使 RNA，也不是 RNA 的符号性质产生了蛋白质，而是 DNA 的化学性质催化了 RNA 的生成，RNA 的化学性质催化了蛋白质的生成，蛋白质的化学性质则执行其各种功能，例如：
 
-properties of the medium that affects the organism. In fact the medium is the message because it is
+1. 作为酶催化对新陈代谢至关重要的生化反应；
 
-literally the content and the content of the message is unique to that medium and is instantiated in it
+2. 提供结构或机械功能，例如构建细胞的细胞骨架；
 
-and it cannot be transferred to another medium. To repeat it is not possible to transfer the content or
+3. 在细胞信号传导、免疫反应、细胞粘附和细胞周期中发挥作用。
 
-the message of the medium to another medium. There is an isomorphism between the medium and its
+DNA、RNA 和蛋白质既是载体也是内容，既是信息也是信使。而在 Shannon 和 Kolmogorov 信息论中，可以区分载体和信息、信息和信使。信息是独立于其载体存在的，McLuhan [24] 也不例外。而对于生物信息而言，载体和信息是不可分割的 —— 它们是同一个东西。对生物信息来说，载体即是信息（在 McLuhan 的意义上）也即是内容。而在人类符号信息中，根据 Shannon 信息论，信息或内容和载体是分开的。对于生物系统，不仅在 McLuhan 的意义上载体就是信息，即载体对其内容产生独立影响，而且载体也是内容，因为是载体的化学性质影响了生物体。实际上，载体即是信息，因为它就是内容，信息的内容是该载体独有的，并且在该载体中被实例化，不能转移到其他载体中。换句话说，不可能将载体的内容或信息转移到其他载体中。载体与其内容之间存在同构关系。载体就是内容，因此也是信息。对于生物系统来说，载体既是信息也是内容，因为生物系统中的信息不是符号性的，而是化学性质的。这就是将人类大脑的内容转移到计算机上的想法纯属无稽之谈的原因。
 
-content. The medium is the content and hence also the message. The medium is both the message and
+总结来说，我们认为信息并不是独立于其参考系而存在的。在生物参考系中，信息总是与意义相关联，而这在 Shannon 或 Kolmogorov 信息中并非必然。在生物参考系中，信息无法像在 Shannon 和 Kolmogorov 参考系中那样与其载体分开。换句话说，DNA、RNA 和蛋白质中的信息是具象的。它们不同于人类的符号信息，后者可以脱离载体并在不同介质之间转移。每一代人都会将其最新的技术或科学成就奉为神明。对于希伯来人来说，这些是「上帝之手」写成的文字和法律。对于希腊人来说，这是他们抽象的演绎逻辑和理性思维，与实际经验和物理证据无关。对于启蒙运动时期的人来说，这是牛顿力学和钟表匠上帝的机械模型。在信息时代，神明变成了脱离语境的信息，一切都被解释为信息的传递，有时这些信息甚至没有实际意义。
 
-the content for a biotic system because information in a biological system is not symbolic but rather
+### 13. Organization as Information
 
-Information 2012, 3 86
+What is the relationship of organization and information? What we discovered in POE was that the autocatalysis of biomolecules led to the organization of a biological living organism whose organization of constraints allowed it to convert free energy into work that sustained growth and permitted replication. We identified the constraints as instructional or biotic information, which loops back into the organization of the organism. This model of information holds for biotic systems where autocatalysis is the organization and the components are the individual biomolecules.
 
-chemical. It is for this reason that the notion of transferring the contents of the human brain to a
+The argument seems circular only because a living organism represents a self-organizing system. This is still another way that biotic information differs from Shannon information which is defined independent of meaning or organization. In fact organized information has less Shannon information because it does not reduce as much uncertainty as disorganized information. It is also the case as we mention above that this model provides a mechanism for the creation of information which in not the case with the Shannon model of information.
 
-computer is pure nonsense.
+I believe that Hayles [6] has come to a similar conclusion regarding the relationship of information and organization when she wrote about the paradigm of autopoiesis or self-organization:
 
-To conclude we have argued that information is not an invariant independent of the frame of
+Information does not exist in this paradigm or that it has sunk so deeply into the system as to become indistinguishable from the organizational properties defining the system as such.
 
-reference in which it operates. In the biotic frame of reference information is always associated with
+It is the latter half of her statement that is congruent with our notion that the set of constraints or organization that give rise to an autonomous self-organizing system is a form of information.
 
-meaning, which is not necessarily the case with Shannon or Kolmogorov information. In the biotic
+Wiener like Shannon related information to entropy but, unlike Shannon, Wiener [3] saw a connection between organization and information, "The notion of the amount of information attaches itself very naturally to a classical notion in statistical mechanics: that of entropy. Just as the amount of information in a system is a measure of its degree of organization, so the entropy of a system is a measure of its degree of disorganization".
 
-frame information cannot be separated from the medium of its instantiation as is the case in the
+We make a similar claim in POE [1] when we assert that the constraints that allow the propagation of organization in a living organism represents the information content of that organism. In other words the propagating organization of a living organism is its information content. Our position in a certain sense recapitulates similar sentiments expressed by Norbert Wiener [3] when he wrote "We are not stuff that abides but patterns that perpetuate themselves".
 
-Shannon and Kolmogorov reference frames. In other words the information in DNA, RNA and
+However where I differ from Weiner is that while we are patterns that abide I also believe that we are patterns that are uniquely instantiated in flesh. I therefore believe that human intelligence cannot be transferred from a human brain onto a silicon-based computer as is claimed by some advocates of strong AI. The point that I would make is that the pattern cannot be separated from the medium in which it is instantiated as was argued above. The medium of flesh and its organization are what is critical. It is the pattern instantiated in the flesh and not just the pattern by itself that makes life. The information in a biological system is not symbolic but rather chemical. As we have already asserted the medium of the flesh is both the message and the content of a biotic system.
 
-proteins are embodied. They differ from human symbolic information, which can be disembodied and
+13 组织即信息
 
-moved from one medium to another. Each generation makes a god of their latest technological or
+组织和信息之间是什么关系？在 POE 中，我们发现生物分子的自催化作用会形成一个生物体的组织，这种组织通过特定的约束使其能够将自由能转化为维持生长和复制的能量。我们将这些约束称为指令性或生物性信息，这些信息又反过来影响生物体的组织。这种信息模型适用于那些自催化是组织方式，而成分是个别生物分子的生物系统。
 
-scientific achievement or breakthrough. For the Hebrews it was the written word and the law "written
+这个观点看起来是循环的，因为活的有机体是一个自组织系统。这是生物信息与香农信息不同的另一个方面，香农信息是独立于意义或组织定义的。实际上，有组织的信息比无组织的信息包含的香农信息更少，因为它减少的不确定性较少。正如我们之前提到的，这个模型提供了一种创建信息的机制，而香农信息模型并没有这一点。
 
-with the finger of God". For the Greeks it was their deductive logic and rational thought disembodied
+我相信 Hayles [6] 在讨论自创生或自组织的范式时，已经得出了关于信息与组织关系的类似结论：
 
-from practical experience and empirical evidence of the physical world. For the Enlightenment it was
+在这个范式中，信息不存在，或者它已经深深融入系统，以至于与定义系统的组织属性无法区分。
 
-Newtonian mechanics and God, the clock maker, where things were explained in terms of mechanical
+她声明的后半部分与我们的观点一致，即产生自主自组织系统的约束或组织形式本身就是信息的一种形式。
 
-models. In the Information Age the god is disembodied information, information without context
+Wiener 像香农一样，将信息与熵联系起来，但与香农不同的是，Wiener [3] 看到了组织与信息之间的联系，「信息量的概念非常自然地与统计力学中的经典概念 —— 熵相联系。正如系统中的信息量是其组织程度的衡量标准，系统的熵是其无序程度的衡量标准」。
 
-where everything is explained in terms of the transfer of information, and sometimes it is information
+我们在 POE [1] 中也提出了类似的观点，认为生物体中组织传播的约束条件代表了该生物体的信息内容。换句话说，一个生物体的组织传播过程，就是它的信息内容。从某种角度来看，我们的立场与 Norbert Wiener [3] 的观点相似，他说过 "我们不是永恒存在的物质，而是自我延续的模式"。
 
-without meaning.
+然而，我与 Wiener 的不同之处在于，虽然我们确实是持续存在的模式，但我认为我们是以肉体为载体的独特模式。因此，我认为人类智能不能像某些强 AI 的支持者所说的那样，从人类大脑转移到基于硅的计算机上。我的观点是，模式无法脱离其载体存在，正如前文所述，肉体及其组织方式才是关键。正是肉体中的模式，而不仅仅是模式本身，使得生命存在。生物系统中的信息不是符号化的，而是化学性的。正如我们已经说过的那样，肉体既是信息的载体，也是生物系统的内容。
 
-13. Organization as Information
+### 14. Who Are We? What Are We, Information or Flesh?
 
-What is the relationship of organization and information? What we discovered in POE was that the
+Information in the form of words or language is symbolic. The word cat is a symbol that represents a class of living breathing creatures made of flesh. An actual cat is not a symbol of something else but an organization of organic chemicals that can propagate its organization through its metabolism and its ability to replicate.
 
-autocatalysis of biomolecules led to the organization of a biological living organism whose organization
+The organic chemicals of which we are composed are continually replaced so that after seven years there is a completely new set of molecules. So we are not flesh or a particular set of molecules but the organization of the molecules of which we are composed or more accurately we are a process and not a thing that can be duplicated.
 
-of constraints allowed it to convert free energy into work that sustained growth and permitted
+One cannot make a replica of a person. Even twins that originated from the same fertilized egg are never exactly the same. But a text can be replicated or duplicated exactly. A text can also be transmitted and reformatted from one medium to another, for example from a computer file to a text printed on paper or from a live performance to a podcast.
 
-replication. We identified the constraints as instructional or biotic information, which loops back into
+I believe that the proponents of strong artificial intelligence (AI) and strong artificial life (AL) make the mistake of considering intelligence or life as merely reified information. They do not take into account that it is the interaction or organization of flesh-based matter that makes intelligence and life. The pattern of that interaction or organization that we identify as information cannot be abstracted away from the physical medium in which it is instantiated and remain unchanged or, even more importantly, continue as the process that gave rise to that intelligence or life in the first place.
 
-the organization of the organism. This model of information holds for biotic systems where autocatalysis
+A feature of both intelligence and life is that it is autonomous. A living organism is an autonomous agent that has the capacity to exploit free energy from its environment and use that energy in the form of work to carry out its metabolism, to replicate and to make use of its intelligence. The proponents of strong AI and AL overlook this important factor when they claim that intelligence and life is nothing more than information or a pattern that is independent of its physical instantiation. At best artificial life forms may be regarded as obligate symbionts with humans but not as independent living organisms as they are not autonomous.
 
-is the organization and the components are the individual biomolecules.
 
-The argument seems circular only because a living organism represents a self-organizing system.
 
-This is still another way that biotic information differs from Shannon information which is defined
+### 15. Human Language, Culture, Technology, Science, Economics and Governance as Forms of Propagating Organization
 
-independent of meaning or organization. In fact organized information has less Shannon information
+"I take informatics to mean the technologies of information as well as the biological, social, linguistic and cultural changes that initiate, accompany, and complicate their development [6]".
 
-because it does not reduce as much uncertainty as disorganized information. It is also the case as we
+Katherine Hayles' quote indicates that there is a link between biological, cultural and linguistic information. It was also noted in POE that language and culture like living organisms also propagate their organization and hence their information. This also includes science, technology, economics and governance which are part of culture and will be treated separately because they provide vivid examples of propagating organization. The information that language and culture represent like biotic information is not Shannon or selective information but rather information with meaning, namely MacKay structural information.
 
-mention above that this model provides a mechanism for the creation of information which in not the
+Cultural and linguistic information is not fixed but depends on the context–as conditions change so do languages and cultures. This statement applies to the various sub-division of culture that we have explicitly identified, namely, science, technology, economics and governance. These forms of information do not represent Shannon selective information but rather MacKay structural information because of their dependence on context. Each one is more than a string of alphanumeric symbols or a string of 0 s and 1 s.
 
-case with the Shannon model of information.
+Let me provide an example of how linguistic meaning depends on context based on my experience of being the father of four children who in turn have provided me so far with four grandchildren. The meaning of the term Dad has changed for me over my lifetime. Dad used to be my father and then when I had children it meant me and then when my children had children and I became grandpa and Dad became the father of my grandchildren.
 
-I believe that Hayles [6] has come to a similar conclusion regarding the relationship of information
+The point is that the meaning of words are context dependent. This is why I [21] identified words as strange attractors. They are strange attractors because the meaning of a word is never exactly the same as its meaning changes ever so slightly each time it is used because the context in which it is used is never the same. To illustrate the idea let us consider the word water which represents the water we drink, wash with, cook with, swim in, and that falls as rain, melts from snow, constitutes rivers, lakes, ponds and oceans, etc. The meaning of water in each of these contexts is slightly different but there is a common thread and hence the claim that the word "water" acts as a strange attractor for a diverse set of contexts involving water.
 
-and organization when she wrote about the paradigm of autopoiesis or self-organization:
+A language is an organization of a set of symbols whose semantics and syntax is a form of information. A similar claim can be made for a culture which Geertz [26] defined as "an historically transmitted pattern of meanings embodied in symbols, a system of inherited conceptions expressed in symbolic forms by means of which men communicate, perpetuate and develop their knowledge about and attitudes towards life." He goes on to add, that "culture is patterns for behavior not patterns of behavior".
 
-Information does not exist in this paradigm or that it has sunk so deeply into the system as to
+Information as a form of organization for either language or culture, although it is symbolic like Shannon information, still cannot be associated with Shannon information because linguistic and cultural information is context dependent and meaningful. It is also the case that language and culture are like living organisms in that they evolve in ways that cannot be predicted. We may therefore use the same core argument we did in POE to rule out the description of language and culture and their evolution with Shannon information. "The ensemble of possibilities and their entropy [for language and/or culture] cannot be calculated [1]". Therefore a definition of information as reducing uncertainty does not make sense since no matter how much one learns from the information in a linguistic or cultural system, as was the case with a biotic system, the uncertainty remains infinite because the number of possibilities of what can evolve is infinitely non-denumerable. Because science, technology, economics and governance are part of culture and it is also true that their evolution cannot be predicted; the argument we just made for language and culture applies to these subsets of culture as well.
 
-become indistinguishable from the organizational properties defining the system as such.
+At this point it is perhaps useful to define two forms of information micro-information consisting of isolated bits of information, the kind that are transmitted as Shannon information and are also components of a larger information system or organization and macro-information or the organization of a system like a living organism, a language, or a culture. Other forms of macro-information include the specific elements of a culture such as a business, an economic system, a polity, science and the technosphere. Narrative is the organization of a text or an utterance and therefore may be regarded also as a form of macro-information. Micro information is the string of characters and symbols that make up the narrative of a book, an article or a story.
 
-It is the latter half of her statement that is congruent with our notion that the set of constraints or
+There is still another property that the organizational information of language and culture share with living organisms that distinguishes them from Shannon information. This is the fact that language and culture, like life, are self-organizing phenomena and hence as is the case for biotic information and not the case for Shannon information we have a primitive model for the emergence of this information. Although we do not have a precise theory for how language and culture and the information and organization associated with them emerged we do have a number of proposals and models for how this might have happened through self-organization. Logan [21] contains a review of these models.
 
-organization that give rise to an autonomous self-organizing system is a form of information.
+The notion of organization as a form of information is based on the notion that the systems we have reviewed consist of components that are organized by some organizing principle. For living systems the components are the biomolecules of which living organisms are composed and the constraints or instructional information that allows the conversion of free energy into work is the organizing principle of these biomolecules, which is propagated as the organism replicates.
 
-Wiener like Shannon related information to entropy but, unlike Shannon, Wiener [3] saw a
+This model holds for languages where grammar is the organizing principle and the components are the individual words or semantics. Replication takes place as children learn the language of their parents or care givers.
 
-connection between organization and information, "The notion of the amount of information attaches
+The model also holds for social systems where the culture as patterns for behavior is the organizing principle and the components are the behaviors and judgments of the individual's of the society. Replication occurs as young people learn the intricacies of their culture from a variety of sources including parents, teachers and peers.
 
-itself very naturally to a classical notion in statistical mechanics: that of entropy. Just as the amount of
+For technology the technosphere is the organization and the components are the individual inventions or artifacts. Replication takes place each time an inventor or innovator makes use of components of the technosphere to create a new artifact or invention.
 
-information in a system is a measure of its degree of organization, so the entropy of a system is a
+The model holds for economic-governance systems where the economic model is the organization and the components are the individual business transactions. Examples of different economic models based on the work of Johnson and Earle [27] are:
 
-measure of its degree of disorganization".
+- Individual families as basic economic unit;
 
-Information 2012, 3 87
+- The big man tribal economic unit where the big man is the coordinator of economic activity and serves at the pleasure of the people;
 
-We make a similar claim in POE [1] when we assert that the constraints that allow the propagation
+- The chief dominated tribal economic unit where the chief controls all the means of economic activity but answers to a tribal council;
 
-of organization in a living organism represents the information content of that organism. In other
+- The state or manor economy where the monarch or the lord of the manor is the absolute ruler; as was case with Medieval manor system, Czarist Russia and France before the revolution;
 
-words the propagating organization of a living organism is its information content. Our position in a
+- The market driven system which is democratic as in a republic like the USA or constitutional monarchy like the UK;
 
-certain sense recapitulates similar sentiments expressed by Norbert Wiener [3] when he wrote "We are
+- The socialist state where private enterprise is controlled; and
 
-not stuff that abides but patterns that perpetuate themselves".
-
-However where I differ from Weiner is that while we are patterns that abide I also believe that we
-
-are patterns that are uniquely instantiated in flesh. I therefore believe that human intelligence cannot be
-
-transferred from a human brain onto a silicon-based computer as is claimed by some advocates of
-
-strong AI. The point that I would make is that the pattern cannot be separated from the medium in
-
-which it is instantiated as was argued above. The medium of flesh and its organization are what is
-
-critical. It is the pattern instantiated in the flesh and not just the pattern by itself that makes life. The
-
-information in a biological system is not symbolic but rather chemical. As we have already asserted
-
-the medium of the flesh is both the message and the content of a biotic system.
-
-14. Who Are We? What Are We, Information or Flesh?
-
-Information in the form of words or language is symbolic. The word cat is a symbol that represents
-
-a class of living breathing creatures made of flesh. An actual cat is not a symbol of something else but
-
-an organization of organic chemicals that can propagate its organization through its metabolism and its
-
-ability to replicate.
-
-The organic chemicals of which we are composed are continually replaced so that after seven years
-
-there is a completely new set of molecules. So we are not flesh or a particular set of molecules but the
-
-organization of the molecules of which we are composed or more accurately we are a process and not a
-
-thing that can be duplicated.
-
-One cannot make a replica of a person. Even twins that originated from the same fertilized egg are
-
-never exactly the same. But a text can be replicated or duplicated exactly. A text can also be
-
-transmitted and reformatted from one medium to another, for example from a computer file to a text
-
-printed on paper or from a live performance to a podcast.
-
-I believe that the proponents of strong artificial intelligence (AI) and strong artificial life (AL) make
-
-the mistake of considering intelligence or life as merely reified information. They do not take into
-
-account that it is the interaction or organization of flesh-based matter that makes intelligence and life.
-
-The pattern of that interaction or organization that we identify as information cannot be abstracted
-
-away from the physical medium in which it is instantiated and remain unchanged or, even more
-
-importantly, continue as the process that gave rise to that intelligence or life in the first place.
-
-A feature of both intelligence and life is that it is autonomous. A living organism is an autonomous
-
-agent that has the capacity to exploit free energy from its environment and use that energy in the form
-
-of work to carry out its metabolism, to replicate and to make use of its intelligence. The proponents of
-
-strong AI and AL overlook this important factor when they claim that intelligence and life is nothing
-
-more than information or a pattern that is independent of its physical instantiation. At best artificial life
-
-forms may be regarded as obligate symbionts with humans but not as independent living organisms as
-
-they are not autonomous.
-
-Information 2012, 3 88
-
-15. Human Language, Culture, Technology, Science, Economics and Governance as Forms of Propagating Organization
-
-"I take informatics to mean the technologies of information as well as the biological, social,
-
-linguistic and cultural changes that initiate, accompany, and complicate their development [6]".
-
-Katherine Hayles' quote indicates that there is a link between biological, cultural and linguistic
-
-information. It was also noted in POE that language and culture like living organisms also propagate
-
-their organization and hence their information. This also includes science, technology, economics and
-
-governance which are part of culture and will be treated separately because they provide vivid
-
-examples of propagating organization. The information that language and culture represent like biotic
-
-information is not Shannon or selective information but rather information with meaning, namely
-
-MacKay structural information.
-
-Cultural and linguistic information is not fixed but depends on the context–as conditions change so
-
-do languages and cultures. This statement applies to the various sub-division of culture that we have
-
-explicitly identified, namely, science, technology, economics and governance. These forms of
-
-information do not represent Shannon selective information but rather MacKay structural information
-
-because of their dependence on context. Each one is more than a string of alphanumeric symbols or a
-
-string of 0 s and 1 s.
-
-Let me provide an example of how linguistic meaning depends on context based on my experience
-
-of being the father of four children who in turn have provided me so far with four grandchildren. The
-
-meaning of the term Dad has changed for me over my lifetime. Dad used to be my father and then
-
-when I had children it meant me and then when my children had children and I became grandpa and
-
-Dad became the father of my grandchildren.
-
-The point is that the meaning of words are context dependent. This is why I [21] identified words as
-
-strange attractors. They are strange attractors because the meaning of a word is never exactly the same
-
-as its meaning changes ever so slightly each time it is used because the context in which it is used is
-
-never the same. To illustrate the idea let us consider the word water which represents the water we
-
-drink, wash with, cook with, swim in, and that falls as rain, melts from snow, constitutes rivers, lakes,
-
-ponds and oceans, etc. The meaning of water in each of these contexts is slightly different but there is
-
-a common thread and hence the claim that the word "water" acts as a strange attractor for a diverse set
-
-of contexts involving water.
-
-A language is an organization of a set of symbols whose semantics and syntax is a form of
-
-information. A similar claim can be made for a culture which Geertz [26] defined as "an historically
-
-transmitted pattern of meanings embodied in symbols, a system of inherited conceptions expressed in
-
-symbolic forms by means of which men communicate, perpetuate and develop their knowledge about
-
-and attitudes towards life." He goes on to add, that "culture is patterns for behavior not patterns
-
-of behavior".
-
-Information as a form of organization for either language or culture, although it is symbolic like
-
-Shannon information, still cannot be associated with Shannon information because linguistic and
-
-cultural information is context dependent and meaningful. It is also the case that language and culture
-
-are like living organisms in that they evolve in ways that cannot be predicted. We may therefore use
-
-the same core argument we did in POE to rule out the description of language and culture and their
-
-Information 2012, 3 89
-
-evolution with Shannon information. "The ensemble of possibilities and their entropy [for language
-
-and/or culture] cannot be calculated [1]". Therefore a definition of information as reducing uncertainty
-
-does not make sense since no matter how much one learns from the information in a linguistic or
-
-cultural system, as was the case with a biotic system, the uncertainty remains infinite because the
-
-number of possibilities of what can evolve is infinitely non-denumerable. Because science, technology,
-
-economics and governance are part of culture and it is also true that their evolution cannot be predicted;
-
-the argument we just made for language and culture applies to these subsets of culture as well.
-
-At this point it is perhaps useful to define two forms of information micro-information consisting of
-
-isolated bits of information, the kind that are transmitted as Shannon information and are also
-
-components of a larger information system or organization and macro-information or the organization
-
-of a system like a living organism, a language, or a culture. Other forms of macro-information include
-
-the specific elements of a culture such as a business, an economic system, a polity, science and the
-
-technosphere. Narrative is the organization of a text or an utterance and therefore may be regarded also
-
-as a form of macro-information. Micro information is the string of characters and symbols that make
-
-up the narrative of a book, an article or a story.
-
-There is still another property that the organizational information of language and culture share with
-
-living organisms that distinguishes them from Shannon information. This is the fact that language and
-
-culture, like life, are self-organizing phenomena and hence as is the case for biotic information and not
-
-the case for Shannon information we have a primitive model for the emergence of this information.
-
-Although we do not have a precise theory for how language and culture and the information and
-
-organization associated with them emerged we do have a number of proposals and models for how this
-
-might have happened through self-organization. Logan [21] contains a review of these models.
-
-The notion of organization as a form of information is based on the notion that the systems we have
-
-reviewed consist of components that are organized by some organizing principle. For living systems
-
-the components are the biomolecules of which living organisms are composed and the constraints or
-
-instructional information that allows the conversion of free energy into work is the organizing
-
-principle of these biomolecules, which is propagated as the organism replicates.
-
-This model holds for languages where grammar is the organizing principle and the components are
-
-the individual words or semantics. Replication takes place as children learn the language of their
-
-parents or care givers.
-
-The model also holds for social systems where the culture as patterns for behavior is the organizing
-
-principle and the components are the behaviors and judgments of the individual's of the society.
-
-Replication occurs as young people learn the intricacies of their culture from a variety of sources
-
-including parents, teachers and peers.
-
-For technology the technosphere is the organization and the components are the individual
-
-inventions or artifacts. Replication takes place each time an inventor or innovator makes use of
-
-components of the technosphere to create a new artifact or invention.
-
-The model holds for economic-governance systems where the economic model is the organization
-
-and the components are the individual business transactions. Examples of different economic models
-
-based on the work of Johnson and Earle [27] are:
-
-• Individual families as basic economic unit;
-
-Information 2012, 3 90
-
-• The big man tribal economic unit where the big man is the coordinator of economic activity and
-
-serves at the pleasure of the people;
-
-• The chief dominated tribal economic unit where the chief controls all the means of economic
-
-activity but answers to a tribal council;
-
-• The state or manor economy where the monarch or the lord of the manor is the absolute ruler; as
-
-was case with Medieval manor system, Czarist Russia and France before the revolution;
-
-• The market driven system which is democratic as in a republic like the USA or constitutional
-
-monarchy like the UK;
-
-• The socialist state where private enterprise is controlled; and
-
-• The communist state, which is state capitalism as was case with Soviet Union and Maoist China.
+- The communist state, which is state capitalism as was case with Soviet Union and Maoist China.
 
 China is now evolving into a mixed communist-socialist state.
 
 The replication of economic-governance systems is through cultural and legal systems.
 
-The model holds for science where the scientific method is the organizing principle and the
-
-components are the individual scientific theories. Replication occurs through the publication of
-
-scientific results and the education of new scientists.
+The model holds for science where the scientific method is the organizing principle and the components are the individual scientific theories. Replication occurs through the publication of scientific results and the education of new scientists.
 
 16. Conclusions
 
