@@ -1,5 +1,7 @@
 ## 2024009What-Is-Information
 
+[Information | Free Full-Text | What Is Information?: Why Is It Relativistic and What Is Its Relationship to Materiality, Meaning and Organization](https://www.mdpi.com/2078-2489/3/1/68)
+
 Information 2012, 3, 68-91; doi:10.3390/info3010068
 
 What Is Information?: Why Is It Relativistic and What Is Its Relationship to Materiality, Meaning and Organization
@@ -104,7 +106,36 @@ The literature on information theory is vast and it would be impossible to surve
 
 信息论的文献非常广泛，不可能对所有文献进行全面调查。有两本在本文研究完成后出版的书籍值得一提：一本是 Mark Burgin 于 2010 年出版的《信息论：基础性、多样性和统一性》，该书对信息论进行了百科全书式的概述。另一本特别值得一提的是 T. D. Schneider 的《分子信息论简要回顾》，因为它使用 Shannon 信息论来研究遗传系统，并精确地表征核酸结合位点的序列保守性。这似乎与我们所说的生物信息不同于 Shannon 信息的观点相矛盾，但读者会发现我们讨论的是不同形式的信息。读者还可以参考这本书，它描述了能量和信息之间的关系。
 
-2『原来自己在 2020 年已经下载了 Mark Burgin 的书籍「2020051Theory-of-Information」。而且也下载了他的另一本书「2020052Theory-of-Knowledge」，接下载了一本他和其他人合著的也是有关信息的书籍「2024040Information-and-Computation」。』
+2『
+
+2024-05-19
+
+原来自己在 2020 年已经下载了 Mark Burgin 的书籍「2020051Theory-of-Information」。而且也下载了他的另一本书「2020052Theory-of-Knowledge」，接下载了一本他和其他人合著的也是有关信息的书籍「2024040Information-and-Computation」。
+
+然后发现 2020051Theory-of-Information 和 2020052Theory-of-Knowledge 都是 "World Scientific Series in Information Studies" 系列著作，问了下 GPT-4o。
+
+The "World Scientific Series in Information Studies" includes several notable works focusing on various aspects of information theory and its applications. Some of the key titles in the series are:
+
+1. **"Theory of Information: Fundamentality, Diversity and Unification"** by Mark Burgin (2010)
+   This book introduces a new approach called the General Theory of Information, providing a comprehensive understanding of information phenomena in nature, technology, and society. It covers topics like information ontology, axioms of information measurement, and algorithmic information theory【8†source】.
+
+2. **"Emergent Information: A Unified Theory of Information Framework"** by Wolfgang Hofkirchner (2013)
+   This book discusses the reconciliation of information with matter and energy, presenting a unified theory to understand the role of information in the physical and social world【7†source】.
+
+3. **"Ontological Information: Information in the Physical World"** by Roman Krzanowski (2022)
+   This volume explores the ontological aspects of information and its implications in the physical world, emphasizing the philosophical and theoretical foundations of information theory【7†source】.
+
+4. **"Trilogy of Numbers and Arithmetic - Book 1: History of Numbers and Arithmetic: An Information Perspective"** by Mark Burgin (2022)
+   This book examines the history and development of numbers and arithmetic from an informational perspective, integrating historical insights with modern information theory【7†source】.
+
+5. **"Theoretical Information Studies: Information in the World"** edited by Mark Burgin and Gordana Dodig-Crnkovic (2015)
+   This work collects contributions from various scholars to discuss the theoretical foundations and practical implications of information in different contexts, including natural, social, and technical systems【8†source】.
+
+These titles represent a broad and interdisciplinary approach to understanding information theory and its applications across different fields.
+
+接着下载了原文书籍「2024044Emergent-Information」「2024045Trilogy-of-Numbers-and-Arithmetic」。
+
+』
 
 ### 02. Origins of the Concept of Information
 
@@ -178,7 +209,7 @@ Messages are themselves a form of pattern and organization. Indeed, it is possib
 
 Brillouin [14] also argued that a living system exports entropy in order to maintain its own entropy at a low level. Brillouin used the term negentropy to describe information rather than negative entropy.
 
-The reason that Wiener and Brillouin consider entropy and information as opposites or regard information as negative entropy follows from the tendency in nature for systems to move into states of greater disorder, i.e., states of increased entropy and hence states for, which we have less information. Consider a system, which is in a state for which there is a certain finite number of possible configurations or microstates all of which are equivalent to the same macro state. The tendency of nature according to the second law of thermodynamics is for the number of microstates that are equivalent to the macrostate of the system to increase. Because there are more possible microstates as time increases and we do not know which particular microstate the system is in, we know less about the system as the number of possible microstates increases. It therefore follows that as the entropy increases the amount of information we have about the system decreases and hence entropy is negative information or vice￾versa information is the negative of entropy. In other words the second law of thermodynamics tell us that when system A evolves into system B that system B will have more possible redundant or equivalent micro states than system A and hence we know less about system B than system A since the uncertainty as to which state the system is in has increased.
+The reason that Wiener and Brillouin consider entropy and information as opposites or regard information as negative entropy follows from the tendency in nature for systems to move into states of greater disorder, i.e., states of increased entropy and hence states for, which we have less information. Consider a system, which is in a state for which there is a certain finite number of possible configurations or microstates all of which are equivalent to the same macro state. The tendency of nature according to the second law of thermodynamics is for the number of microstates that are equivalent to the macrostate of the system to increase. Because there are more possible microstates as time increases and we do not know which particular microstate the system is in, we know less about the system as the number of possible microstates increases. It therefore follows that as the entropy increases the amount of information we have about the system decreases and hence entropy is negative information or viceversa information is the negative of entropy. In other words the second law of thermodynamics tell us that when system A evolves into system B that system B will have more possible redundant or equivalent micro states than system A and hence we know less about system B than system A since the uncertainty as to which state the system is in has increased.
 
 Wiener and Brillouin relate information to entropy with a negative sign whereas Shannon uses a positive sign. Hayles [6] notes that although this difference is arbitrary it had a significant impact. Observing that Shannon used the positive sign she also noted that "identifying entropy with information can be seen as a crucial crossing point, for this allowed entropy to be reconceptualized as the thermodynamic motor driving systems to self-organization rather than as the heat engines driving the world to universal heat death." For Wiener, on the other hand she wrote, "life is an island of negentropy amid a sea of disorder [6]."
 
@@ -193,10 +224,6 @@ Communication theory is heavily indebted to Wiener for much of its basic philoso
 熵与概率之间的关系是 Boltzman 通过统计力学研究发现的，统计力学是观察热力学的一种方法。他证明了气体的熵与 W 的对数成正比，其中 W 是气体在相同压力、温度和体积条件下的微观状态数。他推导出的公式 S = k lnW，其中 k 是 Boltzman 常数，这启发了 Shannon 将其用于度量信息内容的表达称为「信息熵」，尽管符号不同，且比例常数 Boltzman 常数具有能量除以温度的物理维度。
 
 物理学家对熵和信息的关系进行了研究，这一研究源于对麦克斯韦妖的思考，而这与 Shannon 的观点完全相反。1867 年，麦克斯韦提出了一个思想实验：一个妖怪站在两个充满气体的房间之间的门口，只允许快速移动的分子从一个房间通过到另一个房间，从而在两个房间之间制造温差，并从中提取可用功，这违反了热力学第二定律。1929 年，Leo Szilard 通过分析麦克斯韦妖的问题，表明为了获得所需的信息，妖怪会在其他地方引起熵的增加，从而使得整体熵并没有减少。他提出，妖怪之所以能够暂时减少熵，是因为它掌握了信息，而这些信息的获取是以熵增加为代价的。因此，获取信息导致的熵增加大于信息所代表的熵减少，这样就没有违反热力学第二定律。根据 Szilard 的分析，可以得出结论，熵和信息是相对的。他还指出，妖怪获得的净能量并不是正的，因为获取信息需要消耗能量，而这些信息是妖怪选择快速移动分子和排除缓慢移动分子的依据。由于信息是以熵增加为代价获得的，因此信息具有有效的净负熵。继 Szilard 之后，Gilbert N. Lewis [12] 也看到了信息和熵之间的反向关系。他写道：「熵的增加总是意味着信息的丧失，仅此而已」。
-
-
-
-
 
 Schrödinger [13] 在他著名的《生命是什么？》一书中首次明确提出了负熵的概念：
 
@@ -336,7 +363,7 @@ This argument completely contradicts the notion of information of a system biolo
 
 Stuart Kauffman [15] 将自主智能体（Autonomous Agent）或生物体定义为一种自催化系统，它能够自发地进行至少一个热力学工作循环并传播其组织。尽管近年来系统生物学和生物信息学的研究人员对生物系统中的信息概念给予了极大关注，但生物体中的信息与 Shannon 信息理论中的信息之间的关系仍不清楚。为此，我们团队进行了研究，旨在理解生物系统中的信息的本质和流动。这项研究导致了一篇题为《传播组织：一个探讨》（POE）的文章，由 Kauffman、Logan、Este、Goebel、Hobill 和 Shmulevich [1] 撰写。在这篇文章中，我们证明了 Shannon 信息理论无法描述生物系统中的信息。我们还指出，信息并不是一个独立于其参考框架的恒定值。
 
-在 POE 中，我们指出 Shannon [2] 经典的信息定义，即信息是减少不确定性的度量，对于传播其组织的生物系统并不适用。POE 的核心论点是 Shannon 信息 "不适用于生物圈的进化"，因为达尔文的预适应是无法预测的，因此 "无法计算可能性的集合及其熵 [1]。" 所以，将信息定义为减少不确定性并没有意义，因为无论一个人从生物系统中的信息中学到多少，不确定性仍然是无限的，因为进化的可能性是无限且不可数的。需要提醒读者的是，Shannon 在定义信息时，假设可能的消息数量是有限的。
+在 POE 中，我们指出 Shannon [2] 经典的信息定义，即信息是减少不确定性的度量，对于传播其组织的生物系统并不适用。POE 的核心论点是 Shannon 信息「不适用于生物圈的进化」，因为达尔文的预适应是无法预测的，因此「无法计算可能性的集合及其熵 [1]。」所以，将信息定义为减少不确定性并没有意义，因为无论一个人从生物系统中的信息中学到多少，不确定性仍然是无限的，因为进化的可能性是无限且不可数的。需要提醒读者的是，Shannon 在定义信息时，假设可能的消息数量是有限的。
 
 相对于 Shannon 信息，我们定义了一种新的信息形式，称为指导信息或生命信息。这种信息形式不是通过 Shannon 的方法来定义，而是通过约束或边界条件来定义。信息量将与约束的多样性及其部分引发的过程多样性相关。通过这种方式，我们将信息的概念嵌入到生物圈的持续过程之中，因为这些过程对生物圈的发展具有因果关系。
 
@@ -440,9 +467,9 @@ I would interpret the signals transmitted between Shannon's sender and receiver 
 
 我们丢失在知识中的智慧何在？
 
-我们丢失在信息中的知识何在？——TS Eliot
+我们丢失在信息中的知识何在？—— TS Eliot
 
-我们丢失在信息中的意义何在？——RKL
+我们丢失在信息中的意义何在？—— RKL
 
 为了说明信息并不是一个固定不变的量，而是一个依赖于其所处环境的量，我们将借助 Katherine Hayles 的研究和见解来探讨信息与物质性和意义的关系 [6]。她指出，虽然我们用信息来描述物质事物，并且信息也体现于物质事物中，但信息本身并不是物质。「香农的理论将信息定义为一个没有维度、没有物质性、且不必然与意义相关的概率函数。信息是一种模式，而不是一种存在 [6]」。
 
@@ -485,7 +512,7 @@ Shannon information whether on paper, a computer, a DVD or a telecommunication d
 
 相比于香农信息不一定包含意义，生物或指令性信息总是包含意义，这两者之间还有一个本质的区别。香农信息的定义不依赖于其载体，而生物信息则与其在核酸和蛋白质中的物质载体密切相关。香农和控制论信息可以独立于其载体，这使得强人工智能（Strong AI）的概念得以提出。像 Moravic、Minsky 和 Wiener 等学者声称，人类智能和思维可以转移到基于硅的计算机上，而不需要依赖于人类大脑的「湿计算机」。香农和控制论信息可以从一个物质环境转移到另一个，从一台计算机转移到另一台，或者在香农信息的情况下，从一部电话转移到另一部电话，甚至从计算机转移到纸上的硬拷贝。然而，在生物圈中的生物体中，信息是储存在 DNA、RNA 和蛋白质中的，这种转移是不可行的。
 
-香农信息无论是在纸上、计算机上、DVD 上还是在电信设备上，都因为它是符号性的，可以在不同媒介或技术之间转换而不发生实质性变化，撇开 McLuhan 的「媒介即信息」(The medium is the message）[24] 不谈。这在生物体中则不成立。相同的基因型在不同的物理和化学环境中可以产生非常不同的表型。比如说，虽然双胞胎有相同的基因，但他们并不完全「相同」。这是因为生物分子之间的生化相互作用在不同的环境中会产生不同的结果。
+香农信息无论是在纸上、计算机上、DVD 上还是在电信设备上，都因为它是符号性的，可以在不同媒介或技术之间转换而不发生实质性变化，撇开 McLuhan 的「媒介即信息」（The medium is the message）[24] 不谈。这在生物体中则不成立。相同的基因型在不同的物理和化学环境中可以产生非常不同的表型。比如说，虽然双胞胎有相同的基因，但他们并不完全「相同」。这是因为生物分子之间的生化相互作用在不同的环境中会产生不同的结果。
 
 ### 12. The Materiality of Information in Biotic Systems
 
@@ -515,7 +542,7 @@ To conclude we have argued that information is not an invariant independent of t
 
 信息就是信息，不是物质或能量。任何不承认这一点的唯物主义在当今都无法存活。
 
-– Norbert Wiener [2]
+—— Norbert Wiener [2]
 
 香农的理论将信息定义为一种概率函数，它没有维度、没有物质性，也不一定与意义相关。信息是一种模式，而不是一种存在 [6]。
 
@@ -567,7 +594,7 @@ However where I differ from Weiner is that while we are patterns that abide I al
 
 Wiener 像香农一样，将信息与熵联系起来，但与香农不同的是，Wiener [3] 看到了组织与信息之间的联系，「信息量的概念非常自然地与统计力学中的经典概念 —— 熵相联系。正如系统中的信息量是其组织程度的衡量标准，系统的熵是其无序程度的衡量标准」。
 
-我们在 POE [1] 中也提出了类似的观点，认为生物体中组织传播的约束条件代表了该生物体的信息内容。换句话说，一个生物体的组织传播过程，就是它的信息内容。从某种角度来看，我们的立场与 Norbert Wiener [3] 的观点相似，他说过 "我们不是永恒存在的物质，而是自我延续的模式"。
+我们在 POE [1] 中也提出了类似的观点，认为生物体中组织传播的约束条件代表了该生物体的信息内容。换句话说，一个生物体的组织传播过程，就是它的信息内容。从某种角度来看，我们的立场与 Norbert Wiener [3] 的观点相似，他说过「我们不是永恒存在的物质，而是自我延续的模式」。
 
 然而，我与 Wiener 的不同之处在于，虽然我们确实是持续存在的模式，但我认为我们是以肉体为载体的独特模式。因此，我认为人类智能不能像某些强 AI 的支持者所说的那样，从人类大脑转移到基于硅的计算机上。我的观点是，模式无法脱离其载体存在，正如前文所述，肉体及其组织方式才是关键。正是肉体中的模式，而不仅仅是模式本身，使得生命存在。生物系统中的信息不是符号化的，而是化学性的。正如我们已经说过的那样，肉体既是信息的载体，也是生物系统的内容。
 
@@ -647,7 +674,7 @@ The model holds for science where the scientific method is the organizing princi
 
 15 人类语言、文化、技术、科学、经济和治理作为传播组织形式
 
-「我认为信息学指的是信息技术，以及引发、伴随和复杂化其发展的生物、社会、语言和文化变化 [6]」。
+我认为信息学指的是信息技术，以及引发、伴随和复杂化其发展的生物、社会、语言和文化变化 [6]。
 
 Katherine Hayles 的观点表明，生物、文化和语言信息之间有着密切的联系。在 POE 中也提到，语言和文化像生物一样，也在传播它们的组织和信息。这其中包括科学、技术、经济和治理，这些都是文化的一部分，因其生动的传播方式我们将单独讨论。语言和文化所代表的信息，类似于生物信息，不是 Shannon 的选择性信息，而是有意义的 MacKay 结构信息。
 
@@ -659,7 +686,7 @@ Katherine Hayles 的观点表明，生物、文化和语言信息之间有着密
 
 语言是一组符号的组织，其语义和语法构成了一种信息。类似的说法也适用于文化。Geertz [26] 将文化定义为「一种历史传承的意义模式，体现在符号中，是通过这些符号形式表达的继承观念系统。通过这些符号，人们交流、延续和发展他们对生活的知识和态度。」他还补充道，「文化是行为的模式，而不是具体的行为」。
 
-信息作为语言或文化的一种组织形式，虽然像香农信息一样是符号化的，但不能与香农信息等同，因为语言和文化信息依赖于上下文并且富有意义。语言和文化也像生物体一样，以不可预测的方式进化。因此，我们可以使用在 POE 中的核心论点，排除用香农信息来描述语言和文化及其演变。「语言和 / 或文化的可能性及其熵无法计算 [1]」。因此，将信息定义为减少不确定性是没有意义的，因为无论在语言或文化系统中学到多少知识，像生物系统一样，不确定性仍然是无限的，因为进化的可能性是无限不可数的。由于科学、技术、经济和治理都是文化的一部分，并且它们的演变也无法预测；我们刚刚为语言和文化所做的论点也适用于这些文化的子集。
+信息作为语言或文化的一种组织形式，虽然像香农信息一样是符号化的，但不能与香农信息等同，因为语言和文化信息依赖于上下文并且富有意义。语言和文化也像生物体一样，以不可预测的方式进化。因此，我们可以使用在 POE 中的核心论点，排除用香农信息来描述语言和文化及其演变。「语言和/或文化的可能性及其熵无法计算 [1]」。因此，将信息定义为减少不确定性是没有意义的，因为无论在语言或文化系统中学到多少知识，像生物系统一样，不确定性仍然是无限的，因为进化的可能性是无限不可数的。由于科学、技术、经济和治理都是文化的一部分，并且它们的演变也无法预测；我们刚刚为语言和文化所做的论点也适用于这些文化的子集。
 
 在这里，我们有必要定义两种形式的信息：微观信息，由孤立的信息位组成，这种信息作为香农信息被传递，并且也是更大信息系统或组织的一部分；宏观信息，指的是像生物体、语言或文化这样的系统的组织。其他形式的宏观信息包括文化的特定元素，如商业、经济系统、政体、科学和技术圈。叙事是文本或话语的组织，因此也可以视为一种宏观信息。而微观信息则是构成一本书、一篇文章或一个故事的字符和符号串。
 
@@ -689,7 +716,7 @@ Katherine Hayles 的观点表明，生物、文化和语言信息之间有着密
 
 - 共产主义国家，即国家资本主义，如苏联和毛主义中国。
 
-目前中国正逐渐演变为一个混合的共产主义 - 社会主义国家。
+目前中国正逐渐演变为一个混合的共产主义-社会主义国家。
 
 经济治理系统的复制主要通过文化和法律系统实现。
 
