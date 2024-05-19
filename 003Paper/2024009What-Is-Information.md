@@ -583,7 +583,17 @@ I believe that the proponents of strong artificial intelligence (AI) and strong 
 
 A feature of both intelligence and life is that it is autonomous. A living organism is an autonomous agent that has the capacity to exploit free energy from its environment and use that energy in the form of work to carry out its metabolism, to replicate and to make use of its intelligence. The proponents of strong AI and AL overlook this important factor when they claim that intelligence and life is nothing more than information or a pattern that is independent of its physical instantiation. At best artificial life forms may be regarded as obligate symbionts with humans but not as independent living organisms as they are not autonomous.
 
+14 我们是谁？我们是信息还是肉体？
 
+文字或语言形式的信息是符号化的。比如，「猫」这个词是一个符号，代表了一类由肉体组成的活生生的生物。而实际的猫并不是其他事物的符号，而是由有机化学物质组成的实体，这些物质通过代谢和复制能力传播其组织。
+
+构成我们的有机化学物质不断被替换，所以在七年后，我们体内的分子已经完全更新。因此，我们不是某一特定的一组分子，而是这些分子的组织，更准确地说，我们是一个过程，而不是可以复制的东西。
+
+人类是不可能被复制的。即使是来自同一个受精卵的双胞胎也不是完全相同的。但文本可以被精确地复制和重复。文本还可以从一种媒介传输并重新格式化到另一种媒介，例如从计算机文件到打印在纸上的文本或从现场表演到播客。
+
+我认为强人工智能（AI）和强人工生命（AL）的支持者犯了一个错误，他们把智能或生命仅仅看作物化的信息。他们没有考虑到，是基于肉体物质的互动或组织使得智能和生命成为可能。我们识别为信息的互动或组织的模式不能脱离其具体的物理媒介而保持不变，更重要的是，不能继续作为最初产生该智能或生命的过程。
+
+智能和生命的一个特征是自主性。一个有机体是一个自主的智能体（agent)，它能从环境中获取自由能，并利用这种能量进行新陈代谢、复制和运用其智能。强 AI 和 AL 的支持者忽略了这一重要因素，当他们声称智能和生命仅仅是信息或与其物理实现无关的模式时。人工生命形式最多只能被视为与人类共生的存在，而不能被视为独立的有机体，因为它们缺乏自主性。
 
 ### 15. Human Language, Culture, Technology, Science, Economics and Governance as Forms of Propagating Organization
 
@@ -635,13 +645,71 @@ The replication of economic-governance systems is through cultural and legal sys
 
 The model holds for science where the scientific method is the organizing principle and the components are the individual scientific theories. Replication occurs through the publication of scientific results and the education of new scientists.
 
-16. Conclusions
+15 人类语言、文化、技术、科学、经济和治理作为传播组织形式
+
+「我认为信息学指的是信息技术，以及引发、伴随和复杂化其发展的生物、社会、语言和文化变化 [6]」。
+
+Katherine Hayles 的观点表明，生物、文化和语言信息之间有着密切的联系。在 POE 中也提到，语言和文化像生物一样，也在传播它们的组织和信息。这其中包括科学、技术、经济和治理，这些都是文化的一部分，因其生动的传播方式我们将单独讨论。语言和文化所代表的信息，类似于生物信息，不是 Shannon 的选择性信息，而是有意义的 MacKay 结构信息。
+
+文化和语言信息不是固定的，而是依赖于具体的上下文 —— 随着条件的变化，语言和文化也会随之变化。这一论点适用于我们明确识别的文化各个子领域，即科学、技术、经济和治理。这些信息形式不代表 Shannon 选择性信息，而是 MacKay 结构信息，因为它们依赖上下文。每一种信息不仅仅是一串字母或一串 0 和 1。
+
+让我通过一个个人经历的例子来说明语言意义如何依赖于上下文。我是四个孩子的父亲，他们又给我带来了四个孙子孙女。对我来说，「Dad」这个词的意义在我一生中发生了变化。以前，「Dad」指的是我的父亲；当我有了孩子后，它指的是我自己；当我的孩子有了孩子，我成了爷爷，「Dad」又变成了我的孙子孙女的父亲。
+
+单词的意思依赖于上下文。这就是为什么我 [21] 将单词视为奇异吸引子。因为每次使用时，单词的意思都会因上下文不同而略有变化。为了说明这一点，我们可以考虑「水」这个词，它可以指我们喝的水、洗的水、做饭用的水、游泳的水、雨水、雪融化的水，或者构成河流、湖泊、池塘和海洋的水等等。在每种情况下，「水」的意思略有不同，但它们都有一个共同的主题，因此可以说「水」这个词在各种涉及水的上下文中起到了奇异吸引子的作用。
+
+语言是一组符号的组织，其语义和语法构成了一种信息。类似的说法也适用于文化。Geertz [26] 将文化定义为「一种历史传承的意义模式，体现在符号中，是通过这些符号形式表达的继承观念系统。通过这些符号，人们交流、延续和发展他们对生活的知识和态度。」他还补充道，「文化是行为的模式，而不是具体的行为」。
+
+信息作为语言或文化的一种组织形式，虽然像香农信息一样是符号化的，但不能与香农信息等同，因为语言和文化信息依赖于上下文并且富有意义。语言和文化也像生物体一样，以不可预测的方式进化。因此，我们可以使用在 POE 中的核心论点，排除用香农信息来描述语言和文化及其演变。「语言和 / 或文化的可能性及其熵无法计算 [1]」。因此，将信息定义为减少不确定性是没有意义的，因为无论在语言或文化系统中学到多少知识，像生物系统一样，不确定性仍然是无限的，因为进化的可能性是无限不可数的。由于科学、技术、经济和治理都是文化的一部分，并且它们的演变也无法预测；我们刚刚为语言和文化所做的论点也适用于这些文化的子集。
+
+在这里，我们有必要定义两种形式的信息：微观信息，由孤立的信息位组成，这种信息作为香农信息被传递，并且也是更大信息系统或组织的一部分；宏观信息，指的是像生物体、语言或文化这样的系统的组织。其他形式的宏观信息包括文化的特定元素，如商业、经济系统、政体、科学和技术圈。叙事是文本或话语的组织，因此也可以视为一种宏观信息。而微观信息则是构成一本书、一篇文章或一个故事的字符和符号串。
+
+语言和文化的组织信息和生物体有一个共同的特性，这使它们区别于 Shannon 信息。这是因为语言和文化，像生命一样，是自组织现象。因此，与生物信息类似，我们有一个关于这些信息如何出现的基本模型，这在 Shannon 信息中并不存在。尽管我们没有关于语言和文化及其相关信息和组织如何出现的精确理论，但我们确实有一些关于它们如何通过自组织出现的建议和模型。Logan [21] 对这些模型进行了回顾。
+
+组织作为信息的一种形式的概念是基于这样一种观点：我们所回顾的系统由一些组成部分组成，这些组成部分由某种组织原则进行组织。对于生物系统，这些组成部分是构成生物体的生物分子，而允许将自由能转换为工作的约束或指令信息是这些生物分子的组织原则，这在生物体复制时得以传播。
+
+这个模型也适用于语言，其中语法是组织原则，组成部分是单个单词或语义。复制发生在孩子们学习父母或照顾者的语言时。
+
+该模型同样适用于社会系统，其中文化作为行为模式是组织原则，组成部分是社会个体的行为和判断。复制发生在年轻人从包括父母、教师和同龄人在内的各种来源学习他们文化的细节时。
+
+对于技术来说，技术圈是组织，组成部分是个别发明或人工制品。每次发明家或创新者利用技术圈的组成部分创造新的人造物或发明时都会发生复制。
+
+该模型适用于经济治理系统，其中经济模型指的是组织，组成部分则是个别的商业交易。基于 Johnson 和 Earle [27] 的研究，不同的经济模型包括：
+
+- 以家庭为基本经济单位；
+
+- 大人物部落的经济单位，大人物负责协调经济活动，为人民服务；
+
+- 首领主导的部落经济单位，首领控制所有经济资源，但需向部落委员会负责；
+
+- 君主或庄园主绝对统治的国家或庄园经济体制，如中世纪的庄园制度、沙俄和法国大革命前；
+
+- 市场驱动的系统，如美国的共和制或英国的君主立宪制，体现了民主；
+
+- 社会主义国家，私人企业受到控制；
+
+- 共产主义国家，即国家资本主义，如苏联和毛主义中国。
+
+目前中国正逐渐演变为一个混合的共产主义 - 社会主义国家。
+
+经济治理系统的复制主要通过文化和法律系统实现。
+
+该模型也适用于科学，其中科学方法是其组织原则，而各个科学理论则是其组成部分。复制通过发表科学成果和培养新科学家来实现。
+
+### 16. Conclusions
 
 We have demonstrated the relativity of information by showing that information is not a unitary concept independent of the phenomena it is describing or the frame of reference with respect to which it is defined. In particular we have shown that Shannon information cannot properly describe living organisms, language, culture and the various components of culture such as technology, science, economics and governance. We have examined the relationship of information to materiality, meaning and organization and showed that Shannon information is independent of meaning, organization and its material instantiation, which is just the opposite for biotic information, and the information associated with language and culture. We have also shown that that there exists an intimate relationship between information and organization for biotic systems and the elements of human culture including language, technology, science, economics and governance.
+
+16 结论
+
+我们已经展示了信息的相对性，证明了信息并不是一个独立存在的单一概念，而是依赖于它所描述的现象和定义的参考框架。特别是，我们发现香农信息无法准确描述生物体、语言、文化以及文化的各种组成部分，例如技术、科学、经济和治理。我们研究了信息与物质性、意义和组织的关系，发现香农信息独立于意义、组织及其物质实现，而这与生物信息以及语言和文化相关的信息正好相反。我们还展示了在生物系统和人类文化元素（包括语言、技术、科学、经济和治理）中，信息与组织之间存在着紧密的关系。
 
 Acknowledgement
 
 This paper draws heavily on two sources other than my earlier work, namely the paper Propagating Organization: An Enquiry [1] and the book How We Became Posthuman [6]. In a certain sense this paper is a remix of these two sources with help from the references cited below.
+
+致谢
+
+本文主要参考了两个来源，除了我之前的研究外，还包括论文《传播组织：一个探讨》 [1] 和书籍《我们如何成为后人类》 [6]。从某种意义上说，本文是这两个来源的混合，并得到了以下引用文献的支持。
 
 ### References
 
