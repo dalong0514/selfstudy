@@ -401,6 +401,7 @@ We comment that in standard semiotic analyses with human agents and language, th
 在标准的符号分析中（涉及人类智能体和语言），符号信息包括三个要素：
 
 1. 信息的主体或接收信息的智能体；
+
 2. 信息的对象或信息所「关于」的内容；
 
 3. 可能是任意的符号或标志，指代某个对象。
