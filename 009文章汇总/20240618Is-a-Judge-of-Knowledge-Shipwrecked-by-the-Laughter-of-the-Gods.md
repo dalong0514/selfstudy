@@ -48,7 +48,7 @@ The above description of possible sources of knowledge confirms Einstein's obser
 
 知识的来源
 
-在西方，知识常常被视为理性思考的结果 —— 这个观点已经被哲学家们争论了几个世纪。一些理性主义哲学家，如 Baruch Spinoza（1632-1677）和 Gottfried Leibniz（1646-1716)，认为所有知识都可以从一组合适的公理中推导出来；而经验主义哲学家，如 John Locke（1632-1704）和 David Hume（1711-1776)，则认为知识完全来自于对世界的经验。大多数哲学家介于这两者之间，认为理性和经验都是知识必不可少的。简而言之，西方哲学主要认为知识要么来自理性思考，要么来自经验，或者是两者的结合。
+在西方，知识常常被视为理性思考的结果 —— 这个观点已经被哲学家们争论了几个世纪。一些理性主义哲学家，如 Baruch Spinoza（1632-1677）和 Gottfried Leibniz（1646-1716），认为所有知识都可以从一组合适的公理中推导出来；而经验主义哲学家，如 John Locke（1632-1704）和 David Hume（1711-1776），则认为知识完全来自于对世界的经验。大多数哲学家介于这两者之间，认为理性和经验都是知识必不可少的。简而言之，西方哲学主要认为知识要么来自理性思考，要么来自经验，或者是两者的结合。
 
 然而，知识的来源不仅限于此。穆斯林相信 Muhammad（约 570 - 约 632）通过神的启示获得了《古兰经》。Thomas Aquinas（1226-1274）也认为神的启示是知识的来源，他的理论主要基于《圣经》。在禅宗佛教中，公案（如‘一只手拍掌的声音是什么？'）的主要目的是让人们摆脱理智的束缚，从而体验直观的感悟，并获得一种特殊的知识。印度数学家 Srinivasa Ramanajan（1887-1920）把他的数学成就归功于他的家族女神，而他的同事 G.H. Hardy（1877-1947）则认为这些成就是通过其他手段如直觉获得的。任何怀疑神的启示或直觉能成为知识来源的人，都应该看看 Ramanajan 的工作。
 
@@ -76,9 +76,7 @@ Sherlock Holmes, Hercule Poirot, Jane Marple, and other fictional detectives dec
 
 However, it also needs to be noted that knowledge attained by rational argument is relative to a set of postulates, and so not absolute. Geometry provides a good example of this.
 
-illusion wheels
-
-Can we say we know what our senses tell us?
+Figure: Can we say we know what our senses tell us?
 
 Euclidean geometry is based on five postulates. The Fifth Postulate, called ‘the Parallel Postulate', is that there is exactly one straight line that can be drawn through a point not on a given line which will be parallel to the given line. If the phrase ‘there is exactly one straight line' in the Fifth Postulate is replaced by ‘there exists no straight line', or by ‘there exist at least two straight lines', Euclid's first four postulates together with one of these new postulates describe an equally valid ‘non-Euclidean' geometry. These replacements were done around 1830 by Janos Bolyai（1775-1856）and Nicolai Lobachevsky（1792-1856). Pythagoras's Theorem is valid in Euclidean geometry, but is not valid in the non-Euclidean geometries. Thus, if Pythagoras's Theorem is knowledge, it is knowledge relative to the postulates of Euclidean geometry and not relative to the postulates of non-Euclidean geometries. However, not accepting Pythagoras's Theorem as knowledge would ignore the fundamental fact that the Theorem is utilized in everyday engineering and construction. Few would consider this acceptable. Consequently, ‘Some knowledge comes from rational thought' and ‘Some knowledge is relative' are both plausible attributes of knowledge.
 
@@ -87,6 +85,30 @@ A major problem with a rational argument is the appropriateness of the postulate
 One might try to avoid the problem of appropriate postulates by saying that the conclusion of any rational argument is knowledge relative to the associated postulates. But if we do say this, what do we do with cases in which the postulates are nonsensical, contradictory, or paradoxical? We surely do not want to consider results based on such postulates as knowledge. Thus, we would need an attribute of knowledge that precludes inappropriate postulates. Unfortunately, I have no candidate.
 
 Before we leave this discussion of rational thought, please note that there is no universal agreement as to what ‘rational thought' is. The technique of reductio ad absurdum – a method of indirectly proving a proposition by assuming its negation to be true, and showing that this leads to a contradiction – has been used by philosophers from the fifth century BCE onward, with Heraclitus（c.535-c.475 BCE）and Hegel（1770-1831）being notable exceptions. The discovery of contradictions at the apparent foundations of mathematics around the beginning of the twentieth century, such as Russell's Paradox, led a few philosophers, such as Graham Priest（1948-）to develop logic systems in which some statements can be both true and false. Consequently, what is knowledge in a traditional logical system may not be knowledge relative to one of these other logic systems, and vice versa. Even though these alternative logic systems are not widely accepted, they nevertheless complicate the concept of ‘rational thought'.
+
+理性思维
+
+理性思维曾被用来证明一些令人难以置信（如上帝的存在或不存在）或令人厌恶的概念（如纳粹对优生学的解释）。尽管如此，许多人仍然相信「所有知识都来自理性思维」这样的说法可以通过逻辑手段验证。遗憾的是，1931 年 Kurt Gödel（1906-1978）证明了他的「不完备定理」，该定理指出，在所有非琐碎的逻辑系统中，存在一些既无法证明也无法反驳的陈述。我无法设想任何知识属性会排除不完备定理作为知识的一部分。
+
+虽然不完备定理是通过理性思维证明的，但该定理本身独立于理性思维，就像拱门独立于建造它的支架一样。因此，我们可以说不完备定理是绝对知识。此外，没有任何经验可以得出不完备定理。因此，我认为不完备定理是无法通过经验获得的绝对知识。因此，「知识存在」，「某些知识是绝对的」和「某些知识无法通过经验获得」也是知识的合理属性。
+
+在 Gödel 证明不完备定理之前，人们是否已经知道这一知识？这个问题可以更普遍地表述为：知识是独立存在并被发现的，还是由人类创造的？对此问题我无法给出确切答案，但可以提供部分见解。
+
+质数广泛应用于信息安全领域，例如银行卡交易和电子邮件账户的保护。因此，几乎每个人的生活都受到质数的影响。我认为，将判断一个数是否为质数排除在知识之外是没有道理的。Euclid（公元前 323-283）被认为提出了一个优雅的证明，证明了质数是无限的。假设 N 表示已知的最大质数，截至去年初，这个质数有超过 1740 万位数。根据 Euclid 的证明，N 之后的下一个更大的质数是存在的，只是等待被发现。因此，至少有一些知识是被发现的，而不是被创造的。这也是知识的一个合理属性。
+
+Sherlock Holmes、Hercule Poirot、Jane Marple 以及其他虚构侦探让我们误以为仅凭理性思维就能解决最复杂的谜题。实际上，许多问题可能复杂到无法仅靠理性解决，特别是哲学或宗教问题。例如，自由意志或上帝存在等概念的理性论证数不胜数，因此乍看之下，理性思维并不是可靠的知识来源。但这可能是由于错误应用理性造成的错觉。一个有效的理性论证需要基于一组明确的假设。不幸的是，许多所谓的「理性论证」基于的是不明确甚至未定义的假设。这使得「理性论证」能够同时验证一个概念及其相反的概念，导致论证既是理性的又是非理性的荒谬情况！如果不明确了解其假设基础，一个「理性论证」可能只是借助个人魅力或知识渊博来进行威慑，或者其结论只是一个表面上看似有理的陈述。一个例子是，亚里士多德的影响力使得阿里斯塔克斯在公元前 270 年左右提出的日心说被压制了近一千七百年。政治口号则是另一个例子。
+
+然而，还需要注意的是，通过理性论证获得的知识是相对于一组假设的，因此并不是绝对的。几何学就是一个很好的例子。
+
+我们能说我们知道我们的感官告诉我们什么吗？
+
+欧几里得几何建立在五条公设之上。第五条公设，被称为「平行公设」，内容是：通过不在已知直线上的一点，且只能画出一条与该已知直线平行的直线。如果将第五条公设中的「且只能画出一条直线」替换为「没有直线」或「至少可以画出两条直线」，那么欧几里得的前四条公设与这些新的公设之一共同描述了一种同样有效的「非欧几里得」几何。大约在 1830 年，Janos Bolyai（1775-1856）和 Nicolai Lobachevsky（1792-1856）提出了这些替换方案。毕达哥拉斯定理在欧几里得几何中是成立的，但在非欧几里得几何中不成立。因此，如果毕达哥拉斯定理是知识，它是基于欧几里得几何的公设，而不是基于非欧几里得几何的公设。然而，如果不接受毕达哥拉斯定理作为知识，就会忽视这样一个基本事实：该定理在日常工程和建筑中被广泛应用。很少有人会认为这是可以接受的。因此，「一些知识来自理性思考」和「一些知识是相对的」都是知识的合理属性。
+
+理性论证的一个主要问题在于，其所依赖的假设是否适当。几何学中的假设有时比较容易解决。例如，欧几里得几何适用于日常生活中的计算，而非欧几里得几何则适用于涉及广义相对论的大尺度计算，如宇宙学和天体力学。然而，有时假设的适当性难以确定，比如在关于自由意志的争论中。认为所有事情都由物理定律决定的人认为自由意志不存在；而认为心灵可以独立于物理定律做出选择的人则认为自由意志存在。每种论证在其自身的假设下都是有效的。
+
+有人可能会试图通过说，任何理性论证的结论都是基于其相关假设的知识来回避适当性的问题。但如果假设是无意义的、矛盾的或自相矛盾的，我们该如何处理呢？显然，我们不会将基于这些假设的结果视为知识。因此，我们需要定义知识的一个属性，以排除不适当的假设。不幸的是，我没有找到合适的候选答案。
+
+在结束关于理性思维的讨论之前，值得注意的是，人们对「理性思维」的定义并没有达成一致。归谬法（reductio ad absurdum）是一种通过假设命题的否定成立并证明其自相矛盾来间接证明命题的方法，自公元前五世纪以来一直被哲学家们使用，但赫拉克利特（约公元前 535 - 约公元前 475）和黑格尔（1770-1831）是少数例外。二十世纪初期，数学基础中出现的矛盾，例如罗素悖论，促使一些哲学家，如 Graham Priest（1948-）发展出一些逻辑系统，在这些系统中某些陈述可以既为真又为假。因此，在传统逻辑系统中被视为知识的东西，在这些新逻辑系统中可能不被视为知识，反之亦然。尽管这些替代逻辑系统尚未被广泛接受，但它们确实让「理性思维」的概念变得更加复杂。
 
 ### 03. Experience
 
@@ -98,9 +120,7 @@ First, suppose the statement ‘All knowledge comes solely from experience' is t
 
 Second, since antiquity, rational mathematical arguments have shown that the ratio of a circle's circumference to its diameter（pi）does not depend on the particular circle chosen. Experience obtained by measuring the circumferences and diameters of numerous circles might also lead one to conjecture that the ratio of a circle's circumference to its diameter does not depend on the particular circle chosen. However, it is not possible to establish this solely by experience, due to inesscapable measurement error（no measurement is truly exact), and also to the impossibility of measuring all circles. So if we accept ‘All knowledge comes solely from experience', then an essential fact in mathematics, science and engineering that affects everyday life would not be knowledge. Few would consider this an acceptable conclusion.
 
-Euclid
-
-Euclid taking a measured approach to knowledge
+Fiure: Euclid taking a measured approach to knowledge
 
 Detractors of experience as a source of knowledge cite deficiencies analogous to those I listed for divine revelation as a source of knowledge. For example, we have all been deceived by experiences. Optical illusions, such as water appearing to flow uphill, are common in amusement parks. Magicians and con-men make their livings by creating deceptive experiences. So not all experiences are reliable. This idea is supported in an extreme sense by the Buddhist concept that ‘all is illusion', and by Western writers such as Edgar Allen Poe（1809-1849), who wrote："All that we see or seem is but a dream within a dream."
 
@@ -109,6 +129,26 @@ Another primary difficulty in basing knowledge on experience is that experiences
 The quantum physics example raises a fundamental question：How do we know that future experiences will not negate other current ‘knowledge' attained from experience? Closely related to this question is：How does one know which experiences yield knowledge（if any)?
 
 One might suppose that the answer is ‘experience that is confirmed by another source of knowledge', such as rational thought. Unfortunately, this is not necessarily the case, as the geocentric model for the cosmos illustrates. The geocentric model – with the Earth at the center of the cosmos and all celestial bodies orbiting it – was the dominant cosmological system of many ancient civilizations. This model was supported by experiences including（1）the stars, the sun, and planets appearing to revolve around the Earth; and（2）the Earth not seeming to move for someone on the Earth, and also by rational thought, as well as divine revelation（e.g., Joshua 10:12, where the Sun and Moon are said to stop in the sky, and Psalms 93:1, where the world is described as never moving). Eventually, other experiences and rational arguments, by Nicolaus Copernicus（1473-1543), Tycho Brahe（1546-1601), Galileo Galilei（1564-1642), Johannes Kepler（1571-1630）and others, showed the geocentric model to be untenable for most people. However, this does demonstrate that experience supported by other sources of knowledge does not necessarily yield knowledge. Is there an attribute of knowledge that identifies which experiences do yield knowledge? If so, I do not have even an inkling of what it may be.
+
+经验
+
+另一个对知识合理的解释是「某些知识来自经验」。
+
+以不完备性定理（Incompleteness Theorem）为例，我们已经知道有些知识并非源自经验。因此，认为所有知识都来自经验这一观点似乎是站不住脚的。不过，从另外两个角度探讨「所有知识仅来源于经验」的观点，仍然是很有趣的。
+
+首先，假设「所有知识都仅来自经验」这一说法是正确的，那么这本身就是一种知识。但由于我们无法亲身体验所有可能的知识，经验无法支持这个特定的知识。这种反证法似乎证明了相反的结论，即有些知识并非来自经验。不过，还可以得出另外两种可能的结论：1）「所有知识都仅来自经验」这一说法的有效性是无法确定的；或者：2）虽然这是真的，但它的真实性与标准逻辑思维不一致。（讽刺的是，Locke 和 Hume 等人花费了大量篇幅试图通过理性论证来证明这一命题的有效性。）
+
+其次，自古以来，数学上的理性论证已经表明，圆的周长与直径之比（π）不依赖于具体选择的圆。通过测量许多圆的周长和直径获得的经验也可能使人推测这种比率是恒定的。然而，由于任何测量都不可避免地存在误差（没有测量是完全精确的），并且我们无法测量所有的圆，仅靠经验是无法确定这一点的。因此，如果我们认可「所有知识都仅来自经验」，那么一个影响日常生活的重要数学、科学和工程事实就无法被视为知识。这是大多数人无法接受的结论。
+
+Euclid 采用了一种精确测量的方法来获取知识。
+
+反对经验作为知识来源的人列举了类似于神圣启示作为知识来源的缺陷。例如，在游乐园中很常见的光学错觉，比如水看起来在上坡流动。魔术师和骗子靠制造欺骗性的体验谋生。所以并非所有经验都可靠。这个观点在极端意义上，得到了佛教「万物皆幻」理念和西方作家 Edgar Allen Poe（1809-1849）的支持，他写道：「我们所见或所想的只是梦中之梦。」
+
+另一个基于经验作为知识的主要困难是，经验因人而异，因文化而异，因时间而异。例如，直到 20 世纪初，经验表明某物不能同时处于两种不同状态。量子物理学彻底改变了这一点。2012 年诺贝尔物理学奖授予了 Serge Haroche（1944-）和 David J. Wineland（1944-），他们的工作包括将一个离子同时置于两种不同能量状态的实验。因此，数千年来被认为是知识的东西现在不再被视为知识。
+
+量子物理学的例子提出了一个基本问题：我们如何知道未来的经验不会否定我们当前从经验中获得的「知识」？与这个问题密切相关的是：我们如何知道哪些经验产生知识（如果有的话）？
+
+有人可能会认为，知识的来源是「由其他知识验证的经验」，比如理性思维。然而，事实并非总是如此，地心说模型就是一个例子。地心说模型认为地球是宇宙的中心，所有天体都围绕地球运转，这一观点曾在许多古代文明中占主导地位。这个理论得到了以下几方面的经验支持：1）恒星、太阳和行星看似围绕地球旋转；2）站在地球表面的人感觉不到地球在运动。同时，理性思维和神圣启示（如约书亚记 10:12 中描述的太阳和月亮在天空中停止，诗篇 93:1 中描述的世界恒久不动）也支持这一模型。然而，后来尼古拉·哥白尼（1473-1543)、第谷·布拉赫（1546-1601)、伽利略·伽利莱（1564-1642）和约翰内斯·开普勒（1571-1630）等人的研究和论证表明，地心说模型是站不住脚的。这说明，即使经验得到了其他知识的支持，也不一定能形成真正的知识。那么，有没有一种知识的特性可以帮助我们识别哪些经验能产生知识呢？对此，我毫无头绪。
 
 ### Conclusions
 
@@ -136,70 +176,21 @@ Furthermore, if these latter attributes are found, they would greatly reduce the
 
 Roger McCann was a professor of mathematics for seventeen years, then spent fifteen years at the research lab of the Exxon Mobil Corporation. He is retired in the mountains of western North Carolina.
 
+结论
 
-## 01
+我们探讨了几种可能的知识来源，但没有一种是完全令人满意的。不过，通过理性思维和经验的实例，我们可以总结出几种知识的特性：
 
+1、知识是存在的。
 
+2、有些知识来自理性思维，但不是全部。
 
+3、有些知识来自经验，但不是全部。
 
+4、有些知识是绝对的，而另一些知识是相对的。
 
-理性思维
+5、至少有些知识是被发现的，而不是被创造的。
 
-理性思维曾被用来证明一些令人难以置信（如上帝的存在或不存在）或令人厌恶的概念（如纳粹对优生学的解释）。尽管如此，许多人仍然相信「所有知识都来自理性思维」这样的说法可以通过逻辑手段验证。遗憾的是，1931 年 Kurt Gödel（1906-1978）证明了他的「不完备定理」，该定理指出，在所有非琐碎的逻辑系统中，存在一些既无法证明也无法反驳的陈述。我无法设想任何知识属性会排除不完备定理作为知识的一部分。
-
-虽然不完备定理是通过理性思维证明的，但该定理本身独立于理性思维，就像拱门独立于建造它的支架一样。因此，我们可以说不完备定理是绝对知识。此外，没有任何经验可以得出不完备定理。因此，我认为不完备定理是无法通过经验获得的绝对知识。因此，「知识存在」，「某些知识是绝对的」和「某些知识无法通过经验获得」也是知识的合理属性。
-
-在 Gödel 证明不完备定理之前，人们是否已经知道这一知识？这个问题可以更普遍地表述为：知识是独立存在并被发现的，还是由人类创造的？对此问题我无法给出确切答案，但可以提供部分见解。
-
-质数广泛应用于信息安全领域，例如银行卡交易和电子邮件账户的保护。因此，几乎每个人的生活都受到质数的影响。我认为，将判断一个数是否为质数排除在知识之外是没有道理的。Euclid（公元前 323-283）被认为提出了一个优雅的证明，证明了质数是无限的。假设 N 表示已知的最大质数，截至去年初，这个质数有超过 1740 万位数。根据 Euclid 的证明，N 之后的下一个更大的质数是存在的，只是等待被发现。因此，至少有一些知识是被发现的，而不是被创造的。这也是知识的一个合理属性。
-
-Sherlock Holmes、Hercule Poirot、Jane Marple 以及其他虚构侦探让我们误以为仅凭理性思维就能解决最复杂的谜题。实际上，许多问题可能复杂到无法仅靠理性解决，特别是哲学或宗教问题。例如，自由意志或上帝存在等概念的理性论证数不胜数，因此乍看之下，理性思维并不是可靠的知识来源。但这可能是由于错误应用理性造成的错觉。一个有效的理性论证需要基于一组明确的假设。不幸的是，许多所谓的「理性论证」基于的是不明确甚至未定义的假设。这使得「理性论证」能够同时验证一个概念及其相反的概念，导致论证既是理性的又是非理性的荒谬情况！如果不明确了解其假设基础，一个「理性论证」可能只是借助个人魅力或知识渊博来进行威慑，或者其结论只是一个表面上看似有理的陈述。一个例子是，亚里士多德的影响力使得阿里斯塔克斯在公元前 270 年左右提出的日心说被压制了近一千七百年。政治口号则是另一个例子。
-
-然而，还需要注意的是，通过理性论证获得的知识是相对于一组假设的，因此并不是绝对的。几何学就是一个很好的例子。
-
-错觉轮子我们能说我们知道我们的感官告诉我们什么吗？
-
-欧几里得几何建立在五条公设之上。第五条公设，被称为「平行公设」，内容是：通过不在已知直线上的一点，且只能画出一条与该已知直线平行的直线。如果将第五条公设中的「且只能画出一条直线」替换为「没有直线」或「至少可以画出两条直线」，那么欧几里得的前四条公设与这些新的公设之一共同描述了一种同样有效的「非欧几里得」几何。大约在 1830 年，Janos Bolyai（1775-1856）和 Nicolai Lobachevsky（1792-1856）提出了这些替换方案。毕达哥拉斯定理在欧几里得几何中是成立的，但在非欧几里得几何中不成立。因此，如果毕达哥拉斯定理是知识，它是基于欧几里得几何的公设，而不是基于非欧几里得几何的公设。然而，如果不接受毕达哥拉斯定理作为知识，就会忽视这样一个基本事实：该定理在日常工程和建筑中被广泛应用。很少有人会认为这是可以接受的。因此，「一些知识来自理性思考」和「一些知识是相对的」都是知识的合理属性。
-
-理性论证的一个主要问题在于，其所依赖的假设是否适当。几何学中的假设有时比较容易解决。例如，欧几里得几何适用于日常生活中的计算，而非欧几里得几何则适用于涉及广义相对论的大尺度计算，如宇宙学和天体力学。然而，有时假设的适当性难以确定，比如在关于自由意志的争论中。认为所有事情都由物理定律决定的人认为自由意志不存在；而认为心灵可以独立于物理定律做出选择的人则认为自由意志存在。每种论证在其自身的假设下都是有效的。
-
-有人可能会试图通过说，任何理性论证的结论都是基于其相关假设的知识来回避适当性的问题。但如果假设是无意义的、矛盾的或自相矛盾的，我们该如何处理呢？显然，我们不会将基于这些假设的结果视为知识。因此，我们需要定义知识的一个属性，以排除不适当的假设。不幸的是，我没有找到合适的候选答案。
-
-在结束关于理性思维的讨论之前，值得注意的是，人们对「理性思维」的定义并没有达成一致。归谬法（reductio ad absurdum）是一种通过假设命题的否定成立并证明其自相矛盾来间接证明命题的方法，自公元前五世纪以来一直被哲学家们使用，但赫拉克利特（约公元前 535 - 约公元前 475）和黑格尔（1770-1831）是少数例外。二十世纪初期，数学基础中出现的矛盾，例如罗素悖论，促使一些哲学家，如 Graham Priest（1948-）发展出一些逻辑系统，在这些系统中某些陈述可以既为真又为假。因此，在传统逻辑系统中被视为知识的东西，在这些新逻辑系统中可能不被视为知识，反之亦然。尽管这些替代逻辑系统尚未被广泛接受，但它们确实让「理性思维」的概念变得更加复杂。
-
-经验另一个对知识合理的解释是「某些知识来自经验」。
-
-以不完备性定理（Incompleteness Theorem）为例，我们已经知道有些知识并非源自经验。因此，认为所有知识都来自经验这一观点似乎是站不住脚的。不过，从另外两个角度探讨「所有知识仅来源于经验」的观点，仍然是很有趣的。
-
-首先，假设「所有知识都仅来自经验」这一说法是正确的，那么这本身就是一种知识。但由于我们无法亲身体验所有可能的知识，经验无法支持这个特定的知识。这种反证法似乎证明了相反的结论，即有些知识并非来自经验。不过，还可以得出另外两种可能的结论：(1)「所有知识都仅来自经验」这一说法的有效性是无法确定的；或（2）虽然这是真的，但它的真实性与标准逻辑思维不一致。（讽刺的是，Locke 和 Hume 等人花费了大量篇幅试图通过理性论证来证明这一命题的有效性。）
-
-其次，自古以来，数学上的理性论证已经表明，圆的周长与直径之比（π）不依赖于具体选择的圆。通过测量许多圆的周长和直径获得的经验也可能使人推测这种比率是恒定的。然而，由于任何测量都不可避免地存在误差（没有测量是完全精确的），并且我们无法测量所有的圆，仅靠经验是无法确定这一点的。因此，如果我们认可「所有知识都仅来自经验」，那么一个影响日常生活的重要数学、科学和工程事实就无法被视为知识。这是大多数人无法接受的结论。
-
-Euclid
-
-Euclid 采用了一种精确测量的方法来获取知识。
-
-反对经验作为知识来源的人列举了类似于神圣启示作为知识来源的缺陷。例如，在游乐园中很常见的光学错觉，比如水看起来在上坡流动。魔术师和骗子靠制造欺骗性的体验谋生。所以并非所有经验都可靠。这个观点在极端意义上，得到了佛教「万物皆幻」理念和西方作家 Edgar Allen Poe（1809-1849）的支持，他写道：「我们所见或所想的只是梦中之梦。」
-
-另一个基于经验作为知识的主要困难是，经验因人而异，因文化而异，因时间而异。例如，直到 20 世纪初，经验表明某物不能同时处于两种不同状态。量子物理学彻底改变了这一点。2012 年诺贝尔物理学奖授予了 Serge Haroche（1944-）和 David J. Wineland（1944-），他们的工作包括将一个离子同时置于两种不同能量状态的实验。因此，数千年来被认为是知识的东西现在不再被视为知识。
-
-量子物理学的例子提出了一个基本问题：我们如何知道未来的经验不会否定我们当前从经验中获得的「知识」？与这个问题密切相关的是：我们如何知道哪些经验产生知识（如果有的话）？
-
-有人可能会认为，知识的来源是「由其他知识验证的经验」，比如理性思维。然而，事实并非总是如此，地心说模型就是一个例子。地心说模型认为地球是宇宙的中心，所有天体都围绕地球运转，这一观点曾在许多古代文明中占主导地位。这个理论得到了以下几方面的经验支持：（1）恒星、太阳和行星看似围绕地球旋转；（2）站在地球表面的人感觉不到地球在运动。同时，理性思维和神圣启示（如约书亚记 10:12 中描述的太阳和月亮在天空中停止，诗篇 93:1 中描述的世界恒久不动）也支持这一模型。然而，后来尼古拉·哥白尼（1473-1543)、第谷·布拉赫（1546-1601)、伽利略·伽利莱（1564-1642）和约翰内斯·开普勒（1571-1630）等人的研究和论证表明，地心说模型是站不住脚的。这说明，即使经验得到了其他知识的支持，也不一定能形成真正的知识。那么，有没有一种知识的特性可以帮助我们识别哪些经验能产生知识呢？对此，我毫无头绪。
-
-结论我们探讨了几种可能的知识来源，但没有一种是完全令人满意的。不过，通过理性思维和经验的实例，我们可以总结出几种知识的特性：
-
-（1）知识是存在的；
-
-（2）有些知识来自理性思维，但不是全部；
-
-（3）有些知识来自经验，但不是全部；
-
-（4）有些知识是绝对的，而另一些知识是相对的；
-
-（5）至少有些知识是被发现的，而不是被创造的；
-
-（6）知识不能通过人类的宣布来确立。
+6、知识不能通过人类的宣布来确立。
 
 我们显然需要发展新的属性，以防止在理性思维中使用不恰当的假设，并识别哪些经验能够产生知识。如果这些属性确实存在，那么我们很难继续认为知识是一个基本概念。
 
