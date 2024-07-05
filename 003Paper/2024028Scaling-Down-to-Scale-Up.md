@@ -1,13 +1,18 @@
 ## 2024028Scaling-Down-to-Scale-Up
 
+arXiv:2303.15647
+
 Scaling Down to Scale Up: A Guide to Parameter-Efficient Fine-Tuning
 
 Vladislav Lialin, Vijeta Deshpande, Anna Rumshisky
 
-Abstract
+### Abstract
+
 This paper presents a systematic overview and comparison of parameter-efficient fine-tuning methods covering over 40 papers published between February 2019 and February 2023. These methods aim to resolve the infeasibility and impracticality of fine-tuning large language models by only training a small set of parameters. We provide a taxonomy that covers a broad range of methods and present a detailed method comparison with a specific focus on real-life efficiency and fine-tuning multibillion-scale language models.
 
-1 Introduction
+本论文系统地概述和比较了参数高效微调（Parameter-Efficient Fine-Tuning，PEFT）方法，涵盖了 2019 年 2 月至 2023 年 2 月间发表的 40 多篇论文。这些方法旨在通过仅训练一小部分参数来解决大型语言模型（Large Language Model，LLM）微调过程中的技术难题和实际困境。我们提供了一个涵盖广泛方法的分类体系，并进行了详细的方法比较，特别关注实际应用效率和数十亿参数规模语言模型的微调过程。
+
+### 01 Introduction
 
 One thing that should be learned from the bitter lesson is the great power of general purpose methods, of methods that continue to scale with increased computation...
 Rich Sutton, The Bitter Lesson
@@ -19,6 +24,20 @@ In-context learning (Radford et al., 2019) thus became the new normal, the stand
 Parameter-efficient fine-tuning, which we denote as PEFT, aims to resolve this problem by only training a small set of parameters which might be a subset of the existing model parameters or a set of newly added parameters. These methods differ in parameter efficiency, memory efficiency, training speed, final quality of the model, and additional inference costs (if any). In the last few years, more than a hundred of PEFT papers have been published, with several studies (Ding et al., 2022) providing a good overview of the most popular methods, such as Adapters (Houlsby et al., 2019), BitFit (Ben-Zaken et al., 2021), LoRa (Hu et al., 2021), Compacter (Karimi Mahabadi et al., 2021), and Soft Prompts (Liu et al., 2021; Li and Liang, 2021). Recently, Pfeiffer et al. (2023) presented a survey on modular deep learning overviewing similar methods from the perspective of modularity and multi-task inference.
 
 This survey presents a systematic overview, comparison, and taxonomy of 30 parameter-efficient fine-tuning methods with 20 methods discussed in-depth, covering over 40 papers published from February 2019 to February 2023. We highlight the current unresolved challenges in PEFT, including the limited theoretical understanding, the gap between PEFT and fine-tuning performance, and reporting issues. In conclusion, we suggest several avenues for improvement, such as developing standardized PEFT benchmarks, investigating novel reparameterization techniques with superior parameter-to-rank ratios, conducting in-depth studies on hyperparameters and interpretability, and drawing inspiration from on-device (edge) machine learning research.
+
+1 引言
+
+从「苦涩的教训」中我们应该学到的一件事是通用方法的巨大力量，即那些能够随着计算能力的增加而持续扩展的方法...
+
+Rich Sutton，《The Bitter Lesson》
+
+2018 年 10 月，拥有 3.5 亿参数的 BERT Large（Devlin et al.，2019）是当时训练过的最大的 Transformer 模型（Vaswani et al.，2017)。当时，现有的硬件很难对这个模型进行微调。BERT 的 GitHub 上 "内存溢出问题" 部分指出，在 12GB GPU 内存和 512 个 token 的条件下，BERT Large 的最大批处理大小为零。四年后，公开可用的模型参数量增长到 1760 亿（Scao et al.，2022; Zhang et al.，2022; Zeng et al.，2022)，增加了 500 倍。已发表的文献甚至包括高达 1 万亿参数的模型（Chowdhery et al.，2022; Shoeybi et al.，2019; Fedus et al.，2021)。然而，由于高带宽内存（High Bandwidth Memory，HBM）的高成本，单 GPU 内存仅增加了不到 10 倍（到 80GB)。模型大小的增速几乎比计算资源快两个数量级，这使得将最大的模型微调到下游任务对大多数人来说是不可行的，对所有人来说都是不切实际的。
+
+因此，上下文学习（In-context learning）(Radford et al.，2019）成为了新常态，成为将下游任务训练数据传递给十亿规模语言模型的标准方式。然而，Transformer 有限的上下文大小人为地将训练集大小限制在仅几个例子，通常少于 100 个。这个限制，加上即使在训练数据上也缺乏上下文学习性能保证，提出了一个挑战。此外，扩大上下文大小会导致推理成本呈二次方增加。尽管语言模型在少样本（few-shot）场景下表现出色（Brown et al.，2020)，但 "增加数据量" 仍然是提高任何给定任务性能的最可靠方法。因此，作为研究人员和工程师的社区，我们需要高效的方法来训练下游任务数据。
+
+参数高效微调（PEFT）旨在通过仅训练一小部分参数来解决这个问题，这些参数可能是现有模型参数的子集或一组新增的参数。这些方法在参数效率、内存效率、训练速度、模型的最终质量以及额外的推理成本（如果有的话）方面有所不同。在过去几年中，已发表了 100 多篇 PEFT 论文，有几项研究（Ding et al.，2022）对最流行的方法进行了很好的概述，如适配器（Adapters）(Houlsby et al.，2019)、位适应（BitFit）(Ben-Zaken et al.，2021)、低秩适应（LoRa）(Hu et al.，2021)、压缩器（Compacter）(Karimi Mahabadi et al.，2021）和软提示（Soft Prompts）(Liu et al.，2021; Li and Liang，2021)。最近，Pfeiffer et al.（2023）提出了一项关于模块化深度学习的调查，从模块化和多任务推理的角度概述了类似的方法。
+
+本调查系统地概述、比较和分类了 30 种参数高效微调方法，深入讨论了 20 种方法，涵盖了 2019 年 2 月至 2023 年 2 月间发表的 40 多篇论文。我们强调了 PEFT 中当前未解决的挑战，包括有限的理论理解、PEFT 和完全微调性能之间的差距以及结果报告问题。最后，我们提出了几个改进方向，如开发标准化的 PEFT 基准、研究具有更优参数与秩比的新型重参数化技术、对超参数和可解释性进行深入研究，以及从设备端（边缘）机器学习研究中汲取灵感。
 
 2 Background: Transformer
 
