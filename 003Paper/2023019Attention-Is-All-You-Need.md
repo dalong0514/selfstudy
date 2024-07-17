@@ -71,19 +71,6 @@ In this work we propose the Transformer, a model architecture eschewing recurren
 
 在这项工作中，我们提出了 Transformer 模型架构，它避免使用循环，而是完全依赖注意力机制来提取输入和输出之间的全局依赖关系。Transformer 允许更多的并行化，并且在 8 个 P100 GPU 上训练仅 12 小时后，就可以在翻译质量方面达到新的最先进水平。
 
-
-
-
-在处理语言建模和机器翻译等序列相关问题时，循环神经网络一直是最先进的方法，其中长短期记忆网络 [13] 和门控循环神经网络 [7] 尤为突出 [35，2，5]。近年来，研究人员不断努力，推动循环语言模型和编码器-解码器架构的发展 [38，24，15]。
-
-循环模型的工作原理是沿着输入和输出序列的各个位置逐步进行计算。具体来说，它们会为每个位置生成一个隐藏状态，这个状态取决于前一个位置的隐藏状态和当前位置的输入。这种按顺序计算的特性使得模型难以并行处理，尤其是在处理较长序列时，由于内存限制，无法同时处理大量数据，从而影响了训练效率。虽然近期的研究通过一些技巧 [21] 和条件计算方法 [32] 在计算效率和模型性能上都取得了显著进展，但顺序计算的根本限制仍然存在。
-
-注意力机制是近年来序列模型的一大突破，它能够捕捉序列中的长距离依赖关系，不受输入或输出序列中元素位置的限制 [2，19]。然而，除了少数例外 [27]，大多数模型仍然将注意力机制与循环网络结合使用。
-
-在本研究中，我们提出了一种全新的模型架构 ——Transformer。这个模型完全抛弃了循环结构，而是全面依赖注意力机制来捕捉输入和输出之间的全局关系。Transformer 模型大大提高了并行计算的能力，仅需在 8 个 P100 GPU 上训练 12 小时，就能在翻译质量上达到新的水平。
-
-【注：本文中提到的参考文献编号，如 [13]、[7] 等，读者可以在原论文中查阅具体信息。】
-
 ### 2 Background
 
 The goal of reducing sequential computation also forms the foundation of the Extended Neural GPU [16], ByteNet [18] and ConvS2S [9], all of which use convolutional neural networks as basic building block, computing hidden representations in parallel for all input and output positions. In these models, the number of operations required to relate signals from two arbitrary input or output positions grows in the distance between positions, linearly for ConvS2S and logarithmically for ByteNet. This makes it more difficult to learn dependencies between distant positions [12]. In the Transformer this is reduced to a constant number of operations, albeit at the cost of reduced effective resolution due to averaging attention-weighted positions, an effect we counteract with Multi-Head Attention as described in section 3.2.
@@ -94,6 +81,14 @@ End-to-end memory networks are based on a recurrent attention mechanism instead 
 
 To the best of our knowledge, however, the Transformer is the first transduction model relying entirely on self-attention to compute representations of its input and output without using sequence-aligned RNNs or convolution. In the following sections, we will describe the Transformer, motivate self-attention and discuss its advantages over models such as [17, 18] and [9].
 
+减少顺序计算的目标也构成了扩展神经 GPU（Extended Neural GPU）[16]、ByteNet [18] 和 ConvS2S [9] 的基础，它们都使用卷积神经网络（Convolutional Neural Networks）作为基本构建块，并行计算所有输入和输出位置的隐藏表示。在这些模型中，将两个任意输入或输出位置的信号关联起来所需的操作数量随着位置之间的距离而增长，对于 ConvS2S 是线性增长，对于 ByteNet 是对数增长。这使得学习远距离位置之间的依赖关系变得更加困难 [12]。在 Transformer 中，这被简化为恒定数量的操作，尽管代价是由于对注意力加权位置取平均而降低了有效分辨率，我们通过第 3.2 节中描述的多头注意力（Multi-Head Attention）来抵消这种影响。
+
+自注意力（Self-Attention），有时称为内部注意力机制，是一种将单个序列的不同位置关联起来以计算序列表示的注意力机制。自注意力已成功应用于各种任务，包括阅读理解、抽象摘要、文本蕴涵和学习与任务无关的句子表示 [4,27,28,22]。
+
+端到端记忆网络（End-to-End Memory Networks）基于循环注意力机制，而不是序列对齐的循环，并且已经在简单语言问题回答和语言建模任务上表现出良好的性能 [34]。
+
+然而，据我们所知，Transformer 是第一个完全依赖自注意力来计算其输入和输出表示的转换模型，而无需使用序列对齐的循环神经网络（RNN）或卷积。在接下来的章节中，我们将描述 Transformer，阐释使用自注意力机制的动机，并讨论其相对于 [17,18] 和 [9] 等模型的优势。
+
 ### 3 Model Architecture
 
 Most competitive neural sequence transduction models have an encoder-decoder structure [5, 2, 35]. Here, the encoder maps an input sequence of symbol representations $(x_1, ..., x_n)$ to a sequence of continuous representations $z = (z_1, ..., z_n)$. Given $z$, the decoder then generates an output sequence $(y_1, ..., y_m)$ of symbols one element at a time. At each step the model is auto-regressive [10], consuming the previously generated symbols as additional input when generating the next.
@@ -102,17 +97,41 @@ Figure 1: The Transformer - model architecture.
 
 The Transformer follows this overall architecture using stacked self-attention and point-wise, fully connected layers for both the encoder and decoder, shown in the left and right halves of Figure 1, respectively.
 
+3 模型架构
+
+大多数具有竞争力的神经序列转换模型都采用了编码器-解码器（Encoder-Decoder）结构 [5,2,35]。在这种结构中，编码器将输入的符号表示序列 $(x_1，...，x_n)$ 映射为一个连续表示序列 $z =（z_1，...，z_n)$。给定 $z$ 后，解码器再一次生成一个符号的输出序列 $(y_1，...，y_m)$。在每一步中，模型都是自回归的（Auto-regressive）[10]，即在生成下一个符号时，将之前生成的符号作为附加输入。
+
+图 1：Transformer 模型架构
+
+Transformer 遵循这一总体架构，分别为编码器和解码器使用了堆叠的自注意力（Self-Attention）机制和逐点全连接层，如图 1 的左右两半部分所示。
+
 #### 3.1 Encoder and Decoder Stacks
 
 **Encoder:** The encoder is composed of a stack of $N = 6$ identical layers. Each layer has two sub-layers. The first is a multi-head self-attention mechanism, and the second is a simple, position-wise fully connected feed-forward network. We employ a residual connection [11] around each of the two sub-layers, followed by layer normalization [1]. That is, the output of each sub-layer is $LayerNorm(x + Sublayer(x))$, where $Sublayer(x)$ is the function implemented by the sub-layer itself. To facilitate these residual connections, all sub-layers in the model, as well as the embedding layers, produce outputs of dimension $d_{model} = 512$.
 
 **Decoder:** The decoder is also composed of a stack of $N = 6$ identical layers. In addition to the two sub-layers in each encoder layer, the decoder inserts a third sub-layer, which performs multi-head attention over the output of the encoder stack. Similar to the encoder, we employ residual connections around each of the sub-layers, followed by layer normalization. We also modify the self-attention sub-layer in the decoder stack to prevent positions from attending to subsequent positions. This masking, combined with fact that the output embeddings are offset by one position, ensures that the predictions for position $i$ can depend only on the known outputs at positions less than $i$.
 
+3.1 编码器和解码器堆栈
+
+**编码器:** 编码器由 $N=6$ 个完全相同的层堆叠而成。每一层包含两个子层：第一个子层是一个多头自注意力机制，第二个子层是一个简单的逐位置全连接前馈网络。我们在每个子层周围采用了残差连接（Residual Connection）[11]，然后进行层归一化（Layer Normalization）[1]。也就是说，每个子层的输出是 $LayerNorm（x + Sublayer（x))$，其中 $Sublayer（x)$ 是该子层自身实现的函数。为了方便使用残差连接，模型中的所有子层以及词嵌入层的输出维度都是 $d_{model} = 512$。
+
+**解码器:** 解码器同样由 $N=6$ 个完全相同的层堆叠而成。除了编码器中的两个子层外，解码器还引入了第三个子层，用于对编码器堆栈的输出执行多头注意力。与编码器类似，我们在每个子层周围使用残差连接，然后进行层归一化。我们还修改了解码器堆栈中的自注意力子层，防止其关注后续位置的信息。这种掩蔽操作与输出词嵌入偏移一个位置的事实结合在一起，确保了位置 $i$ 的预测只能依赖于小于位置 $i$ 的已知输出。
+
 #### 3.2 Attention
 
 An attention function can be described as mapping a query and a set of key-value pairs to an output, where the query, keys, values, and output are all vectors. The output is computed as a weighted sum of the values, where the weight assigned to each value is computed by a compatibility function of the query with the corresponding key.
 
 Figure 2: (left) Scaled Dot-Product Attention. (right) Multi-Head Attention consists of several attention layers running in parallel.
+
+3.2 注意力（Attention）机制
+
+注意力（Attention）函数可以被理解为一个映射过程：它将一个查询（query）和一组键值（key-value）对映射到一个输出。在这个过程中，查询、键、值和输出都是向量。输出的计算方式是值的加权和，而每个值的权重则是通过查询和相应键之间的相关性函数来确定的。
+
+图 2：注意力机制的两种形式
+
+(左）缩放点积注意力（Scaled Dot-Product Attention)：这是一种基本的注意力计算方法。
+
+(右）多头注意力（Multi-Head Attention)：这种方法包含多个并行运行的注意力层，能够捕捉更丰富的信息。
 
 3.2.1 Scaled Dot-Product Attention
 
@@ -127,6 +146,22 @@ $$
 The two most commonly used attention functions are additive attention [2], and dot-product (multiplicative) attention. Dot-product attention is identical to our algorithm, except for the scaling factor of $\frac{1}{\sqrt{d_k}}$. Additive attention computes the compatibility function using a feed-forward network with a single hidden layer. While the two are similar in theoretical complexity, dot-product attention is much faster and more space-efficient in practice, since it can be implemented using highly optimized matrix multiplication code.
 
 While for small values of $d_k$ the two mechanisms perform similarly, additive attention outperforms dot product attention without scaling for larger values of $d_k$ [3]. We suspect that for large values of $d_k$, the dot products grow large in magnitude, pushing the softmax function into regions where it has extremely small gradients. To counteract this effect, we scale the dot products by $\frac{1}{\sqrt{d_k}}$.
+
+3.2.1 缩放点积注意力（Scaled Dot-Product Attention)
+
+我们提出了一种特殊的注意力机制，称为「缩放点积注意力（Scaled Dot-Product Attention)」（如图 2 所示）。这种机制的输入包括查询（queries）和键（keys)（它们的维度都是 $d_k$），以及值（values)（维度为 $d_v$）。计算过程如下：首先，我们计算查询与所有键的点积；然后，将每个点积结果除以 $\sqrt {d_k}$（这个缩放操作有助于梯度的稳定性）；最后，我们使用 softmax 函数（一种将数值转化为概率分布的函数）来得到值的权重。
+
+在实际应用中，我们通常需要同时处理多个查询。为了提高效率，我们将这些查询打包成一个矩阵 $Q$。同样，我们也将键和值分别打包成矩阵 $K$ 和 $V$。这样，我们就可以用一个简洁的矩阵运算来表示整个注意力计算过程：
+
+$$
+\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
+$$
+
+这个公式概括了缩放点积注意力的核心操作，它能够高效地处理大规模的输入数据。
+
+两种最常用的注意力（attention）机制是加性注意力 [2] 和点积（dot-product）注意力（也称为乘性注意力）。点积注意力与我们的算法基本相同，只是多了一个缩放因子 $\frac{1}{\sqrt{d_k}}$。加性注意力则使用一个只有一层隐藏层的前馈神经网络来计算输入之间的相关性。虽然这两种方法在理论上的计算复杂度相似，但在实际应用中，点积注意力的速度更快，而且占用的内存空间更少。这是因为点积注意力可以利用已经高度优化的矩阵乘法代码来实现。
+
+当 $d_k$ 值较小时，加性注意力（additive attention）和点积注意力（dot product attention）这两种机制的表现相似。然而，当 $d_k$ 值较大时，在没有缩放的情况下，加性注意力的性能会优于点积注意力 [3]。我们推测，这是因为当 $d_k$ 值较大时，点积的结果会变得非常大，导致 softmax 函数被推向梯度极小的区域。在这个区域中，softmax 函数对输入的微小变化几乎没有反应，这不利于模型的学习和优化。为了解决这个问题，我们引入了一个缩放因子 $\frac{1}{\sqrt{d_k}}$ 来调整点积的大小。
 
 3.2.2 Multi-Head Attention
 
@@ -144,6 +179,22 @@ Where the projections are parameter matrices $W_i^Q \in \mathbb{R}^{d_{model} \t
 
 In this work we employ $h = 8$ parallel attention layers, or heads. For each of these we use $d_k = d_v = d_{model}/h = 64$. Due to the reduced dimension of each head, the total computational cost is similar to that of single-head attention with full dimensionality.
 
+3.2.2 多头注意力（Multi-Head Attention)
+
+与使用维度为 $d_{\text{model}}$ 的键（Key）、值（Value）和查询（Query）来执行单一的注意力函数不同，我们发现使用不同的、学习得到的线性映射将查询、键和值分别投影到 $d_k$、$d_k$ 和 $d_v$ 维度，重复 $h$ 次，能够带来好处。然后，我们在查询、键和值的每个投影版本上并行执行注意力函数，产生维度为 $d_v$ 的输出。
+
+多头注意力允许模型在不同位置同时关注来自不同表示子空间的信息。而使用单个注意力头的话，这种效果会被平均化操作所抑制。
+
+$$
+\text{MultiHead}(Q, K, V) = \text{Concat}(\text{head}_1, \ldots, \text{head}_h)W^O
+$$
+
+其中，$\text{head}_i = \text{Attention}(QW_i^Q, KW_i^K, VW_i^V)$
+
+其中，投影操作通过参数矩阵来实现，这些矩阵包括 $W_i^Q \in \mathbb {R}^{d_{model} \times d_k}$、$W_i^K \in \mathbb {R}^{d_{model} \times d_k}$、$W_i^V \in \mathbb {R}^{d_{model} \times d_v}$ 和 $W^O \in \mathbb {R}^{hd_v \times d_{model}}$。这些数学符号看起来可能有些复杂，但它们实际上描述了模型如何处理和转换数据。
+
+在我们的研究中，我们使用了 8 个并行的注意力（attention）机制，也称为 8 个注意力头（heads）。每个注意力头的工作维度是 64（即 $d_k = d_v = d_{model}/h = 64$）。虽然每个头的维度减小了，但由于有 8 个头并行工作，总的计算复杂度与使用全维度的单个注意力机制相近。这种设计既保证了模型的性能，又提高了计算效率。
+
 3.2.3 Applications of Attention in our Model
 
 The Transformer uses multi-head attention in three different ways:
@@ -151,6 +202,16 @@ The Transformer uses multi-head attention in three different ways:
 - In "encoder-decoder attention" layers, the queries come from the previous decoder layer, and the memory keys and values come from the output of the encoder. This allows every position in the decoder to attend over all positions in the input sequence. This mimics the typical encoder-decoder attention mechanisms in sequence-to-sequence models such as [38, 2, 9].
 - The encoder contains self-attention layers. In a self-attention layer all of the keys, values and queries come from the same place, in this case, the output of the previous layer in the encoder. Each position in the encoder can attend to all positions in the previous layer of the encoder.
 - Similarly, self-attention layers in the decoder allow each position in the decoder to attend to all positions in the decoder up to and including that position. We need to prevent leftward information flow in the decoder to preserve the auto-regressive property. We implement this inside of scaled dot-product attention by masking out (setting to $-\infty$) all values in the input of the softmax which correspond to illegal connections. See Figure 2.
+
+3.2.3 注意力机制在我们模型中的应用
+
+Transformer 模型在以下三个不同的场景中使用了多头注意力（multi-head attention）机制：
+
+1、在「编码器-解码器注意力」（encoder-decoder attention）层中，查询（queries）来自前一个解码器层，而键（keys）和值（values）则来自编码器的输出。这种机制使得解码器中的每个位置都能够对输入序列的所有位置进行注意力计算。这种设计模仿了序列到序列模型中典型的编码器-解码器注意力机制，例如在 [38，2，9] 等研究中所描述的那样。
+
+2、编码器包含自注意力（self-attention）层。在自注意力层中，所有的键、值和查询都来自同一个地方，在这种情况下，它们源自编码器中前一层的输出。这意味着编码器中的每个位置都能够对编码器前一层的所有位置进行注意力计算。这种机制使得模型能够捕捉输入序列中的长距离依赖关系。
+
+3、与编码器类似，解码器中的自注意力层（self-attention layers）也允许每个位置关注到该位置及其之前的所有位置。然而，为了保持解码器的自回归（auto-regressive）特性，我们需要防止信息从右向左流动。我们通过在缩放点积注意力（scaled dot-product attention）机制中使用掩码技术来实现这一点。具体来说，我们将所有不合法连接对应的 softmax 输入值设置为负无穷（$-\infty$），effectively 屏蔽了这些连接。这个过程在图 2 中有所展示。
 
 #### 3.3 Position-wise Feed-Forward Networks
 
@@ -196,6 +257,18 @@ The third is the path length between long-range dependencies in the network. Lea
 
 As noted in Table 1, a self-attention layer connects all positions with a constant number of sequentially executed operations, whereas a recurrent layer requires $O(n)$ sequential operations. In terms of computational complexity, self-attention layers are faster than recurrent layers when the sequence
 
+04 为什么选择自注意力机制
+
+本节我们将比较自注意力（self-attention）层与常用的循环层和卷积层在各方面的异同。这些层的主要功能是将一个可变长度的符号表示序列 $(x_1, ..., x_n)$ 映射到另一个等长的序列 $(z_1, ..., z_n)$，其中 $z_i \in \mathbb {R}^d$。这种映射在典型的序列转换（sequence transduction）模型的编码器或解码器的隐藏层中经常出现。为了论证我们选择使用自注意力机制的原因，我们着重考虑了三个关键因素。
+
+首先，我们关注每一层的总计算复杂度。其次，我们考虑可并行化的计算量，这通过所需的最少顺序操作次数来衡量。
+
+第三个衡量标准是网络中长距离依赖关系之间的路径长度。在许多序列转换任务中，学习长距离依赖关系是一个关键挑战。影响学习这种依赖关系能力的一个重要因素是信息在网络中前向传播和反向传播时需要经过的路径长度。输入和输出序列中任意两个位置之间的路径越短，就越容易学习长距离依赖关系 [12]。因此，我们还比较了由不同类型层组成的网络中，任意两个输入和输出位置之间的最大路径长度。
+
+如表 1 所示，自注意力层（self-attention layer）只需要固定数量的顺序操作就可以连接所有位置，而循环层（recurrent layer）则需要 $O（n)$ 个顺序操作（其中 n 表示序列长度）。从计算复杂度来看，当序列长度较短时，自注意力层的计算速度比循环层更快。
+
+
+
 ### 05 Training
 
 This section describes the training regime for our models.
@@ -224,11 +297,45 @@ We employ three types of regularization during training:
 
 Table 2: The Transformer achieves better BLEU scores than previous state-of-the-art models on the English-to-German and English-to-French newstest2014 tests at a fraction of the training cost.
 
-![](7_0.png)
-
 **Residual Dropout** We apply dropout [33] to the output of each sub-layer, before it is added to the sub-layer input and normalized. In addition, we apply dropout to the sums of the embeddings and the positional encodings in both the encoder and decoder stacks. For the base model, we use a rate of $P_{drop} = 0.1$.
 
 **Label Smoothing** During training, we employed label smoothing of value $\epsilon_{ls} = 0.1$ [36]. This hurts perplexity, as the model learns to be more unsure, but improves accuracy and BLEU score.
+
+
+
+
+5 训练本节将介绍我们模型的训练方案。
+
+5.1 训练数据和批处理
+
+我们使用标准的 WMT 2014 英德翻译数据集进行模型训练，该数据集包含约 450 万对句子。所有句子都使用字节对编码（byte-pair encoding）[3] 进行编码，源语言和目标语言共享一个约 37000 个词元（token）的词汇表。对于英法翻译任务，我们使用了规模显著更大的 WMT 2014 英法数据集，其中包含 3600 万个句子，并将词元分割成 32000 个词片（word-piece）词汇表 [38]。在训练时，我们将长度相近的句子对组合成批次，每个训练批次包含一组句子对，大约含有 25000 个源语言词元和 25000 个目标语言词元。
+
+5.2 硬件配置和训练时间我们在一台配备 8 个 NVIDIA P100 GPU 的机器上训练模型。对于使用本文描述的超参数的基础模型，每个训练步骤大约需要 0.4 秒。我们总共训练基础模型 100,000 步，约合 12 小时。而对于更大规模的模型（在表 3 的最后一行描述），每步训练时间增加到 1.0 秒，总共训练了 300,000 步，耗时 3.5 天。
+
+5.3 优化器
+
+我们使用 Adam 优化器（Adam optimizer）[20]，其中参数设置为 $\beta_1 = 0.9$，$\beta_2 = 0.98$ 和 $\epsilon = 10^{-9}$。在训练过程中，我们根据以下公式动态调整学习率：
+
+$$
+lrate = d_{model}^{-0.5} \cdot \min（step\_num^{-0.5}, step\_num \cdot warmup\_steps^{-1.5})
+$$
+
+这个公式的含义是：在训练的前 $warmup\_steps$ 步骤中，学习率呈线性增长；之后，学习率会按照步数的反平方根比例逐渐降低。在我们的实验中，$warmup\_steps$ 被设置为 4000。
+
+5.4 正则化（Regularization)
+
+在训练过程中，我们采用了三种正则化技术：
+
+表 2：Transformer 模型在英语到德语和英语到法语的 newstest2014 测试中，以显著降低的训练成本获得了优于先前最先进模型的 BLEU（Bilingual Evaluation Understudy）分数。
+
+**残差 Dropout** 我们在每个子层的输出上应用 dropout [33]，然后再将其与子层输入相加并进行归一化。此外，在编码器和解码器堆栈中，我们还对嵌入和位置编码的和应用 dropout。对于基础模型，我们使用的 dropout 率为 $P_{drop} = 0.1$。
+
+**标签平滑化（Label Smoothing)** 在训练过程中，我们采用了一种叫做 "标签平滑化" 的技术，其参数值 $\epsilon_{ls}$ 设为 0.1 [36]。这种技术虽然会降低模型的困惑度（perplexity，一种评估语言模型预测能力的指标)，因为它使模型学会对预测结果保持一定程度的不确定性，但却能提高模型的准确率和 BLEU 分数（一种评估机器翻译质量的指标)。这种看似矛盾的结果实际上反映了模型在泛化能力和具体任务表现之间的平衡。标签平滑化技术通过引入一些不确定性，帮助模型避免过度自信，从而在实际应用中取得更好的表现。
+
+
+
+
+
 
 ### 06 Results
 
@@ -252,8 +359,6 @@ To evaluate the importance of different components of the Transformer, we varied
 
 Table 3: Variations on the Transformer architecture. Unlisted values are identical to those of the base model. All metrics are on the English-to-German translation development set, newstest2013. Listed perplexities are per-wordpiece, according to our byte-pair encoding, and should not be compared to per-word perplexities.
 
-![](8_0.png)
-
 development set, newstest2013. We used beam search as described in the previous section, but no checkpoint averaging. We present these results in Table 3.
 
 In Table 3 rows (A), we vary the number of attention heads and the attention key and value dimensions, keeping the amount of computation constant, as described in Section 3.2.2. While single-head attention is 0.9 BLEU worse than the best setting, quality also drops off with too many heads.
@@ -269,8 +374,6 @@ We trained a 4-layer transformer with $d_{model} = 1024$ on the Wall Street Jour
 We performed only a small number of experiments to select the dropout, both attention and residual (section 5.4), learning rates and beam size on the Section 22 development set, all other parameters remained unchanged from the English-to-German base translation model. During inference, we
 
 Table 4: The Transformer generalizes well to English constituency parsing (Results are on Section 23 of WSJ)
-
-![](9_0.png)
 
 increased the maximum output length to input length + 300. We used a beam size of 21 and $\alpha = 0.3$ for both WSJ only and the semi-supervised setting.
 
