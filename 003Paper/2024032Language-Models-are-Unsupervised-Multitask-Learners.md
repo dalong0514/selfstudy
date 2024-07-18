@@ -24,19 +24,13 @@ Our suspicion is that the prevalence of single task training on single domain da
 
 1 引言
 
-机器学习系统现在通过结合大型数据集、高性能模型（high-capacity models）和监督学习，在其训练任务上取得了出色的平均表现（Krizhevsky et al., 2012）(Sutskever et al., 2014）(Amodei et al., 2016)。然而，这些系统往往缺乏鲁棒性，对数据分布（Recht et al., 2018）和任务规范（Kirkpatrick et al., 2017）的细微变化都很敏感。目前的系统更像是专精于特定领域的专家，而非能力全面的通才。我们的目标是开发更加通用的系统，使其能够执行多种任务，并最终无需为每项新任务手动创建和标注训练数据集。
-
-
-
-
-
+机器学习系统现在通过结合大型数据集、高性能模型（high-capacity models）和监督学习，在其训练任务上取得了出色的平均表现（Krizhevsky et al., 2012）(Sutskever et al., 2014）(Amodei et al., 2016）。然而，这些系统往往缺乏鲁棒性，对数据分布（Recht et al., 2018）和任务规范（Kirkpatrick et al., 2017）的细微变化都很敏感。目前的系统更像是专精于特定领域的专家，而非能力全面的通才。我们的目标是开发更加通用的系统，使其能够执行多种任务，并最终无需为每项新任务手动创建和标注训练数据集。
 
 目前，创建机器学习（Machine Learning, ML）系统的主流方法是这样的：首先收集一组训练样本，这些样本展示了特定任务的正确行为。然后，训练系统模仿这些行为，最后在独立的、具有相同分布特征的测试样本上评估系统性能。这种方法在培养针对特定任务的 AI 专家方面确实取得了不错的进展。然而，当我们仔细观察一些 AI 系统在面对各种复杂输入时的表现，就会发现这种方法存在明显的不足。例如，图像描述 AI（Lake et al., 2017)、机器阅读理解系统（Jia & Liang, 2017）和图像分类器（Alcorn et al., 2018）在处理多样化的输入时，常常会出现不稳定甚至错误的行为。
 
 我们怀疑，造成当前 AI 系统缺乏通用适应能力的主要原因，是过于依赖在单一领域数据集上进行单一任务的训练。要想使用现有的 AI 架构开发出更加稳健可靠的系统，很可能需要在更广泛的领域和任务上进行训练和性能评估。为了开始研究这个问题，研究人员最近提出了几个综合性的评估基准，如 GLUE（Wang et al., 2018）和 decaNLP（McCann et al., 2018)。
 
 Multitask learning (Caruana, 1997) is a promising framework for improving general performance. However, multitask training in NLP is still nascent. Recent work reports modest performance improvements (Yogatama et al., 2019) and the two most ambitious efforts to date have trained on a total of 10 and 17 (dataset, objective) pairs respectively (McCann et al., 2018) (Bowman et al., 2018). From a meta-learning perspective, each (dataset, objective) pair is a single training example sampled from the distribution of datasets and objectives. Current ML systems need hundreds to thousands of examples to induce functions which generalize well. This suggests that multitask training many need just as many effective training pairs to realize its promise with current approaches. It will be very difficult to continue to scale the creation of datasets and the design of objectives to the degree that may be required to brute force our way there with current techniques. This motivates exploring additional setups for performing multitask learning.
-
 
 多任务学习（Multitask learning）(Caruana, 1997）是一个 promising 的框架，用于提高模型的整体性能。然而，在自然语言处理（NLP）领域，多任务训练仍处于起步阶段。最近的研究报告显示，这种方法只带来了有限的性能提升（Yogatama et al., 2019)。迄今为止，最具雄心的两项研究分别在 10 个和 17 个（数据集，目标）对上进行了训练（McCann et al., 2018）(Bowman et al., 2018)。
 
@@ -48,10 +42,9 @@ The current best performing systems on language tasks utilize a combination of p
 
 **Figure 1.** Zero-shot task performance of WebText LMs as a function of model size on many NLP tasks. Reading Comprehension results are on CoQA (Reddy et al., 2018), translation on WMT-14 Fr-En (Artetxe et al., 2017), summarization on CNN and Daily Mail (See et al., 2017), and Question Answering on Natural Questions (Kwiatkowski et al., 2019). Section 3 contains detailed descriptions of each result.
 
-
 在语言相关任务中，目前表现最好的系统都采用了一种结合预训练和有监督微调的方法。这种方法有着悠久的历史，并且一直在朝着更灵活的知识迁移方向发展。这个发展过程大致如下：首先，研究人员学习词向量并将其用作特定任务模型的输入（Mikolov et al., 2013）(Collobert et al., 2011)。接着，研究者们开始迁移循环神经网络的上下文表示（Dai & Le, 2015）(Peters et al., 2018)。最近的研究表明，我们甚至不再需要为特定任务设计专门的模型结构，只需要迁移多个自注意力模块就足够了（Radford et al., 2018）(Devlin et al., 2018)。这种方法大大简化了模型设计过程，同时提高了模型的通用性。
 
-** 图 1:** WebText 语言模型在多项自然语言处理（NLP）任务上的零样本学习性能，展示了模型大小与性能之间的关系。这里的 "零样本学习" 是指模型在没有经过特定任务训练的情况下，直接应用于新任务的能力。图中展示的任务包括：基于 CoQA 数据集的阅读理解（Reddy et al., 2018)、基于 WMT-14 法语 - 英语数据集的机器翻译（Artetxe et al., 2017)、使用 CNN 和 Daily Mail 数据的文本摘要生成（See et al., 2017)，以及基于 Natural Questions 数据集的问答任务（Kwiatkowski et al., 2019)。每项任务的详细结果分析请参见第 3 节。
+**图 1：** WebText 语言模型在多项自然语言处理（NLP）任务上的零样本学习性能，展示了模型大小与性能之间的关系。这里的「零样本学习」是指模型在没有经过特定任务训练的情况下，直接应用于新任务的能力。图中展示的任务包括：基于 CoQA 数据集的阅读理解（Reddy et al., 2018)、基于 WMT-14 法语 - 英语数据集的机器翻译（Artetxe et al., 2017)、使用 CNN 和 Daily Mail 数据的文本摘要生成（See et al., 2017)，以及基于 Natural Questions 数据集的问答任务（Kwiatkowski et al., 2019)。每项任务的详细结果分析请参见第 3 节。
 
 These methods still require supervised training in order to perform a task. When only minimal or no supervised data is available, another line of work has demonstrated the promise of language models to perform specific tasks, such as commonsense reasoning (Schwartz et al., 2017) and sentiment analysis (Radford et al., 2017).
 
@@ -60,8 +53,6 @@ In this paper, we connect these two lines of work and continue the trend of more
 传统的机器学习方法通常需要通过监督训练（supervised training）来完成特定任务。然而，当可用的标注数据非常有限甚至完全没有时，研究人员发现语言模型在执行某些特定任务时展现出了巨大的潜力。例如，在常识推理（Schwartz et al., 2017）和情感分析（Radford et al., 2017）等任务中，语言模型表现出色。
 
 本文将这两条研究路线进行了结合，并进一步推动了更通用迁移学习方法的发展。我们证明了语言模型可以在零样本（zero-shot）设置下完成下游任务，而无需对模型参数或架构进行任何修改。通过展示语言模型在零样本情况下执行各种任务的能力，我们展示了这种方法的巨大潜力。根据不同任务的特点，我们的方法取得了令人鼓舞的、具有竞争力的，甚至是最先进的结果。
-
-
 
 ### 2. Approach
 
@@ -73,22 +64,59 @@ $$
 
 This approach allows for tractable sampling from and estimation of $p(x)$ as well as any conditionals of the form $p(s_{n-k+1}, ..., s_n|s_1, ..., s_{n-k})$. In recent years, there have been significant improvements in the expressiveness of models that can compute these conditional probabilities, such as self-attention architectures like the Transformer (Vaswani et al., 2017).
 
-Learning to perform a single task can be expressed in a probabilistic framework as estimating the conditional distribution $p(output|input)$. Since a general system should be able to perform many different tasks, even for the same input, it should condition not only on the input but also on the task to be performed. That is, it should model $p(output|input, task)$. This has been variously formalized in multitask and meta-learning settings. Task conditioning is often implemented at an architectural level, such as the task specific encoders and decoders in (Kaiser et al., 2017) or at an algorithmic level such as the inner and outer loop optimization framework of MAML (Finn et al., 2017). But as exemplified in McCann et al. (2018), language provides a flexible way to specify tasks, inputs, and outputs all as a sequence of symbols. For example, a translation training example can be written as the sequence $(translate\ to\ french,\ english\ text, \ french\ text)$. Likewise, a reading comprehension training example can be written as $(answer\ the\ question,\ document,\ question,\ answer)$. McCann et al. (2018) demonstrated it was possible to train a single model, the MQAN,
+2 方法
 
+我们方法的核心是语言建模（language modeling)。语言建模通常被视为一个无监督学习任务，目标是从一组样例 $(x_1, x_2, ..., x_n)$ 中估计概率分布，每个样例由不同长度的符号序列 $(s_1, s_2, ..., s_n)$ 组成。由于语言天然具有顺序性，我们通常将符号的联合概率分解为一系列条件概率的乘积（Jelinek & Mercer, 1980）(Bengio et al., 2003)：
 
-Language Models are Unsupervised Multitask Learners
+$$
+p(x) = \prod_{i=1}^{n} p(s_i|s_1, ..., s_{n-1})
+$$
 
-to infer and perform many different tasks on examples with this type of format.
+这个公式表示，整个序列的概率等于每个符号在已知前面所有符号的情况下出现的概率的乘积。这种方法使得我们能够有效地对 $p(x)$ 进行采样和估计，也能估计形如 $p(s_{n-k+1}, ..., s_n|s_1, ..., s_{n-k})$ 的任何条件概率。这里的条件概率指的是，在已知前面部分序列的情况下，预测后面部分序列的概率。
+
+近年来，能够计算这些条件概率的模型性能有了显著提升，特别是像 Transformer（Vaswani et al., 2017）这样使用自注意力机制的架构。这些模型能够更好地捕捉语言中的长距离依赖关系，从而提高了语言建模的准确性。
+
+Learning to perform a single task can be expressed in a probabilistic framework as estimating the conditional distribution $p(output|input)$. Since a general system should be able to perform many different tasks, even for the same input, it should condition not only on the input but also on the task to be performed. That is, it should model $p(output|input, task)$. This has been variously formalized in multitask and meta-learning settings. Task conditioning is often implemented at an architectural level, such as the task specific encoders and decoders in (Kaiser et al., 2017) or at an algorithmic level such as the inner and outer loop optimization framework of MAML (Finn et al., 2017). But as exemplified in McCann et al. (2018), language provides a flexible way to specify tasks, inputs, and outputs all as a sequence of symbols. For example, a translation training example can be written as the sequence $(translate\ to\ french,\ english\ text, \ french\ text)$. Likewise, a reading comprehension training example can be written as $(answer\ the\ question,\ document,\ question,\ answer)$. McCann et al. (2018) demonstrated it was possible to train a single model, the MQAN, to infer and perform many different tasks on examples with this type of format.
+
+在人工智能领域，学习执行单一任务可以被理解为一个概率问题：即根据给定的输入，预测最可能的输出。然而，一个真正通用的 AI 系统应该能够执行多种不同的任务。这意味着，系统不仅要考虑输入信息，还要考虑当前需要执行的具体任务。换句话说，AI 系统需要根据输入信息和任务要求来预测输出。
+
+这个想法在多任务学习和元学习（Meta-learning）等研究领域中已经得到了广泛的探索。研究人员提出了不同的方法来实现这一目标。例如，有些方法从模型架构入手，如 Kaiser 等人在 2017 年提出的针对特定任务的编码器和解码器。还有些方法从算法角度着手，如 Finn 等人在 2017 年提出的模型无关元学习算法（Model-Agnostic Meta-Learning, MAML)，该算法通过内部和外部循环的优化框架来适应不同的任务。
+
+然而，McCann 等人在 2018 年的研究展示了一种更为灵活的方法。他们发现，我们可以使用自然语言来统一描述任务、输入和输出，将它们全部表示为一系列符号。举个例子，一个翻译任务可以被描述为：(翻译成法语，英语文本，法语文本)。同样，一个阅读理解任务可以被描述为：(回答问题，文档，问题，答案)。
+
+McCann 等人的研究证明，我们可以训练一个单一的模型来理解和执行多种不同的任务，只要这些任务都以上述格式呈现。他们将这个模型命名为 MQAN（Multitask Question Answering Network，多任务问答网络)。这一发现为开发更加通用和灵活的 AI 系统开辟了新的道路，使得单一模型能够应对各种不同的任务挑战。
+
+[[1806.08730] The Natural Language Decathlon: Multitask Learning as Question Answering](https://arxiv.org/abs/1806.08730)
 
 Language modeling is also able to, in principle, learn the tasks of McCann et al. (2018) without the need for explicit supervision which supplies the order the inputs to be predicted. Since the supervised objective is the same as the unsupervised objective but only evaluated on a subset of the sequence, the global minimum of the unsupervised objective is also the global minimum of the supervised objective. In this slightly toy setting, the concerns with density estimation as a principled training objective discussed in (Sutskever et al., 2015) are side stepped. The problem instead becomes whether we are able to, in practice, optimize the unsupervised objective to convergence. Preliminary experiments confirmed that sufficiently large language models are able to perform multitask learning in this toy-ish setup but learning is much slower than in explicitly supervised approaches.
 
+原则上，语言模型（Language Model）也能够学习 McCann 等人（2018）提出的任务，而无需显式监督来指定输入的预测顺序。这是因为在这种情况下，有监督学习的目标与无监督学习的目标实际上是相同的，只是前者仅在序列的一个子集上进行评估。因此，无监督目标的全局最优解也同时是有监督目标的全局最优解。
+
+在这个简化的场景中，Sutskever 等人（2015）曾提出的关于将密度估计（density estimation）作为训练目标的原则性问题被巧妙地避开了。相反，现在的关键问题变成了我们是否能在实践中将无监督学习目标优化到收敛状态。
+
+初步实验结果表明，足够大规模的语言模型确实能够在这种简化设置下进行多任务学习（multitask learning)。然而，与显式监督方法相比，这种学习方式的速度要慢得多。
+
 While it is a large step from the well-posed setup described above to the messiness of "language in the wild", Weston (2016) argues, in the context of dialog, for the need to develop systems capable of learning from natural language directly and demonstrated a proof of concept – learning a QA task without a reward signal by using forward prediction of a teacher’s outputs. While dialog is an attractive approach, we worry of its brittleness: their entire content was author specified and the nation is not passively available observed the need for interactive communication. Our speculation is that a language model with sufficient capacity will begin to learn to infer and perform the tasks demonstrated in natural language sequences in order to better predict them, regardless of their method of procurement. If a language model is able to do this it will be, in effect, performing unsupervised multitask learning. We test whether this is the case by analyzing the performance of language models in a zero-shot setting on a wide variety of tasks.
 
-2.1. Training Dataset
+尽管从上述结构良好的设置到真实世界中「自然语言」的混乱状态是一个巨大的跨越，但 Weston（2016）在对话系统的背景下提出了一个重要观点。他强调了开发能够直接从自然语言中学习的系统的必要性，并展示了一个概念验证 —— 通过使用教师输出的前向预测来学习问答（QA）任务，而无需奖励信号。虽然对话是一种有吸引力的方法，但我们担心其脆弱性：在他们的研究中，所有内容都是由作者预先指定的，而且没有被动可用的信息来源，这凸显了交互式通信的必要性。
+
+我们推测，只要语言模型有足够的能力，它就会开始学习如何推断和执行自然语言序列中展示的任务，以便更好地预测这些序列，而不管这些序列是如何获得的。如果语言模型能够做到这一点，它实际上就在执行无监督的多任务学习。为了验证这一猜想，我们分析了语言模型在各种任务的零样本（zero-shot）设置中的表现。所谓零样本设置，指的是模型在没有经过特定任务训练的情况下，直接应用于新任务的场景。
+
+#### 2.1. Training Dataset
 
 Most prior work trained language models on a single domain of text, such as news articles (Jozefowicz et al., 2016), Wikipedia (Merity et al., 2016), or fiction books (Kiros et al., 2015). Our approach motivates building as large and diverse a dataset as possible in order to collect natural language demonstrations of tasks in as varied of domains and contexts as possible.
 
-A promising source of diverse and nearly unlimited text is web scrapes such as Common Crawl. While these archives are many orders of magnitude larger than current language modeling datasets, they have significant data quality issues. Trinh & Le (2018) used Common Crawl in their work on commonsense reasoning but noted a large amount of documents "whose content are mostly unintelligible". We ob- served similar data issues in our initial experiments with 
+A promising source of diverse and nearly unlimited text is web scrapes such as Common Crawl. While these archives are many orders of magnitude larger than current language modeling datasets, they have significant data quality issues. Trinh & Le (2018) used Common Crawl in their work on commonsense reasoning but noted a large amount of documents "whose content are mostly unintelligible". We ob- served similar data issues in our initial experiments with Common Crawl. Trinh & Le (2018)'s best results were achieved by using a subset of Common Crawl in which they filtered out unintelligible content – about 90% of the dataset. While we found this heuristic effective for filtering out dirty documents, it resulted in a much narrower distribution of documents. All re- sults presented in this paper use a preliminary version of WebText which does not include links created after Dec 2017 and which after de-duplication and some heuristic based cleaning contains slightly over 8 million documents for a total of 40 GB of text. We removed all Wikipedia documents from WebText since it is a common data source for other datasets and could complicate analysis due to over lapping training data with test evaluation tasks.
+
+2.1. 训练数据集
+
+大多数先前的研究都是在单一领域的文本上训练语言模型，例如新闻文章 [Jozefowicz et al., 2016]、维基百科 [Merity et al., 2016] 或小说 [Kiros et al., 2015]。相比之下，我们的方法旨在构建一个尽可能大且多样化的数据集。这样做的目的是为了在各种不同的领域和上下文中收集任务的自然语言演示实例。
+
+网络抓取数据（web scrapes），如通用网络爬虫（Common Crawl），是一种很有前景的多样化且几乎无限的文本来源。虽然这些档案比当前的语言建模数据集大很多个数量级，但它们存在严重的数据质量问题。Trinh 和 Le 在 2018 年的研究中使用了通用网络爬虫进行常识推理的研究，但他们指出大量文档「内容大多难以理解」。我们在对通用网络爬虫的初步实验中也观察到了类似的数据问题。Trinh 和 Le 的研究通过使用通用网络爬虫的一个子集获得了最佳结果，他们过滤掉了难以理解的内容 —— 约占数据集的 90%。虽然我们发现这种启发式方法对过滤掉低质量文档很有效，但它也导致了文档分布范围的大幅缩小。
+
+本文中呈现的所有结果都使用了 WebText 的初步版本。这个版本不包括 2017 年 12 月之后创建的链接，经过去重和一些基于启发式的清理后，包含略超过 800 万个文档，总计 40GB 的文本。我们从 WebText 中移除了所有维基百科文档，因为它是其他数据集的常见数据源，并且由于与测试评估任务的训练数据重叠，可能会使分析变得复杂。
+
+---
 
 "I'm not the cleverest man in the world, but like they say in French: Je ne suis pas un imbecile [I'm not a fool]."
 
@@ -104,20 +132,49 @@ If this sounds like a bit of a stretch, consider this question in French: As-tu 
 
 Table 1. Examples of naturally occurring demonstrations of English to French and French to English translation found during the WebText training set.
 
-Common Crawl. Trinh & Le (2018)'s best results were achieved by using a subset of Common Crawl in which they filtered out unintelligible content – about 90% of the dataset. While we found this heuristic effective for filtering out dirty documents, it resulted in a much narrower distribution of documents. All re- sults presented in this paper use a preliminary version of WebText which does not include links created after Dec 2017 and which after de-duplication and some heuristic based cleaning contains slightly over 8 million documents for a total of 40 GB of text. We removed all Wikipedia documents from WebText since it is a common data source for other datasets and could complicate analysis due to over 
+---
 
 [https://github.com/codelucas/newspaper](https://github.com/codelucas/newspaper)
 
+"我不是世界上最聪明的人，但正如法语所说：'Je ne suis pas un imbecile'（我不是个傻瓜）。"
 
-lapping training data with test evaluation tasks.
+在 8 月 16 日一个现已删除的帖子中，Joliette 选区的保守党候选人 Soheil Eid 用法语写道："Mentez mentez，il en restera toujours quelque chose」（说谎说谎，总会留下些什么）。
+
+"我讨厌 '香水' 这个词，"Burr 说。"法语中的 'parfum' 听起来稍微好一些。"
+
+如果仔细听 29:55，可以听到两个人用法语对话："Comment on fait pour aller de I'autre cote? -Quel autre cote?」（怎么去另一边？- 哪一边？)
+
+如果这听起来有点牵强，考虑一下这个法语问题：As-tu aller au cinema?（你去看电影了吗？），或者英语中的 Did you go to the movies?，直译为 Have-you go to movies/theater?
+
+"Brevet Sans Garantie Du Gouvernement」，翻译成中文是：「无政府担保专利」。
+
+表 1：在 WebText 训练集中发现的自然出现的英语到法语和法语到英语翻译示例。
 
 #### 2.2. Input Representation
 
 A general language model (LM) should be able to compute the probability of (and also generate) any string. Current large scale LMs include pre-processing steps such as lower-casing, tokenization, and out-of-vocabulary tokens which restrict the space of model-able strings. While processing Unicode strings as a sequence of UTF-8 bytes elegantly fulfills this requirement as exemplified in work such as Gillick et al. (2015), current byte-level LMs are not competitive with word-level LMs on large scale datasets such as the One Billion Word Benchmark (Al-Rfou et al., 2018). We observed a similar performance gap in our own attempts to train standard byte-level LMs on WebText.
 
+2.2. 输入表示（Input Representation)
+
+一个通用语言模型（Language Model，简称 LM）应该能够计算任意字符串的概率，并能生成任意字符串。然而，当前的大规模语言模型在处理输入时，通常会包含一些预处理步骤，如将字母转换为小写、将文本分割成词元（token)，以及处理词汇表外的词元等。这些步骤限制了模型可以处理的字符串范围。
+
+将 Unicode 字符串作为 UTF-8 字节序列来处理，是一种优雅的解决方案，可以很好地满足上述要求。这种方法在 Gillick 等人（2015）的研究中得到了充分展示。然而，目前基于字节级别的语言模型在大规模数据集上的表现仍无法与基于词级别的语言模型相媲美，例如在 One Billion Word Benchmark 数据集上的表现（Al-Rfou 等人，2018)。在我们自己尝试在 WebText 数据集上训练标准的字节级语言模型时，也观察到了类似的性能差距。
+
 Byte Pair Encoding (BPE) (Sennrich et al., 2015) is a practical middle ground between character and word level language modeling which effectively interpolates between word level inputs for frequent symbol sequences and character level inputs for infrequent symbol sequences. Despite its name, reference BPE implementations often operate on Unicode code points and not byte sequences. These implementations would require including the full space of Unicode symbols in order to model all Unicode strings. This would result in an base vocabulary of over 130,000 before any multi-symbol tokens are added. This is prohibitively large compared to the 32,000 to 64,000 token vocabularies often used when applying BPE. In contrast, a byte-level version of BPE only requires a base vocabulary size of 256. However, directly applying BPE to the byte sequence results in suboptimal merges due to BPE using a greedy frequency based heuristic for building the token vocabulary. We observed BPE including many versions of common words like dog since they occur in many variations such as `dog`, `dog.` `dog?`. This results in a sub-optimal allocation of limited vocabulary slots and model capacity. To avoid this, we prevent BPE from merging across character categories for any byte sequence. We add an exception for spaces which significantly improves the compression efficiency while adding only minimal fragmentation of words across multiple vocab tokens.
 
 This input representation allows us to combine the empirical benefits of word-level LMs with the generality of byte-level approaches. Since our approach can assign a probability to any Unicode string, this allows us to evaluate our LMs on any dataset regardless of pre-processing, tokenization, or vocab size.
+
+字节对编码（Byte Pair Encoding, BPE）(Sennrich et al., 2015）是一种在字符级和词级语言建模之间寻求平衡的实用方法。它能够有效地处理常见词组（使用词级输入）和罕见词组（使用字符级输入）。尽管名为「字节对」编码，但许多 BPE 的标准实现实际上是基于 Unicode 码点而非字节序列进行操作的。
+
+这些基于 Unicode 的实现需要包含整个 Unicode 符号集才能处理所有 Unicode 字符串。这意味着在添加任何多符号标记之前，基础词汇表（即模型能够识别的最小语言单位集合）就已经超过了 130,000 个项目。相比之下，BPE 通常使用的标记词汇表大小为 32,000 到 64,000 个，因此 Unicode 方法的词汇表规模过于庞大，难以实际应用。
+
+与之相反，基于字节的 BPE 版本只需要 256 个基础词汇项（对应 256 个可能的字节值）。然而，直接将 BPE 应用于字节序列也会带来问题。由于 BPE 使用基于频率的贪婪算法来构建标记词汇表，这种方法可能导致次优的合并结果。
+
+例如，我们观察到 BPE 会包含同一个常见词的多个变体，如 "dog"、"dog."、"dog?" 等。这是因为这些变体在文本中都经常出现。这种做法会导致有限的词汇表空间和模型能力被低效利用。
+
+为了解决这个问题，我们在 BPE 处理过程中加入了一个限制：禁止跨字符类别（如字母、数字、标点符号等）进行合并。我们只为空格字符设置了例外，允许它与其他类别合并。这种方法显著提高了压缩效率，同时仅在最小程度上增加了词语被分割成多个词汇标记的情况。
+
+这种输入表示方法让我们能够将基于词的语言模型在实践中的优势与基于字节的方法的普适性结合起来。我们的方法可以为任何 Unicode 字符串计算出现概率，这使得我们能够在任何数据集上评估我们的语言模型，而不受数据预处理方式、文本分割方法或词表大小的限制。
 
 #### 2.3. Model
 
@@ -132,22 +189,50 @@ We use a Transformer (Vaswani et al., 2017) based architecture for our LMs. The 
 
 Table 2: Architecture hyperparameters for the 4 model sizes.
 
+2.3. 模型
 
+我们的语言模型采用了基于 Transformer 的架构（Vaswani et al., 2017)。该模型在很大程度上遵循了 OpenAI GPT 模型（OpenAI GPT model）(Radford et al., 2018）的设计，但做了一些修改。我们将层归一化（Layer normalization）(Ba et al., 2016）移到了每个子模块的输入端，这类似于预激活残差网络（pre-activation residual network）(He et al., 2016）的做法。此外，我们在最后的自注意力模块后增加了一个额外的层归一化。
 
+我们采用了一种经过改进的初始化方法，这种方法考虑了模型中残差路径上的信号累积效应。具体来说，我们在初始化时将残差层的权重按 $1/\sqrt {N}$ 的比例进行缩放，其中 $N$ 是残差层的数量。我们还将词表大小扩展到了 50,257。同时，我们将模型能够处理的上下文长度从 512 个标记（token）增加到了 1024 个，并使用了更大的批处理大小 512。
 
+表 1：四种不同规模模型的架构超参数
+
+| 模型参数量 | 层数    | 隐藏层维度  |
+|-----------|------------|-------------|
+| 1.17 亿  | 12     | 768     |
+| 3.45 亿  | 24     | 1024    |
+| 7.62 亿  | 36     | 1280    |
+| 15.42 亿 | 48     | 1600    |
 
 
 ### 3. Experiments
 
 We trained and benchmarked four LMs with approximately log-uniformly spaced sizes. The architectures are summarized in Table 2. The smallest model is equivalent to the original GPT, and the second smallest equivalent to the largest model from BERT (Devlin et al., 2018). Our largest model, which we call GPT-2, has an order of magnitude more parameters than GPT. The learning rate of each model was manually tuned for the best perplexity on a 5% held-out sample of WebText. All models still underfit Web-Text and held-out perplexity has as of yet improved given more training time.
 
+3 实验
+
+我们训练并评估了四个规模大致呈对数均匀分布的语言模型（Language Model, LM)。表 2 总结了这些模型的架构。其中最小的模型相当于原始的 GPT，第二小的模型则相当于 BERT（Devlin et al., 2018）中最大的模型。我们最大的模型，我们称之为 GPT-2，其参数数量比 GPT 多出了一个数量级。我们手动调整了每个模型的学习率，以在 WebText 数据集 5% 的验证样本上获得最佳困惑度（perplexity)。值得注意的是，所有模型目前仍未能完全拟合 WebText 数据集，这意味着如果继续增加训练时间，验证集上的困惑度仍有进一步下降的空间。
+
 #### 3.1. Language Modeling
 
-As an initial step towards zero-shot task transfer, we are interested in understanding how WebText LM's perform at zero-shot domain transfer on the primary task they are trained for – language modeling. Since our model operates on a byte level and does not require lossy pre-processing or tokenization, we can evaluate it on any language model benchmark. Results on language modeling datasets are commonly reported in a quantity which is a scaled or exponentiated version of the average negative log probability per canonical prediction unit - usually a character, a byte, or a word. We evaluate the same quantity by computing the log-probability of a dataset according to a WebText LM and dividing by the number of canonical units. For many of these datasets, WebText LMs would be tested significantly out-of-distribution, having to predict aggressively standardized text, tokenization artifacts such as disconnected punctuation and contractions, shuffled sentences, and even the string
+As an initial step towards zero-shot task transfer, we are interested in understanding how WebText LM's perform at zero-shot domain transfer on the primary task they are trained for – language modeling. Since our model operates on a byte level and does not require lossy pre-processing or tokenization, we can evaluate it on any language model benchmark. Results on language modeling datasets are commonly reported in a quantity which is a scaled or exponentiated version of the average negative log probability per canonical prediction unit - usually a character, a byte, or a word. We evaluate the same quantity by computing the log-probability of a dataset according to a WebText LM and dividing by the number of canonical units. For many of these datasets, WebText LMs would be tested significantly out-of-distribution, having to predict aggressively standardized text, tokenization artifacts such as disconnected punctuation and contractions, shuffled sentences, and even the string <UNK> which is extremely rare in WebText - occurring only 26 times in 40 billion bytes. We report our main re- sults in Table 3 using invertible de-tokenizers which remove as many of these tokenization / pre-processing artifacts as possible. Since these de-tokenizers are invertible, we can still calculate the log probability of a dataset and they can be thought of as a simple form of domain adaptation. We observe gains of 2.5 to 5 perplexity for GPT-2 with these de-tokenizers.
 
+3.1. 语言建模
 
-## Language Models are Unsupervised Multitask Learners
+在探索零样本任务迁移（zero-shot task transfer）的初步阶段，我们首先关注 WebText 大语言模型（LLM）在其主要训练任务 —— 语言建模上的零样本领域迁移（zero-shot domain transfer）表现。我们的模型直接在字节级别上运行，无需进行可能导致信息丢失的预处理或分词，因此可以在任何语言模型基准测试上进行评估。
 
+在语言建模领域，研究人员通常使用一个特定的指标来报告模型性能。这个指标是每个基本预测单元（可能是字符、字节或单词）的平均负对数概率的某种变体（如缩放或取指数）。我们采用类似的方法，计算 WebText LLM 对整个数据集的对数概率，然后除以基本单元的总数。
+
+然而，在许多数据集上，WebText LLM 可能会面临显著的分布外（out-of-distribution）测试。这意味着模型需要预测一些在训练数据中很少见到的文本形式，例如：
+
+1. 经过高度标准化处理的文本
+2. 分词过程产生的人工痕迹，如独立的标点符号和缩写
+3. 顺序被打乱的句子
+4. 甚至是字符串 "<UNK>"（在 400 亿字节的 WebText 中仅出现 26 次）
+
+为了解决这个问题，我们使用了可逆的去分词器（invertible de-tokenizers)，尽可能地消除这些由分词和预处理引入的人工痕迹。这些去分词器的可逆性使我们仍能计算数据集的对数概率，可以将其视为一种简单的领域适应（domain adaptation）方法。表 3 展示了我们的主要结果。我们观察到，使用这些去分词器后，GPT-2 模型的困惑度（perplexity，衡量语言模型预测准确性的指标，越低越好）降低了 2.5 到 5 个点。
+
+WebText LMs transfer well across domains and datasets, improving the state of the art on 8 of the 8 datasets in a zero-shot setting. Large improvements are noticed on small datasets such as Penn Treebank and WikiText-2 which have only 1 to 2 million training tokens. Large improvements are also noticed on datasets created to measure long-term dependencies like LAMBADA (Paperno et al., 2016) and the Children’s Book Test (Hill et al., 2015). Our model is still significantly worse than prior work on the One Billion Word Benchmark (Chelba et al., 2013). This is likely due to a combination of it being both the largest dataset and having some of the most destructive pre-processing - 1BW's sentence level shuffling removes all long-range structure.
 
 |          | LAMBADA | LAMBADA   | CBT-CN | CBT-NE | WikiText2 | PTB        | enwik8 | text8     | WikiText103 | 1BW       |
 |----------|---------|-----------|--------|--------|-----------|------------|--------|-----------|-------------|-----------|
@@ -160,9 +245,21 @@ As an initial step towards zero-shot task transfer, we are interested in underst
 
 Table 3: Zero-shot results on many datasets. No training or fine-tuning was performed for any of these results. PTB and WikiText-2 results are from (Gong et al., 2018). CBT results are from (Bajgar et al., 2016). LAMBADA accuracy result is from (Hoang et al., 2018) and LAMBADA perplexity result is from (Grave et al., 2016). Other results are from (Dai et al., 2019).
 
-<UNK> which is extremely rare in WebText - occurring only 26 times in 40 billion bytes. We report our main re- sults in Table 3 using invertible de-tokenizers which remove as many of these tokenization / pre-processing artifacts as possible. Since these de-tokenizers are invertible, we can still calculate the log probability of a dataset and they can be thought of as a simple form of domain adaptation. We observe gains of 2.5 to 5 perplexity for GPT-2 with these de-tokenizers.
+注：表格中的缩写说明：
+- PPL：困惑度（Perplexity)
+- ACC：准确率（Accuracy)
+- BPB：每字节位数（Bits Per Byte)
+- BPC：每字符位数（Bits Per Character)
 
-WebText LMs transfer well across domains and datasets, improving the state of the art on 8 of the 8 datasets in a zero-shot setting. Large improvements are noticed on small datasets such as Penn Treebank and WikiText-2 which have only 1 to 2 million training tokens. Large improvements are also noticed on datasets created to measure long-term dependencies like LAMBADA (Paperno et al., 2016) and the Children’s Book Test (Hill et al., 2015). Our model is still significantly worse than prior work on the One Billion Word Benchmark (Chelba et al., 2013). This is likely due to a combination of it being both the largest dataset and having some of the most destructive pre-processing - 1BW's sentence level shuffling removes all long-range structure.
+WebText 大语言模型（Large Language Models, LMs）展现出了出色的跨领域和跨数据集迁移能力。在零样本（zero-shot）设置下，该模型在全部 8 个测试数据集上都实现了性能提升，刷新了最新技术水平。特别是在规模较小的数据集上，如 Penn Treebank 和 WikiText-2（这些数据集仅包含 100 万到 200 万个训练 token），模型表现出了显著的进步。
+
+同时，在专门用于评估长期依赖能力的数据集上，如 LAMBADA [Paperno et al., 2016] 和 Children's Book Test [Hill et al., 2015]，我们的模型也取得了可观的进步。然而，在 One Billion Word Benchmark [Chelba et al., 2013] 上，我们的模型表现仍显著落后于之前的研究成果。
+
+这种表现差异可能源于两个原因：
+1. One Billion Word Benchmark 是所有测试数据集中规模最大的。
+2. 该数据集使用了一些极具破坏性的预处理方法，尤其是句子级别的随机打乱，这完全破坏了文本中的长程结构。
+
+表 3：在多个数据集上的零样本（zero-shot）测试结果。这里的「零样本」指的是模型在没有经过任何针对性训练或微调的情况下，直接在新任务上的表现。表中的数据来自不同的研究：宾州树库（PTB）和 WikiText-2 的结果来自 Gong 等人（2018）的研究；儿童读物测试（CBT）的结果来自 Bajgar 等人（2016）的研究；LAMBADA 数据集的准确率结果来自 Hoang 等人（2018）的研究，而其困惑度（perplexity，用于衡量语言模型预测下一个词的能力）结果来自 Grave 等人（2016）的研究。其他结果则来自 Dai 等人（2019）的研究。
 
 #### 3.2. Children’s Book Test
 
@@ -170,18 +267,38 @@ Figure 2: Performance on the Children’s Book Test as a function of model capac
 
 The Children’s Book Test (CBT) (Hill et al., 2015) was created to examine the performance of LMs on different cat- egories of words: named entities, nouns, verbs, and preposi- tions. Rather than reporting perplexity as an evaluation met- ric, CBT reports accuracy on an automatically constructed cloze test where the task is to predict which of 10 possible choices for an omitted word is correct. Following the LM approach introduced in the original paper, we compute the probability of each choice and the of the sentence con- ditioned on this choice according to the LM, and predict the one with the highest probability. As seen in Figure 2 performance steadily improves as model size is increased and closes the majority of the gap to human performance on this test. Data overlap analysis showed none of the CBT test books, The Jungle Book by Rudyard Kipling, is in WebText, so we report results on the validation set which has no significant overlap. GPT-2 achieves new state of the art results of 93.3% on common nouns and 89.1% on named entities. A de-tokenizer was applied to remove PTB style tokenization artifacts from CBT.
 
+3.2. 儿童读物测试
+
+图 2：模型在儿童读物测试中的表现与模型容量（即模型的参数数量）的关系。图中的人类表现数据来自 Bajgar 等人（2016）的研究，这比原始论文中给出的估计要高得多。
+
+儿童读物测试是一项评估语言模型理解能力的任务，通过让模型从多个选项中选择正确的词来完成儿童故事中的空缺。这个测试可以帮助我们了解模型是否能够理解上下文并做出合理的词语选择。图 2 显示，随着模型容量的增加，模型在这项任务上的表现也随之提高，逐渐接近人类水平。这说明增加模型的规模和复杂度能够提升其语言理解能力，但同时也带来了更高的计算成本和资源需求。
+
+儿童书籍测试（Children's Book Test, CBT）[15] 旨在评估语言模型（Language Models, LMs）在不同词类上的表现，包括命名实体、名词、动词和介词。与传统使用困惑度（perplexity）作为评估指标不同，CBT 采用自动生成的完形填空测试来衡量准确率。在这项测试中，模型需要从 10 个候选词中选出正确的一个来填补句子中的空缺。我们采用了原论文中介绍的语言模型方法，计算每个候选词的概率以及将其填入句子后的整句概率，并选择概率最高的词作为预测结果。
+
+如图 2 所示，随着模型规模的增加，性能稳步提升，大幅缩小了与人类表现之间的差距。数据重叠分析显示，CBT 测试书籍中的《丛林之书》（鲁德亚德·吉卜林著）并不包含在我们的 WebText 训练数据中。因此，我们报告了验证集的结果，该验证集与训练数据没有明显重叠。GPT-2 在这项测试中取得了新的最佳成绩，在普通名词和命名实体类别上的准确率分别达到了 93.3% 和 89.1%。为了提高结果的可读性，我们还使用了去标记器（de-tokenizer）来移除 CBT 中由宾州树库（Penn Treebank, PTB）式标记化带来的人工痕迹。
+
 #### 3.3 LAMBADA
 
-The LAMBADA dataset (Paperno et al., 2016) tests the ability of systems to model long-range dependencies in text. The task is to predict the final word of sentences which require at least 50 tokens of context for a human to successfully predict. GPT-2 improves the state of the art from 99.8 (Grave et al., 2016) to 8.6 perplexity and increases the accuracy of LMs on this test from 19% (Dehghani et al., 2018) to 52.66%. Investigating GPT-2’s errors showed most predictions are valid continuations of the sentence, but are not valid final words. This suggests that the LM is not using the additional useful constraint that the word must be the final of the sentence. Adding a stop-word filter as an approximation to this further increases accuracy to 63.24%, improving the overall state of the art on this task by 44%. The previous state of the art (Hoang et al., 2018) used a different restricted prediction setting where the outputs of the model were constrained to only words that appeared in the context. For GPT-2, this restriction is harmful rather than helpful
+The LAMBADA dataset (Paperno et al., 2016) tests the ability of systems to model long-range dependencies in text. The task is to predict the final word of sentences which require at least 50 tokens of context for a human to successfully predict. GPT-2 improves the state of the art from 99.8 (Grave et al., 2016) to 8.6 perplexity and increases the accuracy of LMs on this test from 19% (Dehghani et al., 2018) to 52.66%. Investigating GPT-2’s errors showed most predictions are valid continuations of the sentence, but are not valid final words. This suggests that the LM is not using the additional useful constraint that the word must be the final of the sentence. Adding a stop-word filter as an approximation to this further increases accuracy to 63.24%, improving the overall state of the art on this task by 44%. The previous state of the art (Hoang et al., 2018) used a different restricted prediction setting where the outputs of the model were constrained to only words that appeared in the context. For GPT-2, this restriction is harmful rather than helpful since 19% of answers are not in context. We use a version
+of the dataset without preprocessing.
 
+LAMBADA 数据集（Paperno et al., 2016）用于测试系统理解长文本上下文的能力。该任务要求预测那些需要至少 50 个词元（token）的上下文才能让人类成功预测的句子的最后一个词。GPT-2 模型在这项任务上取得了显著进展：它将困惑度（一种衡量语言模型性能的指标，数值越低越好）从之前的最佳水平 99.8（Grave et al., 2016）降低到 8.6，并将大语言模型（Large Language Model, LLM）在这个测试上的准确率从 19%（Dehghani et al., 2018）提高到 52.66%。
+
+研究 GPT-2 的错误发现，大多数预测虽然是句子的合理延续，但并不适合作为句子的结尾词。这表明该语言模型没有充分利用「预测词必须是句子的最后一个词」这一额外的有用约束。为了改进这一点，研究者添加了一个停用词过滤器（用于过滤掉常见但对句意贡献不大的词）作为这一约束的近似实现，这进一步将准确率提高到 63.24%，总体上将该任务的最新水平提高了 44%。
+
+先前的最佳结果（Hoang et al., 2018）采用了一种不同的受限预测设置，即将模型的输出限制在只能预测上下文中出现过的词。然而，对于 GPT-2 来说，这种限制反而有害无益，因为有 19% 的正确答案并不出现在上下文中。因此，我们选择使用未经这种预处理的原始数据集版本。
 
 #### 3.4. Winograd Schema Challenge
 
-![5_1.png](5_1.png)
-
 Figure 3. Performance on the Winograd Schema Challenge as a function of model capacity.
 
+3.4. Winograd 模式挑战
+
+图 3：Winograd 模式挑战（一种测试机器理解自然语言能力的任务）的性能随模型容量变化的趋势。该图展示了随着模型规模的增加，其在这项挑战中的表现如何变化。
+
 The Winograd Schema challenge (Levesque et al., 2012) was constructed to measure the capability of a system to perform commonsense reasoning by measuring its ability to resolve ambiguities in text. Recently Trinh & Le (2018) demonstrated significant progress on this challenge using LMs, by predicting the resolution of the ambiguity with higher probability. We follow their problem formulation and visualize the performance of our models with both full and partial scoring techniques in Figure 3. GPT-2 improves state of the art accuracy by 7%, achieving 70.70%. The dataset is quite small with only 273 examples so we recommend reading Trichelair et al. (2018) to help contextualize this result.
+
+Winograd Schema 挑战（Winograd Schema challenge）(Levesque et al., 2012）旨在通过测量系统解决文本歧义的能力来评估其常识推理能力。最近，Trinh & Le（2018）使用语言模型（Language Models, LMs）在这项挑战上取得了显著进展，他们通过预测更高概率的歧义解决方案来实现这一目标。我们遵循他们的问题定义方法，并在图 3 中展示了我们的模型在使用完整和部分评分技术时的表现。GPT-2 将最先进的准确率（accuracy）提高了 7%，达到了 70.70%。需要注意的是，该数据集规模相当小，只有 273 个样本，因此我们建议参考 Trichelair et al.（2018）的研究来更好地理解这个结果的意义。
 
 #### 3.5. Reading Comprehension
 
@@ -189,20 +306,33 @@ The Conversation Question Answering dataset (CoQA) Reddy et al. (2018) consists 
 
 Greedy decoding from GPT-2 when conditioned on a document, the history of the associated conversation, and a final token A: achieves 85 F1 on the development set. This matches or exceeds the performance of 3 out of 4 baselines systems without using the 127,000+ manually collected question answer pairs those baselines were trained on. The supervised SOTA, a BERT based system (Devlin et al., 2018), is nearing the 89 F1 performance of humans. While GPT-2's performance is exciting for a system without any supervised training, some inspection of its answers and errors suggests GPT-2 often uses simple retrieval based heuristics such as answer with a name from the document in response to a who question.
 
+3.5. 阅读理解
+
+对话式问答数据集（Conversation Question Answering dataset, CoQA）(Reddy et al., 2018）包含来自 7 个不同领域的文档，每个文档都配有一段关于该文档的问答者和提问者之间的自然语言对话。CoQA 不仅测试模型的阅读理解能力，还评估模型回答依赖于对话历史的问题（例如 "为什么？"）的能力。
+
+当 GPT-2（大语言模型）在给定一篇文档、相关对话历史记录和最后一个 token "A:" 的条件下进行贪婪解码时，在开发集上达到了 85 的 F1 值。这一成绩与 4 个基线系统中的 3 个相当或超过，而且 GPT-2 并没有使用那些基线系统训练时所用的 127,000 多个人工收集的问答对。目前有监督学习的最先进系统是基于 BERT 的系统 [Devlin et al., 2018]，其性能正在接近人类 89 的 F1 值。尽管 GPT-2 作为一个没有经过任何有监督训练的系统，其表现令人振奋，但通过检查其回答和错误发现，GPT-2 经常使用简单的检索式策略。例如，在回答 "谁" 的问题时，它往往直接从文档中提取一个名字作为答案。
+
 #### 3.6. Summarization
 
 We test GPT-2's ability to perform summarization on the CNN and Daily Mail dataset (Nallapati et al., 2016). To induce summarization behavior we add the text TL;DR: after the article and generate 100 tokens with Top-k random sampling (Fan et al., 2018) with k = 2 which reduces diversity and encourages more abstractive summaries than greedy decoding. We use the first 3 generated sentences of these 100 tokens as the summary. While qualitatively the generations resemble summaries, as shown in Table 4, they often focus on recent content from the article or confuse specific details such as how many cars were involved in a crash or whether a logo was on a hat or shirt. On the commonly reported ROUGE 1,2,L metrics the generated summaries only begin to approach the performance of classic neural baselines and just barely outperforms selecting 3 random sentences from the article. GPT-2's performance drops by 6.4 points on the aggregate metric when the task hint is removed which demonstrates the ability to invoke task specific behavior in a language model with natural language.
 
-![5_0.png](5_0.png)
-
 Table 4. Summarization performance as measured by ROUGE F1 metrics on the CNN and Daily Mail dataset. Bottom-Up Sum is the SOTA model from (Gehrmann et al., 2018).
+
+3.6. 摘要
+
+我们测试了 GPT-2 大语言模型在 CNN 和 Daily Mail 数据集上进行文本摘要的能力。这个数据集最初由 Nallapati 等人在 2016 年提出。为了让 GPT-2 生成摘要，我们在原文后面添加了 "TL;DR:" （Too Long; Didn't Read 的缩写，意为 "太长不看" ）这个提示。然后，我们使用一种叫做 Top-k 随机采样的方法（Fan et al., 2018）生成 100 个文本单元（token)，其中 k 值设为 2。这种方法可以减少输出的多样性，从而产生比简单选择最可能单词的方法（即贪婪解码）更加抽象的摘要。我们选取生成的前三个句子作为最终的摘要。
+
+从质量上看，GPT-2 生成的内容确实类似摘要，如表 4 所示。但我们也发现了一些问题：它们往往过于关注文章的近期内容，或者在一些具体细节上出现混淆。比如，可能会搞错一起车祸涉及的车辆数量，或者误将某个标志描述为在帽子上而不是衬衫上。
+
+在评估文本摘要质量的常用指标 ——ROUGE（Recall-Oriented Understudy for Gisting Evaluation）1、2 和 L 分数上，GPT-2 生成的摘要刚刚开始接近传统神经网络模型的表现水平，仅仅略微超过了随机从文章中选择 3 个句子的效果。有趣的是，当我们移除 "TL;DR:" 这个任务提示时，GPT-2 的综合性能下降了 6.4 个百分点。这个结果证明了我们可以通过自然语言提示来激发语言模型执行特定任务的能力。
+
+表 4. 在 CNN 和 Daily Mail 数据集上通过 ROUGE F1 指标测量的摘要性能。Bottom-Up Sum 是目前最先进的（State-of-the-Art, SOTA）模型，来自 Gehrmann 等人 2018 年的研究。
+
 
 #### 3.7. Translation
 
-We test whether GPT-2 has begun to learn how to translate from one language to another. In order to help it infer that this is the desired task, we condition the language model on a context of example pairs of the format $english\: sentence \rightarrow french\: sentence$ and then after a final prompt of $english\: sentence \rightarrow$ we sample from the model with greedy decoding and use the first generated sentence as the translation. On the WMT-14 English-French test set, GPT-2 gets 5 BLEU, which is slightly worse than a word-by-word substitution with a bilingual lexicon inferred in previous work on unsupervised word translation.
-
-
-# Language Models are Unsupervised Multitask Learners
+We test whether GPT-2 has begun to learn how to translate from one language to another. In order to help it infer that this is the desired task, we condition the language model on a context of example pairs of the format $english\: sentence \rightarrow french\: sentence$ and then after a final prompt of $english\: sentence \rightarrow$ we sample from the model with greedy decoding and use the first generated sentence as the translation. On the WMT-14 English-French test set, GPT-2 gets 5 BLEU, which is slightly worse than a word-by-word substitution with a bilingual lexicon inferred in previous work on unsupervised word translation (Conneau et al., 2017b). On the WMT-14 French-English test set, GPT-2 is able to leverage its very strong English language model to perform significantly better, achieving 11.5 BLEU. This outperforms several unsupervised machine translation baselines from (Artetxe et al., 2017) and (Lample et al., 2017) but is still much worse than the 33.5 BLEU of the current best unsupervised machine translation approach (Artetxe et al., 2019). Performance on this task was surprising to us, since we deliberately removed non-English webpages from WebText as a filtering step. In order to confirm this, we ran a byte-level language detector2 on WebText
+which detected only 10MB of data in the French language which is approximately 500x smaller than the monolingual French corpus common in prior unsupervised machine translation research.
 
 | Question                                                         | Generated Answer           | Correct | Probability |
 |------------------------------------------------------------------|----------------------------|---------|-------------|
@@ -239,20 +369,85 @@ We test whether GPT-2 has begun to learn how to translate from one language to a
 
 Table 5. The 30 most confident answers generated by GPT-2 on the development set of Natural Questions sorted by their probability according to GPT-2. None of these questions appear in WebText according to the procedure described in Section 4.
 
-[Link to GitHub Repository](https://github.com/CLD2Owners/cld2)
+3.7. 翻译
 
-(A, B, C et al., 2017)
+我们对 GPT-2 模型进行了测试，看它是否已经开始学习如何在不同语言之间进行翻译。为了帮助模型理解我们想要执行的是翻译任务，我们向语言模型提供了一系列示例对，格式为 "英语句子 -> 法语句子"。然后，我们给出最后一个提示 "英语句子 ->"，并让模型用贪心搜索（greedy decoding）的方式生成内容，我们将生成的第一个句子作为翻译结果。
 
+在 WMT-14 英语 - 法语测试集上，GPT-2 获得了 5 BLEU（双语评估替换）分数。这个成绩略低于 Conneau 等人（2017b）在之前的无监督词语翻译研究中，使用推断出的双语词典进行逐词替换的效果。在 WMT-14 法语 - 英语测试集上，GPT-2 能够利用其强大的英语语言模型能力表现得明显更好，达到了 11.5 BLEU 分数。这一成绩优于 Artetxe 等人（2017）和 Lample 等人（2017）提出的几个无监督机器翻译基准，但仍远远不及当前最佳的无监督机器翻译方法的 33.5 BLEU 分数（Artetxe et al., 2019)。
 
-#### 7_0.png
-|          | B        | WikiText-2 | enwik8 | text8 | Wikitext-103 | 1BW   |
+这个任务的表现让我们感到惊讶，因为在处理 WebText（我们的网络文本数据集）时，我们特意删除了所有非英语网页作为过滤步骤。为了确认这一点，我们在 WebText 上运行了一个字节级语言检测器，结果发现其中只有约 10MB 的法语数据。这个数量大约是先前无监督机器翻译研究中常用的单语法语语料库的 1/500。
+
+| 问题                               | 生成的答案         | 正确 | 概率    |
+|------------------------------------------------------------------|----------------------------|-------|-------------|
+| 谁写了《物种起源》这本书？                    | Charles Darwin       | ✔   | 83.4%    |
+| 谁是 Ubuntu 项目的创始人？                    | Mark Shuttleworth     | ✔   | 82.0%    |
+| 谁是绿湾包装工队（Green Bay Packers）的四分卫？         | Aaron Rodgers       | ✔   | 81.1%    |
+| 熊猫是哪个国家的国家动物？                    | 中国            | ✔   | 76.8%    |
+| 谁提出了相对论理论？                       | Albert Einstein      | ✔   | 74.6%    |
+| 第一部《星球大战》电影是什么时候上映的？             | 1977            | ✔   | 71.4%    |
+| 瑞典最常见的血型是什么？                     | A             | ✔   | 70.0%    |
+| 谁被认为是精神分析学（Psychoanalysis）的创始人？         | Sigmund Freud       | ✔   | 69.3%    |
+| 1969 年谁第一个在月球上踏出了脚步？                | Neil Armstrong       | ✔   | 66.8%    |
+| 英国最大的连锁超市是哪家？                    | Tesco           | ✔   | 65.3%    |
+| shanti 在英语中是什么意思？ | peace（和平）| ✔ | 61.0% |
+| 《孙子兵法》的作者是谁？ | Sun Tzu（孙子）| ✔ | 59.6% |
+| 美国面积最大的州是哪个？ | California（加利福尼亚）| ✘ | 59.2% |
+| 绿藻是哪种繁殖方式的例子？ | parthenogenesis（单性生殖）| ✘ | 56.5% |
+| 维克拉姆历法在哪个国家是官方历法？ | India（印度）| ✔ | 55.6% |
+| 谁是《独立宣言》的主要起草人？ | Thomas Jefferson（托马斯·杰斐逊）| ✔ | 55.3% |
+| 哪个美国州与蒙大拿州的西部接壤？ | Montana（蒙大拿）| ✔ | 53.2% |
+| 在《权力的游戏》中，谁饰演提利昂·兰尼斯特？ | Peter Dinklage（彼得·丁克拉奇）| ✔ | 52.8% |
+| 谁任命美联储主席？ | Janet Yellen（珍妮特·耶伦）| ✘ | 51.5% |
+| SMOTE 预处理会创建多少个分子进入两个基因完全相同的细胞核中？ | mitosi | ✘ | 51.0% |
+| 谁在英国创作了最多的戏剧？ | Michael Jordan（迈克尔·乔丹）| ✘ | 50.2% |
+| 哪条河与罗马城有关？ | The Tiber（台伯河）| ✔ | 48.6% |
+| 谁是第一位被弹劾的总统？ | Andrew Johnson | ✔ | 43.8% |
+| 2017 年美国国土安全部部长是谁？ | John Kelly | ✔ | 47.0% |
+| 欧盟的通用货币叫什么名字？ | 欧元（Euro）| ✔ | 46.8% |
+| 谁创作了法国国歌《马赛曲》？ | Palpatine | ✘ | 46.5% |
+| 在射击场射击是否需要持枪许可证？ | 不需要 | ✘ | 45.9% |
+| 谁在 1859 年提出了作为生物发展基础的进化论？ | Charles Darwin（查尔斯·达尔文） | ✔ | 45.7% |
+| 在俄罗斯发生爆炸的核电站是哪一个？ | 切尔诺贝利（Chernobyl）| ✔ | 45.4% |
+| 在原版《终结者》电影中，谁扮演了 John Connor？ | Arnold Schwarzenegger（阿诺德·施瓦辛格） | ✔ | 45.2% |
+
+表 5：GPT-2 在 Natural Questions（自然问题）开发集上生成的 30 个最有把握的答案，按照 GPT-2 给出的概率排序。根据第 4 节描述的方法，这些问题都没有出现在 WebText（网络文本数据集）中。
+
+3.8. Question Answering
+
+A potential way to test what information is contained within a language model is to evaluate how often it generates the
+correct answer to factoid-style questions. Previous showcasing of this behavior in neural systems where all information is stored in parameters such as A Neural Conversational Model (Vinyals & Le, 2015) reported qualitative results due to the lack of high-quality evaluation datasets. The recently introduced Natural Questions dataset (Kwiatkowski et al., 2019) is a promising resource to test this more quantitatively. Similar to translation, the context of the language model is seeded with example question answer pairs which helps the model infer the short answer style of the dataset.
+
+GPT-2 answers 4.1% of questions correctly when evaluated by the exact match metric commonly used on reading comprehension datasets like SQUAD.3 As a comparison point, the smallest model does not exceed the 1.0% accuracy of an incredibly simple baseline which returns the most common answer for each question type (who, what, where, etc...). GPT-2 answers 5.3 times more questions correctly, suggesting that model capacity has been a major factor in the poor performance of neural systems on this kind of task as of yet. The probability GPT-2 assigns to its generated answers is well calibrated and GPT-2 has an accuracy of 63.1% on the 1% of questions it is most confident in. The 30 most confident answers generated by GPT-2 on development set questions are shown in Table 5. The performance of GPT-2 is still much, much, worse than the 30 to 50% range of open domain question answering systems which hybridize information retrieval with extractive document question answering (Alberti et al., 2019).
+
+|          | PTB        | WikiText-2 | enwik8 | text8 | Wikitext-103 | 1BW   |
 |----------|----------|------------|--------|-------|--------------|-------|
 | Dataset train | 2.67%  | 0.66%      | 7.50%  | 2.34% | 9.09%        | 13.19%|
 | WebText train | 0.88%  | 1.63%      | 6.31%  | 3.94% | 2.42%        | 3.75% |
 
- Table 6. Percentage of test set 8 grams overlapping with training sets.
+Table 6. Percentage of test set 8 grams overlapping with training sets.
 
-#### 4. Generalization vs Memorization
+3.8. 问答能力
+
+测试语言模型所包含信息的一种潜在方法是评估它能多常生成事实类问题的正确答案。之前在神经网络系统中展示这种行为时，所有信息...
+
+由于缺乏高质量的评估数据集，《一个神经对话模型》(Vinyals & Le, 2015）只报告了定性结果。最近推出的自然问题数据集（Kwiatkowski et al., 2019）为更定量地测试这一领域提供了一个有前景的资源。类似于翻译任务，研究人员通过在语言模型的上下文中输入示例问答对来帮助模型推断数据集中简短回答的风格。
+
+在使用 SQUAD 等阅读理解数据集常用的精确匹配指标（exact match metric）评估时，GPT-2 正确回答了 4.1% 的问题。作为对比，最小的模型甚至没有超过一个非常简单的基线方法的 1.0% 准确率，这个基线方法仅仅是为每种问题类型（如谁、什么、哪里等）返回最常见的答案。GPT-2 的正确回答率是这个基线方法的 5.3 倍，这表明模型的规模（即参数数量）可能是神经系统在这类任务上表现不佳的主要原因。
+
+GPT-2 对其生成答案的置信度评估较为准确，在其最有把握的 1% 的问题上，准确率达到了 63.1%。表 5 展示了 GPT-2 在开发集问题上生成的 30 个最有把握的答案。然而，GPT-2 的表现仍然远远不如那些将信息检索与提取式文档问答相结合的开放域问答系统，后者的准确率范围在 30% 到 50% 之间（Alberti et al., 2019)。
+
+|     | PTB    | WikiText-2 | enwik8 | text8 | Wikitext-103 | 1BW  |
+|----------|------------|------------|--------|-------|--------------|-------|
+| 数据集训练集 | 2.67% | 0.66%   | 7.50% | 2.34% | 9.09%    | 13.19%|
+| WebText 训练集 | 0.88% | 1.63%   | 6.31% | 3.94% | 2.42%    | 3.75% |
+
+表 6：测试集中的 8-gram（8 个连续单词序列）与训练集重叠的百分比。
+
+注：PTB 代表 Penn Treebank，1BW 代表 One Billion Word 基准测试集。其他数据集如 WikiText-2、enwik8、text8 和 Wikitext-103 是常用的自然语言处理评估数据集。
+
+[Link to GitHub Repository](https://github.com/CLD2Owners/cld2)
+
+### 4. Generalization vs Memorization
 
 Recent work in computer vision has shown that common image datasets contain a non-trivial amount of near-duplicate images. For instance CIFAR-10 has 3.3% overlap between train and test images (Barz & Denzler, 2019). This results in an over-reporting of the generalization performance of machine learning systems. As the size of datasets increases this issue becomes increasingly likely which suggests a similar phenomena could be happening with WebText. Therefore it is important to analyze how much test data also shows up in the training data.
 
@@ -260,11 +455,28 @@ To study this we created Bloom filters containing 8-grams of WebText training se
 
 These Bloom filters let us calculate, given a dataset, the percentage of 8-grams from that dataset that are also found in the WebText training set. Table 6 shows this overlap analysis for the test sets of common LM benchmarks. Common LM datasets' test sets have between 1-6% overlap with WebText train, with an average of overlap of 3.2%. Somewhat surprisingly, many datasets have larger overlaps with their own training splits, with an average of 5.9% overlap.
 
+4 泛化能力 vs 记忆能力
+
+近期计算机视觉领域的研究发现，常见的图像数据集中存在不少近似重复的图像。例如，在 CIFAR-10 数据集中，训练集和测试集之间就有 3.3% 的重叠（Barz & Denzler, 2019)。这种情况会导致机器学习系统的泛化性能被过高估计。随着数据集规模的不断扩大，这个问题可能会变得更加普遍，这也让我们怀疑 WebText 数据集中是否存在类似的现象。因此，分析测试数据在多大程度上出现在训练数据中变得尤为重要。
+
+为了研究这个问题，我们使用了一种称为布隆过滤器（Bloom filters）的数据结构，将其应用于 WebText 训练集中的 8 字词组（8-grams)。为了提高检测效果，我们对字符串进行了标准化处理，只保留小写字母和数字，并用单个空格作为分隔符。我们构造的布隆过滤器将假阳性率（false positive rate）控制在不超过百万分之一。为了验证这个低假阳性率，我们生成了 100 万个随机字符串，结果没有一个被过滤器误判为存在于训练集中。
+
+利用这些布隆过滤器，我们可以计算出给定数据集中有多少比例的 8 字词组也出现在 WebText 训练集中。表 6 展示了常见语言模型（LM）基准测试集的重叠分析结果。结果显示，这些测试集与 WebText 训练集的重叠率在 1% 到 6% 之间，平均重叠率为 3.2%。更令人意外的是，许多数据集与其自身的训练集分割部分有着更高的重叠度，平均重叠率达到 5.9%。
+
+这些发现提醒我们，在评估语言模型的性能时需要更加谨慎。数据集中的重复内容可能会导致我们高估模型的实际泛化能力。这项研究强调了在构建和使用大规模语言模型数据集时，需要更加注意数据的质量和独特性，以确保我们能够准确评估模型的真实能力。
+
 Our approach optimizes for recall, and while manual inspection of the overlaps shows many common phrases, there are many longer matches that are due to duplicated data. This is not unique to WebText. For instance, we discovered that the test set of WikiText-103 has an article which is also in the training dataset. Since there are only 60 articles in the test set there is at least an overlap of 1.6%. Potentially more worryingly, 1BW has an overlap of nearly 13.2% with its own training set according to our procedure.
 
 For the Winograd Schema Challenge, we found only 10 schema which had any 8-gram overlaps with the WebText training set. Of these, 2 were spurious matches. Of the remaining 8, only 1 schema appeared in any contexts that gave away the answer.
 
 For CoQA, about 15% of documents in the news domain are already in WebText and the model performs about 3 F1 better on these. CoQA's development set metric reports the average performance over 5 different domains and we measure a gain of about 0.5-1.0 F1 due to overlap across the various domains. However, no actual training questions or answers are in WebText since coQA was released after the cutoff date for links in WebText.
+
+
+我们的方法主要关注提高召回率（recall)，即尽可能多地找出相关信息。虽然人工检查重叠部分时发现了许多常见短语，但也存在许多较长的匹配，这些匹配主要是由于数据重复造成的。这种数据重复的问题并不是 WebText（一个大规模网络文本数据集）所特有的。例如，我们发现 WikiText-103（一个常用的语言模型基准数据集）的测试集中有一篇文章也出现在了训练数据集中。考虑到测试集只有 60 篇文章，这至少造成了 1.6% 的重叠。更令人担忧的是，根据我们的分析程序，1BW（One Billion Word Benchmark，十亿词基准）与其自身的训练集竟有近 13.2% 的重叠。
+
+在 Winograd Schema Challenge（一项测试 AI 理解能力的挑战）中，我们只发现 10 个模式与 WebText 训练集有任何八个词的连续序列（8-gram）重叠。其中，2 个是误匹配。在剩下的 8 个中，只有 1 个模式出现在了能够泄露答案的上下文中。
+
+对于 CoQA（Conversational Question Answering，一个对话式问答数据集），新闻领域中约 15% 的文档已经存在于 WebText 中，模型在这些文档上的表现提高了约 3 个 F1 分数（F1 score，一种综合评估精确率和召回率的指标）。CoQA 的开发集指标报告了 5 个不同领域的平均表现，我们观察到由于各个领域的重叠，大约有 0.5-1.0 的 F1 分数增益。然而，由于 CoQA 发布日期晚于 WebText 收集链接的截止日期，因此 WebText 中并不包含任何实际的 CoQA 训练问题或答案。
 
 On LAMBADA, the average overlap is 1.2%. GPT-2 performs about 2 perplexity better on examples with greater than 15% overlap. Recalculating metrics when excluding all examples with any overlap shifts results from 8.6 to 8.7 perplexity and reduces accuracy from 63.2% to 62.9%. This very small change in overall results is likely due to only 1 in 200 examples having significant overlap.
 
@@ -272,24 +484,52 @@ Overall, our analysis suggests that data overlap between WebText training data a
 
 Understanding and quantifying how highly similar text impacts performance is an important research question. Better de-duplication techniques such as scalable fuzzy matching could also help better answer these questions. For now, we recommend the use of n-gram overlap based de-duplication as an important verification step and sanity check during the creation of training and test splits for new NLP datasets.
 
+
+在 LAMBADA 数据集上，平均文本重叠率为 1.2%。GPT-2 模型在重叠率超过 15% 的样本上，其困惑度（perplexity）大约降低了 2 个点，表现更好。当我们排除所有存在重叠的样本后重新计算指标，结果显示困惑度从 8.6 略微上升到 8.7，准确率从 63.2% 小幅下降到 62.9%。这种微小的变化很可能是因为只有约 0.5%（即每 200 个中只有 1 个）的样本存在显著重叠。
+
+总的来说，我们的分析表明，WebText 训练数据与特定评估数据集之间的数据重叠确实为最终报告的结果带来了轻微但稳定的性能提升。然而，对于大多数数据集，我们发现其重叠程度并未显著高于标准训练集和测试集之间本就存在的重叠，这一点在表 6 中得到了凸显。
+
+理解和量化高度相似的文本如何影响模型性能是一个重要的研究课题。更先进的数据去重（de-duplication）技术，如可扩展的模糊匹配算法，可能有助于更好地解答这些问题。就目前而言，我们建议在创建新的自然语言处理（NLP）数据集的训练和测试分割时，将基于 n-gram 重叠的去重技术作为一个重要的验证步骤和基本检查手段。
+
 Another potential way of determining whether the performance of WebText LMs is attributable to memorization is inspecting their performance on their own held-out set. As shown in Figure 4, performance on both the training and test sets of WebText are similar and improve together as model size is increased. This suggests even GPT-2 is still underfitting on WebText in many ways.
 
 GPT-2 is also able to write news articles about the discovery of talking unicorns. An example is provided in Table 13.
 
-#### 5. Related Work
+另一种判断 WebText 语言模型（LM）性能是否源于记忆的可能方法是检查它们在自身保留测试集上的表现。如图 4 所示，这些模型在 WebText 的训练集和测试集上的表现相似，并随着模型规模的增加而同步提升。这一现象表明，即使是 GPT-2 这样的大模型，在许多方面仍未能完全拟合 WebText 数据集（即存在欠拟合现象)。
 
-A significant portion of this work measured the performance of larger language models trained on larger datasets. This
+有趣的是，GPT-2 还能够创作关于发现会说话的独角兽的新闻文章。表 13 中提供了一个这样的示例。
 
+### 5. Related Work
 
-![](8_0.png)
+A significant portion of this work measured the performance of larger language models trained on larger datasets. This is similar to the work of Jozefowicz et al. (2016) which
+scaled RNN based language models on the 1 Billion Word Benchmark. Bajgar et al. (2016) also previously improved results on the Children’s Book Test by creating a much larger training dataset out of Project Gutenberg to supplement the standard training dataset. Hestness et al. (2017) conducted a thorough analysis of how the performance of various deep learning models changes as a function of both model capacity and dataset size. Our experiments, while much noisier across tasks, suggest similar trends hold for sub-tasks of an objective and continue into the 1B+ parameter regime.
 
 Figure 4. The performance of LMs trained on WebText as a function of model size.
 
-improved the RNN based fine-tuning approaches of (Dai & Le, 2015). (Conneau et al., 2017a) studied the transfer performance of representations learned by natural language inference models and (Subramanian et al., 2018) explored large-scale multitask training.
+Interesting learned functionality in generative models has been documented before such as the cells in an RNN language model performing line-width tracking and quote/comment detection Karpathy et al. (2015). More inspirational to our work was the observation of Liu et al. (2018) that a model trained to generate Wikipedia articles also learned to translate names between languages.
+
+Previous work has explored alternative approaches to filtering and constructing a large text corpus of web pages, such
+as the iWeb Corpus (Davies, 2018).
+
+There has been extensive work on pre-training methods for language tasks. In addition to those mentioned in the introduction, GloVe (Pennington et al., 2014) scaled word vector representation learning to all of Common Crawl. An influential early work on deep representation learning for text was Skip-thought Vectors (Kiros et al., 2015). McCann et al. (2017) explored the use of representations derived from machine translation models and Howard & Ruder (2018) improved the RNN based fine-tuning approaches of (Dai & Le, 2015). (Conneau et al., 2017a) studied the transfer performance of representations learned by natural language inference models and (Subramanian et al., 2018) explored large-scale multitask training.
 
 (Ramachandran et al., 2016) demonstrated that seq2seq models benefit from being initialized with pre-trained language models as encoders and decoders. More recent work has shown that LM pre-training is helpful when fine-tuned for difficult generation tasks like chit-chat dialog and dialog based question answering systems as well (Wolf et al., 2019) (Dinan et al., 2018).
 
-#### 6. Discussion
+05 相关工作
+
+本研究的很大一部分工作致力于测量在更大数据集上训练的更大规模语言模型的性能。这与 Jozefowicz 等人（2016）的工作类似，他们在 10 亿词基准上扩展了基于 RNN 的语言模型。Bajgar 等人（2016）也曾通过利用 Project Gutenberg 创建了一个更大的训练数据集来补充标准训练数据，从而提高了 Children's Book Test 的测试结果。Hestness 等人（2017）对各种深度学习模型的性能如何随模型容量和数据集大小变化进行了深入分析。我们的实验虽然在不同任务间的结果波动较大，但仍表明类似的趋势适用于特定目标的各个子任务，并且这种趋势在模型参数达到 10 亿以上时仍然持续。
+
+图 4. WebText 语言模型的性能与模型大小的关系。
+
+在生成式 AI（generative AI）模型中，研究人员之前就已经发现了一些有趣的学习功能。例如，Karpathy 等人（2015）发现在循环神经网络（RNN）语言模型中，某些神经元能够追踪文本行宽并检测引用和注释。而对我们的研究更有启发性的是 Liu 等人（2018）的发现：一个原本训练用来生成维基百科文章的模型，竟然也学会了在不同语言之间翻译人名。
+
+在构建大规模网页文本语料库方面，之前的研究也探索了一些创新方法。比如 Davies（2018）开发的 iWeb 语料库，就采用了不同于传统方法的新型过滤和构建技术。
+
+关于语言任务的预训练方法，学界已经进行了广泛的研究。除了引言中提到的那些方法，还有一些值得注意的工作：Pennington 等人（2014）开发的 GloVe 模型，它将词向量表示学习扩展到了整个 Common Crawl 数据集；Kiros 等人（2015）提出的 Skip-thought Vectors，这是文本深度表示学习领域一项具有里程碑意义的早期工作；McCann 等人（2017）探索了如何利用机器翻译模型产生的表示；Howard 和 Ruder（2018）则改进了 Dai 和 Le（2015）提出的基于 RNN 的微调方法。此外，Conneau 等人（2017a）研究了自然语言推理模型所学习的表示在迁移学习中的表现，而 Subramanian 等人（2018）则探索了大规模多任务训练的可能性。
+
+Ramachandran 等人在 2016 年的研究表明，如果使用预先训练好的语言模型来初始化序列到序列模型（sequence-to-sequence model）的编码器和解码器，可以显著提高模型的性能。序列到序列模型是一种用于处理输入序列并生成输出序列的机器学习模型，而编码器和解码器则是这种模型的两个主要组成部分。最近的研究进一步证实，对于一些难度较大的文本生成任务，如闲聊对话和基于对话的问答系统，语言模型的预训练同样能够提供帮助。这一点在 Wolf 等人（2019）和 Dinan 等人（2018）的研究中得到了验证。
+
+### 6. Discussion
 
 Much research has been dedicated to learning (Hill et al., 2016), understanding (Levy & Goldberg, 2014), and critically evaluating (Wieting & Kiela, 2019) the representations of both supervised and unsupervised pre-training methods. Our results suggest that unsupervised task learning is an additional promising area of research to explore. These findings potentially help explain the widespread success of pre-training techniques for down-stream NLP tasks as we show that, in the limit, one of these pre-training techniques begins to learn to perform tasks directly without the need for supervised adoption or modification.
 
@@ -297,18 +537,31 @@ Ongoing reading comprehension research suggests that GPT-2 is competitive with s
 
 We have studied the zero-shot performance of WebText LMs on many canonical NLP tasks, but there are many additional tasks that could be evaluated. There are undoubtedly many practical tasks where the performance of GPT-2 is still no better than random. Even on common tasks that we evaluated on, such as question answering and translation, language models only begin to outperform trivial baselines when they have sufficient capacity.
 
-While zero-shot performance establishes a baseline of the potential performance of GPT-2 on many tasks, it is not clear where the ceiling is with finetuning. On some tasks, GPT-2's fully abstractive output is a significant departure from the extractive pointer network approach (Vinyals et al., 2015) based outputs which are currently state of the art on many question answering and reading comprehension datasets. Given the prior success of fine-tuning GPT, we plan to investigate fine-tuning on benchmarks such as decaNLP and GLUE, especially since it is unclear whether the additional
+While zero-shot performance establishes a baseline of the potential performance of GPT-2 on many tasks, it is not clear where the ceiling is with finetuning. On some tasks, GPT-2's fully abstractive output is a significant departure from the extractive pointer network approach (Vinyals et al., 2015) based outputs which are currently state of the art on many question answering and reading comprehension datasets. Given the prior success of fine-tuning GPT, we plan to investigate fine-tuning on benchmarks such as decaNLP and GLUE, especially since it is unclear whether the additional training data and capacity of GPT-2 is sufficient to overcome the inefficiencies of uni-directional representations demonstrated by BERT (Devlin et al., 2018).
 
+06 讨论
 
-## 7. Conclusion
+学术界已经投入了大量精力来研究如何学习（Hill et al., 2016)、理解（Levy & Goldberg, 2014）和批判性评估（Wieting & Kiela, 2019）有监督和无监督预训练方法所产生的数据表示。我们的研究结果表明，无监督的任务学习是另一个值得深入探索的研究方向。这些发现可能有助于解释为什么预训练技术在各种自然语言处理任务中取得了如此广泛的成功。我们的研究显示，在某些极端情况下，这些预训练技术中的一种开始直接学习执行特定任务，而无需额外的有监督训练或修改。
+
+目前正在进行的阅读理解研究表明，GPT-2 模型在零样本学习（zero-shot learning）的情况下，其性能可以与经过专门训练的模型相媲美。零样本学习是指模型在没有见过特定任务的训练数据的情况下，仍能执行该任务。然而，在其他任务上，如文本摘要，虽然 GPT-2 从质量上看似乎完成了任务，但根据量化指标衡量，其表现仍然处于初级阶段。尽管这些结果在研究层面上具有启发性，但就实际应用而言，GPT-2 的零样本性能还远远不够实用。
+
+我们已经研究了基于 WebText 数据集训练的大语言模型（WebText LMs）在许多经典自然语言处理（NLP）任务上的零样本（zero-shot）表现。所谓零样本表现，是指模型在没有经过专门训练的情况下，直接应用于新任务的能力。尽管如此，仍有许多额外的任务值得我们去评估。毫无疑问，在许多实际应用中，GPT-2（一种大型语言模型）的表现可能仍然不比随机猜测更好。即使在我们评估的常见任务上，如问答和翻译，只有当语言模型具有足够的规模和能力时，才能开始超越简单的基准水平。
+
+虽然零样本表现为 GPT-2 在许多任务上的潜在能力提供了一个基准，但通过微调（fine-tuning）能达到的性能上限还不清楚。微调是指在预训练模型的基础上，使用特定任务的数据进行进一步训练，以提高模型在该任务上的表现。在一些任务中，GPT-2 的完全抽象输出方式与当前在许多问答和阅读理解数据集上最先进的方法有显著不同。这些先进方法通常基于提取式指针网络（extractive pointer network）[Vinyals et al., 2015]，主要从原文中提取答案。考虑到之前微调 GPT 模型取得的成功，我们计划研究在 decaNLP（一个包含多个 NLP 任务的综合数据集）和 GLUE（通用语言理解评估基准）等基准上进行微调。这项研究尤为重要，因为目前还不清楚 GPT-2 额外的训练数据和模型容量是否足以克服单向表示（即只考虑上文信息，不考虑下文）的局限性。这种局限性在 BERT（Bidirectional Encoder Representations from Transformers）模型中得到了有效解决（Devlin 等人于 2018 年提出）。
+
+### 7. Conclusion
 
 When a large language model is trained on a sufficiently large and diverse dataset it is able to perform well across many domains and datasets. GPT-2 zero-shots to state of the art performance on 7 out of 8 tested language model- ing datasets. The diversity of tasks the model is able to perform in a zero-shot setting suggests that high-capacity models trained to maximize the likelihood of a sufficiently varied text corpus begin to learn how to perform a surprising amount of tasks without the need for explicit supervision.$^5$
 
-## Acknowledgements
+7 结论
+
+当一个大语言模型（Large Language Model）在足够大且多样化的数据集上进行训练时，它能够在多个领域和数据集中表现出色。例如，GPT-2 在零样本（zero-shot）情况下，在 8 个测试的语言模型数据集中的 7 个上达到了最先进的性能水平。模型在零样本设置下能够执行如此多样化的任务，这一现象表明：当这些大容量模型被训练来最大化多样化文本语料库的似然度时，它们开始学会如何执行大量任务，而无需明确的监督指导。这个数量之大，令人惊讶。$^5$
+
+### Acknowledgements
 
 Thanks to everyone who wrote the text, shared the links, and upvoted the content in WebText. Many millions of people were involved in creating the data that GPT-2 was trained on. Also thanks to all the Googlers who helped us with training infrastructure, including Zak Stone, JS Riehl, Jonathan Ho, Russell Power, Vishy Nangia, Cheng Yao, Roman Shaezer, Solomon Boulos, Michael Banfield, Aman Gupta, Daniel Holt, and many more. Finally thanks to people who gave feedback on drafts of the paper: Jacob Steinhardt, Sam Bowman, Geoffrey Irving, and Madison May. 
 
-## References
+### References
 
 Al-Rfou, R., Choe, D., Constant, N., Guo, M., and Jones, L. Characte-level language modeling with deeper self-attention. *arXiv preprint* arXiv:1808.04444, 2018. 
 
@@ -354,9 +607,6 @@ Dinan, E., Roller, S., Shuster, K., Fan, A., Auli, M., and Weston, J. Wizard of 
 
 Fan, A., Lewis, M., and Dauphin, Y. Hierarchical neural story generation. *arXiv preprint* arXiv:1805.04833, 2018.
 $^5$ Preliminary code for downloading and using the small model is available at https://github.com/openai/gpt-2.
-
-
-## Language Models are Unsupervised Multitask Learners
 
 Finn, C., Abbeel, P., and Levine, S. Model-agnostic meta-learning for fast adaptation of deep networks. *arXiv preprint arXiv:1703.03400*, 2017.
 
@@ -422,9 +672,6 @@ Paperno, D., Kruszewski, G., Lazaridou, A., Pham, Q. N., Bernardi, R., Pezzelle,
 
 Pennington, J., Socher, R., and Manning, C. Glove: Global vectors for word representation. In *Proceedings of the 2014 conference on empirical methods in natural language processing (EMNLP)*, pp. 1532–1543, 2014.
 
-
-## Language Models are Unsupervised Multitask Learners
-
 Peters, M. E. and Lecocq, D. Content extraction using diverse features. In *Proceedings of the 22nd International Conference on World Wide Web*, pp. 89–90. ACM, 2013.
 
 Peters, M. E., Neumann, M., Iyer, M., Gardner, M., Clark, C., Lee, K., and Zettlemoyer, L. Deep contextualized word representations. *arXiv preprint arXiv:1802.05365, 2018*.
@@ -472,34 +719,33 @@ Wolf, T., Sanh, V., Chaumond, J., and Delangue, C. Transfersarfo: A transfer lea
 Yogatama, D., d'Autume, C. d. M., Connor, J., Kocisky, T., Chrzanowski, M., Kong, L., Lazaridou, A., Ling, W., Yu, L., Dyer, C., et al. Learning and evaluating general linguistic intelligence. *arXiv preprint arXiv:1901.11373, 2019*.
 
 
-# 8. Appendix A: Samples
+### 8. Appendix A: Samples
 
-## 8.1. Model capacity
+#### 8.1. Model capacity
 
 To complement the reported perplexity gains of bigger LMs on WebText shown in Figure 4, Tables 7 through 11 show side-by-side completions of the smallest WebText LM and GPT-2 on random unseen WebText test set articles.
 
-## 8.2. Text Memorization
+#### 8.2. Text Memorization
 
 We observe some memorizing behavior in GPT-2 on longer strings that are repeated many times in the dataset such as famous quotes or speeches. For example, when conditioned on the first sentence and a half of the Gettysburg Address (which occurs approximately 40 times throughout WebText), an argmax decode from GPT-2 recovers the speech. Even when sampling without truncation, we find that the model copies the speech for awhile before drifting, albeit in a similar style. It typically drifts within 100-200 tokens, and displays widening diversity once it drifts.
 
 To quantify how often exact memorization shows up in samples, we generated samples from GPT-2 conditioned on WebText test set articles and compared the overlap rates of GPT-2's generations to the overlap rates of the ground-truth completions. The results of this analysis are shown below and suggest that GPT-2 repeats text from the training set less often then the baseline rate of held-out articles.
 
-![](12_0.png)
-
 Figure 5. CDF of percentage 8-gram overlap with WebText training set, for both WebText test set and samples (conditioned on WebText test set, with top-k untruncated random sampling with $k = 40$). Most samples have less than 1% overlap, including over 30% of samples with no overlap, whereas the median for test set is 2.6% overlap.
 
-## 8.3. Diversity
+#### 8.3. Diversity
 
 Table 12 shows multiple completions of the same random WebText test set context, showing the diversity of completions with standard sampling settings. 
 
-## 8.4. Robustness
+#### 8.4. Robustness
 
 Table 13 shows the previously mentioned talking unicorns news article. We find the model to be capable of handling out of distribution contexts, but the quality of these samples is generally lower.
 
 
-## Context (WebText test)
+Context (WebText test)
 
 #### Outfit 1: Typical
+
 This pairing was the first outfit I thought of when I bought the shoes. It’s like a summer version of this Jake Grantham outfit; in fact, my shoes are close to the colors of his Nike Racers! Instead of a heavy Harris Tweed jacket and denim shirt, I’m wearing a cotton DB jacket and a linen shirt. Both fabrics (in these colors) are an absolute must for summer, as they go with both dark and light pants! As you can see, they pair wonderfully with the dark jeans and shoes. It’s a pseudo menswear/prep outfit.
 
 Overall, this is a very casual outfit which is why I paired my sneakers with it. I’m not about wearing a full wool suit with sneakers (as GQ shows a lot) but I’m definitely open to keeping things casual, like this cotton DB. Casual fabrics are key to pulling off your sneakers in a dressed down menswear outfit. I’d even suggest to wear these sneakers with a khaki chino suit or a white linen suit. Just be sure to ditch the tie or wear a tee or polo; wearing a tie with sneakers is a bit too much.
@@ -547,8 +793,6 @@ The last Muslim state in Spain, Granada, was conquered by the
 
 Table 8. Random unseen contexts (top), and non-cherry-picked completions from both the smallest (left) and largest (right) models. Contexts are 768 tokens, with approximately 256 tokens worth of paragraphs shown. Completions are 256 tokens and fully shown. Top-k random sampling with k = 40 was used for generation.
 
-
-##### 15_0.png
 #### Context (WebText test)
 
 **Pinky**
@@ -756,8 +1000,6 @@ ___
 *Table 12: Non-cherry-picked completions from GPT-2 generated from the same context (from WebText test). Context is 384 tokens (shown truncated), and generations are 128 tokens. Top-k random sampling with k = 40 was used for generation.*
 
 
-#### 19_0.png
-
 **Context (human-written):** In a shocking finding, scientist discovered a herd of unicorns living in a remote, previously unexplored valley, in the Andes Mountains. Even more surprising to the researchers was the fact that the unicorns spoke perfect English.
 
 **GPT-2:** The scientist named the population, after their distinctive horn, Ovid’s Unicorn. These four-horned, silver-white unicorns were previously unknown to science.
@@ -779,10 +1021,6 @@ While their origins are still unclear, some believe that perhaps the creatures w
 However, Pérez also pointed out that it is likely that the only way of knowing for sure if unicorns are indeed the descendants of a lost alien race is through DNA. “But they seem to be able to communicate in English quite well, which I believe is a sign of evolution, or at least a change in social organization,” said the scientist.
 
 *Table 13. Conditional generation on an out-of-distribution context by GPT-2. Cherry pick of 10 samples generated with $k = 40$.*
-
-
-
-## 20_0.png
 
 #### Article:
 
@@ -925,8 +1163,6 @@ A:
 **Model answer:** Everest  
 **Turker answers:** unknown, yes, Yes, yes
 
-
-23_0.png
 #### Context (passage and previous question/answer pairs)
 
 Tom goes everywhere with Catherine Green, a 54-year-old secretary. He moves around her office at work and goes shopping with her. "Most people don’t seem to mind Tom," says Catherine, who thinks he is wonderful. "He’s my fourth child," she says. She may think of him and treat him that way as her son. He moves around buying his food, paying his health bills and his taxes, but in fact Tom is a dog.
