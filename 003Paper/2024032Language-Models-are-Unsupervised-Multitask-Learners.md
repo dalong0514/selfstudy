@@ -132,10 +132,6 @@ If this sounds like a bit of a stretch, consider this question in French: As-tu 
 
 Table 1. Examples of naturally occurring demonstrations of English to French and French to English translation found during the WebText training set.
 
----
-
-[https://github.com/codelucas/newspaper](https://github.com/codelucas/newspaper)
-
 "我不是世界上最聪明的人，但正如法语所说：'Je ne suis pas un imbecile'（我不是个傻瓜）。"
 
 在 8 月 16 日一个现已删除的帖子中，Joliette 选区的保守党候选人 Soheil Eid 用法语写道："Mentez mentez，il en restera toujours quelque chose」（说谎说谎，总会留下些什么）。
@@ -149,6 +145,10 @@ Table 1. Examples of naturally occurring demonstrations of English to French and
 "Brevet Sans Garantie Du Gouvernement」，翻译成中文是：「无政府担保专利」。
 
 表 1：在 WebText 训练集中发现的自然出现的英语到法语和法语到英语翻译示例。
+
+---
+
+[https://github.com/codelucas/newspaper](https://github.com/codelucas/newspaper)
 
 #### 2.2. Input Representation
 
@@ -451,7 +451,7 @@ GPT-2 对其生成答案的置信度评估较为准确，在其最有把握的 1
 
 Recent work in computer vision has shown that common image datasets contain a non-trivial amount of near-duplicate images. For instance CIFAR-10 has 3.3% overlap between train and test images (Barz & Denzler, 2019). This results in an over-reporting of the generalization performance of machine learning systems. As the size of datasets increases this issue becomes increasingly likely which suggests a similar phenomena could be happening with WebText. Therefore it is important to analyze how much test data also shows up in the training data.
 
-To study this we created Bloom filters containing 8-grams of WebText training sets. To improve recall, strings were normalized to contain only lower-cased alphanumeric words with a single space as a delimiter. The bloom filters were constructed such that the false positive rate is upper bounded by $ \frac{1}{10}^6 $. We then verified the low false positive rate by generating 1M strings, of which zero were found by the filter.
+To study this we created Bloom filters containing 8-grams of WebText training sets. To improve recall, strings were normalized to contain only lower-cased alphanumeric words with a single space as a delimiter. The bloom filters were constructed such that the false positive rate is upper bounded by $\frac{1}{10}^6$. We then verified the low false positive rate by generating 1M strings, of which zero were found by the filter.
 
 These Bloom filters let us calculate, given a dataset, the percentage of 8-grams from that dataset that are also found in the WebText training set. Table 6 shows this overlap analysis for the test sets of common LM benchmarks. Common LM datasets' test sets have between 1-6% overlap with WebText train, with an average of overlap of 3.2%. Somewhat surprisingly, many datasets have larger overlaps with their own training splits, with an average of 5.9% overlap.
 
@@ -471,7 +471,6 @@ For the Winograd Schema Challenge, we found only 10 schema which had any 8-gram 
 
 For CoQA, about 15% of documents in the news domain are already in WebText and the model performs about 3 F1 better on these. CoQA's development set metric reports the average performance over 5 different domains and we measure a gain of about 0.5-1.0 F1 due to overlap across the various domains. However, no actual training questions or answers are in WebText since coQA was released after the cutoff date for links in WebText.
 
-
 我们的方法主要关注提高召回率（recall)，即尽可能多地找出相关信息。虽然人工检查重叠部分时发现了许多常见短语，但也存在许多较长的匹配，这些匹配主要是由于数据重复造成的。这种数据重复的问题并不是 WebText（一个大规模网络文本数据集）所特有的。例如，我们发现 WikiText-103（一个常用的语言模型基准数据集）的测试集中有一篇文章也出现在了训练数据集中。考虑到测试集只有 60 篇文章，这至少造成了 1.6% 的重叠。更令人担忧的是，根据我们的分析程序，1BW（One Billion Word Benchmark，十亿词基准）与其自身的训练集竟有近 13.2% 的重叠。
 
 在 Winograd Schema Challenge（一项测试 AI 理解能力的挑战）中，我们只发现 10 个模式与 WebText 训练集有任何八个词的连续序列（8-gram）重叠。其中，2 个是误匹配。在剩下的 8 个中，只有 1 个模式出现在了能够泄露答案的上下文中。
@@ -483,7 +482,6 @@ On LAMBADA, the average overlap is 1.2%. GPT-2 performs about 2 perplexity bette
 Overall, our analysis suggests that data overlap between WebText training data and specific evaluation datasets provides a small but consistent benefit to reported results. However, for most datasets we do not notice significantly larger overlaps than those already existing between standard training and test sets, as Table 6 highlights.
 
 Understanding and quantifying how highly similar text impacts performance is an important research question. Better de-duplication techniques such as scalable fuzzy matching could also help better answer these questions. For now, we recommend the use of n-gram overlap based de-duplication as an important verification step and sanity check during the creation of training and test splits for new NLP datasets.
-
 
 在 LAMBADA 数据集上，平均文本重叠率为 1.2%。GPT-2 模型在重叠率超过 15% 的样本上，其困惑度（perplexity）大约降低了 2 个点，表现更好。当我们排除所有存在重叠的样本后重新计算指标，结果显示困惑度从 8.6 略微上升到 8.7，准确率从 63.2% 小幅下降到 62.9%。这种微小的变化很可能是因为只有约 0.5%（即每 200 个中只有 1 个）的样本存在显著重叠。
 
