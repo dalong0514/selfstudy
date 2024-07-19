@@ -149,7 +149,7 @@ While for small values of $d_k$ the two mechanisms perform similarly, additive a
 
 3.2.1 缩放点积注意力（Scaled Dot-Product Attention)
 
-我们提出了一种特殊的注意力机制，称为「缩放点积注意力（Scaled Dot-Product Attention)」（如图 2 所示）。这种机制的输入包括查询（queries）和键（keys)（它们的维度都是 $d_k$），以及值（values)（维度为 $d_v$）。计算过程如下：首先，我们计算查询与所有键的点积；然后，将每个点积结果除以 $\sqrt {d_k}$（这个缩放操作有助于梯度的稳定性）；最后，我们使用 softmax 函数（一种将数值转化为概率分布的函数）来得到值的权重。
+我们提出了一种特殊的注意力机制，称为「缩放点积注意力」（Scaled Dot-Product Attention）（如图 2 所示）。这种机制的输入包括查询（queries）和键（keys)（它们的维度都是 $d_k$），以及值（values)（维度为 $d_v$）。计算过程如下：首先，我们计算查询与所有键的点积；然后，将每个点积结果除以 $\sqrt {d_k}$（这个缩放操作有助于梯度的稳定性）；最后，我们使用 softmax 函数（一种将数值转化为概率分布的函数）来得到值的权重。
 
 在实际应用中，我们通常需要同时处理多个查询。为了提高效率，我们将这些查询打包成一个矩阵 $Q$。同样，我们也将键和值分别打包成矩阵 $K$ 和 $V$。这样，我们就可以用一个简洁的矩阵运算来表示整个注意力计算过程：
 
@@ -332,11 +332,6 @@ $$
 
 **标签平滑化（Label Smoothing)** 在训练过程中，我们采用了一种叫做 "标签平滑化" 的技术，其参数值 $\epsilon_{ls}$ 设为 0.1 [36]。这种技术虽然会降低模型的困惑度（perplexity，一种评估语言模型预测能力的指标)，因为它使模型学会对预测结果保持一定程度的不确定性，但却能提高模型的准确率和 BLEU 分数（一种评估机器翻译质量的指标)。这种看似矛盾的结果实际上反映了模型在泛化能力和具体任务表现之间的平衡。标签平滑化技术通过引入一些不确定性，帮助模型避免过度自信，从而在实际应用中取得更好的表现。
 
-
-
-
-
-
 ### 06 Results
 
 #### 6.1 Machine Translation
@@ -349,21 +344,39 @@ For the base models, we used a single model obtained by averaging the last 5 che
 
 Table 2 summarizes our results and compares our translation quality and training costs to other model architectures from the literature. We estimate the number of floating point operations used to train a model by multiplying the training time, the number of GPUs used, and an estimate of the sustained single-precision floating-point capacity of each GPU.
 
+6.1 机器翻译
+
+在 2014 年 WMT 英语到德语翻译任务中，我们的大型 Transformer 模型（表 2 中的 Transformer(big)）表现出色。它的 BLEU 分数比此前报告的最佳模型（包括集成模型）高出 2.0 以上，创下了 28.4 的新纪录。这个模型的具体配置可以在表 3 的最后一行找到。训练过程耗时 3.5 天，使用了 8 个 P100 GPU。值得注意的是，即使是我们的基础模型也超越了所有先前发布的模型和集成模型，而且训练成本仅为其他竞争模型的一小部分。
+
+在 2014 年 WMT 英语到法语翻译任务中，我们的大型模型同样表现优异，达到了 41.0 的 BLEU 分数。这一成绩超过了所有先前发布的单一模型，而且训练成本不到此前最先进模型的四分之一。在训练英语到法语的 Transformer（big）模型时，我们使用了 0.1 的丢弃率（dropout rate)，而不是 0.3。
+
+对于基础模型，我们采用了一种平均法：取最后 5 个检查点（每 10 分钟记录一次）的平均值作为最终模型。对于大型模型，我们则平均了最后 20 个检查点。在解码过程中，我们使用了束搜索（beam search）技术，这是一种启发式搜索算法。我们将束大小设为 4，长度惩罚参数 $\alpha$ 设为 0.6 [38]。这些超参数都是经过在开发集上反复实验后确定的。在推理过程中，我们将最大输出长度设置为输入长度加 50，但在可能的情况下会提前结束生成过程 [38]。
+
+表 2 总结了我们的实验结果，并将我们模型的翻译质量和训练成本与其他研究中的模型架构进行了比较。为了估算训练模型所需的计算量，我们将训练时间、使用的 GPU（图形处理器）数量以及每个 GPU 的估计单精度浮点计算能力相乘。这样可以得出训练过程中大致执行了多少次浮点运算。
+
 #### 6.2 Model Variations
 
-To evaluate the importance of different components of the Transformer, we varied our base model in different ways, measuring the change in performance on English-to-German translation on the
-
----
-
-^5 We used values of 2.8, 3.7, 6.0 and 9.5 TFLOPS for K80, K40, M40 and P100, respectively.
+To evaluate the importance of different components of the Transformer, we varied our base model in different ways, measuring the change in performance on English-to-German translation on the development set, newstest2013. We used beam search as described in the previous section, but no checkpoint averaging. We present these results in Table 3.
 
 Table 3: Variations on the Transformer architecture. Unlisted values are identical to those of the base model. All metrics are on the English-to-German translation development set, newstest2013. Listed perplexities are per-wordpiece, according to our byte-pair encoding, and should not be compared to per-word perplexities.
-
-development set, newstest2013. We used beam search as described in the previous section, but no checkpoint averaging. We present these results in Table 3.
 
 In Table 3 rows (A), we vary the number of attention heads and the attention key and value dimensions, keeping the amount of computation constant, as described in Section 3.2.2. While single-head attention is 0.9 BLEU worse than the best setting, quality also drops off with too many heads.
 
 In Table 3 rows (B), we observe that reducing the attention key size $d_k$ hurts model quality. This suggests that determining compatibility is not easy and that a more sophisticated compatibility function than dot product may be beneficial. We further observe in rows (C) and (D) that, as expected, bigger models are better, and dropout is very helpful in avoiding over-fitting. In row (E) we replace our sinusoidal positional encoding with learned positional embeddings [9], and observe nearly identical results to the base model.
+
+^5 We used values of 2.8, 3.7, 6.0 and 9.5 TFLOPS for K80, K40, M40 and P100, respectively.
+
+6.2 模型变体
+
+实验为了评估 Transformer 模型中不同组件的重要性，我们对基础模型进行了多种变化，并测量了这些变化对英语到德语翻译性能的影响。我们使用了开发数据集 newstest2013 进行测试。在翻译过程中，我们采用了前一节描述的束搜索（beam search）方法，这种方法可以在多个可能的翻译结果中选择最佳的一个。但我们没有使用检查点平均（checkpoint averaging）技术，这是一种可以提高模型稳定性的方法。表 3 展示了这些实验的结果。
+
+表 3：Transformer 架构的不同变体。表中未列出的参数值与基础模型相同。所有评估指标都是基于英语到德语翻译的开发数据集 newstest2013。表中列出的困惑度（perplexity）是按照我们的字节对编码（byte-pair encoding）的每个词片（wordpiece）计算的，因此不应该与按整词计算的困惑度直接比较。困惑度是衡量语言模型质量的一个指标，数值越低表示模型性能越好。
+
+在表 3 的（A）行中，我们改变了注意力头（attention heads）的数量以及注意力机制中键（key）和值（value）的维度，同时保持总体计算量不变，这个过程在 3.2.2 节有详细描述。实验结果显示，使用单个注意力头的模型比最佳设置的 BLEU 分数（一种评估机器翻译质量的指标，分数越高越好）低 0.9 分。然而，过多的注意力头也会导致翻译质量下降。这表明在设计模型时需要找到一个平衡点。
+
+在表 3 的第（B）行中，我们观察到减小注意力机制中关键参数 $d_k$ 的大小会降低模型的性能。这表明，在注意力机制中判断不同元素之间的关联性并不容易，可能需要比简单的点积运算更复杂的关联性计算方法。我们在第（C）和（D）行进一步发现，正如预期的那样，更大的模型表现更好，而 dropout（随机失活）技术在防止模型过度拟合方面非常有效。在第（E）行，我们将原本使用的正弦位置编码替换为可学习的位置嵌入 [9]，结果显示与基础模型几乎相同。
+
+^5 我们使用的 TFLOPS（每秒万亿次浮点运算）值分别为：K80 为 2.8，K40 为 3.7，M40 为 6.0，P100 为 9.5。
 
 #### 6.3 English Constituency Parsing
 
@@ -371,15 +384,27 @@ To evaluate if the Transformer can generalize to other tasks we performed experi
 
 We trained a 4-layer transformer with $d_{model} = 1024$ on the Wall Street Journal (WSJ) portion of the Penn Treebank [25], about 40K training sentences. We also trained it in a semi-supervised setting, using the larger high-confidence and BerkleyParser corpora from with approximately 17M sentences [37]. We used a vocabulary of 16K tokens for the WSJ only setting and a vocabulary of 32K tokens for the semi-supervised setting.
 
-We performed only a small number of experiments to select the dropout, both attention and residual (section 5.4), learning rates and beam size on the Section 22 development set, all other parameters remained unchanged from the English-to-German base translation model. During inference, we
+We performed only a small number of experiments to select the dropout, both attention and residual (section 5.4), learning rates and beam size on the Section 22 development set, all other parameters remained unchanged from the English-to-German base translation model. During inference, we increased the maximum output length to input length + 300. We used a beam size of 21 and $\alpha = 0.3$ for both WSJ only and the semi-supervised setting.
 
 Table 4: The Transformer generalizes well to English constituency parsing (Results are on Section 23 of WSJ)
-
-increased the maximum output length to input length + 300. We used a beam size of 21 and $\alpha = 0.3$ for both WSJ only and the semi-supervised setting.
 
 Our results in Table 4 show that despite the lack of task-specific tuning our model performs surprisingly well, yielding better results than all previously reported models with the exception of the Recurrent Neural Network Grammar [8].
 
 In contrast to RNN sequence-to-sequence models [37], the Transformer outperforms the Berkeley-Parser [29] even when training only on the WSJ training set of 40K sentences.
+
+6.3 英语成分句法分析
+
+为了评估 Transformer 模型是否能够适用于其他任务，我们进行了英语成分句法分析的实验。这项任务具有特殊的挑战性：输出需要遵循严格的结构约束，并且通常比输入要长得多。此外，在数据量较小的情况下，传统的 RNN（循环神经网络）序列到序列模型无法达到最先进的性能 [37]。
+
+我们在 Penn Treebank [25] 的华尔街日报（WSJ）部分训练了一个 4 层的 Transformer 模型，其中模型维度 $d_{model} = 1024$，训练数据约为 4 万句。我们还在半监督学习的环境下进行了训练，使用了更大规模的高可信度语料库和 BerkleyParser 语料库，总计约 1700 万个句子 [37]。在仅使用 WSJ 数据的设置中，我们使用了 1.6 万个词的词汇表，而在半监督学习的设置中，词汇表扩大到了 3.2 万个词。
+
+我们只进行了少量实验来调整模型参数，包括 dropout 率（用于注意力机制和残差连接，详见第 5.4 节)、学习率和束搜索（beam search）的大小。这些实验都是在华尔街日报（WSJ）语料库的第 22 节（作为开发集）上进行的。除此之外，其他所有参数都保持与英语到德语的基础翻译模型相同。在模型推理阶段，我们将最大输出长度设置为输入长度加上 300。无论是仅使用 WSJ 数据还是在半监督设置下，我们都使用了束大小为 21 和 $\alpha = 0.3$ 的参数。
+
+表 4：Transformer 在英语句法分析任务上的泛化能力（结果基于 WSJ 语料库的第 23 节)
+
+表 4 中的结果令人惊喜。尽管我们没有针对具体任务进行特别的调整，但我们的模型表现出色，超越了除递归神经网络语法 [8] 之外的所有先前报告的模型。递归神经网络语法是一种将句法结构直接整合到神经网络中的方法。
+
+更值得注意的是，与循环神经网络（RNN）的序列到序列模型 [37] 相比，Transformer 即使只在 WSJ 的 40,000 句训练集上训练，也优于著名的 Berkeley 句法分析器 [29]。Berkeley 句法分析器是一个基于概率上下文无关文法的高效句法分析器。
 
 ### 7 Conclusion
 
@@ -390,6 +415,14 @@ For translation tasks, the Transformer can be trained significantly faster than 
 We are excited about the future of attention-based models and plan to apply them to other tasks. We plan to extend the Transformer to problems involving input and output modalities other than text and to investigate local, restricted attention mechanisms to efficiently handle large inputs and outputs such as images, audio and video. Making generation less sequential is another research goals of ours.
 
 The code we used to train and evaluate our models is available at [https://github.com/tensorflow/tensor2tensor](https://github.com/tensorflow/tensor2tensor).
+
+7 结论
+
+在这项研究中，我们提出了 Transformer，这是第一个完全基于注意力机制的序列转换模型。它革命性地用多头自注意力机制取代了编码器-解码器架构中常用的循环层。序列转换模型是指能将一个序列转换为另一个序列的模型，广泛应用于机器翻译、文本摘要等任务。
+
+在翻译任务中，Transformer（变换器）模型的训练速度显著快于基于循环神经网络或卷积层的架构。在 WMT 2014（2014 年机器翻译大赛）的英德翻译和英法翻译任务中，我们的模型都创造了新的纪录。特别是在英德翻译任务中，我们最优秀的模型甚至超越了此前所有报告过的集成模型的表现。
+
+我们对基于注意力机制的模型的发展前景充满信心，并计划将其应用到更多领域。我们的下一步计划是将 Transformer 模型扩展到文本以外的输入和输出形式，比如研究如何通过局部的、受限的注意力机制来高效处理图像、音频和视频等大规模输入和输出。此外，我们还致力于研究如何减少生成过程中的顺序依赖，使其更加灵活高效。
 
 ### Acknowledgements
 
@@ -416,6 +449,8 @@ We are grateful to Nal Kalchbrenner and Stephan Gouws for their fruitful comment
 [9] Jonas Gehring, Michael Auli, David Grangier, Denis Yarats, and Yann N. Dauphin. Convolutional sequence to sequence learning. arXiv preprint arXiv:1705.03122v2, 2017.
 
 [10] Alex Graves. Generating sequences with recurrent neural networks. arXiv preprint arXiv:1308.0850, 2013.
+
+本论文展示了如何使用长短期记忆（Long Short-term Memory，LSTM）循环神经网络来生成具有长程结构的复杂序列，仅需通过逐个预测数据点即可实现。这种方法在文本（数据为离散值）和在线手写（数据为连续的实数值）两种场景中得到了验证。随后，研究人员通过让网络基于输入的文本序列来条件化其预测，将这种方法扩展到了手写文本合成领域。最终开发的系统能够生成多种风格的高度逼真的手写体。
 
 [11] Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun. Deep residual learning for image recognition. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pages 770–778, 2016.
 
