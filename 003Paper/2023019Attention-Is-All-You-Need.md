@@ -223,11 +223,27 @@ $$
 
 While the linear transformations are the same across different positions, they use different parameters from layer to layer. Another way of describing this is as two convolutions with kernel size 1. The dimensionality of input and output is $d_{model} = 512$, and the inner-layer has dimensionality $d_{ff} = 2048$.
 
+3.3 位置式前馈网络
+
+除了注意力子层外，我们的编码器（encoder）和解码器（decoder）中的每一层都包含一个全连接前馈网络。这个网络独立且一致地应用于每个位置。它由两个线性变换组成，中间有一个 ReLU 激活函数。
+
+$$
+\text {FFN}(x）= \max（0, xW_1 + b_1）W_2 + b_2
+$$
+
+虽然在不同位置上的线性变换是相同的，但在不同层之间它们使用不同的参数。另一种理解这个结构的方式是将其视为两个核（kernel）大小为 1 的卷积操作。输入和输出的维度是 $d_{model} = 512$，而内层的维度是 $d_{ff} = 2048$。
+
 #### 3.4 Embeddings and Softmax
 
 Similarly to other sequence transduction models, we use learned embeddings to convert the input tokens and output tokens to vectors of dimension $d_{model}$. We also use the usual learned linear transformation and softmax function to convert the decoder output to predicted next-token probabilities. In our model, we share the same weight matrix between the two embedding layers and the pre-softmax linear transformation, similar to [30]. In the embedding layers, we multiply those weights by $\sqrt{d_{model}}$.
 
 Table 1: Maximum path lengths, per-layer complexity and minimum number of sequential operations for different layer types. $n$ is the sequence length, $d$ is the representation dimension, $k$ is the kernel size of convolutions and $r$ the size of the neighborhood in restricted self-attention.
+
+3.4 嵌入和 Softmax
+
+与其他序列转换模型类似，我们使用学习得到的嵌入将输入和输出的词元（token）转换为 $d_{model}$ 维的向量。我们还使用常规的学习得到的线性变换和 softmax 函数（一种将向量转换为概率分布的函数）将解码器输出转换为预测下一个词元的概率。在我们的模型中，我们在两个嵌入层和 softmax 前的线性变换之间共享相同的权重矩阵，这与 [30] 中的方法类似。在嵌入层中，我们将这些权重乘以 $\sqrt {d_{model}}$。
+
+表 1：不同层类型的最大路径长度、每层复杂度和最小顺序操作数。其中 $n$ 是序列长度，$d$ 是表示维度，$k$ 是卷积的核大小，$r$ 是受限自注意力中邻域的大小。
 
 #### 3.5 Positional Encoding
 
@@ -246,6 +262,24 @@ $$
 where $pos$ is the position and $i$ is the dimension. That is, each dimension of the positional encoding corresponds to a sinusoid. The wavelengths form a geometric progression from $2\pi$ to $10000 \cdot 2\pi$. We chose this function because we hypothesized it would allow the model to easily learn to attend by relative positions, since for any fixed offset $k$, $PE_{(pos+k)}$ can be represented as a linear function of $PE_{pos}$.
 
 We also experimented with using learned positional embeddings [9] instead, and found that the two versions produced nearly identical results (see Table 3 row (E)). We chose the sinusoidal version because it may allow the model to extrapolate to sequence lengths longer than the ones encountered during training.
+
+3.5 位置编码（Positional Encoding)
+
+我们的模型既不包含循环结构也不使用卷积操作，为了让模型能够利用序列的顺序信息，我们必须引入一些关于序列中 token（标记）相对或绝对位置的信息。为此，我们在编码器和解码器堆栈的底层向输入嵌入添加 "位置编码"。位置编码的维度与嵌入维度 $d_{model}$ 相同，这样两者就可以直接相加。位置编码有多种选择，可以是通过学习得到的，也可以是预先固定的 [9]。
+
+在本研究中，我们使用不同频率的正弦和余弦函数来生成位置编码：
+
+$$
+PE_{(pos, 2i)} = \sin（pos / 10000^{2i /d_{model}})
+$$
+
+$$
+PE_{(pos, 2i+1)} = \cos（pos / 10000^{2i /d_{model}})
+$$
+
+其中 $pos$ 表示 token 的位置，$i$ 表示编码的维度。换句话说，位置编码的每个维度对应一个正弦或余弦曲线。这些曲线的波长构成了一个几何序列，最短的波长为 $2\pi$，最长的波长为 $10000 \cdot 2\pi$。我们选择这种编码方式是基于以下假设：它能让模型更容易学习关注相对位置。这是因为对于任何固定的位置偏移 $k$，位置 $pos+k$ 的编码 $PE_{(pos+k)}$ 总是可以表示为位置 $pos$ 的编码 $PE_{pos}$ 的线性组合，这种数学特性使得模型能够更容易地捕捉到位置之间的相对关系。
+
+我们还进行了一项实验，尝试使用可学习的位置嵌入（learned positional embeddings）[9] 来替代原有的方法。结果显示，这两种方法产生的效果几乎完全相同（详见表 3 中的（E）行)。最终，我们选择了使用正弦函数计算的位置嵌入方法。这是因为相比于可学习的方法，基于正弦函数的方法可能具有更好的泛化能力，使模型能够处理比训练时遇到的序列更长的输入。
 
 ### 04 Why Self-Attention
 
@@ -266,8 +300,6 @@ As noted in Table 1, a self-attention layer connects all positions with a consta
 第三个衡量标准是网络中长距离依赖关系之间的路径长度。在许多序列转换任务中，学习长距离依赖关系是一个关键挑战。影响学习这种依赖关系能力的一个重要因素是信息在网络中前向传播和反向传播时需要经过的路径长度。输入和输出序列中任意两个位置之间的路径越短，就越容易学习长距离依赖关系 [12]。因此，我们还比较了由不同类型层组成的网络中，任意两个输入和输出位置之间的最大路径长度。
 
 如表 1 所示，自注意力层（self-attention layer）只需要固定数量的顺序操作就可以连接所有位置，而循环层（recurrent layer）则需要 $O（n)$ 个顺序操作（其中 n 表示序列长度）。从计算复杂度来看，当序列长度较短时，自注意力层的计算速度比循环层更快。
-
-
 
 ### 05 Training
 
