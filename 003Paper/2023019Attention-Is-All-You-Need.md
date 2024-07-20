@@ -265,7 +265,7 @@ We also experimented with using learned positional embeddings [9] instead, and f
 
 3.5 位置编码（Positional Encoding)
 
-我们的模型既不包含循环结构也不使用卷积操作，为了让模型能够利用序列的顺序信息，我们必须引入一些关于序列中 token（标记）相对或绝对位置的信息。为此，我们在编码器和解码器堆栈的底层向输入嵌入添加 "位置编码"。位置编码的维度与嵌入维度 $d_{model}$ 相同，这样两者就可以直接相加。位置编码有多种选择，可以是通过学习得到的，也可以是预先固定的 [9]。
+我们的模型既不包含循环结构也不使用卷积操作，为了让模型能够利用序列的顺序信息，我们必须引入一些关于序列中 token（标记）相对或绝对位置的信息。为此，我们在编码器和解码器堆栈的底层向输入嵌入添加「位置编码」。位置编码的维度与嵌入维度 $d_{model}$ 相同，这样两者就可以直接相加。位置编码有多种选择，可以是通过学习得到的，也可以是预先固定的 [9]。
 
 在本研究中，我们使用不同频率的正弦和余弦函数来生成位置编码：
 
@@ -305,13 +305,25 @@ As noted in Table 1, a self-attention layer connects all positions with a consta
 
 This section describes the training regime for our models.
 
+5 训练
+
+本节将介绍我们模型的训练方案。
+
 #### 5.1 Training Data and Batching
 
 We trained on the standard WMT 2014 English-German dataset consisting of about 4.5 million sentence pairs. Sentences were encoded using byte-pair encoding [3], which has a shared source-target vocabulary of about 37000 tokens. For English-French, we used the significantly larger WMT 2014 English-French dataset consisting of 36M sentences and split tokens into a 32000 word-piece vocabulary [38]. Sentence pairs were batched together by approximate sequence length. Each training batch contained a set of sentence pairs containing approximately 25000 source tokens and 25000 target tokens.
 
+5.1 训练数据和批处理
+
+我们使用标准的 WMT 2014 英德翻译数据集进行模型训练，该数据集包含约 450 万对句子。所有句子都使用字节对编码（byte-pair encoding）[3] 进行编码，源语言和目标语言共享一个约 37000 个词元（token）的词汇表。对于英法翻译任务，我们使用了规模显著更大的 WMT 2014 英法数据集，其中包含 3600 万个句子，并将词元分割成 32000 个词片（word-piece）词汇表 [38]。在训练时，我们将长度相近的句子对组合成批次，每个训练批次包含一组句子对，大约含有 25000 个源语言词元和 25000 个目标语言词元。
+
 #### 5.2 Hardware and Schedule
 
 We trained our models on one machine with 8 NVIDIA P100 GPUs. For our base models using the hyperparameters described throughout the paper, each training step took about 0.4 seconds. We trained the base models for a total of 100,000 steps or 12 hours. For our big models (described on the bottom line of table 3), step time was 1.0 seconds. The big models were trained for 300,000 steps (3.5 days).
+
+5.2 硬件配置和训练时间
+
+我们在一台配备 8 个 NVIDIA P100 GPU 的机器上训练模型。对于使用本文描述的超参数的基础模型，每个训练步骤大约需要 0.4 秒。我们总共训练基础模型 100,000 步，约合 12 小时。而对于更大规模的模型（在表 3 的最后一行描述），每步训练时间增加到 1.0 秒，总共训练了 300,000 步，耗时 3.5 天。
 
 #### 5.3 Optimizer
 
@@ -323,27 +335,6 @@ $$
 
 This corresponds to increasing the learning rate linearly for the first $warmup\_steps$ training steps, and decreasing it thereafter proportionally to the inverse square root of the step number. We used $warmup\_steps = 4000$.
 
-#### 5.4 Regularization
-
-We employ three types of regularization during training:
-
-Table 2: The Transformer achieves better BLEU scores than previous state-of-the-art models on the English-to-German and English-to-French newstest2014 tests at a fraction of the training cost.
-
-**Residual Dropout** We apply dropout [33] to the output of each sub-layer, before it is added to the sub-layer input and normalized. In addition, we apply dropout to the sums of the embeddings and the positional encodings in both the encoder and decoder stacks. For the base model, we use a rate of $P_{drop} = 0.1$.
-
-**Label Smoothing** During training, we employed label smoothing of value $\epsilon_{ls} = 0.1$ [36]. This hurts perplexity, as the model learns to be more unsure, but improves accuracy and BLEU score.
-
-
-
-
-5 训练本节将介绍我们模型的训练方案。
-
-5.1 训练数据和批处理
-
-我们使用标准的 WMT 2014 英德翻译数据集进行模型训练，该数据集包含约 450 万对句子。所有句子都使用字节对编码（byte-pair encoding）[3] 进行编码，源语言和目标语言共享一个约 37000 个词元（token）的词汇表。对于英法翻译任务，我们使用了规模显著更大的 WMT 2014 英法数据集，其中包含 3600 万个句子，并将词元分割成 32000 个词片（word-piece）词汇表 [38]。在训练时，我们将长度相近的句子对组合成批次，每个训练批次包含一组句子对，大约含有 25000 个源语言词元和 25000 个目标语言词元。
-
-5.2 硬件配置和训练时间我们在一台配备 8 个 NVIDIA P100 GPU 的机器上训练模型。对于使用本文描述的超参数的基础模型，每个训练步骤大约需要 0.4 秒。我们总共训练基础模型 100,000 步，约合 12 小时。而对于更大规模的模型（在表 3 的最后一行描述），每步训练时间增加到 1.0 秒，总共训练了 300,000 步，耗时 3.5 天。
-
 5.3 优化器
 
 我们使用 Adam 优化器（Adam optimizer）[20]，其中参数设置为 $\beta_1 = 0.9$，$\beta_2 = 0.98$ 和 $\epsilon = 10^{-9}$。在训练过程中，我们根据以下公式动态调整学习率：
@@ -353,6 +344,16 @@ lrate = d_{model}^{-0.5} \cdot \min（step\_num^{-0.5}, step\_num \cdot warmup\_
 $$
 
 这个公式的含义是：在训练的前 $warmup\_steps$ 步骤中，学习率呈线性增长；之后，学习率会按照步数的反平方根比例逐渐降低。在我们的实验中，$warmup\_steps$ 被设置为 4000。
+
+#### 5.4 Regularization
+
+We employ three types of regularization during training:
+
+Table 2: The Transformer achieves better BLEU scores than previous state-of-the-art models on the English-to-German and English-to-French newstest2014 tests at a fraction of the training cost.
+
+**Residual Dropout** We apply dropout [33] to the output of each sub-layer, before it is added to the sub-layer input and normalized. In addition, we apply dropout to the sums of the embeddings and the positional encodings in both the encoder and decoder stacks. For the base model, we use a rate of $P_{drop} = 0.1$.
+
+**Label Smoothing** During training, we employed label smoothing of value $\epsilon_{ls} = 0.1$ [36]. This hurts perplexity, as the model learns to be more unsure, but improves accuracy and BLEU score.
 
 5.4 正则化（Regularization)
 
