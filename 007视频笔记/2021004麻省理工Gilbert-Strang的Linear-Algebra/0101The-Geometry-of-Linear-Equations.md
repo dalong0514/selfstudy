@@ -1,739 +1,278 @@
-# 0101The Geometry of Linear Equations
+## 0101. 方程组的几何解释
 
-Hi. This is the first lecture in MIT's course 18.06, linear algebra, and I'm Gilbert Strang.
+Here is my edited version of the transcript，organized into coherent paragraphs with corrections:
 
-The text for the course is this book, Introduction to Linear Algebra.
+Hi. This is the first lecture in MIT's course 18.06，Linear Algebra. I'm Gilbert Strang. The text for the course is this book，"Introduction to Linear Algebra.」The course web page，which has a lot of exercises from the past，MATLAB codes，and the syllabus for the course，is web.mit.edu/18.06. This is the first lecture，lecture one. Later we'll provide the web address for viewing these videotapes.
 
-And the course web page, which has got a lot of exercises from the past, MatLab codes, the syllabus for the course, is web.mit.edu/18.06. And this is the first lecture, lecture one.
+OK，so what's in the first lecture? This is my plan. The fundamental problem of linear algebra is to solve a system of linear equations. So let's start with the case when we have some number of equations，say n equations and n unknowns. That's the normal case. What I want to do is，with examples，of course，to describe first what I call the row picture. That's the picture of one equation at a time. It's the picture you've seen before in two-by-two equations where lines meet. So in a minute，you'll see lines meeting.
 
-So, and later we'll give the web address for viewing these, videotapes.
+The second picture，I'll put a star beside that because it's such an important one and maybe new to you，is the picture a column at a time. And those are the rows and columns of a matrix. So the third，the algebra way to look at the problem，is the matrix form，using a matrix that I'll call A.
 
-Okay, so what's in the first lecture?
+OK，can I do an example? The whole semester will be examples，and then we'll see what's going on with the example. So take an example. Two equations，two unknowns. Let me take 2x - y = 0，and -x + 2y = 3. OK. I can even say right away，what's the matrix that is，what's the coefficient matrix? The matrix that involves these numbers? A matrix is just a rectangular array of numbers. Here it's two rows and two columns. So 2 and -1 in the first row，-1 and 2 in the second row，that's the matrix. And the unknown，well，we've got two unknowns. So we've got a vector with two components，x and y，and we've got two right-hand sides that go into a vector 0，3.
 
-This is my plan.
+I couldn't resist writing the matrix form right even before the pictures. So I always will think of this as the matrix A，the matrix of coefficients. Then there's a vector of unknowns. Here we've only got two unknowns. Later we'll have any number of unknowns. And that vector of unknowns，well，I'll often make that x extra bold. And the right-hand side is also a vector that I'll always call b. So linear equations are Ax = b，and the idea now is to solve this particular example，and then step back to see the bigger picture.
 
-The fundamental problem of linear algebra, which is to solve a system of linear equations.
+Okay，what's the picture for this example? The row picture. So that means I take one row at a time，and I'm drawing here the xy plane，and I'm going to plot all the points that satisfy that first equation. So I'm looking at all the points that satisfy 2x - y = 0. It's often good to start with which point on the horizontal line. On this horizontal line，y is zero. The x-axis has y = 0，and in this case，actually，then x is zero. So the point，the origin，the point with coordinates（0，0），is on the line. It solves that equation.
 
-So let's start with a case when we have some number of equations, say n equations and n unknowns.
+Okay，tell me，well，I guess I have to tell you another point that solves this same equation. Let me suppose x is 1，so I'll take x to be 1，then y should be 2，right? So there's the point（1，2）that also solves this equation. Then I could put in more points. But let me put in all the points at once，because they all lie on a straight line. This is a linear equation，and that word linear has the letters for「line」in it. That's the equation. This is the line of solutions to 2x - y = 0，my first row，first equation. So typically maybe x = 1/2，y = 1 will work，and sure enough it does.
 
-So an equal number of equations and unknowns.
+OK，that's the first one. Now the second one is not going to go through the origin. It's always important，do we go through the origin or not? In this case，yes，because there's a zero over there. In this case，we don't go through the origin，because if x and y are zero，we don't get three. So let me again say，suppose y is zero，what x do we actually get? If y is zero，then I get x is -3. So if y is zero，I go along -3. So there is one point on this second line.
 
-That's the normal, nice case.
+Now let me say，well，suppose x is -1. Just to take another x. If x is -1，then this is a 1，and I think y should be a 1，because if x is -1，then I think y should be a 1，and we'll get that point. Is that right? If x is -1，that's a 1. If y is a 1，that's a 2，and the 1 and the 2 make 3，and that point's on the equation. OK，now I should just draw the line，right? Connecting those two points，that will give me the whole line. And if I've done this reasonably well，I think it's going to happen to go through，well，not happen，it was arranged to go through that point.
 
-And what I want to do is -- with examples, of course -- to describe, first, what I call the Row picture.
+So I think that the second line is this one，and this is the all-important point that lies on both lines. Shall we just check that that point，which is the point x = 1 and y = 2，right? That's the point there，and that，I believe，solves both equations. Let's just check this. If x is 1，I have a -1 plus 4 equals 3. Okay. Apologies for drawing this picture that you've seen before. But seeing the row picture，first of all，for n = 2，two equations and two unknowns，it's the right place to start.
 
-That's the picture of one equation at a time.
+OK，so we've got the solution，the point that lies on both lines. Now can I come to the column picture? Pay attention. This is the key point. So the column picture. I'm now going to look at the columns of the matrix. I'm going to look at this part and this part. I'm going to say that the x part is really x times，you see I'm putting the two，I'm kind of getting the two equations at once. That part，and then I have a y，and in the first equation it's multiplying a -1，and in the second equation a 2，and on the right-hand side，0 and 3.
 
-It's the picture you've seen before in two by two equations where lines meet.
+You see the columns of the matrix，the columns of A are here and the right-hand side b is there. And now what is the equation asking for? It's asking us to find，somehow to combine that vector and this one in the right amounts to get that one. It's asking us to find the right linear combination. This is called a linear combination，and it's the most fundamental operation in the whole course. It's a linear combination of the columns. That's what we're seeing on the left side. Again，I don't want to write down a big definition. You can see what it is. There's column one，there's column two. I multiply by some numbers and I add. That's a combination，a linear combination，and I want to make those numbers the right numbers to produce 0，3.
 
-So in a minute, you'll see lines meeting.
+OK. Now I want to draw a picture that represents what this is. This is algebra. What's the geometry? What's the picture that goes with it? OK. So again，these vectors have two components，so I better draw a picture like that. So can I put down these columns? I'll draw these columns as they are，and then I'll do a combination of them. So the first column is over 2 and down 1，right? So there's the first column. The first column，column one. It's the vector（2，-1). The second column is，let's see，I go over -1 is the first component and up 2，it's here. There's column two. So this，again，you see what its components are. Its components are（-1，2). Good. That's this guy.
 
-The second picture, I'll put a star beside that, because that's such an important one.
+Now what is，what，now I have to take a combination. What combination shall I take? Why not the right combination? What the hell. OK. So the combination I'm going to take is the right one to produce（0，3），and then we'll see it happen in the picture. So the right combination is to take x as one of those and two of these. It's because we already know that that's the right x and y，so why not take the correct combination here and see it happen.
 
-And maybe new to you is the picture -- a column at a time.
+OK，so how do I picture this linear combination? So I start with this vector，that's already here. So that's one of column one，that's one times column one，right there. And now I want to add on，so I'm going to hook the next vector on to the front of the arrow，we'll start the next vector，and it'll go this way. So let's see，can I do it right? If I added on one of these vectors，it would go left one and up two，so it would probably get us to there. Maybe I'll do dotted line for that. Okay? That's one of column two tucked on to the end，but I wanted to tuck on two of column two. So the second one will go up，left one and up two also. It'll probably end there. And there's another one.
 
-And those are the rows and columns of a matrix.
+So what I've put in here is two of column two added on. And where did I end up? What are the coordinates of this result? What do I get when I take one of this plus two of that? I do get that，of course. There it is. There it is. x is 0，y is 3. That's b. That's the answer we wanted. And how do I do it? You see I do it just like the first component，I have a 2 and a -2 that produces a 0. And in the second component，I have a -1 and a 4，they combine to give the 3. But look at this picture. So here's our key picture. I combine this column and this column to get，maybe I better，to get this guy. That was the b. That's the 0，3.
 
-So the third -- the algebra way to look at the problem is the matrix form and using a matrix that I'll call A.
+OK. So that idea of linear combinations is crucial. And also，do we want to think about this question? Sure，why not? What are all the combinations? Can I go back to x's and y's? This is a question for really，it's going to come up over and over，but why don't we see it once now? If I took all the x's and all the y's，all the combinations，what would be all the results? And actually the result would be that I could get any right-hand side at all. The combinations of this and this would fill the whole plane. You can tuck that away，we'll explore it further. But this idea of what linear combination gives b，and what do all the linear combinations give，what are all the possible achievable right-hand sides b，that's going to be basic.
 
-Okay, so can I do an example?
+OK，can I move to three equations and three unknowns? Because it's easy to picture the two-by-two case. Let me do a three-by-three example. OK，I'll sort of start it the same way，say maybe 2x - y + 0z = 0，and maybe a -x + 2y - z = -1. And just for variety，let me take 0x - 3y + 4z = 4. Okay. That's three equations. I'm in three dimensions，x，y，z，and I don't have a solution yet. So I want to understand the equations and then solve them.
 
-The whole semester will be examples and then see what's going on with the example. So, take an example.
+OK. So how do you understand them? The row picture is one way，the column picture is another very important way. Just let's remember the matrix form here，because that's easy. The matrix form，what's our matrix A? Our matrix A is this right-hand side，the 2 and the -1 and the 0 from the first row，the -1 and the 2 and the -1 from the second row，the 0，the -3，and the 4 from the third row. So it's a three-by-three matrix. Three equations，three unknowns. And what's our right-hand side? Of course，it's the vector（0，-1，4).
 
-Two equations, two unknowns.
+OK. So that's the way，well，that's the shorthand to write out the three equations. But it's the picture that I'm looking for today. OK. So the row picture. All right，so I'm in three dimensions，x，y，and z，and I want to take those equations one at a time and make a picture of all the points that satisfy. Let's take equation number two. If I make a picture of all the points that satisfy，all the x，y，z points that solve this equation. Well，first of all，the origin is not one of them. x，y，z being 0，0，0 would not solve that equation. What are some points that do solve the equation? Let's see，maybe if x is 1，y and z could be 0. That would work，right? So there's one point.
 
-So let me take 2x -y =0, let's say.
+I'm looking at this second equation here，just to start with. Let's see. Also，I guess if z could be 1，x and y could be zero，so that would just go straight up that axis. And probably I want a third point here. Let me take x to be 0. Let's say x to be 0，z to be 0，then y would be -1/2，right? So there's a third point somewhere. Oh，my，OK. Let's see. I want to put in all the points that satisfy that equation. Do you know what that bunch of points will be? It's a plane. If we have a linear equation，then fortunately，the graph of the thing，the plot of all the points that solve it，are a plane.
 
-And -x 2y=3.
+So I，and three，these three points determine a plane，but your lecturer is not Rembrandt，and this，the art is going to be the weak point here. So I'm just going to draw a plane，right? There's a plane somewhere. That plane is all the points that solve this guy. Then what about this one? 2x - y + 0z. So z actually can be anything. Again，it's going to be another plane. Each row in a three-by-three problem gives us a plane in three dimensions. So this one is going to be some other plane，maybe I'll try to draw it like this. And those two planes meet in a line. So if I have two equations，just the first two equations in three dimensions，those give me a line，the line where those two planes meet.
 
-Okay. let me -- I can even say right away -- what's the matrix, that is, what's the coefficient matrix?
+And now the third guy is a third plane，and it goes somewhere. Okay，those three things meet in a point. Now，I don't know where that point is，frankly，but linear algebra will find it. The main point is that there is，that the three planes，because they're not parallel，they're not special，they do meet in one point，and that's the solution. But maybe you can see that this row picture is getting a little hard to see. The row picture was a cinch when we looked at two lines meeting. When we look at three planes meeting，it's not so clear，and in four dimensions，probably a little less clear.
 
-The matrix that involves these numbers -- a matrix is just a rectangular array of numbers.
+So can I quit on the row picture? I'll quit on the row picture before I've successfully found the point where the three planes meet. All I really want to see is that the row picture consists of three planes，and if everything works right，three planes meet in one point，and that's the solution. Now，you can tell I prefer the column picture. Okay? So let me prefer the column picture.
 
-Here it's two rows and two columns, so 2 and -- minus 1 in the first row minus 1 and 2 in the second row, that's the matrix.
+Okay，so let me take the column picture. That's x times，so there were two x's in the first equation，-1 x's，I'm just taking，and no x's in the third. It's just the first column of that. And how many y's are there? There is -1 in the first equation，2 in the second，and -3 in the third，just the second column of my matrix. And z times no z's，-1 z's，and 4 z's. And it's those three columns，right，that I have to combine to produce the right-hand side，which is（0，-1，4).
 
-And the right-hand -- the, unknown -- well, we've got two unknowns.
+Okay. So what have we got on this left-hand side? A linear combination. It's a linear combination now of three vectors，and they happen to be，each one is a three-dimensional vector. So we want to know what combination of those three vectors produces that one. Shall I try to draw the column picture then? So since these vectors have three components，so it's some multiple，let me draw in the first column as before. So x is 2 and y is -1，maybe there's the first column as before. So x is 2 and y is -1. Maybe there's the first column. The second column has maybe a -1 and a 2，and the y's and -3's，somewhere there，possibly. Column 2.
 
-So we've got a vector, with two components, x and y, and we've got two right-hand sides that go into a vector 0 3. I couldn't resist writing the matrix form, right -- even before the pictures.
+And the third column has no zero，-1，4. So how shall I draw that? So nothing in this was the first component. The second component was a -1，maybe up here. That's column three. That's the column（0，-1，4），this guy. So again，what's my problem? What this equation is asking me to do is to combine these three vectors with the right combination to produce this one. Well，you can see what the right combination is，because in this special problem，especially chosen by the lecturer，that right-hand side that I'm trying to get is actually one of these columns.
 
-So I always will think of this as the matrix A, the matrix of coefficients, then there's a vector of
+So I know how to get that one. So what's the solution? What combination will work? I just want one of these and none of these. So x should be zero，y should be zero，and z should be one. That's the combination. None of that，none of that，one of those is obviously the right one. So this column three is actually the same as b in this particular problem. I made it work that way just so we would get an answer，(0，0，1). So somehow that's the point where those three planes met，and I couldn't see it before.
 
-unknowns. Here we've only got two unknowns.
+Of course，I won't always be able to see it from the column picture either. It's the next lecture，actually，which is about elimination，which is the systematic way that everybody，every bit of software too，production large-scale software，would solve the equations. So the lecture that's coming up，if I was to add that to the syllabus，will be about how to find x，y，z in all cases.
 
-Later we'll have any number of unknowns.
+Can I just think again，though，about the big picture? By the big picture，I mean let's keep this same matrix on the left，but imagine that we have a different right-hand side. Oh，let me take a different right-hand side. So I'll change that right-hand side to something that actually is also pretty special. Let me change it to，suppose if I add those first two columns，that would give me a（1，1，-3). There's a very special right-hand side. I just cooked it up by adding this one to this one.
 
-And that vector of unknowns, well I'll often -- I'll make that x -- extra bold.
+Now what's the solution with this new right-hand side? The solution with this new right-hand side is clear. Now I took one of these，one of these，and none of those，so actually it just changed around to this，when I took this new right-hand side. Okay. So in the row picture，I have three different planes，three new planes meeting now at this point. In the column picture，I have the same three columns，but now I'm combining them to produce this guy，and it turned out that column one plus column two，which would be somewhere there，there is the right column. One of this and one of this would give me the new b.
 
-A and the right-hand side is also a vector that I'll always call b.
+OK，so that's like we squeezed in an extra example. But now think about all b's，all right-hand sides. Can I solve these equations for every right-hand side? Can I ask that question? So that's the algebraic question. Can I solve Ax = b for every right-hand side b? Let me write that down. Can I solve Ax = b for every right-hand side b? I mean，is there a solution? And then if there is，elimination will give me a way to find it. I really wanted to ask，is there a solution for every right-hand side?
 
-So linear equations are A x equal b and the idea now is to solve this particular example and then step back to see the bigger picture.
+So now，can I put that in different words，in this linear combination words，so in linear combination words，do the linear combinations of the columns fill three-dimensional space? Every b means all the b's in three-dimensional space. So do you see that I'm just asking the same question in different words? Solving Ax，oh，that's very important. A times x，when I multiply a matrix by a vector，I get a combination of the columns. I'll write that down in a moment. But in my column picture，that's really what I'm doing. I'm taking linear combinations of these three columns，and I'm trying to find b.
 
-Okay, what's the picture for this example, the Row picture?
+And actually，the answer for this matrix will be yes. For this matrix，for this matrix A，for these columns，the answer is yes. This matrix is，this matrix that I chose for an example，is a good matrix，a non-singular matrix，an invertible matrix. So those will be the matrices that we like best. There could be other，and we will see other matrices，where the answer becomes no.
 
-Okay, so here comes the Row picture.
+Oh，actually，you can see when it would become no. What could go wrong? How could it go wrong that out of three columns and all their combinations，when would I not be able to produce some b off here? When could it go wrong? Do you see that the combinations suppose let me say when it goes wrong. If these three columns all lie in the same plane，then their combinations will lie in that same plane. So then we're in trouble. If the three columns of my matrix，if those three vectors happen to lie in the same plane，for example，if column three is just the sum of column one and column two，I would be in trouble. That would be a matrix A where the answer would be no.
 
-So that means I take one row at a time and I'm drawing here the xy plane and I'm going to plot all the points that satisfy that first equation.
+Because the combinations，if column three is in the same plane as column one and two，I don't get anything new from that. All the combinations are in the plane，and the only right-hand sides，b，that I could get，would be the ones in that plane. So I could solve it for some right-hand sides when b is in the plane，but most right-hand sides would be out of the plane and unreachable. So that would be a singular case. The matrix would be not invertible. There would not be a solution for every b. The answer would become no for that.
 
-So I'm looking at all the points that satisfy 2x-y =0. It's often good to start with which point on the horizontal line -on this horizontal line, y is zero. The x axis has y as zero and that -- in this case, actually, then x is zero.
+OK. So we take just a little shot at thinking about nine dimensions. Imagine that we have vectors with nine components. Well，it's going to be hard to visualize those. I don't pretend to do it. But somehow，pretend you do. Pretend we have，if this was nine equations in nine unknowns，then we would have nine columns，and each one would be a vector in nine-dimensional space，and we would be looking at their linear combinations. So we'd be having the linear combinations of nine vectors in nine-dimensional space，and we would be trying to find the combination that hit the correct right-hand side b.
 
-So the point, the origin -- the point with coordinates (0,0) is on the line.
+And we might also ask the question，can we always do it? Can we get every right-hand side b? And certainly it will depend on those nine columns. Sometimes the answer will be yes. If I picked a random matrix，it would be yes，actually. If I used MATLAB and just used the random command，picked out a nine by nine matrix，I guarantee it would be good. It would be non-singular，it would be invertible，all beautiful. But if I choose those columns so that they're not independent，so that the ninth column is the same as the eighth column. Then it contributes nothing new and there would be right-hand sides b that I couldn't get.
 
-It solves that equation.
+Can you sort of think about nine vectors in nine-dimensional space and take their combinations? That's really the central thought that you get kind of used to in linear algebra，even though you can't really visualize it，you sort of think you can after a while. Those nine columns and all their combinations may very well fill out the whole nine-dimensional space. But if the ninth column happened to be the same as the eighth column and gave nothing new，then probably what it would fill out would be，I hesitate even to say this，it would be a sort of plane，an eight-dimensional plane inside nine-dimensional space. And it's those eight-dimensional planes inside nine-dimensional space that we have to work with eventually.
 
-Okay, tell me in -- well, I guess I have to tell you another point that solves this same equation.
+For now，let's stay with the nice case where the matrices work. We can get every right-hand side b，and here we see how to do it with columns. OK. There was one step which I realized I was saying in words that I now want to write in letters. Because I'm coming back to the matrix form of the equation. So let me write it here. The matrix form of my equation，of my system，is some matrix A times some vector x equals some right-hand side b.
 
-Let me suppose x is one, so I'll take x to be one.
+So this is a multiplication，A times x，matrix times vector，and I just want to say，how do you multiply a matrix by a vector? Okay，so I'm just going to create a matrix. Let me take [2，5; 1，3]，and let me take a vector，x to be，say，[1; 2]. How do I multiply a matrix by a vector? And just think a little bit about matrix notation and how to do that multiplication.
 
-Then y should be two, right?
+So let me say how I multiply a matrix by a vector. Actually，there are two ways to do it. Let me tell you my favorite way. It's columns again. It's a column at a time. For me，this matrix multiplication says I take one of that column and two of that column and add. So this is，in my，the way I would think of it，is one of the first column and two of the second column，and let's just see what we get. So in the first component I'm getting a 2 and a 10，I'm getting a 12 there. In the second component I'm getting a 1 and a 6，I'm getting a 7. So that matrix times that vector is [12; 7].
 
-So there's the point one two that also solves this equation.
+Now，you could do that another way. You could do it a row at a time. You could do，and you would get this 12，and actually I pretty much did it here，this way. I could take that row times my vector. This is all the time，this is the idea of a dot product. This vector times this vector，2 times 1 plus 5 times 2 is the 12. This vector times this vector，1 times 1 plus 3 times 2 is the 7. So I can do it by rows，and in each row，each row times my x is what I'll later call a dot product. But I also like to see it by columns. I see this as a linear combination of the columns.
 
-And I could put in more points.
+So here's my point. A times x is a combination of the columns of A. That's how I hope you'll think of A times x when we need it. Right now we've got，with small ones，we can always do it in different ways，but later think of it that way. Okay，so that's the picture for a two by two system. And if the right-hand side b happened to be [12; 7]，then of course the correct solution would be [1; 2].
 
-But, but let me put in all the points at once, because they all lie on a straight line.
+Okay，so let me come back next time to a systematic way，using elimination，to find the solution，if there is one，to any，a system of any size，and find out because the system，because if elimination fails，find out when there isn't a solution. Okay，thanks.
 
-This is a linear equation and that word linear got the letters
+### 中文
 
-Okay, thanks. for line in it.
+大家好。这是麻省理工学院 18.06 课程线性代数的第一讲。我是 Gilbert Strang。课程使用的教材是这本《线性代数导论》。课程网页的地址是 web.mit.edu/18.06，上面有许多往年的练习题、MATLAB 代码和课程大纲。这是第一讲，我们稍后会提供观看这些视频的网址。
 
-That's the equation -- this is the line that ...
+那么，第一讲我们要讲些什么呢？这是我的教学计划。线性代数的基本问题是求解线性方程组。让我们从最常见的情况开始，即有 n 个方程和 n 个未知数的情况。我想通过例子来说明，首先介绍我称之为「行图」（row picture）的概念。这是一次观察一个方程的图像。你在学习二元一次方程组时可能见过这种图，即两条直线相交的图像。所以一会儿，你会看到直线相交的场景。
 
-of solutions to 2x-y=0 my first row, first equation.
+第二种图像我会特别标注一个星号，因为它非常重要，而且可能是你没接触过的新概念，这就是一次观察一列的「列图」（column picture）。这些行和列就是构成矩阵的元素。最后，第三种看待问题的方法是代数方法，即使用矩阵形式，我们用 A 来表示这个矩阵。
 
-So typically, maybe, x equal a half, y equal one will work.
+让我们从一个例子开始吧。在整个学期中，我们会通过大量的例子来学习，然后从中理解更深层次的概念。现在，我们来看一个包含两个方程和两个未知数的例子。假设我们有这样两个方程：2x - y = 0 和 -x + 2y = 3。
 
-And sure enough it does.
+首先，我们来看看这个方程组的系数矩阵。矩阵实际上就是一个数字的矩形排列。在这个例子中，我们有一个 2x2 的矩阵。第一行是 2 和 -1，第二行是 -1 和 2。这就构成了我们的系数矩阵。
 
-Okay, that's the first one.
+关于未知数，我们有两个：x 和 y。这两个未知数可以组成一个二维向量。同时，方程的右边项 0 和 3 也可以组成一个向量。
 
-Now the second one is not going to go through the origin.
+在画图之前，我忍不住想先写出这个方程组的矩阵形式。我们通常用 A 表示系数矩阵。未知数向量我们通常用粗体的 x 表示。方程右边的向量我们称为 b。因此，线性方程组可以表示为 Ax = b 的形式。
 
-It's always important.
+现在，我们的目标是解这个具体的例子，然后再退一步，从更宏观的角度来理解这个问题。
 
-Do we go through the origin or not?
+在这个例子中，我们要如何绘制图像呢？我们要绘制的是「行图像」（row picture）。这意味着我们每次关注一个方程（即矩阵的一行），然后在 xy 平面上绘制满足该方程的所有点。
 
-In this case, yes, because there's a zero over there.
+让我们从第一个方程开始：2x - y = 0。绘制这样的图像时，一个好的策略是先找出方程在坐标轴上的交点。在 x 轴上，y 的值为 0。将 y = 0 代入方程，我们得到 x 也等于 0。这意味着原点（0，0）是这条线上的一个点，它满足我们的方程。
 
-In this case we don't go through the origin, because if x and y are zero, we don't get three.
+接下来，让我们找另一个满足这个方程的点。如果我们令 x = 1，那么 y 就应该等于 2。因此，点（1，2）也在这条线上。我们可以继续找更多的点，但实际上没有这个必要。因为这是一个线性方程（linear equation），所有满足这个方程的点都会落在一条直线上。值得注意的是，"linear」这个词本身就包含了「line」（直线）的含义，这正好反映了线性方程的特性。
 
-So, let me again say suppose y is zero, what x do we actually get? So, let me again say suppose y is zero, what x do we actually get?
+这条直线就代表了方程 2x - y = 0 的所有解，它对应于矩阵的第一行，也就是我们的第一个方程。我们可以再验证一下：如果 x = 1/2，那么 y = 1，这个点（1/2，1）确实也在这条线上。
 
-If y is zero, then I get x is minus three.
+通过这种方式，我们就将代数方程转化为了几何图像，这有助于我们直观地理解方程的解集。
 
-So if y is zero, I go along minus three.
+让我们来看第二条直线。与第一条不同，这条线不会通过原点。在分析直线时，我们总是要先确定它是否通过原点。在第一条直线的情况下，由于方程中有一个零，所以它确实通过原点。但对于这条新的直线，当 x 和 y 都为零时，我们得不到等式右边的 3，所以它不通过原点。
 
-So there's one point on this second line.
+那么，让我们来确定这条直线上的一些点。首先，如果 y 等于零，x 会等于多少呢？我们可以计算出 x 等于 -3。这就给了我们直线上的第一个点：(-3，0）。
 
-Now let me say, well, suppose x is minus one -- just to take another x.
+接下来，让我们选择另一个 x 值，比如 -1。如果 x 等于 -1，等式左边第一项就是 1。为了使等式成立，y 应该等于 1，因为这样左边就变成了 1 + 2 = 3，符合方程。所以我们得到了直线上的第二个点：(-1，1）。
 
-If x is minus one, then this is a one and I think y should be a one, because if x is minus one, then I think y should be a one and we'll get that point.
+现在我们有了两个点，就可以画出整条直线了。只需要将这两个点连接起来，就能得到完整的直线。如果我们的计算和绘图都准确的话，这条线应该会通过我们之前确定的那个点。需要注意的是，这个点的存在并非偶然，而是我们在设计方程时就已经安排好的。
 
-Is that right?
+让我们来看第二条直线。这里有一个非常重要的点，它同时位于两条直线上。我们来确认一下这个点的坐标，它应该是 x = 1，y = 2，对吗？这个点满足两个方程。让我们验证一下：如果 x 等于 1，那么 -1 加上 4 确实等于 3。请原谅我再次画出这个你之前见过的图形，但对于 n = 2（两个方程和两个未知数）的情况，从行的角度来看问题确实是一个很好的起点。
 
-If x is minus one, that's a one.
+好的，我们已经找到了解，也就是同时位于两条直线上的点。现在，让我们从列的角度来看这个问题。请注意，这是关键点。在列视图中，我们要关注矩阵的列。我们将看这部分和那部分。我们可以将 x 部分看作是 x 乘以某个向量，这样我们就可以同时处理两个方程。然后是 y 部分，在第一个方程中它乘以 -1，在第二个方程中乘以 2。等式右边是 0 和 3。
 
-If y is a one, that's a two and the one and the two make three and that point's on the equation.
+在这个矩阵方程中，我们可以看到矩阵 A 的列向量和右侧的向量 b。这个方程实际上在问我们一个问题：如何以正确的比例组合 A 的列向量，得到向量 b？这就是我们所说的线性组合（linear combination），它是整个线性代数课程中最基础的操作。
 
-Okay.
+具体来说，我们要找到合适的系数，将 A 的列向量相加，得到等式右侧的向量 b。虽然我们可以给出一个正式的数学定义，但直观理解可能更有帮助：我们取第一列，乘以某个数；再取第二列，乘以另一个数；然后将结果相加。我们的目标是找到正确的系数，使得最终结果等于向量 b（在这个例子中是 [0，3]）。
 
-Now, I should just draw the line, right, connecting those two points at -- that will give me the whole line.
+现在，让我们从代数表示转向几何表示，画一幅图来直观地展示这个过程。由于我们的向量都有两个分量，我们可以在二维平面上表示它们。
 
-And if I've done this reasonably well, I think it's going to happen to go through -- well, not happen -- it was arranged to go through that point.
+首先，让我们画出矩阵 A 的两个列向量：
 
-So I think that the second line is this one, and this is the all-important point that lies on both lines.
+1. 第一列向量是（2，-1），在图上表示为从原点向右移动 2 个单位，向下移动 1 个单位。
 
-Shall we just check that that point which is the point x equal one and y was two, right?
+2. 第二列向量是（-1，2），表示为从原点向左移动 1 个单位，向上移动 2 个单位。
 
-That's the point there and that, I believe, solves both equations.
+通过这种方式，我们可以在同一个坐标系中直观地看到这两个向量，它们就是我们要进行线性组合的基本元素。
 
-Let's just check this.
+现在，我们需要选择一个合适的组合。那么，我们应该选择什么组合呢？不妨选择正确的组合。让我们来看看。我们将选择能够得到坐标（0，3）的正确组合，然后在图中观察结果。正确的组合是选择一个第一列向量和两个第二列向量。我们之所以这样选择，是因为我们已经知道这是正确的 x 和 y 值，所以我们就直接使用这个正确的组合，看看会发生什么。
 
-If x is one, I have a minus one plus four equals three, okay.
+那么，我们如何表示这个线性组合呢？首先，我们从第一个向量开始，它已经在图中了。这就是第一列向量的一倍，就在那里。现在我们要添加其他向量，我们会将下一个向量连接到第一个向量的末端，开始绘制下一个向量，它会指向特定的方向。让我们来试试看，能否正确地表示它？如果我们添加第二列向量中的一个，它会向左移动一个单位并向上移动两个单位，所以它可能会到达这个位置。我可能会用虚线来表示这个向量。明白了吗？这是将第二列向量的一倍连接到第一个向量的末端，但我们实际上想要添加第二列向量的两倍。所以第二个向量也会向左移动一个单位并向上移动两个单位。它可能会在这个位置结束。这就是另一个向量。
 
-Apologies for drawing this picture that you've seen before.
+让我们来看看这里发生了什么。我们将第二列向量乘以 2 并加到结果中。那么，最终的结果是什么？这个运算的坐标是什么？当我们将一个向量与另一个向量的两倍相加时，得到了什么？没错，就是我们看到的结果。x 坐标是 0，y 坐标是 3。这就是我们要找的向量 b。那么，我们是如何得到这个结果的呢？在第一个分量中，2 和 -2 相加得到 0。在第二个分量中，-1 和 4 相加得到 3。让我们看看这幅图。这是我们的关键图示。我们将这两列向量组合起来，得到了这个新的向量。这就是向量 b，坐标是（0，3）。
 
-But this -- seeing the row picture -- first of all, for n equal 2, two equations and two unknowns, it's the right place to start.
+好的，这个线性组合（linear combination）的概念非常重要。现在，我们要思考一个问题：所有可能的组合会是什么？让我们回到 x 和 y 的概念。这个问题会反复出现，所以我们现在就来探讨一下。如果我们考虑所有可能的 x 和 y 值，所有的组合会得到什么结果？实际上，我们可以得到任意的右侧向量。这两个向量的组合可以覆盖整个平面。这个结论值得记住，我们稍后会进一步探讨。但是，这个核心思想 —— 即什么样的线性组合可以得到向量 b，以及所有的线性组合能得到什么，什么是所有可能的右侧向量 b —— 将会是我们学习的基础。
 
-Okay. So we've got the solution.
+好的，现在我们可以进一步探讨三个方程和三个未知数的情况吗？因为两个方程的情况相对容易理解，让我们来看一个三乘三的例子。我会以类似的方式开始，比如说第一个方程是 2x - y + 0z = 0，第二个方程可以是 -x + 2y - z = -1。为了增加一些变化，第三个方程我们取 0x - 3y + 4z = 4。很好，这样我们就有了三个方程。这个问题涉及三维空间，即 x、y、z 三个未知数，目前我们还没有解决方案。接下来，我们需要理解这些方程，然后求解。
 
-The point that lies on both lines.
+那么，我们该如何理解这些方程呢？有两种重要的方法：行图法和列图法。在这里，我们先来看看矩阵形式，因为它比较直观。在矩阵形式中，我们的矩阵 A 是什么呢？矩阵 A 由方程组的系数构成：第一行是 2、-1 和 0，第二行是 -1、2 和 -1，第三行是 0、-3 和 4。这样我们就得到了一个三乘三的矩阵。我们有三个方程和三个未知数。那么等号右边的常数项呢？它们构成了向量（0，-1，4）。
 
-Now can I come to the column picture?
+接下来，我们将讨论如何用简洁的方式表示这三个方程。不过，今天我们主要关注的是它们的图像表示，特别是行图像（row picture）。
 
-Pay attention, this is the key point.
+让我们考虑三维空间中的 x、y 和 z 坐标。我们的目标是逐一分析这些方程，并绘制出满足每个方程的所有点的图像。我们先从第二个方程开始。
 
-So the column picture.
+在绘制满足这个方程的所有 x、y、z 点时，我们首先注意到原点（0，0，0）不是解。那么，哪些点可以解这个方程呢？我们可以找到一些例子：
 
-I'm now going to look at the columns of the matrix.
+1. 当 x = 1，y = 0，z = 0 时，方程成立。这是一个满足条件的点。
 
-I'm going to look at this part and this part.
+2. 同样，当 x = 0，y = 0，z = 1 时，方程也成立。这个点位于 z 轴上。
 
-I'm going to say that the x part is really x times -- you see, I'm putting the two -- I'm kind of getting the two equations at once -- that part and then I have a y and in the first equation it's multiplying a minus one and in the second equation a two, and on the right-hand side, zero and three.
+3. 再比如，当 x = 0，z = 0 时，y 将等于 -1/2。这给我们提供了第三个点。
 
-You see, the columns of the matrix, the columns of A are here and the right-hand side b is there.
+现在，如果我们考虑所有满足这个方程的点，它们会形成什么几何图形呢？答案是一个平面。这是因为我们 dealing with 的是一个线性方程，而线性方程在三维空间中的图像恰好是一个平面。
 
-And now what is the equation asking for?
+这个发现为我们理解线性方程组的几何意义提供了重要的基础。
 
-It's asking us to find -- somehow to combine that vector and this one in the right amounts to get that one.
+让我们来讨论三维空间中的平面方程。首先，三个不共线的点可以确定一个平面，但由于我不是伦勃朗那样的艺术大师，所以我们就简单地画一个平面示意图。这个平面代表了满足第一个方程的所有点。
 
-It's asking us to find the right linear combination -- this is called a linear combination.
+接下来，考虑第二个方程：2x - y + 0z。注意这里 z 可以是任何值，因此这个方程也表示一个平面。实际上，在三元线性方程组中，每个方程都对应三维空间中的一个平面。我们可以再画一个平面来表示这第二个方程。
 
-And it's the most fundamental operation in the whole course.
+这两个平面相交形成一条直线。换句话说，如果我们只考虑三元方程组中的前两个方程，它们的解集就是一条直线，即这两个平面的交线。
 
-It's a linear combination of the columns.
+现在，让我们引入第三个方程，它代表第三个平面。这三个平面会在某一点相交。虽然我们现在还不知道这个交点的确切位置，但线性代数可以帮我们找到它。重要的是，只要这三个平面不平行且不存在特殊情况，它们就会在一个点上相交，这个点就是方程组的解。
 
-That's what we're seeing on the left side.
+然而，你可能已经注意到，当我们处理三个平面时，这种几何表示法（也称为行图）变得不那么直观了。相比于二维平面上两条直线相交的情况，三维空间中三个平面的交点就没那么容易 visualize 可视化了。如果我们进一步拓展到四维空间，情况会变得更加复杂。
 
-Again, I don't want to write down a big definition.
+这就是为什么我们需要更强大的数学工具来处理高维问题，而线性代数正是这样一个工具。它能够帮助我们在难以直观想象的情况下找到方程组的解。
 
-You can see what it is.
+那么我可以不再关注行视角（row picture）吗？我会在找到三个平面相交点之前就放弃行视角。我真正想展示的是行视角由三个平面组成，如果一切正常，这三个平面会在一点相交，那就是方程组的解。现在，你可以看出我更偏好列视角（column picture）。好吗？所以让我们转向列视角。
 
-There's column one, there's column two.
+好的，让我们来看列视角。对于 x，第一个方程中系数是 2，第二个方程中是 -1，第三个方程中是 0。这就是矩阵的第一列。对于 y，它们的系数分别是：第一个方程中是 -1，第二个方程中是 2，第三个方程中是 -3，这就是矩阵的第二列。对于 z，系数分别是 0、-1 和 4。这三列就是我们需要组合的，对吧？我们要将它们组合起来得到等号右边的常数项，也就是（0，-1，4）。
 
-I multiply by some numbers and I add.
+让我们来看看等式的左边。我们有一个线性组合（linear combination）。这是由三个向量组成的线性组合，而且每一个都是三维向量。我们的目标是找出这三个向量的什么组合能产生等式右边的那个向量。
 
-That's a combination -- a linear combination and I want to make those numbers the right numbers to produce zero three. Okay.
+为了更好地理解这个问题，我们可以尝试绘制一个列向量图。因为这些向量都有三个分量，所以我们需要在三维空间中表示它们。让我们从第一列开始：
 
-Now I want to draw a picture that, represents what this -- this is algebra.
+- 第一列向量：(2，-1，?)（第三个分量未给出）
 
-What's the geometry, what's the picture that goes with it?
+- 第二列向量：(-1，2，-3)
 
-Okay.
+- 第三列向量：(0，-1，4)
 
-So again, these vectors have two components, so I better draw a picture like that.
+在这个三维空间中，我们需要找到这三个向量的正确组合，使其产生等式右边的向量。有趣的是，在这个特别设计的问题中，右边的向量实际上就是这三个列向量中的一个。
 
-So can I put down these columns?
+这个问题实际上是在问我们：如何将这三个向量线性组合，才能得到右边的那个特定向量？换句话说，我们需要找到正确的系数，使得这三个向量的加权和等于目标向量。
 
-I'll draw these columns as they are, and then I'll do a combination of them.
+这种方法不仅帮助我们可视化问题，还为解决线性方程组提供了几何直观。通过观察这些向量在空间中的位置关系，我们可以更容易地理解它们如何组合成目标向量。
 
-So the first column is over two and down one, right?
+让我们来解答这个问题。什么样的组合能得到正确的结果呢？我们只需要其中一个解，而不需要其他的。显然，正确的组合应该是 x 等于零，y 等于零，z 等于一。也就是说，我们不需要前两列，只需要第三列。巧合的是，在这个特定问题中，第三列恰好与等式右侧的 b 向量相同。我特意设计了这个例子，使我们能得到（0，0，1）这个解。这个解实际上代表了三个平面的交点，尽管之前我们可能无法直观地看出这一点。
 
-So there's the first column.
+当然，我们并不总能从列向量的图像中直接看出解。实际上，下一讲将介绍一种称为「消元法（elimination)」的系统方法。这是每个人，包括各种软件，特别是大规模生产软件中都会使用的解方程方法。如果我要将这个主题添加到教学大纲中，下一讲将会讲解如何在所有情况下找到 x、y、z 的值。
 
-The first column.
+不过，让我们再从更宏观的角度来思考这个问题。我们保持左侧的矩阵不变，但假设我们有一个不同的右侧向量（即等式右边的常数项）。让我们尝试一个特殊的例子。假设我们将矩阵的前两列相加，得到的结果是（1，1，-3）。这是一个非常特殊的右侧向量，我们是通过将第一列和第二列相加得到的。
 
-Column one.
+那么，这个新的右侧向量有什么解呢？这个新右侧向量的解是很明显的。现在我选取了第一个向量的一个单位，第二个向量的一个单位，而第三个向量一个单位都没选，所以实际上当我选择这个新的右侧向量时，解就变成了这样。好的。因此，在几何的行视角中，我们有三个不同的平面，这三个新平面现在在这一点相交。在列视角中，我们仍然有相同的三列，但现在我们正在组合它们来生成这个新向量。结果发现，第一列加上第二列，大约会在那个位置，那就是正确的列。第一列的一个单位加上第二列的一个单位会给我们新的 b 向量。
 
-It's the vector two minus one.
+好的，这就像我们额外插入了一个例子。但现在让我们考虑所有可能的 b，也就是所有可能的右侧向量。我们能否为每个右侧向量解这些方程？我可以提出这个问题吗？这就是一个代数问题。我能否为每个右侧向量 b 解方程 Ax = b？让我把这个问题写下来：我能否为每个右侧向量 b 解 Ax = b？我的意思是，是否总存在解？如果存在，消元法就会给我们一种找到解的方法。我真正想问的是，对于每个右侧向量，是否都存在解？
 
-The second column is -- minus one is the first component and up two.
+现在，让我们用不同的方式来表述这个问题，特别是从线性组合的角度来看。我们可以这样问：这些列的线性组合是否能填充整个三维空间？换句话说，三维空间中的每个向量 b 是否都可以由这些列的线性组合表示？你看，我只是用不同的词来问同一个问题。
 
-It's here.
+解方程 Ax = b 这一点非常重要。当我们将矩阵 A 乘以向量 x 时，我们实际上得到的是 A 的列向量的线性组合。稍后我会详细解释这一点。但在我们的列向量图示中，这正是我们在做的事情。我们取这三个列向量的线性组合，试图找到能表示向量 b 的组合。
 
-There's column two.
+实际上，对于我们这个特定的矩阵 A，答案是肯定的。对于这些列向量，它们的线性组合确实能填充整个三维空间。这个我选作例子的矩阵是一个「好」矩阵，专业术语叫做非奇异矩阵（non-singular matrix）或可逆矩阵（invertible matrix）。这类矩阵是我们最喜欢研究的。当然，我们还会遇到其他类型的矩阵，对于那些矩阵，答案可能就是否定的。
 
-So this, again, you see what its components are.
+实际上，我们可以分析出在什么情况下方程组会没有解。什么情况下会出现问题呢？在三个列向量及其所有线性组合中，什么时候我们无法得到某个特定的右侧向量 b？让我们来探讨一下可能出错的情况。
 
-Its components are minus one, two.
+如果这三个列向量都位于同一平面上，那么它们的所有线性组合也将位于该平面上。这时我们就遇到了问题。具体来说，如果矩阵 A 的三个列向量恰好共面，例如，第三列向量是第一列和第二列的线性组合，我们就会遇到困难。在这种情况下，对于矩阵 A，我们将无法解出所有可能的 b。
 
-Good. That's this guy.
+原因在于，如果第三列向量与第一列和第二列在同一平面上，它并不会为我们提供任何新的信息。所有的线性组合都将被限制在这个平面内，我们只能得到位于该平面上的右侧向量 b。换句话说，当 b 在这个平面内时，我们可以求解方程组，但大多数位于平面外的 b 都将是不可达的。
 
-Now I have to take a combination.
+这种情况被称为奇异情况（singular case）。此时，矩阵是不可逆的（not invertible）。这意味着并非对于每个 b 都存在解。在这种情况下，我们就不能说对于所有的 b 都有解了。
 
-What combination shall I take?
+让我们稍微尝试思考一下九维空间。想象我们有一个九维向量。坦白说，这很难在脑海中形成直观的画面，我也不会假装自己能完全理解。但是，让我们尝试去想象它。假设我们面对的是一个有九个方程和九个未知数的系统，那么在矩阵表示中，我们会有九列，每一列都代表九维空间中的一个向量。我们需要研究这些向量的线性组合（linear combinations）。换句话说，我们在九维空间中有九个向量，我们的任务是找到这些向量的一个线性组合，使其等于给定的右侧向量 b。
 
-Why not the right combination, what the hell?
+这里我们可能会问：我们总是能找到这样的组合吗？换句话说，对于任意给定的右侧向量 b，我们都能找到对应的解吗？答案显然取决于那九列向量的性质。在某些情况下，答案是肯定的。事实上，如果我随机生成一个矩阵，通常答案都是肯定的。例如，如果我使用 MATLAB 的随机函数生成一个 9x9 的矩阵，我可以几乎确定这个矩阵会是良构的（well-conditioned）。具体来说，它很可能是非奇异的（non-singular）和可逆的（invertible），这意味着对于任何右侧向量 b，我们都能找到唯一的解。
 
-Okay. So the combination I'm going to take is the right one to produce zero three and then we'll see it happen in the picture.
+然而，如果我特意选择这些列向量使它们线性相关，比如让第九列与第八列相同，情况就会不同。在这种情况下，第九列不会为向量空间贡献任何新的维度，因此会存在一些右侧向量 b，是我们无法通过这九列向量的线性组合得到的。
 
-So the right combination is to take x as one of those and two of these.
+在线性代数中，我们经常需要考虑九维空间中的九个向量及其组合。这是一个核心概念，尽管我们无法真正可视化它，但随着学习的深入，我们会逐渐建立起对这个概念的直觉认识。这九个向量（或者说矩阵的九列）及其所有线性组合通常能填满整个九维空间。然而，如果第九列与第八列相同，没有提供任何新的信息，那么它们可能只能填满九维空间中的一个八维子空间（通常称为超平面）。在更高级的线性代数中，我们需要处理这些高维空间中的子空间。
 
-It's because we already know that that's the right x and y, so why not take the correct combination here and see it
+目前，让我们先关注矩阵运作良好的情况。在这种情况下，我们可以通过列向量的组合得到任意的右侧向量 b。现在，我想用数学符号来表示之前用语言描述的步骤，因为我们要回到方程的矩阵形式。让我们写下这个矩阵方程：我们的线性系统可以表示为矩阵形式 Ax = b，其中 A 是系数矩阵，x 是未知向量，b 是右侧向量。
 
-happen? Okay, so how do I picture this linear combination?
+让我们来讨论一下矩阵与向量的乘法，也就是 A 乘以 x，其中 A 是矩阵，x 是向量。那么，如何进行矩阵和向量的乘法呢？我们来创建一个具体的例子。
 
-So I start with this vector that's already here -- so that's one of column one, that's one times column one, right there.
+假设我们有一个矩阵 A = [2，5; 1，3]，以及一个向量 x = [1; 2]。我们如何将这个矩阵乘以这个向量呢？让我们思考一下矩阵表示法和这种乘法的操作过程。
 
-And now I want to add on -- so I'm going to hook the next vector onto the front of the arrow will start the next vector and it will go this way.
+实际上，有两种方法可以进行矩阵与向量的乘法。我最喜欢的方法是按列进行。这种方法的核心思想是：我们将矩阵的每一列与向量的对应元素相乘，然后将结果相加。
 
-So let's see, can I do it right?
+具体来说，对于我们的例子：
 
-If I added on one of these vectors, it would go left one and up two, so we'd go left one and up two, so it would probably get us to there.
+1. 我们取矩阵 A 的第一列 [2; 1] 乘以向量 x 的第一个元素 1
 
-Maybe I'll do dotted line for that.
+2. 再取矩阵 A 的第二列 [5; 3] 乘以向量 x 的第二个元素 2
 
-Okay?
+3. 最后将这两个结果相加让我们一步步计算：
 
-That's one of column two tucked onto the end, but I wanted to tuck on two of column two.
+- 第一列的贡献：[2; 1] * 1 = [2; 1]
 
-So that -- the second one -- we'll go up left one and up two
+- 第二列的贡献：[5; 3] * 2 = [10; 6]
 
-also. It'll probably end there.
+- 将两者相加：[2; 1] + [10; 6] = [12; 7]
 
-And there's another one.
+因此，矩阵 A 乘以向量 x 的结果是 [12; 7]。
 
-So what I've put in here is two of column two.
+这种方法帮助我们直观地理解矩阵乘法的过程：我们实际上是在将矩阵的列向量按照一定的比例（由向量 x 的元素决定）进行组合，得到一个新的向量。这种理解方式在处理更复杂的矩阵运算时会非常有帮助。
 
-Added on.
+现在，让我们换一种方式来思考这个问题。我们可以一行一行地计算。实际上，我在这里已经展示了这种方法。我们可以将矩阵的每一行与向量相乘。这其实就是点积（dot product）的概念。比如，第一行向量 [2，5] 与向量 [1，2] 的点积是 2 × 1 + 5 × 2 = 12。同样，第二行向量 [1，3] 与 [1，2] 的点积是 1 × 1 + 3 × 2 = 7。所以，我们可以按行计算，每一行与 x 的乘积就是我们通常所说的点积。
 
-And where did I end up?
+但是，我更喜欢从列的角度来看这个问题。我们可以将结果看作是矩阵列的线性组合。
 
-What are the coordinates of this result?
+这就是我想说的重点：A 乘 x 可以看作是 A 的列的组合。我希望你在以后需要处理 A 乘 x 时能够这样思考。现在我们处理的是小型矩阵，我们可以用不同的方法来解决，但在将来，请记住用这种方式思考。
 
-What do I get when I take one of this plus two of that?
+好的，这就是我们对于 2×2 系统的理解。如果等式右边的 b 恰好是 [12; 7]，那么显然正确的解就是 [1; 2]。
 
-I do get that, of course. There it is, x is zero, y is three, that's b.
+在下一节课中，我会介绍一种更系统的方法 —— 消元法。这种方法可以用来解决任何大小的线性系统，如果存在解的话。同时，如果消元失败，我们也能够判断出什么情况下系统没有解。好的，谢谢大家。
 
-That's the answer we wanted.
 
-And how do I do it?
 
-You see I do it just like the first component.
-
-I have a two and a minus two that produces a zero, and in the second component I have a minus one and a four, they combine to give the three.
-
-But look at this picture.
-
-So here's our key picture.
-
-I combine this column and this column to get this guy.
-
-That was the b.
-
-That's the zero three.
-
-Okay. So that idea of linear combination is crucial, and also -- do we want to think about this question?
-
-Sure, why not.
-
-What are all the combinations?
-
-If I took -- can I go back to xs and ys?
-
-This is a question for really -- it's going to come up over and over, but why don't we see it once now?
-
-If I took all the xs and all the ys, all the combinations, what would be all the results?
-
-And, actually, the result would be that I could get any right-hand side at all.
-
-The combinations of this and this would fill the whole plane.
-
-You can tuck that away.
-
-We'll, explore it further.
-
-But this idea of what linear combination gives b and what do all the linear combinations give, what are all the possible, achievable right-hand sides be -- that's going to be basic. possible, achievable right-hand sides be -- that's going to be basic.
-
-Okay.
-
-Can I move to three equations and three unknowns?
-
-Because it's easy to picture the two by two case.
-
-Let me do a three by three example.
-
-Okay, I'll sort of start it the same way, say maybe 2x-y and maybe I'll take no zs as a zero and maybe a -x 2y and maybe a -z as a -- oh, let me make that a minus one and, just for variety let me take, -3z, -3ys, I should keep the ys in that line, and 4zs is, say, 4. Okay.
-
-That's three equations.
-
-I'm in three dimensions, x, y, z.
-
-And, I don't have a solution yet.
-
-So I want to understand the equations and then solve them.
-
-Okay. So how do I you understand them?
-
-The row picture one way.
-
-The column picture is another very important way.
-
-Just let's remember the matrix form, here, because that's easy.
-
-The matrix form -- what's our matrix A?
-
-Our matrix A is this right-hand side, the two and the minus one and the zero from the first row, the minus one and the two and the minus one from the second row, the zero, the minus three and the four from the third row.
-
-So it's a three by three matrix.
-
-Three equations, three unknowns.
-
-And what's our right-hand side?
-
-Of course, it's the vector, zero minus one, four. Okay.
-
-So that's the way, well, that's the short-hand to write out the three equations.
-
-But it's the picture that I'm looking for today.
-
-Okay, so the row picture.
-
-All right, so I'm in three dimensions, x, find out when there isn't a solution. y and z.
-
-And I want to take those equations one at a time and ask -- and make a picture of all the points that satisfy -- let's take equation number two.
-
-If I make a picture of all the points that satisfy -- all the x, y, z points that solve this equation -- well, first of all, the origin is not one of them.
-
-x, y, z -- it being 0, 0, 0 would not solve that equation.
-
-So what are some points that do solve the equation?
-
-Let's see, maybe if x is one, y and z could be zero.
-
-That would work, right?
-
-So there's one point.
-
-I'm looking at this second equation, here, just, to start with.
-
-Let's see.
-
-Also, I guess, if z could be one, x and y could be zero, so that would just go straight up that axis.
-
-And, probably I'd want a third point here.
-
-Let me take x to be zero, z to be zero, then y would be minus a half, right?
-
-So there's a third point, somewhere -- oh my -- okay.
-
-Let's see. I want to put in all the points that satisfy that equation.
-
-Do you know what that bunch of points will be?
-
-It's a plane. If we have a linear equation, then, fortunately, the graph of the thing, the plot of all the points that solve it are a plane.
-
-These three points determine a plane, but your lecturer is not Rembrandt and the art is going to be the weak point here.
-
-So I'm just going to draw a plane, right?
-
-There's a plane somewhere.
-
-That's my plane.
-
-That plane is all the points that solves this guy.
-
-Then, what about this one?
-
-Two x minus y plus zero z.
-
-So z actually can be anything.
-
-Again, it's going to be another plane.
-
-Each row in a three by three problem gives us a plane in three dimensions.
-
-So this one is going to be some other plane -- maybe I'll try to draw it like this.
-
-And those two planes meet in a line.
-
-So if I have two equations, just the first two equations in three dimensions, those give me a line.
-
-The line where those two planes meet.
-
-And now, the third guy is a third plane.
-
-And it goes somewhere.
-
-Okay, those three things meet in a point.
-
-Now I don't know where that point is, frankly.
-
-But -- linear algebra will find it. The main point is that the three planes, because they're not parallel, they're not special.
-
-They do meet in one point and that's the solution.
-
-But, maybe you can see that this row picture is getting a little hard to see.
-
-The row picture was a cinch when we looked at two lines
-
-meeting. When we look at three planes meeting, it's not so clear and in four dimensions probably a little less clear.
-
-So, can I quit on the row picture?
-
-Or quit on the row picture before I've successfully found the point where the three planes meet?
-
-All I really want to see is that the row picture consists of three planes and, if everything works right, three planes meet in one point and that's a solution.
-
-Now, you can tell I prefer the column picture.
-
-Okay, so let me take the column picture.
-
-That's x times -- so there were two xs in the first equation minus one x is, and no xs in the third.
-
-It's just the first column of that.
-
-And how many ys are there?
-
-There's minus one in the first equations, two in the second and maybe minus three in the third.
-
-Just the second column of my matrix.
-
-And z times no zs minus one zs and four zs.
-
-And it's those three columns, right, that I have to combine to produce the right-hand side, which is zero minus one four.
-
-Okay.
-
-So what have we got on this left-hand side?
-
-A linear combination.
-
-It's a linear combination now of three vectors, and they happen to be -- each one is a three dimensional vector, so we want to know what combination of those three vectors produces that one.
-
-Shall I try to draw the column picture, then?
-
-So, since these vectors have three components -- so it's some multiple -- let me draw in the first column as before -- x is two and y is minus one.
-
-Maybe there is the first column.
-
-y -- the second column has maybe a minus one and a two and the y is a minus three, somewhere, there possibly, column two.
-
-And the third column has -- no zero minus one four, so how shall I draw that?
-
-So this was the first component.
-
-The second component was a minus one.
-
-Maybe up here.
-
-That's column three, that's the column zero minus one and four.
-
-This guy.
-
-So, again, what's my problem?
-
-What this equation is asking me to do is to combine these three vectors with a right combination to produce this one.
-
-Well, you can see what the right combination is, because in this special problem, specially chosen by the lecturer, that right-hand side that I'm trying to get is actually one of these columns.
-
-So I know how to get that one.
-
-So what's the solution?
-
-What combination will work?
-
-I just want one of these and none of these.
-
-So x should be zero, y should be zero and z should be one. That's the combination.
-
-One of those is obviously the right one.
-
-Column three is actually the same as b in this particular problem.
-
-I made it work that way just so we would get an answer, (0,0,1), so somehow that's the point where those three planes met and I couldn't see it before.
-
-Of course, I won't always be able to see it from the column picture, either.
-
-It's the next lecture, actually, which is about elimination, which is the systematic way that everybody -- every bit of software, too -- production, large-scale software would solve the equations.
-
-So the lecture that's coming up.
-
-If I was to add that to the syllabus, will be about how to find x, y, z in all cases.
-
-Can I just think again, though, about the big picture?
-
-By the big picture I mean let's keep this same matrix on the left but imagine that we have a different right-hand side.
-
-Oh, let me take a different right-hand side.
-
-So I'll change that right-hand side to something that actually is also pretty special.
-
-Let me change it to -- if I add those first two columns, that would give me a one and a one and a minus three.
-
-There's a very special right-hand side.
-
-I just cooked it up by adding this one to this one.
-
-Now, what's the solution with this new right-hand side?
-
-The solution with this new right-hand side is clear.
-
-took one of these and none of those.
-
-So actually, it just changed around to this when I took this new right-hand side.
-
-Okay. So in the row picture, I have three different planes, three new planes meeting now at this point. In the column picture, I have the same three columns, but now I'm combining them to produce this guy, and it turned out that column one plus column two which would be somewhere -- there is the right column -- one of this and one of this would give me the new b.
-
-Okay. So we squeezed in an extra example.
-
-But now think about all bs, all right-hand sides.
-
-Can I solve these equations for every right-hand side?
-
-Can I ask that question?
-
-So that's the algebra question.
-
-Can I solve A x=b for every b?
-
-Let me write that down.
-
-Can I solve A x =b for every right-hand side b?
-
-I mean, is there a solution?
-
-And then, if there is, elimination will give me a way to find it.
-
-I really wanted to ask, is there a solution for every right-hand side?
-
-So now, can I put that in different words -- in this linear combination words?
-
-So in linear combination words, do the linear combinations of the columns fill three dimensional space?
-
-Every b means all the bs in three dimensional space.
-
-Do you see that I'm just asking the same question in different words?
-
-Solving A x -- A x -- that's very important.
-
-A times x -- when I multiply a matrix by a vector, I get a combination of the columns.
-
-I'll write that down in a moment.
-
-But in my column picture, that's really what I'm doing.
-
-I'm taking linear combinations of these three columns and I'm trying to find b. I'm taking linear combinations of these three columns and I'm trying to find b.
-
-And, actually, the answer for this matrix will be yes.
-
-For this matrix A -- for these columns, the answer is yes.
-
-This matrix -- that I chose for an example is a good matrix.
-
-A non-singular matrix.
-
-An invertible matrix.
-
-Those will be the matrices that we like best.
-
-There could be other -- and we will see other matrices where the answer becomes, no -- oh, actually, you can see when it would become no.
-
-What could go wrong? find out -- because if elimination fails,
-
-How could it go wrong that out of these -- out of three columns and all their combinations -- when would I not be able to produce some b off here?
-
-When could it go wrong?
-
-Do you see that the combinations -- let me say when it goes wrong.
-
-If these three columns all lie in the same plane, then their combinations will lie in that same plane.
-
-So then we're in trouble.
-
-If the three columns of my matrix -- if those three vectors happen to lie in the same plane -- for example, if column three is just the sum of column one and column two, I would be in trouble.
-
-That would be a matrix A where the answer would be no, because the combinations -- if column three is in the same plane as column one and two, I don't get anything new from that.
-
-All the combinations are in the plane and only right-hand sides b that I could get would be the ones in that plane.
-
-So I could solve it for some right-hand sides, when b is in the plane, but most right-hand sides would be out of the plane and unreachable.
-
-So that would be a singular case. The matrix would be not invertible.
-
-There would not be a solution for every b.
-
-The answer would become no for that.
-
-Okay.
-
-I don't know -- shall we take just a little shot at thinking about nine dimensions?
-
-Imagine that we have vectors with nine components.
-
-Well, it's going to be hard to visualize those.
-
-I don't pretend to do it.
-
-But somehow, pretend you do.
-
-Pretend we have -- if this was nine equations and nine unknowns, then we would have nine columns, and each one would be a vector in nine-dimensional space and we would be looking at their linear combinations.
-
-So we would be having the linear combinations of nine vectors in nine-dimensional space, and we would be trying to find the combination that hit the correct right-hand side b.
-
-And we might also ask the question can we always do it?
-
-Can we get every right-hand side b?
-
-And certainly it will depend on those nine columns.
-
-Sometimes the answer will be yes -- if I picked a random matrix, it would be yes, actually.
-
-If I used MatLab and just used the random command, picked out a nine by nine matrix, I guarantee it would be
-
-good. It would be non-singular, it would be invertible, all beautiful.
-
-But if I choose those columns so that they're not independent, so that the ninth column is the same as the eighth column, then it contributes nothing new and there would be right-hand sides b that I couldn't get.
-
-Can you sort of think about nine vectors in nine-dimensional space an take their combinations?
-
-That's really the central thought -- that you get kind of used to in linear algebra. Even though you can't really visualize it, you sort of think you can after a while.
-
-Those nine columns and all their combinations may very well fill out the whole nine-dimensional space.
-
-But if the ninth column happened to be the same as the eighth column and gave nothing new, then probably what it would fill out would be -- I hesitate even to say this -- it would be a sort of a plane -- an eight dimensional plane inside nine-dimensional space.
-
-And it's those eight dimensional planes inside nine-dimensional space that we have to work with eventually.
-
-For now, let's stay with a nice case where the matrices work, we can get every right-hand side b and here we see how to do it with columns.
-
-Okay.
-
-There was one step which I realized I was saying in words that I now want to write in letters.
-
-Because I'm coming back to the matrix form of the equation, so let me write it here.
-
-The matrix form of my equation, of my system is some matrix A times some vector x equals some right-hand side b.
-
-Okay.
-
-So this is a multiplication.
-
-A times x.
-
-Matrix times vector, and I just want to say how do you multiply a matrix by a vector?
-
-Okay, so I'm just going to create a matrix -- let me take two five one three -- and let me take a vector x to be, say, 1and 2. How do I multiply a matrix by a vector?
-
-But just think a little bit about matrix notation and how to do that in multiplication.
-
-So let me say how I multiply a matrix by a vector.
-
-Actually, there are two ways to do it.
-
-Let me tell you my favorite way.
-
-It's columns again. It's a column at a time.
-
-For me, this matrix multiplication says I take one of that column and two of that column and add.
-
-So this is the way I would think of it is one of the first column and two of the second column and let's just see what we get.
-
-So in the first component I'm getting a two and a ten.
-
-I'm getting a twelve there.
-
-In the second component I'm getting a one and a six, I'm getting a seven.
-
-So that matrix times that vector is twelve seven.
-
-Now, you could do that another way.
-
-You could do it a row at a time.
-
-And you would get this twelve -- and actually I pretty much did it here -- this way.
-
-Two -- I could take that row times my vector.
-
-This is the idea of a dot product.
-
-This vector times this vector, two times one plus five times two is the twelve.
-
-This vector times this vector -- one times one plus three times two is the seven.
-
-So I can do it by rows, and in each row times my x is what I'll later call a dot product.
-
-But I also like to see it by columns.
-
-I see this as a linear combination of a column.
-
-So here's my point.
-
-A times x is a combination of the columns of A.
-
-That's how I hope you will think of A times x when we need
-
-it. Right now we've got -- with small ones, we can always do it in different ways, but later, think of it that way. Okay. So that's the picture for a two by two system.
-
-And if the right-hand side B happened to be twelve seven, then of course the correct solution would be one two.
-
-Okay. So let me come back next time to a systematic way, using elimination, to find the solution, if there is one, to a system of any size and
