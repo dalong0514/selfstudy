@@ -302,3 +302,479 @@ We encountered several challenges with existing implementations:
 - **Memory imbalance.** Existing pipeline parallelism implementations lead to imbalanced resource consumption. The first stage consumes more memory due to the embedding and the warm-up micro-batches.
 
 - **Computation imbalance.** After the last layer of the model, we need to calculate output and loss, making this stage the execution latency bottleneck.
+
+Figure 5 Illustration of 4D parallelism. GPUs are divided into parallelism groups in the order of \[TP, CP, PP, DP\], where DP stands for FSDP. In this example, 16 GPUs are configured with a group size of \[TP\]=2, \[CP\]=2, \[PP\]=2, and \[DP\]=2. A GPU’s position in 4D parallelism is represented as a vector, \[D1, D2, D3, D4\], where Di is the index on the i-th parallelism dimension. In this example, GPU0\[TP0, CP0, PP0, DP0\] and GPU1\[TP1, CP0, PP0, DP0\] are in the same TP group, GPU0 and GPU2 are in the same CP group, GPU0 and GPU4 are in the same PP group, and GPU0 and GPU8 are in the same DP group.
+
+To address these issues, we modify our pipeline schedule as shown in Figure 6, which allows setting N flexibly---in this case N = 5, which can run an arbitrary number of micro-batches in each batch. This allows us to run: (1) fewer micro-batches than the number of stages when we have batch size limit at large scale; or (2) more micro-batches to hide point-to-point communication, finding a sweet spot between DFS and breadth first schedule (BFS) for the best communication and memory efficiency. To balance the pipeline, we reduce one Transformer layer each from the first and the last stages, respectively. This means that the first model chunk on the first stage has only the embedding, and the last model chunk on the last stage has only output projection and loss calculation. To reduce pipeline bubbles, we use an interleaved schedule (Narayanan et al., 2021) with V pipeline stages on one pipeline rank. Overall pipeline bubble ratio is $p=\frac{PP-1}{N}$ . Further, we adopt asynchronous point-to-point communication in PP, which considerably speeds up training, especially in cases when the document mask introduces extra computation imbalance. We enable TORCH_NCCL_AVOID_RECORD_STREAMS to reduce memory usage from asynchronous point-to-point communication. Finally, to reduce memory cost, based on detailed memory allocation profiling, we proactively deallocate tensors that will not be used for future computation, including the input and output tensors of each pipeline stage, that will not be used for future computation. With these optimizations, we could pre-train Llama 3 on sequences of 8K tokens without activation checkpointing.
+
+**Context parallelism for long sequences.**
+
+We utilize context parallelism (CP) to improve memory efficiency when scaling the context length of Llama 3 and enable training on extremely long sequences up to 128K in length. In CP, we partition across the sequence dimension, and specifically we partition the input sequence into 2 × CP chunks so each CP rank receives two chunks for better load balancing. The i-th CP rank received both the i-th and the (2 × CP − 1 − i)-th chunks.
+
+Different from existing CP implementations that overlap communication and computation in a ring-like structure (Liu et al., 2023a), our CP implementation adopts an all-gather based method where we first all-gather the key (K) and value (V) tensors, and then compute attention output for the local query (Q) tensor chunk. Although the all-gather communication latency is exposed in the critical path, we still adopt this approach for two main reasons: (1) it is easier and more flexible to support different types of attention masks in all-gather based CP attention, such as the document mask; and (2) the exposed all-gather latency is small as the communicated K and V tensors are much smaller than Q tensor due to the use of GQA (Ainslie et al., 2023). Hence, the time complexity of attention computation is an order of magnitude larger than all-gather ($O(S^2)$ versus $O(S)$, where $S$ represents the sequence length in the full causal mask), making the all-gather overhead negligible. 
+
+Figure 6 Illustration of pipeline parallelism in Llama 3. Pipeline parallelism partitions eight pipeline stages (0 to 7) across four pipeline ranks (PP ranks 0 to 3), where the GPUs with rank 0 run stages 0 and 4, the GPUs with P rank 1 run stages 1 and 5, etc. The colored blocks (0 to 9) represent a sequence of micro-batches, where M is the total number of micro-batches and N is the number of continuous micro-batches for the same stage's forward or backward. Our key insight is to make N tunable.
+
+Network-aware parallelism configuration. The order of parallelism dimensions, [TP, CP, PP, DP], is optimized for network communication. The innermost parallelism requires the highest network bandwidth and lowest latency, and hence is usually constrained to within the same server. The outermost parallelism may spread across a multi-hop network and should tolerate higher network latency. Therefore, based on the requirements for network bandwidth and latency, we place parallelism dimensions in the order of [TP, CP, PP, DP]. DP (i.e., FSDP) is the outermost parallelism because it can tolerate longer network latency by asynchronously prefetching shared model weights and reducing gradients. Identifying the optimal parallelism configuration with minimal communication overhead while avoiding GPU memory overflow is challenging. We develop a memory consumption estimator and a performance-projection tool which helped us explore various parallelism configurations and project overall training performance and identify memory gaps effectively.
+
+Numerical stability. By comparing training loss between different parallelism setups, we fixed several numerical issues that impact training stability. To ensure training convergence, we use FP32 gradients accumulation during backward computation over multiple micro-batches and also reduce-scatter gradients in FP32 across data parallel workers in FSDP. For intermediate tensors, e.g., vision encoder outputs, that are used multiple times in the forward computation, the backward gradients are also accumulated in FP32.
+
+#### 3.3.3 Collective Communication
+
+Our collective communication library for Llama 3 is based on a fork of Nvidia’s NCCL library, called NCCLX. NCCLX significantly improves the performance of NCCL, especially for higher latency networks. Recall that the order of parallelism dimensions is [TP, CP, PP, DP], where DP corresponds to FSDP. The outermost parallelism dimensions, PP and DP, may communicate through a multi-hop network, with latency up to tens of microseconds. The original NCCL collectives—all-gather and reduce-scatter in FSDP, and point-to-point in PP—require data chunking and staged data copy. This approach incurs several inefficiencies, including (1) requiring a large number of small control messages to be exchanged over the network to facilitate data transfer, (2) extra memory-copy operations, and (3) using extra GPU cycles for communication. For Llama 3 training, we address a subset of these inefficiencies by tuning chunking and data transfer to fit our network latencies, which can be as high as tens of microseconds for a large cluster. We also allow small control messages to traverse our network at a higher priority, especially avoiding being head-of-line blocked in deep-buffer core switches. Our ongoing work for future Llama versions involves making deeper changes in NCCLX to holistically address all the aforementioned problems.
+
+| Component                          | Category       | Interruption Count | % of Interruptions |
+|------------------------------------|----------------|---------------------|--------------------|
+| Faulty GPU                         | GPU            | 148                 | 30.1%              |
+| GPU HBM3 Memory                    | GPU            | 72                  | 17.2%              |
+| Software Bug                       | Dependency     | 54                  | 12.9%              |
+| Network Switch/Cable               | Network        | 35                  | 8.4%               |
+| Host Maintenance                   | Unplanned      | 32                  | 7.6%               |
+| GPU SRAM Memory                    | GPU            | 19                  | 4.5%               |
+| GPU System Processor               | GPU            | 17                  | 4.1%               |
+| NIC                                | Host           | 7                   | 1.7%               |
+| NCCL Watchdog Timeouts             | Unknown        | 7                   | 1.7%               |
+| Silent Data Corruption             | GPU            | 6                   | 1.4%               |
+| GPU Thermal Interface + Sensor     | GPU            | 6                   | 1.4%               |
+| SSD                                | Host           | 3                   | 0.7%               |
+| Power Supply                       | Host           | 3                   | 0.7%               |
+| Server Chassis                     | Host           | 2                   | 0.5%               |
+| IO Expansion Board                 | Host           | 2                   | 0.5%               |
+| Dependency                         | Dependency     | 2                   | 0.5%               |
+| CPU                                | Host           | 2                   | 0.5%               |
+| System Memory                      | Host           | 2                   | 0.5%               |
+
+**Table 5** Root-cause categorization of unexpected interruptions during a 54-day period of Llama 3 40SB pre-training. About 78% of unexpected interruptions were attributed to confirmed or suspected hardware issues.
+
+#### 3.3.4 Reliability and Operational Challenges
+
+The complexity and potential failure scenarios of 16K GPU training surpass those of much larger CPU clusters that we have operated. Moreover, the synchronous nature of training makes it less fault-tolerant—a single GPU failure may require a restart of the entire job. Despite these challenges, for Llama 3, we achieved higher than 90% effective training time while supporting automated cluster maintenance, such as firmware and Linux kernel upgrades (Virajman and Leonhardt, 2024), which resulted in at least one day training interruption daily. The effective training time measures the time spent on useful training over the elapsed time.
+
+During a 54-day snapshot period of pre-training, we experienced a total of 466 job interruptions. Of these, 47 were planned interruptions due to automated maintenance operations such as firmware upgrades or operator-initiated operations like configuration or dataset updates. The remaining 419 were unexpected interruptions, which are classified in Table 5. Approximately 78% of the unexpected interruptions are attributed to confirmed hardware issues, such as GPU or host component failures, or suspected hardware-related issues like silent data corruption and unplanned individual host maintenance events. GPU issues are the largest category, accounting for 58.7% of all unexpected issues. Despite the large number of failures, significant manual intervention was required only three times during this period, with the rest of issues handled by automation.
+
+To increase the effective training time, we reduced job startup and checkpointing time, and developed tools for fast diagnosis and problem resolution. We extensively use PyTorch's built-in NCCL flight recorder (Ansel et al., 2024), a feature that captures collective metadata and stack traces into a ring buffer, and hence allowing us to diagnose hangs and performance issues quickly at scale, particularly with regard to NCCL. Using this, we efficiently record every communication event and the duration of each collective operation, and also automatically dump tracing data on NCCL watchdog or heartbeat timeout. We enable more computationally intensive tracing operations and metadata collection selectively as needed live in production through online configuration changes (Tang et al., 2015) without needing a code release or job restart.
+
+Debugging issues in large-scale training is complicated by the mixed use of NVLink and RoCE in our network. Data transfer over NVLink typically occurs through load/store operations issued by CUDA kernels, and failures in either the remote GPU or NVLink connectivity often manifest as stalled load/store operations within CUDA kernels without returning a clear error code. NCCL-X enhances the speed and accuracy of failure detection and localization through a tight co-design with PyTorch, allowing PyTorch to access NCCL X’s internal state and track relevant information. While stalls due to NVLink failures cannot be completely prevented, our system monitors the state of the communication library and automatically times out when such a stall is detected. Additionally, NCCL X traces the kernel and network activities of each NCCL X communication and provides a snapshot of the failing NCCL X collective’s internal state, including finished and pending data transfers between all ranks. We analyze this data to debug NCCL X scaling issues.
+
+Sometimes, hardware issues may cause still-functioning but slow stragglers that are hard to detect. Even a single straggler can slow down thousands of other GPUs, often appearing as functioning but slow communications. We developed tools to prioritize potentially problematic communications from selected process groups. By investigating just a few top suspects, we were usually able to effectively identify the stragglers.
+
+One interesting observation is the impact of environmental factors on training performance at scale. For Llama 3 405B , we noted a diurnal 1-2% throughput variation based on time-of-day. This fluctuation is the result of higher mid-day temperatures impacting GPU dynamic voltage and frequency scaling. 
+
+During training, tens of thousands of GPUs may increase or decrease power consumption at the same time, for example, due to all GPUs waiting for checkpointing or collective communications to finish, or the startup or shutdown of the entire training job. When this happens, it can result in instant fluctuations of power consumption across the data center on the order of tens of megawatts, stretching the limits of the power grid. This is an ongoing challenge for us as we scale training for future, even larger Llama models.
+
+#### 3.4 Training Recipe
+
+The recipe used to pre-train Llama 3 405B consists of three main stages: (1) initial pre-training, (2) long-context pre-training, and (3) annealing. The three stages are described separately below. We use similar recipes to pre-train the 8B and 70B models.
+
+##### 3.4.1 Initial Pre-Training
+
+We pre-train Llama 3 405B using a cosine learning rate schedule, with a peak learning rate of $8 \times 10^{-5}$, a linear warm up of 8,000 steps, and a decay to $8 \times 10^{-7}$ over 1,200,000 training steps. We use a lower batch size early in training to improve training stability, and increase it subsequently to improve efficiency. Specifically, we use an initial batch size of 4M tokens and sequences of length 4,096, and double these values to a batch size of 8M sequences of 8,192 tokens after pre-training 252M tokens. We double the batch size again to 16M after pre-training on 2.87T tokens. We found this training recipe to be very stable: we observed few loss spikes and did not require interventions to correct for model training divergence.
+
+Adjusting the data mix. We made a several adjustments to the pre-training data mix during training to improve model performance on particular downstream tasks. In particular, we increased the percentage of non-English data during pre-training to improve the multilingual performance of Llama 3. We also upsample mathematical data to improve the model’s mathematical reasoning performance, we added more recent web data in the later stages of pre-training to advance the model’s knowledge cut-off, and we downsampled subsets of the pre-training data that were later identified as being lower quality.
+
+##### 3.4.2 Long Context Pre-Training
+
+In the final stages of pre-training, we train on long sequences to support context windows of up to 128K tokens. We do not train on long sequences earlier because the compute in self-attention layers grows quadratically in the sequence length. We increase the supported context length in increments, pre-training until the model has successfully adapted to the increased context length. We assess successful adaptation by measuring whether (1) model performance on short-context evaluations has recovered completely and (2) the model perfectly solves “needle in a haystack” tasks up to that length. In Llama 3 405B pre-training, we increased context length gradually in six stages, starting from the original 8K context window and ending in the final 128K context window. This long-context pre-training stage was performed using approximately 800B training tokens.
+
+Figure 7 Illustration of the overall post-training approach for Llama 3. Our post-training strategy involves rejection sampling, supervised finetuning, and direct preference optimization. See text for details.
+
+##### 3.4.3 Annealing
+
+During pre-training on the final 40M tokens, we linearly annealed the learning rate to 0, maintaining a context length of 128K tokens. During this annealing phase, we also adjusted the data mix to upsample data sources of very high quality; see Section 3.1.3. Finally, we compute the average of model checkpoints (Polyak (1991) averaging) during annealing to produce the final pre-trained model.
+
+
+
+
+
+
+### 04 Post-Training
+
+We produce the aligned Llama 3 models by applying several rounds of post-training, 6 or aligning the model with human feedback (Ouyang et al., 2022; Rafailov et al., 2024) on top of a pre-trained checkpoint. Each round of post-training involves supervised finetuning (SFT) followed by Direct Preference Optimization (DPO; Rafailov et al., 2024) on examples collected either via human annotations or generated synthetically. Our post-training modeling and data approaches are described in Sections 4.1 and 4.2 respectively. We further detail custom data curation strategies to improve the reasoning, coding, factuality, multilingual, tool use, long context, and precise instruction following in Section 4.3.
+
+4.1 Modeling
+
+The backbone of our post-training strategy is a reward model and a language model. We first train a reward model on top of the pre-trained checkpoint using human-annotated preference data (see Section 4.1.2). We then finetune pre-trained checkpoints with supervised finetuning (SFT; see Section 4.1.3), and further align the checkpoints with Direct Preference Optimization (DPO; see Section 4.1.4). This process is illustrated in Figure 7. Unless otherwise noted, our modeling procedure applies to Llama 3 405B, and we refer to Llama 3 405B as Llama 3 for simplicity.
+
+4.1.1 Chat Dialog Format
+
+To tune LLMs for human-AI interaction, we need to define a chat dialog protocol for the model to understand human instructions and perform conversational tasks. Compared to its predecessor, Llama 3 has new capabilities such as tool use (Section 4.3.5) which may require generating multiple messages and sending
+
+
+4.1.2 Reward Modeling
+
+We train a reward model (RM) covering different capabilities on top of the pre-trained checkpoint. The training objective is the same as Llama 2 except that we remove the margin term in the loss, as we observe diminishing improvements after data scaling. Following Llama 2, we use all of our preference data for reward modeling after filtering out samples with similar responses. In addition to standard preference pair of (chosen, rejected) responses, annotations also create a third “edited response” for some prompts, where the chosen response from the pair is further edited for improvement (see Section 4.2.1). Hence, each preference ranking sample has two or three responses with clear ranking (edited > chosen > rejected). We concatenate the prompt and multiple responses into a single row during training with responses randomly shuffled. This is an approximation to the standard scenario of putting the responses in separate rows and computing the scores, but in our ablations, this approach improves training efficiency without a loss in accuracy.
+
+4.1.3 Supervised Finetuning
+
+The reward model is then used to perform rejection sampling on our human annotation prompts, the details of which are described in Section 4.2. Together with this rejection-sampled data and other data sources (including synthetic data), we finetune the pre-trained language model using a standard cross entropy loss on the target tokens (while masking loss on prompt tokens). More details about the data mix can be found in Section 4.2. We refer to this stage as supervised finetuning (SFT; Wei et al., 2022a; Sanh et al., 2022; Wang et al., 2022b), even though many of the training targets are model-generated. Our largest models are finetuned with a learning rate of 1e-5 over the course of 8.5K to 9K steps. We tuned these hyperparameter settings to work well across different rounds and data mixes.
+
+4.1.4 Direct Preference Optimization
+
+We further train our SFT models with Direct Preference Optimization (DPO; Rafailov et al., 2024) for human preference alignment. For training, we primarily use the most recent batches of preference data collected using the best performing models from the previous alignment rounds. As a result, our training data conforms better to the distribution of the policy model that is being optimized in each round. We also explored on-policy algorithms such as PPO (Schulman et al., 2017), but found that DPO required less compute for large-scale models and performed better, especially on instruction following benchmarks like IFEval (Zhou et al., 2023). For Llama 3, we use a learning rate of 1e-5 and set the beta hyper-parameter to be 0.1. In addition, we apply the following algorithmic modifications to DPO:
+
+- **Masking out formatting tokens in DPO loss:** We mask out special formatting tokens including header and termination tokens (described in Section 4.1.1) from both chosen and rejected responses in the loss to stabilize DPO training. We observe that having these tokens contribute to the loss may lead to undesired model behaviors such as tail repetition or abruptly generating termination tokens. We hypothesize that this is due to the contrastive nature of the DPO loss – the presence of common tokens in both chosen and rejected responses leads to a conflicting learning objective as the model needs to increase and reduce the likelihood of these tokens simultaneously.
+- **Regularization with NLL loss:** We add an additional negative log-likelihood (NLL) loss term with a scaling coefficient of 0.2 on the chosen sequences, similar to Pang et al. (2024). This helps further stabilize DPO training by maintaining desired formatting for generation and preventing the decrease of log probability of chosen responses (Pang et al., 2024; Pal et al., 2024).
+
+4.1.5 Model Averaging
+
+Finally, we average models obtained from experiments using various versions of data or hyperparameters at each RM, SFT, or DPO stage (Izmailov et al., 2019; Wortsman et al., 2022; Li et al., 2022).
+
+
+| Dataset             | % of comparisons | Avg. # turns per dialog | Avg. # tokens per example | Avg. # tokens in prompt | Avg. # tokens in response |
+|---------------------|------------------|-------------------------|---------------------------|------------------------|--------------------------|
+| General English     | 81.99%           | 4.1                     | 1,004.4                   | 36.4                   | 271.2                    |
+| Coding              | 6.93%            | 3.2                     | 1,621.0                   | 113.8                  | 462.9                    |
+| Multilingual        | 5.19%            | 1.8                     | 1,299.4                   | 77.1                   | 420.9                    |
+| Reasoning and tools | 5.89%            | 1.6                     | 707.7                     | 46.6                   | 129.9                    |
+| **Total**           | **100%**         | **3.8**                 | **1,041.6**               | **44.5**               | **284.0**                |
+
+Table 6 Statistics of human preference data. We list statistics of the internally collected human preference data used for Llama 3 alignment. We ask annotators to perform multi-turn dialogues with the models and make comparisons among responses at each turn. In post-processing, we split each dialogue to multiple examples at a turn level. Each example consists of a prompt (including previous dialog if available) and a response (e.g., chosen or rejected response).
+
+### 4.1.6 Iterative Rounds
+
+Following Llama 2, we apply the above methods in six rounds. In each cycle, we collect new preference annotations and SFT data, sampling synthetic data from the latest models.
+
+### 4.2 Post-training Data
+
+The post-training data composition plays a critical role in the usefulness and behavior of language models. In this section, we discuss our human annotation procedures and preference data collection (Section 4.2.1), the composition of our SFT data (Section 4.2.2), and methods for data quality control and cleaning (Section 4.2.3).
+
+#### 4.2.1 Preference Data
+
+Our preference data annotation process is similar to Llama 2. We deploy multiple models for annotation after each round and sample two responses from two different models for each user prompt. These models can be trained with different data mixes and alignment recipes, allowing for different capability strength (e.g., code expertise) and increased data diversity. We ask annotators to rate the strength of their preference by categorizing it into one of four levels, based on how much more they prefer the chosen response over the rejected one: significantly better, better, slightly better, or marginally better. We also incorporate an editing step after preference ranking to encourage annotators to further improve the preferred response. Annotators edit the chosen response directly or prompt the model with feedback to refine its own response. Consequently, a portion of our preference data has three responses ranked (edited > chosen > rejected). 
+
+In Table 6, we report the statistics of preference annotations that we use for Llama 3 training. General English covers multiple subcategories such as knowledge-based question and answering or precise instruction-following, which fall outside the scope of specific capabilities. Compared to Llama 2, we observe an increase in the average length of prompt and response, suggesting that we train Llama 3 on more complex tasks. In addition, we implement a quality analysis and human evaluation process to rigorously assess the data collected, allowing us to refine our prompts and provide systematic, actionable feedback to annotators. For example, as Llama 3 improves after each round, we increase prompt complexity accordingly to target areas where the model lags.
+
+In each round of post-training, we use all the preference data that is available at the time for reward modeling, while only using the latest batches from various capabilities for DPO training. For both reward modeling and DPO, we use samples that are labeled as the chosen response being significantly better or better than the rejected counterpart for training and discard samples with similar responses.
+
+#### 4.2.2 SFT Data
+
+Our finetuning data is largely comprised of the following sources:
+
+* Prompts from our human annotation collection with rejection-sampled responses
+* Synthetic data targeting specific capabilities (see Section 4.3 for more details)
+
+
+### Table 7
+Statistics of SFT data. We list internally collected SFT data used for Llama 3 alignment. Each SFT example consists of a context (i.e., all conversation turns except the last one) and a final response.
+
+| Dataset           | % of examples | Avg. # turns | Avg. # tokens in context | Avg. # tokens in final response |
+|-------------------|---------------|--------------|--------------------------|-------------------------------|
+| General English   | 52.66%        | 6.3          | 974.0                    | 656.7                         | 317.1                         |
+| Code              | 14.89%        | 2.7          | 753.3                    | 378.8                         | 374.5                         |
+| Multilingual      | 3.01%         | 2.7          | 520.5                    | 230.8                         | 289.7                         |
+| Exam-like         | 8.14%         | 2.3          | 297.8                    | 124.4                         | 173.4                         |
+| Reasoning and tools | 21.19%      | 3.1          | 661.6                    | 359.8                         | 301.9                         |
+| Long context      | 0.11%         | 6.7          | 38,135.6                 | 37,395.2                      | 740.5                         |
+| **Total**         | **100%**      | **4.7**      | **846.1**                | **535.7**                     | **310.4**                     |
+
+---
+
+- Small amounts of human-curated data (see Section 4.3 for more details)
+
+As our post-training rounds progress, we develop stronger Llama 3 variants that we use to collect larger datasets that cover a wide range of complex capabilities. In this section we discuss the details for the rejection-sampling procedure and overall composition of our final SFT datamix.
+
+#### Rejection sampling
+During rejection sampling (RS), for each prompt collected during human annotation (Section 4.2.1) we sample K (typically between 10 and 30) outputs from the latest chat model policy (usually the best performing checkpoint from the previous post-training iteration, or the best performing checkpoint for a particular capability) and use our reward model to select the best candidate, consistent with Bai et al. (2022). In later rounds of post-training, we introduce system prompts to steer RS responses to conform with desirable tone, style, or formatting, which might be different for different capabilities.
+
+To increase the efficiency of rejection sampling, we adopt PagedAttention (Kwon et al., 2023). PagedAttention enhances memory efficiency through dynamic key-value cache allocation. It supports arbitrary batch sizes by dynamically scheduling requests based on the current cache capacity. Unfortunately, this carries the risk of swap-out when running out of memory. To eliminate such swap overhead, we define a maximum output length and perform a request only if sufficient memory is available to fit an output with that length. Together, this enables us to share the key-value cache pages for a prompt across all corresponding outputs. Together, this leads to a throughput improvement of over 2× during rejection sampling.
+
+#### Overall data composition
+Table 7 shows data statistics for each broad category of our “helpfulness” mix. While SFT and preference data contain overlapping domains, they are curated differently, yielding distinct count statistics. In Section 4.2.3 we describe techniques for categorizing topic, complexity, and quality of our data samples. In each round of post-training, we adjust our overall data mix carefully across these axes to tune performance across a wide range of benchmarks. Our final data mix epochs multiple times on some high quality sources and downsamples others.
+
+### 4.2.3 Data Processing and Quality Control
+Given that most of our training data is model-generated, it requires careful cleaning and quality control.
+
+#### Data cleaning
+In the early rounds, we observed a number of undesirable patterns common in our data, such as excessive use of emojis or exclamation points. Therefore, we implement a series of rule-based data removal and modification strategies to filter or clean problematic data. For example, to mitigate overly-apologetic tonal issues, we identify overused phrases (such as “I’m sorry” or “I apologize”) and carefully balance the proportion of such samples in our dataset.
+
+#### Data pruning
+We also apply a collection of model-based techniques to remove low-quality training samples and improve overall performance:
+
+- **Topic classification**: We first finetune Llama 3 8B into a topic classifier, and perform inference over all data to classify it into both coarsely-grained buckets (“mathematical reasoning”) and fine-grained
+
+
+- **Quality scoring**: We use both reward model and Llama-based signals to obtain a quality score for each sample. For an RM-based score, we consider data that is in the top quartile of RM scores as high quality. For a Llama-based score, we prompt Llama 3 checkpoint to rate each sample on a three-point scale for general English data (Accuracy, Instruction Following, and Tone/Presentation) and a two-point scale for coding data (Bug Identification and User Intention), and consider samples that obtain the maximum score as high quality. The RM and Llama-based scores have high disagreement rates, and we find that combining these signals yield the best recall on our internal test set. Ultimately, we select examples that are marked as high quality by the RM or the Llama-based filter.
+
+- **Difficulty scoring**: Because we are also interested in prioritizing examples that are more complex for the model, we score data using two measures of difficulty: Instag (Lu et al., 2023) and Llama-based scoring. For Instag, we prompt Llama 3 70B to perform intention tagging of SFT prompts, where more intentions implies more complexity. We also prompt Llama 3 to measure the difficulty (Liu et al., 2024c) of dialogs on a three-point scale.
+
+- **Semantic deduplication**: Finally, we perform semantic deduplication (Abbas et al., 2023; Liu et al., 2024c). We first cluster complete dialogs using RoBERTa (Liu et al., 2019b) and within each cluster sort them by quality score × difficulty score. We then do greedy selection by iterating through all sorted examples, and only keeping the ones that have maximum cosine similarity less than a threshold to the examples seen so far in the cluster.
+
+## 4.3 Capabilities
+
+We highlight special efforts to improve performance for specific capabilities such as code (Section 4.3.1), multilinguality (Section 4.3.2), math and reasoning (Section 4.3.3), long context (Section 4.3.4), tool use (Section 4.3.5), factuality (Section 4.3.6), and steerability (Section 4.3.7).
+
+### 4.3.1 Code
+
+LLMs for code have received significant attention since the release of Copilot and Codex (Chen et al., 2021). Developers are now widely using these models to generate code snippets, debug, automate tasks, and improve code quality. For Llama 3, we target improving and evaluating code generation, documentation, debugging, and review capabilities for the following high priority programming languages: Python, Java, Javascript, C/C++, Typescript, Rust, PHP, HTML/CSS, SQL, bash/shell. Here, we present our work on improving these coding capabilities via training a code expert, generating synthetic data for SFT, improving formatting with system prompt steering, and creating quality filters to remove bad samples from our training data.
+
+**Expert training**. We train a code expert which we use to collect high quality human annotations for code throughout subsequent rounds of post-training. This is accomplished by branching the main pre-training run and continuing pre-training on a IT token mix of mostly (>85%) code data. Continued pre-training on domain-specific data has been shown to be effective for improving performance in a specific domain (Gururangan et al., 2020). We follow a recipe similar to that of CodeLlama (Rozière et al., 2023). For the last several thousand steps of training we perform long-context finetuning (LCFT) to extend the expert’s context length to 16K tokens on a high quality mix of repo-level code data. Finally, we follow the similar post-training modeling recipes described in Section 4.1 to align this model, except with SFT and DPO data mixes primarily targeting code. This model is also used for rejection sampling (Section 4.2.2) for coding prompts.
+
+**Synthetic data generation**. During development, we identified key issues in code generation, difficulty in following instructions, code syntax errors, incorrect code generation, and difficulty in fixing bugs. While intensive human annotation could theoretically resolve these issues, synthetic data generation offers a complementary approach at a lower cost and higher scale, unconstrained by the expertise level of annotators. As such, we use Llama 3 and the code expert to generate a large quantity of synthetic SFT dialogs.
+
+We describe three high-level approaches for generating synthetic code data. In total, we generate over 2.7M synthetic examples which were used during SFT.
+
+
+1. **Synthetic data generation: execution feedback.** The 8B and 70B models show significant performance improvements when trained on data generated by a larger, more competent model. However, our initial experiments revealed that training Llama 3 405B on its own generated data is not helpful (and can even degrade performance). To address this limitation, we introduced execution feedback as a source of truth, enabling the model to learn from its mistakes and stay on track. In particular, we generate large dataset of approximately one million synthetic coding dialogues using the following process: 
+
+   - **Problem description generation:** First, we generate a large collection of programming problem descriptions that span a diverse range of topics, including those in the long tail distribution. To achieve this diversity, we sample random code snippets from various sources and prompt the model to generate programming problems inspired by these examples. This allowed us to tap into a wide range of topics and create a comprehensive set of problem descriptions (Wei et al., 2024).
+
+   - **Solution generation:** Then, we prompt Llama 3 to solve each problem in a given programming language. We observe that adding general rules of good programming to the prompt improves the generated solution quality. Also, we find it is helpful to require the model to explain its thought process in comments.
+
+   - **Correctness analysis:** After generating a solution, it is crucial to recognize that its correctness is not guaranteed, and including incorrect solutions in the finetuning dataset could harm the model's quality. While we do not ensure complete correctness, we develop methods to approximate it. To achieve this, we extract the source code from the generated solution and applied a combination of static and dynamic analysis techniques to test its correctness, including:
+
+     - **Static analysis:** We run all generated code through a parser and a linter to ensure syntactic correctness, catching errors such as syntax errors, use of uninitialized variables or non-imported functions, code style issues, typing errors, and others.
+
+     - **Unit test generation and execution:** For each problem and solution, we prompt the model to generate unit tests, executed in a containerized environment together with the solution, catching run-time execution errors and some semantic errors.
+
+   - **Error feedback and iterative self-correction:** When a solution fails at any step, we prompt the model to revise it. The prompt included the original problem description, the faulty solution, and feedback from the parser/linter/tester (stdout, stderr/ and return code). After a unit test execution failure, the model could either fix the code to pass the tests or modify its unit tests to accommodate the generated code. Only dialogs that pass all checks are included in the final dataset, used for supervised finetuning (SFT). Notably, we observed that about 20% of solutions were initially incorrect but self-corrected, indicating that the model learned from the execution feedback and improved its performance.
+
+   - **Fine-tuning and iterative improvement:** The finetuning process is conducted over multiple rounds, with each round building on the previous one. After each round, the model is improved, generating higher-quality synthetic data for the next round. This iterative process allows for progressive refinement and enhancement of the model’s performance.
+
+2. **Synthetic data generation: programming language translation.** We observe a performance gap between major programming languages (e.g., Python/C++) and less common ones (e.g., Typescript/PHP). This is not surprising as we have less training data for less common programming languages. To mitigate this, we supplement our existing data by translating data from common programming languages to less common languages (similar to Chen et al. (2023) in the context of reasoning). This is achieved by prompting Llama 3 and ensuring quality via syntax parsing, compilation, and execution. Figure 8 demonstrates an example of synthetic PHP code translated from Python. This improves performance significantly for less common languages as measured by the MultiPL-E (Cassano et al., 2023) benchmark.
+
+3. **Synthetic data generation: backtranslation.** To improve certain coding capabilities (e.g., documentation, explanations) where execution feedback is less informative for determining quality, we employ an alternative multi-step approach. Using this procedure, we generated approximately 1.2M synthetic
+
+
+![](./10_0.png)
+
+Figure 8  Code translation example. We display an example of using Llama 3 to translate Python code (left) to PHP code (right) to augment our SFT dataset with a wider range of programming languages.
+
+![](./10_1.png)
+
+Figure 9  Improving generated code quality with system prompts. *Left*: without system prompt *Right*: with system prompt.
+
+dialogs related to code explanation, generation, documentation, and debugging. Beginning with code snippets from a variety of languages in our pre-training data:
+
+- **Generate**: We prompt Llama 3 to generate data that represents our target capability (e.g., we add comments and docstrings for the code snippet, or we ask the model to explain a piece of code).
+
+- **Backtranslate**: We then prompt the model to “backtranslate” the synthetically generated data to the original code (e.g., we prompt the model to generate code only from its documentation, or we ask the model to generate code only from its explanation).
+
+- **Filter**: Using the original code as a reference, we prompt Llama 3 to determine the quality of the output (e.g., we ask the model how faithful the backtranslated code is to the original). We then use the generated examples that have the highest self-verification scores in SFT.
+
+**System prompt steering during rejection sampling.** During the rejection sampling process, we used code specific system prompts to improve code readability, documentation, thoroughness, and specificity. Recall, from Section 7 this data is used to finetune the language model. Figure 9 shows an example of how the system prompt helps improve the generated code quality — it adds necessary comments, uses more informative variable names, saves memory, etc.
+
+**Filtering training data with execution and model-as-judge signals.** As described in Section 4.2.3, we occasionally encounter quality issues in our rejection-sampled data, such as code blocks containing bugs. Detecting these issues in our rejection-sampled data is not as straightforward as it is for our synthetic code data, as the rejection-sampled responses typically contain a mix of natural language and code for which the code may not
+
+
+### 4.3.2 Multilinguality
+
+We describe how we improve Llama 3’s multilingual capabilities, including training an expert specialized on substantially more multilingual data, sourcing and generating high quality multilingual instruction tuning data for German, French, Italian, Portuguese, Hindi, Spanish, and Thai, and tackling specific challenges of multilingual language steering to enhance the overall performance of our model.
+
+**Expert training.** Our Llama 3 pre-training data mix contains significantly more English tokens than non-English tokens. To collect higher quality human annotations in non-English languages, we train a multilingual expert by branching off the pre-training run and continuing to pre-train on a data mix that consists of 90% multilingual tokens. We then perform post-training on this expert following Section 4.1. This expert model is then used to collect higher quality annotations in non-English languages until pre-training was fully complete.
+
+**Multilingual data collection.** Our multilingual SFT data is derived primarily from sources described below. The overall distribution is 2.4% human annotations, 44.2% data from other NLP tasks, 18.8% rejection sampled data, and 34.6% translated reasoning data.
+
+- **Human annotations:** We collect high-quality, manually annotated data from linguists and native speakers. These annotations mostly consist of open-ended prompts that represent real world use cases.
+
+- **Data from other NLP tasks:** To further augment, we use multilingual training data from other tasks and rewrite into dialog format. For example, we use data from exams-qa (Hardalov et al., 2020) and ConiQic (Wu et al., 2023). To improve language alignment, we also use parallel texts from GlobalVoices (Prokopidis et al., 2016) and Wikimedia (Tiedemann, 2012). We use LID based filtering and Blaser2.0 (Seamless Communication et al., 2023) to remove low quality data. For parallel text data, instead of using the bitext pairs directly, we apply a multilingual template inspired by Wei et al. (2022a) to better simulate real-life conversations in translation and language learning scenarios.
+
+- **Rejection sampled data:** We apply rejection sampling on our human annotated prompts to generate high-quality samples for finetuning, with two modifications compared to the process for English data:
+    - **Generation:** We explored randomly choosing the temperature hyperparameter from the range 0.2 – 1 for diverse generations in early rounds of post-training. With high temperature, responses for multilingual prompts can get creative and inspiring, but are also susceptible to unnecessary or unnatural code-switching. In the final round of post-training, we use a constant value of 0.6 to balance the trade-off. Additionally, we used specialized system prompts to improve response format, structure and general readability.
+    - **Selection:** Prior to reward model based selection, we implement multilingual-specific checks to ensure high language-match ratio between the prompt and response (e.g., a romanized Hindi prompt should not expect a response in Hindi Devanagari script).
+
+- **Translated data:** We try to avoid using machine-translated data to finetune the model in order to prevent translationese (Bizzoni et al., 2020; Muennighoff et al., 2023) or possible meme bias (Wang et al., 2022a), gender bias (Savoldi et al., 2021), or cultural bias (Ji et al., 2023). Moreover, we aim to prevent the model from being exposed only to tasks that are rooted in an English cultural context, which may not be representative of the linguistic and cultural diversity we aim to capture. We made one exception to this and translated our synthetic quantitative reasoning data (see Section 4.3.3 for details) to improve performance in quantitative reasoning in non-English languages. Due to the simpler nature of
+
+
+### 4.3.3 Math and Reasoning
+
+We define reasoning as the ability to perform multi-step computations and arrive at the correct final answer. Several challenges guide our approach to training models that excel in mathematical reasoning:
+
+- **Lack of prompts:** As the complexity of questions increases, the number of valid prompts or questions for Supervised Fine-Tuning (SFT) decreases. This scarcity makes it difficult to create diverse and representative training datasets for teaching models various mathematical skills (Yu et al., 2023; Yue et al., 2023; Luo et al., 2023; Mitra et al., 2024; Shao et al., 2024; Yue et al., 2024b).
+
+- **Lack of ground truth chain of thought:** Effective reasoning requires a step-by-step solution to facilitate the reasoning process (Wei et al., 2022c). However, there is often a shortage of ground truth chains of thought, which are essential for guiding the model how to break down the problem step-by-step and reach the final answer (Zelikman et al., 2022).
+
+- **Incorrect intermediate steps:** When using model-generated chains of thought, the intermediate steps may not always be correct (Cobbe et al., 2021; Useato et al., 2022; Lightman et al., 2023; Wang et al., 2023a). This inaccuracy can lead to incorrect final answers and needs to be addressed.
+
+- **Teaching models to use external tools:** Enhancing models to utilize external tools, such as code interpreters, allows them to reason by interleaving code and text (Gao et al., 2023; Chen et al., 2022; Gou et al., 2023). This capability can significantly improve their problem-solving abilities.
+
+- **Discrepancy between training and inference:** There is often a discrepancy between how the model is finetuned during training and how it is used during inference. During inference, the finetuned model may interact with humans or other models, requiring it to improve its reasoning using feedback. Ensuring consistency between training and real-world usage is critical for maintaining reasoning performance.
+
+To address these challenges, we apply the following methodologies:
+
+- **Addressing the lack of prompts:** We source relevant pre-training data from mathematical contexts and converted it into a question-answer format which can then be used for supervised finetuning. Additionally, we identify mathematical skills where the model under-performs and actively sourced prompts from humans to teach models such skills. To facilitate this process, we create a taxonomy of mathematical skills (Didolkar et al., 2024) and ask humans to provide relevant prompts/questions accordingly.
+
+- **Augmenting training data with step-wise reasoning traces:** We use Llama 3 to generate step-by-step solutions for a set of prompts. For each prompt, the model produces a variable number of generations. These generations are then filtered based on the correct answer (Li et al., 2024a). We also do self-verification where Llama 3 is used to verify whether a particular step-by-step solution is valid for a given question. This process improves the quality of the finetuning data by eliminating instances where the model does not produce valid reasoning traces.
+
+- **Filtering incorrect reasoning traces:** We train outcome and stepwise reward models (Lightman et al., 2023; Wang et al., 2023a) to filter training data where the intermediate reasoning steps were incorrect. These reward models are used to eliminate data with invalid step-by-step reasoning, ensuring high-quality data for finetuning. For more challenging prompts, we use Monte Carlo Tree Search (MCTS) with learned step-wise reward models to generate valid reasoning traces, further enhancing the collection of high-quality reasoning data (Xie et al., 2024).
+
+- **Interleaving code and text reasoning:** We prompt Llama 3 to solve reasoning problems through a combination of textual reasoning and associated python code (Gou et al., 2023). Code execution is used as a feedback signal to eliminate cases where the reasoning chain was not valid, ensuring the correctness of the reasoning process.
+
+- **Learning from feedback and mistakes:** To simulate human feedback, we utilize incorrect generations (i.e., generations leading to incorrect reasoning traces) and perform error correction by prompting Llama 3 to correct these reasoning traces.
+
+
+### 4.3.4 Long Context
+
+During the final pre-training stage, we extend the context length of Llama 3 from 8K tokens to 128K tokens (see Section 3.4 for more details). Similar to pre-training, we find that during finetuning we must carefully tune the recipe to balance short and long-context capabilities.
+
+**SFT and synthetic data generation.** Naively applying our existing SFT recipe with only short-context data resulted in significant regressions in long-context capabilities from pre-training, highlighting the need to incorporate long-context data in our SFT data mix. In practice, however, it is largely impractical to get humans to annotate such examples due to the tedious and time-consuming nature of reading lengthy contexts, so we predominantly rely on synthetic data to fill this gap. We use earlier versions of Llama 3 to generate synthetic data based on the key long-context use-cases: (possibly multi-turn) question-answering, summarization for long documents, and reasoning over code repositories, and describe them in greater detail below.
+
+- **Question answering:** We carefully curate a set of long documents from our pre-training mix. We split these documents into chunks of 8K tokens, and prompted an earlier version of the Llama 3 model to generate QA pairs conditional on randomly selected chunks. During training, the whole document is used as context.
+  
+- **Summarization:** We applied hierarchical summarization of long-context documents by first summarizing the chunks of 8K input length using our strongest Llama 3 8K context model and then summarizing the summaries. During training we provide the full document and prompt the model to summarize the document while preserving all the important details. We also generate QA pairs based on the summaries of the documents and prompt the model with questions that require global understanding of the whole long document.
+  
+- **Long context code reasoning:** We parse Python files to identify import statements and determine their dependencies. From here, we select the most commonly depended-upon files, specifically those referenced by at least five other files. We remove one of these key files from a repository and prompt the model to identify which files depended on the missing file and to generate the necessary missing code.
+
+We further categorize these synthetically generated samples based on the sequence length (16K, 32K, 64K and 128K) to enable more fine-grained targeting of input lengths.
+
+Through careful ablations, we observe that mixing 0.1% of synthetically generated long-context data with the original short-context data optimizes the performance across both short-context and long-context benchmarks.
+
+**DPO.** We observe that using only short context training data in DPO did not negatively impact long-context performance as long as SFT model is good for long context tasks. We suspect this is due to the fact that our DPO recipe has fewer optimizer steps than SFT. Given this finding, we keep the standard short-context recipe for DPO on top of our long-context SFT checkpoints.
+
+### 4.3.5 Tool Use
+
+Teaching LLMs to use tools such as search engines or code interpreters hugely expands the range of tasks they can solve, transforming them from pure chat models into more general assistants (Nakano et al., 2021; Thoppilan et al., 2022; Parisi et al., 2022; Gao et al., 2023; Mialon et al., 2023a; Schick et al., 2024). We train Llama 3 to interact with the following tools:
+
+- **Search engine.** Llama 3 is trained to use Brave Search\(^7\) to answer questions about recent events that go beyond its knowledge cutoff or that require retrieving a particular piece of information from the web.
+
+- **Python interpreter.** Llama 3 can generate and execute code to perform complex computations, read files uploaded by the user and solve tasks based on them such as question answering, summarization, data analysis or visualization.
+
+
+- **Mathematical computational engine.** Llama 3 can use the Wolfram Alpha API$^8$ to more accurately solve math, science problems, or retrieve accurate information from Wolfram’s database.
+
+The resulting model is able to use these tools in a chat setup to solve the user’s queries, including in multi-turn dialogs. If a query requires multiple tool calls, the model can write a step-by-step plan, call the tools in sequence, and do reasoning after each tool call.
+
+We also improve Llama 3’s zero-shot tool use capabilities — given in-context, potentially unseen tool definitions and a user query, we train the model to generate the correct tool call.
+
+Implementation. We implement our core tools as Python objects with different methods. Zero-shot tools can be implemented as Python functions with descriptions, documentation (i.e., examples for how to use them), and the model only needs the function’s signature and docstring as context to generate the appropriate call. We also convert function definitions and calls to JSON format, e.g., for web API calls. All tool calls are executed by the Python interpreter, that must be enabled in Llama 3 system prompt. Core tools can be individually enabled or disabled in the system prompt.
+
+Data collection. Different from Schick et al. (2024), we rely on human annotations and preferences to teach Llama 3 to use tools. There are two main differences with the post-training pipeline generally used in Llama 3:
+
+- For tools, dialogs often contain more than a single assistant message (e.g., calling the tool and reasoning about the tool output). Thus, we annotate at the message level to collect granular feedback: annotators provide a preference between two assistant messages with the same context or, if both contain major problems, edit one of the messages. The chosen or edited message is then added to the context and the dialog continues. This provides human feedback for both the assistant’s ability of calling the tools and reasoning about the tool outputs. Annotators cannot rank or edit the tool outputs.
+
+- We do not perform rejection sampling, as we did not observe gains in our tool benchmarks.
+
+To accelerate the annotation process, we start by bootstrapping basic tool use capabilities by finetuning on synthetically generated data from previous Llama 3 checkpoints. Thus, annotators have fewer edits to perform. In a similar spirit, as Llama 3 gradually improves through its development, we progressively complexify our human annotation protocols: we start by single-turn tool use annotations, before moving to tool use in dialogs, and finally annotating for multi-step tool use and data analysis.
+
+Tool datasets. To create data for tool usage applications, we leverage the following procedure:
+
+- **Single-step tool use:** We start by few-shot generation of synthetic user prompts which, by construction, require a call to one of our core tools (for example, questions that exceed our knowledge cutoff date). Then, still relying on few-shot generation, we generate appropriate tool calls for these prompts, execute them, and add the output to the model’s context. Finally, we prompt the model again to generate a final answer to the user’s query based on the tool output. We end up with trajectories of the following form: system prompt, user prompt, tool call, tool output, final answer. We also filter around 30% this dataset to remove tool calls that cannot be executed or other formatting issues.
+
+- **Multi-step tool use:** We follow a similar protocol and first generate synthetic data to teach the model basic multi-step tool use capabilities. To do this, we first prompt Llama 3 to generate user prompts that require at least two tool calls, that can be the same or different tools from our core set. Then, conditioned on these prompts, we few-shot prompt Llama 3 to generate a solution consisting of interleaved reasoning steps and tool calls, similar to ReAct (Yao et al., 2022). See Figure 10 for an example of Llama 3 performing a task involving multi-step tool usage.
+
+- **File uploads:** We annotate for the following filetypes: .TXT, .DOCX, .PDF, .PPTX, .XLSX, .CSV, .TSV, .PY, .JSON, .JSONL, .HTML, .XML. Our prompts are based on a provided file, and ask to summarize the contents of the file, find and fix bugs, optimize a piece of code, perform data analysis or visualization. See Figure 11 for an example of Llama 3 performing a task involving a file upload.
+
+After finetuning on this synthetic data, we gather human annotations in diverse and challenging scenarios including multi-turn interactions, more than three step tool use, and instances where a tool call does not yield
+
+$^8$ https://products.wolframalpha.com/llm-api/documentation
+
+
+## User prompt
+Below is the inflation rate for the US in February 2024, as well as the cost of food for Costco's food court (pizza slice and drink combo) last year. Adjust for inflation by 6% and the number of your properties are 30-day rental apartments. What is the additional total cost at Costco's food court given cookie drink prices, and average month rent on your properties in 2024?
+
+## System Prompt
+```
+System: N/A
+Usersystem: webgpt_user
+Browsersystem: webgpt_browser_alpha
+Time: November, 29th 2023, December 2023
+Today's date: Jul. 01, 2024
+```
+
+## Assistant response
+To answer your question, I will need to:
+1. Look up the inflation rate for the US in February 2024.
+2. Look up the Costco food court cookie drink prices.
+3. Calculate the estimated total cost of your properties over a 30-day rental period, given the average monthly rent.
+4. Adjust the food court cookie drink prices and adjust the rent for inflation percentage.
+
+First, I will look up the inflation rate for the US in February 2024.
+
+### Assistant tool call
+```
+action: web_search 
+query: "US Inflation rate February 2024"
+```
+
+## Tool output
+```
+The inflation rate for the US in February 2024 was 6%. Now, let's find the "Costco food court giant cookie drink price".
+```
+
+### Assistant tool call
+```
+action: web_search
+query: "Costco food court pizza cookie drink price"
+```
+
+## Tool output
+```
+Costco Food Court Giant cookie price: $2.99 Whole chart pizza: $9.95 Whole chart cookies: $1.49 ⅙th cookies: $0.29
+```
+
+### Assistant response
+Given the lists of foods containing my daily groceries, let's calculate the total daily cost at Costco's food court, then find the cost of cookie drink, you want the inflation percentage is fixed at 6%.
+
+### Assistant tool call
+```
+# Derive the total cost of tuple containing the daily grocery:
+daily_total = ${2.99) + ($2.99)}
+
+# Calculate the total cost of cookie drink
+# 
+# Generate by: is cost(([time("T")) for line in catalog lines
+
+# Calculate the total cost of the cookie containing the drink
+total_cookies_grocery = (2.99+( 2.99 ) }
+total_cost_grocery = total_cookies_grocery + 0.06 * ( total_cookies_grocery )
+inflation = total_cost_grocery 
+inflation = inflation * 10
+inflation_cost = total_cost_grocery
+```
+
+## Tool output
+```
+The estimated total cost of your properties over a 30-day rental period at the current inflation rate is $40 per month. The cost of renting your properties, given your annual price and adjusting for inflation is fixed at $84.95.
+```
+
+## Figure 10 Multi-step tool usage
+Example of Llama 3 performing multi-step planning, reasoning, and tool calling to solve a task.
+
+![](15_0.png)
+
+## Single, nested, and parallel function calling
+Calls can be simple nested, i.e. we pass a function call as an argument of another function, or parallel, i.e. the method returns a list of independent function calls. Generating a diverse set of functions, queries and ground truths can be challenging (Mekala et al., 2024), and we resort to mining the Stack (Kocetkov et al., 2022) to ground our synthetic user queries in real functions. More precisely, we extract function calls and their definitions, clean and filter them, e.g. for missing docstrings or non-executable functions, and use Llama 3 to generate a natural language query corresponding to the function call.
+
+## Multi-turn function calling
+We also generate synthetic data for multi-turn dialogs with function calls, following a protocol similar to the one proposed in Li et al. (2023b).We use multiple agents that generate domains, APIs, user queries, API calls, and responses, while also ensuring that the generated data covers a set of diverse domains and realistic APIs. All agents are variants of Llama 3 prompted in different ways depending on their roles and collaborate in a step-by-step manner.
+
+## 4.3.6 Factuality
+Hallucinations remain a major challenge for large language models. Models tend to be overconfident, even in domains where they have little knowledge. Despite these shortcomings, they are often used as knowledge bases, which can lead to risky outcomes such as the spread of misinformation. While we recognize that factuality can go beyond hallucinations, we took a hallucination-first approach here.
+
+
+![16_0.png](16_0.png)
+
+Figure 11: Processing file uploads. Example of Llama 3 performing analysis and visualization of an uploaded file.
+
+We follow the principle that post-training should align the model to "know what it knows" rather than add knowledge (Gekhman et al., 2024; Mielke et al., 2020). Our primary approach involves generating data that aligns model generations with subsets of factual data present in the pre-training data. To achieve this, we develop a knowledge probing technique that takes advantage of Llama 3’s in-context abilities. This data generation process involves the following procedure:
+
+1. Extract a data snippet from the pre-training data.
+2. Generate a factual question about these snippets (context) by prompting Llama 3.
+3. Sample responses from Llama 3 to the question.
+4. Score the correctness of the generations using the original context as a reference and Llama 3 as a judge.
+5. Score the informativeness of the generations using Llama 3 as a judge.
+6. Generate a refusal for responses which are consistently informative and incorrect across the generations, using Llama 3.
+
+We use data generated from the knowledge probe to encourage the model to only answer questions which it has knowledge about, and refuse answering those questions that it is unsure about. Further, pre-training data is not always factually consistent or correct. We therefore also collect a limited set of labeled factuality data that deals with sensitive topics where factually contradictory or incorrect statements are prevalent.
+
+
+#### 4.3.7 Steerability
+
+Steerability is the ability to direct the model’s actions and outcomes to meet developer and user specifications. As Llama 3 is a generic foundational model, it should be maximally steerable to different downstream use cases easily. For Llama 3, we focus on enhancing its steerability through system prompt with natural language instructions, especially around response length, format, tone and character/persona.
+
+**Data collection.** We collect steerability preference samples within the general English category by asking annotators to design different system prompts for Llama 3. Annotators then engage in conversations with the models to evaluate their consistency in following instructions defined in system prompts over the course of the conversation. We show an example customized system prompt used for enhancing steerability below:
+
+![](17_0.png)
+
+**Modeling.** After we collect the preference data, we leverage this data in reward modeling, rejection sampling, SFT, and DPO to enhance Llama 3’s steerability.
+
+## 5 Results
+
+We performed an extensive series of evaluations of Llama 3, investigating the performance of: (1) the pre-trained language model, (2) the post-trained language model, and (3) the safety characteristics of Llama 3. We present the results of these evaluations in separate subsections below.
+
+### 5.1 Pre-trained Language Model
+
+In this section, we report evaluation results for our pre-trained Llama 3 (Section 3), comparing with various other models of comparable sizes. We reproduce results of competitor models whenever possible. For non-Llama models, we report the best score across results that are publicly reported or (where possible) that we reproduced ourselves. The specifics of these evaluations, including configurations such as the number of shots, metrics, and other pertinent hyperparameters and settings, can be accessed on our Github repository here. Additionally, we are releasing the data generated as part of evaluations with publicly available benchmarks which can be found on Huggingface here. We evaluate the quality of our models on standard benchmarks (Section 5.1.1), for robustness to changes in multiple-choice question setups (Section 5.1.2), and on adversarial evaluations (Section 5.1.3). We also conduct a contamination analysis to estimate the extent to which our evaluations are impacted by contamination of training data (Section 5.1.4).
+
+#### 5.1.1 Standard Benchmarks
+
+To compare our models with the current state-of-the-art, we evaluate Llama 3 on a large number of standard benchmark evaluations shown in Table 8. These evaluations cover eight top-level categories: (1) commonsense reasoning; (2) knowledge; (3) reading comprehension; (4) math, reasoning, and problem solving; (5) long context; (6) code; (7) adversarial evaluations; and (8) aggregate evaluations.
