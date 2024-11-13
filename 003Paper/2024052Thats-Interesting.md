@@ -8,7 +8,7 @@ and a Sociology of Phenomenology
 
 MURRAY S. DAVIS
 
-### SUMMARY
+### Summary
 
 QUESTION: How do theories which are generally considered interesting differ from theories which are generally considered non-interesting? ANSWER: Interesting theories are those which deny certain assumptions of their audience, while non-interesting theories are those which affirm certain assumptions of their audience. This answer was arrived at through the examination of a number of famous social, and especially sociological, theories. That examination also generated a systematic index of the variety of propositional forms which interesting and non-interesting theories may take. The fertility of this approach suggested a new field be established called the Sociology of the Interesting, which is intended to supplement the Sociology of Knowledge. This new field will be phenomenologically oriented in so far as it will focus on the movement of the audience's mind from one accepted theory to another. It will be sociologically oriented in so far as it will focus on the dissimilar base-line theories of the various sociological categories which compose the audience. In addition to its value in interpreting the social impact of theories, the Sociology of the Interesting can contribute to our understanding of both the common sense and scientific perspectives on reality.
 
@@ -16,7 +16,7 @@ QUESTION: How do theories which are generally considered interesting differ from
 
 问题：为什么有些理论被普遍认为有趣，而有些理论则被认为无趣？答案：有趣的理论会质疑或否定受众已有的某些假设，而无趣的理论则只是在重复确认受众已有的假设。这个结论来自于对多个著名社会理论（尤其是社会学理论）的研究。这项研究同时建立了一个系统性索引，用于分类有趣和无趣理论可能呈现的各种命题形式。基于这种研究方法的成效，我们提出建立一个新的研究领域 ——"有趣社会学」，作为对知识社会学的补充和扩展。这个新领域在研究方法上采用现象学取向，重点关注受众的思维是如何从接受一个理论转向另一个理论的。同时，它也采用社会学视角，研究构成受众群体的不同社会类别中所普遍接受的基础性理论。除了有助于理解理论的社会影响力外，有趣社会学还能帮助我们更好地理解常识性认知和科学视角是如何看待现实的。
 
-### PART I: INTRODUCTION
+### PART I: Introduction
 
 It has long been thought that a theorist is considered great because his theories are true, but this is false. A theorist is considered great, not because his theories are true, but because they are interesting. Those who carefully and exhaustively verify trivial theories are soon forgotten; whereas those who curiously and expediently verify interesting theories are long remembered. In fact, the truth of a theory has very little to do with its impact, for a theory can continue to be found interesting even though its truth is disputed—even refuted!
 
@@ -114,7 +114,7 @@ While all interesting propositions were found to have in common the same dialect
 
 
 
-### PART II: THE INDEX OF THE INTERESTING
+### PART II: The Index of the Interesting
 
 A—THE CHARACTERIZATION OF A SINGLE PHENOMENON
 
@@ -305,7 +305,6 @@ Comment
 
 Modern computer technology in the social sciences both allows and fosters the prolific production of an enormous number of propositions involving correlations among phenomena (Type (viii)) which are uninteresting. These Correlative Propositions are uninteresting because they are obvious, because everyone already knew the phenomena in question were related. It is the rare computer correlation which draws attention to a surprising relation among phenomena which everyone did not already expect. Qualitative correlations
 
-# That's Interesting!
 
 are more likely to be interesting than quantitative correlations because the human mind, unlike the computer, is programmed (in various degrees of clarity) with the additional rule for the construction of interesting propositions described in this paper. This additional step in one's mental programme between conception and assertion serves as a filter to screen out (censor) those Correlative Propositions which are not worth saying.
 
@@ -445,11 +444,8 @@ Type (vii) Propositions, which evoke interest by reversing the causal relationsh
 
 There is a third variety of Causal Proposition which stimulates interest against the ground assumption of the first two: What seems to be a simple one way causal relation between phenomena is actually a complex mutual interaction between phenomena. Scholars who have read Max Weber's entire Sociology of Religion continually point out that he does not exclusively define either religion or economy as the independent or the dependent phenomenon, as dilettantes who have read only his Protestant Ethic assume; rather he actually shows how both the religion and the economy of a society reciprocally influence each other's development.
 
-```
 
-# That's Interesting!
-
-## PART III: DISCUSSION
+### PART III: Discussion
 
 1. Non-interesting propositions
 
@@ -696,6 +692,3 @@ Kuhn, Thomas (1962) The Structure of Scientific Revolutions, Chicago.
 Mannheim, Karl, (1936) Ideology and Utopia, New York.
 
 Merton, Robert (1957) Social Theory and Social Structure, New York.
-
-```
-
