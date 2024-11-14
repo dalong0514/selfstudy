@@ -18,99 +18,100 @@ QUESTION: How do theories which are generally considered interesting differ from
 
 ### PART I: Introduction
 
-It has long been thought that a theorist is considered great because his theories are true, but this is false. A theorist is considered great, not because his theories are true, but because they are interesting. Those who carefully and exhaustively verify trivial theories are soon forgotten; whereas those who curiously and expediently verify interesting theories are long remembered. In fact, the truth of a theory has very little to do with its impact, for a theory can continue to be found interesting even though its truth is disputed—even refuted!
-
-Since the capacity to stimulate interest is a necessary if not sufficient characteristic of greatness, then any study of theorists who are considered great must begin by examining why their theories are considered interesting—why, in other words, the theorist is worth studying at all. But before we can attempt even this preliminary task we must understand clearly why some theories are considered interesting while others are not. In this essay, I will try to determine what it means for a theory to be considered ‘interesting' (or, in the extreme, ‘fascinating').
-
-Students who follow to the letter all of the injunctions of current text-books on ‘theory-construction', but take into account no other criterion in the construction of their theories, will turn out work which will be found dull indeed. Their impeccably constructed theories will go unnoted—or, more precisely, unfootnoted—by others. But should these students also take into account that criterion, to be detailed below, which distinguishes ‘interesting theories' from ‘uninteresting theories', they will find that their theories will make their readers literally ‘sit up and take notice'. Their theories will then be discussed among colleagues, examined in journals, confirmed or denied in dissertations, and taught to students as the most recent instances of ‘progress' in their profession.
-
-I will confine my inquiry to social theories which have been considered interesting, giving special attention to famous sociological theories. I suggest, however, that the level of abstraction of the analysis presented here is high enough for it to be applicable equally well to theories in all areas of social science and even to theories in natural science. But this generalization of the following discussion will have to await further investigation.
-
-#### 1. Interesting non-propositions
-
-I will further restrict this paper to analysing the ‘interesting' component of those theories which Kant has called ‘synthetic a posteriori propositions'—assertions which refer to the empirical world and are not merely matters of definition. But these propositions, of course, are not the only ingredients of the scientific enterprise that may be found interesting, though they are the most important. Space, however, forbids consideration here of the various types of non-propositions that are also capable of evoking interest. Thus I will not be dealing with (1) ‘Findings' which confirm or disconfirm hypotheses, (2) ‘Clues' which indicate the way a problem can be solved, (3) ‘Aesthetic Descriptions' which refine perception, (4) ‘Analogies' which render the unfamiliar in terms of the familiar, and (5) ‘Models' which simplify the integration of complex relationships.
-
-#### 2. The interesting and the routine
-
-The interesting is something which affects the attention. Websters Third defines ‘interesting' as ‘engaging the attention'. The question naturally arises: ‘Where was the attention before it was engaged by the interesting?'
-
-It is hard to answer this question because, by definition, one is usually not attentive to what one is usually not attentive to. But, for those who wish to understand human behaviour, it is very important to answer this question.
-
-because most people spend most of their lives in this state they are not attentive to. Harold Garfinkel (1967) has called this state of low attention or low consciousness ‘the routinized taken-for-granted world of everyday life'. Since the interesting, by definition, is that which engages the attention more than the non-interesting, perhaps the former can be used to make manifest the latter. I will attempt to use what is found interesting to disclose what is routinely taken-for-granted.
-
-If the defining characteristic of anything which some audience considers interesting is that it stands out in their attention in contrast to the routinized taken-for-granted world of their everyday life, then the defining characteristic of a theory which some audience considers interesting is that it stands out in their attention in contrast to the web of routinely taken-for-granted propositions which make up the theoretical structure of their everyday life. In other words, a new theory will be noticed only when it denies an old truth (proverb, platitude, maxim, adage, saying, common-place, etc.). (The actual process by which a theory comes to be considered interesting today is, of course, much more complicated because of the present fragmentation of the audience who does the considering into lay and professional groups. This important complication will be taken up in a later section.)
-
-#### 3. The interesting in theory and in practice
-
-All interesting theories, at least all interesting social theories, then, constitute an attack on the taken-for-granted world of their audience. This audience will consider any particular proposition to be ‘worth saying' only if it denies the truth of some part of their routinely held assumption-ground. If it does not challenge but merely confirms one of their taken-for-granted beliefs, they will respond to it by rejecting its value while affirming its truth. They will declare that the proposition need not be stated because it is already part of their theoretical scheme: ‘Of course'. ‘That's obvious'. ‘Everybody knows that'. ‘It goes without saying'.
-
-The ‘taken-for-granted world' includes not only this theoretical dimension but also a practical dimension as well. A theory will be considered interesting only if it has repercussions on both levels. On the latter level, an audience will find a theory to be interesting only when it denies the significance of some part of their present ‘on-going practical activity' (Garfinkel, 1967) and insists that they should be engaged in some new on-going practical activity instead. If this practical consequence of a theory is not immediately apparent to its audience, they will respond to it by rejecting its value until someone can concretely demonstrate its utility: ‘So what?' ‘Who cares?'
-
-An analysis of the rhetorical structure of social research reveals how it is made to seem ‘interesting' on both theoretical and practical levels. The ‘standard form' of the books and articles in which this research is presented is the following: (1) The author articulates the taken-for-granted assumptions of his imagined audience by reviewing the literature of the particular sub-tradition in question (‘It has long been thought . . .'), (2) he adduces one or more propositions which deny what has been traditionally assumed (‘But this is false . . .'), (3) he spends the body of the work ‘proving' by various methodological devices that the old routinely assumed propositions are wrong while the new ones he has asserted are right (‘We have seen instead that . . .'), and finally (4) in conclusion, he suggests the practical consequences of these new propositions for his imagined audience's on-going social research, specifically how they ought to deflect it onto new paths (‘Further investigation is necessary to . . .').
-
-An analysis of the cognitive content of social research reveals much more about the nature of that which is interesting and, equally important, that which is not. Theoretically, it is worth investigating those social theories that have been considered interesting because of what they reveal about the common-sense everyday layman's view of the world, in which they are attacking. Practically, it is worth investigating those social theories that have been considered interesting so that we can learn to assert interesting theories ourselves. If we come to understand the process by which interesting theories are generated, we will not have to continue to do what has been done up till now—leave the ‘interesting' to the ‘inspired'.
-
-#### 4. Procedure
-
-In order to discover what it was that made a social theory ‘interesting' I examined a large number of social and especially sociological propositions which have been considered interesting in the hope of isolating the common element of ‘interest' in all of them and of accounting for their differences. Since my purpose was primarily heuristic, I did not feel it was necessary or feasible to establish the precise degree of ‘interestability' of each proposition. In a later section, I will offer some suggestions about how the study of interesting propositions can be put on a more rigorous footing. For the purposes of this investigation, I considered a social theory to be interesting if it has been in ‘wide circulation'. Wide circulation here is meant to encompass both those social theories that have been considered interesting in times past and those which have been considered interesting recently—that is, those that were and those that are ‘in the air'. (The former are now usually taught to students in ‘Introductory Courses'; the latter in ‘Substantive Courses' beyond the introductory level.) I also examined for this investigation some well-turned propositions of popular sociology which have caught the public's fancy and have achieved a wide circulation outside the strict limits of the discipline's domain.
-
-#### 5. The common element of all interesting propositions
-
-All of the interesting propositions I examined were found to involve the radical distinction between seeming and being, between the subject of phenomenology and the subject of ontology. An interesting proposition was one which first articulated a phenomenological presumption about the way a particular part of the world had looked, and then denied this phenomenological presumption in the name of ‘truth', that is, in the name of a more profound, more real, more ontological criterion. Put more precisely, an interesting proposition was one which attempted first to expose the ontological claim of its accredited counterpart as merely phenomenological pretense, and then to deny this phenomenological pretense with its own claim to ontological priority. In brief, an interesting proposition was always the negation of an accepted one. All of the interesting propositions I examined were easily translatable into the form: ‘What seems to be X is in reality non-X', or ‘What is accepted as X is actually non-X'.
-
-#### 6. The species of interesting propositions
-
-While all interesting propositions were found to have in common the same dialectical relation between the phenomenological and the ontological, they were found to be distinguished on the logical level. The variety of interesting propositions fell into twelve logical categories which involved either the characterization of a single phenomenon or the relations among multiple phenomena. These twelve logical categories constitute an ‘Index of the Interesting'.
-
 第一部分：引言
+
+It has long been thought that a theorist is considered great because his theories are true, but this is false. A theorist is considered great, not because his theories are true, but because they are interesting. Those who carefully and exhaustively verify trivial theories are soon forgotten; whereas those who curiously and expediently verify interesting theories are long remembered. In fact, the truth of a theory has very little to do with its impact, for a theory can continue to be found interesting even though its truth is disputed—even refuted!
 
 长期以来，人们认为一个理论家之所以伟大，是因为他的理论是正确的 —— 但这种观点是错误的。一个理论家被认为伟大，不是因为他的理论正确，而是因为这些理论很有趣。那些专注于仔细验证琐碎理论的人往往很快就被遗忘了；相比之下，那些富有好奇心并善于验证有趣理论的人则会被后人长久记住。事实上，一个理论的正确与否与其影响力关系并不大。即使一个理论的正确性受到质疑，甚至被证明是错误的，它仍然可能持续引发人们的兴趣！
 
+Since the capacity to stimulate interest is a necessary if not sufficient characteristic of greatness, then any study of theorists who are considered great must begin by examining why their theories are considered interesting—why, in other words, the theorist is worth studying at all. But before we can attempt even this preliminary task we must understand clearly why some theories are considered interesting while others are not. In this essay, I will try to determine what it means for a theory to be considered ‘interesting' (or, in the extreme, ‘fascinating').
+
 既然一个理论能否引发兴趣是它是否伟大的必要条件（虽然可能不是充分条件），那么研究那些被认为伟大的理论家时，我们首先要探讨为什么他们的理论会被认为有趣 —— 换句话说，为什么这个理论家值得研究。但在开始这项基础性工作之前，我们必须先清楚地理解：是什么让某些理论显得有趣，而其他理论却不然。在本文中，我将尝试确定一个理论被认为「有趣」（或者在极端情况下被认为「引人入胜"）到底意味着什么。
+
+Students who follow to the letter all of the injunctions of current text-books on ‘theory-construction', but take into account no other criterion in the construction of their theories, will turn out work which will be found dull indeed. Their impeccably constructed theories will go unnoted—or, more precisely, unfootnoted—by others. But should these students also take into account that criterion, to be detailed below, which distinguishes ‘interesting theories' from ‘uninteresting theories', they will find that their theories will make their readers literally ‘sit up and take notice'. Their theories will then be discussed among colleagues, examined in journals, confirmed or denied in dissertations, and taught to students as the most recent instances of ‘progress' in their profession.
 
 如果学生们只是严格遵循当前「理论构建」教科书的所有要求，而不考虑其他标准，那么他们的工作必然会显得十分乏味。他们虽然构建出了无可挑剔的理论，却不会引起任何人的注意 —— 更准确地说，不会被任何人引用。但如果这些学生能够同时考虑到下文将要详述的、用于区分「有趣理论」和「无趣理论」的标准，他们就会发现自己的理论能够真正引起读者的关注。这些理论将在同行之间展开讨论，在学术期刊中受到关注，在学位论文中被验证或质疑，并作为学科最新进展的范例被教授给学生。
 
+I will confine my inquiry to social theories which have been considered interesting, giving special attention to famous sociological theories. I suggest, however, that the level of abstraction of the analysis presented here is high enough for it to be applicable equally well to theories in all areas of social science and even to theories in natural science. But this generalization of the following discussion will have to await further investigation.
+
 我将把研究范围限定在那些被认为有趣的社会理论上，尤其关注著名的社会学理论。不过，我认为本文分析所达到的抽象程度足够高，使其同样适用于社会科学的所有领域，甚至可以推广到自然科学的理论研究。当然，这种推广的可行性还需要进一步研究。
 
-1. 有趣的非命题内容
+
+
+#### 1. Interesting non-propositions
+
+1 有趣的非命题内容
+
+I will further restrict this paper to analysing the ‘interesting' component of those theories which Kant has called ‘synthetic a posteriori propositions'—assertions which refer to the empirical world and are not merely matters of definition. But these propositions, of course, are not the only ingredients of the scientific enterprise that may be found interesting, though they are the most important. Space, however, forbids consideration here of the various types of non-propositions that are also capable of evoking interest. Thus I will not be dealing with (1) ‘Findings' which confirm or disconfirm hypotheses, (2) ‘Clues' which indicate the way a problem can be solved, (3) ‘Aesthetic Descriptions' which refine perception, (4) ‘Analogies' which render the unfamiliar in terms of the familiar, and (5) ‘Models' which simplify the integration of complex relationships.
+
+
 
 我将进一步把本文的分析重点限定在康德所说的「综合后验命题」（指那些关于经验世界的陈述，而不仅仅是概念定义）中的「有趣」元素。当然，在科学研究中，这类命题虽然最为重要，但并不是唯一可能令人感兴趣的内容。由于篇幅所限，本文不会讨论其他可能引发兴趣的非命题类型，包括：(1）验证或否定假设的「研究发现」，(2）指出问题解决方向的「线索」，(3）帮助加深认知的「美学描述」，(4）用熟悉的概念解释陌生事物的「类比」，以及（5）用于简化复杂关系的「模型」。
 
-2. 有趣与常规
+#### 2. The interesting and the routine
+
+2 有趣与常规
+
+The interesting is something which affects the attention. Websters Third defines ‘interesting' as ‘engaging the attention'. The question naturally arises: ‘Where was the attention before it was engaged by the interesting?'
 
 有趣的事物会吸引人们的注意力。韦氏词典第三版将「有趣的」定义为「能够吸引注意力的」。这就自然引出一个问题："在被有趣的事物吸引之前，人们的注意力集中在哪里？"
 
+It is hard to answer this question because, by definition, one is usually not attentive to what one is usually not attentive to. But, for those who wish to understand human behaviour, it is very important to answer this question.
+
 这个问题很难回答，因为按照定义，人们通常意识不到自己平时没有注意到的事物。但是，对于那些想要理解人类行为的研究者来说，回答这个问题却非常重要。
+
+because most people spend most of their lives in this state they are not attentive to. Harold Garfinkel (1967) has called this state of low attention or low consciousness ‘the routinized taken-for-granted world of everyday life'. Since the interesting, by definition, is that which engages the attention more than the non-interesting, perhaps the former can be used to make manifest the latter. I will attempt to use what is found interesting to disclose what is routinely taken-for-granted.
 
 这是因为大多数人的生活大部分时间都处于这种不被注意的状态中。社会学家 Harold Garfinkel（1967）将这种低注意力或低意识的状态称为「日常生活中习以为常的世界」。既然有趣的事物按定义来说比无趣的事物更能吸引注意力，那么也许我们可以通过研究有趣的事物来揭示那些被习以为常的事物。我将尝试通过研究人们觉得有趣的事物来揭示那些被理所当然接受的事物。
 
+If the defining characteristic of anything which some audience considers interesting is that it stands out in their attention in contrast to the routinized taken-for-granted world of their everyday life, then the defining characteristic of a theory which some audience considers interesting is that it stands out in their attention in contrast to the web of routinely taken-for-granted propositions which make up the theoretical structure of their everyday life. In other words, a new theory will be noticed only when it denies an old truth (proverb, platitude, maxim, adage, saying, common-place, etc.). (The actual process by which a theory comes to be considered interesting today is, of course, much more complicated because of the present fragmentation of the audience who does the considering into lay and professional groups. This important complication will be taken up in a later section.)
+
+
 如果说某个群体认为有趣的事物的特征在于它能在他们的日常生活的习以为常世界中脱颖而出，那么他们认为有趣的理论的特征就在于它能够突破构成他们日常生活的那些被认为理所当然的观点体系。换句话说，一个新理论只有在它否定了某个既有认知（如谚语、套话、格言、俗语、常识等）时才会引起注意。（当然，在今天，一个理论被认为有趣的实际过程要复杂得多，因为现在的受众已经分化为普通大众和专业群体。这个重要的复杂性我们会在后面详细讨论。）
 
-3. 理论与实践中的趣味性
+#### 3. The interesting in theory and in practice
+
+3 理论与实践中的趣味性
+
+All interesting theories, at least all interesting social theories, then, constitute an attack on the taken-for-granted world of their audience. This audience will consider any particular proposition to be ‘worth saying' only if it denies the truth of some part of their routinely held assumption-ground. If it does not challenge but merely confirms one of their taken-for-granted beliefs, they will respond to it by rejecting its value while affirming its truth. They will declare that the proposition need not be stated because it is already part of their theoretical scheme: ‘Of course'. ‘That's obvious'. ‘Everybody knows that'. ‘It goes without saying'.
 
 所有有趣的理论，特别是社会理论，都会挑战其受众习以为常的世界观。只有当一个命题否定了受众长期持有的某些基本假设时，他们才会认为这个命题「有说的必要」。如果这个命题只是印证了他们原有的某个理所当然的信念，他们就会一边承认其正确性，一边否定其价值。他们会说这个命题根本不需要提出，因为它早已是他们理论体系中的一部分："这还用说？"」这不是显而易见的吗？""这谁都知道。"」这根本不用讲。"
 
+The ‘taken-for-granted world' includes not only this theoretical dimension but also a practical dimension as well. A theory will be considered interesting only if it has repercussions on both levels. On the latter level, an audience will find a theory to be interesting only when it denies the significance of some part of their present ‘on-going practical activity' (Garfinkel, 1967) and insists that they should be engaged in some new on-going practical activity instead. If this practical consequence of a theory is not immediately apparent to its audience, they will respond to it by rejecting its value until someone can concretely demonstrate its utility: ‘So what?' ‘Who cares?'
+
 这个「习以为常的世界」不仅包含理论层面，还包含实践层面。一个理论要被认为有趣，必须在这两个层面都产生影响。在实践层面上，只有当一个理论质疑了人们当前某些惯常行为的重要性，并主张他们应该转而采取新的行动方式时，受众才会觉得这个理论有趣。如果一个理论的实践意义不能被受众立刻理解，他们就会否定其价值，除非有人能够具体展示其实用性："这有什么意义？"」这重要吗？"
+
+An analysis of the rhetorical structure of social research reveals how it is made to seem ‘interesting' on both theoretical and practical levels. The ‘standard form' of the books and articles in which this research is presented is the following: (1) The author articulates the taken-for-granted assumptions of his imagined audience by reviewing the literature of the particular sub-tradition in question (‘It has long been thought . . .'), (2) he adduces one or more propositions which deny what has been traditionally assumed (‘But this is false . . .'), (3) he spends the body of the work ‘proving' by various methodological devices that the old routinely assumed propositions are wrong while the new ones he has asserted are right (‘We have seen instead that . . .'), and finally (4) in conclusion, he suggests the practical consequences of these new propositions for his imagined audience's on-going social research, specifically how they ought to deflect it onto new paths (‘Further investigation is necessary to . . .').
 
 通过分析社会研究的写作结构，我们可以看出这类研究是如何在理论和实践两个层面上变得「有趣」的。这类研究的书籍和文章通常遵循以下「标准格式"：(1）作者首先通过文献综述来展示目标读者普遍接受的基本假设（常见的开场白是「长期以来人们认为……"），(2）随后提出一个或多个质疑这些传统假设的观点（"但这种观点是错误的……"），(3）在正文部分，作者运用各种研究方法来「证明」既有假设是错误的，而自己提出的新观点才是正确的（"研究表明……"），最后（4）在结论部分，作者会向读者说明这些新观点对当前研究实践的启示，特别是应该如何调整研究方向（"这需要进一步研究……"）。
 
+An analysis of the cognitive content of social research reveals much more about the nature of that which is interesting and, equally important, that which is not. Theoretically, it is worth investigating those social theories that have been considered interesting because of what they reveal about the common-sense everyday layman's view of the world, in which they are attacking. Practically, it is worth investigating those social theories that have been considered interesting so that we can learn to assert interesting theories ourselves. If we come to understand the process by which interesting theories are generated, we will not have to continue to do what has been done up till now—leave the ‘interesting' to the ‘inspired'.
+
 对社会研究内容的认知分析，让我们更深入地理解了什么是有趣，同样重要的是，也让我们理解了什么是不有趣。从理论角度来看，研究那些被认为有趣的社会理论很有价值，因为这些理论揭示了它们所挑战的普通人的常识性世界观。从实践角度来看，研究这些有趣的社会理论能够帮助我们学会提出自己的有趣理论。如果我们能够理解有趣理论是如何产生的，就不必像现在这样，把提出「有趣理论」的能力仅仅归结为「灵感的产物」。
 
-4. 研究方法
+#### 4. Procedure
+
+4 研究方法
+
+In order to discover what it was that made a social theory ‘interesting' I examined a large number of social and especially sociological propositions which have been considered interesting in the hope of isolating the common element of ‘interest' in all of them and of accounting for their differences. Since my purpose was primarily heuristic, I did not feel it was necessary or feasible to establish the precise degree of ‘interestability' of each proposition. In a later section, I will offer some suggestions about how the study of interesting propositions can be put on a more rigorous footing. For the purposes of this investigation, I considered a social theory to be interesting if it has been in ‘wide circulation'. Wide circulation here is meant to encompass both those social theories that have been considered interesting in times past and those which have been considered interesting recently—that is, those that were and those that are ‘in the air'. (The former are now usually taught to students in ‘Introductory Courses'; the latter in ‘Substantive Courses' beyond the introductory level.) I also examined for this investigation some well-turned propositions of popular sociology which have caught the public's fancy and have achieved a wide circulation outside the strict limits of the discipline's domain.
 
 为了探究是什么让社会理论变得「有趣」，我研究了大量被认为有趣的社会理论，特别是社会学理论，希望能找出它们共同的「有趣」要素，并理解它们之间的差异。由于我的主要目的是探索性的，我认为没有必要也不可能精确测量每个理论的「有趣程度」。在后文中，我会就如何更科学地研究有趣理论提出一些建议。在本研究中，我把「被广泛讨论」的社会理论视为有趣的理论。这种「广泛讨论」包括两类：过去被认为有趣的社会理论，以及近期被认为有趣的理论 —— 也就是那些曾经「风靡一时」和现在「正在流行」的理论。（前者通常在「基础课程」中讲授；后者则在进阶的「专业课程」中讲授。）此外，我还研究了一些精心设计的大众社会学理论，这些理论引起了公众的兴趣，并在学科界限之外获得了广泛传播。
 
-5. 有趣理论的共同特征
+#### 5. The common element of all interesting propositions
+
+5 有趣理论的共同特征
+
+All of the interesting propositions I examined were found to involve the radical distinction between seeming and being, between the subject of phenomenology and the subject of ontology. An interesting proposition was one which first articulated a phenomenological presumption about the way a particular part of the world had looked, and then denied this phenomenological presumption in the name of ‘truth', that is, in the name of a more profound, more real, more ontological criterion. Put more precisely, an interesting proposition was one which attempted first to expose the ontological claim of its accredited counterpart as merely phenomenological pretense, and then to deny this phenomenological pretense with its own claim to ontological priority. In brief, an interesting proposition was always the negation of an accepted one. All of the interesting propositions I examined were easily translatable into the form: ‘What seems to be X is in reality non-X', or ‘What is accepted as X is actually non-X'.
 
 通过研究，我发现所有有趣的理论都涉及「表面现象」和「深层本质」之间的根本区别，也就是现象学层面（事物的表面特征）和本体论层面（事物的根本特性）之间的区别。一个有趣的理论通常会先描述人们对世界某个特定方面的普遍认知，然后以追求「真相」的名义否定这种认知，也就是用更深入、更真实、更本质的标准来否定它。更准确地说，一个有趣的理论首先会指出某个被普遍接受的观点实际上只停留在表象层面，然后用自己提出的更本质的解释来取代这种表面认识。简单来说，有趣的理论总是对某个已被接受的观点提出否定。我研究的所有有趣理论都可以简化为这样的形式："表面上看是 X 的，实际上是非 X」，或者「人们认为是 X 的，实际上是非 X」。
 
-6. 有趣理论的类型
+#### 6. The species of interesting propositions
+
+6 有趣理论的类型
+
+While all interesting propositions were found to have in common the same dialectical relation between the phenomenological and the ontological, they were found to be distinguished on the logical level. The variety of interesting propositions fell into twelve logical categories which involved either the characterization of a single phenomenon or the relations among multiple phenomena. These twelve logical categories constitute an ‘Index of the Interesting'.
 
 尽管所有有趣的理论都在表象和本质的关系上具有共同特点，但它们在逻辑层面上却有所不同。有趣的理论可以分为十二个逻辑类别，这些类别要么涉及单一现象的特征描述，要么涉及多个现象之间的关系分析。这十二个逻辑类别共同构成了一个「趣味性分类体系」。
-
-
-
-
 
 
 
