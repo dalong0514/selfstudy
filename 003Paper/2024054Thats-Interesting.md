@@ -1,20 +1,22 @@
-## 2024052Thats-Interesting
+## 2024054Thats-Interesting
+
+June 1, 1971
 
 That's Interesting!
 
-Towards a Phenomenology of Sociology
-
-and a Sociology of Phenomenology
+Towards a Phenomenology of Sociology and a Sociology of Phenomenology
 
 MURRAY S. DAVIS
 
 ### Summary
 
-QUESTION: How do theories which are generally considered interesting differ from theories which are generally considered non-interesting? ANSWER: Interesting theories are those which deny certain assumptions of their audience, while non-interesting theories are those which affirm certain assumptions of their audience. This answer was arrived at through the examination of a number of famous social, and especially sociological, theories. That examination also generated a systematic index of the variety of propositional forms which interesting and non-interesting theories may take. The fertility of this approach suggested a new field be established called the Sociology of the Interesting, which is intended to supplement the Sociology of Knowledge. This new field will be phenomenologically oriented in so far as it will focus on the movement of the audience's mind from one accepted theory to another. It will be sociologically oriented in so far as it will focus on the dissimilar base-line theories of the various sociological categories which compose the audience. In addition to its value in interpreting the social impact of theories, the Sociology of the Interesting can contribute to our understanding of both the common sense and scientific perspectives on reality.
-
 摘要
 
-问题：为什么有些理论被普遍认为有趣，而有些理论则被认为无趣？答案：有趣的理论会质疑或否定受众已有的某些假设，而无趣的理论则只是在重复确认受众已有的假设。这个结论来自于对多个著名社会理论（尤其是社会学理论）的研究。这项研究同时建立了一个系统性索引，用于分类有趣和无趣理论可能呈现的各种命题形式。基于这种研究方法的成效，我们提出建立一个新的研究领域 ——"有趣社会学」，作为对知识社会学的补充和扩展。这个新领域在研究方法上采用现象学取向，重点关注受众的思维是如何从接受一个理论转向另一个理论的。同时，它也采用社会学视角，研究构成受众群体的不同社会类别中所普遍接受的基础性理论。除了有助于理解理论的社会影响力外，有趣社会学还能帮助我们更好地理解常识性认知和科学视角是如何看待现实的。
+QUESTION: How do theories which are generally considered interesting differ from theories which are generally considered non-interesting? ANSWER: Interesting theories are those which deny certain assumptions of their audience, while non-interesting theories are those which affirm certain assumptions of their audience. This answer was arrived at through the examination of a number of famous social, and especially sociological, theories. That examination also generated a systematic index of the variety of propositional forms which interesting and non-interesting theories may take. The fertility of this approach suggested a new field be established called the Sociology of the Interesting, which is intended to supplement the Sociology of Knowledge. This new field will be phenomenologically oriented in so far as it will focus on the movement of the audience's mind from one accepted theory to another. It will be sociologically oriented in so far as it will focus on the dissimilar base-line theories of the various sociological categories which compose the audience. In addition to its value in interpreting the social impact of theories, the Sociology of the Interesting can contribute to our understanding of both the common sense and scientific perspectives on reality.
+
+问题：为什么有些理论被普遍认为有趣，而有些理论则被认为无趣？
+
+答案：有趣的理论会质疑或否定受众已有的某些假设，而无趣的理论则只是在重复确认受众已有的假设。这个结论来自于对多个著名社会理论（尤其是社会学理论）的研究。这项研究同时建立了一个系统性索引，用于分类有趣和无趣理论可能呈现的各种命题形式。基于这种研究方法的成效，我们提出建立一个新的研究领域 ——「有趣社会学」，作为对知识社会学的补充和扩展。这个新领域在研究方法上采用现象学取向，重点关注受众的思维是如何从接受一个理论转向另一个理论的。同时，它也采用社会学视角，研究构成受众群体的不同社会类别中所普遍接受的基础性理论。除了有助于理解理论的社会影响力外，有趣社会学还能帮助我们更好地理解常识性认知和科学视角是如何看待现实的。
 
 ### PART I: Introduction
 
@@ -26,7 +28,7 @@ It has long been thought that a theorist is considered great because his theorie
 
 Since the capacity to stimulate interest is a necessary if not sufficient characteristic of greatness, then any study of theorists who are considered great must begin by examining why their theories are considered interesting—why, in other words, the theorist is worth studying at all. But before we can attempt even this preliminary task we must understand clearly why some theories are considered interesting while others are not. In this essay, I will try to determine what it means for a theory to be considered ‘interesting' (or, in the extreme, ‘fascinating').
 
-既然一个理论能否引发兴趣是它是否伟大的必要条件（虽然可能不是充分条件），那么研究那些被认为伟大的理论家时，我们首先要探讨为什么他们的理论会被认为有趣 —— 换句话说，为什么这个理论家值得研究。但在开始这项基础性工作之前，我们必须先清楚地理解：是什么让某些理论显得有趣，而其他理论却不然。在本文中，我将尝试确定一个理论被认为「有趣」（或者在极端情况下被认为「引人入胜"）到底意味着什么。
+既然一个理论能否引发兴趣是它是否伟大的必要条件（虽然可能不是充分条件），那么研究那些被认为伟大的理论家时，我们首先要探讨为什么他们的理论会被认为有趣 —— 换句话说，为什么这个理论家值得研究。但在开始这项基础性工作之前，我们必须先清楚地理解：是什么让某些理论显得有趣，而其他理论却不然。在本文中，我将尝试确定一个理论被认为「有趣」（或者在极端情况下被认为「引人入胜」）到底意味着什么。
 
 Students who follow to the letter all of the injunctions of current text-books on ‘theory-construction', but take into account no other criterion in the construction of their theories, will turn out work which will be found dull indeed. Their impeccably constructed theories will go unnoted—or, more precisely, unfootnoted—by others. But should these students also take into account that criterion, to be detailed below, which distinguishes ‘interesting theories' from ‘uninteresting theories', they will find that their theories will make their readers literally ‘sit up and take notice'. Their theories will then be discussed among colleagues, examined in journals, confirmed or denied in dissertations, and taught to students as the most recent instances of ‘progress' in their profession.
 
