@@ -74,19 +74,13 @@ All interesting theories, at least all interesting social theories, then, consti
 
 所有有趣的理论，特别是社会理论，都会挑战其受众习以为常的世界观。只有当一个命题否定了受众长期持有的某些基本假设时，他们才会认为这个命题「有说的必要」。如果这个命题只是印证了他们原有的某个理所当然的信念，他们就会一边承认其正确性，一边否定其价值。他们会说这个命题根本不需要提出，因为它早已是他们理论体系中的一部分：「这还用说？」「这不是显而易见的吗？」「这谁都知道。」「这根本不用讲。」
 
-
-
-
-
-
-
 The ‘taken-for-granted world' includes not only this theoretical dimension but also a practical dimension as well. A theory will be considered interesting only if it has repercussions on both levels. On the latter level, an audience will find a theory to be interesting only when it denies the significance of some part of their present ‘on-going practical activity' (Garfinkel, 1967) and insists that they should be engaged in some new on-going practical activity instead. If this practical consequence of a theory is not immediately apparent to its audience, they will respond to it by rejecting its value until someone can concretely demonstrate its utility: ‘So what?' ‘Who cares?'
 
-这个「习以为常的世界」不仅包含理论层面，还包含实践层面。一个理论要被认为有趣，必须在这两个层面都产生影响。在实践层面上，只有当一个理论质疑了人们当前某些惯常行为的重要性，并主张他们应该转而采取新的行动方式时，受众才会觉得这个理论有趣。如果一个理论的实践意义不能被受众立刻理解，他们就会否定其价值，除非有人能够具体展示其实用性："这有什么意义？"」这重要吗？"
+这个「习以为常的世界」不仅包含理论层面，还包含实践层面。一个理论要被认为有趣，必须在这两个层面都产生影响。在实践层面上，只有当一个理论质疑了人们当前某些惯常行为的重要性，并主张他们应该转而采取新的行动方式时，受众才会觉得这个理论有趣。如果一个理论的实践意义不能被受众立刻理解，他们就会否定其价值，除非有人能够具体展示其实用性：「这有什么意义？」「这重要吗？」
 
 An analysis of the rhetorical structure of social research reveals how it is made to seem ‘interesting' on both theoretical and practical levels. The ‘standard form' of the books and articles in which this research is presented is the following: (1) The author articulates the taken-for-granted assumptions of his imagined audience by reviewing the literature of the particular sub-tradition in question (‘It has long been thought . . .'), (2) he adduces one or more propositions which deny what has been traditionally assumed (‘But this is false . . .'), (3) he spends the body of the work ‘proving' by various methodological devices that the old routinely assumed propositions are wrong while the new ones he has asserted are right (‘We have seen instead that . . .'), and finally (4) in conclusion, he suggests the practical consequences of these new propositions for his imagined audience's on-going social research, specifically how they ought to deflect it onto new paths (‘Further investigation is necessary to . . .').
 
-通过分析社会研究的写作结构，我们可以看出这类研究是如何在理论和实践两个层面上变得「有趣」的。这类研究的书籍和文章通常遵循以下「标准格式"：(1）作者首先通过文献综述来展示目标读者普遍接受的基本假设（常见的开场白是「长期以来人们认为……"），(2）随后提出一个或多个质疑这些传统假设的观点（"但这种观点是错误的……"），(3）在正文部分，作者运用各种研究方法来「证明」既有假设是错误的，而自己提出的新观点才是正确的（"研究表明……"），最后（4）在结论部分，作者会向读者说明这些新观点对当前研究实践的启示，特别是应该如何调整研究方向（"这需要进一步研究……"）。
+通过分析社会研究的写作结构，我们可以看出这类研究是如何在理论和实践两个层面上变得「有趣」的。这类研究的书籍和文章通常遵循以下「标准格式」：(1）作者首先通过文献综述来展示目标读者普遍接受的基本假设（常见的开场白是「长期以来人们认为……」），(2）随后提出一个或多个质疑这些传统假设的观点（但这种观点是错误的……），(3）在正文部分，作者运用各种研究方法来「证明」既有假设是错误的，而自己提出的新观点才是正确的（研究表明……），最后（4）在结论部分，作者会向读者说明这些新观点对当前研究实践的启示，特别是应该如何调整研究方向（这需要进一步研究……）。
 
 An analysis of the cognitive content of social research reveals much more about the nature of that which is interesting and, equally important, that which is not. Theoretically, it is worth investigating those social theories that have been considered interesting because of what they reveal about the common-sense everyday layman's view of the world, in which they are attacking. Practically, it is worth investigating those social theories that have been considered interesting so that we can learn to assert interesting theories ourselves. If we come to understand the process by which interesting theories are generated, we will not have to continue to do what has been done up till now—leave the ‘interesting' to the ‘inspired'.
 
@@ -99,6 +93,11 @@ An analysis of the cognitive content of social research reveals much more about 
 In order to discover what it was that made a social theory ‘interesting' I examined a large number of social and especially sociological propositions which have been considered interesting in the hope of isolating the common element of ‘interest' in all of them and of accounting for their differences. Since my purpose was primarily heuristic, I did not feel it was necessary or feasible to establish the precise degree of ‘interestability' of each proposition. In a later section, I will offer some suggestions about how the study of interesting propositions can be put on a more rigorous footing. For the purposes of this investigation, I considered a social theory to be interesting if it has been in ‘wide circulation'. Wide circulation here is meant to encompass both those social theories that have been considered interesting in times past and those which have been considered interesting recently—that is, those that were and those that are ‘in the air'. (The former are now usually taught to students in ‘Introductory Courses'; the latter in ‘Substantive Courses' beyond the introductory level.) I also examined for this investigation some well-turned propositions of popular sociology which have caught the public's fancy and have achieved a wide circulation outside the strict limits of the discipline's domain.
 
 为了探究是什么让社会理论变得「有趣」，我研究了大量被认为有趣的社会理论，特别是社会学理论，希望能找出它们共同的「有趣」要素，并理解它们之间的差异。由于我的主要目的是探索性的，我认为没有必要也不可能精确测量每个理论的「有趣程度」。在后文中，我会就如何更科学地研究有趣理论提出一些建议。在本研究中，我把「被广泛讨论」的社会理论视为有趣的理论。这种「广泛讨论」包括两类：过去被认为有趣的社会理论，以及近期被认为有趣的理论 —— 也就是那些曾经「风靡一时」和现在「正在流行」的理论。（前者通常在「基础课程」中讲授；后者则在进阶的「专业课程」中讲授。）此外，我还研究了一些精心设计的大众社会学理论，这些理论引起了公众的兴趣，并在学科界限之外获得了广泛传播。
+
+
+
+
+
 
 #### 5. The common element of all interesting propositions
 
@@ -118,7 +117,7 @@ While all interesting propositions were found to have in common the same dialect
 
 ### PART II: The Index of the Interesting
 
-A—THE CHARACTERIZATION OF A SINGLE PHENOMENON
+#### A —— The Characterization of a Single Phenomenon
 
 (i) Organization
 
@@ -186,15 +185,11 @@ A third type of Abstraction Proposition had recently appeared in the social scie
 
 (iv) Generalization
 
-a. What seems to be a local phenomenon
-
-is in reality a general phenomenon.
+a. What seems to be a local phenomenon is in reality a general phenomenon.
 
 EXAMPLE: Karl Mannheim's assertion in Ideology and Utopia that the ideological limitation and distortion of thought processes, which was considered at the time he wrote to effect only the bourgeois class, in fact effects all social classes.
 
-b. What seems to be a general phenomenon
-
-is in reality a local phenomenon.
+b. What seems to be a general phenomenon is in reality a local phenomenon.
 
 EXAMPLE: Bronislaw Malinowski's assertion in Sex and Repression in Savage Society that the Oedipus Complex, which was considered at the time he wrote to be a human universal, in fact does not occur in all societies.
 
@@ -210,15 +205,11 @@ A theorist makes an interesting localization when he asserts that some property,
 
 (v) Stabilization
 
-a. What seems to be a stable and unchanging phenomenon
-
-is in reality an unstable and changing phenomenon.
+a. What seems to be a stable and unchanging phenomenon is in reality an unstable and changing phenomenon.
 
 EXAMPLE: Karl Marx's assertion in Capital that the social organization of bourgeois society, which was considered at the time he wrote to be permanent, is in fact about to be suddenly and dramatically transformed.
 
-b. What seems to be an unstable and changing phenomenon
-
-is in reality a stable and unchanging phenomenon.
+b. What seems to be an unstable and changing phenomenon is in reality a stable and unchanging phenomenon.
 
 EXAMPLE: Georg Simmel's assertion in ‘Conflict' that any conflict-ridden social organization, which was considered at the time he wrote to be on the verge of transformation, may in fact be capable of continuing indefinitely as it is (in a steady-state of conflict).
 
@@ -256,9 +247,7 @@ Though there is no necessary theoretical reason why these two types of propositi
 
 a. What seems to be a bad phenomenon is in reality a good phenomenon.
 
-EXAMPLE: R. D. Laing's assertion in The Politics of Experience that schizophrenia,
-
-which was considered at the time he wrote to be a bad thing, is in fact a good thing.
+EXAMPLE: R. D. Laing's assertion in The Politics of Experience that schizophrenia, which was considered at the time he wrote to be a bad thing, is in fact a good thing.
 
 b. What seems to be a good phenomenon is in reality a bad phenomenon.
 
@@ -270,28 +259,13 @@ Evaluative propositions are found interesting only when the theorist's evaluatio
 
 First, he can change the rating of a phenomenon by changing the indicator (operational definition) of the phenomenon to be rated. Depending on his audience's appraisal, he can select either the best or the worst particular aspects of the phenomenon to stand for the phenomenon as a whole. Should his audience customarily view the phenomenon in its best light, he can then view it in its worst, and vice versa. Thus, if a social theorist wishes to counter his audience's appraisal of American Society as great or as awful, he need merely select, to serve as his indicators of the moral worth of American Society as a whole, those of its aspects which are generally considered bad (like pollution, pockets of poverty, materialism, etc.) or those of its aspects which are generally considered good (like technology, average income, abundant consumer goods, etc.).
 
-Second, he can change the rating of a phenomenon by changing the moral measure to which it is being compared. Something is judged good or bad relative to some standard of good or bad. Change the standard of comparison and the evaluation of the phenomenon is also likely to change. Should his audience customarily evaluate a phenomenon positively relative to one comparison baseline, he can then evaluate it negatively relative to another
-
-comparison baseline, and vice versa. Comparison baselines for a social
-
-phenomenon include (1) other social phenomena of the same logical type,
-
-(2) the same social phenomenon in the past (recent or distant), (3) future
-
-projections of the social phenomenon (short run or long run), and (4) some
-
-positive or negative ideal version of the social phenomenon. Thus if a social
-
-theorist wishes to counter his audience's appraisal of American Society as
-
-
-great or as awful, he need merely compare it to (1) other societies (Sweden, Nazi Germany, etc.), (2) its past history (the ‘gay' nineties, the depression, etc.), (3) its potential futures (2001, 1984, etc.) or (4) some utopian or dystopian society (Marx's pure communism, Hobbes' state of nature, etc.).
+Second, he can change the rating of a phenomenon by changing the moral measure to which it is being compared. Something is judged good or bad relative to some standard of good or bad. Change the standard of comparison and the evaluation of the phenomenon is also likely to change. Should his audience customarily evaluate a phenomenon positively relative to one comparison baseline, he can then evaluate it negatively relative to another comparison baseline, and vice versa. Comparison baselines for a social phenomenon include (1) other social phenomena of the same logical type, (2) the same social phenomenon in the past (recent or distant), (3) future projections of the social phenomenon (short run or long run), and (4) some positive or negative ideal version of the social phenomenon. Thus if a social theorist wishes to counter his audience's appraisal of American Society as great or as awful, he need merely compare it to (1) other societies (Sweden, Nazi Germany, etc.), (2) its past history (the ‘gay' nineties, the depression, etc.), (3) its potential futures (2001, 1984, etc.) or (4) some utopian or dystopian society (Marx's pure communism, Hobbes' state of nature, etc.).
 
 (Notice that all disputes about the moral worth of American Society as a whole are actually disputes about what aspects of American Society are to be used as indicators for this evaluation and what comparison baselines are to be used to evaluate them. In fact, disputes about the moral worth of all social phenomena can be reduced to disputes involving these same two factors.)
 
 Evaluative Propositions are common in social research, but, because of the norm of ‘ethical neutrality', some theorists prefer to make their value judgements more latent than blatant. Without ever explicitly stating their appraisal of a social phenomenon, they can communicate their appraisal implicitly by demonstrating the ways in which this social phenomenon is similar to another social phenomenon whose moral status is generally accepted. By means of this strategy, Goffman, in Asylums, subtly passes judgement on the moral status of mental hospitals by showing how remarkably many features they have in common with concentration camps.
 
-#### B—THE RELATIONS AMONG MULTIPLE PHENOMENA
+#### B —— The Relations Among Multiple Phenomena
 
 (viii) Co-relation
 
@@ -305,10 +279,7 @@ EXAMPLE: Emile Durkheim's assertion in Suicide that suicide and such other pheno
 
 Comment
 
-Modern computer technology in the social sciences both allows and fosters the prolific production of an enormous number of propositions involving correlations among phenomena (Type (viii)) which are uninteresting. These Correlative Propositions are uninteresting because they are obvious, because everyone already knew the phenomena in question were related. It is the rare computer correlation which draws attention to a surprising relation among phenomena which everyone did not already expect. Qualitative correlations
-
-
-are more likely to be interesting than quantitative correlations because the human mind, unlike the computer, is programmed (in various degrees of clarity) with the additional rule for the construction of interesting propositions described in this paper. This additional step in one's mental programme between conception and assertion serves as a filter to screen out (censor) those Correlative Propositions which are not worth saying.
+Modern computer technology in the social sciences both allows and fosters the prolific production of an enormous number of propositions involving correlations among phenomena (Type (viii)) which are uninteresting. These Correlative Propositions are uninteresting because they are obvious, because everyone already knew the phenomena in question were related. It is the rare computer correlation which draws attention to a surprising relation among phenomena which everyone did not already expect. Qualitative correlations are more likely to be interesting than quantitative correlations because the human mind, unlike the computer, is programmed (in various degrees of clarity) with the additional rule for the construction of interesting propositions described in this paper. This additional step in one's mental programme between conception and assertion serves as a filter to screen out (censor) those Correlative Propositions which are not worth saying.
 
 Social theorists have pointed out many interesting correlations among phenomena which previously had been thought to be uncorrelated. Using Type (viii)a Propositions, they have asserted connections between such seemingly unconnected phenomena as social organization and culture (Marx, Durkheim), society and self (Cooley, Mead), group pressure and individual perception (Asch), living standard and population growth (Malthus), birth order and personality traits.
 
@@ -322,87 +293,31 @@ a. What seem to be phenomena which can exist together are reality phenomena whic
 
 EXAMPLE: Denis de Rougemont's assertion in Love in the Western World that love and marriage, which were considered at the time he wrote to be compatible, are in fact incompatible.
 
-324 Murray S. Davis
+b. What seem to be phenomena which cannot exist together are in reality phenomena which can exist together.
 
-b. What seem to be phenomena which cannot exist together
-
-are in reality phenomena which can exist together.
-
-EXAMPLE: Sigmund Freud's assertion in ‘Notes on a Case of Obsessional Neurosis'
-
-that love and hate, which were considered at the time he wrote to be
-
-incompatible, are in fact compatible (in the psychological state of
-
-‘ambivalence').
+EXAMPLE: Sigmund Freud's assertion in ‘Notes on a Case of Obsessional Neurosis' that love and hate, which were considered at the time he wrote to be incompatible, are in fact compatible (in the psychological state of ‘ambivalence').
 
 Comment
 
-This type of interesting proposition is relatively rare in the social sciences
+This type of interesting proposition is relatively rare in the social sciences since few pairs or sets of social phenomena are conceived as being so in-compatible with one another that they negate one another's very existence.
 
-since few pairs or sets of social phenomena are conceived as being so in-
+Type (ix) b Propositions, however, are more common than . Type (ix) a Propositions: when two or more social phenomena are assumed to be in-compatible, they are usually assumed to be strongly incompatible, and therefore the jolt of the interesting is likely to occur whenever they are asserted to coexist; whereas when two or more social phenomena are assumed to be compatible, they are usually assumed to be weakly compatible, and therefore the jolt of the interesting is not likely to occur whenever they are asserted to be incapable of coexistence.
 
-compatible with one another that they negate one another's very existence.
-
-Type (ix)b Propositions, however, are more common than . Type (ix)a
-
-Propositions: when two or more social phenomena are assumed to be in-
-
-compatible, they are usually assumed to be strongly incompatible, and there-
-
-fore the jolt of the interesting is likely to occur whenever they are asserted
-
-to coexist; whereas when two or more social phenomena are assumed to be
-
-compatible, they are usually assumed to be weakly compatible, and therefore
-
-the jolt of the interesting is not likely to occur whenever they are asserted to
-
-be incapable of coexistence.
-
-The intensive interest generated by the dynamic ambiguity of Type (ix)b
-
-Propositions encourages their use as inspired titles and catch phrases. ‘The
-
-Lonely Crowd', ‘The Cold War' (i.e. ‘The Peaceful War'), and ‘Poverty in
-
-the Midst of Plenty' are all actually Type (ix)b Propositions in elliptical form.
+The intensive interest generated by the dynamic ambiguity of Type (ix) b Propositions encourages their use as inspired titles and catch phrases. ‘The Lonely Crowd', ‘The Cold War' (i.e. ‘The Peaceful War'), and ‘Poverty in the Midst of Plenty' are all actually Type (ix)b Propositions in elliptical form.
 
 (x) Co-variation
 
-a. What seems to be a positive co-variation between phenomena
+a. What seems to be a positive co-variation between phenomena is in reality a negative co-variation between phenomena.
 
-is in reality a negative co-variation between phenomena.
+EXAMPLE: David Caplovitz's assertion in The Poor Pay More that expenditures for many goods and services, which were considered at the time he wrote to decrease at the lower income levels, in fact increase at the lower income levels.
 
-EXAMPLE: David Caplovitz's assertion in The Poor Pay More that expenditures
+b. What seems to be a negative co-variation between phenomena is in reality a positive co-variation between phenomena.
 
-for many goods and services, which were considered at the time he wrote
-
-to decrease at the lower income levels, in fact increase at the lower income
-
-levels.
-
-b. What seems to be a negative co-variation between phenomena
-
-is in reality a positive co-variation between phenomena.
-
-EXAMPLE: Alexis de Tocqueville's assertion in The Old Regime and the French
-
-Revolution that a social group's desire for revolution, which was considered
-
-at the time he wrote to decrease as their standard of living goes up, in fact
-
-increases as their standard of living goes up.
+EXAMPLE: Alexis de Tocqueville's assertion in The Old Regime and the French Revolution that a social group's desire for revolution, which was considered at the time he wrote to decrease as their standard of living goes up, in fact increases as their standard of living goes up.
 
 Comment
 
-There are two other types of Co-variance Propositions which attract
-
-interest: (1) What seems to be a continuous (incremental) co-variation
-
-That's Interesting ! 325
-
-between phenomena is in reality a discontinuous (discrete) co-variation. The Marxist notion of the point at which a quantitative change suddenly turns into a qualitative change involves this type of proposition. (2) What seems to be a linear co-variation between phenomena is in reality a curvilinear co-variation. This type of proposition occurs whenever ‘extremes' are said to ‘come together', i.e. to be more similar to each other than they are to the ‘mean'. This pattern is often found in (a) Stratification Correlates—when the upper class and the lower class are asserted to be more similar on some trait than either is to the middle class—(b) Hierarchical Organization Correlates—when the top management and the workers are asserted to be more similar on some trait than either is to the middle management—and (c) Historical-Demographic Correlates—when primitive society and modern society are asserted to be more similar on some trait than either is to histori- cally intervening societies.
+There are two other types of Co-variance Propositions which attract interest: (1) What seems to be a continuous (incremental) co-variation between phenomena is in reality a discontinuous (discrete) co-variation. The Marxist notion of the point at which a quantitative change suddenly turns into a qualitative change involves this type of proposition. (2) What seems to be a linear co-variation between phenomena is in reality a curvilinear co-variation. This type of proposition occurs whenever ‘extremes' are said to ‘come together', i.e. to be more similar to each other than they are to the ‘mean'. This pattern is often found in (a) Stratification Correlates—when the upper class and the lower class are asserted to be more similar on some trait than either is to the middle class—(b) Hierarchical Organization Correlates—when the top management and the workers are asserted to be more similar on some trait than either is to the middle management—and (c) Historical-Demographic Correlates—when primitive society and modern society are asserted to be more similar on some trait than either is to histori- cally intervening societies.
 
 (xi) Opposition
 
@@ -410,9 +325,7 @@ a. What seem to be similar (nearly identical) phenomena
 
 EXAMPLE: Marshall McLuhan's assertion in Understanding Media that radio and television, which were considered at the time to be similar media, are in fact opposite media (one being a ‘hot' medium; the other being a ‘cool' medium).
 
-b. What seem to be opposite phenomena
-
-are in reality similar (nearly identical) phenomena.
+b. What seem to be opposite phenomena are in reality similar (nearly identical) phenomena.
 
 EXAMPLE: Eric Hoffer's assertion in The True Believer that the psychological motivations of those who join opposing social movements, which were considered at the time he wrote to be opposite, are in fact similar.
 
@@ -420,11 +333,7 @@ Comment
 
 Opposition Propositions, especially of Type (xi)b, are combined with Evaluation Propositions, especially of Type (vii)b, we have the relatively formalized technique of generating interesting propositions known as ‘Dialectical Thinking'. A social theorist uses this technique of dialectical thinking whenever he tries to elicit his audience's interest by asserting that a seemingly positive social phenomenon actually has the negative characteristics of the opposite social phenomenon, or occasionally vice versa. Perhaps the most famous example of dialectical thinking is the Marxian (actually Proudhonian) assertion that ‘Ownership is theft'.
 
-Sometimes a transformational process must be added to bring about the identification of the apparent opposites—as in ‘disgust is repressed desire' and ‘marriage is legalized prostitution'. This transformational process, however,
-
-
-
-merely makes the proposition possible and contributes little to its impact. The intensity of the proposition's impact is due not to its adjectival and unstressed transformational process, but to the one-two punch of its sudden logical and evaluational reversal.
+Sometimes a transformational process must be added to bring about the identification of the apparent opposites—as in ‘disgust is repressed desire' and ‘marriage is legalized prostitution'. This transformational process, however, merely makes the proposition possible and contributes little to its impact. The intensity of the proposition's impact is due not to its adjectival and unstressed transformational process, but to the one-two punch of its sudden logical and evaluational reversal.
 
 Though this double negation of accepted concepts and values appeals to Continental social theorists, it is often too extreme for the Anglo-American mind which consequently tends to consider Dialectical Propositions more bizarre than interesting. Hence their applause when the Englishman Orwell satirized these Dialectical Propositions in 1984 with such hyperbolic examples as ‘Freedom is Slavery', ‘War is Peace', and ‘Ignorance is Strength'.
 
@@ -458,19 +367,13 @@ Second, an audience will consider a proposition to be non-interesting if, instea
 
 Third, an audience will consider a proposition to be non-interesting if, instead of denying some aspect of their assumption-ground, the proposition denies the whole assumption-ground. (e.g.: ‘Social factors have no effect on a person's behaviour.') In effect, the proposition is saying to its audience: ‘Everything that seems to be the case is not the case at all'. ‘Everything you always thought was true is really false.' Phenomenology is completely contrary to Ontology. The audience's response to propositions of this type will be: ‘That's absurd!'
 
-328 Murray S. Davis
-
 Why would anyone bother to assert a non-interesting proposition? Non-interesting social theories are often asserted on purpose by those who think that the business of social scientists is merely to assert any theory that can be derived and confirmed according to the text-book rules of theory construction and verification. Actually, the ‘Mediocre' in the social sciences (and probably the natural sciences too) can be defined as those who take the text-book rules of scientific procedures too literally and too exclusively. It should be clear from the above discussion that those who lack what is called ‘the creative spark' are in fact those who fail to take into account the assumption-ground of their audience.
 
 But even the ‘Stars' of social science sometimes assert propositions found to be non-interesting. Why should this ever be the case? Besides the occasional fall of the Stars themselves into mediocrity, the fault may lie not in the Stars, but in their audience. Propositions are interesting or uninteresting only in relation to the assumption-ground of some audience. If an audience finds a proposition asserted by a reputable social scientist to be obvious or irrelevant or absurd, it may be because the proposition has come to the attention of an audience other than the one to whom it was originally intended. A proposition which merely affirms a particular assumption, is irrelevant to any assumption, or annihilates the whole assumption-ground, or one audience may have been formulated to deny a particular assumption, be relevant to some assumption, or harmonize with the whole assumption-ground, of another audience. It is a common occurrence today for an out-group audience to monitor accidentally propositions originally directed towards an in-group audience. The academic world today is composed of specialized sub-worlds (disciplines) which are growing increasingly distinct both from each other and from the common-sense world (Berger and Luckmann, 1966), but which are also attempting to translate their internally generated propositions both to other disciplines and to the common-sense world. An audience which encounters one of these interdisciplinary or popularized propositions is likely to find it non-interesting because this proposition had not been specifically designed to take the assumptions of this new audience into account.
 
 #### 2. Complicating social factors
 
-If an audience will find interesting any proposition which attacks the assumption they hold about its topic, then presumably all one would have to do to assert an interesting proposition is, first, to specify what the audience assumption about any topic is, and, second, to come up with a proposition which refutes it. Unfortunately, whereas it is usually easy to come up with a proposition which refutes an audience assumption (one need
-
-That's Interesting! 329
-
-simply refer to the foregoing index of interesting propositions); it is usually difficult to specify precisely what this potentially deniable audience assumption is.
+If an audience will find interesting any proposition which attacks the assumption they hold about its topic, then presumably all one would have to do to assert an interesting proposition is, first, to specify what the audience assumption about any topic is, and, second, to come up with a proposition which refutes it. Unfortunately, whereas it is usually easy to come up with a proposition which refutes an audience assumption (one need simply refer to the foregoing index of interesting propositions); it is usually difficult to specify precisely what this potentially deniable audience assumption is.
 
 Specifying an audience assumption about a topic is usually difficult because this assumption is not necessarily a unitary thing. Since Marx, we have been aware that any division within the social base of theoretical assumption-ground may cause a division within the theoretical assumption-ground itself. As an audience is often segmented along various social lines, the assumption about a topic held by one audience segment is likely to be at variance with the assumption about that topic held by another audience segment. In order to clarify the difficulties involved in specifying an audience assumption, let us consider a few of the most important audience segments whose assumptions must be taken into account by anyone who wants to assert a proposition which all members of his intended audience will find interesting.
 
@@ -478,10 +381,7 @@ The fundamental division in the social structure of an audience is between those
 
 The assumptions about a topic held by both laymen and experts may be too diverse or too amorphous for any proposition about this topic to be found universally interesting. Variations in laymen's assumptions about the topic may be along the lines of the usual sociological categories—age, sex, class, etc.—or some more subtle sociological categories. Variations in experts' assumptions about the topic are usually along the lines of their membership in a particular discipline or in one of the schools of thought which are contending for power within that discipline. It will not be found easy to say something interesting about a topic on which there is no lay or expert consensus of assumptions. It is hard to deny what seems to be the case if there is no consensus about what seems to be the case.
 
-Lay and expert assumptions about a topic may not only vary over social space, but also change over time. Since the consensus of assumptions in the past is usually considered to be greater than the consensus of assumptions in the present, those who wish to assert interesting propositions often try to refute what they call the ‘Traditional View' of the topic. But in practice the
-
-
-‘Traditional Assumption' of the past usually proves to be as hard to specify as the ‘Contemporary Assumption' of the present.
+Lay and expert assumptions about a topic may not only vary over social space, but also change over time. Since the consensus of assumptions in the past is usually considered to be greater than the consensus of assumptions in the present, those who wish to assert interesting propositions often try to refute what they call the ‘Traditional View' of the topic. But in practice the ‘Traditional Assumption' of the past usually proves to be as hard to specify as the ‘Contemporary Assumption' of the present.
 
 Furthermore, what laymen and experts assume to be true about a topic has not only changed from the past, but is in the process of changing for the future. It is especially the younger generation who begin to take for granted a new assumption about a topic which differs from the taken-for-granted assumption of the older generation. This new assumption which is becoming increasingly accepted by the young may be called the ‘Vanguard Assumption'.3
 
@@ -489,11 +389,7 @@ If the main problems of asserting propositions that will be found interesting to
 
 Although it has now become generally recognized that the realms of the various intellectual specialties have split off from the common-sense world (Berger and Luckmann, 1966), the implication of this fact for the generation of propositions has not been made explicit. On the phenomenological level, the split between Conventional Wisdom and Esoteric Knowledge occurred when propositions were asserted which denied the assumptions of the common-sense world. Intellectual specialties were formed when various groups of self-styled experts began to accept those propositions which had refuted the assumptions of laymen. As an intellectual speciality developed, what began merely as a proposition which refuted a taken-for-granted assumption of the common-sense world now became a taken-for-granted assumption in its own right. When an intellectual speciality reached maturity —and this is the important point—all propositions generated within it are referred back not to the old baseline of the taken-for-granted assumption of the common-sense world, but to the new baseline of the taken-for-granted assumption of the intellectual speciality itself. In other words, an intellectual speciality, which began in a dialectical relationship with an assumption of the common-sense world, evolves and progresses by means of an internal dialectic with its own basic assumption.
 
-Anyone who wishes to assert a proposition that will be found interesting by laymen as well as experts must deal with the dilemma of this double dialectic. On the one hand, his proposition will interest experts only if it denies the ground-assumption of their discipline. On the other hand, his proposition will interest laymen only if it denies a ground-assumption of the commonsense world. But since the ground-assumption of experts is already a denial of a ground-assumption of laymen, he will find that any proposition which
-
-
-
-interests experts (because it denies their ground-assumption) will not interest laymen (because it affirms their ground-assumption), and vice versa. What will be interesting to the one will be obvious to the other.
+Anyone who wishes to assert a proposition that will be found interesting by laymen as well as experts must deal with the dilemma of this double dialectic. On the one hand, his proposition will interest experts only if it denies the ground-assumption of their discipline. On the other hand, his proposition will interest laymen only if it denies a ground-assumption of the commonsense world. But since the ground-assumption of experts is already a denial of a ground-assumption of laymen, he will find that any proposition which interests experts (because it denies their ground-assumption) will not interest laymen (because it affirms their ground-assumption), and vice versa. What will be interesting to the one will be obvious to the other.
 
 In the academic world, a person usually resolves this dilemma by grasping for one horn while ignoring the other, by restricting the potential audience who will consider his proposition to his fellow experts while not worrying about the opinion of laymen. He will usually publish his proposition in a specialized journal or technical text where it will be scrutinized only by his colleagues who hold the very ground-assumption he wishes to attack. But note that the propositions of these specialized journals and technical texts that are found interesting by their professional readers are actually of the form: ‘What everybody, except experts on the subject, think is true is in fact true'.
 
@@ -503,21 +399,13 @@ In sum, the fact that the baseline assumptions of intellectual specialties and t
 
 #### 3. Uncomplicating social factors
 
-Considering all of the assumptions of all of the various audience segments which a proposition must react against in order to be considered interesting, it is a wonder that anyone has ever asserted a proposition which attracted widespread interest. But the fact that some social theorists do occasionally utter propositions that are generally found interesting should alert us to the
-
-332 Murray S. Davis
-
-possibility that the problem of generating interesting propositions is not so complex as it first appears.
+Considering all of the assumptions of all of the various audience segments which a proposition must react against in order to be considered interesting, it is a wonder that anyone has ever asserted a proposition which attracted widespread interest. But the fact that some social theorists do occasionally utter propositions that are generally found interesting should alert us to the possibility that the problem of generating interesting propositions is not so complex as it first appears.
 
 Although there is a diversity of audience segments, on a certain level of abstraction there is only a duality of audience assumptions. Therefore, one technique a person can use to simplify the assumptions of his audience is to raise the level of abstraction at which he considers them. The higher the level of abstraction at which his proposition attacks the assumptions of his audience, the more the assumptions of his audience will run together. Eventually, as in The Index of the Interesting, he will be able to reach that level of abstraction at which there are only two audience assumptions about a topic possible. There may be many segments to his audience, but, at a certain level of abstraction, each segment must assume either ‘X' or ‘non-X' about a particular topic, and therefore each segment will find interesting either a proposition which asserts ‘non-X' against its assumption of ‘X' or a proposition which asserts ‘X' against its assumption of ‘non-X'. For example, although audience segments may differ as to the degree each thinks a certain phenomenon is generalizable, the social theorist who raises the level of abstraction at which the phenomenon is defined can divide all audience segments into two groups: those who think this abstractly defined phenomenon is generalizable at all, and those who think this abstractly defined phenomenon is merely local. Having categorized his audience segments in this way, he can now interest the former group of audience segments by asserting the phenomenon is actually local or he can interest the latter group of audience segments by asserting the phenomenon is actually generalizable. By directing his proposition towards the assumption of those audience segments who form the majority, or at least the majority of those whose opinion is significant to him, the social theorist will find that his proposition will elicit wide, if not universal, interest.
 
 If he still wants to try for universal, rather than merely majority, interest, the social theorist has another means at his disposal. Having narrowed the number of assumptions of the segments of his audience down to two, he may wish to reduce the assumption-ground of all his audience segments into a unity, to bring together his many adversaries into a single opponent—‘the Enemy'. The rhetorical technique of integrating all of the assumptions which are to be refuted into the single (wrong) assumption of the ‘other side' may be called ‘Consensus Creation'.
 
-Consensus creation is an artful task which involves three steps. First, the social theorist articulates lack of consensus into dissensus either generally (‘Half think "X" and half think "non-X"') or along the lines of specific sociological categories (‘The lower classes think "X", whereas the upper
-
-That's Interesting! 333
-
-classes think "non-X") or of categories appropriate to an intellectual speciality (‘The Structural-Functionalists think "X"; the Symbolic-Interactionists think "non-X".') Second, he claims this apparent dissensus is actually a consensus at a higher level. (‘But both these groups are actually saying the same thing: "Y".') Finally, having created this higher consensus of assumptions, he is now ready to deny it. (‘However, they are both wrong. What really is the case is "non-Y".')
+Consensus creation is an artful task which involves three steps. First, the social theorist articulates lack of consensus into dissensus either generally (‘Half think "X" and half think "non-X"') or along the lines of specific sociological categories (‘The lower classes think "X", whereas the upper classes think "non-X") or of categories appropriate to an intellectual speciality (‘The Structural-Functionalists think "X"; the Symbolic-Interactionists think "non-X".') Second, he claims this apparent dissensus is actually a consensus at a higher level. (‘But both these groups are actually saying the same thing: "Y".') Finally, having created this higher consensus of assumptions, he is now ready to deny it. (‘However, they are both wrong. What really is the case is "non-Y".')
 
 All segments of the social theorists' audience will now find his proposition interesting because it refutes the basic assumption shared by all of them (which basic assumption they themselves may not have known they all fundamentally assumed until he pointed out to them that they did). Convincing one's audience that they fundamentally hold a particular assumption about a topic, however, takes somewhat more than rhetorical skill. It also takes some knowledge of what assumptions about the topic the audience do actually hold. Should the assumption which a social theorist tries to convince his audience that they actually hold be too discrepant from the assumption they do actually hold, his audience will accuse him of setting up a ‘straw man'—an assumption which is easily blown over because no flesh and blood person ever actually held it—certainly no member of his audience.
 
@@ -549,8 +437,6 @@ There are other things besides propositions which can attract interest, like pai
 
 Finally, further research on interesting propositions in the social (and natural) sciences can help us to learn more about the theoretical structure of the common-sense world. If it is true that those propositions which are found interesting are those which deny various aspects of this conventional structure, then we can gain understanding of the nature of this conventional.
 
-336 Murray S. Davis
-
 structure indirectly by studying those interesting propositions which deny it. Moreover, we can gain understanding of the variations in this conventional structure also indirectly by studying those propositions which interest individuals at some social locations but do not interest individuals at other social locations. Regardless of the truth of a proposition, then, the mere fact that someone finds it interesting indicates that there is much we can learn from it.
 
 #### 5. Implications of interesting propositions for further research
@@ -559,9 +445,7 @@ The common critique of most contemporary social and especially sociological rese
 
 We have seen that the criterion which distinguishes an interesting proposition from a non-interesting proposition is that the former, unlike the latter, denies a specific assumption of its audience. Analysis of all books and articles which have left their mark on the social sciences will show, I believe, that they satisfy this criterion in the various ways enumerated in The Index of the Interesting. If this is the case, then, the present languor of the social sciences is due directly to the fact that social scientists do not attempt to satisfy this criterion in their own research consistently. What success their own research has in interesting others comes only from the fact that they satisfy this criterion inadvertently. Those social scientists who are considered the most interesting today are those who actually apply this criterion to their own research intuitively. The point of this paper, however, is to show that the social sciences as a whole could be much improved if all students of social life were taught to evaluate their own research according to this criterion consciously.
 
-Glaser and Strauss (1967) have astutely observed that the anaemic state of modern sociology in particular stems largely from the fact that most courses and textbooks on 'Sociological Methods' pay too much attention to the
-
-confirmation of theories and not enough attention to the generation of theories. But Glaser and Strauss have not specified the remedy for this deficiency precisely enough. What is needed is not more social theories, but more interesting social theories. The student of social life needs to know not merely how to generate a theory from a body of data, he needs to know how to generate a theory from a body of data which will be found interesting.
+Glaser and Strauss (1967) have astutely observed that the anaemic state of modern sociology in particular stems largely from the fact that most courses and textbooks on 'Sociological Methods' pay too much attention to the confirmation of theories and not enough attention to the generation of theories. But Glaser and Strauss have not specified the remedy for this deficiency precisely enough. What is needed is not more social theories, but more interesting social theories. The student of social life needs to know not merely how to generate a theory from a body of data, he needs to know how to generate a theory from a body of data which will be found interesting.
 
 Glaser and Strauss feel that the prerequisite for generating a theory is an intense familiarity with the data. But I would add that the prerequisite for generating an interesting theory is an intense familiarity with previous audience assumptions about the data as well. To be found interesting, a theory must be played off against what was previously assumed about the phenomenon in question. An audience will not find interesting just any theory about mental hospitals, they will find interesting only those theories about mental hospitals which clash with their previous stereotypes of mental hospitals. Therefore, the social researcher who wants to be certain that he will produce an interesting theory about his subject must first familiarize himself with what his audience already assumes to be true about his subject, before he can even begin to generate a proposition which, in denying their assumption, will attract their attention.
 
@@ -577,33 +461,19 @@ The analysis of the interesting elaborated here also has repercussions on the no
 
 Courses are usually laid out on a model of increasing structured differentiation. First, a general theory regarding some subject matter is presented in the introductory lectures. Then, this general theoretical framework is applied to specific categories or instances of the subject matter in the rest of the course. Finally, in the concluding lectures, this general theory is summarized with its limitations and potentials pointed out. But this structural approach to course presentation often fails to grasp the student's interest because it does not specifically concern itself with what the student finds interesting. As in the case of theory construction, too much concern with the inner processes of the subject matter and too little concern with the audience's evolving view of the subject matter will alienate the one from the other.
 
-A phenomenological-ontological approach to course presentation, however, would overcome this deficiency of the structural approach, for it would be concerned at all times with the evolution of the student's assumptions about the subject matter. With this approach, a course would begin by articulating the student's common-sense assumptions about the subject matter, would continue by refuting these lazy assumptions and replacing them with expert propositions, and would conclude by rapidly recapitulating, and thus manifesting for the student, the process by which his original naïve view of the subject matter was transformed into a new sophisticated view of the subject matter. Such a course demands from the teacher not merely a knowledge of the goal to which he wants to draw his students, but also a knowledge of their starting point—where his students were originally ‘at'. Any course whose on-going development parallels the natural progression of
-
-the student's mind from start to finish should have no difficulty in eliciting and sustaining their interest.
+A phenomenological-ontological approach to course presentation, however, would overcome this deficiency of the structural approach, for it would be concerned at all times with the evolution of the student's assumptions about the subject matter. With this approach, a course would begin by articulating the student's common-sense assumptions about the subject matter, would continue by refuting these lazy assumptions and replacing them with expert propositions, and would conclude by rapidly recapitulating, and thus manifesting for the student, the process by which his original naïve view of the subject matter was transformed into a new sophisticated view of the subject matter. Such a course demands from the teacher not merely a knowledge of the goal to which he wants to draw his students, but also a knowledge of their starting point—where his students were originally ‘at'. Any course whose on-going development parallels the natural progression of the student's mind from start to finish should have no difficulty in eliciting and sustaining their interest.
 
 The curriculum as a whole should also be synchronized with the mental development of the student. The fact that little attention is paid to the evolving assumptions of students in most curricula today is responsible for the fact that students often feel their education lacks ‘relevance'. Since naive student assumptions about a subject matter are most ignored at the introductory level, beginning students are particularly prone to finding Introductory Courses (and Texts) dull. If a person's interest is aroused only when he encounters something unexpected, then he will necessarily find an Introductory Course to be dull insofar as it does not deny his expectations. Perhaps the only unexpected feature of most Introductory Courses, their only redeeming feature which arouses what little interest the student has, is their denial of his assumption that some complex subject matter, like social life, is unordered. Unfortunately, the particular kind of order which most Introductory Courses impose on their subject matter consists merely of the ‘Classic Statements' of the field. Although these Classic Statements had interested previous generations of experts because they had denied their assumptions, these Classic Statements will fail to arouse present student interest insofar as students today do not hold the same assumptions about the subject matter as did the experts of the previous generations.
 
 Nevertheless, Introductory Courses (and Texts) do perform an indispensable function in the curriculum of the discipline as a whole, for they set up the pre-conditions necessary for students to find Advanced Courses (and Texts) interesting. Introductory Courses engender those expectations about the subject matter which the propositions put forth in Advanced Courses are specifically designed to deny. Since the dialectical process of the interesting can occur only after specific assumptions about a subject have been formed, students usually find Advanced Courses to be more interesting than Introductory Courses. This is not to say that Introductory Courses—even if they must be less interesting than Advanced Courses—must be as uninteresting as they often are. They could be made more interesting to the beginning student if they attempted to show him in detail how the Classic Statements of the discipline actually do refute many of the assumptions about the subject matter which he has acquired merely by being socialized into the commonsense world of the outside society in which he grew up.
 
-Very recently, in some parts of the academy, there has been a reaction against excessive concentration on the sophisticated propositions of experts. But this reaction seems to be turning into an excessive concentration on the naive assumptions of students. Both extremes are to be avoided if student interest is to be maintained. In the past, student interest in a subject was
-
-often inhibited by too much attention to the latest conclusions of experts and too little attention to the original assumptions of students. In the future, it looks as though student interest in a subject may be inhibited by too much attention to the original assumptions of students and too little attention to the latest conclusions of experts. Students will then be bored with having their naive views left undisturbed as they were with having their naive views ignored. In either case, that transcendence of original assumptions which is intrinsic to the interesting does not occur. What is needed is a pedagogical approach which takes into account both the student's naive view of the subject matter as its beginning and the expert's sophisticated view of the subject matter as its end, and methodically leads the student from one to the other. Only in this way will the term ‘academic' cease to be synonymous with ‘irrelevant'.
+Very recently, in some parts of the academy, there has been a reaction against excessive concentration on the sophisticated propositions of experts. But this reaction seems to be turning into an excessive concentration on the naive assumptions of students. Both extremes are to be avoided if student interest is to be maintained. In the past, student interest in a subject was often inhibited by too much attention to the latest conclusions of experts and too little attention to the original assumptions of students. In the future, it looks as though student interest in a subject may be inhibited by too much attention to the original assumptions of students and too little attention to the latest conclusions of experts. Students will then be bored with having their naive views left undisturbed as they were with having their naive views ignored. In either case, that transcendence of original assumptions which is intrinsic to the interesting does not occur. What is needed is a pedagogical approach which takes into account both the student's naive view of the subject matter as its beginning and the expert's sophisticated view of the subject matter as its end, and methodically leads the student from one to the other. Only in this way will the term ‘academic' cease to be synonymous with ‘irrelevant'.
 
 #### 7. The systematization of the interesting?
 
 In trying to construct The Index of the Interesting, I had hoped to make it as systematic as possible. However, as I proceeded in this attempt, I discovered ---to my dismay—that the more systematic I tried to make it, the less interesting it became. Rather than continue to spin out my system at the increasing cost of decreasing interest, I decided that my dilemma itself might serve as the basis for some reflections on the relation between the interesting and the systematic.
 
-At this critical point, I was proceeding in the following way. From my file of interesting propositions, I had taken one which I had not previously classified: ‘Robert Merton's assertion in "Puritanism, Pietism, and Science" at the time he wrote to have developed from two completely different psycho-value complexes, in fact developed from the same psycho-value complex'. From this, I induced its logical category—(xiii). Evolution—and its general type—(xiii)a ‘What seem to be phenomena that evolved out of completely different sources are in reality phenomena that evolved out of the same source'. According to my procedure for systematically elaborating my thesis—which had worked well enough in previous cases—the logical opposite of a general type of interesting proposition should also be a general type of interesting proposition. But here the trouble started. I could find no concrete example of supposedly interesting Type (xiii)b Propositions: ‘What seem to be phenomena that evolved out of the same source are in reality phenomena that evolved out of completely different sources'. I found myself attempting to ‘force' several recalcitrant social theories into this mould. Noting that the results were uninspired and plainly artificial, I eventually gave up and decided not to extend my thesis into this new category at all.
-
----
-
-Copyright (c) 2002 ProQuest Information and Learning Company
-
-Copyright (c) Sage Publications, Inc.
-
-That's Interesting! 341
-
-even though I was certain there was a good example of Type (xviii)b Propositions somewhere and even though I hated to lose my Merton example of Type (viii)a Propositions which was such an excellent illustration of the hermeneutical power of my thesis.
+At this critical point, I was proceeding in the following way. From my file of interesting propositions, I had taken one which I had not previously classified: ‘Robert Merton's assertion in "Puritanism, Pietism, and Science" at the time he wrote to have developed from two completely different psycho-value complexes, in fact developed from the same psycho-value complex'. From this, I induced its logical category—(xiii). Evolution—and its general type—(xiii)a ‘What seem to be phenomena that evolved out of completely different sources are in reality phenomena that evolved out of the same source'. According to my procedure for systematically elaborating my thesis—which had worked well enough in previous cases—the logical opposite of a general type of interesting proposition should also be a general type of interesting proposition. But here the trouble started. I could find no concrete example of supposedly interesting Type (xiii)b Propositions: ‘What seem to be phenomena that evolved out of the same source are in reality phenomena that evolved out of completely different sources'. I found myself attempting to ‘force' several recalcitrant social theories into this mould. Noting that the results were uninspired and plainly artificial, I eventually gave up and decided not to extend my thesis into this new category at all, even though I was certain there was a good example of Type (xviii)b Propositions somewhere and even though I hated to lose my Merton example of Type (viii)a Propositions which was such an excellent illustration of the hermeneutical power of my thesis.
 
 Let me try to abstract from my particular difficulty the general difficulty which all theorists must confront when they try to be both interesting and systematic. I will take the simplest case. A theorist makes an interesting assertion about phenomenon (a). His assertion is interesting because it counters his audience's previous belief about phenomenon (a). He discovers his assertion is also interesting in regard to phenomenon (b) because it also counters his audience's previous belief about phenomenon (b). But then he finds that the two phenomena with which he has been concerned—phenomenon (a) and phenomenon (b)—have a logical relationship which, through its own internal process, engenders a third phenomenon (c) and a fourth phenomenon (d).
 
@@ -619,10 +489,7 @@ Phenomenology, as the term is generally used and as I have used it here, is the 
 
 term ‘phenomenology' has another, larger, meaning—developed by Hegel and Husserl—which includes not merely the seductively false appearances and assumptions, but the whole movement of the mind away from them towards the ontologically true. It is in this larger sense of the entire process that what I have tried to lay out in these pages is a Phenomenology of Sociology.
 
-I have asserted that all social theories which are found interesting involve a certain movement of the mind of the audience who finds them so. These theories implicitly articulate the routinely taken-for-granted assumptions of the audience who finds them interesting, and then deny these presumptions in the name of some higher—or more fundamental—truth. Yet not only is sociology founded upon this phenomenological process, this phenomenological process is equally founded upon sociology, for the assumptions of each segment of the audience—the starting points of this process—are differentially distributed over social space. Therefore, in order to develop fully a field of inquiry which may be called The Sociology of the Interesting, the ‘Phenomenology of Sociology', which studies the movement of the audience's mind from one accepted social theory to another, must be combined with the ‘Sociology of Phenomenology', which studies the distribution of beliefs and the transformation of assumptions. To be sure, the Sociology of Knowledge has studied the historical succession of ideologies, but, in its classic form at least (Mannheim, 1936), it has studied belief-systems as though they were static phenomena; it has considered the historical succession of belief-systems as the relatively sudden replacement of one static ideology by another static ideology. The Sociology of the Interesting, on the other hand, has a much less static, much more dynamic orientation. It focuses on the exact point at which one belief-system is being transformed into another belief-system. It focuses on the exact point at which the hold of an old theoretical assumption on some individuals or groups has weakened enough for them to begin to find a new—contradictory—theoretical proposition interesting. And it is concerned with discovering the precise sociological and phenomenological mechanisms of change. All this, however, does not mean that the Sociology of Knowledge should be replaced by the Sociology of the Interesting. It does mean that the Sociology of Knowledge should be supplemented by the Sociology of the Interesting, for crucial aspects of our changing theoretical structures which are necessarily obscured from the
-
-
-perspective of the former will be more clearly revealed from the perspective of the latter.
+I have asserted that all social theories which are found interesting involve a certain movement of the mind of the audience who finds them so. These theories implicitly articulate the routinely taken-for-granted assumptions of the audience who finds them interesting, and then deny these presumptions in the name of some higher—or more fundamental—truth. Yet not only is sociology founded upon this phenomenological process, this phenomenological process is equally founded upon sociology, for the assumptions of each segment of the audience—the starting points of this process—are differentially distributed over social space. Therefore, in order to develop fully a field of inquiry which may be called The Sociology of the Interesting, the ‘Phenomenology of Sociology', which studies the movement of the audience's mind from one accepted social theory to another, must be combined with the ‘Sociology of Phenomenology', which studies the distribution of beliefs and the transformation of assumptions. To be sure, the Sociology of Knowledge has studied the historical succession of ideologies, but, in its classic form at least (Mannheim, 1936), it has studied belief-systems as though they were static phenomena; it has considered the historical succession of belief-systems as the relatively sudden replacement of one static ideology by another static ideology. The Sociology of the Interesting, on the other hand, has a much less static, much more dynamic orientation. It focuses on the exact point at which one belief-system is being transformed into another belief-system. It focuses on the exact point at which the hold of an old theoretical assumption on some individuals or groups has weakened enough for them to begin to find a new—contradictory—theoretical proposition interesting. And it is concerned with discovering the precise sociological and phenomenological mechanisms of change. All this, however, does not mean that the Sociology of Knowledge should be replaced by the Sociology of the Interesting. It does mean that the Sociology of Knowledge should be supplemented by the Sociology of the Interesting, for crucial aspects of our changing theoretical structures which are necessarily obscured from the perspective of the former will be more clearly revealed from the perspective of the latter.
 
 The foregoing discussion of the interesting gives us a model of scientific revolutions quite different from the one given by Thomas Kuhn (1962). Kuhn maintains, roughly, that a concrete experience which is anomalous to a previous set of scientific assumptions and interpretative procedures (‘paradigms') motivates scientists to look for a new set of scientific assumptions and interpretative procedures (‘paradigms') which explains the anomalous experience better than the old. But to view most scientists as unwilling to make a major change in the accepted conceptual scheme until some concrete anomaly forces them to is to attribute to most scientists a conservatism and lack of personal ambition which surely cannot be that common a personality characteristic even among natural scientists let alone social scientists. In opposition to Kuhn, I would contend that sheer boredom with the old routinely accepted paradigm and desire to make a name for themselves would motivate many scientists to look for anomalies unexplainable by the old paradigm but explainable by a new one (preferably of their own devising), rather than merely wait for the anomalies to crop up by themselves. One can acquire more professional status by attaching one's reputation to a rising new paradigm than by being the handmaiden of a declining old paradigm. The best way to make a name for oneself in an intellectual discipline is to be interesting—denying the assumed while affirming the unanticipated.
 
@@ -630,10 +497,7 @@ Yet one must be careful not to go too far. There is a fine but definite line bet
 
 In this essay, I have tried to put forward a new way of analysing theoretical propositions. I believe it is as important to learn why a theory is found interesting by some audience as it is to ascertain the truth of its content or the logic of its form.
 
-This essay, then, has been both a description and an exhortation. It has been a description insofar as I have tried to designate those factors that have made the writings of great theorists so interesting. It has been an exhortation insofar as I have urged my readers to become more aware of these factors in
-
-
-order to make their own writings more interesting. I contend that the ‘generation' of interesting theories ought to be the object of as much attention as the ‘verification' of insipid ones. This report should be regarded as an introductory investigation of that residual category of ‘genius' which separates the great theorists from the mediocre.
+This essay, then, has been both a description and an exhortation. It has been a description insofar as I have tried to designate those factors that have made the writings of great theorists so interesting. It has been an exhortation insofar as I have urged my readers to become more aware of these factors in order to make their own writings more interesting. I contend that the ‘generation' of interesting theories ought to be the object of as much attention as the ‘verification' of insipid ones. This report should be regarded as an introductory investigation of that residual category of ‘genius' which separates the great theorists from the mediocre.
 
 So what? Who cares?
 
