@@ -94,18 +94,13 @@ In order to discover what it was that made a social theory ‘interesting' I exa
 
 为了探究是什么让社会理论变得「有趣」，我研究了大量被认为有趣的社会理论，特别是社会学理论，希望能找出它们共同的「有趣」要素，并理解它们之间的差异。由于我的主要目的是探索性的，我认为没有必要也不可能精确测量每个理论的「有趣程度」。在后文中，我会就如何更科学地研究有趣理论提出一些建议。在本研究中，我把「被广泛讨论」的社会理论视为有趣的理论。这种「广泛讨论」包括两类：过去被认为有趣的社会理论，以及近期被认为有趣的理论 —— 也就是那些曾经「风靡一时」和现在「正在流行」的理论。（前者通常在「基础课程」中讲授；后者则在进阶的「专业课程」中讲授。）此外，我还研究了一些精心设计的大众社会学理论，这些理论引起了公众的兴趣，并在学科界限之外获得了广泛传播。
 
-
-
-
-
-
 #### 5. The common element of all interesting propositions
 
 5 有趣理论的共同特征
 
 All of the interesting propositions I examined were found to involve the radical distinction between seeming and being, between the subject of phenomenology and the subject of ontology. An interesting proposition was one which first articulated a phenomenological presumption about the way a particular part of the world had looked, and then denied this phenomenological presumption in the name of ‘truth', that is, in the name of a more profound, more real, more ontological criterion. Put more precisely, an interesting proposition was one which attempted first to expose the ontological claim of its accredited counterpart as merely phenomenological pretense, and then to deny this phenomenological pretense with its own claim to ontological priority. In brief, an interesting proposition was always the negation of an accepted one. All of the interesting propositions I examined were easily translatable into the form: ‘What seems to be X is in reality non-X', or ‘What is accepted as X is actually non-X'.
 
-通过研究，我发现所有有趣的理论都涉及「表面现象」和「深层本质」之间的根本区别，也就是现象学层面（事物的表面特征）和本体论层面（事物的根本特性）之间的区别。一个有趣的理论通常会先描述人们对世界某个特定方面的普遍认知，然后以追求「真相」的名义否定这种认知，也就是用更深入、更真实、更本质的标准来否定它。更准确地说，一个有趣的理论首先会指出某个被普遍接受的观点实际上只停留在表象层面，然后用自己提出的更本质的解释来取代这种表面认识。简单来说，有趣的理论总是对某个已被接受的观点提出否定。我研究的所有有趣理论都可以简化为这样的形式："表面上看是 X 的，实际上是非 X」，或者「人们认为是 X 的，实际上是非 X」。
+通过研究，我发现所有有趣的理论都涉及「表面现象」和「深层本质」之间的根本区别，也就是现象学层面（事物的表面特征）和本体论层面（事物的根本特性）之间的区别。一个有趣的理论通常会先描述人们对世界某个特定方面的普遍认知，然后以追求「真相」的名义否定这种认知，也就是用更深入、更真实、更本质的标准来否定它。更准确地说，一个有趣的理论首先会指出某个被普遍接受的观点实际上只停留在表象层面，然后用自己提出的更本质的解释来取代这种表面认识。简单来说，有趣的理论总是对某个已被接受的观点提出否定。我研究的所有有趣理论都可以简化为这样的形式：「表面上看是 X 的，实际上是非 X」，或者「人们认为是 X 的，实际上是非 X」。
 
 #### 6. The species of interesting propositions
 
@@ -119,151 +114,286 @@ While all interesting propositions were found to have in common the same dialect
 
 #### A —— The Characterization of a Single Phenomenon
 
+A —— 单一现象的特征描述
+
 (i) Organization
+
+(i）结构安排
 
 a. What seems to be a disorganized (unstructured) phenomenon is in reality an organized (structured) phenomenon.
 
+看似无序（无结构）的现象，实际上是有序（有结构）的。
+
 EXAMPLE: Ferdinand Tonnies' assertion in Community and Society that the relations among people within all societies were considered at the time he wrote to be manifold and indeterminate, can in fact be organized around two main types (Gemeinschaft and Gesellschaft).
+
+例子：Ferdinand Tonnies 在《社区与社会》中提出，在他写作的时代，人们普遍认为各个社会中人际关系是多样且不确定的，但实际上，这些关系可以归纳为两种主要类型（Gemeinschaft 和 Gesellschaft）。
 
 b. What seems to be an organized (structured) phenomenon is in reality a disorganized (unstructured) phenomenon.
 
+b. 看似有序的现象，实际上可能是无序的。
+
 EXAMPLE: Karl Marx's assertion in Capital that the economic processes of bourgeois society, which were considered at the time he wrote to be organized in one way, are in fact not organized in that way (but rather organized in another way).
+
+例子：Karl Marx 在《资本论》中指出，资产阶级社会的经济过程在他写作时被认为是有组织的，但实际上并不是那样的，而是以另一种方式组织的。
 
 Comment
 
 The thrust of a younger ripening discipline is to develop Organizing Propositions of Type (i)a. Perhaps the most fundamental example in sociology is Auguste Comte's assertion that social phenomena in themselves, which were considered at the time he wrote to be unstructured (unlike natural phenomena), do in fact possess a coherent structure which can be grasped by science. The major sub-fields of a discipline also begin with the assertion of an organization for a particular social phenomenon which was thought to be unorganized. Thus Gustave LeBon started the field of Collective Behaviour when he managed to structure something so seemingly chaotic as crowds. Organizing Propositions often appear abbreviated as concepts. Cooley, for example, managed to organize the apparently amorphous middle distance between the individual and the society with his notion of the ‘primary group'.
 
+年轻学科发展的关键在于建立（i）a 类的组织命题。在社会学中，Auguste Comte 的一个重要例子是，他断言社会现象虽然在他写作时被认为是无结构的（不同于自然现象），但其实是具备可以通过科学理解的连贯结构的。一个学科的主要分支往往从为被认为无序的社会现象建立组织结构开始。比如，Gustave LeBon 通过给看似混乱的群众现象建立结构，开创了集体行为这一研究领域。组织命题通常会被简化为概念。例如，Cooley 通过提出「初级群体」的概念，成功地理清了个人与社会之间那似乎模糊不清的关系。
+
 Talcott Parsons, certainly the most famous living organizer of both social theories and social processes, acquired his renown mostly for propositions of Type (i)a. In his early work (The Structure of Social Action), he asserts that four early twentieth-century social theorists (Marshall, Durkheim, Pareto, and Weber), who were considered at the time he wrote to be dealing with completely different social phenomena in completely different ways, are in fact all saying essentially the same thing about the same general social phenomenon. And in his later work (Economy and Society), he asserts that four major social institutions (familial, cultural, political, and economic), which were considered at the time he wrote to be relatively uncoordinated with one another, are in fact all strictly integrated into a coherent social system.
+
+Talcott Parsons 是当代最著名的社会理论和社会过程的组织者之一，他因提出特定类型的理论（即（i）a 类命题）而闻名。在他早期的作品《社会行动的结构》中，他指出，四位二十世纪早期的社会理论家 —— Marshall、Durkheim、Pareto 和 Weber，虽然当时被认为是以完全不同的方式研究完全不同的社会现象，但实际上，他们都在探讨同一普遍社会现象的核心内容。而在后来的作品《经济与社会》中，Parsons 进一步指出，四个主要的社会机构 —— 家庭、文化、政治和经济，虽然在他撰写时被认为相互间缺乏协调，但实际上，它们都被严格地整合到一个连贯的社会系统中。
 
 The thrust of an older stagnating discipline in need of rejuvenation is to develop Disorganizing or Critical Propositions of Type (j)b. Each Disorganizing Proposition criticizes the adequacy of the previously accepted Organizing Proposition (though nearly always calling for the substitution of a new Organizing Proposition rather than merely claiming the phenomenon is completely incapable of being structured). Classic examples of successful attempts to disorganize accepted organizations include Ward's critique of Social Darwinism and Mead's critique of Watsonian Behaviourism. Recent critiques of accepted organizations in modern sociology entailing Type (j)b Propositions include Denis Wrong's attack on its models, Harold Garfinkel's attack on its methods, and Alvin Gouldner's attack on its politics.
 
+一个需要复兴的较老停滞学科的核心任务是提出类型为（j）b 的解构性或批判性命题。这些命题往往批评之前被广泛认可的组织命题的合理性，通常不是简单地否定现象的结构化可能性，而是建议用新的组织命题来替代。成功解构既有理论的经典例子包括 Ward 对社会达尔文主义的批评和 Mead 对 Watson 行为主义的批评。在现代社会学中，最近对既有理论的批评也包括类型为（j）b 的命题，例如 Denis Wrong 对社会学模型的批评，Harold Garfinkel 对其方法论的质疑，以及 Alvin Gouldner 对其政治立场的挑战。
+
 Note that not just any Organizing Proposition is interesting: only those that organize phenomena which had seemed too complex or chaotic to be ordered.
+
+请注意，并不是所有的组织性命题都值得关注：只有那些能够整理看似过于复杂或混乱现象的命题才是有趣的。
 
 And not just any Critical Proposition is interesting: only those that criticize previous organizations of phenomena which had become generally accepted.
 
+同时，并不是所有的批判性命题都值得关注：只有那些对已被普遍接受的现象组织方式提出批评的命题才是有趣的。
+
 (ii) Composition
+
+(ii）组成
 
 a. What seem to be assorted heterogeneous phenomena are in reality composed of a single element.
 
+a. 看似各种不同的现象，其实都是由单一元素构成的。
+
 EXAMPLE: Sigmund Freud's assertion throughout his Collected Works that the behaviour of children, primitives, neurotics, and adults in crowds, as well as dreams, jokes, and slips of the tongue and pen, which were considered at the time he wrote to be unassociated in any way with one another, are in fact all various manifestations of the same instinctual drives.
+
+西格蒙德·弗洛伊德在他的《全集》中提出，尽管在他那个时代，人们认为儿童、原始人、神经质患者以及成人在群体中的行为，还有梦境、笑话和口误等现象彼此毫无关联，但实际上，这些都是由相同的本能驱动力所引发的不同表现。
 
 b. What seems to be a single phenomenon is in reality composed of assorted heterogeneous elements.
 
+看似单一的现象实际上是由各种不同性质的元素组成的。
+
 EXAMPLE: Max Weber's assertion in Economy and Society that the stratification system, which was considered at the time he wrote to be monolithic, is in fact composed of the three independent variables of economic class, status prestige, and political power.
+
+例子：Max Weber 在《经济与社会》中指出，当时被认为是单一的分层系统实际上是由经济阶级、地位声望和政治权力这三个独立因素组成的。
 
 Comment
 
 Many natural and social scientists have made their reputations by pointing out that the appearance of a natural or social phenomenon is an illusion and that what the phenomenon really consists of lies ‘below' its surface. Their ‘profound' insight is considered especially interesting when these theorists also assert that the ‘fundamental' nature (‘depth structure') of the phenomenon contradicts the surface impression, as, for example, the seemingly continuous appearance of a table is contradicted by the discrete molecules of which it is actually composed. Usually, these scientists have pointed out a single factor which underlies what had heretofore seemed heterogeneous phenomena. In the social sciences, such ‘monofactoral' theorists as Marx, Nietzsche, and McLuhan have reduced a large number of seemingly diverse social phenomena down to their economic, power, or communicative components. Less ambitious, but nonetheless interesting, reductions have been achieved by other social theorists who have observed that a few seeming-by diverse social phenomena have at least one component in common. Thus Simmel in his Sociology showed that the ‘triadic form', and the interaction processes associated with it, underlay both the three-person family and the three-class society.
 
+许多自然科学家和社会科学家通过指出自然或社会现象的表象可能是误导性的而建立起自己的声誉，他们认为现象的真实本质隐藏在其表面之下。当这些理论家同时断言某一现象的「基本」性质（深层结构）与表面印象相矛盾时，他们的「深刻」见解特别引人注目。例如，一个看似连续的桌子的外观实际上与其由离散分子组成的事实相矛盾。通常，这些科学家指出一个单一因素来解释此前看似多样的现象。在社会科学中，像马克思、尼采和麦克卢汉这样的「单因素」理论家将大量看似多样的社会现象简化为其经济、权力或传播因素。其他社会理论家虽然没有那么大的野心，但仍取得了有趣的成果，他们观察到一些看似不同的社会现象至少有一个共同因素。因此，齐美尔在他的社会学研究中展示了「三元形式」与三口之家和三阶级社会之间的关系。
+
+
+
+
+
+
 Interesting propositions of the opposite type, (ii)b, occur when a theorist manages to distinguish several factors which compose a phenomenon previously thought to be unitary. Talcott Parsons, who has tried his hand at analysis as well as synthesis, constructed a Type (ii)b Proposition in The Social System when he asserted that Gemeinschaft and Gesellschaft, each of which was considered at the time he wrote to be an indivisible phenomenon, are in fact composed of several independent (‘Pattern') variables.
+
+当理论家能够区分出一个被认为是单一现象的多个组成因素时，就会出现有趣的相反类型提议（ii）b。Talcott Parsons 在他的著作《社会系统》中提出了一个类型（ii）b 的命题，他指出，当时被认为是单一不可分的现象 ——Gemeinschaft 和 Gesellschaft，实际上是由几个独立的「模式」变量构成的。
 
 Paul Lazarsfeld, and his co-worker Allan Barton (1955), have distinguished both types of Composition Propositions in empirical sociological research. Those research methods which produce Type (ii)a Propositions they call 'Reduction'. Reduction consists of methods to simplify complex classifications (indices). Those research methods which produce Type (ii)b Propositions they call 'Substruction'. Substruction consists of methods to elaborate simple classifications (typologies).
 
+Paul Lazarsfeld 和他的同事 Allan Barton （1955 年）在实证社会学研究中区分了两种类型的组成类型的命题。他们将产生类型（ii）a 命题的研究方法称为「简化」。简化是指用来简化复杂分类（如指标）的方法。产生类型（ii）b 命题的研究方法被称为「次级结构」。次级结构指的是用于详细说明简单分类（如类型学）的方法。
+
 In each of the social sciences today, the major schools of thought are often modeled after either Continental Structuralism or English Analytic Philosophy. Those schools derived from Continental Structuralism have tried to make their output interesting by developing methodological procedures designed to turn out propositions of Type (ii)a. Those schools derived from English Analytic Philosophy have tried to make their output interesting by developing methodological procedures designed to turn out propositions of Type (ii)b.
 
+在当今的社会科学领域，主要的思想流派通常是以大陆结构主义或英国分析哲学为基础进行研究。源自大陆结构主义的流派通过制定特定的方法论，努力生成特定类型（ii）a 的命题，以增加研究的趣味性。而源自英国分析哲学的流派则通过制定不同的方法论，生成类型（ii）b 的命题，同样试图让研究更具吸引力。
+
 More generally, we may say that those who assert Type (ii)a Propositions are disciples of the Platonic Tradition in which interesting propositions are generated by finding simplicity in the apparently complex; whereas those who assert Type (ii)b Propositions are disciples of the Aristotelian Tradition in which interesting propositions are generated by finding complexity in the apparently simple.
+
+一般来说，我们可以认为，主张类型（ii）a 命题的人属于柏拉图传统的追随者，他们通过在看似复杂的事物中寻找简单性来生成有趣的命题。而主张类型（ii）b 命题的人则属于亚里士多德传统的追随者，他们通过在看似简单的事物中发现复杂性来生成有趣的命题。
 
 (iii) Abstraction
 
 a. What seems to be an individual phenomenon
 
+(三）抽象
+
+a. 表面上看是一个单独的现象
+
 EXAMPLE: Emile Durkheim's assertion in Suicide that suicide, which was considered at the time he wrote to be a behaviour characteristic of an individual, is in fact (more crucially) a process characteristic of a society.
+
+埃米尔·涂尔干在《自杀论》中指出，自杀在他写作的时代被视为个人行为的特征，但实际上（更重要的是），它是一个反映社会特征的过程。
 
 b. What seems to be a holistic phenomenon
 
 EXAMPLE: Sigmund Freud's assertion in 'Thoughts for the Times on War and Death' that war, which was considered at the time he wrote to be a social phenomenon, is in fact (more crucially) a psychological phenomenon.
 
+b. 什么现象似乎是整体性的例子：Sigmund Freud 在《战争与死亡时代的思考》中提出，战争在当时被视为社会现象，但实际上，更重要的是，它是一种心理现象。
+
 Comment
 
 Holistic Propositions of Type (iii)a assert that what appears to be the property of an individual is actually the property of some whole of which the individual is a part. In the social sciences, using Type (iii)a Propositions as a technique for getting audience attention is usually called 'Sociologizing' or 'Sociological Imperialism'. Along with 'suicide', two other seemingly individual phenomena which have been fruitfully subject to sociologizing are 'embarrassment' (Goffman) and 'sleep' (Aubert and White).
 
+类型（iii）a 的整体命题指出，看起来属于个体的属性，其实是该个体所处整体的属性。在社会科学中，使用类型（iii）a 命题来吸引听众注意力的技巧，通常被称为「社会学化」或「社会学帝国主义」。除了「自杀」之外，还有两个看似属于个人的现象被成功地进行了社会学化的研究，它们是「尴尬」（由 Goffman 研究）和「睡眠」（由 Aubert 和 White 研究）。
+
 Particularistic Propositions of Type (iii)b assert that what appears to be the property of a whole is actually the property of the individuals which make up this whole. In the social sciences, using Type (iii)b Propositions as a technique for getting audience attention is usually called ‘Psychologizing' or ‘Psychological Reductionism'. Freud, of course, is the classic psychologizer of social phenomena, finding instinctual roots for such seemingly social phenomena as totems and taboos, among numerous other examples. Recently, the seemingly social fact that nations wage war over land has been explained by the newly discovered individual instinct for ‘territoriality' (Lorenz, Ardrey).
+
+类型（iii）b 的特殊命题指出，看似属于整体的特性，其实是由构成整体的个体所具有的特性。在社会科学中，使用这种命题来吸引观众注意力的方法通常被称为「心理化」或「心理还原主义」。弗洛伊德无疑是将社会现象心理化的经典例子，他为图腾和禁忌等看似社会现象的事物寻找本能的根源，还有许多类似的例子。最近，有学者解释说，国家为土地而战这一看似社会的现象，其实是基于个体具有「领土性」本能的新发现 （Lorenz，Ardrey）。
 
 (It is instructive to note that Vilfredo Pareto's reduction of various social phenomena to their psychological roots—‘residues'—attracted much less interest in America than Freud's. Though Pareto wrote on these topics first, his work crossed the ocean last, after Freud and others had already succeeded in transforming the American assumption-ground and accustoming Americans to expect that many social phenomena would have a psychological basis. Other areas of Pareto's thought, however, which he considered more minor, succeeded in attracting more interest.)
 
+有意思的是，Vilfredo Pareto 将各种社会现象追溯到心理根源的理论 —— 他称之为「残留物」—— 在美国的关注度远不如弗洛伊德。尽管 Pareto 在这些主题上比其他人更早发表作品，但他的著作传入美国的时间却是最晚的，那时弗洛伊德和其他学者已经让美国人逐渐接受许多社会现象背后可能有心理因素的观念。然而，Pareto 认为相对次要的其他思想领域反而在美国引起了更大的兴趣。
+
 A third type of Abstraction Proposition had recently appeared in the social sciences. It attempts to interest its audience by denying the assumptions of both Type (iii)a and Type (iii)b Propositions. This type of proposition asserts that the real locus of human phenomena is neither the individual level nor the social level, but rather some intermediate ‘Social-Psychological' level. A social-psychological explanation of a phenomenon will be found interesting, however, only when the phenomenon has already been explained both psychologically and sociologically, and the dispute between those who uphold each of these explanations has grown heated.
+
+最近在社会科学中出现了一种第三类型的抽象命题。这种命题试图通过否定类型（iii）a 和类型（iii）b 命题的假设来吸引关注。它主张，人类现象的核心所在既不是个体层面，也不是社会层面，而是某种介于两者之间的「社会心理」层面。然而，社会心理学对某一现象的解释只有在这个现象已经通过心理学和社会学两方面得到了解释，并且支持这两种解释的学者之间发生激烈争论时，才会显得特别有趣。
 
 (iv) Generalization
 
 a. What seems to be a local phenomenon is in reality a general phenomenon.
 
+(iv）现象的普遍性
+
+a. 看似是局部现象的情况实际上是一种普遍存在的现象。
+
 EXAMPLE: Karl Mannheim's assertion in Ideology and Utopia that the ideological limitation and distortion of thought processes, which was considered at the time he wrote to effect only the bourgeois class, in fact effects all social classes.
+
+在《意识形态与乌托邦》一书中，Karl Mannheim 断言，意识形态限制和扭曲了人们的思维过程。当时，人们普遍认为这种影响仅限于资产阶级，但实际上，它影响到所有社会阶层。
 
 b. What seems to be a general phenomenon is in reality a local phenomenon.
 
 EXAMPLE: Bronislaw Malinowski's assertion in Sex and Repression in Savage Society that the Oedipus Complex, which was considered at the time he wrote to be a human universal, in fact does not occur in all societies.
 
+b. 看似普遍的现象实际上可能只是局部现象。
+
+例如，Bronislaw Malinowski 在《野蛮社会中的性与压抑》中指出，俄狄浦斯情结当时被认为是普遍存在于人类社会中的，但事实上并非出现在所有社会中。
+
 Comment
 
 Generalizing Propositions and Localizing Propositions are two of the most common types of propositions in modern social science research. In fact, the main objective of methodology in the social sciences today seems to be to establish rigorous procedures that will determine the exact degree to which some assertion about social life can be generalized.
 
+在现代社会科学研究中，广义命题和局部命题是两种最常见的命题类型。实际上，当前社会科学的方法学主要的目标似乎是通过建立严格的程序来确定某些关于社会生活的观点能够被推广的具体程度。
+
 Although the tendency of the great social theorists of the past was to assert some truth about human life which held universally, the common tendency today of such divergent sociological schools as ethnomethodology and survey research, as well as Anglo-American anthropology, is to localize assertions and emphasize sub-group variation. In the past, attempts would be made to show that some behavioural characterization holds for all humanity; in the present, attempts are made to show that some behavioural characterization holds for some groups and tribes, but not for others.
+
+尽管过去的社会理论家倾向于寻找普遍适用于人类的生活真理，但如今的社会学流派，如民族方法学和调查研究，以及英美人类学，则倾向于强调局部断言和亚群体的差异性。在过去，人们试图证明某些行为特征适用于所有人类；而现在则尝试展示某些行为特征适用于某些特定群体和部落，但不适用于其他群体。
 
 A theorist makes an interesting generalization when he asserts that some property, which everyone knows to characterize one social category, also characterizes another social category where its existence was not suspected. Freud, for example, tried to show that the sexual impulse was a major influence not only on the behaviour of adults (which was fairly obvious), but also on the behaviour of children (which was not so obvious).
 
+当一位理论家主张某种特性不仅仅属于众所周知的一个社会类别，还同样适用于另一个人们未曾意识到的社会类别时，他做出了一个有趣的概括。比如，Freud 试图证明，性冲动不仅对成年人的行为有主要影响（这一点显而易见），而且对儿童的行为也有重要影响（这一点则不那么显然）。
+
 A theorist makes an interesting localization when he asserts that some property, which is thought to characterize everybody—to be part of ‘human nature'—belongs merely to one social category and not others. Edward Hall, for example, tried to show that many problems in inter-cultural contact stem from those in one society believing those in all other societies attach the same meanings to spatial features as they do; whereas in fact the interpretation of crucial aspects of the spatial dimension varied considerably in different societies.
+
+有理论家提出了一种有趣的观点：某些被视为「人性」的特性实际上仅属于特定的社会类别，而不适用于其他类别。例如，Edward Hall 认为，许多跨文化交流中的问题源于一个社会的人们误以为所有其他社会也对空间特征赋予相同的意义；然而，实际上，不同社会在解读空间维度的重要方面时存在显著差异。
 
 (v) Stabilization
 
 a. What seems to be a stable and unchanging phenomenon is in reality an unstable and changing phenomenon.
 
+(v）稳定性
+
+a. 表面上看似稳定不变的现象，实际上是处于不稳定和变化之中的。
+
 EXAMPLE: Karl Marx's assertion in Capital that the social organization of bourgeois society, which was considered at the time he wrote to be permanent, is in fact about to be suddenly and dramatically transformed.
+
+马克思在《资本论》中断言，资产阶级的社会结构（他写作时被认为是永久的），实际上即将经历突然而剧烈的变革。
 
 b. What seems to be an unstable and changing phenomenon is in reality a stable and unchanging phenomenon.
 
 EXAMPLE: Georg Simmel's assertion in ‘Conflict' that any conflict-ridden social organization, which was considered at the time he wrote to be on the verge of transformation, may in fact be capable of continuing indefinitely as it is (in a steady-state of conflict).
 
+b. 表面上看似不稳定和不断变化的现象，其实可能是一个稳定不变的现象。
+
+例子：Georg Simmel 在《冲突》一书中指出，任何一个充满冲突的社会组织，即便在他写作时被认为即将发生变革，实际上可能会在冲突的稳定状态下无限期地维持现状。
+
 Comment
 
 Just as some propositions are interesting because they assert an unexpected generalization or lack of generalization of the characteristics of a social phenomenon across some social category space, so other propositions are interesting because they assert an unexpected stabilization or lack of stabilization of the characteristics of a social phenomenon across time. Propositions of Type (v) fall within the range of historical sociology which is concerned with demonstrating the temporal continuity or change of social phenomena.
 
+有些命题之所以引人注目，是因为它们揭示了社会现象特征在某些社会类别中意外的普遍性或不普遍性。同样，另一些命题的趣味在于其揭示了社会现象特征在时间上的意外稳定或不稳定。类型（v）的命题属于历史社会学的研究范畴，关注的是社会现象的时间连续性或变化。
+
 One wing of historical sociology tries to construct interesting propositions of Type (v)a by demonstrating the surprising instability and even change of seemingly stable social phenomena. The ‘New Left' historical sociologists, for instance, assert that American society, which was considered at the time they wrote to have been held together in the past by a basic value consensus, has in fact had a long history of disruption, conflict, violence, and incipient disintegration. On a smaller scale, Berger and Luckmann in The Social Construction of Reality have pointed out that all enduring social institutions do not continue to exist ‘naturally' as had been thought, but must develop elaborate ‘maintenance mechanisms' to ward off the constant threats to their stability.
 
+历史社会学的一个分支试图通过展示看似稳定的社会现象的惊人不稳定性甚至变化来构建有趣的理论。例如，「新左派」的历史社会学家认为，美国社会在他们写作时被认为是由价值共识维系的，但实际上经历了长期的混乱、冲突、暴力和潜在的瓦解。Berger 和 Luckmann 在《现实的社会建构》中指出，持久的社会机构并非自然而然地存在，而是需要发展复杂的维护机制来抵御持续的稳定性威胁。
+
 The other wing of historical sociology tries to construct interesting propositions of Type (v)b by demonstrating the surprising stability and even permanence of seemingly unstable social phenomena. Besides Simmel and the ‘function of social conflict' theorists like Lewis Coser who attempt to show how those processes of a social phenomenon which appear self-destructive are actually those processes which are helping the social phenomenon to maintain itself, this wing also includes those ‘archetypal' theorists like the New-Freudian Lewis Feuer in The Conflict of Generations and the New-Jungian Phillip Slater in Microcosm who interpret social phenomena which appear violent and disruptive, such as student riots against college administrators and group revolts against their leaders, as merely the most recent repetition and manifestation of an original and ongoing paradigmatic pattern of human behaviour.
+
+历史社会学的另一分支致力于通过揭示那些看似不稳定的社会现象却具有惊人稳定性甚至持久性的例子来提出有趣的命题。除了 Simmel 和「社会冲突功能」理论家如 Lewis Coser 试图解释某些看似自我毁灭的社会过程实际上是帮助该现象维持自身的一部分，这一分支还包括「原型」理论家，如新弗洛伊德派的 Lewis Feuer 在《代际冲突》和新荣格派的 Phillip Slater 在《小宇宙》中，他们将一些显得暴力和破坏性的社会现象（比如学生对大学管理者的抗议和群体对其领导者的反抗）视为人类行为模式的最新重复和表现，这种模式自古以来就存在并持续至今。
 
 (vi) Function
 
 a. What seems to be a phenomenon that functions ineffectively as a means for the attainment of an end is in reality a phenomenon that functions effectively.
 
+a. 表面上看似无法有效达成目标的现象，实际上可能运作得非常有效。
+
 EXAMPLE: Robert Merton's assertion in Social Theory and Social Structure that the political machine, which was considered at the time he wrote to be an inefficient institution for obtaining community goals, is in fact an efficient institution for obtaining community goals.
+
+罗伯特·默顿在《社会理论与社会结构》中指出，虽然在他写作的时代，政治机器被认为在实现社区目标方面效率低下，但实际上，它是一个高效的机构。
 
 b. What seems to be a phenomenon that functions effectively as a means for the attainment of an end is in reality a phenomenon that functions ineffectively.
 
 EXAMPLE: Herbert Marcuse's assertion in ‘Repressive Tolerance' that the tradition of tolerance in America, which was considered at the time to be the value that fostered the goal of a liberated society, is in fact a value that hindered the goal of a liberated society.
 
+b. 某些现象看似是实现目标的有效手段，但实际上却无效。
+
+例子：Herbert Marcuse 在《压抑性宽容》一书中指出，美国的宽容传统曾被认为是促进社会解放的价值，但实际上却阻碍了这一目标的实现。
+
 Comment
 
 Merton's discussion of manifest and latent functions (1957) is the classic statement of a methodological technique specifically designed to generate interesting propositions. His approach is similar to the one presented here, though confined only to one type of interesting proposition (Type (vi)).
 
+默顿在 1957 年对显性功能和潜在功能的讨论，成为了一种专门用于产生有趣命题的方法论技术的经典描述。他的方法与本文所提出的方法相似，但只局限于一种类型的有趣命题（类型（vi)）。
+
 Merton tells the social theorist to proceed in the following way. In the light of the social theorist's 'deeper' insight into the actual workings of some social phenomenon, he has first to deny what Merton calls its manifest (i.e. generally apparent) function or dysfunction, and then to reveal what Merton calls its latent (i.e. not generally apparent) function or dysfunction. Though Merton does not say so specifically, he strongly implies that the latent function or dysfunction of the social phenomenon must be the opposite of its manifest dysfunction or function.
+
+根据 Merton 的建议，社会理论家应该这样进行研究。首先，他们需要利用自己对某些社会现象运作的深入理解，否认这些现象的显性功能或功能失调（即普遍可见的部分）。接下来，再揭示出这些现象的潜在功能或功能失调（不易察觉的部分）。虽然 Merton 没有明确指出，但他强烈暗示，这种潜在功能或功能失调通常与显性功能或功能失调相反。
 
 Type (vi)a Propositions have conservative political implications: one should not try to change an obviously defective social institution which in reality has useful consequences. In other words, the social theorist claims that a certain social institution, of which his audience is known to disapprove, actually has consequences, of which his audience is known to approve. Some popular examples of Type (vi)a Propositions would be ‘Witch doctors really are effective at curing their patients', and ‘Folk remedies for illness turn out to be really effective'.
 
+类型（vi）a 的命题往往带有保守的政治色彩：即使一个社会制度明显存在缺陷，也不应轻易改变，因为它可能带来意想不到的好处。换句话说，社会理论家可能会指出，一个广受批评的社会制度，其实可能产生人们意想不到的积极效果。例如，一些常见的类型（vi）a 命题可能包括「巫医实际上能有效地治愈病人」和「民间疗法对疾病的治疗效果显著」。
+
 Type (vi)b Propositions have radical political implications: one should try to change a seemingly successful social institution which in reality has destructive consequences. In other words, the social theorist claims that a certain social institution, of which his audience is known to approve, actually has consequences, of which his audience is known to disapprove. Some popular examples of Type (vi)b Propositions would be ‘Jails really turn out criminals', ‘Schools really make children stupid', and ‘Mental hospitals really make people mentally ill'.
 
+类型（vi）b 命题在政治上具有激进的影响：人们应当尝试去改变那些看似成功但实际上具有破坏性影响的社会制度。换句话说，社会理论家指出某个被广泛认可的社会制度实际上产生了一些人们普遍反对的负面后果。一些常见的类型（vi）b 命题的例子包括「监狱实际上会培养出更多罪犯」、「学校实际上会让孩子变笨」，以及「精神病院实际上会使人精神失常」。
+
 Though there is no necessary theoretical reason why these two types of propositions should not arise with equal frequency, Merton and his followers have come up with more Type (vi)a Propositions, while Radical Sociologists have come up with more Type (vi)b Propositions.
+
+虽然理论上没有理由认为这两种类型的命题不会同样频繁地出现，但实际上，Merton 和他的追随者更常提出 Type（vi）a 命题，而激进社会学家则更倾向于提出 Type（vi）b 命题。
 
 (vii) Evaluation
 
 a. What seems to be a bad phenomenon is in reality a good phenomenon.
 
+(vii）评估
+
+a. 有些现象乍一看似乎是不好的，但实际上可能是有益的。
+
 EXAMPLE: R. D. Laing's assertion in The Politics of Experience that schizophrenia, which was considered at the time he wrote to be a bad thing, is in fact a good thing.
+
+R. D. Laing 在《经验的政治》中提出，精神分裂症虽然在他写作时被认为是不好的，但实际上是一件好事。
 
 b. What seems to be a good phenomenon is in reality a bad phenomenon.
 
 EXAMPLE: Friedrich Nietzsche's assertion in On the Genealogy of Morals that Christian morality, which was considered at the time he wrote to be a good thing, is in fact a bad thing.
 
+b. 看似良好的现象其实是不良的现象。
+
+例子：Friedrich Nietzsche 在《论道德的谱系》中指出，当时被认为是积极的基督教道德，其实是消极的。
+
 Comment
 
 Evaluative propositions are found interesting only when the theorist's evaluation of a phenomenon differs from his audience's evaluation of this phenomenon. There are two ways in which the theorist can come up with such a re-evaluation of accepted values.
 
+评价性命题只有当理论家对于某一现象的看法与他的观众的看法不一致时，才会引起兴趣。理论家有两种方法可以对人们普遍接受的价值观进行重新评价。
+
 First, he can change the rating of a phenomenon by changing the indicator (operational definition) of the phenomenon to be rated. Depending on his audience's appraisal, he can select either the best or the worst particular aspects of the phenomenon to stand for the phenomenon as a whole. Should his audience customarily view the phenomenon in its best light, he can then view it in its worst, and vice versa. Thus, if a social theorist wishes to counter his audience's appraisal of American Society as great or as awful, he need merely select, to serve as his indicators of the moral worth of American Society as a whole, those of its aspects which are generally considered bad (like pollution, pockets of poverty, materialism, etc.) or those of its aspects which are generally considered good (like technology, average income, abundant consumer goods, etc.).
+
+首先，他可以通过更改对某一现象的指标（操作性定义）来调整对该现象的评价。根据他想要传达的观点，他可以选择该现象的最佳或最差的特定方面来代表整个现象。如果他的观众通常从积极的角度看待现象，他可以从消极的角度去看待，反之亦然。比如，一位社会理论家想要反驳他的观众对美国社会是伟大还是糟糕的评价时，他可以选择美国社会通常被认为不好的方面（比如污染、贫困、物质主义等）或者被认为好的方面（比如技术、平均收入、丰富的消费品等）来作为美国社会整体道德价值的指标。
 
 Second, he can change the rating of a phenomenon by changing the moral measure to which it is being compared. Something is judged good or bad relative to some standard of good or bad. Change the standard of comparison and the evaluation of the phenomenon is also likely to change. Should his audience customarily evaluate a phenomenon positively relative to one comparison baseline, he can then evaluate it negatively relative to another comparison baseline, and vice versa. Comparison baselines for a social phenomenon include (1) other social phenomena of the same logical type, (2) the same social phenomenon in the past (recent or distant), (3) future projections of the social phenomenon (short run or long run), and (4) some positive or negative ideal version of the social phenomenon. Thus if a social theorist wishes to counter his audience's appraisal of American Society as great or as awful, he need merely compare it to (1) other societies (Sweden, Nazi Germany, etc.), (2) its past history (the ‘gay' nineties, the depression, etc.), (3) its potential futures (2001, 1984, etc.) or (4) some utopian or dystopian society (Marx's pure communism, Hobbes' state of nature, etc.).
 
+其次，一个人可以通过改变与某一现象比较的道德标准，来改变对其的评价。任何事物的好坏都是相对于某个标准来判断的。如果改变了这个标准，那么对现象的评价也可能会改变。如果他的观众习惯于基于某个基准对现象进行积极评价，他则可以根据另一个基准进行负面评价，反之亦然。社会现象的比较基准可以是（1）同类的其他社会现象，(2）过去的同一社会现象，不论是近期还是远期，(3）该社会现象的未来预测，包括短期和长期，或（4）某个理想化或理想化的版本。比如，如果一个社会理论家想要挑战观众对美国社会的伟大或糟糕的评价，他可以将美国社会与（1）其他社会（例如瑞典或纳粹德国），(2）美国的历史（如「快乐」的九十年代或大萧条），(3）其可能的未来（如 2001 年或 1984 年），或（4）某种乌托邦或反乌托邦的社会（如马克思的纯粹共产主义或霍布斯的自然状态）进行比较。
+
 (Notice that all disputes about the moral worth of American Society as a whole are actually disputes about what aspects of American Society are to be used as indicators for this evaluation and what comparison baselines are to be used to evaluate them. In fact, disputes about the moral worth of all social phenomena can be reduced to disputes involving these same two factors.)
 
+请注意，所有关于美国社会整体道德价值的争议，其实都是在讨论应该用美国社会的哪些方面作为评估的指标，以及应该用哪些基准来进行比较。事实上，所有社会现象的道德价值争议，都可以归结为这两个因素的讨论。
+
 Evaluative Propositions are common in social research, but, because of the norm of ‘ethical neutrality', some theorists prefer to make their value judgements more latent than blatant. Without ever explicitly stating their appraisal of a social phenomenon, they can communicate their appraisal implicitly by demonstrating the ways in which this social phenomenon is similar to another social phenomenon whose moral status is generally accepted. By means of this strategy, Goffman, in Asylums, subtly passes judgement on the moral status of mental hospitals by showing how remarkably many features they have in common with concentration camps.
+
+在社会研究中，评价命题很常见。然而，由于「伦理中立」的规范，一些理论家更喜欢隐晦地表达他们的价值判断，而不是直接说明。他们可以通过展示某个社会现象与另一个道德地位普遍被接受的现象之间的相似性，来间接表达他们的看法。Goffman 在《Asylums》中就采用了这种策略，他通过指出精神病院与集中营之间的许多相似点，巧妙地评判了精神病院的道德地位。
 
 #### B —— The Relations Among Multiple Phenomena
 
