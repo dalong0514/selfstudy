@@ -122,7 +122,7 @@ A —— 单一现象的特征描述
 
 a. What seems to be a disorganized (unstructured) phenomenon is in reality an organized (structured) phenomenon.
 
-看似无序（无结构）的现象，实际上是有序（有结构）的。
+a. 看似无序（无结构）的现象，实际上是有序（有结构）的。
 
 EXAMPLE: Ferdinand Tonnies' assertion in Community and Society that the relations among people within all societies were considered at the time he wrote to be manifold and indeterminate, can in fact be organized around two main types (Gemeinschaft and Gesellschaft).
 
@@ -172,7 +172,7 @@ EXAMPLE: Sigmund Freud's assertion throughout his Collected Works that the behav
 
 b. What seems to be a single phenomenon is in reality composed of assorted heterogeneous elements.
 
-看似单一的现象实际上是由各种不同性质的元素组成的。
+b. 看似单一的现象实际上是由各种不同性质的元素组成的。
 
 EXAMPLE: Max Weber's assertion in Economy and Society that the stratification system, which was considered at the time he wrote to be monolithic, is in fact composed of the three independent variables of economic class, status prestige, and political power.
 
@@ -184,14 +184,9 @@ Many natural and social scientists have made their reputations by pointing out t
 
 许多自然科学家和社会科学家通过指出自然或社会现象的表象可能是误导性的而建立起自己的声誉，他们认为现象的真实本质隐藏在其表面之下。当这些理论家同时断言某一现象的「基本」性质（深层结构）与表面印象相矛盾时，他们的「深刻」见解特别引人注目。例如，一个看似连续的桌子的外观实际上与其由离散分子组成的事实相矛盾。通常，这些科学家指出一个单一因素来解释此前看似多样的现象。在社会科学中，像马克思、尼采和麦克卢汉这样的「单因素」理论家将大量看似多样的社会现象简化为其经济、权力或传播因素。其他社会理论家虽然没有那么大的野心，但仍取得了有趣的成果，他们观察到一些看似不同的社会现象至少有一个共同因素。因此，齐美尔在他的社会学研究中展示了「三元形式」与三口之家和三阶级社会之间的关系。
 
-
-
-
-
-
 Interesting propositions of the opposite type, (ii)b, occur when a theorist manages to distinguish several factors which compose a phenomenon previously thought to be unitary. Talcott Parsons, who has tried his hand at analysis as well as synthesis, constructed a Type (ii)b Proposition in The Social System when he asserted that Gemeinschaft and Gesellschaft, each of which was considered at the time he wrote to be an indivisible phenomenon, are in fact composed of several independent (‘Pattern') variables.
 
-当理论家能够区分出一个被认为是单一现象的多个组成因素时，就会出现有趣的相反类型提议（ii）b。Talcott Parsons 在他的著作《社会系统》中提出了一个类型（ii）b 的命题，他指出，当时被认为是单一不可分的现象 ——Gemeinschaft 和 Gesellschaft，实际上是由几个独立的「模式」变量构成的。
+当理论家能够区分出一个被认为是单一现象的多个组成因素时，就会出现有趣的相反类型提议（ii）b。Talcott Parsons 在他的著作《社会系统》中提出了一个类型（ii）b 的命题，他指出，当时被认为是单一不可分的现象 —— Gemeinschaft 和 Gesellschaft，实际上是由几个独立的「模式」变量构成的。
 
 Paul Lazarsfeld, and his co-worker Allan Barton (1955), have distinguished both types of Composition Propositions in empirical sociological research. Those research methods which produce Type (ii)a Propositions they call 'Reduction'. Reduction consists of methods to simplify complex classifications (indices). Those research methods which produce Type (ii)b Propositions they call 'Substruction'. Substruction consists of methods to elaborate simple classifications (typologies).
 
@@ -207,21 +202,23 @@ More generally, we may say that those who assert Type (ii)a Propositions are dis
 
 (iii) Abstraction
 
-a. What seems to be an individual phenomenon
+(iii) 抽象
 
-(三）抽象
+a. What seems to be an individual phenomenon
 
 a. 表面上看是一个单独的现象
 
 EXAMPLE: Emile Durkheim's assertion in Suicide that suicide, which was considered at the time he wrote to be a behaviour characteristic of an individual, is in fact (more crucially) a process characteristic of a society.
 
-埃米尔·涂尔干在《自杀论》中指出，自杀在他写作的时代被视为个人行为的特征，但实际上（更重要的是），它是一个反映社会特征的过程。
+例子：埃米尔·涂尔干在《自杀论》中指出，自杀在他写作的时代被视为个人行为的特征，但实际上（更重要的是），它是一个反映社会特征的过程。
 
 b. What seems to be a holistic phenomenon
 
+b. 什么现象似乎是整体性的
+
 EXAMPLE: Sigmund Freud's assertion in 'Thoughts for the Times on War and Death' that war, which was considered at the time he wrote to be a social phenomenon, is in fact (more crucially) a psychological phenomenon.
 
-b. 什么现象似乎是整体性的例子：Sigmund Freud 在《战争与死亡时代的思考》中提出，战争在当时被视为社会现象，但实际上，更重要的是，它是一种心理现象。
+例子：Sigmund Freud 在《战争与死亡时代的思考》中提出，战争在当时被视为社会现象，但实际上，更重要的是，它是一种心理现象。
 
 Comment
 
@@ -243,21 +240,21 @@ A third type of Abstraction Proposition had recently appeared in the social scie
 
 (iv) Generalization
 
-a. What seems to be a local phenomenon is in reality a general phenomenon.
-
 (iv）现象的普遍性
+
+a. What seems to be a local phenomenon is in reality a general phenomenon.
 
 a. 看似是局部现象的情况实际上是一种普遍存在的现象。
 
 EXAMPLE: Karl Mannheim's assertion in Ideology and Utopia that the ideological limitation and distortion of thought processes, which was considered at the time he wrote to effect only the bourgeois class, in fact effects all social classes.
 
-在《意识形态与乌托邦》一书中，Karl Mannheim 断言，意识形态限制和扭曲了人们的思维过程。当时，人们普遍认为这种影响仅限于资产阶级，但实际上，它影响到所有社会阶层。
+例子：在《意识形态与乌托邦》一书中，Karl Mannheim 断言，意识形态限制和扭曲了人们的思维过程。当时，人们普遍认为这种影响仅限于资产阶级，但实际上，它影响到所有社会阶层。
 
 b. What seems to be a general phenomenon is in reality a local phenomenon.
 
-EXAMPLE: Bronislaw Malinowski's assertion in Sex and Repression in Savage Society that the Oedipus Complex, which was considered at the time he wrote to be a human universal, in fact does not occur in all societies.
-
 b. 看似普遍的现象实际上可能只是局部现象。
+
+EXAMPLE: Bronislaw Malinowski's assertion in Sex and Repression in Savage Society that the Oedipus Complex, which was considered at the time he wrote to be a human universal, in fact does not occur in all societies.
 
 例如，Bronislaw Malinowski 在《野蛮社会中的性与压抑》中指出，俄狄浦斯情结当时被认为是普遍存在于人类社会中的，但事实上并非出现在所有社会中。
 
@@ -281,21 +278,21 @@ A theorist makes an interesting localization when he asserts that some property,
 
 (v) Stabilization
 
-a. What seems to be a stable and unchanging phenomenon is in reality an unstable and changing phenomenon.
-
 (v）稳定性
+
+a. What seems to be a stable and unchanging phenomenon is in reality an unstable and changing phenomenon.
 
 a. 表面上看似稳定不变的现象，实际上是处于不稳定和变化之中的。
 
 EXAMPLE: Karl Marx's assertion in Capital that the social organization of bourgeois society, which was considered at the time he wrote to be permanent, is in fact about to be suddenly and dramatically transformed.
 
-马克思在《资本论》中断言，资产阶级的社会结构（他写作时被认为是永久的），实际上即将经历突然而剧烈的变革。
+例子：马克思在《资本论》中断言，资产阶级的社会结构（他写作时被认为是永久的），实际上即将经历突然而剧烈的变革。
 
 b. What seems to be an unstable and changing phenomenon is in reality a stable and unchanging phenomenon.
 
-EXAMPLE: Georg Simmel's assertion in ‘Conflict' that any conflict-ridden social organization, which was considered at the time he wrote to be on the verge of transformation, may in fact be capable of continuing indefinitely as it is (in a steady-state of conflict).
-
 b. 表面上看似不稳定和不断变化的现象，其实可能是一个稳定不变的现象。
+
+EXAMPLE: Georg Simmel's assertion in ‘Conflict' that any conflict-ridden social organization, which was considered at the time he wrote to be on the verge of transformation, may in fact be capable of continuing indefinitely as it is (in a steady-state of conflict).
 
 例子：Georg Simmel 在《冲突》一书中指出，任何一个充满冲突的社会组织，即便在他写作时被认为即将发生变革，实际上可能会在冲突的稳定状态下无限期地维持现状。
 
@@ -315,19 +312,21 @@ The other wing of historical sociology tries to construct interesting propositio
 
 (vi) Function
 
+(vi) 功能
+
 a. What seems to be a phenomenon that functions ineffectively as a means for the attainment of an end is in reality a phenomenon that functions effectively.
 
 a. 表面上看似无法有效达成目标的现象，实际上可能运作得非常有效。
 
 EXAMPLE: Robert Merton's assertion in Social Theory and Social Structure that the political machine, which was considered at the time he wrote to be an inefficient institution for obtaining community goals, is in fact an efficient institution for obtaining community goals.
 
-罗伯特·默顿在《社会理论与社会结构》中指出，虽然在他写作的时代，政治机器被认为在实现社区目标方面效率低下，但实际上，它是一个高效的机构。
+例子：罗伯特·默顿在《社会理论与社会结构》中指出，虽然在他写作的时代，政治机器被认为在实现社区目标方面效率低下，但实际上，它是一个高效的机构。
 
 b. What seems to be a phenomenon that functions effectively as a means for the attainment of an end is in reality a phenomenon that functions ineffectively.
 
-EXAMPLE: Herbert Marcuse's assertion in ‘Repressive Tolerance' that the tradition of tolerance in America, which was considered at the time to be the value that fostered the goal of a liberated society, is in fact a value that hindered the goal of a liberated society.
-
 b. 某些现象看似是实现目标的有效手段，但实际上却无效。
+
+EXAMPLE: Herbert Marcuse's assertion in ‘Repressive Tolerance' that the tradition of tolerance in America, which was considered at the time to be the value that fostered the goal of a liberated society, is in fact a value that hindered the goal of a liberated society.
 
 例子：Herbert Marcuse 在《压抑性宽容》一书中指出，美国的宽容传统曾被认为是促进社会解放的价值，但实际上却阻碍了这一目标的实现。
 
@@ -355,21 +354,21 @@ Though there is no necessary theoretical reason why these two types of propositi
 
 (vii) Evaluation
 
-a. What seems to be a bad phenomenon is in reality a good phenomenon.
-
 (vii）评估
+
+a. What seems to be a bad phenomenon is in reality a good phenomenon.
 
 a. 有些现象乍一看似乎是不好的，但实际上可能是有益的。
 
 EXAMPLE: R. D. Laing's assertion in The Politics of Experience that schizophrenia, which was considered at the time he wrote to be a bad thing, is in fact a good thing.
 
-R. D. Laing 在《经验的政治》中提出，精神分裂症虽然在他写作时被认为是不好的，但实际上是一件好事。
+例子：R. D. Laing 在《经验的政治》中提出，精神分裂症虽然在他写作时被认为是不好的，但实际上是一件好事。
 
 b. What seems to be a good phenomenon is in reality a bad phenomenon.
 
-EXAMPLE: Friedrich Nietzsche's assertion in On the Genealogy of Morals that Christian morality, which was considered at the time he wrote to be a good thing, is in fact a bad thing.
-
 b. 看似良好的现象其实是不良的现象。
+
+EXAMPLE: Friedrich Nietzsche's assertion in On the Genealogy of Morals that Christian morality, which was considered at the time he wrote to be a good thing, is in fact a bad thing.
 
 例子：Friedrich Nietzsche 在《论道德的谱系》中指出，当时被认为是积极的基督教道德，其实是消极的。
 
@@ -395,93 +394,181 @@ Evaluative Propositions are common in social research, but, because of the norm 
 
 在社会研究中，评价命题很常见。然而，由于「伦理中立」的规范，一些理论家更喜欢隐晦地表达他们的价值判断，而不是直接说明。他们可以通过展示某个社会现象与另一个道德地位普遍被接受的现象之间的相似性，来间接表达他们的看法。Goffman 在《Asylums》中就采用了这种策略，他通过指出精神病院与集中营之间的许多相似点，巧妙地评判了精神病院的道德地位。
 
+
 #### B —— The Relations Among Multiple Phenomena
+
+B —— 多种现象之间的关系
 
 (viii) Co-relation
 
+(viii）相关性
+
 a. What seem to be unrelated (independent) phenomena are in reality correlated (interdependent) phenomena.
+
+a. 一些看似不相关的现象，其实是彼此相关的。
 
 EXAMPLE: August Hollingshead's assertion in Social Class and Mental Illness that social class and mental illness, which were considered at the time he wrote to be uncorrelated, are in fact correlated.
 
+例子：August Hollingshead 在《社会阶级与精神疾病》一书中指出，社会阶级与精神疾病在他撰写此书时被认为是没有关联的，但实际上它们是相关联的。
+
 b. What seem to be related (interdependent) phenomena are in reality uncorrelated (independent) phenomena.
 
+b. 看起来相关（相互依赖）的现象实际上是没有关联（独立）的。
+
 EXAMPLE: Emile Durkheim's assertion in Suicide that suicide and such other phenomena as psychopathological states, race, heredity, and climate, which were considered at the time he wrote to be correlated, are in fact uncorrelated.
+
+例子：Emile Durkheim 在他的著作《自杀论》中指出，自杀与精神病理状态、种族、遗传以及气候等其他现象，当时被认为是有联系的，实际上却没有关联。
 
 Comment
 
 Modern computer technology in the social sciences both allows and fosters the prolific production of an enormous number of propositions involving correlations among phenomena (Type (viii)) which are uninteresting. These Correlative Propositions are uninteresting because they are obvious, because everyone already knew the phenomena in question were related. It is the rare computer correlation which draws attention to a surprising relation among phenomena which everyone did not already expect. Qualitative correlations are more likely to be interesting than quantitative correlations because the human mind, unlike the computer, is programmed (in various degrees of clarity) with the additional rule for the construction of interesting propositions described in this paper. This additional step in one's mental programme between conception and assertion serves as a filter to screen out (censor) those Correlative Propositions which are not worth saying.
 
+现代计算机技术在社会科学中的应用，虽然能够并且确实促进了大量关于现象之间相关性的命题（Type（viii)）的生成，但这些命题往往缺乏吸引力。之所以不吸引人，是因为这些相关性显而易见，大家早就知道这些现象之间有关系。只有少数计算机生成的相关性会揭示出意想不到的现象关系，打破大家的预期。定性相关性通常比定量相关性更有趣，因为人类大脑与计算机不同，已经在某种程度上被「编程」了，具备了本文所描述的构建有趣命题的额外思维步骤。这个步骤在构思和提出命题之间起到了一个过滤器的作用，筛除那些不值得一提的相关性命题。
+
+
+
+
+
+
 Social theorists have pointed out many interesting correlations among phenomena which previously had been thought to be uncorrelated. Using Type (viii)a Propositions, they have asserted connections between such seemingly unconnected phenomena as social organization and culture (Marx, Durkheim), society and self (Cooley, Mead), group pressure and individual perception (Asch), living standard and population growth (Malthus), birth order and personality traits.
+
+社会理论家们发现了许多有趣的关联，这些关联在过去被认为是不相关的。通过使用 Type（viii）a 命题，他们指出了一些表面上似乎没有关系的现象之间的联系。例如，Marx 和 Durkheim 讨论了社会组织与文化的关系，Cooley 和 Mead 探讨了社会与自我的互动，Asch 研究了群体压力如何影响个人的感知，而 Malthus 则分析了生活水平与人口增长之间的关系。此外，还有出生顺序与人格特质的关联。
 
 Social theorists have pointed out the absence of correlation among phenomena thought to be correlated less often than the presence of correlation among phenomena thought to be uncorrelated. Interesting propositions of Type (viii)a are rarer than interesting propositions of Type (viii)b because the social theorist's audience assume social phenomena to be uncorrelated more often than they assume social phenomena to be correlated. Nevertheless, social theorists have asserted a few intriguing disassociations among phenomena whose associations have been assumed, such as the disconnection between the self and the body (Mead, Goffman) and the disconnection between power and authority (Tocqueville).
 
+社会理论家发现，人们认为应该相关的现象却没有相关性的情况，比认为不相关的现象却有关联性的情况更少见。类型（viii）a 的有趣命题比类型（viii）b 更罕见，因为社会理论家的听众通常更倾向于认为社会现象之间没有关联，而不是有关联。然而，社会理论家已经提出了一些令人感兴趣的现象，它们被认为是相关的，但实际上并无关联。例如，自我与身体之间的分离（Mead，Goffman）以及权力与权威之间的分离（Tocqueville）。
+
 In the popular press, perhaps the best examples of both Type (viii)a Propositions and Type (viii)b Propositions can be found in attempts to link various forms of smoking and various forms of illness. The public's interest was aroused with the first publication of studies which found statistical correlations between cigarette smoking and illness because the public had previously thought there was no connection between these two phenomena (Type (viii)a Proposition). The public's interest was also aroused with the first publication of studies which found little or no statistical correlation between marijuana smoking and illness because the public had previously thought there was a strong connection between these two phenomena (Type (viii)b Proposition).
+
+在大众媒体中，将不同类型命题（第（viii）a 类和第（viii）b 类命题）与吸烟及疾病之间的关联进行探讨或许是最典型的例子。首次发布的研究显示香烟吸烟与疾病之间存在统计学上的相关性，这激发了公众的兴趣，因为此前公众普遍认为这两者没有联系（第（viii）a 类命题）。同样，首次发布的研究揭示大麻吸烟与疾病之间几乎没有统计学相关性，这也引起了公众的关注，因为之前大家普遍认为这两者间存在密切关系（第（viii）b 类命题）。
 
 (ix) Co-existence
 
 a. What seem to be phenomena which can exist together are reality phenomena which cannot exist together.
 
+(ix）共存
+
+a. 那些表面上似乎能够共存的现象，在现实中其实无法共存。
+
 EXAMPLE: Denis de Rougemont's assertion in Love in the Western World that love and marriage, which were considered at the time he wrote to be compatible, are in fact incompatible.
+
+在 Denis de Rougemont 的作品《西方世界的爱情》中，他断言爱情和婚姻实际上是不兼容的，尽管在他写作的时代，人们普遍认为它们是兼容的。
 
 b. What seem to be phenomena which cannot exist together are in reality phenomena which can exist together.
 
 EXAMPLE: Sigmund Freud's assertion in ‘Notes on a Case of Obsessional Neurosis' that love and hate, which were considered at the time he wrote to be incompatible, are in fact compatible (in the psychological state of ‘ambivalence').
 
+b. 一些看似无法共存的现象实际上是可以共存的。
+
+例子：Sigmund Freud 在《强迫症案例笔记》中指出，爱与恨这两种当时被认为不相容的情感，其实可以在一种称为「矛盾心理」的心理状态中同时存在。
+
 Comment
 
 This type of interesting proposition is relatively rare in the social sciences since few pairs or sets of social phenomena are conceived as being so in-compatible with one another that they negate one another's very existence.
 
+这种有趣的命题在社会科学中相对少见，因为很少有成对或成组的社会现象被视为如此不相容，以至于相互否定对方的存在。
+
 Type (ix) b Propositions, however, are more common than . Type (ix) a Propositions: when two or more social phenomena are assumed to be in-compatible, they are usually assumed to be strongly incompatible, and therefore the jolt of the interesting is likely to occur whenever they are asserted to coexist; whereas when two or more social phenomena are assumed to be compatible, they are usually assumed to be weakly compatible, and therefore the jolt of the interesting is not likely to occur whenever they are asserted to be incapable of coexistence.
 
+(ix）b 型命题比（ix）a 型命题更常见。当我们认为两个或多个社会现象不兼容时，通常认为它们是强烈不兼容的。因此，当有人说这些现象可以共存时，往往会引起很大的兴趣和意外。而当我们认为两个或多个社会现象是兼容的，通常只认为它们是弱兼容的。因此，当有人说这些现象不能共存时，通常不会引起太大的关注或意外。
+
 The intensive interest generated by the dynamic ambiguity of Type (ix) b Propositions encourages their use as inspired titles and catch phrases. ‘The Lonely Crowd', ‘The Cold War' (i.e. ‘The Peaceful War'), and ‘Poverty in the Midst of Plenty' are all actually Type (ix)b Propositions in elliptical form.
+
+ix 型 b 类命题由于其动态的模糊性引发了广泛的兴趣，因此常被用作灵感标题和宣传短语。像‘The Lonely Crowd'、‘The Cold War' （即‘The Peaceful War'）以及‘Poverty in the Midst of Plenty' 这样的短语，实际上都是以省略形式表现的 ix 型 b 类命题。
 
 (x) Co-variation
 
 a. What seems to be a positive co-variation between phenomena is in reality a negative co-variation between phenomena.
 
+(x）协同变化
+
+a. 某些现象看起来似乎是正向协同变化，但实际上它们是负向协同变化。
+
 EXAMPLE: David Caplovitz's assertion in The Poor Pay More that expenditures for many goods and services, which were considered at the time he wrote to decrease at the lower income levels, in fact increase at the lower income levels.
+
+David Caplovitz 在《The Poor Pay More》一书中指出，许多商品和服务的支出被认为在较低收入水平时会减少，但实际上却在较低收入水平时增加。
 
 b. What seems to be a negative co-variation between phenomena is in reality a positive co-variation between phenomena.
 
 EXAMPLE: Alexis de Tocqueville's assertion in The Old Regime and the French Revolution that a social group's desire for revolution, which was considered at the time he wrote to decrease as their standard of living goes up, in fact increases as their standard of living goes up.
 
+b. 表面上看，现象之间似乎存在负相关，但实际上它们之间是正相关。
+
+例子：Alexis de Tocqueville 在《旧制度与大革命》中提出，一个社会群体对革命的渴望，尽管当时普遍认为随着生活水平的提高会减弱，实际上却随着生活水平的提高而增强。
+
 Comment
 
 There are two other types of Co-variance Propositions which attract interest: (1) What seems to be a continuous (incremental) co-variation between phenomena is in reality a discontinuous (discrete) co-variation. The Marxist notion of the point at which a quantitative change suddenly turns into a qualitative change involves this type of proposition. (2) What seems to be a linear co-variation between phenomena is in reality a curvilinear co-variation. This type of proposition occurs whenever ‘extremes' are said to ‘come together', i.e. to be more similar to each other than they are to the ‘mean'. This pattern is often found in (a) Stratification Correlates—when the upper class and the lower class are asserted to be more similar on some trait than either is to the middle class—(b) Hierarchical Organization Correlates—when the top management and the workers are asserted to be more similar on some trait than either is to the middle management—and (c) Historical-Demographic Correlates—when primitive society and modern society are asserted to be more similar on some trait than either is to histori- cally intervening societies.
+
+有两种其他类型的协变命题引起了人们的兴趣：(1）看似在现象之间的连续（增量）协变，实际上是一个不连续（离散）的协变。这类似于马克思主义中关于定量变化突然转变为定性变化的观点。(2）看似在现象之间的线性协变，实际上是曲线协变。每当「极端」现象被认为「相遇」，即彼此比与「平均值」更相似时，就会出现这种命题。这种模式经常出现在以下几种情况中：（a）分层相关性，例如，当上层阶级和下层阶级在某些特征上被认为比中产阶级更相似时；(b）层级组织相关性，例如，当高层管理人员和工人在某些特征上被认为比中层管理人员更相似时；以及（c）历史 - 人口相关性，例如，当原始社会和现代社会在某些特征上被认为比历史上介入的社会更相似时。
 
 (xi) Opposition
 
 a. What seem to be similar (nearly identical) phenomena
 
+(xi）反对
+
+a. 看起来非常相似（几乎相同）的现象
+
 EXAMPLE: Marshall McLuhan's assertion in Understanding Media that radio and television, which were considered at the time to be similar media, are in fact opposite media (one being a ‘hot' medium; the other being a ‘cool' medium).
+
+Marshall McLuhan 在《理解媒介》一书中提出，尽管当时人们认为广播和电视是类似的媒介，但实际上它们截然相反。他将广播视为「热」媒介，而电视则被认为是「冷」媒介。这种区分基于受众参与程度的不同。
 
 b. What seem to be opposite phenomena are in reality similar (nearly identical) phenomena.
 
 EXAMPLE: Eric Hoffer's assertion in The True Believer that the psychological motivations of those who join opposing social movements, which were considered at the time he wrote to be opposite, are in fact similar.
 
+b. 表面上对立的现象实际上很相似（几乎相同）。
+
+例如：Eric Hoffer 在《狂热分子》一书中断言，加入对立社会运动的人的心理动机，在当时被认为是对立的，实际上是相似的。
+
 Comment
 
 Opposition Propositions, especially of Type (xi)b, are combined with Evaluation Propositions, especially of Type (vii)b, we have the relatively formalized technique of generating interesting propositions known as ‘Dialectical Thinking'. A social theorist uses this technique of dialectical thinking whenever he tries to elicit his audience's interest by asserting that a seemingly positive social phenomenon actually has the negative characteristics of the opposite social phenomenon, or occasionally vice versa. Perhaps the most famous example of dialectical thinking is the Marxian (actually Proudhonian) assertion that ‘Ownership is theft'.
 
+反对命题，特别是类型（xi）b，与评价命题，特别是类型（vii）b，结合后形成一种称为「辩证思维」的技术，用于生成有趣的命题。当社会理论家试图通过强调某个看似积极的社会现象实际上具有其相反现象的负面特征（或反过来）来引起观众的兴趣时，他会运用这种辩证思维。辩证思维的一个著名例子是马克思主义（实际上是蒲鲁东主义）的说法：「所有权就是盗窃」。
+
 Sometimes a transformational process must be added to bring about the identification of the apparent opposites—as in ‘disgust is repressed desire' and ‘marriage is legalized prostitution'. This transformational process, however, merely makes the proposition possible and contributes little to its impact. The intensity of the proposition's impact is due not to its adjectival and unstressed transformational process, but to the one-two punch of its sudden logical and evaluational reversal.
 
+有时候，为了揭示那些看似对立的概念（如「厌恶其实是被压抑的欲望」和「婚姻其实是合法化的卖淫」），需要引入一个转化过程。然而，这个转化过程只是让这些命题得以成立，对它们的冲击力影响不大。命题之所以产生强烈的影响，不在于其转化过程的描述性和轻描淡写，而在于其逻辑和评价的突然逆转所带来的冲击。
+
 Though this double negation of accepted concepts and values appeals to Continental social theorists, it is often too extreme for the Anglo-American mind which consequently tends to consider Dialectical Propositions more bizarre than interesting. Hence their applause when the Englishman Orwell satirized these Dialectical Propositions in 1984 with such hyperbolic examples as ‘Freedom is Slavery', ‘War is Peace', and ‘Ignorance is Strength'.
+
+虽然这种对已接受概念和价值观的双重否定吸引了欧洲大陆的社会理论家，但对于英美文化背景下的人来说，这通常显得过于极端，因此他们往往觉得这些辩证命题比起有趣更像是离奇。因此，当英国作家 Orwell 在他的作品《1984》中用「自由就是奴役」、「战争就是和平」和「无知就是力量」等夸张的例子来讽刺这些辩证命题时，他们对此表示赞赏。
 
 (vii) Causation
 
 a. What seems to be the independent phenomenon (variable) in a causal relation is in reality the dependent phenomenon (variable).
 
+(vii）因果关系
+
+a. 在因果关系中，看似是独立现象（变量）的，实际上可能是依赖现象（变量）。
+
 EXAMPLE: Howard Becker's assertion in Outsiders that the peculiar behaviour of some individuals, which was considered at the time he wrote to cause other people to label them ‘deviants', is in fact caused by other people labelling them deviants.
+
+Howard Becker 在他的著作《局外人》中指出，一些人的行为被认为是异于常人的，这种行为之所以被周围人认为是「越轨」行为，实际上是因为他人贴上了「越轨者」的标签。
 
 b. What seems to be the dependent phenomenon (variable) in a causal relation is in reality the independent phenomenon (variable).
 
 EXAMPLE: Max Weber's assertion in The Protestant Ethic and the Spirit of Capitalism that the religion of a society, which was considered at the time he wrote to be determined by the economy of the society, in fact determines the economy of the society.
 
+b. 在因果关系中，通常被视为依赖的现象（变量），实际上可能是独立的现象（变量）。
+
+例子：Max Weber 在《新教伦理与资本主义精神》中指出，社会的宗教常被视为由其经济状况决定，但实际上是宗教决定了经济。
+
 Comment
 
 Type (vii) Propositions, which evoke interest by reversing the causal relationship usually assumed between phenomena, are especially common in popular sociology. Such journalistic subjects are ‘How the American Judicial System was actually on Trial during the Chicago Seven Conspiracy Case', ‘How Victims actually cause Crimes', and ‘How Schools are Disruptive of Childhood' are all ultimately based on Type (vii) Propositions.
 
+类型（vii）命题在大众社会学中尤为常见，它们通过逆转通常被认为存在于现象之间的因果关系来引发人们的兴趣。例如，诸如「美国司法系统在芝加哥七人阴谋案中实际上是被审判的一方」、「受害者如何实际上引发了犯罪」以及「学校如何扰乱了童年」等主题，最终都基于类型（vii）命题。
+
 There is a third variety of Causal Proposition which stimulates interest against the ground assumption of the first two: What seems to be a simple one way causal relation between phenomena is actually a complex mutual interaction between phenomena. Scholars who have read Max Weber's entire Sociology of Religion continually point out that he does not exclusively define either religion or economy as the independent or the dependent phenomenon, as dilettantes who have read only his Protestant Ethic assume; rather he actually shows how both the religion and the economy of a society reciprocally influence each other's development.
+
+第三种因果命题挑战了前两种的基本假设：看似简单的单向因果关系实际上是现象之间复杂的相互作用。通读 Max Weber 整本《宗教社会学》的学者常指出，他并没有像那些只读过《新教伦理》的人认为的那样，将宗教或经济单独视为独立或依赖的现象；相反，他展示了社会中的宗教和经济如何相互影响和促进彼此的发展。
+
+
+
+
 
 ### PART III: Discussion
 
